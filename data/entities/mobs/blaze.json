@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schemas/mob.schema.json",
+  "id": "blaze",
+  "tipo": "mob",
+  "etapa": "nether",
+  "categoria": "hostil",
+  "vida": 20,
+  "dano": 6,
+  "experiencia": 10,
+  "noMuerto": false,
+  "apareceEn": ["nether_fortress"],
+  "botin": [
+    { "item": "blaze_rod", "minimo": 0, "maximo": 1, "soloAlMorirPorJugador": true }
+  ],
+  "debilidades": ["agua", "nieve", "distancia"],
+  "etiquetas": ["blaze", "fuego", "vara", "fortaleza"]
+}

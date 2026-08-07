@@ -7,13 +7,14 @@
   "allOf": [{ "$ref": "_comun.schema.json#/$defs/entidad" }],
 
   "type": "object",
-  "required": ["id", "tipo", "categorias", "pila"],
+  "required": ["id", "tipo", "categorias", "pila", "etapa"],
   "properties": {
     "$schema": { "type": "string" },
     "id": { "$ref": "_comun.schema.json#/$defs/id" },
     "tipo": { "const": "item" },
     "desdeVersion": { "$ref": "_comun.schema.json#/$defs/version" },
     "hastaVersion": { "$ref": "_comun.schema.json#/$defs/version" },
+    "etapa": { "$ref": "_comun.schema.json#/$defs/etapa" },
     "etiquetas": { "type": "array", "items": { "type": "string" } },
 
     "categorias": {

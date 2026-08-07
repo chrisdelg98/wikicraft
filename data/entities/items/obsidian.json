@@ -1,0 +1,10 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "obsidian",
+  "tipo": "item",
+  "etapa": "hierro",
+  "categorias": ["bloque", "material"],
+  "pila": 64,
+  "renovable": true,
+  "etiquetas": ["obsidiana", "portal", "nether", "resistente"]
+}

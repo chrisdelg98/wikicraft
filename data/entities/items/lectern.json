@@ -2,6 +2,7 @@
   "$schema": "../../schemas/item.schema.json",
   "id": "lectern",
   "tipo": "item",
+  "etapa": "inicio",
   "categorias": ["bloque", "utilidad"],
   "pila": 64,
   "renovable": true,

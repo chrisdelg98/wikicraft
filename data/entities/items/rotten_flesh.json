@@ -1,0 +1,11 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "rotten_flesh",
+  "tipo": "item",
+  "etapa": "inicio",
+  "categorias": ["comida", "material"],
+  "pila": 64,
+  "renovable": true,
+  "obtenidoDe": ["zombie"],
+  "etiquetas": ["carne podrida", "zombi", "hambre"]
+}

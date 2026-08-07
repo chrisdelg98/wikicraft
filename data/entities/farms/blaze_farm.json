@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/farm.schema.json",
+  "id": "blaze_farm",
+  "tipo": "granja",
+  "etapa": "nether",
+  "produce": ["blaze_rod"],
+  "dificultad": "media",
+  "automatica": false,
+  "produccionPorHora": { "minimo": 60, "maximo": 200 },
+  "requiereMobs": ["blaze"],
+  "lugar": "nether_fortress",
+  "etiquetas": ["granja de blazes", "varas", "pociones", "experiencia"]
+}

@@ -2,6 +2,7 @@
   "$schema": "../../schemas/enchantment.schema.json",
   "id": "mending",
   "tipo": "encantamiento",
+  "etapa": "diamante",
   "nivelMaximo": 1,
   "categoria": "utilidad",
   "aplicableA": [

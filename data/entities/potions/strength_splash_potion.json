@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schemas/potion.schema.json",
+  "id": "strength_splash_potion",
+  "tipo": "pocion",
+  "etapa": "nether",
+  "efecto": "fuerza",
+  "presentacion": "arrojadiza",
+  "variante": "normal",
+  "nivel": 1,
+  "duracionSegundos": 135,
+  "derivaDe": "strength_potion",
+  "ingrediente": "gunpowder",
+  "beneficiosa": true,
+  "etiquetas": ["fuerza arrojadiza", "polvora", "multijugador"]
+}

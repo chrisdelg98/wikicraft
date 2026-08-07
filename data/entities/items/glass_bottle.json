@@ -1,10 +1,10 @@
 {
   "$schema": "../../schemas/item.schema.json",
-  "id": "book",
+  "id": "glass_bottle",
   "tipo": "item",
   "etapa": "inicio",
-  "categorias": ["material", "utilidad"],
+  "categorias": ["utilidad"],
   "pila": 64,
   "renovable": true,
-  "etiquetas": ["libro", "papel", "cuero"]
+  "etiquetas": ["botella", "cristal", "pociones"]
 }

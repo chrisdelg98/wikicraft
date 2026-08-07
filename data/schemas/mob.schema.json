@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wikicraft/schemas/mob.schema.json",
+  "title": "Mob",
+  "description": "Criatura del juego. Las debilidades son valores cerrados y no texto libre: es lo que permite responder a 'como mato esto' sin depender de que alguien haya escrito esa frase.",
+
+  "allOf": [{ "$ref": "_comun.schema.json#/$defs/entidad" }],
+
+  "type": "object",
+  "required": ["id", "tipo", "categoria", "vida", "etapa"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "id": { "$ref": "_comun.schema.json#/$defs/id" },
+    "tipo": { "const": "mob" },
+    "desdeVersion": { "$ref": "_comun.schema.json#/$defs/version" },
+    "hastaVersion": { "$ref": "_comun.schema.json#/$defs/version" },
+    "etapa": { "$ref": "_comun.schema.json#/$defs/etapa" },
+    "etiquetas": { "type": "array", "items": { "type": "string" } },
+
+    "categoria": {
+      "type": "string",
+      "enum": ["pasivo", "neutral", "hostil", "jefe"]
+    },
+
+    "vida": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "description": "Puntos de salud. Dos puntos son un corazon; la interfaz muestra corazones, no este numero."
+    },
+
+    "dano": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Dano por ataque en dificultad normal."
+    },
+
+    "experiencia": { "type": "integer", "minimum": 0 },
+
+    "noMuerto": {
+      "type": "boolean",
+      "default": false,
+      "description": "Determina si le afectan Castigo y las pociones de curacion al reves."
+    },
+
+    "apareceEn": {
+      "$ref": "_comun.schema.json#/$defs/referencias",
+      "description": "Biomas y estructuras donde aparece."
+    },
+
+    "botin": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["item", "maximo"],
+        "additionalProperties": false,
+        "properties": {
+          "item": { "$ref": "_comun.schema.json#/$defs/referencia" },
+          "minimo": { "type": "integer", "minimum": 0, "default": 0 },
+          "maximo": { "type": "integer", "minimum": 1 },
+          "probabilidad": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "maximum": 1,
+            "description": "Entre 0 y 1. La interfaz lo muestra como porcentaje."
+          },
+          "soloAlMorirPorJugador": { "type": "boolean", "default": false }
+        }
+      }
+    },
+
+    "debilidades": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "$ref": "_comun.schema.json#/$defs/debilidad" }
+    }
+  },
+  "additionalProperties": false
+}

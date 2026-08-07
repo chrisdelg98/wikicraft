@@ -1,0 +1,16 @@
+{
+  "blaze": {
+    "nombre": "Blaze",
+    "slug": "blaze",
+    "descripcion": "Una criatura de fuego que flota dentro de las fortalezas del Nether. Dispara tres bolas de fuego seguidas desde lejos, así que es peligroso si te quedas quieto a campo abierto.",
+    "notas": "Le hace daño el agua y las bolas de nieve, pero no puedes llevar agua al Nether porque se evapora. Lo más práctico es pelear en un pasillo estrecho, donde no pueda rodearte, o dispararle con arco desde detrás de un bloque.",
+    "consejo": "Necesitas sus varas para las pociones y para llegar al End. Ve preparado con armadura y algo de comida antes de buscar una fortaleza."
+  },
+  "zombie": {
+    "nombre": "Zombi",
+    "slug": "zombi",
+    "descripcion": "El enemigo más común de las primeras noches. Es lento y solo ataca de cerca, así que basta con mantener la distancia o encerrarte hasta que amanezca.",
+    "notas": "Se quema con el sol, de modo que muchos desaparecen solos por la mañana. Como es un no muerto, el encantamiento Castigo le hace mucho más daño que Filo.",
+    "consejo": "Si es tu primera noche, no salgas a pelear. Cava un agujero, tápalo y espera."
+  }
+}

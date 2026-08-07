@@ -40,6 +40,36 @@
       "description": "Cuantas unidades caben en una ranura del inventario."
     },
 
+    "etapa": {
+      "type": "string",
+      "enum": ["inicio", "hierro", "diamante", "nether", "end"],
+      "description": "Momento de la partida en que esto entra en juego. Responde a la pregunta que un novato no sabe formular: no que es esto, sino si es para mi ahora."
+    },
+
+    "dificultad": {
+      "type": "string",
+      "enum": ["facil", "media", "dificil"],
+      "description": "Cuanto cuesta conseguirlo o construirlo para alguien que empieza."
+    },
+
+    "debilidad": {
+      "type": "string",
+      "enum": [
+        "fuego",
+        "agua",
+        "luz_solar",
+        "nieve",
+        "caida",
+        "distancia",
+        "cuerpo_a_cuerpo",
+        "sigilo",
+        "no_muerto",
+        "artropodo",
+        "explosion"
+      ],
+      "description": "Valores cerrados en vez de texto libre: es lo que permite al buscador responder a como matar algo sin que nadie haya escrito esa frase exacta."
+    },
+
     "entidad": {
       "type": "object",
       "required": ["id", "tipo"],
@@ -63,6 +93,7 @@
         },
         "desdeVersion": { "$ref": "#/$defs/version" },
         "hastaVersion": { "$ref": "#/$defs/version" },
+        "etapa": { "$ref": "#/$defs/etapa" },
         "etiquetas": {
           "type": "array",
           "items": { "type": "string" },

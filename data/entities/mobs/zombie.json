@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schemas/mob.schema.json",
+  "id": "zombie",
+  "tipo": "mob",
+  "etapa": "inicio",
+  "categoria": "hostil",
+  "vida": 20,
+  "dano": 3,
+  "experiencia": 5,
+  "noMuerto": true,
+  "apareceEn": ["plains"],
+  "botin": [
+    { "item": "rotten_flesh", "minimo": 0, "maximo": 2 }
+  ],
+  "debilidades": ["luz_solar", "no_muerto", "cuerpo_a_cuerpo"],
+  "etiquetas": ["zombi", "no muerto", "noche"]
+}

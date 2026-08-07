@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/biome.schema.json",
+  "id": "nether_fortress",
+  "tipo": "estructura",
+  "etapa": "nether",
+  "dimension": "nether",
+  "peligro": "dificil",
+  "apareceEn": ["nether_wastes"],
+  "mobs": ["blaze"],
+  "botin": ["obsidian", "diamond"],
+  "exclusivo": ["blaze_rod", "nether_wart"],
+  "etiquetas": ["fortaleza del nether", "blaze", "verruga", "ladrillo del nether"]
+}

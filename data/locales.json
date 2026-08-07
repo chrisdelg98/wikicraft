@@ -20,7 +20,12 @@
     "items",
     "enchantments",
     "tools",
-    "villagers"
+    "villagers",
+    "mobs",
+    "potions",
+    "recipes",
+    "biomes",
+    "farms"
   ],
   "notas": "El idioma base nunca puede tener claves ausentes: es el respaldo final de todos los demas. Anadir un idioma es anadir una entrada aqui y una carpeta en data/i18n/. Los modulos listados son los que ya tienen esquema; se amplia conforme avanza la Fase 0."
 }

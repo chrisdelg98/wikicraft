@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wikicraft/schemas/farm.schema.json",
+  "title": "Granja",
+  "description": "Construccion que produce recursos de forma repetida. La dificultad y la etapa son obligatorias: sin ellas no se puede distinguir un tutorial de veinte bloques de uno que necesita relojes de redstone, y esa distincion es justo lo que necesita alguien que empieza.",
+
+  "allOf": [{ "$ref": "_comun.schema.json#/$defs/entidad" }],
+
+  "type": "object",
+  "required": ["id", "tipo", "produce", "dificultad", "etapa"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "id": { "$ref": "_comun.schema.json#/$defs/id" },
+    "tipo": { "const": "granja" },
+    "desdeVersion": { "$ref": "_comun.schema.json#/$defs/version" },
+    "hastaVersion": { "$ref": "_comun.schema.json#/$defs/version" },
+    "etapa": { "$ref": "_comun.schema.json#/$defs/etapa" },
+    "etiquetas": { "type": "array", "items": { "type": "string" } },
+
+    "produce": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "_comun.schema.json#/$defs/referencia" }
+    },
+
+    "dificultad": { "$ref": "_comun.schema.json#/$defs/dificultad" },
+
+    "automatica": {
+      "type": "boolean",
+      "default": false,
+      "description": "Si produce sola o hay que estar recogiendo a mano."
+    },
+
+    "produccionPorHora": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["minimo", "maximo"],
+      "description": "Rango estimado por hora. Es un rango y no un numero porque depende del diseno concreto y de la distancia del jugador.",
+      "properties": {
+        "minimo": { "type": "integer", "minimum": 0 },
+        "maximo": { "type": "integer", "minimum": 1 }
+      }
+    },
+
+    "materiales": {
+      "type": "array",
+      "items": { "$ref": "_comun.schema.json#/$defs/ingrediente" }
+    },
+
+    "requiereMobs": { "$ref": "_comun.schema.json#/$defs/referencias" },
+
+    "lugar": {
+      "$ref": "_comun.schema.json#/$defs/referencia",
+      "description": "Bioma o estructura donde se construye."
+    }
+  },
+  "additionalProperties": false
+}

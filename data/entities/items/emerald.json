@@ -2,6 +2,7 @@
   "$schema": "../../schemas/item.schema.json",
   "id": "emerald",
   "tipo": "item",
+  "etapa": "inicio",
   "categorias": ["mineral", "material"],
   "pila": 64,
   "renovable": true,

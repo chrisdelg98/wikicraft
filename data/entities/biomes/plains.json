@@ -1,0 +1,10 @@
+{
+  "$schema": "../../schemas/biome.schema.json",
+  "id": "plains",
+  "tipo": "bioma",
+  "etapa": "inicio",
+  "dimension": "superficie",
+  "peligro": "facil",
+  "mobs": ["zombie"],
+  "etiquetas": ["llanura", "praderas", "aldeas", "seguro"]
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "../../schemas/biome.schema.json",
+  "id": "nether_wastes",
+  "tipo": "bioma",
+  "etapa": "nether",
+  "dimension": "nether",
+  "peligro": "dificil",
+  "contiene": ["nether_fortress"],
+  "recursos": ["glowstone_dust"],
+  "etiquetas": ["nether", "paramos", "infierno", "portal"]
+}

@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wikicraft/schemas/recipe.schema.json",
+  "title": "Receta",
+  "description": "Una forma de obtener un item. Un mismo resultado puede tener varias recetas, asi que la receta es una entidad propia y no un campo del item.",
+
+  "allOf": [{ "$ref": "_comun.schema.json#/$defs/entidad" }],
+
+  "type": "object",
+  "required": ["id", "tipo", "estacion", "resultado"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "id": { "$ref": "_comun.schema.json#/$defs/id" },
+    "tipo": { "const": "receta" },
+    "desdeVersion": { "$ref": "_comun.schema.json#/$defs/version" },
+    "hastaVersion": { "$ref": "_comun.schema.json#/$defs/version" },
+    "etapa": { "$ref": "_comun.schema.json#/$defs/etapa" },
+    "etiquetas": { "type": "array", "items": { "type": "string" } },
+
+    "estacion": {
+      "type": "string",
+      "enum": [
+        "inventario",
+        "mesa_de_trabajo",
+        "horno",
+        "alto_horno",
+        "ahumador",
+        "fogata",
+        "yunque",
+        "mesa_de_herreria",
+        "cortador",
+        "soporte_para_pociones"
+      ]
+    },
+
+    "resultado": {
+      "type": "object",
+      "required": ["item", "cantidad"],
+      "additionalProperties": false,
+      "properties": {
+        "item": { "$ref": "_comun.schema.json#/$defs/referencia" },
+        "cantidad": { "$ref": "_comun.schema.json#/$defs/cantidad" }
+      }
+    },
+
+    "conForma": {
+      "type": "boolean",
+      "default": true,
+      "description": "Si la colocacion en la cuadricula importa. Cuando es false basta con 'ingredientes'."
+    },
+
+    "patron": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 3,
+      "description": "Filas de la cuadricula. Cada caracter es una clave de 'clave'; el espacio es una casilla vacia.",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 3
+      }
+    },
+
+    "clave": {
+      "type": "object",
+      "description": "Correspondencia entre cada caracter del patron y el item que representa.",
+      "patternProperties": {
+        "^[A-Z]$": { "$ref": "_comun.schema.json#/$defs/referencia" }
+      },
+      "additionalProperties": false
+    },
+
+    "ingredientes": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "_comun.schema.json#/$defs/ingrediente" },
+      "description": "Lista plana de materiales. Obligatoria en recetas sin forma; en las que tienen forma se deriva del patron."
+    },
+
+    "segundos": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "description": "Tiempo de coccion, solo en hornos y similares."
+    }
+  },
+  "additionalProperties": false
+}

@@ -2,31 +2,71 @@
   "diamond": {
     "nombre": "Diamante",
     "slug": "diamante",
-    "descripcion": "Gema poco común que se encuentra en las capas profundas del mundo. Es el material de las herramientas y armaduras de gama alta antes de la netherita."
+    "descripcion": "La gema más valiosa que encontrarás excavando. Está muy abajo, cerca del fondo del mundo, y necesitas un pico de hierro o mejor para recogerla: con uno de piedra el bloque desaparece sin darte nada."
   },
   "stick": {
     "nombre": "Palo",
     "slug": "palo",
-    "descripcion": "Material básico que sirve de mango en casi todas las herramientas y armas. Se fabrica con tablones y es prácticamente ilimitado."
+    "descripcion": "El mango de casi todas tus herramientas y armas. Se hace con dos tablones, y como la madera nunca se acaba, nunca te quedarás sin palos."
   },
   "emerald": {
     "nombre": "Esmeralda",
     "slug": "esmeralda",
-    "descripcion": "La moneda del comercio con aldeanos. No se usa como material de equipo, pero es la llave de todo lo que venden."
+    "descripcion": "El dinero de los aldeanos. No sirve para fabricar equipo, pero con ella compras casi cualquier cosa en una aldea."
   },
   "book": {
     "nombre": "Libro",
     "slug": "libro",
-    "descripcion": "Se fabrica con papel y cuero. Es un ingrediente habitual en los tratos con el bibliotecario y en la mesa de encantamientos."
+    "descripcion": "Se fabrica con tres papeles y un cuero. Lo necesitas para la mesa de encantamientos y para comprar libros encantados al bibliotecario."
   },
   "enchanted_book": {
     "nombre": "Libro encantado",
     "slug": "libro-encantado",
-    "descripcion": "Guarda un encantamiento hasta que se aplica a una pieza de equipo en el yunque. Es la única forma práctica de conseguir encantamientos de tesoro."
+    "descripcion": "Guarda un encantamiento hasta que lo pasas a una herramienta o armadura usando un yunque. Es la forma más segura de conseguir el encantamiento que quieres, en vez de confiar en la suerte de la mesa."
   },
   "lectern": {
     "nombre": "Atril",
     "slug": "atril",
-    "descripcion": "Bloque que convierte a un aldeano desempleado en bibliotecario. Romperlo y volver a colocarlo permite reiniciar sus tratos hasta obtener el deseado."
+    "descripcion": "Colócalo junto a un aldeano sin trabajo y se convertirá en bibliotecario. Si no te gusta lo que vende, rompe el atril y vuelve a ponerlo: cambiará su oferta."
+  },
+  "blaze_rod": {
+    "nombre": "Vara de blaze",
+    "slug": "vara-de-blaze",
+    "descripcion": "Solo la sueltan los blazes, y solo si los matas tú. Es imprescindible para fabricar pociones y para llegar al End, así que vas a necesitar bastantes."
+  },
+  "blaze_powder": {
+    "nombre": "Polvo de blaze",
+    "slug": "polvo-de-blaze",
+    "descripcion": "Se obtiene partiendo una vara de blaze en dos. Sirve para dos cosas: es el combustible del soporte para pociones y el ingrediente de la poción de fuerza."
+  },
+  "nether_wart": {
+    "nombre": "Verruga del Nether",
+    "slug": "verruga-del-nether",
+    "descripcion": "Crece en las fortalezas del Nether, sobre arena de almas. Es el primer ingrediente de casi todas las pociones útiles, y puedes plantarla en casa para no volver a buscarla."
+  },
+  "glass_bottle": {
+    "nombre": "Botella de cristal",
+    "slug": "botella-de-cristal",
+    "descripcion": "Se hace con tres bloques de cristal. Llénala en cualquier agua para empezar a fabricar pociones."
+  },
+  "glowstone_dust": {
+    "nombre": "Polvo de piedra luminosa",
+    "slug": "polvo-de-piedra-luminosa",
+    "descripcion": "Se saca de los bloques brillantes que cuelgan del techo del Nether. Añádelo a una poción para subirla a nivel II: hace más efecto, pero dura menos."
+  },
+  "gunpowder": {
+    "nombre": "Pólvora",
+    "slug": "polvora",
+    "descripcion": "La sueltan los creepers al morir. Convierte cualquier poción en arrojadiza, para poder lanzársela a otra persona o a un mob."
+  },
+  "rotten_flesh": {
+    "nombre": "Carne podrida",
+    "slug": "carne-podrida",
+    "descripcion": "Lo que sueltan los zombis. Se puede comer, pero muchas veces te da hambre y te quita comida en vez de darte. Úsala solo si no tienes nada mejor."
+  },
+  "obsidian": {
+    "nombre": "Obsidiana",
+    "slug": "obsidiana",
+    "descripcion": "Aparece cuando el agua toca la lava. Es el bloque más duro que puedes recoger, y necesitas un pico de diamante y mucha paciencia. Con ella se construye el portal al Nether."
   }
 }

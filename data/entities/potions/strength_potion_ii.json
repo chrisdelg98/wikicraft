@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schemas/potion.schema.json",
+  "id": "strength_potion_ii",
+  "tipo": "pocion",
+  "etapa": "nether",
+  "efecto": "fuerza",
+  "presentacion": "bebible",
+  "variante": "mejorada",
+  "nivel": 2,
+  "duracionSegundos": 90,
+  "derivaDe": "strength_potion",
+  "ingrediente": "glowstone_dust",
+  "beneficiosa": true,
+  "etiquetas": ["fuerza II", "nivel dos", "piedra luminosa"]
+}

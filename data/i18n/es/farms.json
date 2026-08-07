@@ -1,0 +1,16 @@
+{
+  "blaze_farm": {
+    "nombre": "Granja de blazes",
+    "slug": "granja-de-blazes",
+    "descripcion": "Aprovecha un generador de blazes de una fortaleza para que aparezcan solos en un sitio controlado, en vez de tener que buscarlos por los pasillos.",
+    "notas": "Además de varas te da muchísima experiencia, así que sirve también para encantar y reparar equipo.",
+    "pasos": [
+      "Busca en la fortaleza una jaula con llamas dentro: ese es el generador.",
+      "Tapa con bloques todo el suelo alrededor, hasta cuatro bloques en cada dirección, para que solo puedan aparecer donde tú quieras.",
+      "Deja un hueco al que caigan y ponte debajo, fuera de su alcance.",
+      "Ilumina el resto de la sala con antorchas para que no aparezcan por otro lado.",
+      "Golpéalos desde abajo cuando caigan. Recuerda que las varas solo caen si el golpe final es tuyo."
+    ],
+    "advertencia": "Trabaja siempre agachado cerca de los bordes: hay lava debajo de casi toda la fortaleza."
+  }
+}

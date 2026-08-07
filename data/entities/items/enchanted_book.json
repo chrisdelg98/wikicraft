@@ -2,6 +2,7 @@
   "$schema": "../../schemas/item.schema.json",
   "id": "enchanted_book",
   "tipo": "item",
+  "etapa": "hierro",
   "categorias": ["utilidad"],
   "pila": 1,
   "renovable": true,

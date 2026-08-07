@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schemas/potion.schema.json",
+  "id": "strength_potion",
+  "tipo": "pocion",
+  "etapa": "nether",
+  "efecto": "fuerza",
+  "presentacion": "bebible",
+  "variante": "normal",
+  "nivel": 1,
+  "duracionSegundos": 180,
+  "derivaDe": "awkward_potion",
+  "ingrediente": "blaze_powder",
+  "beneficiosa": true,
+  "etiquetas": ["pocion de fuerza", "dano", "combate"]
+}

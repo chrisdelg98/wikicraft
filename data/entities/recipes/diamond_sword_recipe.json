@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "diamond_sword_recipe",
+  "tipo": "receta",
+  "etapa": "diamante",
+  "estacion": "mesa_de_trabajo",
+  "conForma": true,
+  "resultado": { "item": "diamond_sword", "cantidad": 1 },
+  "patron": ["D", "D", "S"],
+  "clave": {
+    "D": "diamond",
+    "S": "stick"
+  },
+  "etiquetas": ["espada de diamante", "crafteo"]
+}

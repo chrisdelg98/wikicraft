@@ -1,10 +1,10 @@
 {
   "$schema": "../../schemas/item.schema.json",
-  "id": "book",
+  "id": "gunpowder",
   "tipo": "item",
   "etapa": "inicio",
-  "categorias": ["material", "utilidad"],
+  "categorias": ["material"],
   "pila": 64,
   "renovable": true,
-  "etiquetas": ["libro", "papel", "cuero"]
+  "etiquetas": ["polvora", "arrojadiza", "creeper"]
 }

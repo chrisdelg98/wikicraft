@@ -2,6 +2,7 @@
   "$schema": "../../schemas/item.schema.json",
   "id": "stick",
   "tipo": "item",
+  "etapa": "inicio",
   "categorias": ["material", "combustible"],
   "pila": 64,
   "renovable": true,

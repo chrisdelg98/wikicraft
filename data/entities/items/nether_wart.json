@@ -1,0 +1,11 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "nether_wart",
+  "tipo": "item",
+  "etapa": "nether",
+  "categorias": ["vegetal", "material"],
+  "pila": 64,
+  "renovable": true,
+  "obtenidoDe": ["nether_fortress"],
+  "etiquetas": ["verruga del nether", "pociones", "cultivo"]
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "blaze_rod",
+  "tipo": "item",
+  "etapa": "nether",
+  "categorias": ["material", "combustible"],
+  "pila": 64,
+  "renovable": true,
+  "obtenidoDe": ["blaze"],
+  "combustible": { "segundos": 120 },
+  "etiquetas": ["vara de blaze", "barra de fuego", "nether"]
+}

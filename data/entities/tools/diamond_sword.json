@@ -2,6 +2,7 @@
   "$schema": "../../schemas/tool.schema.json",
   "id": "diamond_sword",
   "tipo": "herramienta",
+  "etapa": "diamante",
   "categoria": "espada",
   "material": "diamante",
   "durabilidad": 1561,
@@ -13,5 +14,6 @@
   ],
   "reparadoCon": ["diamond"],
   "encantamientosRecomendados": ["sharpness", "mending", "unbreaking"],
+  "mobsIdeales": ["zombie", "blaze"],
   "etiquetas": ["espada de diamante", "arma", "cuerpo a cuerpo"]
 }

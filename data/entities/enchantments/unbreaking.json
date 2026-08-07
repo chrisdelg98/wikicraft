@@ -2,6 +2,7 @@
   "$schema": "../../schemas/enchantment.schema.json",
   "id": "unbreaking",
   "tipo": "encantamiento",
+  "etapa": "hierro",
   "nivelMaximo": 3,
   "categoria": "utilidad",
   "aplicableA": [

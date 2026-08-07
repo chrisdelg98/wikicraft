@@ -85,10 +85,24 @@ en ambos sentidos, que ninguna recomendación sea contradictoria y qué cobertur
 de traducción tiene cada idioma. Conviene ejecutarlo antes de cerrar cualquier
 cambio en `data/`.
 
-## Módulos previstos
+## Pensada para quien empieza
 
-Encantamientos · Pociones · Aldeanos · Crafteos · Biomas y estructuras ·
-Herramientas y armaduras · Mobs · Granjas
+Buena parte de quien juega a Minecraft son niños, y las wikis existentes están
+escritas para adultos que ya saben lo que buscan. Aquí la claridad es un
+requisito, y se sostiene desde los propios datos: cada entidad declara en qué
+momento de la partida entra en juego, las granjas declaran su dificultad, y las
+debilidades de un mob son valores estructurados en vez de texto suelto, para que
+el buscador pueda responder a «cómo mato un blaze» sin depender de que alguien
+haya escrito esa frase.
+
+Los textos se escriben en segunda persona y sin jerga, y los tutoriales van como
+pasos cortos. El estilo visual se inspira en Minecraft (bloques, inventario,
+pixel art) sin copiar la interfaz del juego: familiar, no un disfraz.
+
+## Módulos
+
+Objetos · Encantamientos · Herramientas y armaduras · Aldeanos · Mobs ·
+Pociones · Crafteos · Biomas y estructuras · Granjas
 
 ## Decisiones abiertas
 

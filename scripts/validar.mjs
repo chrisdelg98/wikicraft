@@ -58,8 +58,17 @@ const CAMPOS_REFERENCIA = {
     'niveles[].tradeos[].entrega.item',
     'niveles[].tradeos[].entrega.encantamiento',
     'niveles[].tradeos[].recibe[].item'
-  ]
+  ],
+  mob: ['apareceEn[]', 'botin[].item'],
+  pocion: ['derivaDe', 'ingrediente'],
+  receta: ['resultado.item', 'ingredientes[].item'],
+  bioma: ['contiene[]', 'mobs[]', 'recursos[]', 'botin[]', 'exclusivo[]'],
+  estructura: ['apareceEn[]', 'mobs[]', 'recursos[]', 'botin[]', 'exclusivo[]'],
+  granja: ['produce[]', 'requiereMobs[]', 'lugar', 'materiales[].item']
 }
+
+/** Etapas de progreso válidas. Ver docs/decisiones/003-diseno-para-todos.md. */
+const ETAPAS = ['inicio', 'hierro', 'diamante', 'nether', 'end']
 
 /** Campos obligatorios en cada entrada de traducción. */
 const CAMPOS_TRADUCCION = ['nombre', 'slug']
@@ -144,6 +153,13 @@ for (const modulo of modulos) {
     if (!entidad.tipo) {
       error(donde, 'Falta el campo obligatorio "tipo".')
     }
+    // La etapa contesta a "¿esto es para mí ahora?", que es la pregunta que un
+    // novato no sabe formular. Un campo opcional acaba siempre sin rellenar.
+    if (!entidad.etapa) {
+      error(donde, 'Falta el campo obligatorio "etapa".')
+    } else if (!ETAPAS.includes(entidad.etapa)) {
+      error(donde, `La etapa "${entidad.etapa}" no es válida. Opciones: ${ETAPAS.join(', ')}.`)
+    }
     if (grafo.has(entidad.id)) {
       error(donde, `El id "${entidad.id}" ya lo usa ${grafo.get(entidad.id).donde}.`)
       continue
@@ -227,6 +243,93 @@ for (const { entidad, donde } of equipo) {
         error(donde, `Recomienda a la vez "${uno}" y "${otro}", que son incompatibles.`)
       }
     }
+  }
+}
+
+// Las recetas con forma referencian items desde el mapa "clave", cuyos nombres
+// de propiedad son letras del patrón y no una ruta fija.
+for (const { entidad, donde } of grafo.values()) {
+  if (entidad.tipo !== 'receta') continue
+
+  for (const [letra, item] of Object.entries(entidad.clave ?? {})) {
+    if (!grafo.has(item)) {
+      error(donde, `La clave "${letra}" del patrón apunta a "${item}", que no existe en el grafo.`)
+    }
+  }
+
+  const usadas = new Set((entidad.patron ?? []).join('').replace(/ /g, '').split(''))
+  for (const letra of usadas) {
+    if (!(letra in (entidad.clave ?? {}))) {
+      error(donde, `El patrón usa la letra "${letra}" pero no está definida en "clave".`)
+    }
+  }
+  for (const letra of Object.keys(entidad.clave ?? {})) {
+    if (!usadas.has(letra)) {
+      aviso(donde, `"clave" define la letra "${letra}" pero el patrón no la usa.`)
+    }
+  }
+  if (entidad.conForma === false && !entidad.ingredientes) {
+    error(donde, 'Es una receta sin forma, así que necesita "ingredientes".')
+  }
+  if (entidad.conForma !== false && !entidad.patron) {
+    error(donde, 'Es una receta con forma, así que necesita "patron".')
+  }
+}
+
+// Un mob que aparece en un lugar y un lugar que alberga ese mob son la misma
+// relación vista desde dos lados. Si solo se declara en uno, una de las dos
+// fichas saldrá incompleta.
+for (const { entidad, donde } of grafo.values()) {
+  if (entidad.tipo === 'mob') {
+    for (const lugar of entidad.apareceEn ?? []) {
+      const nodo = grafo.get(lugar)
+      if (!nodo) continue
+      if (!(nodo.entidad.mobs ?? []).includes(entidad.id)) {
+        error(donde, `Dice aparecer en "${lugar}", pero "${lugar}" no lo lista en "mobs".`)
+      }
+    }
+  }
+
+  if (entidad.tipo === 'bioma' || entidad.tipo === 'estructura') {
+    for (const mob of entidad.mobs ?? []) {
+      const nodo = grafo.get(mob)
+      if (!nodo) continue
+      if (!(nodo.entidad.apareceEn ?? []).includes(entidad.id)) {
+        error(donde, `Lista el mob "${mob}", pero "${mob}" no dice aparecer aquí.`)
+      }
+    }
+  }
+
+  // Lo mismo entre un bioma y las estructuras que contiene.
+  if (entidad.tipo === 'bioma') {
+    for (const estructura of entidad.contiene ?? []) {
+      const nodo = grafo.get(estructura)
+      if (!nodo) continue
+      if (!(nodo.entidad.apareceEn ?? []).includes(entidad.id)) {
+        error(donde, `Dice contener "${estructura}", pero esa estructura no dice generarse aquí.`)
+      }
+    }
+  }
+}
+
+// El árbol de pociones se dibuja siguiendo "derivaDe". Un ciclo dejaría al
+// generador dando vueltas para siempre.
+for (const { entidad, donde } of grafo.values()) {
+  if (entidad.tipo !== 'pocion') continue
+
+  const visitadas = new Set([entidad.id])
+  let actual = entidad
+  while (actual?.derivaDe) {
+    if (visitadas.has(actual.derivaDe)) {
+      error(donde, `El árbol de fabricación forma un ciclo en "${actual.derivaDe}".`)
+      break
+    }
+    visitadas.add(actual.derivaDe)
+    actual = grafo.get(actual.derivaDe)?.entidad
+  }
+
+  if (entidad.derivaDe && !entidad.ingrediente) {
+    error(donde, 'Deriva de otra poción pero no dice con qué ingrediente. El árbol quedaría cojo.')
   }
 }
 

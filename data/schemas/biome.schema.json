@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wikicraft/schemas/biome.schema.json",
+  "title": "Bioma o estructura",
+  "description": "Lugares del mundo. Biomas y estructuras comparten esquema porque responden a las mismas preguntas: que aparece ahi, que mobs hay y que se saca.",
+
+  "allOf": [{ "$ref": "_comun.schema.json#/$defs/entidad" }],
+
+  "type": "object",
+  "required": ["id", "tipo", "dimension", "etapa"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "id": { "$ref": "_comun.schema.json#/$defs/id" },
+    "tipo": {
+      "type": "string",
+      "enum": ["bioma", "estructura"]
+    },
+    "desdeVersion": { "$ref": "_comun.schema.json#/$defs/version" },
+    "hastaVersion": { "$ref": "_comun.schema.json#/$defs/version" },
+    "etapa": { "$ref": "_comun.schema.json#/$defs/etapa" },
+    "etiquetas": { "type": "array", "items": { "type": "string" } },
+
+    "dimension": {
+      "type": "string",
+      "enum": ["superficie", "nether", "end"]
+    },
+
+    "peligro": { "$ref": "_comun.schema.json#/$defs/dificultad" },
+
+    "apareceEn": {
+      "$ref": "_comun.schema.json#/$defs/referencias",
+      "description": "Solo en estructuras: biomas donde pueden generarse."
+    },
+
+    "contiene": {
+      "$ref": "_comun.schema.json#/$defs/referencias",
+      "description": "Solo en biomas: estructuras que pueden generarse dentro."
+    },
+
+    "mobs": {
+      "$ref": "_comun.schema.json#/$defs/referencias",
+      "description": "Criaturas que aparecen aqui. Debe ser coherente con el campo 'apareceEn' de cada mob."
+    },
+
+    "recursos": {
+      "$ref": "_comun.schema.json#/$defs/referencias",
+      "description": "Items que se obtienen del propio terreno."
+    },
+
+    "botin": {
+      "$ref": "_comun.schema.json#/$defs/referencias",
+      "description": "Items que aparecen en cofres. Sobre todo en estructuras."
+    },
+
+    "exclusivo": {
+      "$ref": "_comun.schema.json#/$defs/referencias",
+      "description": "Recursos que SOLO se consiguen aqui. Es la respuesta a por que merece la pena venir."
+    }
+  },
+  "additionalProperties": false
+}

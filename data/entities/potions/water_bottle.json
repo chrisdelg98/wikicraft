@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schemas/potion.schema.json",
+  "id": "water_bottle",
+  "tipo": "pocion",
+  "etapa": "inicio",
+  "efecto": "ninguno",
+  "presentacion": "bebible",
+  "variante": "base",
+  "duracionSegundos": 0,
+  "beneficiosa": true,
+  "etiquetas": ["botella de agua", "raiz", "empezar a fabricar"]
+}

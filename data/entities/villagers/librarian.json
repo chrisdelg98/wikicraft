@@ -2,6 +2,7 @@
   "$schema": "../../schemas/villager.schema.json",
   "id": "librarian",
   "tipo": "aldeano",
+  "etapa": "inicio",
   "mesaDeTrabajo": "lectern",
   "etiquetas": ["bibliotecario", "librarian", "libros encantados"],
   "niveles": [

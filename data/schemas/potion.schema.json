@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wikicraft/schemas/potion.schema.json",
+  "title": "Pocion",
+  "description": "El arbol de fabricacion no se guarda como arbol: cada pocion apunta a la anterior con 'derivaDe' y al ingrediente que la transforma. El arbol se dibuja solo a partir de esas dos referencias, y nunca puede quedar desincronizado.",
+
+  "allOf": [{ "$ref": "_comun.schema.json#/$defs/entidad" }],
+
+  "type": "object",
+  "required": ["id", "tipo", "presentacion", "etapa"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "id": { "$ref": "_comun.schema.json#/$defs/id" },
+    "tipo": { "const": "pocion" },
+    "desdeVersion": { "$ref": "_comun.schema.json#/$defs/version" },
+    "hastaVersion": { "$ref": "_comun.schema.json#/$defs/version" },
+    "etapa": { "$ref": "_comun.schema.json#/$defs/etapa" },
+    "etiquetas": { "type": "array", "items": { "type": "string" } },
+
+    "efecto": {
+      "type": "string",
+      "enum": [
+        "ninguno",
+        "fuerza",
+        "velocidad",
+        "salto",
+        "curacion",
+        "regeneracion",
+        "resistencia_al_fuego",
+        "respiracion_acuatica",
+        "vision_nocturna",
+        "invisibilidad",
+        "lentitud",
+        "debilidad",
+        "veneno",
+        "dano",
+        "caida_lenta"
+      ],
+      "description": "'ninguno' es para las bases del arbol, que todavia no hacen nada."
+    },
+
+    "presentacion": {
+      "type": "string",
+      "enum": ["bebible", "arrojadiza", "persistente"],
+      "default": "bebible"
+    },
+
+    "variante": {
+      "type": "string",
+      "enum": ["base", "normal", "prolongada", "mejorada"],
+      "default": "normal",
+      "description": "'prolongada' dura mas (redstone). 'mejorada' es el nivel II (piedra luminosa). Son excluyentes entre si."
+    },
+
+    "nivel": { "type": "integer", "enum": [1, 2], "default": 1 },
+
+    "duracionSegundos": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Cero en las pociones de efecto instantaneo."
+    },
+
+    "derivaDe": {
+      "$ref": "_comun.schema.json#/$defs/referencia",
+      "description": "Pocion inmediatamente anterior en el arbol. Ausente solo en la botella de agua, que es la raiz."
+    },
+
+    "ingrediente": {
+      "$ref": "_comun.schema.json#/$defs/referencia",
+      "description": "Item que se anade a la pocion anterior para obtener esta."
+    },
+
+    "beneficiosa": {
+      "type": "boolean",
+      "description": "Si el efecto ayuda o perjudica a quien la recibe. Determina si tiene sentido bebersela o lanzarla."
+    }
+  },
+  "additionalProperties": false
+}

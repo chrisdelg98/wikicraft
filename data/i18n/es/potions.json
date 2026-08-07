@@ -1,0 +1,32 @@
+{
+  "water_bottle": {
+    "nombre": "Botella de agua",
+    "slug": "botella-de-agua",
+    "descripcion": "El punto de partida de todas las pociones. Coge una botella de cristal y haz clic derecho sobre cualquier agua.",
+    "notas": "Por sí sola no hace nada. Es solo el recipiente."
+  },
+  "awkward_potion": {
+    "nombre": "Poción rara",
+    "slug": "pocion-rara",
+    "descripcion": "Tampoco hace nada al beberla, y aun así es la poción más importante del juego: casi todas las demás salen de ella.",
+    "notas": "Se consigue poniendo verruga del Nether en el soporte, sobre botellas de agua. Si una receta no te sale, casi siempre es porque te has saltado este paso."
+  },
+  "strength_potion": {
+    "nombre": "Poción de fuerza",
+    "slug": "pocion-de-fuerza",
+    "descripcion": "Aumenta el daño que haces cuerpo a cuerpo durante tres minutos. Es la forma más barata de pegar más fuerte sin cambiar de arma.",
+    "notas": "Solo afecta a los golpes con arma o con la mano. No mejora el arco."
+  },
+  "strength_potion_ii": {
+    "nombre": "Poción de fuerza II",
+    "slug": "pocion-de-fuerza-ii",
+    "descripcion": "El doble de efecto que la normal, pero la mitad de tiempo. Es la que quieres llevar a una pelea corta y difícil.",
+    "notas": "Se consigue añadiendo polvo de piedra luminosa a una poción de fuerza normal."
+  },
+  "strength_splash_potion": {
+    "nombre": "Poción de fuerza arrojadiza",
+    "slug": "pocion-de-fuerza-arrojadiza",
+    "descripcion": "En vez de bebértela, la lanzas. Sirve para dar fuerza a tus amigos sin que tengan que parar a beber.",
+    "notas": "Al ser arrojadiza dura un poco menos que la normal. Se consigue añadiendo pólvora."
+  }
+}

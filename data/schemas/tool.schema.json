@@ -7,7 +7,7 @@
   "allOf": [{ "$ref": "_comun.schema.json#/$defs/entidad" }],
 
   "type": "object",
-  "required": ["id", "tipo", "categoria", "material", "durabilidad"],
+  "required": ["id", "tipo", "categoria", "material", "durabilidad", "etapa"],
   "properties": {
     "$schema": { "type": "string" },
     "id": { "$ref": "_comun.schema.json#/$defs/id" },
@@ -17,6 +17,7 @@
     },
     "desdeVersion": { "$ref": "_comun.schema.json#/$defs/version" },
     "hastaVersion": { "$ref": "_comun.schema.json#/$defs/version" },
+    "etapa": { "$ref": "_comun.schema.json#/$defs/etapa" },
     "etiquetas": { "type": "array", "items": { "type": "string" } },
 
     "categoria": {
