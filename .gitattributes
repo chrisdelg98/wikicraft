@@ -1,0 +1,20 @@
+# Normaliza los finales de línea a LF dentro del repositorio.
+# Evita diffs falsos al trabajar entre Windows y otros sistemas.
+* text=auto eol=lf
+
+# Archivos que deben conservar CRLF en el disco de Windows.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Binarios: git no debe tocarlos ni intentar diferenciarlos como texto.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.mp3 binary
+*.ogg binary

@@ -1,0 +1,75 @@
+# ---------------------------------------------------------------------------
+# Documentación interna de desarrollo
+# Notas, investigación y borradores que NO forman parte del producto.
+# Se ignora todo el contenido, pero se conserva el README que explica la carpeta.
+# ---------------------------------------------------------------------------
+docs/*
+!docs/README.md
+
+# Instrucciones internas para Claude Code: no forman parte del producto.
+CLAUDE.md
+CLAUDE.local.md
+
+# ---------------------------------------------------------------------------
+# Dependencias
+# ---------------------------------------------------------------------------
+node_modules/
+.pnp/
+.pnp.js
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# ---------------------------------------------------------------------------
+# Salidas de build y cachés
+# ---------------------------------------------------------------------------
+dist/
+build/
+.output/
+.astro/
+.vite/
+.cache/
+*.tsbuildinfo
+
+# Artefactos generados desde data/ (índice de búsqueda, bundles de datos)
+public/data/
+public/search-index*.json
+
+# ---------------------------------------------------------------------------
+# Entorno y secretos
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# ---------------------------------------------------------------------------
+# Logs
+# ---------------------------------------------------------------------------
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---------------------------------------------------------------------------
+# Editores y sistema operativo
+# ---------------------------------------------------------------------------
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.example.json
+.idea/
+*.swp
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# ---------------------------------------------------------------------------
+# Claude Code — configuración local del entorno de desarrollo
+# Agentes, comandos y ajustes son herramientas de quien desarrolla,
+# no parte del producto.
+# ---------------------------------------------------------------------------
+.claude/
