@@ -1,0 +1,20 @@
+{
+  "name": "Wikicraft",
+  "short_name": "Wikicraft",
+  "description": "Wiki relacional de Minecraft: busca cualquier cosa y llega de una vez a todo lo relacionado.",
+  "start_url": "/es/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f2efe6",
+  "theme_color": "#4f7d33",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

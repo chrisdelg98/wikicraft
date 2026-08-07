@@ -1,0 +1,73 @@
+---
+import Base from '../../layouts/Base.astro'
+import Buscador from '../../components/Buscador.astro'
+import TarjetaEntidad from '../../components/TarjetaEntidad.astro'
+import { codigosIdioma, ui, modulos, entidadesDe, rutaModulo, grafo } from '../../lib/datos.js'
+
+export function getStaticPaths() {
+  return codigosIdioma.map((idioma) => ({ params: { idioma } }))
+}
+
+const { idioma } = Astro.params
+
+// Se muestran las entidades de la etapa inicial: es lo que necesita quien
+// acaba de empezar, que es justo quien menos sabe que buscar.
+const primerosPasos = [...grafo.values()]
+  .filter((e) => e.entidad.etapa === 'inicio')
+  .slice(0, 8)
+  .map((e) => e.entidad.id)
+---
+
+<Base idioma={idioma}>
+  <section class="relative isolate mb-12 overflow-hidden bloque px-4 py-12 text-center sm:py-16">
+    <div class="trama absolute inset-0 -z-10" aria-hidden="true"></div>
+
+    <h1 class="mx-auto max-w-2xl text-3xl font-extrabold sm:text-4xl">
+      {ui(idioma, 'portada.titulo')}
+    </h1>
+    <p class="mx-auto mt-3 max-w-xl text-texto-suave">
+      {ui(idioma, 'portada.subtitulo')}
+    </p>
+
+    <div class="mx-auto mt-6 max-w-xl text-left">
+      <Buscador idioma={idioma} />
+      <p class="mt-2 text-center text-sm text-texto-suave">
+        {ui(idioma, 'buscador.atajo')}
+      </p>
+    </div>
+  </section>
+
+  <section class="mb-12">
+    <h2 class="mb-4 text-xl font-bold">{ui(idioma, 'portada.explora')}</h2>
+    <ul class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+      {
+        modulos.map((modulo) => (
+          <li>
+            <a
+              href={`/${idioma}/${rutaModulo(idioma, modulo)}/`}
+              class="flex h-full flex-col justify-between gap-1 bloque bloque-pulsable p-3"
+            >
+              <span class="font-bold">{ui(idioma, `nav.${modulo}`)}</span>
+              <span class="text-sm text-texto-suave">{entidadesDe(modulo).length}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  {
+    primerosPasos.length > 0 && (
+      <section>
+        <h2 class="mb-4 text-xl font-bold">{ui(idioma, 'etapa.inicio')}</h2>
+        <ul class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          {primerosPasos.map((id) => (
+            <li>
+              <TarjetaEntidad idioma={idioma} id={id} />
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+</Base>

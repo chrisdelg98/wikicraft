@@ -1,0 +1,32 @@
+---
+import Etapa from './Etapa.astro'
+import { t, rutaDe, grafo, ui } from '../lib/datos.js'
+
+const { idioma, id } = Astro.props
+const nodo = grafo.get(id)
+const texto = t(idioma, id)
+---
+
+<a
+  href={rutaDe(idioma, id)}
+  class="flex h-full flex-col gap-2 bloque bloque-pulsable p-3"
+>
+  <span class="font-bold">{texto.nombre}</span>
+
+  {
+    texto.descripcion && (
+      <span class="line-clamp-2 text-sm text-texto-suave">{texto.descripcion}</span>
+    )
+  }
+
+  <span class="mt-auto flex items-center justify-between gap-2 pt-1">
+    <Etapa idioma={idioma} etapa={nodo.entidad.etapa} />
+    {
+      !texto.traducido && (
+        <span class="text-xs text-texto-suave" title={ui(idioma, 'idioma.sinTraducir')}>
+          {texto.idiomaUsado?.toUpperCase()}
+        </span>
+      )
+    }
+  </span>
+</a>

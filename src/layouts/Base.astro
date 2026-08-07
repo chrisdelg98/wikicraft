@@ -1,0 +1,181 @@
+---
+import '../styles/global.css'
+import Buscador from '../components/Buscador.astro'
+import { ui, idiomas, modulos, rutaModulo, rutaDe, grafo } from '../lib/datos.js'
+
+const {
+  idioma,
+  titulo,
+  descripcion = ui(idioma, 'sitio.descripcion'),
+  // Cuando estamos en la ficha de una entidad, el selector de idioma lleva a la
+  // MISMA entidad en el otro idioma, no a la portada. Cambiar de idioma no
+  // deberia costarte el sitio donde estabas.
+  idEntidad = null
+} = Astro.props
+
+const tituloCompleto = titulo
+  ? `${titulo} · ${ui(idioma, 'sitio.nombre')}`
+  : `${ui(idioma, 'sitio.nombre')} · ${ui(idioma, 'sitio.lema')}`
+
+const otrosIdiomas = idiomas
+  .filter((i) => i.codigo !== idioma)
+  .map((i) => ({
+    ...i,
+    url: idEntidad && grafo.has(idEntidad) ? rutaDe(i.codigo, idEntidad) : `/${i.codigo}/`
+  }))
+---
+
+<!doctype html>
+<html lang={idioma}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{tituloCompleto}</title>
+    <meta name="description" content={descripcion} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#4f7d33" />
+
+    {
+      idiomas.map((i) => (
+        <link
+          rel="alternate"
+          hreflang={i.codigo}
+          href={
+            idEntidad && grafo.has(idEntidad)
+              ? `${Astro.site ?? ''}${rutaDe(i.codigo, idEntidad)}`.replace(/([^:]\/)\/+/g, '$1')
+              : `${Astro.site ?? ''}/${i.codigo}/`.replace(/([^:]\/)\/+/g, '$1')
+          }
+        />
+      ))
+    }
+
+    {/* Se aplica el tema guardado antes de pintar, para que no haya un
+        parpadeo blanco al cargar en modo oscuro. */}
+    <script is:inline>
+      try {
+        const tema = localStorage.getItem('tema')
+        if (tema) document.documentElement.dataset.tema = tema
+      } catch {}
+    </script>
+  </head>
+
+  <body class="min-h-screen flex flex-col">
+    <a
+      href="#contenido"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bloque focus:px-4 focus:py-2"
+    >
+      {ui(idioma, 'nav.inicio')}
+    </a>
+
+    <header class="sticky top-0 z-40 border-b-2 border-borde bg-superficie/95 backdrop-blur">
+      <div class="mx-auto w-full max-w-6xl px-4 py-3">
+        <div class="flex items-center gap-3">
+          <a
+            href={`/${idioma}/`}
+            class="flex shrink-0 items-center gap-2 font-bold tracking-tight"
+          >
+            <span
+              class="grid h-8 w-8 place-items-center bloque bg-acento text-acento-contraste"
+              aria-hidden="true"
+            >
+              <svg viewBox="0 0 8 8" class="h-4 w-4" fill="currentColor">
+                <path d="M0 0h3v3H0zM5 0h3v3H5zM0 5h3v3H0zM5 5h3v3H5z"></path>
+              </svg>
+            </span>
+            <span class="hidden sm:inline">{ui(idioma, 'sitio.nombre')}</span>
+          </a>
+
+          <div class="min-w-0 flex-1">
+            <Buscador idioma={idioma} compacto={true} />
+          </div>
+
+          <div class="flex shrink-0 items-center gap-1">
+            <button
+              type="button"
+              data-cambiar-tema
+              class="grid h-9 w-9 place-items-center bloque bloque-pulsable"
+              title={ui(idioma, 'tema.cambiar')}
+              aria-label={ui(idioma, 'tema.cambiar')}
+            >
+              <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 3a9 9 0 1 0 9 9c0-.3 0-.6-.05-.9A6.5 6.5 0 0 1 12.9 3.05 9.6 9.6 0 0 0 12 3Z"
+                ></path>
+              </svg>
+            </button>
+
+            {
+              otrosIdiomas.map((i) => (
+                <a
+                  href={i.url}
+                  class="grid h-9 place-items-center bloque bloque-pulsable px-2 text-sm font-semibold uppercase"
+                  title={`${ui(idioma, 'idioma.cambiar')}: ${i.nombreNativo}`}
+                  hreflang={i.codigo}
+                >
+                  {i.codigo}
+                </a>
+              ))
+            }
+          </div>
+        </div>
+
+        <nav class="mt-3 -mx-1 overflow-x-auto" aria-label={ui(idioma, 'nav.inicio')}>
+          <ul class="flex w-max gap-1 px-1 pb-1">
+            {
+              modulos.map((modulo) => (
+                <li>
+                  <a
+                    href={`/${idioma}/${rutaModulo(idioma, modulo)}/`}
+                    class="block bloque bloque-pulsable px-3 py-1.5 text-sm font-semibold whitespace-nowrap"
+                  >
+                    {ui(idioma, `nav.${modulo}`)}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido" class="mx-auto w-full max-w-6xl flex-1 px-4 py-8">
+      <slot />
+    </main>
+
+    <footer class="border-t-2 border-borde bg-superficie">
+      <div
+        class="mx-auto w-full max-w-6xl px-4 py-6 text-sm text-texto-suave flex flex-wrap gap-x-6 gap-y-2 justify-between"
+      >
+        <p>{ui(idioma, 'sitio.nombre')} · {ui(idioma, 'sitio.lema')}</p>
+        <p>
+          {ui(idioma, 'portada.entidades', { n: grafo.size })}
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Alternancia de tema. Tres estados posibles en el disco: nada (manda el
+      // sistema), "claro" u "oscuro". Solo se guarda cuando el usuario elige.
+      const raiz = document.documentElement
+      document.querySelector('[data-cambiar-tema]')?.addEventListener('click', () => {
+        const oscuroAhora =
+          raiz.dataset.tema === 'oscuro' ||
+          (!raiz.dataset.tema && matchMedia('(prefers-color-scheme: dark)').matches)
+        const siguiente = oscuroAhora ? 'claro' : 'oscuro'
+        raiz.dataset.tema = siguiente
+        try {
+          localStorage.setItem('tema', siguiente)
+        } catch {}
+      })
+
+      // El service worker se registra despues de cargar: instalarlo nunca debe
+      // competir por ancho de banda con la pagina que el usuario esta viendo.
+      if ('serviceWorker' in navigator) {
+        addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(() => {})
+        })
+      }
+    </script>
+  </body>
+</html>

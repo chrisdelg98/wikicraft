@@ -1,22 +1,55 @@
 {
   "sitio.nombre": "Wikicraft",
   "sitio.lema": "All of Minecraft, connected",
+  "sitio.descripcion": "Search anything in Minecraft and land on everything related at once: how it is made, where to find it and what it works with.",
 
-  "buscador.etiqueta": "Search",
-  "buscador.marcador": "Search an item, enchantment, mob…",
-  "buscador.sinResultados": "Nothing found for “{consulta}”",
-  "buscador.resultados": "{n} results",
+  "ruta.items": "items",
+  "ruta.enchantments": "enchantments",
+  "ruta.tools": "tools",
+  "ruta.villagers": "villagers",
+  "ruta.mobs": "mobs",
+  "ruta.potions": "potions",
+  "ruta.recipes": "recipes",
+  "ruta.biomes": "biomes",
+  "ruta.farms": "farms",
 
   "nav.inicio": "Home",
-  "nav.encantamientos": "Enchantments",
-  "nav.pociones": "Potions",
-  "nav.aldeanos": "Villagers",
-  "nav.crafteos": "Crafting",
-  "nav.biomas": "Biomes",
-  "nav.herramientas": "Tools",
+  "nav.items": "Items",
+  "nav.enchantments": "Enchantments",
+  "nav.tools": "Tools",
+  "nav.villagers": "Villagers",
   "nav.mobs": "Mobs",
-  "nav.granjas": "Farms",
+  "nav.potions": "Potions",
+  "nav.recipes": "Crafting",
+  "nav.biomes": "Biomes",
+  "nav.farms": "Farms",
 
-  "idioma.cambiar": "Change language",
-  "idioma.sinTraducir": "Not translated yet. Showing Spanish."
+  "buscador.etiqueta": "Search",
+  "buscador.marcador": "Type what you are looking for: a sword, a mob, a potion…",
+  "buscador.sinResultados": "Nothing found for “{consulta}”",
+  "buscador.pista": "Try the name in English or Spanish",
+  "buscador.resultados": "{n} results",
+  "buscador.atajo": "Press / to search",
+
+  "etapa.inicio": "From day one",
+  "etapa.hierro": "Once you have iron",
+  "etapa.diamante": "Once you have diamonds",
+  "etapa.nether": "Once you reach the Nether",
+  "etapa.end": "Once you reach the End",
+  "etapa.explicacion": "When this starts being useful to you",
+
+  "dificultad.etiqueta": "Difficulty",
+  "dificultad.facil": "Easy",
+  "dificultad.media": "Medium",
+  "dificultad.dificil": "Hard",
+
+  "idioma.cambiar": "Language",
+  "idioma.sinTraducir": "Not translated yet. Showing Spanish.",
+
+  "tema.cambiar": "Switch theme",
+
+  "portada.titulo": "Search anything in Minecraft",
+  "portada.subtitulo": "And land on everything related at once, without searching again.",
+  "portada.explora": "Or start here",
+  "portada.entidades": "{n} things you can look up"
 }

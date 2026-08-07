@@ -1,0 +1,72 @@
+{
+  "_nota": "Mapa de todas las relaciones del grafo, por tipo de entidad. Lo leen el validador (para comprobar integridad) y el generador del sitio (para pintar las fichas). Vivir en un solo sitio evita que se desincronicen. 'campo' usa la sintaxis a[].b para recorrer arrays. 'etiqueta' e 'inversa' son claves de ui.json: la primera titula la relacion vista desde esta entidad, la segunda vista desde la entidad apuntada.",
+
+  "item": [
+    { "campo": "obtenidoDe[]", "etiqueta": "rel.obtenidoDe", "inversa": "rel.aquiConsigues" }
+  ],
+
+  "encantamiento": [
+    { "campo": "incompatibleCon[]", "etiqueta": "rel.incompatibleCon", "inversa": "rel.incompatibleCon" },
+    { "campo": "obtenidoDe[]", "etiqueta": "rel.obtenidoDe", "inversa": "rel.aquiConsigues" }
+  ],
+
+  "herramienta": [
+    { "campo": "materiales[].item", "etiqueta": "rel.materiales", "inversa": "rel.sirveParaFabricar" },
+    { "campo": "reparadoCon[]", "etiqueta": "rel.reparadoCon", "inversa": "rel.repara" },
+    { "campo": "encantamientosRecomendados[]", "etiqueta": "rel.encantamientosRecomendados", "inversa": "rel.recomendadoEn" },
+    { "campo": "mobsIdeales[]", "etiqueta": "rel.mobsIdeales", "inversa": "rel.buenasArmas" }
+  ],
+
+  "armadura": [
+    { "campo": "materiales[].item", "etiqueta": "rel.materiales", "inversa": "rel.sirveParaFabricar" },
+    { "campo": "reparadoCon[]", "etiqueta": "rel.reparadoCon", "inversa": "rel.repara" },
+    { "campo": "encantamientosRecomendados[]", "etiqueta": "rel.encantamientosRecomendados", "inversa": "rel.recomendadoEn" },
+    { "campo": "mobsIdeales[]", "etiqueta": "rel.mobsIdeales", "inversa": "rel.buenasArmas" }
+  ],
+
+  "aldeano": [
+    { "campo": "mesaDeTrabajo", "etiqueta": "rel.mesaDeTrabajo", "inversa": "rel.profesion" },
+    { "campo": "niveles[].tradeos[].entrega.item", "etiqueta": "rel.vende", "inversa": "rel.loVenden" },
+    { "campo": "niveles[].tradeos[].entrega.encantamiento", "etiqueta": "rel.vendeEncantamiento", "inversa": "rel.loVenden" },
+    { "campo": "niveles[].tradeos[].recibe[].item", "etiqueta": "rel.aceptaComoPago", "inversa": "rel.sirveParaPagar" }
+  ],
+
+  "mob": [
+    { "campo": "apareceEn[]", "etiqueta": "rel.apareceEn", "inversa": "rel.mobs" },
+    { "campo": "botin[].item", "etiqueta": "rel.suelta", "inversa": "rel.loSueltan" }
+  ],
+
+  "pocion": [
+    { "campo": "derivaDe", "etiqueta": "rel.derivaDe", "inversa": "rel.daLugarA" },
+    { "campo": "ingrediente", "etiqueta": "rel.ingrediente", "inversa": "rel.seUsaEnPociones" }
+  ],
+
+  "receta": [
+    { "campo": "resultado.item", "etiqueta": "rel.resultado", "inversa": "rel.comoSeHace" },
+    { "campo": "ingredientes[].item", "etiqueta": "rel.materiales", "inversa": "rel.sirveParaFabricar" },
+    { "campo": "clave{}", "etiqueta": "rel.materiales", "inversa": "rel.sirveParaFabricar" }
+  ],
+
+  "bioma": [
+    { "campo": "contiene[]", "etiqueta": "rel.contiene", "inversa": "rel.apareceEn" },
+    { "campo": "mobs[]", "etiqueta": "rel.mobs", "inversa": "rel.apareceEn" },
+    { "campo": "recursos[]", "etiqueta": "rel.recursos", "inversa": "rel.aquiConsigues" },
+    { "campo": "botin[]", "etiqueta": "rel.botin", "inversa": "rel.aquiConsigues" },
+    { "campo": "exclusivo[]", "etiqueta": "rel.exclusivo", "inversa": "rel.soloAqui" }
+  ],
+
+  "estructura": [
+    { "campo": "apareceEn[]", "etiqueta": "rel.apareceEn", "inversa": "rel.contiene" },
+    { "campo": "mobs[]", "etiqueta": "rel.mobs", "inversa": "rel.apareceEn" },
+    { "campo": "recursos[]", "etiqueta": "rel.recursos", "inversa": "rel.aquiConsigues" },
+    { "campo": "botin[]", "etiqueta": "rel.botin", "inversa": "rel.aquiConsigues" },
+    { "campo": "exclusivo[]", "etiqueta": "rel.exclusivo", "inversa": "rel.soloAqui" }
+  ],
+
+  "granja": [
+    { "campo": "produce[]", "etiqueta": "rel.produce", "inversa": "rel.granjas" },
+    { "campo": "requiereMobs[]", "etiqueta": "rel.requiereMobs", "inversa": "rel.granjas" },
+    { "campo": "lugar", "etiqueta": "rel.lugar", "inversa": "rel.granjas" },
+    { "campo": "materiales[].item", "etiqueta": "rel.materiales", "inversa": "rel.sirveParaFabricar" }
+  ]
+}

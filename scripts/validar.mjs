@@ -33,39 +33,13 @@ const error = (donde, mensaje) => errores.push({ donde, mensaje })
 const aviso = (donde, mensaje) => avisos.push({ donde, mensaje })
 
 /**
- * Campos que contienen referencias a otras entidades, por tipo. Se declaran a
- * mano en lugar de deducirse de los esquemas: es una lista corta, explícita, y
- * evita que el validador dependa de una librería de JSON Schema.
- * La sintaxis `a[].b` recorre un array.
+ * El mapa de relaciones vive en data/relaciones.json porque lo comparten este
+ * validador y el generador del sitio. Si cada uno tuviera su copia, tarde o
+ * temprano una comprobaría relaciones que la otra no pinta.
  */
-const CAMPOS_REFERENCIA = {
-  item: ['obtenidoDe[]'],
-  encantamiento: ['incompatibleCon[]', 'obtenidoDe[]'],
-  herramienta: [
-    'materiales[].item',
-    'reparadoCon[]',
-    'encantamientosRecomendados[]',
-    'mobsIdeales[]'
-  ],
-  armadura: [
-    'materiales[].item',
-    'reparadoCon[]',
-    'encantamientosRecomendados[]',
-    'mobsIdeales[]'
-  ],
-  aldeano: [
-    'mesaDeTrabajo',
-    'niveles[].tradeos[].entrega.item',
-    'niveles[].tradeos[].entrega.encantamiento',
-    'niveles[].tradeos[].recibe[].item'
-  ],
-  mob: ['apareceEn[]', 'botin[].item'],
-  pocion: ['derivaDe', 'ingrediente'],
-  receta: ['resultado.item', 'ingredientes[].item'],
-  bioma: ['contiene[]', 'mobs[]', 'recursos[]', 'botin[]', 'exclusivo[]'],
-  estructura: ['apareceEn[]', 'mobs[]', 'recursos[]', 'botin[]', 'exclusivo[]'],
-  granja: ['produce[]', 'requiereMobs[]', 'lugar', 'materiales[].item']
-}
+const RELACIONES = JSON.parse(
+  (await readFile(new URL('../data/relaciones.json', import.meta.url), 'utf8')).replace(/^﻿/, '')
+)
 
 /** Etapas de progreso válidas. Ver docs/decisiones/003-diseno-para-todos.md. */
 const ETAPAS = ['inicio', 'hierro', 'diamante', 'nether', 'end']
@@ -95,12 +69,17 @@ const recolectar = (valor, segmentos) => {
     if (!Array.isArray(valor)) return []
     return valor.flatMap((v) => recolectar(v, resto))
   }
+  if (actual === '{}') {
+    if (typeof valor !== 'object') return []
+    return Object.values(valor).flatMap((v) => recolectar(v, resto))
+  }
   return recolectar(valor[actual], resto)
 }
 
 const trocear = (ruta) =>
   ruta
     .replace(/\[\]/g, '.[].')
+    .replace(/\{\}/g, '.{}.')
     .split('.')
     .filter(Boolean)
 
@@ -174,13 +153,13 @@ for (const modulo of modulos) {
 // ---------------------------------------------------------------------------
 
 for (const { entidad, donde } of grafo.values()) {
-  const campos = CAMPOS_REFERENCIA[entidad.tipo]
+  const campos = RELACIONES[entidad.tipo]
   if (!campos) {
-    aviso(donde, `No hay campos de referencia declarados para el tipo "${entidad.tipo}".`)
+    aviso(donde, `data/relaciones.json no declara relaciones para el tipo "${entidad.tipo}".`)
     continue
   }
 
-  for (const campo of campos) {
+  for (const { campo } of campos) {
     for (const referencia of recolectar(entidad, trocear(campo))) {
       if (!grafo.has(referencia)) {
         error(donde, `"${campo}" apunta a "${referencia}", que no existe en el grafo.`)
@@ -246,16 +225,9 @@ for (const { entidad, donde } of equipo) {
   }
 }
 
-// Las recetas con forma referencian items desde el mapa "clave", cuyos nombres
-// de propiedad son letras del patrón y no una ruta fija.
+// El patrón de una receta y su tabla de claves tienen que encajar entre sí.
 for (const { entidad, donde } of grafo.values()) {
   if (entidad.tipo !== 'receta') continue
-
-  for (const [letra, item] of Object.entries(entidad.clave ?? {})) {
-    if (!grafo.has(item)) {
-      error(donde, `La clave "${letra}" del patrón apunta a "${item}", que no existe en el grafo.`)
-    }
-  }
 
   const usadas = new Set((entidad.patron ?? []).join('').replace(/ /g, '').split(''))
   for (const letra of usadas) {

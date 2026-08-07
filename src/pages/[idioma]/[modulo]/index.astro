@@ -1,0 +1,47 @@
+---
+import Base from '../../../layouts/Base.astro'
+import TarjetaEntidad from '../../../components/TarjetaEntidad.astro'
+import { codigosIdioma, modulos, ui, entidadesDe, rutaModulo, t } from '../../../lib/datos.js'
+
+export function getStaticPaths() {
+  return codigosIdioma.flatMap((idioma) =>
+    modulos.map((modulo) => ({
+      // El segmento de la URL va traducido: /es/encantamientos, /en/enchantments.
+      params: { idioma, modulo: rutaModulo(idioma, modulo) },
+      props: { modulo }
+    }))
+  )
+}
+
+const { idioma } = Astro.params
+const { modulo } = Astro.props
+
+const titulo = ui(idioma, `nav.${modulo}`)
+
+// Ordenadas por etapa y luego por nombre: primero lo que sirve desde el
+// principio, que es por donde deberia empezar quien no sabe que busca.
+const ORDEN = ['inicio', 'hierro', 'diamante', 'nether', 'end']
+
+const listado = entidadesDe(modulo)
+  .map((e) => ({ id: e.entidad.id, etapa: e.entidad.etapa, nombre: t(idioma, e.entidad.id).nombre }))
+  .sort(
+    (a, b) => ORDEN.indexOf(a.etapa) - ORDEN.indexOf(b.etapa) || a.nombre.localeCompare(b.nombre)
+  )
+---
+
+<Base idioma={idioma} titulo={titulo}>
+  <h1 class="text-3xl font-extrabold">{titulo}</h1>
+  <p class="mt-2 mb-6 text-texto-suave">
+    {ui(idioma, 'buscador.resultados', { n: listado.length })}
+  </p>
+
+  <ul class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
+    {
+      listado.map(({ id }) => (
+        <li>
+          <TarjetaEntidad idioma={idioma} id={id} />
+        </li>
+      ))
+    }
+  </ul>
+</Base>

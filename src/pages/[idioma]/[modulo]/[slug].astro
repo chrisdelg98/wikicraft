@@ -1,0 +1,259 @@
+---
+import Base from '../../../layouts/Base.astro'
+import Etapa from '../../../components/Etapa.astro'
+import TarjetaEntidad from '../../../components/TarjetaEntidad.astro'
+import {
+  codigosIdioma,
+  entidades,
+  grafo,
+  t,
+  ui,
+  rutaModulo,
+  rutaDe,
+  relacionesDe
+} from '../../../lib/datos.js'
+
+export function getStaticPaths() {
+  return codigosIdioma.flatMap((idioma) =>
+    entidades.map(({ entidad, modulo }) => ({
+      params: {
+        idioma,
+        modulo: rutaModulo(idioma, modulo),
+        slug: t(idioma, entidad.id).slug
+      },
+      props: { id: entidad.id, modulo }
+    }))
+  )
+}
+
+const { idioma } = Astro.params
+const { id, modulo } = Astro.props
+
+const { entidad } = grafo.get(id)
+const texto = t(idioma, id)
+const grupos = relacionesDe(id)
+
+/** Datos numéricos que se muestran arriba, por tipo. */
+const DATOS = {
+  item: [['ficha.pila', 'pila']],
+  encantamiento: [['ficha.nivelMaximo', 'nivelMaximo']],
+  herramienta: [
+    ['ficha.durabilidad', 'durabilidad'],
+    ['ficha.dano', 'dano']
+  ],
+  armadura: [
+    ['ficha.durabilidad', 'durabilidad'],
+    ['ficha.puntosArmadura', 'puntosArmadura']
+  ],
+  mob: [['ficha.dano', 'dano']]
+}
+
+const datos = (DATOS[entidad.tipo] ?? [])
+  .filter(([, campo]) => entidad[campo] != null)
+  .map(([clave, campo]) => ({ etiqueta: ui(idioma, clave), valor: entidad[campo] }))
+
+const duracion = entidad.duracionSegundos
+  ? entidad.duracionSegundos >= 60
+    ? ui(idioma, 'ficha.minutos', { n: Math.round(entidad.duracionSegundos / 60) })
+    : ui(idioma, 'ficha.segundos', { n: entidad.duracionSegundos })
+  : null
+
+/** Cuadrícula 3×3 de una receta con forma, rellenando los huecos vacíos. */
+const casillas =
+  entidad.tipo === 'receta' && entidad.patron
+    ? Array.from({ length: 3 }, (_, fila) =>
+        Array.from({ length: 3 }, (_, col) => {
+          const letra = entidad.patron[fila]?.[col] ?? ' '
+          return letra === ' ' ? null : entidad.clave?.[letra]
+        })
+      )
+    : null
+---
+
+<Base idioma={idioma} titulo={texto.nombre} descripcion={texto.descripcion} idEntidad={id}>
+  <nav class="mb-4 text-sm text-texto-suave">
+    <a href={`/${idioma}/${rutaModulo(idioma, modulo)}/`} class="hover:text-acento">
+      {ui(idioma, `nav.${modulo}`)}
+    </a>
+  </nav>
+
+  <header class="mb-6">
+    <h1 class="text-3xl font-extrabold sm:text-4xl">{texto.nombre}</h1>
+
+    <div class="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2">
+      <Etapa idioma={idioma} etapa={entidad.etapa} />
+
+      {
+        entidad.dificultad && (
+          <span class="text-sm font-semibold">
+            {ui(idioma, 'dificultad.etiqueta')}:{' '}
+            {ui(idioma, `dificultad.${entidad.dificultad}`)}
+          </span>
+        )
+      }
+
+      {
+        entidad.vida && (
+          <span class="text-sm font-semibold">
+            {ui(idioma, 'ficha.vida')}: {ui(idioma, 'ficha.corazones', { n: entidad.vida / 2 })}
+          </span>
+        )
+      }
+
+      {duracion && <span class="text-sm font-semibold">{ui(idioma, 'ficha.duracion')} {duracion}</span>}
+    </div>
+
+    {
+      !texto.traducido && (
+        <p class="mt-3 bloque bg-superficie-alta px-3 py-2 text-sm text-texto-suave">
+          {ui(idioma, 'idioma.sinTraducir')}
+        </p>
+      )
+    }
+  </header>
+
+  <p class="mb-6 max-w-prose text-lg">
+    {texto.descripcion ?? ui(idioma, 'ficha.sinDescripcion')}
+  </p>
+
+  {
+    datos.length > 0 && (
+      <ul class="mb-6 flex flex-wrap gap-3">
+        {datos.map((d) => (
+          <li class="bloque px-3 py-2">
+            <span class="block text-xs text-texto-suave">{d.etiqueta}</span>
+            <span class="text-lg font-bold">{d.valor}</span>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+
+  {
+    casillas && (
+      <section class="mb-6">
+        <h2 class="mb-3 text-lg font-bold">{ui(idioma, 'ficha.receta')}</h2>
+        <div class="inline-grid grid-cols-3 gap-1 bloque p-2">
+          {casillas.flat().map((itemId) => (
+            <span
+              class="grid h-14 w-14 place-items-center bloque bg-fondo p-1 text-center text-[10px] leading-tight"
+              title={itemId ? t(idioma, itemId).nombre : undefined}
+            >
+              {itemId ? t(idioma, itemId).nombre : ''}
+            </span>
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  {
+    entidad.debilidades?.length > 0 && (
+      <section class="mb-6">
+        <h2 class="mb-3 text-lg font-bold">{ui(idioma, 'ficha.leVaMal')}</h2>
+        <ul class="flex flex-wrap gap-2">
+          {entidad.debilidades.map((d) => (
+            <li class="bloque px-3 py-1.5 text-sm font-semibold">
+              {ui(idioma, `debilidad.${d}`)}
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+
+  {
+    entidad.produccionPorHora && (
+      <section class="mb-6">
+        <h2 class="mb-3 text-lg font-bold">{ui(idioma, 'ficha.porHora')}</h2>
+        <p class="bloque inline-block px-3 py-2 text-lg font-bold">
+          {entidad.produccionPorHora.minimo} – {entidad.produccionPorHora.maximo}
+        </p>
+      </section>
+    )
+  }
+
+  {
+    texto.pasos?.length > 0 && (
+      <section class="mb-6">
+        <h2 class="mb-3 text-lg font-bold">{ui(idioma, 'ficha.pasos')}</h2>
+        <ol class="max-w-prose space-y-2">
+          {texto.pasos.map((paso, i) => (
+            <li class="flex gap-3 bloque p-3">
+              <span class="grid h-6 w-6 shrink-0 place-items-center bg-acento text-sm font-bold text-acento-contraste">
+                {i + 1}
+              </span>
+              <span>{paso}</span>
+            </li>
+          ))}
+        </ol>
+      </section>
+    )
+  }
+
+  {
+    entidad.niveles && (
+      <section class="mb-6">
+        <h2 class="mb-3 text-lg font-bold">{ui(idioma, 'ficha.tradeos')}</h2>
+        <div class="space-y-3">
+          {entidad.niveles.map((nivel) => (
+            <div class="bloque p-3">
+              <h3 class="mb-2 font-bold">{ui(idioma, `aldeano.nivel.${nivel.nivel}`)}</h3>
+              <ul class="space-y-2">
+                {nivel.tradeos.map((trato) => (
+                  <li class="flex flex-wrap items-center gap-2 text-sm">
+                    <span class="text-texto-suave">
+                      {trato.recibe
+                        .map((r) => `${r.cantidad} × ${t(idioma, r.item).nombre}`)
+                        .join(' + ')}
+                    </span>
+                    <span aria-hidden="true">→</span>
+                    <a href={rutaDe(idioma, trato.entrega.encantamiento ?? trato.entrega.item)} class="font-semibold hover:text-acento">
+                      {t(idioma, trato.entrega.encantamiento ?? trato.entrega.item).nombre}
+                    </a>
+                    {trato.precioMinimo && (
+                      <span class="text-texto-suave">
+                        · {ui(idioma, 'ficha.mejorPrecio')}: {trato.precioMinimo}
+                      </span>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  {
+    (texto.notas || texto.consejo || texto.advertencia) && (
+      <section class="mb-8 max-w-prose space-y-3">
+        {texto.notas && <p class="bloque p-3">{texto.notas}</p>}
+        {texto.consejo && <p class="bloque p-3">{texto.consejo}</p>}
+        {texto.advertencia && (
+          <p class="bloque border-l-4 border-l-[var(--etapa-nether)] p-3 font-semibold">
+            {texto.advertencia}
+          </p>
+        )}
+      </section>
+    )
+  }
+
+  {/* Aquí está el valor real de la wiki: todo lo conectado, ya resuelto, para
+      que nadie tenga que volver al buscador. */}
+  {
+    grupos.map((grupo) => (
+      <section class="mb-8">
+        <h2 class="mb-3 text-lg font-bold">{ui(idioma, grupo.etiqueta)}</h2>
+        <ul class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          {grupo.ids.map((otro) => (
+            <li>
+              <TarjetaEntidad idioma={idioma} id={otro} />
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+</Base>

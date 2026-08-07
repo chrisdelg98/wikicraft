@@ -1,0 +1,16 @@
+---
+import { ui } from '../lib/datos.js'
+
+const { idioma, etapa, conTexto = true } = Astro.props
+---
+
+<span
+  class="inline-flex items-center gap-1.5 text-sm font-semibold whitespace-nowrap"
+  title={ui(idioma, 'etapa.explicacion')}
+>
+  <span
+    class="h-2.5 w-2.5 shrink-0"
+    style={`background:var(--etapa-${etapa})`}
+    aria-hidden="true"></span>
+  {conTexto && <span>{ui(idioma, `etapa.${etapa}`)}</span>}
+</span>

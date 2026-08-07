@@ -1,0 +1,182 @@
+@import 'tailwindcss';
+
+/* El tema puede forzarse con data-tema en <html>; si no, manda el sistema. */
+@custom-variant oscuro (&:where([data-tema='oscuro'], [data-tema='oscuro'] *));
+
+/* ---------------------------------------------------------------------------
+   Paleta
+   Inspirada en Minecraft sin copiarlo: tierra, hierba, piedra y los colores de
+   los minerales, pero desaturados para que se puedan leer parrafos encima.
+   --------------------------------------------------------------------------- */
+
+:root {
+  --fondo: #f2efe6;
+  --superficie: #fbf9f4;
+  --superficie-alta: #ffffff;
+  --borde: #ded7c7;
+  --borde-fuerte: #c4baa4;
+  --texto: #2b2721;
+  --texto-suave: #6b6355;
+  --acento: #4f7d33;
+  --acento-claro: #6b9c4a;
+  --acento-contraste: #ffffff;
+  --sombra: rgba(43, 39, 33, 0.1);
+
+  --etapa-inicio: #6b9c4a;
+  --etapa-hierro: #9a9a9a;
+  --etapa-diamante: #3fb8c4;
+  --etapa-nether: #b5462f;
+  --etapa-end: #8b6fc4;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-tema='claro']) {
+    --fondo: #16151a;
+    --superficie: #1e1d24;
+    --superficie-alta: #26252e;
+    --borde: #35333e;
+    --borde-fuerte: #4a4757;
+    --texto: #ece9f0;
+    --texto-suave: #a29eb0;
+    --acento: #7cb85c;
+    --acento-claro: #92cf70;
+    --acento-contraste: #10230a;
+    --sombra: rgba(0, 0, 0, 0.4);
+
+    --etapa-inicio: #7cb85c;
+    --etapa-hierro: #b0b0b0;
+    --etapa-diamante: #58d3df;
+    --etapa-nether: #e06a4f;
+    --etapa-end: #a98fe0;
+  }
+}
+
+:root[data-tema='oscuro'] {
+  --fondo: #16151a;
+  --superficie: #1e1d24;
+  --superficie-alta: #26252e;
+  --borde: #35333e;
+  --borde-fuerte: #4a4757;
+  --texto: #ece9f0;
+  --texto-suave: #a29eb0;
+  --acento: #7cb85c;
+  --acento-claro: #92cf70;
+  --acento-contraste: #10230a;
+  --sombra: rgba(0, 0, 0, 0.4);
+
+  --etapa-inicio: #7cb85c;
+  --etapa-hierro: #b0b0b0;
+  --etapa-diamante: #58d3df;
+  --etapa-nether: #e06a4f;
+  --etapa-end: #a98fe0;
+}
+
+@theme inline {
+  --color-fondo: var(--fondo);
+  --color-superficie: var(--superficie);
+  --color-superficie-alta: var(--superficie-alta);
+  --color-borde: var(--borde);
+  --color-borde-fuerte: var(--borde-fuerte);
+  --color-texto: var(--texto);
+  --color-texto-suave: var(--texto-suave);
+  --color-acento: var(--acento);
+  --color-acento-claro: var(--acento-claro);
+  --color-acento-contraste: var(--acento-contraste);
+
+  --font-sans:
+    'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+
+  /* Esquinas apenas redondeadas: recuerdan al pixel sin ser cuadradas del todo. */
+  --radius-bloque: 4px;
+}
+
+/* ---------------------------------------------------------------------------
+   Base
+   --------------------------------------------------------------------------- */
+
+html {
+  scroll-behavior: smooth;
+  background: var(--fondo);
+}
+
+body {
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: var(--font-sans);
+  /* Cuerpo generoso: buena parte del publico son ninos. */
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--acento);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   El bloque
+   Un bloque de Minecraft tiene la cara superior iluminada y la inferior en
+   sombra. Reducido a un borde de dos tonos, da el aire del juego sin imitar su
+   interfaz ni estorbar a la lectura.
+   --------------------------------------------------------------------------- */
+
+@utility bloque {
+  background: var(--superficie);
+  border: 2px solid var(--borde);
+  border-top-color: var(--superficie-alta);
+  border-left-color: var(--superficie-alta);
+  border-bottom-color: var(--borde-fuerte);
+  border-right-color: var(--borde-fuerte);
+  border-radius: var(--radius-bloque);
+}
+
+@utility bloque-pulsable {
+  transition:
+    transform 140ms ease,
+    box-shadow 140ms ease,
+    border-color 140ms ease;
+}
+
+.bloque-pulsable:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 -2px var(--sombra);
+  border-bottom-color: var(--acento);
+}
+
+.bloque-pulsable:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Trama sutil de cuadricula, como el pixelado de una textura vista de lejos. */
+@utility trama {
+  background-image:
+    linear-gradient(var(--borde) 1px, transparent 1px),
+    linear-gradient(90deg, var(--borde) 1px, transparent 1px);
+  background-size: 32px 32px;
+  opacity: 0.35;
+}
