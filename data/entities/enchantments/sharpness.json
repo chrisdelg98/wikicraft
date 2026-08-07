@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/enchantment.schema.json",
+  "id": "sharpness",
+  "tipo": "encantamiento",
+  "nivelMaximo": 5,
+  "categoria": "dano",
+  "aplicableA": ["espada", "hacha"],
+  "incompatibleCon": ["smite"],
+  "esTesoro": false,
+  "esMaldicion": false,
+  "obtenidoDe": ["librarian"],
+  "etiquetas": ["filo", "sharpness", "dano"]
+}

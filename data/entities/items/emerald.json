@@ -1,0 +1,9 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "emerald",
+  "tipo": "item",
+  "categorias": ["mineral", "material"],
+  "pila": 64,
+  "renovable": true,
+  "etiquetas": ["esmeralda", "moneda", "comercio"]
+}

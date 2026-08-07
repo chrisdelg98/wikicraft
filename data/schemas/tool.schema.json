@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wikicraft/schemas/tool.schema.json",
+  "title": "Herramienta o armadura",
+  "description": "Pieza de equipo con durabilidad. La lista de encantamientos COMPATIBLES no se guarda aqui: se deriva en el build cruzando 'categoria' con el campo 'aplicableA' de cada encantamiento. Solo se declara la recomendacion editorial, que es un juicio y no un dato del juego.",
+
+  "allOf": [{ "$ref": "_comun.schema.json#/$defs/entidad" }],
+
+  "type": "object",
+  "required": ["id", "tipo", "categoria", "material", "durabilidad"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "id": { "$ref": "_comun.schema.json#/$defs/id" },
+    "tipo": {
+      "type": "string",
+      "enum": ["herramienta", "armadura"]
+    },
+    "desdeVersion": { "$ref": "_comun.schema.json#/$defs/version" },
+    "hastaVersion": { "$ref": "_comun.schema.json#/$defs/version" },
+    "etiquetas": { "type": "array", "items": { "type": "string" } },
+
+    "categoria": {
+      "type": "string",
+      "description": "Debe coincidir con los valores que usan los encantamientos en 'aplicableA'.",
+      "enum": [
+        "espada",
+        "hacha",
+        "pico",
+        "pala",
+        "azada",
+        "arco",
+        "ballesta",
+        "tridente",
+        "casco",
+        "pechera",
+        "pantalones",
+        "botas",
+        "elitros",
+        "escudo"
+      ]
+    },
+
+    "material": {
+      "type": "string",
+      "enum": [
+        "madera",
+        "piedra",
+        "hierro",
+        "oro",
+        "diamante",
+        "netherita",
+        "cuero",
+        "malla",
+        "turtle",
+        "ninguno"
+      ]
+    },
+
+    "durabilidad": { "type": "integer", "minimum": 1 },
+
+    "dano": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Puntos de dano por golpe. Solo en armas."
+    },
+
+    "velocidadAtaque": { "type": "number", "exclusiveMinimum": 0 },
+
+    "puntosArmadura": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Solo en armaduras."
+    },
+
+    "dureza": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Resistencia de la armadura frente a danos altos."
+    },
+
+    "materiales": {
+      "type": "array",
+      "description": "Ingredientes del crafteo. Se sustituira por una referencia al modulo de recetas cuando exista.",
+      "items": { "$ref": "_comun.schema.json#/$defs/ingrediente" }
+    },
+
+    "reparadoCon": {
+      "$ref": "_comun.schema.json#/$defs/referencias",
+      "description": "Items validos en el yunque para restaurar durabilidad."
+    },
+
+    "encantamientosRecomendados": {
+      "$ref": "_comun.schema.json#/$defs/referencias",
+      "description": "Seleccion editorial, en orden de prioridad. Debe ser un subconjunto de los compatibles; el validador lo comprueba."
+    },
+
+    "mobsIdeales": {
+      "$ref": "_comun.schema.json#/$defs/referencias",
+      "description": "Mobs contra los que esta pieza destaca."
+    }
+  },
+  "additionalProperties": false
+}

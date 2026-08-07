@@ -1,0 +1,8 @@
+{
+  "diamond_sword": {
+    "nombre": "Espada de Diamante",
+    "slug": "espada-de-diamante",
+    "descripcion": "El arma cuerpo a cuerpo de referencia durante casi toda la partida. Combina un daño alto con una durabilidad que aguanta miles de golpes.",
+    "notas": "Encantada con Filo, Reparación e Irrompibilidad deja de necesitar mantenimiento: la experiencia de los propios combates la repara sola."
+  }
+}

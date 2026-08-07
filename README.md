@@ -12,8 +12,10 @@ buscador.
 
 ## Estado
 
-Proyecto en fase inicial. La estructura base está montada; el modelado de datos
-(Fase 0) es el siguiente paso.
+Fase 0, modelado de datos. Los esquemas de las entidades núcleo (objetos,
+encantamientos, equipo y aldeanos) están definidos, con soporte multi-idioma y
+un validador que garantiza la integridad del grafo. Faltan los módulos de
+pociones, crafteos, biomas, mobs y granjas, y poblar el contenido real.
 
 ## Principios de arquitectura
 
@@ -36,10 +38,13 @@ El objetivo declarado es la velocidad, y de ahí sale todo lo demás:
 ## Estructura del repositorio
 
 ```
-data/             Fuente de verdad del contenido
-  schemas/        Esquemas que validan cada tipo de entidad
-  entities/       Datos por módulo (encantamientos, pociones, mobs, …)
-scripts/          Utilidades de build: validación, índice de búsqueda
+data/
+  locales.json    Idiomas soportados, idioma base y módulos activos
+  schemas/        Esquemas que definen la forma de cada tipo de entidad
+  entities/       Datos estructurales por módulo, sin una sola palabra traducible
+  i18n/<idioma>/  Textos traducibles, un archivo por módulo
+scripts/
+  validar.mjs     Valida el modelo completo. Sin dependencias
 ```
 
 Además existen dos rutas locales que no se versionan, porque son herramientas
@@ -55,6 +60,30 @@ nodos. Las páginas no «buscan» sus relaciones: las resuelven contra el conjun
 de datos que ya está en memoria. Ese es el mecanismo que hace que la navegación
 se sienta instantánea, y es la razón por la que el modelado de datos merece más
 cuidado que cualquier otra parte del proyecto.
+
+## Multi-idioma
+
+El contenido arranca en español y admite más idiomas sin tocar los datos del
+juego. La clave está en que la mayor parte de una wiki de Minecraft no es texto:
+durabilidad, daño, incompatibilidades entre encantamientos o precios de aldeanos
+son idénticos en cualquier idioma. Solo se traducen nombres, descripciones y
+notas, que viven en archivos aparte bajo `data/i18n/`.
+
+Añadir un idioma es, por tanto, añadir una carpeta de textos. Si una traducción
+falta, la página se muestra en el idioma base marcando el hueco en lugar de
+romperse.
+
+## Validación
+
+```
+npm run validar
+```
+
+Comprueba que los identificadores sean válidos y únicos, que **toda relación
+apunte a una entidad que existe**, que las incompatibilidades estén declaradas
+en ambos sentidos, que ninguna recomendación sea contradictoria y qué cobertura
+de traducción tiene cada idioma. Conviene ejecutarlo antes de cerrar cualquier
+cambio en `data/`.
 
 ## Módulos previstos
 

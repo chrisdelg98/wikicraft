@@ -1,0 +1,8 @@
+{
+  "librarian": {
+    "nombre": "Bibliotecario",
+    "slug": "bibliotecario",
+    "descripcion": "La profesión más rentable del juego. Vende libros encantados, incluidos los de tesoro que no pueden salir de la mesa de encantamientos.",
+    "notas": "Antes de comerciar con él por primera vez puedes romper y recolocar su atril para volver a tirar sus tratos. Curarlo de zombi baja los precios de forma permanente y acumulable."
+  }
+}

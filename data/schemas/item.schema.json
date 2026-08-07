@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wikicraft/schemas/item.schema.json",
+  "title": "Item",
+  "description": "Objeto o bloque del juego. Es el nodo mas basico del grafo: casi todo lo demas lo referencia como material, ingrediente o botin.",
+
+  "allOf": [{ "$ref": "_comun.schema.json#/$defs/entidad" }],
+
+  "type": "object",
+  "required": ["id", "tipo", "categorias", "pila"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "id": { "$ref": "_comun.schema.json#/$defs/id" },
+    "tipo": { "const": "item" },
+    "desdeVersion": { "$ref": "_comun.schema.json#/$defs/version" },
+    "hastaVersion": { "$ref": "_comun.schema.json#/$defs/version" },
+    "etiquetas": { "type": "array", "items": { "type": "string" } },
+
+    "categorias": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "bloque",
+          "material",
+          "mineral",
+          "comida",
+          "herramienta",
+          "armadura",
+          "arma",
+          "pocion",
+          "utilidad",
+          "decorativo",
+          "vegetal",
+          "combustible"
+        ]
+      }
+    },
+
+    "pila": { "$ref": "_comun.schema.json#/$defs/pila" },
+
+    "renovable": {
+      "type": "boolean",
+      "description": "Si puede conseguirse de forma indefinida sin agotar el mundo."
+    },
+
+    "obtenidoDe": {
+      "$ref": "_comun.schema.json#/$defs/referencias",
+      "description": "Mobs, biomas, estructuras o aldeanos de los que procede."
+    },
+
+    "combustible": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Presente solo si sirve como combustible en un horno.",
+      "properties": {
+        "segundos": { "type": "number", "exclusiveMinimum": 0 }
+      },
+      "required": ["segundos"]
+    }
+  },
+  "additionalProperties": false
+}

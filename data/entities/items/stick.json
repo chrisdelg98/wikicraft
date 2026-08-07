@@ -1,0 +1,10 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "stick",
+  "tipo": "item",
+  "categorias": ["material", "combustible"],
+  "pila": 64,
+  "renovable": true,
+  "combustible": { "segundos": 5 },
+  "etiquetas": ["palo", "mango"]
+}

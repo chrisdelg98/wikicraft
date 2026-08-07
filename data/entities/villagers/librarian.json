@@ -1,0 +1,69 @@
+{
+  "$schema": "../../schemas/villager.schema.json",
+  "id": "librarian",
+  "tipo": "aldeano",
+  "mesaDeTrabajo": "lectern",
+  "etiquetas": ["bibliotecario", "librarian", "libros encantados"],
+  "niveles": [
+    {
+      "nivel": 1,
+      "tradeos": [
+        {
+          "id": "librarian_n1_libro_sharpness",
+          "entrega": {
+            "item": "enchanted_book",
+            "cantidad": 1,
+            "encantamiento": "sharpness",
+            "nivelEncantamiento": 1
+          },
+          "recibe": [
+            { "item": "emerald", "cantidad": 12 },
+            { "item": "book", "cantidad": 1 }
+          ],
+          "precioMinimo": 5,
+          "precioMaximo": 64
+        }
+      ]
+    },
+    {
+      "nivel": 2,
+      "tradeos": [
+        {
+          "id": "librarian_n2_libro_unbreaking",
+          "entrega": {
+            "item": "enchanted_book",
+            "cantidad": 1,
+            "encantamiento": "unbreaking",
+            "nivelEncantamiento": 2
+          },
+          "recibe": [
+            { "item": "emerald", "cantidad": 18 },
+            { "item": "book", "cantidad": 1 }
+          ],
+          "precioMinimo": 8,
+          "precioMaximo": 64
+        }
+      ]
+    },
+    {
+      "nivel": 5,
+      "tradeos": [
+        {
+          "id": "librarian_n5_libro_mending",
+          "entrega": {
+            "item": "enchanted_book",
+            "cantidad": 1,
+            "encantamiento": "mending",
+            "nivelEncantamiento": 1
+          },
+          "recibe": [
+            { "item": "emerald", "cantidad": 30 },
+            { "item": "book", "cantidad": 1 }
+          ],
+          "precioMinimo": 10,
+          "precioMaximo": 64
+        }
+      ]
+    }
+  ]
+}

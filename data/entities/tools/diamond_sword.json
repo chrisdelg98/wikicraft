@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "diamond_sword",
+  "tipo": "herramienta",
+  "categoria": "espada",
+  "material": "diamante",
+  "durabilidad": 1561,
+  "dano": 7,
+  "velocidadAtaque": 1.6,
+  "materiales": [
+    { "item": "diamond", "cantidad": 2 },
+    { "item": "stick", "cantidad": 1 }
+  ],
+  "reparadoCon": ["diamond"],
+  "encantamientosRecomendados": ["sharpness", "mending", "unbreaking"],
+  "etiquetas": ["espada de diamante", "arma", "cuerpo a cuerpo"]
+}

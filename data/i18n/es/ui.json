@@ -1,0 +1,44 @@
+{
+  "sitio.nombre": "Wikicraft",
+  "sitio.lema": "Todo Minecraft, conectado",
+
+  "buscador.etiqueta": "Buscar",
+  "buscador.marcador": "Busca un objeto, encantamiento, mob…",
+  "buscador.sinResultados": "No encontramos nada para «{consulta}»",
+  "buscador.resultados": "{n} resultados",
+
+  "nav.inicio": "Inicio",
+  "nav.encantamientos": "Encantamientos",
+  "nav.pociones": "Pociones",
+  "nav.aldeanos": "Aldeanos",
+  "nav.crafteos": "Crafteos",
+  "nav.biomas": "Biomas",
+  "nav.herramientas": "Herramientas",
+  "nav.mobs": "Mobs",
+  "nav.granjas": "Granjas",
+
+  "ficha.crafteo": "Crafteo",
+  "ficha.materiales": "Materiales",
+  "ficha.reparadoCon": "Se repara con",
+  "ficha.encantamientosRecomendados": "Encantamientos recomendados",
+  "ficha.encantamientosCompatibles": "Encantamientos compatibles",
+  "ficha.incompatibleCon": "No combina con",
+  "ficha.seVendePor": "Lo venden",
+  "ficha.relacionado": "Relacionado",
+  "ficha.durabilidad": "Durabilidad",
+  "ficha.dano": "Daño",
+  "ficha.nivelMaximo": "Nivel máximo",
+
+  "aldeano.nivel.1": "Novato",
+  "aldeano.nivel.2": "Aprendiz",
+  "aldeano.nivel.3": "Oficial",
+  "aldeano.nivel.4": "Experto",
+  "aldeano.nivel.5": "Maestro",
+  "aldeano.mejorPrecio": "Mejor precio posible",
+
+  "idioma.cambiar": "Cambiar idioma",
+  "idioma.sinTraducir": "Sin traducir todavía. Se muestra en español.",
+
+  "tema.claro": "Tema claro",
+  "tema.oscuro": "Tema oscuro"
+}

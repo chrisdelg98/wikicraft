@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/enchantment.schema.json",
+  "id": "infinity",
+  "tipo": "encantamiento",
+  "nivelMaximo": 1,
+  "categoria": "utilidad",
+  "aplicableA": ["arco"],
+  "incompatibleCon": ["mending"],
+  "esTesoro": false,
+  "esMaldicion": false,
+  "obtenidoDe": ["librarian"],
+  "etiquetas": ["infinidad", "infinity", "flechas"]
+}

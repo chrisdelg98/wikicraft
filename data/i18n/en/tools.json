@@ -1,0 +1,8 @@
+{
+  "diamond_sword": {
+    "nombre": "Diamond Sword",
+    "slug": "diamond-sword",
+    "descripcion": "The reference melee weapon for most of a playthrough. It pairs high damage with durability that survives thousands of hits.",
+    "notas": "With Sharpness, Mending and Unbreaking it stops needing maintenance: the experience from the fights themselves repairs it."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "base": "es",
+  "idiomas": [
+    {
+      "codigo": "es",
+      "nombre": "Español",
+      "nombreNativo": "Español",
+      "direccion": "ltr",
+      "respaldo": null
+    },
+    {
+      "codigo": "en",
+      "nombre": "Inglés",
+      "nombreNativo": "English",
+      "direccion": "ltr",
+      "respaldo": "es"
+    }
+  ],
+  "modulos": [
+    "items",
+    "enchantments",
+    "tools",
+    "villagers"
+  ],
+  "notas": "El idioma base nunca puede tener claves ausentes: es el respaldo final de todos los demas. Anadir un idioma es anadir una entrada aqui y una carpeta en data/i18n/. Los modulos listados son los que ya tienen esquema; se amplia conforme avanza la Fase 0."
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/enchantment.schema.json",
+  "id": "smite",
+  "tipo": "encantamiento",
+  "nivelMaximo": 5,
+  "categoria": "dano",
+  "aplicableA": ["espada", "hacha"],
+  "incompatibleCon": ["sharpness"],
+  "esTesoro": false,
+  "esMaldicion": false,
+  "obtenidoDe": ["librarian"],
+  "etiquetas": ["castigo", "smite", "no muertos"]
+}

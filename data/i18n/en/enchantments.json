@@ -1,0 +1,14 @@
+{
+  "mending": {
+    "nombre": "Mending",
+    "slug": "mending",
+    "descripcion": "Converts the experience you pick up into durability for the gear you are wearing or holding. As long as you keep earning experience, your equipment never wears out.",
+    "notas": "It conflicts with Infinity, so on a bow you must choose between never spending arrows and never spending the bow."
+  },
+  "sharpness": {
+    "nombre": "Sharpness",
+    "slug": "sharpness",
+    "descripcion": "Increases damage against any target. It is the default choice on swords and axes.",
+    "notas": "Cannot coexist with Smite. Sharpness is better in general; Smite only wins against undead."
+  }
+}

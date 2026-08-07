@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wikicraft/schemas/_comun.schema.json",
+  "title": "Definiciones comunes de Wikicraft",
+  "description": "Piezas reutilizadas por el resto de esquemas. No describe una entidad por si mismo.",
+
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$",
+      "description": "Identificador estable en snake_case. Coincide con el nombre del recurso en el juego cuando existe. Renombrarlo rompe todas las relaciones que apuntan a el."
+    },
+
+    "referencia": {
+      "$ref": "#/$defs/id",
+      "description": "Identificador de otra entidad del grafo. El validador comprueba que exista."
+    },
+
+    "referencias": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/referencia" },
+      "uniqueItems": true,
+      "default": []
+    },
+
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$",
+      "description": "Version de Minecraft, por ejemplo 1.21 o 1.20.4."
+    },
+
+    "cantidad": {
+      "type": "integer",
+      "minimum": 1
+    },
+
+    "pila": {
+      "type": "integer",
+      "enum": [1, 16, 64],
+      "description": "Cuantas unidades caben en una ranura del inventario."
+    },
+
+    "entidad": {
+      "type": "object",
+      "required": ["id", "tipo"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "tipo": {
+          "type": "string",
+          "enum": [
+            "item",
+            "encantamiento",
+            "herramienta",
+            "armadura",
+            "aldeano",
+            "pocion",
+            "receta",
+            "bioma",
+            "estructura",
+            "mob",
+            "granja"
+          ]
+        },
+        "desdeVersion": { "$ref": "#/$defs/version" },
+        "hastaVersion": { "$ref": "#/$defs/version" },
+        "etiquetas": {
+          "type": "array",
+          "items": { "type": "string" },
+          "uniqueItems": true,
+          "description": "Palabras clave libres que alimentan el buscador. No son relaciones."
+        }
+      }
+    },
+
+    "ingrediente": {
+      "type": "object",
+      "required": ["item", "cantidad"],
+      "additionalProperties": false,
+      "properties": {
+        "item": { "$ref": "#/$defs/referencia" },
+        "cantidad": { "$ref": "#/$defs/cantidad" }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "diamond": {
+    "nombre": "Diamond",
+    "slug": "diamond",
+    "descripcion": "An uncommon gem found in the deep layers of the world. It is the material behind high-end gear before netherite."
+  },
+  "stick": {
+    "nombre": "Stick",
+    "slug": "stick",
+    "descripcion": "A basic material that forms the handle of nearly every tool and weapon. Crafted from planks and effectively unlimited."
+  },
+  "emerald": {
+    "nombre": "Emerald",
+    "slug": "emerald",
+    "descripcion": "The currency of villager trading. It is not used as gear material, but it unlocks everything villagers sell."
+  },
+  "book": {
+    "nombre": "Book",
+    "slug": "book",
+    "descripcion": "Crafted from paper and leather. A common ingredient in librarian trades and at the enchanting table."
+  },
+  "enchanted_book": {
+    "nombre": "Enchanted Book",
+    "slug": "enchanted-book",
+    "descripcion": "Holds an enchantment until it is applied to a piece of gear on an anvil. It is the only practical way to obtain treasure enchantments."
+  },
+  "lectern": {
+    "nombre": "Lectern",
+    "slug": "lectern",
+    "descripcion": "The block that turns an unemployed villager into a librarian. Breaking and replacing it rerolls their trades."
+  }
+}

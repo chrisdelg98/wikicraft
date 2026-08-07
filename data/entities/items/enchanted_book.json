@@ -1,0 +1,10 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "enchanted_book",
+  "tipo": "item",
+  "categorias": ["utilidad"],
+  "pila": 1,
+  "renovable": true,
+  "obtenidoDe": ["librarian"],
+  "etiquetas": ["libro encantado", "yunque", "encantamiento"]
+}

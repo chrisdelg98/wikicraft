@@ -1,0 +1,9 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "diamond",
+  "tipo": "item",
+  "categorias": ["mineral", "material"],
+  "pila": 64,
+  "renovable": false,
+  "etiquetas": ["diamante", "gema", "mineral raro"]
+}

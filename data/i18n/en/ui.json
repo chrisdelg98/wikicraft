@@ -1,0 +1,22 @@
+{
+  "sitio.nombre": "Wikicraft",
+  "sitio.lema": "All of Minecraft, connected",
+
+  "buscador.etiqueta": "Search",
+  "buscador.marcador": "Search an item, enchantment, mob…",
+  "buscador.sinResultados": "Nothing found for “{consulta}”",
+  "buscador.resultados": "{n} results",
+
+  "nav.inicio": "Home",
+  "nav.encantamientos": "Enchantments",
+  "nav.pociones": "Potions",
+  "nav.aldeanos": "Villagers",
+  "nav.crafteos": "Crafting",
+  "nav.biomas": "Biomes",
+  "nav.herramientas": "Tools",
+  "nav.mobs": "Mobs",
+  "nav.granjas": "Farms",
+
+  "idioma.cambiar": "Change language",
+  "idioma.sinTraducir": "Not translated yet. Showing Spanish."
+}

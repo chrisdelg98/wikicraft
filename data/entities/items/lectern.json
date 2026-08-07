@@ -1,0 +1,9 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "lectern",
+  "tipo": "item",
+  "categorias": ["bloque", "utilidad"],
+  "pila": 64,
+  "renovable": true,
+  "etiquetas": ["atril", "mesa de trabajo", "bibliotecario"]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "wikicraft",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Wiki relacional de Minecraft: rapida, instalable y navegable por conexiones.",
+  "type": "module",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validar": "node scripts/validar.mjs"
+  }
+}

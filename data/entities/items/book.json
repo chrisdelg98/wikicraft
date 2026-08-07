@@ -1,0 +1,9 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "book",
+  "tipo": "item",
+  "categorias": ["material", "utilidad"],
+  "pila": 64,
+  "renovable": true,
+  "etiquetas": ["libro", "papel", "cuero"]
+}

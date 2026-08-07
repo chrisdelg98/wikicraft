@@ -1,0 +1,32 @@
+{
+  "mending": {
+    "nombre": "Reparación",
+    "slug": "reparacion",
+    "descripcion": "Convierte la experiencia que recoges en durabilidad para la pieza equipada. Mientras sigas ganando experiencia, el equipo no se gasta.",
+    "notas": "Es incompatible con Infinidad, así que en un arco hay que elegir entre no gastar flechas o no gastar el arco."
+  },
+  "unbreaking": {
+    "nombre": "Irrompibilidad",
+    "slug": "irrompibilidad",
+    "descripcion": "Da una probabilidad de que un uso no descuente durabilidad. En la práctica multiplica la vida útil de la pieza.",
+    "notas": "Combina especialmente bien con Reparación: menos desgaste que compensar."
+  },
+  "sharpness": {
+    "nombre": "Filo",
+    "slug": "filo",
+    "descripcion": "Aumenta el daño contra cualquier objetivo. Es la opción por defecto en espadas y hachas.",
+    "notas": "No puede convivir con Castigo. Filo es mejor de forma general; Castigo solo gana contra no muertos."
+  },
+  "smite": {
+    "nombre": "Castigo",
+    "slug": "castigo",
+    "descripcion": "Aumenta mucho el daño contra criaturas no muertas como zombis, esqueletos y ahogados, pero no afecta al resto.",
+    "notas": "Solo compensa frente a Filo si tienes una granja centrada en no muertos."
+  },
+  "infinity": {
+    "nombre": "Infinidad",
+    "slug": "infinidad",
+    "descripcion": "Permite disparar sin consumir flechas mientras lleves al menos una en el inventario.",
+    "notas": "Incompatible con Reparación. No funciona con flechas especiales, que sí se gastan."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schemas/enchantment.schema.json",
+  "id": "mending",
+  "tipo": "encantamiento",
+  "nivelMaximo": 1,
+  "categoria": "utilidad",
+  "aplicableA": [
+    "espada", "hacha", "pico", "pala", "azada",
+    "arco", "ballesta", "tridente",
+    "casco", "pechera", "pantalones", "botas",
+    "elitros", "escudo", "cana", "tijeras", "mechero"
+  ],
+  "incompatibleCon": ["infinity"],
+  "esTesoro": true,
+  "esMaldicion": false,
+  "obtenidoDe": ["librarian"],
+  "etiquetas": ["reparacion", "mending", "experiencia", "durabilidad infinita"]
+}

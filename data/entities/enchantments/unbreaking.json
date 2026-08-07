@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schemas/enchantment.schema.json",
+  "id": "unbreaking",
+  "tipo": "encantamiento",
+  "nivelMaximo": 3,
+  "categoria": "utilidad",
+  "aplicableA": [
+    "espada", "hacha", "pico", "pala", "azada",
+    "arco", "ballesta", "tridente",
+    "casco", "pechera", "pantalones", "botas",
+    "elitros", "escudo", "cana", "tijeras", "mechero"
+  ],
+  "incompatibleCon": [],
+  "esTesoro": false,
+  "esMaldicion": false,
+  "obtenidoDe": ["librarian"],
+  "etiquetas": ["irrompibilidad", "unbreaking", "durabilidad"]
+}
