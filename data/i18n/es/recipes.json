@@ -1,10 +1,10 @@
 {
-  "blaze_powder_recipe": {
+  "blaze_powder_receta": {
     "nombre": "Polvo de blaze",
     "slug": "receta-polvo-de-blaze",
     "descripcion": "Pon una vara de blaze en cualquier hueco y obtendrás dos polvos. No hace falta mesa de trabajo: puedes hacerlo desde tu propio inventario."
   },
-  "diamond_sword_recipe": {
+  "diamond_sword_receta": {
     "nombre": "Espada de diamante",
     "slug": "receta-espada-de-diamante",
     "descripcion": "Dos diamantes uno encima del otro, y un palo debajo. Necesitas mesa de trabajo, porque el inventario solo tiene espacio para dos por dos."

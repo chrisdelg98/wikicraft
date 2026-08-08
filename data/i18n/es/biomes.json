@@ -1,9 +1,179 @@
 {
-  "plains": {
-    "nombre": "Llanura",
-    "slug": "llanura",
-    "descripcion": "Terreno plano y despejado, con hierba y algún árbol suelto. Es el mejor sitio para empezar una partida: se ve venir a los enemigos y es fácil construir.",
-    "notas": "Aquí aparecen muchas aldeas, así que es un buen lugar para conseguir tu primer bibliotecario."
+  "badlands": {
+    "nombre": "Tierras áridas",
+    "slug": "tierras-aridas",
+    "descripcion": "Un cañón de terracota de colores. Aquí el oro aparece mucho más arriba de lo normal, así que es el mejor sitio para buscarlo."
+  },
+  "bamboo_jungle": {
+    "nombre": "Jungla de bambú",
+    "slug": "jungla-de-bambu",
+    "descripcion": "Jungla llena de bambú y pandas. El bambú crece rapidísimo y sirve de combustible casi infinito."
+  },
+  "basalt_deltas": {
+    "nombre": "Deltas de basalto",
+    "slug": "deltas-de-basalto",
+    "descripcion": "La zona más peligrosa del Nether: suelo irregular, lava por todas partes y ceniza que no te deja ver."
+  },
+  "beach": {
+    "nombre": "Playa",
+    "slug": "playa",
+    "descripcion": "La orilla entre el mar y la tierra. Aquí las tortugas ponen sus huevos y hay arena de sobra para hacer cristal."
+  },
+  "birch_forest": {
+    "nombre": "Bosque de abedules",
+    "slug": "bosque-de-abedules",
+    "descripcion": "Bosque claro de troncos blancos. Es tranquilo y da mucha madera de un color muy usado para construir."
+  },
+  "cherry_grove": {
+    "nombre": "Arboleda de cerezos",
+    "slug": "arboleda-de-cerezos",
+    "descripcion": "Colinas con cerezos en flor y pétalos cayendo. Es de los biomas más bonitos y da madera rosa."
+  },
+  "cold_ocean": {
+    "nombre": "Océano frío",
+    "slug": "oceano-frio",
+    "descripcion": "Mar de aguas frías con salmones y algas. Bajo el agua puede haber naufragios y ruinas."
+  },
+  "crimson_forest": {
+    "nombre": "Bosque carmesí",
+    "slug": "bosque-carmesi",
+    "descripcion": "Bosque rojo del Nether lleno de hongos gigantes, piglins y hoglins. Da madera que no arde."
+  },
+  "dark_forest": {
+    "nombre": "Bosque oscuro",
+    "slug": "bosque-oscuro",
+    "descripcion": "Los árboles tapan tanto la luz que aparecen mobs de día. Aquí es donde se generan las mansiones."
+  },
+  "deep_cold_ocean": {
+    "nombre": "Océano frío profundo",
+    "slug": "oceano-frio-profundo",
+    "descripcion": "Versión honda del océano frío. En el fondo pueden aparecer monumentos oceánicos."
+  },
+  "deep_dark": {
+    "nombre": "Oscuridad profunda",
+    "slug": "oscuridad-profunda",
+    "descripcion": "La zona más peligrosa del subsuelo. Los sensores detectan tus pasos y despiertan al warden."
+  },
+  "deep_frozen_ocean": {
+    "nombre": "Océano helado profundo",
+    "slug": "oceano-helado-profundo",
+    "descripcion": "Mar helado y hondo, con icebergs arriba y osos polares en la superficie."
+  },
+  "deep_lukewarm_ocean": {
+    "nombre": "Océano templado profundo",
+    "slug": "oceano-templado-profundo",
+    "descripcion": "Aguas cálidas y hondas donde suele haber monumentos y mucho pez tropical."
+  },
+  "deep_ocean": {
+    "nombre": "Océano profundo",
+    "slug": "oceano-profundo",
+    "descripcion": "Mar hondo de aguas normales. Es donde con más frecuencia aparecen los monumentos oceánicos."
+  },
+  "desert": {
+    "nombre": "Desierto",
+    "slug": "desierto",
+    "descripcion": "Arena, cactus y ni una gota de agua. Aquí están los templos del desierto y las aldeas de arenisca."
+  },
+  "dripstone_caves": {
+    "nombre": "Cuevas de goteo",
+    "slug": "cuevas-de-goteo",
+    "descripcion": "Cuevas llenas de estalactitas puntiagudas. Caen si rompes lo que las sujeta, así que mira hacia arriba."
+  },
+  "end_barrens": {
+    "nombre": "Yermo del End",
+    "slug": "yermo-del-end",
+    "descripcion": "El borde vacío de las islas del End. No hay prácticamente nada."
+  },
+  "end_highlands": {
+    "nombre": "Tierras altas del End",
+    "slug": "tierras-altas-del-end",
+    "descripcion": "Las islas exteriores del End, donde crecen los árboles de coro y se generan las ciudades."
+  },
+  "end_midlands": {
+    "nombre": "Tierras medias del End",
+    "slug": "tierras-medias-del-end",
+    "descripcion": "La zona intermedia de las islas exteriores del End. También pueden aparecer ciudades."
+  },
+  "eroded_badlands": {
+    "nombre": "Tierras áridas erosionadas",
+    "slug": "tierras-aridas-erosionadas",
+    "descripcion": "Tierras áridas con agujas de piedra altísimas. Espectacular de ver y muy fácil de caerse."
+  },
+  "flower_forest": {
+    "nombre": "Bosque florido",
+    "slug": "bosque-florido",
+    "descripcion": "Bosque cubierto de flores de todos los colores. Es el mejor sitio para conseguir tintes y para tener abejas."
+  },
+  "forest": {
+    "nombre": "Bosque",
+    "slug": "bosque",
+    "descripcion": "Robles y abedules por todas partes. Es el bioma más equilibrado para empezar una partida."
+  },
+  "frozen_ocean": {
+    "nombre": "Océano helado",
+    "slug": "oceano-helado",
+    "descripcion": "Mar cubierto de hielo y con icebergs. Hace tanto frío que te congelas si te metes en el agua."
+  },
+  "frozen_peaks": {
+    "nombre": "Picos helados",
+    "slug": "picos-helados",
+    "descripcion": "Montañas cubiertas de hielo puro. Muy difíciles de escalar y muy fáciles de morir en ellas."
+  },
+  "frozen_river": {
+    "nombre": "Río helado",
+    "slug": "rio-helado",
+    "descripcion": "Un río congelado que cruza los biomas nevados. Se puede caminar por encima."
+  },
+  "grove": {
+    "nombre": "Arboleda nevada",
+    "slug": "arboleda-nevada",
+    "descripcion": "Bosque de abetos cubierto de nieve, en la falda de las montañas. Aquí aparecen lobos y zorros blancos."
+  },
+  "ice_spikes": {
+    "nombre": "Picos de hielo",
+    "slug": "picos-de-hielo",
+    "descripcion": "Un bioma raro lleno de agujas gigantes de hielo compacto. Es la forma más fácil de conseguir hielo azul."
+  },
+  "jagged_peaks": {
+    "nombre": "Picos escarpados",
+    "slug": "picos-escarpados",
+    "descripcion": "Las montañas más altas del juego, con puntas afiladas de piedra y nieve."
+  },
+  "jungle": {
+    "nombre": "Jungla",
+    "slug": "jungla",
+    "descripcion": "Vegetación densa, lianas y ocelotes. Aquí están los templos de la jungla y el cacao."
+  },
+  "lukewarm_ocean": {
+    "nombre": "Océano templado",
+    "slug": "oceano-templado",
+    "descripcion": "Aguas cálidas con peces tropicales. Bonito de explorar y con buena visibilidad."
+  },
+  "lush_caves": {
+    "nombre": "Cuevas exuberantes",
+    "slug": "cuevas-exuberantes",
+    "descripcion": "Cuevas verdes con lagos, enredaderas y ajolotes. Se reconocen desde arriba por las azaleas."
+  },
+  "mangrove_swamp": {
+    "nombre": "Pantano de mangle",
+    "slug": "pantano-de-mangle",
+    "descripcion": "Pantano de raíces enredadas y barro. Aquí viven las ranas y hay mucho barro para construir."
+  },
+  "meadow": {
+    "nombre": "Pradera",
+    "slug": "pradera",
+    "descripcion": "Prado alto de flores con algún árbol suelto. Suele haber una cabaña de apicultor."
+  },
+  "mushroom_fields": {
+    "nombre": "Campos de setas",
+    "slug": "campos-de-setas",
+    "descripcion": "Una isla rarísima donde no aparece ningún mob hostil. Es el sitio más seguro de todo el juego."
+  },
+  "nether_fortress": {
+    "nombre": "Fortaleza del Nether",
+    "slug": "fortaleza-del-nether",
+    "descripcion": "Un castillo enorme de ladrillo oscuro que cruza el Nether. Es el único sitio donde encontrarás blazes y verruga del Nether, y por eso tarde o temprano tienes que venir.",
+    "notas": "Los pasillos son estrechos y hay lava debajo. Ve despacio, coloca bloques para taparte y no corras: la mayoría de las muertes aquí son por caídas, no por pelear."
   },
   "nether_wastes": {
     "nombre": "Páramos del Nether",
@@ -11,10 +181,155 @@
     "descripcion": "La zona más común del Nether: cuevas enormes de piedra roja, lagos de lava y ni una gota de agua. Es donde apareces al cruzar el portal.",
     "notas": "No lleves cama: explota si intentas dormir. Tampoco sirve el agua para apagar fuegos, porque se evapora al instante."
   },
-  "nether_fortress": {
-    "nombre": "Fortaleza del Nether",
-    "slug": "fortaleza-del-nether",
-    "descripcion": "Un castillo enorme de ladrillo oscuro que cruza el Nether. Es el único sitio donde encontrarás blazes y verruga del Nether, y por eso tarde o temprano tienes que venir.",
-    "notas": "Los pasillos son estrechos y hay lava debajo. Ve despacio, coloca bloques para taparte y no corras: la mayoría de las muertes aquí son por caídas, no por pelear."
+  "ocean": {
+    "nombre": "Océano",
+    "slug": "oceano",
+    "descripcion": "Mar abierto de aguas normales. Debajo hay naufragios, ruinas y a veces monumentos."
+  },
+  "old_growth_birch_forest": {
+    "nombre": "Bosque de abedules antiguo",
+    "slug": "bosque-de-abedules-antiguo",
+    "descripcion": "Como el bosque de abedules pero con árboles mucho más altos."
+  },
+  "old_growth_pine_taiga": {
+    "nombre": "Taiga de pinos antigua",
+    "slug": "taiga-de-pinos-antigua",
+    "descripcion": "Abetos gigantes con troncos de dos por dos. Aquí crecen las setas más grandes."
+  },
+  "old_growth_spruce_taiga": {
+    "nombre": "Taiga de abetos antigua",
+    "slug": "taiga-de-abetos-antigua",
+    "descripcion": "Bosque de abetos enormes y suelo cubierto de musgo y helechos."
+  },
+  "pale_garden": {
+    "nombre": "Jardín pálido",
+    "slug": "jardin-palido",
+    "descripcion": "Un bosque gris y silencioso donde acecha el acechador. No hay ningún otro mob."
+  },
+  "plains": {
+    "nombre": "Llanura",
+    "slug": "llanura",
+    "descripcion": "Terreno plano y despejado, con hierba y algún árbol suelto. Es el mejor sitio para empezar una partida: se ve venir a los enemigos y es fácil construir.",
+    "notas": "Aquí aparecen muchas aldeas, así que es un buen lugar para conseguir tu primer bibliotecario."
+  },
+  "river": {
+    "nombre": "Río",
+    "slug": "rio",
+    "descripcion": "Corriente de agua que cruza los biomas. Da arcilla, caña de azúcar y una forma cómoda de orientarse."
+  },
+  "savanna": {
+    "nombre": "Sabana",
+    "slug": "sabana",
+    "descripcion": "Hierba seca y acacias. Nunca llueve, hay aldeas y caballos en manada."
+  },
+  "savanna_plateau": {
+    "nombre": "Meseta de sabana",
+    "slug": "meseta-de-sabana",
+    "descripcion": "La parte alta de la sabana, plana y elevada. También aparecen aldeas aquí."
+  },
+  "small_end_islands": {
+    "nombre": "Islas pequeñas del End",
+    "slug": "islas-pequenas-del-end",
+    "descripcion": "Islotes sueltos flotando en el vacío entre la isla principal y las exteriores."
+  },
+  "snowy_beach": {
+    "nombre": "Playa nevada",
+    "slug": "playa-nevada",
+    "descripcion": "Orilla helada donde el mar se junta con la tierra nevada."
+  },
+  "snowy_plains": {
+    "nombre": "Llanura nevada",
+    "slug": "llanura-nevada",
+    "descripcion": "Llanura cubierta de nieve. Hay aldeas de iglú y osos polares cerca del agua."
+  },
+  "snowy_slopes": {
+    "nombre": "Laderas nevadas",
+    "slug": "laderas-nevadas",
+    "descripcion": "La subida a las montañas, con nieve polvo en la que te hundes si no llevas raquetas."
+  },
+  "snowy_taiga": {
+    "nombre": "Taiga nevada",
+    "slug": "taiga-nevada",
+    "descripcion": "Bosque de abetos con nieve. Aquí aparecen lobos y esqueletos glaciales."
+  },
+  "soul_sand_valley": {
+    "nombre": "Valle de arena de almas",
+    "slug": "valle-de-arena-de-almas",
+    "descripcion": "Valle del Nether de arena de almas y esqueletos gigantes. Aquí aparecen muchísimos ghasts."
+  },
+  "sparse_jungle": {
+    "nombre": "Jungla dispersa",
+    "slug": "jungla-dispersa",
+    "descripcion": "El borde de la jungla, con menos árboles y más fácil de cruzar."
+  },
+  "stony_peaks": {
+    "nombre": "Picos rocosos",
+    "slug": "picos-rocosos",
+    "descripcion": "Montañas altas sin nieve, de piedra desnuda, en las zonas cálidas."
+  },
+  "stony_shore": {
+    "nombre": "Orilla rocosa",
+    "slug": "orilla-rocosa",
+    "descripcion": "Costa de piedra en vez de arena, normalmente al pie de unas colinas."
+  },
+  "sunflower_plains": {
+    "nombre": "Llanura de girasoles",
+    "slug": "llanura-de-girasoles",
+    "descripcion": "Una llanura cubierta de girasoles, que además siempre apuntan al este y sirven de brújula."
+  },
+  "swamp": {
+    "nombre": "Pantano",
+    "slug": "pantano",
+    "descripcion": "Agua turbia, lianas y nenúfares. Aquí hay slimes de noche, arcilla y cabañas de bruja."
+  },
+  "taiga": {
+    "nombre": "Taiga",
+    "slug": "taiga",
+    "descripcion": "Bosque de abetos con helechos y bayas dulces. Hay lobos y aldeas de madera."
+  },
+  "the_end": {
+    "nombre": "El End",
+    "slug": "el-end",
+    "descripcion": "La isla central de la última dimensión, donde te espera el dragón. Todo es piedra del End y vacío."
+  },
+  "the_void": {
+    "nombre": "El vacío",
+    "slug": "el-vacio",
+    "descripcion": "La nada que hay debajo del mundo. Si caes ahí no hay vuelta atrás."
+  },
+  "warm_ocean": {
+    "nombre": "Océano cálido",
+    "slug": "oceano-calido",
+    "descripcion": "Mar tropical con arrecifes de coral y muchísimos peces. Es el único sitio donde hay coral vivo."
+  },
+  "warped_forest": {
+    "nombre": "Bosque deformado",
+    "slug": "bosque-deformado",
+    "descripcion": "Bosque azul del Nether. Es la zona más segura del infierno: casi no aparecen mobs hostiles."
+  },
+  "windswept_forest": {
+    "nombre": "Bosque azotado por el viento",
+    "slug": "bosque-azotado-por-el-viento",
+    "descripcion": "Colinas empinadas con árboles agarrados a la ladera."
+  },
+  "windswept_gravelly_hills": {
+    "nombre": "Colinas de grava azotadas",
+    "slug": "colinas-de-grava-azotadas",
+    "descripcion": "Colinas escarpadas cubiertas de grava, donde encontrar pedernal es facilísimo."
+  },
+  "windswept_hills": {
+    "nombre": "Colinas azotadas por el viento",
+    "slug": "colinas-azotadas-por-el-viento",
+    "descripcion": "Montañas de piedra con cuevas a la vista. Aquí es donde la esmeralda aparece en la roca."
+  },
+  "windswept_savanna": {
+    "nombre": "Sabana azotada por el viento",
+    "slug": "sabana-azotada-por-el-viento",
+    "descripcion": "Sabana con relieve extremo y picos muy pronunciados."
+  },
+  "wooded_badlands": {
+    "nombre": "Tierras áridas boscosas",
+    "slug": "tierras-aridas-boscosas",
+    "descripcion": "Tierras áridas con una meseta arriba cubierta de árboles y hierba."
   }
 }

@@ -43,8 +43,28 @@
   "dificultad.media": "Medium",
   "dificultad.dificil": "Hard",
 
+  "ficha.datos": "At a glance",
+  "ficha.consejos": "Worth knowing",
+  "ficha.relacionado": "Everything related",
+  "ficha.botin": "What it drops",
+  "ficha.experiencia": "Experience",
+
+  "tabla.objeto": "Item",
+  "tabla.cantidad": "Amount",
+  "tabla.etapa": "When you get it",
+  "tabla.nivel": "Level",
+  "tabla.leDas": "You give",
+  "tabla.teDa": "You get",
+  "tabla.mejorPrecio": "Best price",
+  "tabla.probabilidad": "Chance",
+  "tabla.condicion": "Condition",
+  "tabla.soloJugador": "Only if you kill it",
+
+  "idioma.nombre.es": "Spanish",
+  "idioma.nombre.en": "English",
+
   "idioma.cambiar": "Language",
-  "idioma.sinTraducir": "Not translated yet. Showing Spanish.",
+  "idioma.sinTraducir": "This page is not translated yet. You are seeing it in {idioma}.",
 
   "tema.cambiar": "Switch theme",
 

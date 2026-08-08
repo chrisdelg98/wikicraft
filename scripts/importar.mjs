@@ -460,7 +460,14 @@ for (const [idResultado, recetas] of Object.entries(mc.recipes)) {
     await guardarEntidad('recipes', entidad, [
       'estacion', 'resultado', 'conForma', 'patron', 'clave', 'ingredientes', 'relevancia'
     ])
-    anotar('recipes', id, null)
+    // El nombre sale del objeto que produce, no del identificador: "Acacia
+    // Fence Receta" mezclaba los dos idiomas y quedaba fatal.
+    const nombreResultado = mc.itemsByName[resultado]?.displayName ?? resultado
+    anotar(
+      'recipes',
+      id,
+      recetas.length > 1 ? `${nombreResultado} Recipe ${indice + 1}` : `${nombreResultado} Recipe`
+    )
     recetasEscritas++
   }
 }

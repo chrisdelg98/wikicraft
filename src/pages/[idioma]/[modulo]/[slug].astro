@@ -2,6 +2,7 @@
 import Base from '../../../layouts/Base.astro'
 import Etapa from '../../../components/Etapa.astro'
 import TarjetaEntidad from '../../../components/TarjetaEntidad.astro'
+import Icono from '../../../components/Icono.astro'
 import {
   codigosIdioma,
   entidades,
@@ -31,9 +32,18 @@ const { id, modulo } = Astro.props
 
 const { entidad } = grafo.get(id)
 const texto = t(idioma, id)
-const grupos = relacionesDe(id)
 
-/** Datos numéricos que se muestran arriba, por tipo. */
+/**
+ * Nombre y URL de otra entidad. Devuelve el identificador crudo si la entidad
+ * no existe, en vez de reventar el build entero por una referencia suelta.
+ */
+const enlace = (otro) =>
+  grafo.has(otro)
+    ? { url: rutaDe(idioma, otro), nombre: t(idioma, otro).nombre }
+    : { url: null, nombre: String(otro) }
+
+// --- Datos numericos -------------------------------------------------------
+
 const DATOS = {
   item: [['ficha.pila', 'pila']],
   encantamiento: [['ficha.nivelMaximo', 'nivelMaximo']],
@@ -45,103 +55,303 @@ const DATOS = {
     ['ficha.durabilidad', 'durabilidad'],
     ['ficha.puntosArmadura', 'puntosArmadura']
   ],
-  mob: [['ficha.dano', 'dano']]
+  mob: [
+    ['ficha.dano', 'dano'],
+    ['ficha.experiencia', 'experiencia']
+  ]
 }
 
 const datos = (DATOS[entidad.tipo] ?? [])
   .filter(([, campo]) => entidad[campo] != null)
   .map(([clave, campo]) => ({ etiqueta: ui(idioma, clave), valor: entidad[campo] }))
 
-const duracion = entidad.duracionSegundos
-  ? entidad.duracionSegundos >= 60
-    ? ui(idioma, 'ficha.minutos', { n: Math.round(entidad.duracionSegundos / 60) })
-    : ui(idioma, 'ficha.segundos', { n: entidad.duracionSegundos })
-  : null
+if (entidad.vida) {
+  datos.unshift({
+    etiqueta: ui(idioma, 'ficha.vida'),
+    valor: ui(idioma, 'ficha.corazones', { n: entidad.vida / 2 })
+  })
+}
 
-/** Cuadrícula 3×3 de una receta con forma, rellenando los huecos vacíos. */
-const casillas =
+if (entidad.duracionSegundos) {
+  datos.push({
+    etiqueta: ui(idioma, 'ficha.duracion'),
+    valor:
+      entidad.duracionSegundos >= 60
+        ? ui(idioma, 'ficha.minutos', { n: Math.round(entidad.duracionSegundos / 60) })
+        : ui(idioma, 'ficha.segundos', { n: entidad.duracionSegundos })
+  })
+}
+
+if (entidad.produccionPorHora) {
+  datos.push({
+    etiqueta: ui(idioma, 'ficha.porHora'),
+    valor: `${entidad.produccionPorHora.minimo} – ${entidad.produccionPorHora.maximo}`
+  })
+}
+
+// --- Receta ----------------------------------------------------------------
+
+// Se descartan las filas totalmente vacias que arrastra el formato original:
+// una fila de tres huecos en blanco solo confunde a quien mira la cuadricula.
+const filasReceta =
   entidad.tipo === 'receta' && entidad.patron
-    ? Array.from({ length: 3 }, (_, fila) =>
-        Array.from({ length: 3 }, (_, col) => {
-          const letra = entidad.patron[fila]?.[col] ?? ' '
-          return letra === ' ' ? null : entidad.clave?.[letra]
-        })
-      )
+    ? entidad.patron
+        .map((fila) =>
+          Array.from({ length: 3 }, (_, col) => {
+            const letra = fila[col] ?? ' '
+            return letra === ' ' ? null : (entidad.clave?.[letra] ?? null)
+          })
+        )
+        .filter((fila) => fila.some(Boolean))
     : null
+
+const ingredientes =
+  entidad.tipo === 'receta'
+    ? entidad.ingredientes ??
+      Object.values(entidad.clave ?? {}).reduce((acc, item) => {
+        const cuenta = (entidad.patron ?? [])
+          .join('')
+          .split('')
+          .filter((l) => entidad.clave?.[l] === item).length
+        const existente = acc.find((x) => x.item === item)
+        if (existente) existente.cantidad += cuenta
+        else acc.push({ item, cantidad: cuenta })
+        return acc
+      }, [])
+    : null
+
+// --- Relaciones ------------------------------------------------------------
+
+// Lo que ya se muestra como tabla no se repite abajo como tarjetas.
+const YA_EN_TABLA = {
+  aldeano: ['rel.vende', 'rel.vendeEncantamiento', 'rel.aceptaComoPago'],
+  mob: ['rel.suelta'],
+  receta: ['rel.materiales']
+}
+
+const grupos = relacionesDe(id).filter(
+  (g) => !(YA_EN_TABLA[entidad.tipo] ?? []).includes(g.etiqueta)
+)
+
+const consejos = [
+  texto.notas && { clase: 'normal', cuerpo: texto.notas },
+  texto.consejo && { clase: 'normal', cuerpo: texto.consejo },
+  texto.advertencia && { clase: 'aviso', cuerpo: texto.advertencia }
+].filter(Boolean)
 ---
 
 <Base idioma={idioma} titulo={texto.nombre} descripcion={texto.descripcion} idEntidad={id}>
-  <nav class="mb-4 text-sm text-texto-suave">
-    <a href={`/${idioma}/${rutaModulo(idioma, modulo)}/`} class="hover:text-acento">
+  <nav class="mb-3 flex items-center gap-2 text-sm text-texto-suave">
+    <Icono modulo={modulo} clase="h-4 w-4" />
+    <a href={`/${idioma}/${rutaModulo(idioma, modulo)}/`} class="font-semibold hover:text-acento">
       {ui(idioma, `nav.${modulo}`)}
     </a>
   </nav>
 
-  <header class="mb-6">
-    <h1 class="text-3xl font-extrabold sm:text-4xl">{texto.nombre}</h1>
+  <header class="mb-8 border-b-2 border-borde pb-5">
+    <h1 class="text-4xl font-extrabold sm:text-5xl">{texto.nombre}</h1>
 
-    <div class="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2">
+    <div class="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2">
       <Etapa idioma={idioma} etapa={entidad.etapa} />
-
       {
         entidad.dificultad && (
           <span class="text-sm font-semibold">
-            {ui(idioma, 'dificultad.etiqueta')}:{' '}
-            {ui(idioma, `dificultad.${entidad.dificultad}`)}
+            {ui(idioma, 'dificultad.etiqueta')}: {ui(idioma, `dificultad.${entidad.dificultad}`)}
           </span>
         )
       }
-
       {
-        entidad.vida && (
-          <span class="text-sm font-semibold">
-            {ui(idioma, 'ficha.vida')}: {ui(idioma, 'ficha.corazones', { n: entidad.vida / 2 })}
-          </span>
+        entidad.categoria && (
+          <span class="text-sm font-semibold text-texto-suave">{entidad.categoria}</span>
         )
       }
-
-      {duracion && <span class="text-sm font-semibold">{ui(idioma, 'ficha.duracion')} {duracion}</span>}
     </div>
 
     {
-      !texto.traducido && (
-        <p class="mt-3 bloque bg-superficie-alta px-3 py-2 text-sm text-texto-suave">
-          {ui(idioma, 'idioma.sinTraducir')}
+      !texto.traducido && texto.idiomaUsado && (
+        <p class="mt-4 bloque bg-superficie-alta px-3 py-2 text-sm">
+          {ui(idioma, 'idioma.sinTraducir', {
+            idioma: ui(idioma, `idioma.nombre.${texto.idiomaUsado}`)
+          })}
         </p>
       )
     }
-  </header>
 
-  <p class="mb-6 max-w-prose text-lg">
-    {texto.descripcion ?? ui(idioma, 'ficha.sinDescripcion')}
-  </p>
+    <p class="mt-5 max-w-prose text-lg leading-relaxed">
+      {texto.descripcion ?? ui(idioma, 'ficha.sinDescripcion')}
+    </p>
+  </header>
 
   {
     datos.length > 0 && (
-      <ul class="mb-6 flex flex-wrap gap-3">
-        {datos.map((d) => (
-          <li class="bloque px-3 py-2">
-            <span class="block text-xs text-texto-suave">{d.etiqueta}</span>
-            <span class="text-lg font-bold">{d.valor}</span>
-          </li>
-        ))}
-      </ul>
+      <section class="mb-10">
+        <h2 class="titulo-seccion">{ui(idioma, 'ficha.datos')}</h2>
+        <ul class="grid grid-cols-2 gap-3 sm:grid-cols-4">
+          {datos.map((d) => (
+            <li class="bloque px-3 py-2.5">
+              <span class="block text-xs font-semibold uppercase tracking-wide text-texto-suave">
+                {d.etiqueta}
+              </span>
+              <span class="text-xl font-extrabold">{d.valor}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
     )
   }
 
   {
-    casillas && (
-      <section class="mb-6">
-        <h2 class="mb-3 text-lg font-bold">{ui(idioma, 'ficha.receta')}</h2>
-        <div class="inline-grid grid-cols-3 gap-1 bloque p-2">
-          {casillas.flat().map((itemId) => (
-            <span
-              class="grid h-14 w-14 place-items-center bloque bg-fondo p-1 text-center text-[10px] leading-tight"
-              title={itemId ? t(idioma, itemId).nombre : undefined}
-            >
-              {itemId ? t(idioma, itemId).nombre : ''}
+    filasReceta && (
+      <section class="mb-10">
+        <h2 class="titulo-seccion">{ui(idioma, 'ficha.receta')}</h2>
+        <div class="flex flex-wrap items-center gap-5">
+          <div class="inline-grid gap-1 bloque bg-fondo p-2" style="grid-template-columns:repeat(3,1fr)">
+            {filasReceta.flat().map((itemId) => (
+              <span
+                class:list={[
+                  'grid h-16 w-16 place-items-center p-1 text-center text-[10px] font-semibold leading-tight',
+                  itemId ? 'bloque bg-superficie-alta' : 'border-2 border-dashed border-borde'
+                ]}
+                title={itemId ? enlace(itemId).nombre : undefined}
+              >
+                {itemId ? enlace(itemId).nombre : ''}
+              </span>
+            ))}
+          </div>
+
+          <div class="flex items-center gap-3">
+            <span class="text-2xl text-texto-suave" aria-hidden="true">
+              →
             </span>
-          ))}
+            <span class="grid h-16 min-w-16 place-items-center bloque bg-acento p-1 text-center text-[11px] font-bold text-acento-contraste">
+              {entidad.resultado.cantidad} × {enlace(entidad.resultado.item).nombre}
+            </span>
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    ingredientes?.length > 0 && (
+      <section class="mb-10">
+        <h2 class="titulo-seccion">{ui(idioma, 'rel.materiales')}</h2>
+        <div class="tabla-envoltorio">
+          <table>
+            <thead>
+              <tr>
+                <th>{ui(idioma, 'tabla.objeto')}</th>
+                <th>{ui(idioma, 'tabla.cantidad')}</th>
+                <th>{ui(idioma, 'tabla.etapa')}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {ingredientes.map((ing) => (
+                <tr>
+                  <td>
+                    <a href={enlace(ing.item).url}>{enlace(ing.item).nombre}</a>
+                  </td>
+                  <td>{ing.cantidad}</td>
+                  <td>
+                    <Etapa idioma={idioma} etapa={grafo.get(ing.item).entidad.etapa} />
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    entidad.niveles && (
+      <section class="mb-10">
+        <h2 class="titulo-seccion">{ui(idioma, 'ficha.tradeos')}</h2>
+        <div class="tabla-envoltorio">
+          <table>
+            <thead>
+              <tr>
+                <th>{ui(idioma, 'tabla.nivel')}</th>
+                <th>{ui(idioma, 'tabla.leDas')}</th>
+                <th>{ui(idioma, 'tabla.cantidad')}</th>
+                <th>{ui(idioma, 'tabla.teDa')}</th>
+                <th>{ui(idioma, 'tabla.cantidad')}</th>
+                <th>{ui(idioma, 'tabla.mejorPrecio')}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {entidad.niveles.flatMap((nivel) =>
+                nivel.tradeos.map((trato, i) => {
+                  const daObjeto = trato.entrega.encantamiento ?? trato.entrega.item
+                  return (
+                    <tr>
+                      {i === 0 && (
+                        <td rowspan={nivel.tradeos.length}>
+                          {ui(idioma, `aldeano.nivel.${nivel.nivel}`)}
+                        </td>
+                      )}
+                      <td>
+                        {trato.recibe.map((r, j) => (
+                          <>
+                            {j > 0 && <span class="text-texto-suave"> + </span>}
+                            <a href={enlace(r.item).url}>{enlace(r.item).nombre}</a>
+                          </>
+                        ))}
+                      </td>
+                      <td>{trato.recibe.map((r) => r.cantidad).join(' + ')}</td>
+                      <td>
+                        <a href={enlace(daObjeto).url}>{enlace(daObjeto).nombre}</a>
+                        {trato.entrega.encantamiento && trato.entrega.nivelEncantamiento > 1 && (
+                          <span> {trato.entrega.nivelEncantamiento}</span>
+                        )}
+                      </td>
+                      <td>{trato.entrega.cantidad ?? 1}</td>
+                      <td>{trato.precioMinimo ?? '—'}</td>
+                    </tr>
+                  )
+                })
+              )}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    // Solo en mobs: en biomas y estructuras "botin" es una lista de
+    // referencias, no una tabla con cantidades, y la pintan las relaciones.
+    entidad.tipo === 'mob' && entidad.botin?.length > 0 && (
+      <section class="mb-10">
+        <h2 class="titulo-seccion">{ui(idioma, 'ficha.botin')}</h2>
+        <div class="tabla-envoltorio">
+          <table>
+            <thead>
+              <tr>
+                <th>{ui(idioma, 'tabla.objeto')}</th>
+                <th>{ui(idioma, 'tabla.cantidad')}</th>
+                <th>{ui(idioma, 'tabla.probabilidad')}</th>
+                <th>{ui(idioma, 'tabla.condicion')}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {entidad.botin.map((b) => (
+                <tr>
+                  <td>
+                    <a href={enlace(b.item).url}>{enlace(b.item).nombre}</a>
+                  </td>
+                  <td>
+                    {b.minimo === b.maximo ? b.maximo : `${b.minimo ?? 0} – ${b.maximo}`}
+                  </td>
+                  <td>{b.probabilidad ? `${Math.round(b.probabilidad * 100)} %` : '—'}</td>
+                  <td class="text-texto-suave">
+                    {b.soloAlMorirPorJugador ? ui(idioma, 'tabla.soloJugador') : '—'}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </section>
     )
@@ -149,11 +359,11 @@ const casillas =
 
   {
     entidad.debilidades?.length > 0 && (
-      <section class="mb-6">
-        <h2 class="mb-3 text-lg font-bold">{ui(idioma, 'ficha.leVaMal')}</h2>
+      <section class="mb-10">
+        <h2 class="titulo-seccion">{ui(idioma, 'ficha.leVaMal')}</h2>
         <ul class="flex flex-wrap gap-2">
           {entidad.debilidades.map((d) => (
-            <li class="bloque px-3 py-1.5 text-sm font-semibold">
+            <li class="bloque bg-superficie-alta px-3 py-1.5 text-sm font-semibold">
               {ui(idioma, `debilidad.${d}`)}
             </li>
           ))}
@@ -163,24 +373,13 @@ const casillas =
   }
 
   {
-    entidad.produccionPorHora && (
-      <section class="mb-6">
-        <h2 class="mb-3 text-lg font-bold">{ui(idioma, 'ficha.porHora')}</h2>
-        <p class="bloque inline-block px-3 py-2 text-lg font-bold">
-          {entidad.produccionPorHora.minimo} – {entidad.produccionPorHora.maximo}
-        </p>
-      </section>
-    )
-  }
-
-  {
     texto.pasos?.length > 0 && (
-      <section class="mb-6">
-        <h2 class="mb-3 text-lg font-bold">{ui(idioma, 'ficha.pasos')}</h2>
+      <section class="mb-10">
+        <h2 class="titulo-seccion">{ui(idioma, 'ficha.pasos')}</h2>
         <ol class="max-w-prose space-y-2">
           {texto.pasos.map((paso, i) => (
             <li class="flex gap-3 bloque p-3">
-              <span class="grid h-6 w-6 shrink-0 place-items-center bg-acento text-sm font-bold text-acento-contraste">
+              <span class="grid h-7 w-7 shrink-0 place-items-center bg-acento text-sm font-extrabold text-acento-contraste">
                 {i + 1}
               </span>
               <span>{paso}</span>
@@ -192,68 +391,45 @@ const casillas =
   }
 
   {
-    entidad.niveles && (
-      <section class="mb-6">
-        <h2 class="mb-3 text-lg font-bold">{ui(idioma, 'ficha.tradeos')}</h2>
-        <div class="space-y-3">
-          {entidad.niveles.map((nivel) => (
-            <div class="bloque p-3">
-              <h3 class="mb-2 font-bold">{ui(idioma, `aldeano.nivel.${nivel.nivel}`)}</h3>
-              <ul class="space-y-2">
-                {nivel.tradeos.map((trato) => (
-                  <li class="flex flex-wrap items-center gap-2 text-sm">
-                    <span class="text-texto-suave">
-                      {trato.recibe
-                        .map((r) => `${r.cantidad} × ${t(idioma, r.item).nombre}`)
-                        .join(' + ')}
-                    </span>
-                    <span aria-hidden="true">→</span>
-                    <a href={rutaDe(idioma, trato.entrega.encantamiento ?? trato.entrega.item)} class="font-semibold hover:text-acento">
-                      {t(idioma, trato.entrega.encantamiento ?? trato.entrega.item).nombre}
-                    </a>
-                    {trato.precioMinimo && (
-                      <span class="text-texto-suave">
-                        · {ui(idioma, 'ficha.mejorPrecio')}: {trato.precioMinimo}
-                      </span>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </div>
+    consejos.length > 0 && (
+      <section class="mb-10">
+        <h2 class="titulo-seccion">{ui(idioma, 'ficha.consejos')}</h2>
+        <div class="max-w-prose space-y-3">
+          {consejos.map((c) => (
+            <p
+              class:list={[
+                'bloque bg-superficie-alta p-3',
+                c.clase === 'aviso' && 'border-l-4 border-l-[var(--etapa-nether)] font-semibold'
+              ]}
+            >
+              {c.cuerpo}
+            </p>
           ))}
         </div>
       </section>
     )
   }
 
-  {
-    (texto.notas || texto.consejo || texto.advertencia) && (
-      <section class="mb-8 max-w-prose space-y-3">
-        {texto.notas && <p class="bloque p-3">{texto.notas}</p>}
-        {texto.consejo && <p class="bloque p-3">{texto.consejo}</p>}
-        {texto.advertencia && (
-          <p class="bloque border-l-4 border-l-[var(--etapa-nether)] p-3 font-semibold">
-            {texto.advertencia}
-          </p>
-        )}
-      </section>
-    )
-  }
-
-  {/* Aquí está el valor real de la wiki: todo lo conectado, ya resuelto, para
+  {/* Aqui esta el valor real de la wiki: todo lo conectado, ya resuelto, para
       que nadie tenga que volver al buscador. */}
   {
-    grupos.map((grupo) => (
-      <section class="mb-8">
-        <h2 class="mb-3 text-lg font-bold">{ui(idioma, grupo.etiqueta)}</h2>
-        <ul class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          {grupo.ids.map((otro) => (
-            <li>
-              <TarjetaEntidad idioma={idioma} id={otro} />
-            </li>
-          ))}
-        </ul>
+    grupos.length > 0 && (
+      <section class="border-t-2 border-borde pt-8">
+        <h2 class="mb-6 text-2xl font-extrabold">{ui(idioma, 'ficha.relacionado')}</h2>
+
+        {grupos.map((grupo) => (
+          <div class="mb-8">
+            <h3 class="titulo-seccion">{ui(idioma, grupo.etiqueta)}</h3>
+            <ul class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              {grupo.ids.map((otro) => (
+                <li>
+                  <TarjetaEntidad idioma={idioma} id={otro} />
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </section>
-    ))
+    )
   }
 </Base>

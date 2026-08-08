@@ -96,6 +96,26 @@
   "rel.varianteDe": "Es una variante de",
   "rel.variantes": "Sus variantes",
 
+  "ficha.datos": "De un vistazo",
+  "ficha.consejos": "Lo que conviene saber",
+  "ficha.relacionado": "Todo lo relacionado",
+  "ficha.botin": "Qué suelta al morir",
+  "ficha.experiencia": "Experiencia",
+
+  "tabla.objeto": "Objeto",
+  "tabla.cantidad": "Cantidad",
+  "tabla.etapa": "Cuándo lo tienes",
+  "tabla.nivel": "Nivel",
+  "tabla.leDas": "Tú le das",
+  "tabla.teDa": "Él te da",
+  "tabla.mejorPrecio": "Mejor precio",
+  "tabla.probabilidad": "Probabilidad",
+  "tabla.condicion": "Condición",
+  "tabla.soloJugador": "Solo si lo matas tú",
+
+  "idioma.nombre.es": "español",
+  "idioma.nombre.en": "inglés",
+
   "ficha.durabilidad": "Durabilidad",
   "ficha.dano": "Daño",
   "ficha.vida": "Vida",
@@ -121,7 +141,7 @@
   "aldeano.nivel.5": "Maestro",
 
   "idioma.cambiar": "Idioma",
-  "idioma.sinTraducir": "Sin traducir todavía. Se muestra en español.",
+  "idioma.sinTraducir": "Esta ficha todavía no está traducida. La estás viendo en {idioma}.",
 
   "tema.cambiar": "Cambiar tema",
 

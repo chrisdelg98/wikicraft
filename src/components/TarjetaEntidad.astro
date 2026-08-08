@@ -22,11 +22,17 @@ const texto = t(idioma, id)
   <span class="mt-auto flex items-center justify-between gap-2 pt-1">
     <Etapa idioma={idioma} etapa={nodo.entidad.etapa} />
     {
-      !texto.traducido && (
-        <span class="text-xs text-texto-suave" title={ui(idioma, 'idioma.sinTraducir')}>
-          {texto.idiomaUsado?.toUpperCase()}
-        </span>
-      )
+      !texto.traducido &&
+        texto.idiomaUsado && (
+          <span
+            class="text-xs font-semibold text-texto-suave"
+            title={ui(idioma, 'idioma.sinTraducir', {
+              idioma: ui(idioma, `idioma.nombre.${texto.idiomaUsado}`)
+            })}
+          >
+            {texto.idiomaUsado.toUpperCase()}
+          </span>
+        )
     }
   </span>
 </a>

@@ -1,4 +1,29 @@
 {
+  "allay": {
+    "nombre": "Allay",
+    "slug": "allay",
+    "descripcion": "Una criatura pequeña y azul que recoge por ti los objetos que le enseñes y te los trae. Es de las pocas cosas del juego que te ayudan de verdad."
+  },
+  "armadillo": {
+    "nombre": "Armadillo",
+    "slug": "armadillo",
+    "descripcion": "Se enrolla en una bola cuando se asusta. Al cepillarlo suelta escudos de caparazón, que sirven para poner armadura a tu lobo."
+  },
+  "axolotl": {
+    "nombre": "Ajolote",
+    "slug": "ajolote",
+    "descripcion": "Un anfibio de las cuevas inundadas. Si peleas cerca de uno te ayuda atacando a guardianes y ahogados, y a ti te cura."
+  },
+  "bat": {
+    "nombre": "Murciélago",
+    "slug": "murcielago",
+    "descripcion": "Revolotea por las cuevas sin hacer nada. No te ataca, no suelta nada y solo sirve para asustarte cuando aparece de golpe."
+  },
+  "bee": {
+    "nombre": "Abeja",
+    "slug": "abeja",
+    "descripcion": "Poliniza los cultivos y hace miel. Si rompes su colmena sin humo, todas las del panal se enfadan contigo a la vez."
+  },
   "blaze": {
     "nombre": "Blaze",
     "slug": "blaze",
@@ -6,11 +31,391 @@
     "notas": "Le hace daño el agua y las bolas de nieve, pero no puedes llevar agua al Nether porque se evapora. Lo más práctico es pelear en un pasillo estrecho, donde no pueda rodearte, o dispararle con arco desde detrás de un bloque.",
     "consejo": "Necesitas sus varas para las pociones y para llegar al End. Ve preparado con armadura y algo de comida antes de buscar una fortaleza."
   },
+  "bogged": {
+    "nombre": "Esqueleto cenagoso",
+    "slug": "esqueleto-cenagoso",
+    "descripcion": "Un esqueleto de los pantanos que dispara flechas venenosas. Es más lento que el normal pero mucho más molesto."
+  },
+  "breeze": {
+    "nombre": "Brisa",
+    "slug": "brisa",
+    "descripcion": "Salta sin parar y te lanza ráfagas de viento que te empujan. Aparece en las cámaras de desafío."
+  },
+  "camel": {
+    "nombre": "Camello",
+    "slug": "camello",
+    "descripcion": "Se monta entre dos personas y es tan alto que los zombis no te alcanzan desde el suelo. Vive en los desiertos."
+  },
+  "cat": {
+    "nombre": "Gato",
+    "slug": "gato",
+    "descripcion": "Se domestica con pescado crudo. Ahuyenta a los creepers y a los phantoms, así que tener uno en casa compensa mucho."
+  },
+  "cave_spider": {
+    "nombre": "Araña de cueva",
+    "slug": "arana-de-cueva",
+    "descripcion": "Más pequeña que la araña normal y venenosa. Cabe por huecos de medio bloque, así que es difícil encerrarla."
+  },
+  "chicken_mob": {
+    "nombre": "Pollo",
+    "slug": "pollo",
+    "descripcion": "Pone huevos cada cierto tiempo y cae planeando sin hacerse daño. Es la fuente de comida más fácil de criar."
+  },
+  "cod_mob": {
+    "nombre": "Bacalao",
+    "slug": "bacalao",
+    "descripcion": "El pez más común del mar. Se puede pescar o cazar, y cocinado es comida decente."
+  },
+  "cow": {
+    "nombre": "Vaca",
+    "slug": "vaca",
+    "descripcion": "Da carne, cuero y leche. La leche quita cualquier efecto malo, así que conviene llevar un cubo en aventuras."
+  },
+  "creaking": {
+    "nombre": "Acechador",
+    "slug": "acechador",
+    "descripcion": "Vive en el jardín pálido y solo se mueve cuando no lo estás mirando. No se puede matar a golpes: hay que destruir el corazón de acechador del que sale."
+  },
+  "creeper": {
+    "nombre": "Creeper",
+    "slug": "creeper",
+    "descripcion": "Se acerca en silencio y explota. Es la causa número uno de que la gente pierda sus cosas en Minecraft."
+  },
+  "dolphin": {
+    "nombre": "Delfín",
+    "slug": "delfin",
+    "descripcion": "Si nadas cerca te da un impulso de velocidad enorme. Si le das pescado, te guía hasta un naufragio o unas ruinas."
+  },
+  "donkey": {
+    "nombre": "Burro",
+    "slug": "burro",
+    "descripcion": "Se puede montar y además lleva alforjas, así que sirve de almacén andante."
+  },
+  "drowned": {
+    "nombre": "Ahogado",
+    "slug": "ahogado",
+    "descripcion": "Un zombi que vive bajo el agua. Algunos llevan tridente, y esa es la única forma de conseguir uno."
+  },
+  "elder_guardian": {
+    "nombre": "Guardián anciano",
+    "slug": "guardian-anciano",
+    "descripcion": "El jefe de los monumentos oceánicos. Te lanza una maldición que te impide picar rápido durante varios minutos."
+  },
+  "ender_dragon": {
+    "nombre": "Dragón del End",
+    "slug": "dragon-del-end",
+    "descripcion": "El jefe final del juego. Vive en el End y hay que destruir los cristales de las torres antes de poder matarlo."
+  },
+  "enderman": {
+    "nombre": "Enderman",
+    "slug": "enderman",
+    "descripcion": "Alto, negro y teletransportador. No te ataca salvo que le mires a los ojos, y el agua le hace daño."
+  },
+  "endermite": {
+    "nombre": "Endermita",
+    "slug": "endermita",
+    "descripcion": "Un bicho diminuto que a veces aparece al usar una perla de ender. Atrae a los endermen, cosa que rara vez te interesa."
+  },
+  "evoker": {
+    "nombre": "Invocador",
+    "slug": "invocador",
+    "descripcion": "Un aldeano gris de las mansiones que invoca colmillos del suelo y ovejas azules. Suelta la totem de la inmortalidad."
+  },
+  "fox": {
+    "nombre": "Zorro",
+    "slug": "zorro",
+    "descripcion": "Roba objetos del suelo y los lleva en la boca. Los que nacen cerca de ti confían en ti desde el principio."
+  },
+  "frog": {
+    "nombre": "Rana",
+    "slug": "rana",
+    "descripcion": "Se come los cubos de magma pequeños y suelta una perla de rana, que es el único ingrediente del farol de ranas."
+  },
+  "ghast": {
+    "nombre": "Ghast",
+    "slug": "ghast",
+    "descripcion": "Una medusa gigante que flota por el Nether y dispara bolas de fuego. Se le pueden devolver golpeándolas."
+  },
+  "giant": {
+    "nombre": "Gigante",
+    "slug": "gigante",
+    "descripcion": "Un zombi enorme que ya no aparece de forma natural. Solo se ve con comandos."
+  },
+  "glow_squid": {
+    "nombre": "Calamar luminoso",
+    "slug": "calamar-luminoso",
+    "descripcion": "Vive en las cuevas inundadas y suelta bolsas de tinta brillante, que sirven para que los carteles se lean de noche."
+  },
+  "goat": {
+    "nombre": "Cabra",
+    "slug": "cabra",
+    "descripcion": "Vive en las montañas y te embiste sin avisar, normalmente para tirarte por un barranco."
+  },
+  "guardian": {
+    "nombre": "Guardián",
+    "slug": "guardian",
+    "descripcion": "Pez espinoso de los monumentos oceánicos que te dispara un rayo láser. Suelta prismarina y esponjas."
+  },
+  "hoglin": {
+    "nombre": "Hoglin",
+    "slug": "hoglin",
+    "descripcion": "Un jabalí enorme del Nether que ataca en cuanto te ve. Es la única fuente de carne del Nether."
+  },
+  "horse": {
+    "nombre": "Caballo",
+    "slug": "caballo",
+    "descripcion": "El medio de transporte más rápido por tierra. Cada caballo tiene su propia velocidad y su propio salto."
+  },
+  "husk": {
+    "nombre": "Husk",
+    "slug": "husk",
+    "descripcion": "Un zombi del desierto que no se quema con el sol y te da hambre al golpearte."
+  },
+  "illusioner": {
+    "nombre": "Ilusionista",
+    "slug": "ilusionista",
+    "descripcion": "Un mago que crea copias falsas de sí mismo y te ciega. No aparece de forma natural."
+  },
+  "iron_golem": {
+    "nombre": "Gólem de hierro",
+    "slug": "golem-de-hierro",
+    "descripcion": "El guardaespaldas de las aldeas. Puedes fabricarte uno con cuatro bloques de hierro y una calabaza tallada."
+  },
+  "llama": {
+    "nombre": "Llama",
+    "slug": "llama",
+    "descripcion": "Escupe a quien la moleste y lleva alforjas. Si le pones una cuerda, las demás la siguen en fila."
+  },
+  "magma_cube": {
+    "nombre": "Cubo de magma",
+    "slug": "cubo-de-magma",
+    "descripcion": "Como un slime pero de fuego y del Nether. Al matarlo se parte en cubos más pequeños."
+  },
+  "mooshroom": {
+    "nombre": "Champivaca",
+    "slug": "champivaca",
+    "descripcion": "Una vaca con setas de las islas champiñón. Le puedes sacar estofado de setas con un cuenco, infinitas veces."
+  },
+  "mule": {
+    "nombre": "Mula",
+    "slug": "mula",
+    "descripcion": "Cruce de caballo y burro. Lleva alforjas pero no se le puede poner armadura."
+  },
+  "ocelot": {
+    "nombre": "Ocelote",
+    "slug": "ocelote",
+    "descripcion": "El gato salvaje de la jungla. No se domestica, pero se puede ganar su confianza con pescado."
+  },
+  "panda": {
+    "nombre": "Panda",
+    "slug": "panda",
+    "descripcion": "Vive en las junglas de bambú y cada uno tiene su carácter: los hay perezosos, juguetones y hasta llorones."
+  },
+  "parrot": {
+    "nombre": "Loro",
+    "slug": "loro",
+    "descripcion": "Se posa en tu hombro e imita los sonidos de los mobs que hay cerca, así que avisa de peligros que no ves."
+  },
+  "phantom": {
+    "nombre": "Phantom",
+    "slug": "phantom",
+    "descripcion": "Aparece si llevas tres días sin dormir y te ataca en picado desde el cielo. Dormir es la solución."
+  },
+  "pig": {
+    "nombre": "Cerdo",
+    "slug": "cerdo",
+    "descripcion": "Da chuletas. Se puede montar con una silla y guiar con una zanahoria en una caña."
+  },
+  "piglin": {
+    "nombre": "Piglin",
+    "slug": "piglin",
+    "descripcion": "Habitante del Nether. Si llevas algo de oro puesto no te ataca, y si le tiras un lingote te da algo a cambio."
+  },
+  "piglin_brute": {
+    "nombre": "Piglin bruto",
+    "slug": "piglin-bruto",
+    "descripcion": "Guarda los bastiones y te ataca aunque lleves oro. No hay forma de negociar con él."
+  },
+  "pillager": {
+    "nombre": "Saqueador",
+    "slug": "saqueador",
+    "descripcion": "Va armado con ballesta y ataca aldeas en grupo. Matar a su capitán te deja la maldición del saqueo."
+  },
+  "polar_bear": {
+    "nombre": "Oso polar",
+    "slug": "oso-polar",
+    "descripcion": "Vive en el hielo. Si te acercas a una cría, la madre te ataca sin dudarlo."
+  },
+  "pufferfish_mob": {
+    "nombre": "Pez globo",
+    "slug": "pez-globo",
+    "descripcion": "Se hincha y te envenena si te acercas. Sirve para la poción de respiración acuática."
+  },
+  "rabbit_mob": {
+    "nombre": "Conejo",
+    "slug": "conejo",
+    "descripcion": "Rápido y difícil de atrapar. Suelta su pata, que es un ingrediente de la poción de salto."
+  },
+  "ravager": {
+    "nombre": "Devastador",
+    "slug": "devastador",
+    "descripcion": "Una bestia enorme que aparece en las incursiones, derriba cultivos y pega durísimo."
+  },
+  "salmon_mob": {
+    "nombre": "Salmón",
+    "slug": "salmon",
+    "descripcion": "Pez de los ríos y de los mares fríos. Cocinado es de las mejores comidas del juego."
+  },
+  "sheep": {
+    "nombre": "Oveja",
+    "slug": "oveja",
+    "descripcion": "Da lana y carne. Esquilarla no la mata y la lana le vuelve a crecer comiendo hierba."
+  },
+  "shulker": {
+    "nombre": "Shulker",
+    "slug": "shulker",
+    "descripcion": "Vive en las ciudades del End dentro de su caparazón. Su disparo te hace flotar hacia arriba."
+  },
+  "silverfish": {
+    "nombre": "Lepisma",
+    "slug": "lepisma",
+    "descripcion": "Se esconde dentro de los bloques de piedra de los templos. Si golpeas uno, salen todos los de alrededor."
+  },
+  "skeleton": {
+    "nombre": "Esqueleto",
+    "slug": "esqueleto",
+    "descripcion": "Te dispara flechas desde lejos y se quema con el sol. Suelta huesos, que sirven de abono."
+  },
+  "skeleton_horse": {
+    "nombre": "Caballo esqueleto",
+    "slug": "caballo-esqueleto",
+    "descripcion": "Aparece cuando cae un rayo durante una tormenta. Se puede montar y no se ahoga bajo el agua."
+  },
+  "slime": {
+    "nombre": "Slime",
+    "slug": "slime",
+    "descripcion": "Un cubo verde que salta. Al matarlo se divide, y las bolas que suelta sirven para pistones pegajosos."
+  },
+  "sniffer": {
+    "nombre": "Rastreador",
+    "slug": "rastreador",
+    "descripcion": "Olfatea el suelo y desentierra semillas de plantas antiguas que no se consiguen de ninguna otra forma."
+  },
+  "snow_golem": {
+    "nombre": "Gólem de nieve",
+    "slug": "golem-de-nieve",
+    "descripcion": "Se fabrica con dos bloques de nieve y una calabaza. Lanza bolas de nieve y deja un rastro helado."
+  },
+  "spider": {
+    "nombre": "Araña",
+    "slug": "arana",
+    "descripcion": "Trepa por las paredes. De día no te ataca salvo que la molestes, y suelta cuerda para arcos y cañas."
+  },
+  "squid": {
+    "nombre": "Calamar",
+    "slug": "calamar",
+    "descripcion": "Nada por los mares y suelta bolsas de tinta, que sirven para escribir en libros y teñir de negro."
+  },
+  "stray": {
+    "nombre": "Esqueleto glacial",
+    "slug": "esqueleto-glacial",
+    "descripcion": "El esqueleto de las zonas heladas. Sus flechas te congelan y te dejan casi sin poder moverte."
+  },
+  "strider": {
+    "nombre": "Lava Strider",
+    "slug": "lava-strider",
+    "descripcion": "Camina sobre la lava del Nether. Con una silla y una seta en una caña, es la forma de cruzar mares de lava."
+  },
+  "tadpole": {
+    "nombre": "Renacuajo",
+    "slug": "renacuajo",
+    "descripcion": "La cría de la rana. El bioma donde crece decide de qué color será la rana adulta."
+  },
+  "trader_llama": {
+    "nombre": "Llama de mercader",
+    "slug": "llama-de-mercader",
+    "descripcion": "Acompaña al mercader errante y le defiende. Si matas al mercader, la llama se queda contigo."
+  },
+  "tropical_fish_mob": {
+    "nombre": "Pez tropical",
+    "slug": "pez-tropical",
+    "descripcion": "El pez de colores de los arrecifes. Sirve para domesticar ocelotes y para el acuario."
+  },
+  "turtle": {
+    "nombre": "Tortuga",
+    "slug": "tortuga",
+    "descripcion": "Pone huevos en la playa donde nació. De sus crías salen escamas para hacer el casco de caparazón."
+  },
+  "vex": {
+    "nombre": "Vex",
+    "slug": "vex",
+    "descripcion": "Un espíritu pequeño que atraviesa paredes. Lo invoca el invocador y es muy difícil de esquivar."
+  },
+  "villager": {
+    "nombre": "Aldeano",
+    "slug": "aldeano",
+    "descripcion": "Vive en las aldeas y comercia contigo. Si le pones un bloque de trabajo delante, adopta esa profesión."
+  },
+  "vindicator": {
+    "nombre": "Vindicador",
+    "slug": "vindicador",
+    "descripcion": "Un aldeano gris con un hacha que aparece en mansiones e incursiones. Pega muchísimo de cerca."
+  },
+  "wandering_trader": {
+    "nombre": "Mercader errante",
+    "slug": "mercader-errante",
+    "descripcion": "Aparece de vez en cuando con dos llamas y vende cosas raras, sobre todo plantas y corales."
+  },
+  "warden": {
+    "nombre": "Warden",
+    "slug": "warden",
+    "descripcion": "Es ciego pero te oye. Vive en las ciudades antiguas y es el mob más fuerte del juego: no se pelea, se esquiva."
+  },
+  "witch": {
+    "nombre": "Bruja",
+    "slug": "bruja",
+    "descripcion": "Te lanza pociones dañinas y se cura con las suyas. Suelta ingredientes de fabricación al morir."
+  },
+  "wither": {
+    "nombre": "Wither",
+    "slug": "wither",
+    "descripcion": "Un jefe que se invoca con cabezas de esqueleto wither y arena de almas. Al morir suelta la estrella del Nether."
+  },
+  "wither_skeleton": {
+    "nombre": "Esqueleto wither",
+    "slug": "esqueleto-wither",
+    "descripcion": "El esqueleto negro de las fortalezas del Nether. Su golpe te deja el efecto wither y a veces suelta su cabeza."
+  },
+  "wolf": {
+    "nombre": "Lobo",
+    "slug": "lobo",
+    "descripcion": "Se domestica con huesos y luego te defiende. Con un collar puedes distinguir a los tuyos."
+  },
+  "zoglin": {
+    "nombre": "Zoglin",
+    "slug": "zoglin",
+    "descripcion": "En lo que se convierte un hoglin si lo sacas del Nether. Ataca absolutamente a todo, incluso a otros mobs."
+  },
   "zombie": {
     "nombre": "Zombi",
     "slug": "zombi",
     "descripcion": "El enemigo más común de las primeras noches. Es lento y solo ataca de cerca, así que basta con mantener la distancia o encerrarte hasta que amanezca.",
     "notas": "Se quema con el sol, de modo que muchos desaparecen solos por la mañana. Como es un no muerto, el encantamiento Castigo le hace mucho más daño que Filo.",
     "consejo": "Si es tu primera noche, no salgas a pelear. Cava un agujero, tápalo y espera."
+  },
+  "zombie_horse": {
+    "nombre": "Caballo zombi",
+    "slug": "caballo-zombi",
+    "descripcion": "Un caballo verde que no aparece de forma natural. Solo se ve con comandos."
+  },
+  "zombie_villager": {
+    "nombre": "Aldeano zombi",
+    "slug": "aldeano-zombi",
+    "descripcion": "Un aldeano infectado. Se puede curar con una poción de debilidad y una manzana dorada, y luego te hace descuentos enormes."
+  },
+  "zombified_piglin": {
+    "nombre": "Piglin zombificado",
+    "slug": "piglin-zombificado",
+    "descripcion": "Vaga por el Nether sin hacerte nada, pero si golpeas a uno se te echan encima todos los que haya cerca."
   }
 }
