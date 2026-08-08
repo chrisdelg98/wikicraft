@@ -7,9 +7,10 @@
  * componente: quien busca un ojo de arana fermentado quiere ver como se hace
  * ahi mismo, no leer que existe una receta y tener que ir a buscarla.
  *
- * Sirve para los dos tipos de receta. Las que tienen forma se pintan en tres
- * por tres, porque en el juego importa donde va cada cosa; las que no la
- * tienen se pintan en fila y lo dicen, que es justo la diferencia.
+ * La cuadricula se dibuja del tamano de la estacion, que es como se ve en el
+ * juego: dos por dos si se hace en el inventario, tres por tres si hace falta
+ * mesa. No es adorno, es la respuesta a "y esto puedo hacerlo sin mesa": se ve
+ * antes de leer nada.
  */
 import { t, ui, rutaDe, grafo, grupoDe } from '../lib/datos.js'
 
@@ -33,59 +34,77 @@ const etiqueta = (opciones) => {
 const titulo = (opciones) =>
   opciones?.length > 1 ? opciones.map((o) => enlace(o).nombre).join(', ') : undefined
 
+const lado = receta.estacion === 'inventario' ? 2 : 3
+
 /**
  * Cada casilla guarda la LISTA de lo que admite, porque el juego acepta
  * etiquetas: "cualquier tronco" son diecinueve alternativas para una casilla.
- * Se descartan las filas del todo vacias que arrastra el formato original.
  */
 const conForma = receta.conForma !== false && Boolean(receta.patron)
 
 const casillas = conForma
-  ? receta.patron
-      .map((fila) =>
-        Array.from({ length: 3 }, (_, col) => {
-          const letra = fila[col] ?? ' '
-          return letra === ' ' ? null : (receta.clave?.[letra] ?? null)
-        })
-      )
-      .filter((fila) => fila.some(Boolean))
-      .flat()
+  ? // Se rellena siempre la cuadricula entera. Recortar las filas vacias
+    // ahorraba unos pixeles y a cambio mentia: una receta de dos filas en una
+    // mesa de tres deja una fila libre, y saber cual importa.
+    Array.from({ length: lado * lado }, (_, i) => {
+      const letra = receta.patron[Math.floor(i / lado)]?.[i % lado] ?? ' '
+      return letra === ' ' ? null : (receta.clave?.[letra] ?? null)
+    })
   : // Sin forma da igual la posicion, pero no la cantidad: tres azucares son
-    // tres casillas. Se corta en nueve, que es lo que cabe en una mesa.
-    (receta.ingredientes ?? [])
-      .flatMap((ing) => Array.from({ length: ing.cantidad ?? 1 }, () => ing.opciones))
-      .slice(0, 9)
+    // tres casillas. Se colocan seguidas y el resto de la cuadricula queda a la
+    // vista, que es justamente lo que significa "da igual donde".
+    Array.from({ length: lado * lado }, (_, i) => {
+      const sueltos = (receta.ingredientes ?? []).flatMap((ing) =>
+        Array.from({ length: ing.cantidad ?? 1 }, () => ing.opciones)
+      )
+      return sueltos[i] ?? null
+    })
 
-const lado = compacta ? 'h-12 w-12 text-[9px]' : 'h-16 w-16 text-[10px]'
+const medida = compacta ? 'h-14 w-14 text-[9px]' : 'h-[4.5rem] w-[4.5rem] text-[10px]'
 ---
 
-<div class="flex flex-wrap items-center gap-5">
-  <div
-    class:list={['inline-grid gap-1 bloque bg-fondo p-2', conForma && 'grid-cols-3']}
-    style={conForma ? undefined : `grid-template-columns:repeat(${Math.min(casillas.length, 3)},1fr)`}
-  >
-    {
-      casillas.map((opciones) => (
-        <span
-          class:list={[
-            'grid place-items-center p-1 text-center font-semibold leading-tight',
-            lado,
-            opciones ? 'bloque bg-superficie-alta' : 'border-2 border-dashed border-borde'
-          ]}
-          title={titulo(opciones)}
-        >
-          {etiqueta(opciones) ?? ''}
-        </span>
-      ))
-    }
+<div class="flex flex-wrap items-center gap-x-4 gap-y-3">
+  <div class="inline-block bandeja">
+    <div class="grid gap-1" style={`grid-template-columns:repeat(${lado},minmax(0,1fr))`}>
+      {
+        casillas.map((opciones) => (
+          <span
+            class:list={[
+              'grid place-items-center p-1 text-center font-semibold leading-tight hueco',
+              medida,
+              !opciones && 'hueco-vacio'
+            ]}
+            title={titulo(opciones)}
+          >
+            {etiqueta(opciones) ?? ''}
+          </span>
+        ))
+      }
+    </div>
   </div>
 
-  <div class="flex items-center gap-3">
-    <span class="text-2xl text-texto-suave" aria-hidden="true">→</span>
+  {/* La flecha del juego dibujada a cuadros, no el caracter "→": una flecha
+      tipografica al lado de una cuadricula de pixeles canta muchisimo. */}
+  <svg
+    viewBox="0 0 14 10"
+    class:list={['shrink-0 text-borde-fuerte', compacta ? 'h-6 w-9' : 'h-8 w-12']}
+    fill="currentColor"
+    shape-rendering="crispEdges"
+    aria-hidden="true"
+  >
+    <rect x="0" y="3" width="8" height="4"></rect>
+    <rect x="7" y="1" width="2" height="8"></rect>
+    <rect x="9" y="2" width="2" height="6"></rect>
+    <rect x="11" y="3" width="2" height="4"></rect>
+    <rect x="13" y="4" width="1" height="2"></rect>
+  </svg>
+
+  {/* El hueco del resultado es mas grande que los demas, como en el juego. */}
+  <div class="inline-block bandeja">
     <span
       class:list={[
-        'grid min-w-16 place-items-center bloque bg-acento p-1 text-center font-bold text-acento-contraste',
-        compacta ? 'h-12 text-[10px]' : 'h-16 text-[11px]'
+        'grid place-items-center bg-acento p-1 text-center font-bold text-acento-contraste hueco',
+        compacta ? 'h-16 min-w-16 text-[10px]' : 'h-20 min-w-20 text-[11px]'
       ]}
     >
       {receta.resultado.cantidad} × {enlace(receta.resultado.item).nombre}
@@ -93,8 +112,7 @@ const lado = compacta ? 'h-12 w-12 text-[9px]' : 'h-16 w-16 text-[10px]'
   </div>
 </div>
 
-{
-  !conForma && (
-    <p class="mt-2 text-sm text-texto-suave">{ui(idioma, 'receta.sinForma')}</p>
-  )
-}
+<p class="mt-2 text-sm text-texto-suave">
+  {ui(idioma, `receta.donde.${receta.estacion}`)}
+  {!conForma && ` ${ui(idioma, 'receta.sinForma')}`}
+</p>

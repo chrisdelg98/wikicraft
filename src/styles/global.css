@@ -328,6 +328,54 @@ a {
   border-radius: var(--radius-bloque);
 }
 
+/* ---------------------------------------------------------------------------
+   La cuadricula de crafteo
+   Un hueco del inventario es exactamente lo contrario de un bloque: la luz le
+   entra por abajo porque esta hundido. Ese solo detalle es lo que separa una
+   caja de un hueco donde se pone algo, y es lo que hace que la cuadricula se
+   reconozca de un vistazo aunque dentro haya palabras y no texturas.
+
+   Los colores siguen siendo los del tema y no los grises de la interfaz del
+   juego: aqui dentro hay nombres que hay que poder leer, y buena parte de
+   quien lee son ninos con el brillo bajo.
+   --------------------------------------------------------------------------- */
+
+@utility hueco {
+  background: var(--fondo);
+  border: 2px solid var(--borde);
+  border-top-color: var(--borde-fuerte);
+  border-left-color: var(--borde-fuerte);
+  border-bottom-color: var(--superficie-alta);
+  border-right-color: var(--superficie-alta);
+  border-radius: var(--radius-bloque);
+}
+
+/* Un hueco vacio no es un hueco apagado: es un hueco sin nada dentro. Se marca
+   con la trama y no con un borde de puntos, que parecia un error de carga. */
+@utility hueco-vacio {
+  /* Dos colores del tema en vez de uno transparente: la mezcla con alfa obliga
+     a duplicar la regla para los navegadores que no la entienden, y la
+     diferencia entre estos dos ya es de por si sutil. */
+  background: repeating-linear-gradient(45deg, var(--fondo) 0 4px, var(--superficie) 4px 8px);
+}
+
+/* En el juego el hueco bajo el puntero se ilumina. Sale gratis y se reconoce
+   al instante. */
+.hueco:hover {
+  border-color: var(--acento);
+}
+
+@utility bandeja {
+  background: var(--superficie-alta);
+  padding: 0.5rem;
+  border: 3px solid var(--borde);
+  border-top-color: var(--superficie-alta);
+  border-left-color: var(--superficie-alta);
+  border-bottom-color: var(--borde-fuerte);
+  border-right-color: var(--borde-fuerte);
+  border-radius: var(--radius-bloque);
+}
+
 @utility bloque-pulsable {
   transition:
     transform 140ms ease,

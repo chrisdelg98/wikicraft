@@ -283,12 +283,12 @@ const consejos = [texto.notas, texto.consejo].filter(Boolean)
           {cuadriculas.map((receta) => (
             <div class="bloque bg-superficie-alta p-4">
               <Cuadricula idioma={idioma} receta={receta} compacta />
-              <p class="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
-                <span class="text-texto-suave">{ui(idioma, `faceta.${receta.estacion}`)}</span>
-                <a href={rutaDe(idioma, receta.id)} class="font-semibold hover:text-acento">
-                  {ui(idioma, 'receta.verFicha')}
-                </a>
-              </p>
+              <a
+                href={rutaDe(idioma, receta.id)}
+                class="mt-2 inline-block text-sm font-semibold hover:text-acento"
+              >
+                {ui(idioma, 'receta.verFicha')}
+              </a>
             </div>
           ))}
         </div>

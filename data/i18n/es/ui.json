@@ -301,7 +301,9 @@
   "grupo.sign": "Cualquier cartel",
 
   "receta.verAlternativas": "{grupo}: ver las {n} opciones",
-  "receta.sinForma": "Da igual dónde coloques cada cosa: esta receta no tiene forma.",
+  "receta.sinForma": "Y da igual en qué hueco pongas cada cosa.",
+  "receta.donde.inventario": "Se hace en los cuatro huecos de tu inventario, sin mesa.",
+  "receta.donde.mesa_de_trabajo": "Hace falta una mesa de trabajo.",
   "receta.verFicha": "Ver la receta entera →",
 
   "ficha.parecidos": "Otros parecidos",

@@ -144,7 +144,9 @@
   "grupo.coral": "Any coral",
 
   "receta.verAlternativas": "{grupo}: see all {n} options",
-  "receta.sinForma": "It does not matter where you put each thing: this recipe has no shape.",
+  "receta.sinForma": "And it does not matter which slot you put each thing in.",
+  "receta.donde.inventario": "Made in the four slots of your inventory, no table needed.",
+  "receta.donde.mesa_de_trabajo": "You need a crafting table.",
   "receta.verFicha": "See the whole recipe →",
 
   "ficha.parecidos": "Others like this",
