@@ -92,50 +92,67 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
     dejar ver un solo resultado. */}
 {
   (hayFiltros || hayGuia || visibles.length > 12) && (
-    <div class="mb-6 flex flex-wrap items-center gap-3">
-      <input
-        type="search"
-        data-filtro-texto
-        placeholder={ui(idioma, 'filtro.buscarEnLista')}
-        aria-label={ui(idioma, 'filtro.buscarEnLista')}
-        class="min-w-0 flex-1 bloque bg-superficie-alta px-3 py-2 placeholder:text-texto-suave sm:max-w-xs sm:flex-none"
-      />
-
-      {hayGuia && (
-        <button
-          type="button"
-          data-abrir-guia
-          class="flex shrink-0 items-center gap-2 bloque bloque-pulsable bg-acento px-3 py-2 text-sm font-bold text-acento-contraste"
-        >
-          <svg viewBox="0 0 16 16" class="h-4 w-4" fill="currentColor" aria-hidden="true">
-            <path d="M2 2h5v12H2zM9 2h5v12H9zM3 4h3v1H3zM10 4h3v1h-3zM3 6h3v1H3zM10 6h3v1h-3z" />
+    <div class="mb-6">
+      <div class="flex flex-wrap items-stretch gap-3">
+        {/* El campo manda: crece hasta ocupar todo lo que sobre. Es lo que mas
+            se usa y antes competia por el sitio con dos botones. */}
+        <div class="relative min-w-0 flex-1 basis-full sm:basis-64">
+          <svg
+            viewBox="0 0 24 24"
+            class="pointer-events-none absolute top-1/2 left-4 h-5 w-5 -translate-y-1/2 text-texto-suave"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            aria-hidden="true"
+          >
+            <circle cx="11" cy="11" r="7" />
+            <path d="m20 20-3.5-3.5" stroke-linecap="round" />
           </svg>
-          {ui(idioma, 'guia.abrir')}
-        </button>
-      )}
-
-      {hayFiltros && (
-        <button
-          type="button"
-          data-abrir-filtros
-          class="flex shrink-0 items-center gap-2 bloque bloque-pulsable px-3 py-2 text-sm font-semibold"
-        >
-          <svg viewBox="0 0 16 16" class="h-4 w-4" fill="currentColor" aria-hidden="true">
-            <path d="M1 3h14v2H1zM3 7h10v2H3zM6 11h4v2H6z" />
-          </svg>
-          {ui(idioma, 'filtro.abrir')}
-          <span
-            data-cuenta-filtros
-            hidden
-            class="grid h-5 min-w-5 place-items-center bg-acento px-1 text-xs font-bold text-acento-contraste"
+          <input
+            type="search"
+            data-filtro-texto
+            placeholder={ui(idioma, 'filtro.buscarEnLista')}
+            aria-label={ui(idioma, 'filtro.buscarEnLista')}
+            class="w-full bloque bg-superficie-alta py-3.5 pr-4 pl-12 text-base placeholder:text-texto-suave"
           />
-        </button>
-      )}
+        </div>
 
-      <span
+        {hayGuia && (
+          <button
+            type="button"
+            data-abrir-guia
+            class="flex shrink-0 items-center gap-2 bloque bloque-pulsable bg-acento px-4 py-3.5 font-bold text-acento-contraste"
+          >
+            <svg viewBox="0 0 16 16" class="h-4 w-4" fill="currentColor" aria-hidden="true">
+              <path d="M2 2h5v12H2zM9 2h5v12H9zM3 4h3v1H3zM10 4h3v1h-3zM3 6h3v1H3zM10 6h3v1h-3z" />
+            </svg>
+            {ui(idioma, 'guia.abrir')}
+          </button>
+        )}
+
+        {hayFiltros && (
+          <button
+            type="button"
+            data-abrir-filtros
+            class="flex shrink-0 items-center gap-2 bloque bloque-pulsable px-4 py-3.5 font-semibold"
+          >
+            <svg viewBox="0 0 16 16" class="h-4 w-4" fill="currentColor" aria-hidden="true">
+              <path d="M1 3h14v2H1zM3 7h10v2H3zM6 11h4v2H6z" />
+            </svg>
+            {ui(idioma, 'filtro.abrir')}
+            <span
+              data-cuenta-filtros
+              hidden
+              class="grid h-5 min-w-5 place-items-center bg-acento px-1 text-xs font-bold text-acento-contraste"
+            />
+          </button>
+        )}
+      </div>
+
+      <p
         data-resumen-filtro
         data-plantilla={ui(idioma, 'buscador.resultados', { n: '§' })}
-        class="text-sm text-texto-suave"
+        class="mt-2 text-sm text-texto-suave"
       />
     </div>
   )
