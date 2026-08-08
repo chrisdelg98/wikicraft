@@ -29,6 +29,14 @@
   --acento: #3f7f2b;
   --acento-claro: #57a03a;
   --acento-contraste: #ffffff;
+
+  /* Estado activo, con su propio par de colores.
+     Verde medio con texto blanco se queda en 4,9:1: cumple el minimo, pero en
+     un boton pequeno no canta. Invertirlo a verde brillante con texto casi
+     negro sube a 7,4:1, se lee de golpe y ademas se parece mas al verde del
+     juego. Los dos temas usan ya el mismo planteamiento. */
+  --acento-activo: #6fbf4a;
+  --acento-activo-texto: #0e2108;
   --sombra: rgba(22, 19, 14, 0.16);
 
   --etapa-inicio: #57a03a;
@@ -67,6 +75,8 @@
      oscuro: 8,9:1 contra el fondo y 8,7:1 contra el texto que lleva encima. */
   --o-acento: #79c855;
   --o-acento-claro: #96da77;
+  --o-acento-activo: #8ad665;
+  --o-acento-activo-texto: #0b1406;
   --o-acento-contraste: #0f2007;
   --o-sombra: rgba(0, 0, 0, 0.55);
 
@@ -121,6 +131,8 @@
   --acento: var(--o-acento);
   --acento-claro: var(--o-acento-claro);
   --acento-contraste: var(--o-acento-contraste);
+  --acento-activo: var(--o-acento-activo);
+  --acento-activo-texto: var(--o-acento-activo-texto);
   --sombra: var(--o-sombra);
 
   --etapa-inicio: var(--o-etapa-inicio);
@@ -145,6 +157,8 @@
   --color-acento: var(--acento);
   --color-acento-claro: var(--acento-claro);
   --color-acento-contraste: var(--acento-contraste);
+  --color-acento-activo: var(--acento-activo);
+  --color-acento-activo-texto: var(--acento-activo-texto);
 
   --font-sans:
     'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
