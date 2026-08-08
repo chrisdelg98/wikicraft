@@ -210,7 +210,10 @@ const consejos = [
       )
     }
 
-    <p class="mt-5 max-w-prose text-lg leading-relaxed">
+    {/* Ancho de lectura, no de parrafo estrecho. Con max-w-prose el texto se
+        quedaba en 40 rem mientras las tablas de al lado ocupaban 72, y la
+        ficha parecia cortada por la mitad. */}
+    <p class="mt-5 max-w-4xl text-lg leading-relaxed">
       {texto.descripcion ?? ui(idioma, 'ficha.sinDescripcion')}
     </p>
   </header>
@@ -527,7 +530,7 @@ const consejos = [
     texto.pasos?.length > 0 && (
       <section class="mb-10">
         <h2 class="titulo-seccion">{ui(idioma, 'ficha.pasos')}</h2>
-        <ol class="max-w-prose space-y-2">
+        <ol class="max-w-4xl space-y-2">
           {texto.pasos.map((paso, i) => (
             <li class="flex gap-3 bloque p-3">
               <span class="grid h-7 w-7 shrink-0 place-items-center bg-acento text-sm font-extrabold text-acento-contraste">
@@ -545,7 +548,9 @@ const consejos = [
     consejos.length > 0 && (
       <section class="mb-10">
         <h2 class="titulo-seccion">{ui(idioma, 'ficha.consejos')}</h2>
-        <div class="max-w-prose space-y-3">
+        {/* Son tarjetas sueltas, asi que en pantalla ancha van en dos columnas:
+            se aprovecha el hueco sin alargar las lineas. */}
+        <div class="grid gap-3 lg:grid-cols-2">
           {consejos.map((c) => (
             <p
               class:list={[
