@@ -157,14 +157,11 @@ const otrosIdiomas = idiomas
                       class:list={[
                         'flex items-center gap-2 bloque bloque-pulsable px-3 py-2 text-sm whitespace-nowrap',
                         modulo === moduloActivo
-                          ? 'bg-acento font-bold text-acento-contraste'
+                          ? 'font-bold text-acento shadow-[inset_0_-4px_0_0_var(--acento)]'
                           : 'font-semibold text-texto'
                       ]}
                     >
-                      <Icono
-                        modulo={modulo}
-                        clase={`h-4 w-4 ${modulo === moduloActivo ? '' : 'text-acento'}`}
-                      />
+                      <Icono modulo={modulo} clase="h-4 w-4 text-acento" />
                       {ui(idioma, `nav.${modulo}`)}
                     </a>
                   </li>
@@ -182,15 +179,15 @@ const otrosIdiomas = idiomas
                     aria-current={modulo === moduloActivo ? 'page' : undefined}
                     class:list={[
                       'flex items-center gap-2 bloque bloque-pulsable px-3 py-2 text-sm whitespace-nowrap',
+                      // La activa no se rellena: se subraya. Asi no compite con
+                      // el boton de guia, que si es una accion, y se distingue
+                      // igual por texto en verde, negrita y la barra del pie.
                       modulo === moduloActivo
-                        ? 'bg-acento font-bold text-acento-contraste'
+                        ? 'font-bold text-acento shadow-[inset_0_-4px_0_0_var(--acento)]'
                         : 'font-semibold text-texto'
                     ]}
                   >
-                    <Icono
-                      modulo={modulo}
-                      clase={`h-4 w-4 ${modulo === moduloActivo ? '' : 'text-acento'}`}
-                    />
+                    <Icono modulo={modulo} clase="h-4 w-4 text-acento" />
                     {ui(idioma, `nav.${modulo}`)}
                   </a>
                 </li>
