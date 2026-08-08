@@ -43,7 +43,7 @@ const otrosIdiomas = idiomas
     <meta name="description" content={descripcion} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="manifest" href="/manifest.webmanifest" />
-    <meta name="theme-color" content="#4f7d33" />
+    <meta name="theme-color" content="#3f7f2b" />
 
     {
       idiomas.map((i) => (
@@ -140,10 +140,10 @@ const otrosIdiomas = idiomas
                     href={`/${idioma}/${rutaModulo(idioma, modulo)}/`}
                     aria-current={modulo === moduloActivo ? 'page' : undefined}
                     class:list={[
-                      'flex items-center gap-2 bloque bloque-pulsable px-3 py-1.5 text-sm font-semibold whitespace-nowrap',
+                      'flex items-center gap-2 bloque bloque-pulsable px-3 py-1.5 text-sm whitespace-nowrap',
                       modulo === moduloActivo
-                        ? 'bg-acento text-acento-contraste'
-                        : 'text-texto'
+                        ? 'bg-acento font-bold text-acento-contraste'
+                        : 'font-semibold text-texto'
                     ]}
                   >
                     <Icono

@@ -22,12 +22,16 @@
   --borde-fuerte: #a89a7c;
   --texto: #16130e;
   --texto-suave: #494236;
-  --acento: #38621f;
-  --acento-claro: #4f7d33;
+  /* Verde hierba, en la linea del de Minecraft sin copiarlo. El anterior era
+     un oliva muy apagado: pasaba de sobra en contraste pero se veia sucio en
+     los botones grandes. Este mide 4,9:1 contra el blanco, asi que el texto
+     encima sigue leyendose sin problema. */
+  --acento: #3f7f2b;
+  --acento-claro: #57a03a;
   --acento-contraste: #ffffff;
   --sombra: rgba(22, 19, 14, 0.16);
 
-  --etapa-inicio: #4f7d33;
+  --etapa-inicio: #57a03a;
   --etapa-hierro: #6f6f6f;
   --etapa-diamante: #1c7f8a;
   --etapa-nether: #a5341d;
@@ -35,7 +39,7 @@
 
   /* Cuanto se apila un objeto. El color refuerza lo que ya dice el icono: a
      mas verde, mas cabe en un hueco del inventario. */
-  --pila-64: #4f7d33;
+  --pila-64: #57a03a;
   --pila-16: #b07219;
   --pila-1: #a5341d;
 
@@ -59,18 +63,20 @@
   --o-borde-fuerte: #5a6777;
   --o-texto: #f3f7fa;
   --o-texto-suave: #adb9c6;
-  --o-acento: #8ed363;
-  --o-acento-claro: #a9e181;
+  /* El mismo verde hierba, subido de luz para que aguante sobre el fondo
+     oscuro: 8,9:1 contra el fondo y 8,7:1 contra el texto que lleva encima. */
+  --o-acento: #79c855;
+  --o-acento-claro: #96da77;
   --o-acento-contraste: #0f2007;
   --o-sombra: rgba(0, 0, 0, 0.55);
 
-  --o-etapa-inicio: #8ed363;
+  --o-etapa-inicio: #79c855;
   --o-etapa-hierro: #bcc7d3;
   --o-etapa-diamante: #5cd0de;
   --o-etapa-nether: #f0805f;
   --o-etapa-end: #b499ef;
 
-  --o-pila-64: #8ed363;
+  --o-pila-64: #79c855;
   --o-pila-16: #e3b155;
   --o-pila-1: #f0805f;
 }
