@@ -14,5 +14,9 @@
     "moneda",
     "comercio"
   ],
-  "relevancia": "normal"
+  "relevancia": "normal",
+  "seObtieneRompiendo": [
+    "deepslate_emerald_ore",
+    "emerald_ore"
+  ]
 }

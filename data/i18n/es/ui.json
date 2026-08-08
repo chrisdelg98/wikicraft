@@ -181,6 +181,23 @@
   "faceta.media": "Dificultad media",
   "faceta.dificil": "Difícil",
 
+  "resumen.aldeanos": "Todas las profesiones de un vistazo",
+  "resumen.primerTrato": "Su primer trato (novato)",
+  "resumen.aldeanosNota": "Las cantidades son orientativas: el juego sortea el precio de cada trato dentro de un rango, y baja de forma permanente si curas al aldeano de zombi. Entra en cada profesión para ver todos sus tratos.",
+
+  "obtencion.titulo": "Cómo se consigue",
+  "obtencion.fabricar": "Fabricándolo",
+  "obtencion.romper": "Picando o rompiendo bloques",
+  "obtencion.matar": "Matando mobs",
+  "obtencion.comerciar": "Comerciando con aldeanos",
+  "obtencion.fundir": "En el horno",
+  "obtencion.pescar": "Pescando",
+  "obtencion.explorar": "Explorando",
+  "obtencion.desconocido": "Todavía no sabemos cómo se consigue esto.",
+
+  "rel.seObtieneRompiendo": "Sale de estos bloques",
+  "rel.alRomperSuelta": "Al romperlo sale",
+
   "grupo.cualquiera": "Cualquiera de {n}",
   "grupo.madera": "Cualquier tipo de madera",
   "grupo.piedra": "Cualquier tipo de piedra",

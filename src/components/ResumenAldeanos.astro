@@ -1,0 +1,71 @@
+---
+import { ui, entidadesDe, rutaDe, t, grafo } from '../lib/datos.js'
+
+/**
+ * Tabla comparativa de las profesiones.
+ *
+ * Un listado de trece tarjetas obliga a entrar en cada una para comparar, que
+ * es justo lo que hace falta aqui: lo que se quiere saber de un aldeano es que
+ * bloque lo crea y que se le puede sacar barato. Se resuelve en una tabla y sin
+ * datos nuevos, porque ya estan todos en las fichas.
+ */
+
+const { idioma } = Astro.props
+
+const filas = entidadesDe('villagers')
+  .map(({ entidad }) => {
+    const primero = entidad.niveles?.[0]?.tradeos?.[0]
+    return {
+      id: entidad.id,
+      nombre: t(idioma, entidad.id).nombre,
+      mesa: entidad.mesaDeTrabajo,
+      pide: primero?.recibe?.[0],
+      entrega: primero?.entrega
+    }
+  })
+  .sort((a, b) => a.nombre.localeCompare(b.nombre))
+
+const enlace = (otro) =>
+  grafo.has(otro) ? { url: rutaDe(idioma, otro), nombre: t(idioma, otro).nombre } : null
+---
+
+<section class="mb-8">
+  <h2 class="titulo-seccion">{ui(idioma, 'resumen.aldeanos')}</h2>
+
+  <div class="tabla-envoltorio">
+    <table>
+      <thead>
+        <tr>
+          <th>{ui(idioma, 'nav.villagers')}</th>
+          <th>{ui(idioma, 'rel.mesaDeTrabajo')}</th>
+          <th>{ui(idioma, 'resumen.primerTrato')}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          filas.map((f) => (
+            <tr>
+              <td>
+                <a href={rutaDe(idioma, f.id)}>{f.nombre}</a>
+              </td>
+              <td>{enlace(f.mesa) ? <a href={enlace(f.mesa).url}>{enlace(f.mesa).nombre}</a> : '—'}</td>
+              <td>
+                {f.pide && f.entrega ? (
+                  <span>
+                    {f.pide.cantidad} × {enlace(f.pide.item)?.nombre ?? f.pide.item}
+                    <span class="text-texto-suave"> → </span>
+                    {f.entrega.cantidad ?? 1} × {enlace(f.entrega.item)?.nombre ?? f.entrega.item}
+                  </span>
+                ) : (
+                  '—'
+                )}
+              </td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <p class="mt-2 text-sm text-texto-suave">{ui(idioma, 'resumen.aldeanosNota')}</p>
+</section>

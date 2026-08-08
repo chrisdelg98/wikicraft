@@ -7,5 +7,8 @@
   "categorias": [
     "bloque"
   ],
-  "pila": 64
+  "pila": 64,
+  "seObtieneRompiendo": [
+    "fire_coral_block"
+  ]
 }

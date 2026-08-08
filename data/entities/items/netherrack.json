@@ -7,5 +7,9 @@
   "categorias": [
     "bloque"
   ],
-  "pila": 64
+  "pila": 64,
+  "seObtieneRompiendo": [
+    "crimson_nylium",
+    "warped_nylium"
+  ]
 }

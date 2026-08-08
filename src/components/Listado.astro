@@ -1,6 +1,7 @@
 ---
 import TarjetaEntidad from './TarjetaEntidad.astro'
 import Icono from './Icono.astro'
+import ResumenAldeanos from './ResumenAldeanos.astro'
 import { ui, entidadesDe, rutaModulo, t, normalizar, facetasDe } from '../lib/datos.js'
 
 const { idioma, modulo, pagina = 1 } = Astro.props
@@ -52,6 +53,10 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
     </p>
   </div>
 </div>
+
+{/* Tabla comparativa antes del listado, cuando el modulo tiene una que
+    responda mejor que trece tarjetas sueltas. Solo en la primera pagina. */}
+{actual === 1 && modulo === 'villagers' && <ResumenAldeanos idioma={idioma} />}
 
 {
   (etapasPresentes.length > 1 || visibles.length > 12) && (

@@ -7,5 +7,9 @@
   "categorias": [
     "mineral"
   ],
-  "pila": 64
+  "pila": 64,
+  "seObtieneRompiendo": [
+    "copper_ore",
+    "deepslate_copper_ore"
+  ]
 }

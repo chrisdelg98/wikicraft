@@ -7,5 +7,9 @@
   "categorias": [
     "mineral"
   ],
-  "pila": 64
+  "pila": 64,
+  "seObtieneRompiendo": [
+    "coal_ore",
+    "deepslate_coal_ore"
+  ]
 }

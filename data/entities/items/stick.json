@@ -16,5 +16,13 @@
     "palo",
     "mango"
   ],
-  "relevancia": "normal"
+  "relevancia": "normal",
+  "seObtieneRompiendo": [
+    "acacia_leaves",
+    "azalea_leaves",
+    "birch_leaves",
+    "cherry_leaves",
+    "dark_oak_leaves",
+    "dead_bush"
+  ]
 }

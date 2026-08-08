@@ -294,6 +294,19 @@ const categoriasDe = (nombre) => {
   return [...new Set(cats)]
 }
 
+/**
+ * Que bloque hay que romper para conseguir cada item. Se excluye que un bloque
+ * se suelte a si mismo, que no informa de nada, y se recorta la lista: saber
+ * que la tierra sale de veinte bloques distintos no ayuda a nadie.
+ */
+const bloquesQueSueltan = new Map()
+for (const { block, drops } of mc.blockLootArray ?? []) {
+  for (const { item } of drops ?? []) {
+    if (!item || item === block) continue
+    bloquesQueSueltan.set(item, (bloquesQueSueltan.get(item) ?? new Set()).add(block))
+  }
+}
+
 for (const item of mc.itemsArray) {
   const categoria = primerMatch(CATEGORIA_EQUIPO, item.name)
   const esEquipo = Boolean(categoria) && Boolean(item.maxDurability)
@@ -317,6 +330,11 @@ for (const item of mc.itemsArray) {
     anotar('tools', item.name, item.displayName)
   } else {
     const base = varianteDe(item.name)
+    const rompiendo = [...(bloquesQueSueltan.get(item.name) ?? [])]
+      .filter((b) => nombresDeItem.has(b))
+      .sort()
+      .slice(0, 6)
+
     const entidad = {
       $schema: '../../schemas/item.schema.json',
       id: item.name,
@@ -325,9 +343,15 @@ for (const item of mc.itemsArray) {
       relevancia: base ? 'baja' : 'normal',
       categorias: categoriasDe(item.name),
       pila: [1, 16, 64].includes(item.stackSize) ? item.stackSize : 64,
-      ...(base ? { varianteDe: base } : {})
+      ...(base ? { varianteDe: base } : {}),
+      ...(rompiendo.length > 0 ? { seObtieneRompiendo: rompiendo } : {})
     }
-    await guardarEntidad('items', entidad, ['pila', 'relevancia', 'varianteDe'])
+    await guardarEntidad('items', entidad, [
+      'pila',
+      'relevancia',
+      'varianteDe',
+      'seObtieneRompiendo'
+    ])
     anotar('items', item.name, item.displayName)
   }
   importados.add(item.name)

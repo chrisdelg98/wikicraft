@@ -57,6 +57,11 @@
       "description": "Mobs, biomas, estructuras o aldeanos de los que procede."
     },
 
+    "seObtieneRompiendo": {
+      "$ref": "_comun.schema.json#/$defs/referencias",
+      "description": "Bloques que sueltan este item al romperlos. Es la respuesta a 'de donde saco esto' para todo lo que se pica."
+    },
+
     "combustible": {
       "type": "object",
       "additionalProperties": false,

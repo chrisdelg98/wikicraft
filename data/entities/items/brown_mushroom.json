@@ -8,5 +8,8 @@
     "bloque",
     "vegetal"
   ],
-  "pila": 64
+  "pila": 64,
+  "seObtieneRompiendo": [
+    "brown_mushroom_block"
+  ]
 }

@@ -14,5 +14,9 @@
     "gema",
     "mineral raro"
   ],
-  "relevancia": "normal"
+  "relevancia": "normal",
+  "seObtieneRompiendo": [
+    "deepslate_diamond_ore",
+    "diamond_ore"
+  ]
 }

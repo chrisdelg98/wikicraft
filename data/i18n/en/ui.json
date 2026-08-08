@@ -109,6 +109,23 @@
   "faceta.dificil": "Hard",
 
   "listado.irA": "Go to page",
+  "resumen.aldeanos": "All professions at a glance",
+  "resumen.primerTrato": "Their first trade (novice)",
+  "resumen.aldeanosNota": "Amounts are indicative: the game rolls each trade price within a range, and it drops permanently if you cure the villager from being a zombie. Open a profession to see all of its trades.",
+
+  "obtencion.titulo": "How to get it",
+  "obtencion.fabricar": "By crafting it",
+  "obtencion.romper": "By breaking blocks",
+  "obtencion.matar": "By killing mobs",
+  "obtencion.comerciar": "By trading with villagers",
+  "obtencion.fundir": "In the furnace",
+  "obtencion.pescar": "By fishing",
+  "obtencion.explorar": "By exploring",
+  "obtencion.desconocido": "We do not know yet how to get this.",
+
+  "rel.seObtieneRompiendo": "Comes from these blocks",
+  "rel.alRomperSuelta": "Breaking it gives",
+
   "grupo.cualquiera": "Any of {n}",
   "grupo.log": "Any log",
   "grupo.wood": "Any wood",

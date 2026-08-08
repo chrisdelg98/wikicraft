@@ -7,5 +7,12 @@
   "categorias": [
     "bloque"
   ],
-  "pila": 64
+  "pila": 64,
+  "seObtieneRompiendo": [
+    "dirt_path",
+    "farmland",
+    "grass_block",
+    "mycelium",
+    "podzol"
+  ]
 }

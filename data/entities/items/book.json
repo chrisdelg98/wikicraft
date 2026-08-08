@@ -14,5 +14,8 @@
     "papel",
     "cuero"
   ],
-  "relevancia": "normal"
+  "relevancia": "normal",
+  "seObtieneRompiendo": [
+    "bookshelf"
+  ]
 }

@@ -7,5 +7,11 @@
   "categorias": [
     "vegetal"
   ],
-  "pila": 64
+  "pila": 64,
+  "seObtieneRompiendo": [
+    "fern",
+    "large_fern",
+    "tall_grass",
+    "wheat"
+  ]
 }

@@ -15,7 +15,8 @@ import {
   relacionesDe,
   facetasDe,
   familiaDe,
-  grupoDe
+  grupoDe,
+  comoSeConsigue
 } from '../../../lib/datos.js'
 
 export function getStaticPaths() {
@@ -149,6 +150,10 @@ const grupos = relacionesDe(id).filter(
 
 const facetas = facetasDe(grafo.get(id))
 
+// "De donde saco esto" es la pregunta que mas se hace quien juega, asi que va
+// arriba del todo y no enterrada entre las relaciones.
+const obtencion = comoSeConsigue(id)
+
 // Entidades hermanas. Va al final y con menos peso visual: es navegacion
 // lateral, no informacion sobre esta ficha.
 const parecidos = familiaDe(id)
@@ -209,6 +214,25 @@ const consejos = [
       {texto.descripcion ?? ui(idioma, 'ficha.sinDescripcion')}
     </p>
   </header>
+
+  {
+    modulo === 'items' && (
+      <section class="mb-10">
+        <h2 class="titulo-seccion">{ui(idioma, 'obtencion.titulo')}</h2>
+        {obtencion.length > 0 ? (
+          <ul class="flex flex-wrap gap-2">
+            {obtencion.map((m) => (
+              <li class="bloque bg-superficie-alta px-3 py-2 font-semibold">
+                {ui(idioma, `obtencion.${m}`)}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p class="text-texto-suave">{ui(idioma, 'obtencion.desconocido')}</p>
+        )}
+      </section>
+    )
+  }
 
   {
     datos.length > 0 && (

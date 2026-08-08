@@ -9,5 +9,8 @@
     "vegetal"
   ],
   "pila": 64,
-  "varianteDe": "oak_sapling"
+  "varianteDe": "oak_sapling",
+  "seObtieneRompiendo": [
+    "acacia_leaves"
+  ]
 }

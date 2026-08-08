@@ -15,5 +15,8 @@
     "nether",
     "resistente"
   ],
-  "relevancia": "normal"
+  "relevancia": "normal",
+  "seObtieneRompiendo": [
+    "ender_chest"
+  ]
 }

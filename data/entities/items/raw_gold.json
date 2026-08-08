@@ -7,5 +7,9 @@
   "categorias": [
     "mineral"
   ],
-  "pila": 64
+  "pila": 64,
+  "seObtieneRompiendo": [
+    "deepslate_gold_ore",
+    "gold_ore"
+  ]
 }

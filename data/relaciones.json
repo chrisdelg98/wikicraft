@@ -3,7 +3,8 @@
 
   "item": [
     { "campo": "obtenidoDe[]", "etiqueta": "rel.obtenidoDe", "inversa": "rel.aquiConsigues" },
-    { "campo": "varianteDe", "etiqueta": "rel.varianteDe", "inversa": "rel.variantes" }
+    { "campo": "varianteDe", "etiqueta": "rel.varianteDe", "inversa": "rel.variantes" },
+    { "campo": "seObtieneRompiendo[]", "etiqueta": "rel.seObtieneRompiendo", "inversa": "rel.alRomperSuelta" }
   ],
 
   "encantamiento": [

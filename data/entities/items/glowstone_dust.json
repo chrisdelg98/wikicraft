@@ -13,5 +13,8 @@
     "nivel II",
     "pociones"
   ],
-  "relevancia": "normal"
+  "relevancia": "normal",
+  "seObtieneRompiendo": [
+    "glowstone"
+  ]
 }

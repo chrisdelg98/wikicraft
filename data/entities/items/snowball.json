@@ -7,5 +7,9 @@
   "categorias": [
     "material"
   ],
-  "pila": 16
+  "pila": 16,
+  "seObtieneRompiendo": [
+    "snow",
+    "snow_block"
+  ]
 }

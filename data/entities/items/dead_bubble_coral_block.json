@@ -7,5 +7,8 @@
   "categorias": [
     "bloque"
   ],
-  "pila": 64
+  "pila": 64,
+  "seObtieneRompiendo": [
+    "bubble_coral_block"
+  ]
 }

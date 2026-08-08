@@ -7,5 +7,9 @@
   "categorias": [
     "comida"
   ],
-  "pila": 64
+  "pila": 64,
+  "seObtieneRompiendo": [
+    "dark_oak_leaves",
+    "oak_leaves"
+  ]
 }

@@ -277,6 +277,67 @@ export const familiaDe = (id, limite = 8) => {
   }
   return []
 }
+// ---------------------------------------------------------------------------
+// Como se consigue
+// La pregunta que mas se hace quien juega no es "que es esto" sino "de donde lo
+// saco". No es un dato que haya que escribir: ya esta en el grafo, repartido
+// entre recetas, botines, comercios y bloques. Aqui se junta.
+// ---------------------------------------------------------------------------
+
+const ESTACIONES_DE_FUEGO = ['horno', 'alto_horno', 'ahumador', 'fogata']
+
+/** Lo unico que no se deduce del grafo: la pesca no esta en los datos. */
+const SE_PESCA = [
+  'cod', 'salmon', 'tropical_fish', 'pufferfish', 'ink_sac', 'bone', 'string',
+  'leather', 'leather_boots', 'rotten_flesh', 'stick', 'bowl', 'lily_pad',
+  'tripwire_hook', 'nautilus_shell', 'saddle', 'name_tag', 'enchanted_book',
+  'fishing_rod', 'bow'
+]
+
+const metodos = new Map()
+const anotarMetodo = (id, metodo) => {
+  if (!id || !grafo.has(id)) return
+  if (!metodos.has(id)) metodos.set(id, new Set())
+  metodos.get(id).add(metodo)
+}
+
+for (const { entidad, modulo } of entidades) {
+  if (modulo === 'recipes' && entidad.resultado) {
+    anotarMetodo(
+      entidad.resultado.item,
+      ESTACIONES_DE_FUEGO.includes(entidad.estacion) ? 'fundir' : 'fabricar'
+    )
+  }
+  if (modulo === 'mobs') {
+    for (const b of entidad.botin ?? []) anotarMetodo(b.item, 'matar')
+  }
+  if (modulo === 'villagers') {
+    for (const nivel of entidad.niveles ?? []) {
+      for (const trato of nivel.tradeos) {
+        anotarMetodo(trato.entrega.encantamiento ?? trato.entrega.item, 'comerciar')
+      }
+    }
+  }
+  if (modulo === 'biomes') {
+    for (const r of [...(entidad.recursos ?? []), ...(entidad.botin ?? []), ...(entidad.exclusivo ?? [])]) {
+      anotarMetodo(r, 'explorar')
+    }
+  }
+  // Un bloque se consigue rompiendolo, sin mas. "seObtieneRompiendo" solo
+  // recoge los casos en que sale OTRA cosa, como el diamante de su mena.
+  if (entidad.seObtieneRompiendo?.length > 0) anotarMetodo(entidad.id, 'romper')
+  if (modulo === 'items' && (entidad.categorias ?? []).includes('bloque')) {
+    anotarMetodo(entidad.id, 'romper')
+  }
+}
+
+for (const id of SE_PESCA) anotarMetodo(id, 'pescar')
+
+/** Formas conocidas de conseguir algo, en orden de utilidad practica. */
+const ORDEN_METODOS = ['fabricar', 'romper', 'matar', 'comerciar', 'fundir', 'pescar', 'explorar']
+
+export const comoSeConsigue = (id) =>
+  ORDEN_METODOS.filter((m) => metodos.get(id)?.has(m))
 
 /**
  * Nombre corto para un conjunto de alternativas de una receta.
