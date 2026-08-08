@@ -1,17 +1,32 @@
 ---
 import Etapa from './Etapa.astro'
-import { t, rutaDe, grafo, ui } from '../lib/datos.js'
+import Apilamiento from './Apilamiento.astro'
+import { t, rutaDe, grafo, ui, facetasDe } from '../lib/datos.js'
 
 const { idioma, id } = Astro.props
 const nodo = grafo.get(id)
+const { entidad } = nodo
 const texto = t(idioma, id)
+
+// Dos facetas como maximo: con mas, la tarjeta vuelve a ser un muro de texto y
+// deja de leerse de un vistazo, que es justo lo que se quiere evitar.
+const facetas = facetasDe(nodo).slice(0, 2)
 ---
 
-<a
-  href={rutaDe(idioma, id)}
-  class="flex h-full flex-col gap-2 bloque bloque-pulsable p-3"
->
+<a href={rutaDe(idioma, id)} class="flex h-full flex-col gap-2 bloque bloque-pulsable p-3">
   <span class="font-bold">{texto.nombre}</span>
+
+  {
+    facetas.length > 0 && (
+      <span class="flex flex-wrap gap-1">
+        {facetas.map((f) => (
+          <span class="bg-fondo px-1.5 py-0.5 text-xs font-semibold text-texto-suave">
+            {ui(idioma, `faceta.${f}`)}
+          </span>
+        ))}
+      </span>
+    )
+  }
 
   {
     texto.descripcion && (
@@ -20,19 +35,23 @@ const texto = t(idioma, id)
   }
 
   <span class="mt-auto flex items-center justify-between gap-2 pt-1">
-    <Etapa idioma={idioma} etapa={nodo.entidad.etapa} />
-    {
-      !texto.traducido &&
-        texto.idiomaUsado && (
-          <span
-            class="text-xs font-semibold text-texto-suave"
-            title={ui(idioma, 'idioma.sinTraducir', {
-              idioma: ui(idioma, `idioma.nombre.${texto.idiomaUsado}`)
-            })}
-          >
-            {texto.idiomaUsado.toUpperCase()}
-          </span>
-        )
-    }
+    <Etapa idioma={idioma} etapa={entidad.etapa} />
+
+    <span class="flex items-center gap-2">
+      {entidad.pila && <Apilamiento idioma={idioma} pila={entidad.pila} compacto={true} />}
+      {
+        !texto.traducido &&
+          texto.idiomaUsado && (
+            <span
+              class="text-xs font-semibold text-texto-suave"
+              title={ui(idioma, 'idioma.sinTraducir', {
+                idioma: ui(idioma, `idioma.nombre.${texto.idiomaUsado}`)
+              })}
+            >
+              {texto.idiomaUsado.toUpperCase()}
+            </span>
+          )
+      }
+    </span>
   </span>
 </a>

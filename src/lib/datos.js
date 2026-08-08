@@ -232,6 +232,53 @@ export const relacionesDe = (id) => {
 }
 
 // ---------------------------------------------------------------------------
+// Facetas
+// Cada modulo tiene un campo que sirve para clasificar de un vistazo: la
+// categoria de un objeto, la dimension de un bioma, si un mob es hostil. Es lo
+// que convierte una tarjeta con solo un nombre en algo que dice algo.
+// ---------------------------------------------------------------------------
+
+const FACETAS_POR_MODULO = {
+  items: (e) => e.categorias ?? [],
+  tools: (e) => [e.categoria, e.material],
+  enchantments: (e) => [e.categoria],
+  mobs: (e) => [e.categoria],
+  biomes: (e) => [e.dimension, e.tipo === 'estructura' ? 'estructura' : null],
+  potions: (e) => [e.presentacion, e.efecto !== 'ninguno' ? e.efecto : null],
+  recipes: (e) => [e.estacion],
+  farms: (e) => [e.dificultad],
+  villagers: () => []
+}
+
+export const facetasDe = ({ entidad, modulo }) =>
+  (FACETAS_POR_MODULO[modulo]?.(entidad) ?? []).filter(Boolean)
+
+/**
+ * Entidades hermanas: las que comparten el final de su identificador. Un
+ * abanico de coral de burbuja encuentra asi los demas abanices de coral, y una
+ * lana roja las otras quince lanas.
+ *
+ * Se prueba primero el sufijo mas largo, que es el mas especifico. Sale gratis
+ * porque los identificadores de Minecraft ya estan construidos asi, y evita
+ * tener que declarar a mano a que familia pertenece cada una de las 3.151
+ * entidades.
+ */
+export const familiaDe = (id, limite = 8) => {
+  const nodo = grafo.get(id)
+  if (!nodo) return []
+
+  const partes = id.split('_')
+  for (let n = Math.min(3, partes.length - 1); n >= 1; n--) {
+    const sufijo = `_${partes.slice(-n).join('_')}`
+    const hermanas = entidades.filter(
+      (e) => e.modulo === nodo.modulo && e.entidad.id !== id && e.entidad.id.endsWith(sufijo)
+    )
+    if (hermanas.length >= 2) return hermanas.slice(0, limite).map((e) => e.entidad.id)
+  }
+  return []
+}
+
+// ---------------------------------------------------------------------------
 // Buscador
 // ---------------------------------------------------------------------------
 

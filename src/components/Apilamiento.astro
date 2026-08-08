@@ -1,0 +1,45 @@
+---
+import { ui } from '../lib/datos.js'
+
+/**
+ * Cuantas unidades caben en un hueco del inventario.
+ *
+ * "Pila 64" no le dice nada a quien empieza, asi que el dato se cuenta con tres
+ * senales que se refuerzan entre si: cuantos cuadraditos se dibujan, de que
+ * color, y una frase en lenguaje llano. El icono es siempre el mismo dibujo, de
+ * modo que se reconoce de un vistazo sin leer.
+ */
+
+const { idioma, pila, compacto = false } = Astro.props
+
+// Tres cuadros para 64, dos para 16, uno para lo que no se apila.
+const cuadros = pila >= 64 ? 3 : pila >= 16 ? 2 : 1
+const color = `var(--pila-${pila >= 64 ? '64' : pila >= 16 ? '16' : '1'})`
+const texto = ui(idioma, `pila.${pila}`, { n: pila })
+---
+
+<span class="inline-flex items-center gap-2" title={texto}>
+  <svg
+    viewBox="0 0 12 12"
+    class:list={['shrink-0', compacto ? 'h-4 w-4' : 'h-6 w-6']}
+    shape-rendering="crispEdges"
+    aria-hidden="true"
+    style={`color:${color}`}
+  >
+    {/* Cada cuadro es una unidad apilada, dibujada en perspectiva de monton. */}
+    {
+      Array.from({ length: cuadros }, (_, i) => (
+        <rect
+          x={1 + i}
+          y={7 - i * 2.5}
+          width="8"
+          height="3"
+          fill="currentColor"
+          opacity={1 - i * 0.22}
+        />
+      ))
+    }
+  </svg>
+
+  {!compacto && <span class="font-semibold">{texto}</span>}
+</span>

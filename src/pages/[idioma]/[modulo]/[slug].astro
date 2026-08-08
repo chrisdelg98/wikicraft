@@ -3,6 +3,7 @@ import Base from '../../../layouts/Base.astro'
 import Etapa from '../../../components/Etapa.astro'
 import TarjetaEntidad from '../../../components/TarjetaEntidad.astro'
 import Icono from '../../../components/Icono.astro'
+import Apilamiento from '../../../components/Apilamiento.astro'
 import {
   codigosIdioma,
   entidades,
@@ -11,7 +12,9 @@ import {
   ui,
   rutaModulo,
   rutaDe,
-  relacionesDe
+  relacionesDe,
+  facetasDe,
+  familiaDe
 } from '../../../lib/datos.js'
 
 export function getStaticPaths() {
@@ -45,7 +48,9 @@ const enlace = (otro) =>
 // --- Datos numericos -------------------------------------------------------
 
 const DATOS = {
-  item: [['ficha.pila', 'pila']],
+  // "pila" no va aqui: se pinta aparte con icono, porque un numero suelto no
+  // le dice nada a quien no conoce la jerga del inventario.
+  item: [],
   encantamiento: [['ficha.nivelMaximo', 'nivelMaximo']],
   herramienta: [
     ['ficha.durabilidad', 'durabilidad'],
@@ -133,6 +138,12 @@ const grupos = relacionesDe(id).filter(
   (g) => !(YA_EN_TABLA[entidad.tipo] ?? []).includes(g.etiqueta)
 )
 
+const facetas = facetasDe(grafo.get(id))
+
+// Entidades hermanas. Va al final y con menos peso visual: es navegacion
+// lateral, no informacion sobre esta ficha.
+const parecidos = familiaDe(id)
+
 const consejos = [
   texto.notas && { clase: 'normal', cuerpo: texto.notas },
   texto.consejo && { clase: 'normal', cuerpo: texto.consejo },
@@ -160,12 +171,20 @@ const consejos = [
           </span>
         )
       }
-      {
-        entidad.categoria && (
-          <span class="text-sm font-semibold text-texto-suave">{entidad.categoria}</span>
-        )
-      }
+      {entidad.pila && <Apilamiento idioma={idioma} pila={entidad.pila} />}
     </div>
+
+    {
+      facetas.length > 0 && (
+        <ul class="mt-3 flex flex-wrap gap-1.5">
+          {facetas.map((f) => (
+            <li class="bloque bg-superficie-alta px-2.5 py-1 text-sm font-semibold">
+              {ui(idioma, `faceta.${f}`)}
+            </li>
+          ))}
+        </ul>
+      )
+    }
 
     {
       !texto.traducido && texto.idiomaUsado && (
@@ -429,6 +448,26 @@ const consejos = [
             </ul>
           </div>
         ))}
+      </section>
+    )
+  }
+
+  {
+    parecidos.length > 0 && (
+      <section class="mt-4 border-t-2 border-borde pt-6">
+        <h2 class="mb-3 text-base font-bold text-texto-suave">{ui(idioma, 'ficha.parecidos')}</h2>
+        <ul class="flex flex-wrap gap-2">
+          {parecidos.map((otro) => (
+            <li>
+              <a
+                href={rutaDe(idioma, otro)}
+                class="block bloque bloque-pulsable px-3 py-1.5 text-sm font-semibold"
+              >
+                {t(idioma, otro).nombre}
+              </a>
+            </li>
+          ))}
+        </ul>
       </section>
     )
   }

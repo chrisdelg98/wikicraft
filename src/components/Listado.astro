@@ -1,7 +1,7 @@
 ---
 import TarjetaEntidad from './TarjetaEntidad.astro'
 import Icono from './Icono.astro'
-import { ui, entidadesDe, rutaModulo, t, normalizar } from '../lib/datos.js'
+import { ui, entidadesDe, rutaModulo, t, normalizar, facetasDe } from '../lib/datos.js'
 
 const { idioma, modulo, pagina = 1 } = Astro.props
 
@@ -15,6 +15,7 @@ const todas = entidadesDe(modulo)
   .map((e) => ({
     id: e.entidad.id,
     etapa: e.entidad.etapa,
+    facetas: facetasDe(e),
     nombre: t(idioma, e.entidad.id).nombre
   }))
   .sort(
@@ -26,6 +27,12 @@ const actual = Math.min(Math.max(1, pagina), totalPaginas)
 const visibles = todas.slice((actual - 1) * POR_PAGINA, actual * POR_PAGINA)
 
 const etapasPresentes = ORDEN.filter((e) => visibles.some((x) => x.etapa === e))
+
+// Categorias presentes en esta pagina, ordenadas por cuantas entidades cubren.
+const facetasPresentes = [...new Set(visibles.flatMap((x) => x.facetas))]
+  .map((f) => ({ clave: f, cuantas: visibles.filter((x) => x.facetas.includes(f)).length }))
+  .sort((a, b) => b.cuantas - a.cuantas)
+  .slice(0, 10)
 const titulo = ui(idioma, `nav.${modulo}`)
 const base = `/${idioma}/${rutaModulo(idioma, modulo)}`
 const urlPagina = (n) => (n === 1 ? `${base}/` : `${base}/pagina/${n}/`)
@@ -81,6 +88,30 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
         </div>
       )}
 
+      {facetasPresentes.length > 1 && (
+        <div class="flex flex-wrap gap-2">
+          <button
+            type="button"
+            data-filtro-faceta=""
+            aria-pressed="true"
+            class="bloque bloque-pulsable px-3 py-1.5 text-sm font-semibold aria-pressed:border-b-acento aria-pressed:bg-superficie-alta"
+          >
+            {ui(idioma, 'faceta.etiqueta')}: {ui(idioma, 'filtro.todas')}
+          </button>
+          {facetasPresentes.map(({ clave, cuantas }) => (
+            <button
+              type="button"
+              data-filtro-faceta={clave}
+              aria-pressed="false"
+              class="bloque bloque-pulsable px-3 py-1.5 text-sm font-semibold aria-pressed:border-b-acento aria-pressed:bg-superficie-alta"
+            >
+              {ui(idioma, `faceta.${clave}`)}
+              <span class="ml-1.5 text-texto-suave">{cuantas}</span>
+            </button>
+          ))}
+        </div>
+      )}
+
       <p class="text-sm text-texto-suave">{ui(idioma, 'filtro.ambito')}</p>
     </div>
   )
@@ -88,8 +119,8 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
 
 <ul data-lista class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
   {
-    visibles.map(({ id, etapa, nombre }) => (
-      <li data-etapa={etapa} data-nombre={normalizar(nombre)}>
+    visibles.map(({ id, etapa, facetas, nombre }) => (
+      <li data-etapa={etapa} data-facetas={facetas.join(' ')} data-nombre={normalizar(nombre)}>
         <TarjetaEntidad idioma={idioma} id={id} />
       </li>
     ))
@@ -137,6 +168,22 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
           {ui(idioma, 'listado.siguiente')}
         </a>
       )}
+
+      {totalPaginas > 5 && (
+        <label class="ml-2 flex items-center gap-2 text-sm text-texto-suave">
+          {ui(idioma, 'listado.irA')}
+          <select
+            data-salto-pagina
+            class="bloque bg-superficie-alta px-2 py-2 text-sm font-semibold text-texto"
+          >
+            {Array.from({ length: totalPaginas }, (_, i) => i + 1).map((n) => (
+              <option value={urlPagina(n)} selected={n === actual}>
+                {n}
+              </option>
+            ))}
+          </select>
+        </label>
+      )}
     </nav>
   )
 }
@@ -156,6 +203,7 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
     const vacio = document.querySelector('[data-vacio]')
 
     let etapa = ''
+    let faceta = ''
     let texto = ''
 
     const normalizar = (t) => t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
@@ -164,11 +212,20 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
       let visibles = 0
       for (const li of elementos) {
         const coincide =
-          (!etapa || li.dataset.etapa === etapa) && (!texto || li.dataset.nombre.includes(texto))
+          (!etapa || li.dataset.etapa === etapa) &&
+          (!faceta || (li.dataset.facetas ?? '').split(' ').includes(faceta)) &&
+          (!texto || li.dataset.nombre.includes(texto))
         li.hidden = !coincide
         if (coincide) visibles++
       }
       if (vacio) vacio.hidden = visibles > 0
+    }
+
+    /** Deja pulsado solo el boton elegido dentro de su grupo. */
+    const marcar = (grupo, elegido) => {
+      for (const otro of document.querySelectorAll(`[${grupo}]`)) {
+        otro.setAttribute('aria-pressed', String(otro === elegido))
+      }
     }
 
     document.querySelector('[data-filtro-texto]')?.addEventListener('input', (e) => {
@@ -179,11 +236,23 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
     for (const boton of document.querySelectorAll('[data-filtro-etapa]')) {
       boton.addEventListener('click', () => {
         etapa = boton.dataset.filtroEtapa
-        for (const otro of document.querySelectorAll('[data-filtro-etapa]')) {
-          otro.setAttribute('aria-pressed', String(otro === boton))
-        }
+        marcar('data-filtro-etapa', boton)
         aplicar()
       })
     }
+
+    for (const boton of document.querySelectorAll('[data-filtro-faceta]')) {
+      boton.addEventListener('click', () => {
+        faceta = boton.dataset.filtroFaceta
+        marcar('data-filtro-faceta', boton)
+        aplicar()
+      })
+    }
+
+    // Salto directo de pagina: con veintitrés páginas, ir de una en una no es
+    // una forma razonable de llegar a la mitad de la lista.
+    document.querySelector('[data-salto-pagina]')?.addEventListener('change', (e) => {
+      if (e.target.value) location.href = e.target.value
+    })
   }
 </script>

@@ -32,6 +32,12 @@
   --etapa-diamante: #1c7f8a;
   --etapa-nether: #a5341d;
   --etapa-end: #6a4bab;
+
+  /* Cuanto se apila un objeto. El color refuerza lo que ya dice el icono: a
+     mas verde, mas cabe en un hueco del inventario. */
+  --pila-64: #4f7d33;
+  --pila-16: #b07219;
+  --pila-1: #a5341d;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -74,6 +80,10 @@
   --etapa-diamante: #67dbe7;
   --etapa-nether: #f07f63;
   --etapa-end: #bba4ef;
+
+  --pila-64: #92cf70;
+  --pila-16: #e0a94a;
+  --pila-1: #f07f63;
 }
 
 @theme inline {
