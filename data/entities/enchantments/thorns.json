@@ -17,5 +17,8 @@
   "esMaldicion": false,
   "obtenidoDe": [
     "librarian"
-  ]
+  ],
+  "costeYunque": {
+    "libro": 4
+  }
 }

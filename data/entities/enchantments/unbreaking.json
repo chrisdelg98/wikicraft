@@ -36,5 +36,8 @@
     "unbreaking",
     "durabilidad"
   ],
-  "relevancia": "alta"
+  "relevancia": "alta",
+  "costeYunque": {
+    "libro": 1
+  }
 }

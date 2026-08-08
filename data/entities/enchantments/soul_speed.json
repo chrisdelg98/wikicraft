@@ -11,5 +11,8 @@
   ],
   "incompatibleCon": [],
   "esTesoro": true,
-  "esMaldicion": false
+  "esMaldicion": false,
+  "costeYunque": {
+    "libro": 4
+  }
 }

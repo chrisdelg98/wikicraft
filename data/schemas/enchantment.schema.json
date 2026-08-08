@@ -74,6 +74,25 @@
       "default": false
     },
 
+    "costeYunque": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["libro"],
+      "description": "Multiplicador de coste del yunque. El coste de pasar un encantamiento a otra pieza es su nivel resultante por este numero. Se omite a proposito cuando el valor no esta contrastado: el optimizador se niega a calcular rutas con encantamientos sin dato, que es preferible a dar una cifra inventada con aire de exacta.",
+      "properties": {
+        "libro": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Cuando el encantamiento llega en un libro. Es el unico que usa el optimizador, porque lo normal es aplicar libros sobre una herramienta."
+        },
+        "objeto": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Cuando llega en otra herramienta o armadura. Solo entra al fusionar dos piezas encantadas."
+        }
+      }
+    },
+
     "obtenidoDe": {
       "$ref": "_comun.schema.json#/$defs/referencias",
       "description": "Aldeanos, estructuras o mobs que permiten conseguirlo."

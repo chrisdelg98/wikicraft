@@ -1,0 +1,49 @@
+{
+  "_nota": "Operaciones de yunque con su coste conocido, usadas para comprobar el motor. Si un multiplicador esta mal, alguna de estas deja de cuadrar: es la unica forma de que la herramienta no de cifras exactas y falsas. Java Edition 1.21.x, sin el reequilibrio experimental de aldeanos.",
+
+  "casos": [
+    {
+      "id": "pico_eficiencia_irrompibilidad",
+      "nombre": "Pico de diamante sin usar, con Eficiencia V e Irrompibilidad III",
+      "objeto": { "ench": {}, "trabajos": 0 },
+      "libros": [{ "efficiency": 5 }, { "unbreaking": 3 }],
+      "costeEsperado": 9,
+      "comprueba": "Fija el multiplicador de libro de Irrompibilidad en 1: el segundo paso cuesta 4, que son 3 niveles por 1 mas 1 de penalizacion."
+    },
+
+    {
+      "id": "pico_cuatro_libros",
+      "nombre": "Pico de diamante sin usar, con cuatro libros",
+      "objeto": { "ench": {}, "trabajos": 0 },
+      "libros": [
+        { "efficiency": 5 },
+        { "unbreaking": 3 },
+        { "fortune": 3 },
+        { "mending": 1 }
+      ],
+      "costeEsperado": 23,
+      "comprueba": "Que el motor no se conforma con el emparejamiento evidente. Hay tres rutas: aplicar los cuatro libros uno a uno cuesta 27, emparejarlos en dos libros de dos cuesta 26, y la buena cuesta 23. Consiste en pegar al pico los dos encantamientos baratos primero, Eficiencia e Irrompibilidad, que son multiplicador 1, y unir aparte los dos caros, Fortuna y Reparacion, que son multiplicador 2. Asi los caros pasan por el yunque una sola vez y arrastran menos penalizacion. Es justo el tipo de ruta que nadie encuentra a ojo."
+    },
+
+    {
+      "id": "espada_ya_encantada",
+      "nombre": "Espada de diamante que ya lleva Filo IV y Botin II",
+      "objeto": { "ench": { "sharpness": 4, "looting": 2 }, "trabajos": 0 },
+      "libros": [{ "sharpness": 4 }, { "unbreaking": 3 }, { "mending": 1 }],
+      "costeEsperado": 14,
+      "resultadoEsperado": { "sharpness": 5, "looting": 2, "unbreaking": 3, "mending": 1 },
+      "comprueba": "Que partir de una pieza ya encantada funciona, y que dos veces el mismo nivel suben uno: Filo IV mas Filo IV da Filo V."
+    }
+  ],
+
+  "secuencias": [
+    {
+      "id": "pico_cuatro_libros_uno_a_uno",
+      "nombre": "Los mismos cuatro libros, aplicados de uno en uno",
+      "objeto": { "ench": {}, "trabajos": 0 },
+      "pasos": [{ "efficiency": 5 }, { "unbreaking": 3 }, { "fortune": 3 }, { "mending": 1 }],
+      "costesEsperados": [5, 4, 9, 9],
+      "comprueba": "El coste de cada operacion por separado, sin que intervenga la busqueda. Si esto cuadra, la formula es correcta aunque el optimizador tuviera fallos."
+    }
+  ]
+}

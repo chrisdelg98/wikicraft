@@ -10,7 +10,8 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "npm run validar && astro build",
+    "build": "npm run validar && npm run probar && astro build",
+    "probar": "node scripts/probar-yunque.mjs",
     "preview": "astro preview",
     "validar": "node scripts/validar.mjs"
   },

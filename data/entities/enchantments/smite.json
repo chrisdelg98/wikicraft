@@ -26,5 +26,8 @@
     "smite",
     "no muertos"
   ],
-  "relevancia": "alta"
+  "relevancia": "alta",
+  "costeYunque": {
+    "libro": 1
+  }
 }

@@ -26,5 +26,8 @@
     "sharpness",
     "dano"
   ],
-  "relevancia": "alta"
+  "relevancia": "alta",
+  "costeYunque": {
+    "libro": 1
+  }
 }
