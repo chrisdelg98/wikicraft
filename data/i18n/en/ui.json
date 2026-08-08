@@ -144,6 +144,8 @@
   "grupo.coral": "Any coral",
 
   "receta.verAlternativas": "{grupo}: see all {n} options",
+  "receta.sinForma": "It does not matter where you put each thing: this recipe has no shape.",
+  "receta.verFicha": "See the whole recipe →",
 
   "ficha.parecidos": "Others like this",
   "ficha.datos": "At a glance",

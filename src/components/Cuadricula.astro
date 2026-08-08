@@ -1,0 +1,100 @@
+---
+/**
+ * La cuadricula de crafteo de una receta, con su resultado.
+ *
+ * Vive aparte porque se pinta en dos sitios: en la ficha de la receta y en la
+ * del objeto que sale de ella. Esto ultimo es el motivo de existir del
+ * componente: quien busca un ojo de arana fermentado quiere ver como se hace
+ * ahi mismo, no leer que existe una receta y tener que ir a buscarla.
+ *
+ * Sirve para los dos tipos de receta. Las que tienen forma se pintan en tres
+ * por tres, porque en el juego importa donde va cada cosa; las que no la
+ * tienen se pintan en fila y lo dicen, que es justo la diferencia.
+ */
+import { t, ui, rutaDe, grafo, grupoDe } from '../lib/datos.js'
+
+const { idioma, receta, compacta = false } = Astro.props
+
+const enlace = (otro) =>
+  grafo.has(otro)
+    ? { url: rutaDe(idioma, otro), nombre: t(idioma, otro).nombre }
+    : { url: null, nombre: String(otro) }
+
+/** Etiqueta de una casilla: el nombre si es uno solo, el grupo si son varios. */
+const etiqueta = (opciones) => {
+  if (!opciones?.length) return null
+  if (opciones.length === 1) return enlace(opciones[0]).nombre
+  const grupo = grupoDe(opciones)
+  return grupo
+    ? ui(idioma, `grupo.${grupo}`, { n: opciones.length })
+    : ui(idioma, 'grupo.cualquiera', { n: opciones.length })
+}
+
+const titulo = (opciones) =>
+  opciones?.length > 1 ? opciones.map((o) => enlace(o).nombre).join(', ') : undefined
+
+/**
+ * Cada casilla guarda la LISTA de lo que admite, porque el juego acepta
+ * etiquetas: "cualquier tronco" son diecinueve alternativas para una casilla.
+ * Se descartan las filas del todo vacias que arrastra el formato original.
+ */
+const conForma = receta.conForma !== false && Boolean(receta.patron)
+
+const casillas = conForma
+  ? receta.patron
+      .map((fila) =>
+        Array.from({ length: 3 }, (_, col) => {
+          const letra = fila[col] ?? ' '
+          return letra === ' ' ? null : (receta.clave?.[letra] ?? null)
+        })
+      )
+      .filter((fila) => fila.some(Boolean))
+      .flat()
+  : // Sin forma da igual la posicion, pero no la cantidad: tres azucares son
+    // tres casillas. Se corta en nueve, que es lo que cabe en una mesa.
+    (receta.ingredientes ?? [])
+      .flatMap((ing) => Array.from({ length: ing.cantidad ?? 1 }, () => ing.opciones))
+      .slice(0, 9)
+
+const lado = compacta ? 'h-12 w-12 text-[9px]' : 'h-16 w-16 text-[10px]'
+---
+
+<div class="flex flex-wrap items-center gap-5">
+  <div
+    class:list={['inline-grid gap-1 bloque bg-fondo p-2', conForma && 'grid-cols-3']}
+    style={conForma ? undefined : `grid-template-columns:repeat(${Math.min(casillas.length, 3)},1fr)`}
+  >
+    {
+      casillas.map((opciones) => (
+        <span
+          class:list={[
+            'grid place-items-center p-1 text-center font-semibold leading-tight',
+            lado,
+            opciones ? 'bloque bg-superficie-alta' : 'border-2 border-dashed border-borde'
+          ]}
+          title={titulo(opciones)}
+        >
+          {etiqueta(opciones) ?? ''}
+        </span>
+      ))
+    }
+  </div>
+
+  <div class="flex items-center gap-3">
+    <span class="text-2xl text-texto-suave" aria-hidden="true">→</span>
+    <span
+      class:list={[
+        'grid min-w-16 place-items-center bloque bg-acento p-1 text-center font-bold text-acento-contraste',
+        compacta ? 'h-12 text-[10px]' : 'h-16 text-[11px]'
+      ]}
+    >
+      {receta.resultado.cantidad} × {enlace(receta.resultado.item).nombre}
+    </span>
+  </div>
+</div>
+
+{
+  !conForma && (
+    <p class="mt-2 text-sm text-texto-suave">{ui(idioma, 'receta.sinForma')}</p>
+  )
+}

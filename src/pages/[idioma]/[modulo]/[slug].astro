@@ -4,6 +4,7 @@ import Etapa from '../../../components/Etapa.astro'
 import TarjetaEntidad from '../../../components/TarjetaEntidad.astro'
 import Icono from '../../../components/Icono.astro'
 import Apilamiento from '../../../components/Apilamiento.astro'
+import Cuadricula from '../../../components/Cuadricula.astro'
 import {
   codigosIdioma,
   entidades,
@@ -98,24 +99,6 @@ if (entidad.produccionPorHora) {
 
 // --- Receta ----------------------------------------------------------------
 
-/**
- * Cada casilla de la cuadricula guarda la LISTA de lo que admite, porque el
- * juego acepta etiquetas: "cualquier tronco" son diecinueve alternativas para
- * una sola casilla. Se descartan las filas totalmente vacias que arrastra el
- * formato original.
- */
-const filasReceta =
-  entidad.tipo === 'receta' && entidad.patron
-    ? entidad.patron
-        .map((fila) =>
-          Array.from({ length: 3 }, (_, col) => {
-            const letra = fila[col] ?? ' '
-            return letra === ' ' ? null : (entidad.clave?.[letra] ?? null)
-          })
-        )
-        .filter((fila) => fila.some(Boolean))
-    : null
-
 /** Etiqueta de una casilla: el nombre si es uno solo, el grupo si son varios. */
 const etiquetaOpciones = (opciones) => {
   if (!opciones?.length) return null
@@ -169,9 +152,37 @@ const YA_EN_TABLA = {
   pocion: ['rel.derivaDe', 'rel.ingrediente']
 }
 
-const grupos = relacionesDe(id).filter(
-  (g) => !(YA_EN_TABLA[entidad.tipo] ?? []).includes(g.etiqueta)
-)
+/**
+ * Las recetas que dan esta cosa, con su cuadricula, aqui mismo.
+ *
+ * Antes solo salia una tarjeta al final que llevaba a la ficha de la receta:
+ * dos pasos para responder a "y esto como se hace", que es de las preguntas
+ * que mas trae a nadie a una wiki de Minecraft. Ahora se ve sin salir.
+ *
+ * Se pintan tres como mucho. Hay objetos que salen de siete recetas distintas
+ * y entonces la cuadricula deja de ser una respuesta y pasa a ser una lista;
+ * el resto siguen abajo como tarjetas.
+ */
+const MAXIMO_CUADRICULAS = 3
+
+const relaciones = relacionesDe(id)
+
+const recetasPropias =
+  entidad.tipo === 'receta'
+    ? []
+    : (relaciones
+        .find((g) => g.etiqueta === 'rel.comoSeHace')
+        ?.ids.map((r) => grafo.get(r)?.entidad)
+        .filter(Boolean) ?? [])
+
+const cuadriculas = recetasPropias.slice(0, MAXIMO_CUADRICULAS)
+const restantes = recetasPropias.slice(MAXIMO_CUADRICULAS).map((r) => r.id)
+
+const grupos = relaciones
+  .filter((g) => !(YA_EN_TABLA[entidad.tipo] ?? []).includes(g.etiqueta))
+  // Lo que ya se ve como cuadricula no se repite abajo como tarjeta.
+  .map((g) => (g.etiqueta === 'rel.comoSeHace' ? { ...g, ids: restantes } : g))
+  .filter((g) => g.ids.length > 0)
 
 /** "15" si la cantidad es fija, "15–16" si el juego la sortea. */
 const rango = ({ minimo, maximo }) => (minimo === maximo ? `${minimo}` : `${minimo}–${maximo}`)
@@ -265,6 +276,27 @@ const consejos = [texto.notas, texto.consejo].filter(Boolean)
   }
 
   {
+    cuadriculas.length > 0 && (
+      <section class="mb-10">
+        <h2 class="titulo-seccion">{ui(idioma, 'rel.comoSeHace')}</h2>
+        <div class="space-y-4">
+          {cuadriculas.map((receta) => (
+            <div class="bloque bg-superficie-alta p-4">
+              <Cuadricula idioma={idioma} receta={receta} compacta />
+              <p class="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
+                <span class="text-texto-suave">{ui(idioma, `faceta.${receta.estacion}`)}</span>
+                <a href={rutaDe(idioma, receta.id)} class="font-semibold hover:text-acento">
+                  {ui(idioma, 'receta.verFicha')}
+                </a>
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  {
     cadenaPocion.length > 0 && (
       <section class="mb-10">
         <h2 class="titulo-seccion">{ui(idioma, 'pocion.comoSeHace')}</h2>
@@ -316,33 +348,10 @@ const consejos = [texto.notas, texto.consejo].filter(Boolean)
   }
 
   {
-    filasReceta && (
+    entidad.tipo === 'receta' && (
       <section class="mb-10">
         <h2 class="titulo-seccion">{ui(idioma, 'ficha.receta')}</h2>
-        <div class="flex flex-wrap items-center gap-5">
-          <div class="inline-grid gap-1 bloque bg-fondo p-2" style="grid-template-columns:repeat(3,1fr)">
-            {filasReceta.flat().map((opciones) => (
-              <span
-                class:list={[
-                  'grid h-16 w-16 place-items-center p-1 text-center text-[10px] font-semibold leading-tight',
-                  opciones ? 'bloque bg-superficie-alta' : 'border-2 border-dashed border-borde'
-                ]}
-                title={opciones?.length > 1 ? opciones.map((o) => enlace(o).nombre).join(', ') : undefined}
-              >
-                {etiquetaOpciones(opciones) ?? ''}
-              </span>
-            ))}
-          </div>
-
-          <div class="flex items-center gap-3">
-            <span class="text-2xl text-texto-suave" aria-hidden="true">
-              →
-            </span>
-            <span class="grid h-16 min-w-16 place-items-center bloque bg-acento p-1 text-center text-[11px] font-bold text-acento-contraste">
-              {entidad.resultado.cantidad} × {enlace(entidad.resultado.item).nombre}
-            </span>
-          </div>
-        </div>
+        <Cuadricula idioma={idioma} receta={entidad} />
       </section>
     )
   }

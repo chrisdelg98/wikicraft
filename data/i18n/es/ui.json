@@ -301,6 +301,8 @@
   "grupo.sign": "Cualquier cartel",
 
   "receta.verAlternativas": "{grupo}: ver las {n} opciones",
+  "receta.sinForma": "Da igual dónde coloques cada cosa: esta receta no tiene forma.",
+  "receta.verFicha": "Ver la receta entera →",
 
   "ficha.parecidos": "Otros parecidos",
   "ficha.datos": "De un vistazo",
