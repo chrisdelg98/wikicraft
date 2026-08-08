@@ -161,11 +161,10 @@ const obtencion = comoSeConsigue(id)
 // lateral, no informacion sobre esta ficha.
 const parecidos = familiaDe(id)
 
-const consejos = [
-  texto.notas && { clase: 'normal', cuerpo: texto.notas },
-  texto.consejo && { clase: 'normal', cuerpo: texto.consejo },
-  texto.advertencia && { clase: 'aviso', cuerpo: texto.advertencia }
-].filter(Boolean)
+// La advertencia no entra aqui: es una letra pequena, no un consejo. Como
+// tarjeta al lado de los demas pesaba igual que ellos y robaba atencion a lo
+// que si aporta.
+const consejos = [texto.notas, texto.consejo].filter(Boolean)
 ---
 
 <Base idioma={idioma} titulo={texto.nombre} descripcion={texto.descripcion} idEntidad={id}>
@@ -573,21 +572,23 @@ const consejos = [
     consejos.length > 0 && (
       <section class="mb-10">
         <h2 class="titulo-seccion">{ui(idioma, 'ficha.consejos')}</h2>
-        {/* Son tarjetas sueltas, asi que en pantalla ancha van en dos columnas:
-            se aprovecha el hueco sin alargar las lineas. */}
-        <div class="grid gap-3 lg:grid-cols-2">
+        {/* Dos columnas solo si hay dos cosas que contar. Con una sola, media
+            pantalla se quedaba vacia al lado. */}
+        <div class:list={['grid gap-3', consejos.length > 1 && 'lg:grid-cols-2']}>
           {consejos.map((c) => (
-            <p
-              class:list={[
-                'bloque bg-superficie-alta p-3',
-                c.clase === 'aviso' && 'border-l-4 border-l-[var(--etapa-nether)] font-semibold'
-              ]}
-            >
-              {c.cuerpo}
-            </p>
+            <p class="bloque bg-superficie-alta p-3">{c}</p>
           ))}
         </div>
       </section>
+    )
+  }
+
+  {
+    texto.advertencia && (
+      <p class="mb-10 flex gap-2 border-l-2 border-l-[var(--etapa-nether)] pl-3 text-sm text-texto-suave">
+        <span aria-hidden="true">⚠</span>
+        <span>{texto.advertencia}</span>
+      </p>
     )
   }
 
