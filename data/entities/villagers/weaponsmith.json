@@ -10,49 +10,189 @@
       "nivel": 1,
       "tradeos": [
         {
-          "id": "weaponsmith_n1_carbon",
+          "id": "weaponsmith_01",
           "tipo": "compra",
           "recibe": [
             {
               "item": "coal",
               "minimo": 15,
-              "maximo": 16
+              "maximo": 15
             }
           ],
           "entrega": {
             "item": "emerald",
             "cantidad": 1
-          }
+          },
+          "usosMaximos": 16,
+          "experiencia": 2,
+          "precioMultiplicador": 0.05
         },
         {
-          "id": "weaponsmith_n1_hacha",
+          "id": "weaponsmith_02",
           "tipo": "venta",
           "recibe": [
             {
               "item": "emerald",
-              "minimo": 7,
-              "maximo": 9
+              "minimo": 3,
+              "maximo": 3
             }
           ],
           "entrega": {
             "item": "iron_axe",
             "cantidad": 1
-          }
+          },
+          "usosMaximos": 12,
+          "experiencia": 1,
+          "precioMultiplicador": 0.2
         },
         {
-          "id": "weaponsmith_n1_espada",
+          "id": "weaponsmith_03",
           "tipo": "venta",
           "recibe": [
             {
               "item": "emerald",
               "minimo": 7,
-              "maximo": 9
+              "maximo": 21
             }
           ],
           "entrega": {
             "item": "iron_sword",
+            "cantidad": 1,
+            "encantamientoAleatorio": true
+          },
+          "usosMaximos": 3,
+          "experiencia": 5,
+          "precioMultiplicador": 0.2
+        }
+      ]
+    },
+    {
+      "nivel": 2,
+      "tradeos": [
+        {
+          "id": "weaponsmith_04",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "iron_ingot",
+              "minimo": 4,
+              "maximo": 4
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
             "cantidad": 1
-          }
+          },
+          "usosMaximos": 12,
+          "experiencia": 10,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "weaponsmith_05",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 36,
+              "maximo": 36
+            }
+          ],
+          "entrega": {
+            "item": "bell",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 10,
+          "precioMultiplicador": 0.2
+        }
+      ]
+    },
+    {
+      "nivel": 3,
+      "tradeos": [
+        {
+          "id": "weaponsmith_06",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "flint",
+              "minimo": 24,
+              "maximo": 24
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 20,
+          "precioMultiplicador": 0.05
+        }
+      ]
+    },
+    {
+      "nivel": 4,
+      "tradeos": [
+        {
+          "id": "weaponsmith_07",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "diamond",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 30,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "weaponsmith_08",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 17,
+              "maximo": 31
+            }
+          ],
+          "entrega": {
+            "item": "diamond_axe",
+            "cantidad": 1,
+            "encantamientoAleatorio": true
+          },
+          "usosMaximos": 3,
+          "experiencia": 15,
+          "precioMultiplicador": 0.2
+        }
+      ]
+    },
+    {
+      "nivel": 5,
+      "tradeos": [
+        {
+          "id": "weaponsmith_09",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 13,
+              "maximo": 27
+            }
+          ],
+          "entrega": {
+            "item": "diamond_sword",
+            "cantidad": 1,
+            "encantamientoAleatorio": true
+          },
+          "usosMaximos": 3,
+          "experiencia": 30,
+          "precioMultiplicador": 0.2
         }
       ]
     }

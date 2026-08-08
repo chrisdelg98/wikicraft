@@ -119,7 +119,11 @@
       "properties": {
         "item": { "$ref": "#/$defs/referencia" },
         "minimo": { "$ref": "#/$defs/cantidad" },
-        "maximo": { "$ref": "#/$defs/cantidad" }
+        "maximo": { "$ref": "#/$defs/cantidad" },
+        "variasOpciones": {
+          "type": "boolean",
+          "description": "El trato admite cualquiera de una familia, por ejemplo cualquier color de lana. Se guarda uno representativo y este campo avisa de que hay mas."
+        }
       }
     },
 

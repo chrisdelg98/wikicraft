@@ -10,34 +10,253 @@
       "nivel": 1,
       "tradeos": [
         {
-          "id": "fletcher_n1_palos",
+          "id": "fletcher_01",
           "tipo": "compra",
           "recibe": [
             {
               "item": "stick",
-              "minimo": 26,
+              "minimo": 32,
               "maximo": 32
             }
           ],
           "entrega": {
             "item": "emerald",
             "cantidad": 1
-          }
+          },
+          "usosMaximos": 16,
+          "experiencia": 2,
+          "precioMultiplicador": 0.05
         },
         {
-          "id": "fletcher_n1_pedernal",
+          "id": "fletcher_02",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "arrow",
+            "cantidad": 16
+          },
+          "usosMaximos": 12,
+          "experiencia": 1,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "fletcher_03",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            },
+            {
+              "item": "gravel",
+              "minimo": 10,
+              "maximo": 10
+            }
+          ],
+          "entrega": {
+            "item": "flint",
+            "cantidad": 10
+          },
+          "usosMaximos": 12,
+          "experiencia": 1,
+          "precioMultiplicador": 0.05
+        }
+      ]
+    },
+    {
+      "nivel": 2,
+      "tradeos": [
+        {
+          "id": "fletcher_04",
           "tipo": "compra",
           "recibe": [
             {
               "item": "flint",
               "minimo": 26,
-              "maximo": 32
+              "maximo": 26
             }
           ],
           "entrega": {
             "item": "emerald",
             "cantidad": 1
-          }
+          },
+          "usosMaximos": 12,
+          "experiencia": 10,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "fletcher_05",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 2,
+              "maximo": 2
+            }
+          ],
+          "entrega": {
+            "item": "bow",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 5,
+          "precioMultiplicador": 0.05
+        }
+      ]
+    },
+    {
+      "nivel": 3,
+      "tradeos": [
+        {
+          "id": "fletcher_06",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "string",
+              "minimo": 14,
+              "maximo": 14
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 16,
+          "experiencia": 20,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "fletcher_07",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 3,
+              "maximo": 3
+            }
+          ],
+          "entrega": {
+            "item": "crossbow",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 10,
+          "precioMultiplicador": 0.05
+        }
+      ]
+    },
+    {
+      "nivel": 4,
+      "tradeos": [
+        {
+          "id": "fletcher_08",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "feather",
+              "minimo": 24,
+              "maximo": 24
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 16,
+          "experiencia": 30,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "fletcher_09",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 7,
+              "maximo": 21
+            }
+          ],
+          "entrega": {
+            "item": "bow",
+            "cantidad": 1,
+            "encantamientoAleatorio": true
+          },
+          "usosMaximos": 3,
+          "experiencia": 15,
+          "precioMultiplicador": 0.05
+        }
+      ]
+    },
+    {
+      "nivel": 5,
+      "tradeos": [
+        {
+          "id": "fletcher_10",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "tripwire_hook",
+              "minimo": 8,
+              "maximo": 8
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 30,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "fletcher_11",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 8,
+              "maximo": 22
+            }
+          ],
+          "entrega": {
+            "item": "crossbow",
+            "cantidad": 1,
+            "encantamientoAleatorio": true
+          },
+          "usosMaximos": 3,
+          "experiencia": 15,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "fletcher_12",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            },
+            {
+              "item": "arrow",
+              "minimo": 25,
+              "maximo": 25
+            }
+          ],
+          "entrega": {
+            "item": "tipped_arrow",
+            "cantidad": 5,
+            "variasOpciones": true
+          },
+          "usosMaximos": 12,
+          "experiencia": 30,
+          "precioMultiplicador": 0.05
         }
       ]
     }

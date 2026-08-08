@@ -14,7 +14,25 @@
       "nivel": 1,
       "tradeos": [
         {
-          "id": "librarian_n1_libro",
+          "id": "librarian_01",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "paper",
+              "minimo": 24,
+              "maximo": 24
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 16,
+          "experiencia": 2,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "librarian_02",
           "tipo": "venta",
           "recibe": [
             {
@@ -30,23 +48,266 @@
           ],
           "entrega": {
             "item": "enchanted_book",
-            "cantidad": 1
-          }
+            "cantidad": 1,
+            "encantamientoAleatorio": true
+          },
+          "usosMaximos": 12,
+          "experiencia": 1,
+          "precioMultiplicador": 0.2
         },
         {
-          "id": "librarian_n1_papel",
+          "id": "librarian_03",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 9,
+              "maximo": 9
+            }
+          ],
+          "entrega": {
+            "item": "bookshelf",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 1,
+          "precioMultiplicador": 0.05
+        }
+      ]
+    },
+    {
+      "nivel": 2,
+      "tradeos": [
+        {
+          "id": "librarian_04",
           "tipo": "compra",
           "recibe": [
             {
-              "item": "paper",
-              "minimo": 24,
-              "maximo": 35
+              "item": "book",
+              "minimo": 4,
+              "maximo": 4
             }
           ],
           "entrega": {
             "item": "emerald",
             "cantidad": 1
-          }
+          },
+          "usosMaximos": 12,
+          "experiencia": 10,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "librarian_05",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 5,
+              "maximo": 64
+            },
+            {
+              "item": "book",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "enchanted_book",
+            "cantidad": 1,
+            "encantamientoAleatorio": true
+          },
+          "usosMaximos": 12,
+          "experiencia": 5,
+          "precioMultiplicador": 0.2
+        },
+        {
+          "id": "librarian_06",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "lantern",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 5,
+          "precioMultiplicador": 0.05
+        }
+      ]
+    },
+    {
+      "nivel": 3,
+      "tradeos": [
+        {
+          "id": "librarian_07",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "ink_sac",
+              "minimo": 5,
+              "maximo": 5
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 20,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "librarian_08",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 5,
+              "maximo": 64
+            },
+            {
+              "item": "book",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "enchanted_book",
+            "cantidad": 1,
+            "encantamientoAleatorio": true
+          },
+          "usosMaximos": 12,
+          "experiencia": 10,
+          "precioMultiplicador": 0.2
+        },
+        {
+          "id": "librarian_09",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "glass",
+            "cantidad": 4
+          },
+          "usosMaximos": 12,
+          "experiencia": 10,
+          "precioMultiplicador": 0.05
+        }
+      ]
+    },
+    {
+      "nivel": 4,
+      "tradeos": [
+        {
+          "id": "librarian_10",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "writable_book",
+              "minimo": 2,
+              "maximo": 2
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 30,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "librarian_11",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 5,
+              "maximo": 64
+            },
+            {
+              "item": "book",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "enchanted_book",
+            "cantidad": 1,
+            "encantamientoAleatorio": true
+          },
+          "usosMaximos": 12,
+          "experiencia": 15,
+          "precioMultiplicador": 0.2
+        },
+        {
+          "id": "librarian_12",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 5,
+              "maximo": 5
+            }
+          ],
+          "entrega": {
+            "item": "clock",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 15,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "librarian_13",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 4,
+              "maximo": 4
+            }
+          ],
+          "entrega": {
+            "item": "compass",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 15,
+          "precioMultiplicador": 0.05
+        }
+      ]
+    },
+    {
+      "nivel": 5,
+      "tradeos": [
+        {
+          "id": "librarian_14",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 20,
+              "maximo": 20
+            }
+          ],
+          "entrega": {
+            "item": "name_tag",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 30,
+          "precioMultiplicador": 0.05
         }
       ]
     }

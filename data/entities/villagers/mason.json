@@ -10,19 +10,314 @@
       "nivel": 1,
       "tradeos": [
         {
-          "id": "mason_n1_arcilla",
+          "id": "mason_01",
           "tipo": "compra",
           "recibe": [
             {
               "item": "clay_ball",
               "minimo": 10,
+              "maximo": 10
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 16,
+          "experiencia": 2,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "mason_02",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "brick",
+            "cantidad": 10
+          },
+          "usosMaximos": 16,
+          "experiencia": 1,
+          "precioMultiplicador": 0.05
+        }
+      ]
+    },
+    {
+      "nivel": 2,
+      "tradeos": [
+        {
+          "id": "mason_03",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "stone",
+              "minimo": 20,
+              "maximo": 20
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 16,
+          "experiencia": 10,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "mason_04",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "chiseled_stone_bricks",
+            "cantidad": 4
+          },
+          "usosMaximos": 16,
+          "experiencia": 5,
+          "precioMultiplicador": 0.05
+        }
+      ]
+    },
+    {
+      "nivel": 3,
+      "tradeos": [
+        {
+          "id": "mason_05",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "granite",
+              "minimo": 16,
+              "maximo": 16
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 16,
+          "experiencia": 20,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "mason_06",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "diorite",
+              "minimo": 16,
+              "maximo": 16
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 16,
+          "experiencia": 20,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "mason_07",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "andesite",
+              "minimo": 16,
+              "maximo": 16
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 16,
+          "experiencia": 20,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "mason_08",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "polished_granite",
+            "cantidad": 4
+          },
+          "usosMaximos": 16,
+          "experiencia": 10,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "mason_09",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "polished_andesite",
+            "cantidad": 4
+          },
+          "usosMaximos": 16,
+          "experiencia": 10,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "mason_10",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "polished_diorite",
+            "cantidad": 4
+          },
+          "usosMaximos": 16,
+          "experiencia": 10,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "mason_11",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "dripstone_block",
+            "cantidad": 4
+          },
+          "usosMaximos": 16,
+          "experiencia": 10,
+          "precioMultiplicador": 0.05
+        }
+      ]
+    },
+    {
+      "nivel": 4,
+      "tradeos": [
+        {
+          "id": "mason_12",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "quartz",
+              "minimo": 12,
               "maximo": 12
             }
           ],
           "entrega": {
             "item": "emerald",
             "cantidad": 1
-          }
+          },
+          "usosMaximos": 12,
+          "experiencia": 30,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "mason_13",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "white_terracotta",
+            "cantidad": 1,
+            "variasOpciones": true
+          },
+          "usosMaximos": 12,
+          "experiencia": 15,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "mason_14",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "white_glazed_terracotta",
+            "cantidad": 1,
+            "variasOpciones": true
+          },
+          "usosMaximos": 12,
+          "experiencia": 15,
+          "precioMultiplicador": 0.05
+        }
+      ]
+    },
+    {
+      "nivel": 5,
+      "tradeos": [
+        {
+          "id": "mason_15",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "quartz_pillar",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 30,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "mason_16",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "quartz_block",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 30,
+          "precioMultiplicador": 0.05
         }
       ]
     }

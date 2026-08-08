@@ -30,12 +30,14 @@ const tratosDe = (a) => (a.niveles ?? []).flatMap((n) => n.tradeos)
  */
 const paraEsmeraldas = aldeanos
   .flatMap((a) =>
-    tratosDe(a)
-      .filter((tr) => tr.tipo === 'compra')
-      .map((tr) => ({ aldeano: a, trato: tr, pide: tr.recibe[0] }))
+    (a.niveles ?? []).flatMap((n) =>
+      n.tradeos
+        .filter((tr) => tr.tipo === 'compra')
+        .map((tr) => ({ aldeano: a, nivel: n.nivel, pide: tr.recibe[0] }))
+    )
   )
   .filter((x) => x.pide)
-  .sort((a, b) => a.pide.minimo - b.pide.minimo)
+  .sort((a, b) => a.pide.minimo - b.pide.minimo || a.nivel - b.nivel)
 ---
 
 <section class="mb-10">
@@ -49,11 +51,12 @@ const paraEsmeraldas = aldeanos
           <th class="envuelve">{ui(idioma, 'resumen.leDasEsto')}</th>
           <th>{ui(idioma, 'tabla.cantidad')}</th>
           <th>{ui(idioma, 'nav.villagers')}</th>
+          <th>{ui(idioma, 'tabla.nivel')}</th>
         </tr>
       </thead>
       <tbody>
         {
-          paraEsmeraldas.map(({ aldeano, pide }) => (
+          paraEsmeraldas.map(({ aldeano, nivel, pide }) => (
             <tr>
               <td class="envuelve">
                 {enlace(pide.item) ? (
@@ -61,11 +64,15 @@ const paraEsmeraldas = aldeanos
                 ) : (
                   pide.item
                 )}
+                {pide.variasOpciones && (
+                  <span class="text-texto-suave"> {ui(idioma, 'tabla.oSimilares')}</span>
+                )}
               </td>
               <td class="font-semibold">{rango(pide)}</td>
               <td>
                 <a href={rutaDe(idioma, aldeano.id)}>{aldeano.nombre}</a>
               </td>
+              <td class="text-texto-suave">{ui(idioma, `aldeano.nivel.${nivel}`)}</td>
             </tr>
           ))
         }
@@ -85,13 +92,17 @@ const paraEsmeraldas = aldeanos
           <th>{ui(idioma, 'rel.mesaDeTrabajo')}</th>
           <th class="envuelve">{ui(idioma, 'resumen.queCompra')}</th>
           <th class="envuelve">{ui(idioma, 'resumen.queVende')}</th>
+          <th>{ui(idioma, 'resumen.cuantosTratos')}</th>
         </tr>
       </thead>
       <tbody>
         {
           aldeanos.map((a) => {
-            const compra = tratosDe(a).filter((tr) => tr.tipo === 'compra')
-            const vende = tratosDe(a).filter((tr) => tr.tipo === 'venta')
+            // Solo los de novato: con cinco niveles, la lista entera no cabe
+            // ni se lee. Para el detalle esta la ficha de cada profesion.
+            const novato = a.niveles?.[0]?.tradeos ?? []
+            const compra = novato.filter((tr) => tr.tipo === 'compra')
+            const vende = novato.filter((tr) => tr.tipo === 'venta')
             const lista = (tratos, campo) =>
               tratos.length === 0
                 ? '—'
@@ -117,6 +128,7 @@ const paraEsmeraldas = aldeanos
                 </td>
                 <td class="envuelve text-texto-suave">{lista(compra, 'compra')}</td>
                 <td class="envuelve text-texto-suave">{lista(vende, 'venta')}</td>
+                <td class="font-semibold">{tratosDe(a).length}</td>
               </tr>
             )
           })

@@ -10,34 +10,212 @@
       "nivel": 1,
       "tradeos": [
         {
-          "id": "shepherd_n1_lana",
+          "id": "shepherd_01",
           "tipo": "compra",
           "recibe": [
             {
               "item": "white_wool",
               "minimo": 18,
-              "maximo": 22
+              "maximo": 18,
+              "variasOpciones": true
             }
           ],
           "entrega": {
             "item": "emerald",
             "cantidad": 1
-          }
+          },
+          "usosMaximos": 16,
+          "experiencia": 2,
+          "precioMultiplicador": 0.05
         },
         {
-          "id": "shepherd_n1_tinte",
+          "id": "shepherd_02",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 2,
+              "maximo": 2
+            }
+          ],
+          "entrega": {
+            "item": "shears",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 1,
+          "precioMultiplicador": 0.05
+        }
+      ]
+    },
+    {
+      "nivel": 2,
+      "tradeos": [
+        {
+          "id": "shepherd_03",
           "tipo": "compra",
           "recibe": [
             {
               "item": "white_dye",
               "minimo": 12,
-              "maximo": 15
+              "maximo": 12,
+              "variasOpciones": true
             }
           ],
           "entrega": {
             "item": "emerald",
             "cantidad": 1
-          }
+          },
+          "usosMaximos": 16,
+          "experiencia": 10,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "shepherd_04",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "white_wool",
+            "cantidad": 1,
+            "variasOpciones": true
+          },
+          "usosMaximos": 16,
+          "experiencia": 5,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "shepherd_05",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "white_carpet",
+            "cantidad": 4,
+            "variasOpciones": true
+          },
+          "usosMaximos": 16,
+          "experiencia": 5,
+          "precioMultiplicador": 0.05
+        }
+      ]
+    },
+    {
+      "nivel": 3,
+      "tradeos": [
+        {
+          "id": "shepherd_06",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "white_dye",
+              "minimo": 12,
+              "maximo": 12,
+              "variasOpciones": true
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 16,
+          "experiencia": 20,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "shepherd_07",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 3,
+              "maximo": 3
+            }
+          ],
+          "entrega": {
+            "item": "white_bed",
+            "cantidad": 1,
+            "variasOpciones": true
+          },
+          "usosMaximos": 12,
+          "experiencia": 10,
+          "precioMultiplicador": 0.05
+        }
+      ]
+    },
+    {
+      "nivel": 4,
+      "tradeos": [
+        {
+          "id": "shepherd_08",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "white_dye",
+              "minimo": 12,
+              "maximo": 12,
+              "variasOpciones": true
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 16,
+          "experiencia": 30,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "shepherd_09",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 3,
+              "maximo": 3
+            }
+          ],
+          "entrega": {
+            "item": "white_banner",
+            "cantidad": 1,
+            "variasOpciones": true
+          },
+          "usosMaximos": 12,
+          "experiencia": 15,
+          "precioMultiplicador": 0.05
+        }
+      ]
+    },
+    {
+      "nivel": 5,
+      "tradeos": [
+        {
+          "id": "shepherd_10",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 2,
+              "maximo": 2
+            }
+          ],
+          "entrega": {
+            "item": "painting",
+            "cantidad": 3
+          },
+          "usosMaximos": 12,
+          "experiencia": 30,
+          "precioMultiplicador": 0.05
         }
       ]
     }

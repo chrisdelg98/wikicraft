@@ -10,22 +10,25 @@
       "nivel": 1,
       "tradeos": [
         {
-          "id": "toolsmith_n1_carbon",
+          "id": "toolsmith_01",
           "tipo": "compra",
           "recibe": [
             {
               "item": "coal",
               "minimo": 15,
-              "maximo": 16
+              "maximo": 15
             }
           ],
           "entrega": {
             "item": "emerald",
             "cantidad": 1
-          }
+          },
+          "usosMaximos": 16,
+          "experiencia": 2,
+          "precioMultiplicador": 0.05
         },
         {
-          "id": "toolsmith_n1_hacha",
+          "id": "toolsmith_02",
           "tipo": "venta",
           "recibe": [
             {
@@ -37,10 +40,13 @@
           "entrega": {
             "item": "stone_axe",
             "cantidad": 1
-          }
+          },
+          "usosMaximos": 12,
+          "experiencia": 1,
+          "precioMultiplicador": 0.2
         },
         {
-          "id": "toolsmith_n1_pico",
+          "id": "toolsmith_03",
           "tipo": "venta",
           "recibe": [
             {
@@ -52,10 +58,13 @@
           "entrega": {
             "item": "stone_pickaxe",
             "cantidad": 1
-          }
+          },
+          "usosMaximos": 12,
+          "experiencia": 1,
+          "precioMultiplicador": 0.2
         },
         {
-          "id": "toolsmith_n1_pala",
+          "id": "toolsmith_04",
           "tipo": "venta",
           "recibe": [
             {
@@ -67,10 +76,13 @@
           "entrega": {
             "item": "stone_shovel",
             "cantidad": 1
-          }
+          },
+          "usosMaximos": 12,
+          "experiencia": 1,
+          "precioMultiplicador": 0.2
         },
         {
-          "id": "toolsmith_n1_azada",
+          "id": "toolsmith_05",
           "tipo": "venta",
           "recibe": [
             {
@@ -82,7 +94,234 @@
           "entrega": {
             "item": "stone_hoe",
             "cantidad": 1
-          }
+          },
+          "usosMaximos": 12,
+          "experiencia": 1,
+          "precioMultiplicador": 0.2
+        }
+      ]
+    },
+    {
+      "nivel": 2,
+      "tradeos": [
+        {
+          "id": "toolsmith_06",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "iron_ingot",
+              "minimo": 4,
+              "maximo": 4
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 10,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "toolsmith_07",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 36,
+              "maximo": 36
+            }
+          ],
+          "entrega": {
+            "item": "bell",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 5,
+          "precioMultiplicador": 0.2
+        }
+      ]
+    },
+    {
+      "nivel": 3,
+      "tradeos": [
+        {
+          "id": "toolsmith_08",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "flint",
+              "minimo": 30,
+              "maximo": 30
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 20,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "toolsmith_09",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 6,
+              "maximo": 20
+            }
+          ],
+          "entrega": {
+            "item": "iron_axe",
+            "cantidad": 1,
+            "encantamientoAleatorio": true
+          },
+          "usosMaximos": 3,
+          "experiencia": 10,
+          "precioMultiplicador": 0.2
+        },
+        {
+          "id": "toolsmith_10",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 7,
+              "maximo": 21
+            }
+          ],
+          "entrega": {
+            "item": "iron_shovel",
+            "cantidad": 1,
+            "encantamientoAleatorio": true
+          },
+          "usosMaximos": 3,
+          "experiencia": 10,
+          "precioMultiplicador": 0.2
+        },
+        {
+          "id": "toolsmith_11",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 8,
+              "maximo": 22
+            }
+          ],
+          "entrega": {
+            "item": "iron_pickaxe",
+            "cantidad": 1,
+            "encantamientoAleatorio": true
+          },
+          "usosMaximos": 3,
+          "experiencia": 10,
+          "precioMultiplicador": 0.2
+        },
+        {
+          "id": "toolsmith_12",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 4,
+              "maximo": 4
+            }
+          ],
+          "entrega": {
+            "item": "diamond_hoe",
+            "cantidad": 1
+          },
+          "usosMaximos": 3,
+          "experiencia": 10,
+          "precioMultiplicador": 0.2
+        }
+      ]
+    },
+    {
+      "nivel": 4,
+      "tradeos": [
+        {
+          "id": "toolsmith_13",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "diamond",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 30,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "toolsmith_14",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 17,
+              "maximo": 31
+            }
+          ],
+          "entrega": {
+            "item": "diamond_axe",
+            "cantidad": 1,
+            "encantamientoAleatorio": true
+          },
+          "usosMaximos": 3,
+          "experiencia": 15,
+          "precioMultiplicador": 0.2
+        },
+        {
+          "id": "toolsmith_15",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 10,
+              "maximo": 24
+            }
+          ],
+          "entrega": {
+            "item": "diamond_shovel",
+            "cantidad": 1,
+            "encantamientoAleatorio": true
+          },
+          "usosMaximos": 3,
+          "experiencia": 15,
+          "precioMultiplicador": 0.2
+        }
+      ]
+    },
+    {
+      "nivel": 5,
+      "tradeos": [
+        {
+          "id": "toolsmith_16",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 18,
+              "maximo": 32
+            }
+          ],
+          "entrega": {
+            "item": "diamond_pickaxe",
+            "cantidad": 1,
+            "encantamientoAleatorio": true
+          },
+          "usosMaximos": 3,
+          "experiencia": 30,
+          "precioMultiplicador": 0.2
         }
       ]
     }

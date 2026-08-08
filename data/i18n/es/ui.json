@@ -209,7 +209,8 @@
   "resumen.esmeraldas": "Cómo conseguir esmeraldas",
   "resumen.leDasEsto": "Le das esto",
   "resumen.esmeraldasNota": "Todo esto se paga a 1 esmeralda. Ordenado de menos a más cantidad, así que lo de arriba es lo que menos te cuesta.",
-  "resumen.aldeanosNota": "Solo se listan los tratos de nivel novato. Entra en cada profesión para verlos con sus rangos y sus usos.",
+  "resumen.cuantosTratos": "Tratos en total",
+  "resumen.aldeanosNota": "Las columnas de compra y venta solo muestran los tratos de novato, que es por donde empieza cualquier aldeano. Entra en cada profesión para ver los cinco niveles.",
 
   "obtencion.titulo": "Cómo se consigue",
   "obtencion.fabricar": "Fabricándolo",
@@ -285,6 +286,8 @@
   "tabla.trato.compra": "Te compra",
   "tabla.trato.venta": "Te vende",
   "tabla.usos": "Usos",
+  "tabla.oSimilares": "(o similares)",
+  "tabla.encantadoAlAzar": "(encantado al azar)",
   "tabla.probabilidad": "Probabilidad",
   "tabla.condicion": "Condición",
   "tabla.soloJugador": "Solo si lo matas tú",

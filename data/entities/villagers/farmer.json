@@ -10,67 +10,79 @@
       "nivel": 1,
       "tradeos": [
         {
-          "id": "farmer_n1_trigo",
+          "id": "farmer_01",
           "tipo": "compra",
           "recibe": [
             {
               "item": "wheat",
               "minimo": 20,
+              "maximo": 20
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 16,
+          "experiencia": 2,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "farmer_02",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "potato",
+              "minimo": 26,
+              "maximo": 26
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 16,
+          "experiencia": 2,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "farmer_03",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "carrot",
+              "minimo": 22,
               "maximo": 22
             }
           ],
           "entrega": {
             "item": "emerald",
             "cantidad": 1
-          }
+          },
+          "usosMaximos": 16,
+          "experiencia": 2,
+          "precioMultiplicador": 0.05
         },
         {
-          "id": "farmer_n1_patata",
-          "tipo": "compra",
-          "recibe": [
-            {
-              "item": "potato",
-              "minimo": 15,
-              "maximo": 19
-            }
-          ],
-          "entrega": {
-            "item": "emerald",
-            "cantidad": 1
-          }
-        },
-        {
-          "id": "farmer_n1_zanahoria",
-          "tipo": "compra",
-          "recibe": [
-            {
-              "item": "carrot",
-              "minimo": 15,
-              "maximo": 19
-            }
-          ],
-          "entrega": {
-            "item": "emerald",
-            "cantidad": 1
-          }
-        },
-        {
-          "id": "farmer_n1_remolacha",
+          "id": "farmer_04",
           "tipo": "compra",
           "recibe": [
             {
               "item": "beetroot",
               "minimo": 15,
-              "maximo": 19
+              "maximo": 15
             }
           ],
           "entrega": {
             "item": "emerald",
             "cantidad": 1
-          }
+          },
+          "usosMaximos": 16,
+          "experiencia": 2,
+          "precioMultiplicador": 0.05
         },
         {
-          "id": "farmer_n1_pan",
+          "id": "farmer_05",
           "tipo": "venta",
           "recibe": [
             {
@@ -82,7 +94,288 @@
           "entrega": {
             "item": "bread",
             "cantidad": 6
-          }
+          },
+          "usosMaximos": 16,
+          "experiencia": 1,
+          "precioMultiplicador": 0.05
+        }
+      ]
+    },
+    {
+      "nivel": 2,
+      "tradeos": [
+        {
+          "id": "farmer_06",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "pumpkin",
+              "minimo": 6,
+              "maximo": 6
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 10,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "farmer_07",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "pumpkin_pie",
+            "cantidad": 4
+          },
+          "usosMaximos": 12,
+          "experiencia": 5,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "farmer_08",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "apple",
+            "cantidad": 4
+          },
+          "usosMaximos": 16,
+          "experiencia": 5,
+          "precioMultiplicador": 0.05
+        }
+      ]
+    },
+    {
+      "nivel": 3,
+      "tradeos": [
+        {
+          "id": "farmer_09",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "melon",
+              "minimo": 4,
+              "maximo": 4
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 20,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "farmer_10",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 3,
+              "maximo": 3
+            }
+          ],
+          "entrega": {
+            "item": "cookie",
+            "cantidad": 18
+          },
+          "usosMaximos": 12,
+          "experiencia": 10,
+          "precioMultiplicador": 0.05
+        }
+      ]
+    },
+    {
+      "nivel": 4,
+      "tradeos": [
+        {
+          "id": "farmer_11",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "cake",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 15,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "farmer_12",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "suspicious_stew",
+            "cantidad": 1,
+            "variasOpciones": true
+          },
+          "usosMaximos": 12,
+          "experiencia": 15,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "farmer_13",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "suspicious_stew",
+            "cantidad": 1,
+            "variasOpciones": true
+          },
+          "usosMaximos": 12,
+          "experiencia": 15,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "farmer_14",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "suspicious_stew",
+            "cantidad": 1,
+            "variasOpciones": true
+          },
+          "usosMaximos": 12,
+          "experiencia": 15,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "farmer_15",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "suspicious_stew",
+            "cantidad": 1,
+            "variasOpciones": true
+          },
+          "usosMaximos": 12,
+          "experiencia": 15,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "farmer_16",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "suspicious_stew",
+            "cantidad": 1,
+            "variasOpciones": true
+          },
+          "usosMaximos": 12,
+          "experiencia": 15,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "farmer_17",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "suspicious_stew",
+            "cantidad": 1,
+            "variasOpciones": true
+          },
+          "usosMaximos": 12,
+          "experiencia": 15,
+          "precioMultiplicador": 0.05
+        }
+      ]
+    },
+    {
+      "nivel": 5,
+      "tradeos": [
+        {
+          "id": "farmer_18",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 3,
+              "maximo": 3
+            }
+          ],
+          "entrega": {
+            "item": "golden_carrot",
+            "cantidad": 3
+          },
+          "usosMaximos": 12,
+          "experiencia": 30,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "farmer_19",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 4,
+              "maximo": 4
+            }
+          ],
+          "entrega": {
+            "item": "glistering_melon_slice",
+            "cantidad": 3
+          },
+          "usosMaximos": 12,
+          "experiencia": 30,
+          "precioMultiplicador": 0.05
         }
       ]
     }

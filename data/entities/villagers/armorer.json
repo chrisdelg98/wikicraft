@@ -10,13 +10,13 @@
       "nivel": 1,
       "tradeos": [
         {
-          "id": "armorer_n1_carbon",
+          "id": "armorer_01",
           "tipo": "compra",
           "recibe": [
             {
               "item": "coal",
               "minimo": 15,
-              "maximo": 16
+              "maximo": 15
             }
           ],
           "entrega": {
@@ -24,16 +24,53 @@
             "cantidad": 1
           },
           "usosMaximos": 16,
-          "experiencia": 2
+          "experiencia": 2,
+          "precioMultiplicador": 0.05
         },
         {
-          "id": "armorer_n1_casco",
+          "id": "armorer_02",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 7,
+              "maximo": 7
+            }
+          ],
+          "entrega": {
+            "item": "iron_leggings",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 1,
+          "precioMultiplicador": 0.2
+        },
+        {
+          "id": "armorer_03",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 4,
+              "maximo": 4
+            }
+          ],
+          "entrega": {
+            "item": "iron_boots",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 1,
+          "precioMultiplicador": 0.2
+        },
+        {
+          "id": "armorer_04",
           "tipo": "venta",
           "recibe": [
             {
               "item": "emerald",
               "minimo": 5,
-              "maximo": 7
+              "maximo": 5
             }
           ],
           "entrega": {
@@ -41,16 +78,17 @@
             "cantidad": 1
           },
           "usosMaximos": 12,
-          "experiencia": 1
+          "experiencia": 1,
+          "precioMultiplicador": 0.2
         },
         {
-          "id": "armorer_n1_pechera",
+          "id": "armorer_05",
           "tipo": "venta",
           "recibe": [
             {
               "item": "emerald",
               "minimo": 9,
-              "maximo": 11
+              "maximo": 9
             }
           ],
           "entrega": {
@@ -58,7 +96,266 @@
             "cantidad": 1
           },
           "usosMaximos": 12,
-          "experiencia": 1
+          "experiencia": 1,
+          "precioMultiplicador": 0.2
+        }
+      ]
+    },
+    {
+      "nivel": 2,
+      "tradeos": [
+        {
+          "id": "armorer_06",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "iron_ingot",
+              "minimo": 4,
+              "maximo": 4
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 10,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "armorer_07",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 36,
+              "maximo": 36
+            }
+          ],
+          "entrega": {
+            "item": "bell",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 5,
+          "precioMultiplicador": 0.2
+        },
+        {
+          "id": "armorer_08",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "chainmail_boots",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 5,
+          "precioMultiplicador": 0.2
+        },
+        {
+          "id": "armorer_09",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 3,
+              "maximo": 3
+            }
+          ],
+          "entrega": {
+            "item": "chainmail_leggings",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 5,
+          "precioMultiplicador": 0.2
+        }
+      ]
+    },
+    {
+      "nivel": 3,
+      "tradeos": [
+        {
+          "id": "armorer_10",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "lava_bucket",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 20,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "armorer_11",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "diamond",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 20,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "armorer_12",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "chainmail_helmet",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 10,
+          "precioMultiplicador": 0.2
+        },
+        {
+          "id": "armorer_13",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 4,
+              "maximo": 4
+            }
+          ],
+          "entrega": {
+            "item": "chainmail_chestplate",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 10,
+          "precioMultiplicador": 0.2
+        },
+        {
+          "id": "armorer_14",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 5,
+              "maximo": 5
+            }
+          ],
+          "entrega": {
+            "item": "shield",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 10,
+          "precioMultiplicador": 0.2
+        }
+      ]
+    },
+    {
+      "nivel": 4,
+      "tradeos": [
+        {
+          "id": "armorer_15",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 19,
+              "maximo": 33
+            }
+          ],
+          "entrega": {
+            "item": "diamond_leggings",
+            "cantidad": 1,
+            "encantamientoAleatorio": true
+          },
+          "usosMaximos": 3,
+          "experiencia": 15,
+          "precioMultiplicador": 0.2
+        },
+        {
+          "id": "armorer_16",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 13,
+              "maximo": 27
+            }
+          ],
+          "entrega": {
+            "item": "diamond_boots",
+            "cantidad": 1,
+            "encantamientoAleatorio": true
+          },
+          "usosMaximos": 3,
+          "experiencia": 15,
+          "precioMultiplicador": 0.2
+        }
+      ]
+    },
+    {
+      "nivel": 5,
+      "tradeos": [
+        {
+          "id": "armorer_17",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 13,
+              "maximo": 27
+            }
+          ],
+          "entrega": {
+            "item": "diamond_helmet",
+            "cantidad": 1,
+            "encantamientoAleatorio": true
+          },
+          "usosMaximos": 3,
+          "experiencia": 30,
+          "precioMultiplicador": 0.2
+        },
+        {
+          "id": "armorer_18",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 21,
+              "maximo": 35
+            }
+          ],
+          "entrega": {
+            "item": "diamond_chestplate",
+            "cantidad": 1,
+            "encantamientoAleatorio": true
+          },
+          "usosMaximos": 3,
+          "experiencia": 30,
+          "precioMultiplicador": 0.2
         }
       ]
     }

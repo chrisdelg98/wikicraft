@@ -10,19 +10,231 @@
       "nivel": 1,
       "tradeos": [
         {
-          "id": "butcher_n1_pollo",
+          "id": "butcher_01",
           "tipo": "compra",
-          "recibe": [{ "item": "chicken", "minimo": 14, "maximo": 14 }],
-          "entrega": { "item": "emerald", "cantidad": 1 }
+          "recibe": [
+            {
+              "item": "chicken",
+              "minimo": 14,
+              "maximo": 14
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 16,
+          "experiencia": 2,
+          "precioMultiplicador": 0.05
         },
         {
-          "id": "butcher_n1_cerdo",
+          "id": "butcher_02",
           "tipo": "compra",
-          "recibe": [{ "item": "porkchop", "minimo": 7, "maximo": 7 }],
-          "entrega": { "item": "emerald", "cantidad": 1 }
+          "recibe": [
+            {
+              "item": "porkchop",
+              "minimo": 7,
+              "maximo": 7
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 16,
+          "experiencia": 2,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "butcher_03",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "rabbit",
+              "minimo": 4,
+              "maximo": 4
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 16,
+          "experiencia": 2,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "butcher_04",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "rabbit_stew",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 1,
+          "precioMultiplicador": 0.05
+        }
+      ]
+    },
+    {
+      "nivel": 2,
+      "tradeos": [
+        {
+          "id": "butcher_05",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "coal",
+              "minimo": 15,
+              "maximo": 15
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 16,
+          "experiencia": 2,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "butcher_06",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "cooked_porkchop",
+            "cantidad": 5
+          },
+          "usosMaximos": 16,
+          "experiencia": 5,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "butcher_07",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "cooked_chicken",
+            "cantidad": 8
+          },
+          "usosMaximos": 16,
+          "experiencia": 5,
+          "precioMultiplicador": 0.05
+        }
+      ]
+    },
+    {
+      "nivel": 3,
+      "tradeos": [
+        {
+          "id": "butcher_08",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "mutton",
+              "minimo": 7,
+              "maximo": 7
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 16,
+          "experiencia": 20,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "butcher_09",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "beef",
+              "minimo": 10,
+              "maximo": 10
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 16,
+          "experiencia": 20,
+          "precioMultiplicador": 0.05
+        }
+      ]
+    },
+    {
+      "nivel": 4,
+      "tradeos": [
+        {
+          "id": "butcher_10",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "dried_kelp_block",
+              "minimo": 10,
+              "maximo": 10
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 30,
+          "precioMultiplicador": 0.05
+        }
+      ]
+    },
+    {
+      "nivel": 5,
+      "tradeos": [
+        {
+          "id": "butcher_11",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "sweet_berries",
+              "minimo": 10,
+              "maximo": 10
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 30,
+          "precioMultiplicador": 0.05
         }
       ]
     }
   ],
-  "etiquetas": ["carnicero", "butcher", "aldeano", "comercio", "esmeraldas"]
+  "etiquetas": [
+    "carnicero",
+    "butcher",
+    "aldeano",
+    "comercio",
+    "esmeraldas"
+  ]
 }

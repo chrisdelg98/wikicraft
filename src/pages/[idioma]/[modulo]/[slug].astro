@@ -391,6 +391,9 @@ const consejos = [
                             {j > 0 && <span class="text-texto-suave"> + </span>}
                             <span class="font-semibold">{rango(r)}</span>{' '}
                             <a href={enlace(r.item).url}>{enlace(r.item).nombre}</a>
+                            {r.variasOpciones && (
+                              <span class="text-texto-suave"> {ui(idioma, 'tabla.oSimilares')}</span>
+                            )}
                           </>
                         ))}
                       </td>
@@ -399,6 +402,12 @@ const consejos = [
                         <a href={enlace(daObjeto).url}>{enlace(daObjeto).nombre}</a>
                         {trato.entrega.encantamiento && trato.entrega.nivelEncantamiento > 1 && (
                           <span> {trato.entrega.nivelEncantamiento}</span>
+                        )}
+                        {trato.entrega.encantamientoAleatorio && (
+                          <span class="text-texto-suave"> {ui(idioma, 'tabla.encantadoAlAzar')}</span>
+                        )}
+                        {trato.entrega.variasOpciones && (
+                          <span class="text-texto-suave"> {ui(idioma, 'tabla.oSimilares')}</span>
                         )}
                       </td>
                       <td class="text-texto-suave">{trato.usosMaximos ?? '—'}</td>

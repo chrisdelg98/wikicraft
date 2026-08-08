@@ -10,22 +10,89 @@
       "nivel": 1,
       "tradeos": [
         {
-          "id": "fisherman_n1_hilo",
+          "id": "fisherman_01",
           "tipo": "compra",
           "recibe": [
             {
               "item": "string",
-              "minimo": 15,
+              "minimo": 20,
               "maximo": 20
             }
           ],
           "entrega": {
             "item": "emerald",
             "cantidad": 1
-          }
+          },
+          "usosMaximos": 16,
+          "experiencia": 2,
+          "precioMultiplicador": 0.05
         },
         {
-          "id": "fisherman_n1_bacalao",
+          "id": "fisherman_02",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "coal",
+              "minimo": 10,
+              "maximo": 10
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 16,
+          "experiencia": 2,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "fisherman_03",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 3,
+              "maximo": 3
+            }
+          ],
+          "entrega": {
+            "item": "cod_bucket",
+            "cantidad": 1
+          },
+          "usosMaximos": 16,
+          "experiencia": 1,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "fisherman_04",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            },
+            {
+              "item": "cod",
+              "minimo": 16,
+              "maximo": 16
+            }
+          ],
+          "entrega": {
+            "item": "cooked_cod",
+            "cantidad": 6
+          },
+          "usosMaximos": 16,
+          "experiencia": 1,
+          "precioMultiplicador": 0.05
+        }
+      ]
+    },
+    {
+      "nivel": 2,
+      "tradeos": [
+        {
+          "id": "fisherman_05",
           "tipo": "compra",
           "recibe": [
             {
@@ -37,7 +104,158 @@
           "entrega": {
             "item": "emerald",
             "cantidad": 1
-          }
+          },
+          "usosMaximos": 16,
+          "experiencia": 10,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "fisherman_06",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            },
+            {
+              "item": "salmon",
+              "minimo": 16,
+              "maximo": 16
+            }
+          ],
+          "entrega": {
+            "item": "cooked_salmon",
+            "cantidad": 6
+          },
+          "usosMaximos": 16,
+          "experiencia": 5,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "fisherman_07",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 2,
+              "maximo": 2
+            }
+          ],
+          "entrega": {
+            "item": "campfire",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 5,
+          "precioMultiplicador": 0.05
+        }
+      ]
+    },
+    {
+      "nivel": 3,
+      "tradeos": [
+        {
+          "id": "fisherman_08",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "salmon",
+              "minimo": 13,
+              "maximo": 13
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 16,
+          "experiencia": 20,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "fisherman_09",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 8,
+              "maximo": 22
+            }
+          ],
+          "entrega": {
+            "item": "fishing_rod",
+            "cantidad": 1,
+            "encantamientoAleatorio": true
+          },
+          "usosMaximos": 3,
+          "experiencia": 10,
+          "precioMultiplicador": 0.2
+        }
+      ]
+    },
+    {
+      "nivel": 4,
+      "tradeos": [
+        {
+          "id": "fisherman_10",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "tropical_fish",
+              "minimo": 6,
+              "maximo": 6
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 30,
+          "precioMultiplicador": 0.05
+        }
+      ]
+    },
+    {
+      "nivel": 5,
+      "tradeos": [
+        {
+          "id": "fisherman_11",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "pufferfish",
+              "minimo": 4,
+              "maximo": 4
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 30,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "fisherman_12",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "oak_boat",
+              "minimo": 1,
+              "maximo": 1,
+              "variasOpciones": true
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 30,
+          "precioMultiplicador": 0.05
         }
       ]
     }

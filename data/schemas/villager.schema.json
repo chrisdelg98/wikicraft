@@ -75,7 +75,15 @@
               "$ref": "_comun.schema.json#/$defs/referencia",
               "description": "Presente cuando el item entregado es un libro encantado. Es la relacion que conecta un encantamiento con el aldeano que lo vende."
             },
-            "nivelEncantamiento": { "type": "integer", "minimum": 1, "maximum": 5 }
+            "nivelEncantamiento": { "type": "integer", "minimum": 1, "maximum": 5 },
+            "encantamientoAleatorio": {
+              "type": "boolean",
+              "description": "Sale encantado, pero con un encantamiento que sortea el juego. Por eso no se puede decir cual."
+            },
+            "variasOpciones": {
+              "type": "boolean",
+              "description": "Entrega cualquiera de una familia, por ejemplo un color de terracota. Se guarda uno representativo."
+            }
           }
         },
 
@@ -97,6 +105,12 @@
           "type": "integer",
           "minimum": 0,
           "description": "Experiencia que gana el aldeano con cada trato. Es lo que le hace subir de nivel."
+        },
+
+        "precioMultiplicador": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Cuanto pesan la reputacion y los descuentos por curacion sobre este trato. Cuanto mas alto, mas baja el precio al curar al aldeano."
         }
       }
     }

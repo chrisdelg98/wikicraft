@@ -10,19 +10,240 @@
       "nivel": 1,
       "tradeos": [
         {
-          "id": "leatherworker_n1_cuero",
+          "id": "leatherworker_01",
           "tipo": "compra",
           "recibe": [
             {
               "item": "leather",
               "minimo": 6,
-              "maximo": 7
+              "maximo": 6
             }
           ],
           "entrega": {
             "item": "emerald",
             "cantidad": 1
-          }
+          },
+          "usosMaximos": 16,
+          "experiencia": 2,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "leatherworker_02",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 3,
+              "maximo": 3
+            }
+          ],
+          "entrega": {
+            "item": "leather_leggings",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 1,
+          "precioMultiplicador": 0.2
+        },
+        {
+          "id": "leatherworker_03",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 7,
+              "maximo": 7
+            }
+          ],
+          "entrega": {
+            "item": "leather_chestplate",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 1,
+          "precioMultiplicador": 0.2
+        }
+      ]
+    },
+    {
+      "nivel": 2,
+      "tradeos": [
+        {
+          "id": "leatherworker_04",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "flint",
+              "minimo": 26,
+              "maximo": 26
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 10,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "leatherworker_05",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 5,
+              "maximo": 5
+            }
+          ],
+          "entrega": {
+            "item": "leather_helmet",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 5,
+          "precioMultiplicador": 0.2
+        },
+        {
+          "id": "leatherworker_06",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 4,
+              "maximo": 4
+            }
+          ],
+          "entrega": {
+            "item": "leather_boots",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 5,
+          "precioMultiplicador": 0.2
+        }
+      ]
+    },
+    {
+      "nivel": 3,
+      "tradeos": [
+        {
+          "id": "leatherworker_07",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "rabbit_hide",
+              "minimo": 9,
+              "maximo": 9
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 20,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "leatherworker_08",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 7,
+              "maximo": 7
+            }
+          ],
+          "entrega": {
+            "item": "leather_chestplate",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 10,
+          "precioMultiplicador": 0.2
+        }
+      ]
+    },
+    {
+      "nivel": 4,
+      "tradeos": [
+        {
+          "id": "leatherworker_09",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "turtle_scute",
+              "minimo": 4,
+              "maximo": 4
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 30,
+          "precioMultiplicador": 0.05
+        },
+        {
+          "id": "leatherworker_10",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 6,
+              "maximo": 6
+            }
+          ],
+          "entrega": {
+            "item": "leather_horse_armor",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 15,
+          "precioMultiplicador": 0.2
+        }
+      ]
+    },
+    {
+      "nivel": 5,
+      "tradeos": [
+        {
+          "id": "leatherworker_11",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 6,
+              "maximo": 6
+            }
+          ],
+          "entrega": {
+            "item": "saddle",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 30,
+          "precioMultiplicador": 0.2
+        },
+        {
+          "id": "leatherworker_12",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 5,
+              "maximo": 5
+            }
+          ],
+          "entrega": {
+            "item": "leather_helmet",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 30,
+          "precioMultiplicador": 0.2
         }
       ]
     }
