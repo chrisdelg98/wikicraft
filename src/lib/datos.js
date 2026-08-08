@@ -124,6 +124,14 @@ export const ui = (idioma, clave, sustituciones = {}) => {
 /** Segmento de URL de un modulo, traducido: /es/encantamientos, /en/enchantments. */
 export const rutaModulo = (idioma, modulo) => ui(idioma, `ruta.${modulo}`)
 
+/**
+ * La calculadora no es un modulo, asi que su ruta no sale de los datos: la fija
+ * el nombre del archivo en src/pages y por eso es igual en todos los idiomas.
+ * Vive aqui, y no en las traducciones, para que nadie la traduzca sin darse
+ * cuenta y deje los enlaces apuntando a una pagina que no existe.
+ */
+export const RUTA_ENCANTADOR = 'encantador'
+
 export const rutaDe = (idioma, id) => {
   const nodo = grafo.get(id)
   if (!nodo) return null

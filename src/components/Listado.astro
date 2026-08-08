@@ -3,7 +3,15 @@ import TarjetaEntidad from './TarjetaEntidad.astro'
 import Icono from './Icono.astro'
 import ResumenAldeanos from './ResumenAldeanos.astro'
 import ResumenPociones from './ResumenPociones.astro'
-import { ui, entidadesDe, rutaModulo, t, normalizar, facetasDe } from '../lib/datos.js'
+import {
+  ui,
+  entidadesDe,
+  rutaModulo,
+  t,
+  normalizar,
+  facetasDe,
+  RUTA_ENCANTADOR
+} from '../lib/datos.js'
 
 const { idioma, modulo, pagina = 1 } = Astro.props
 
@@ -42,6 +50,11 @@ const hayFiltros = etapasPresentes.length > 1 || facetasPresentes.length > 1
 
 /** Modulos con tabla comparativa propia. Solo tiene sentido en la pagina 1. */
 const hayGuia = actual === 1 && ['villagers', 'potions'].includes(modulo)
+
+// La lista de encantamientos dice cual hace que; la calculadora dice en que
+// orden ponerlos. Es la pregunta siguiente de quien esta leyendo esta pagina,
+// asi que el enlace va aqui y no escondido en el menu.
+const hayEncantador = actual === 1 && modulo === 'enchantments'
 const titulo = ui(idioma, `nav.${modulo}`)
 const base = `/${idioma}/${rutaModulo(idioma, modulo)}`
 const urlPagina = (n) => (n === 1 ? `${base}/` : `${base}/pagina/${n}/`)
@@ -61,6 +74,25 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
     </p>
   </div>
 </div>
+
+{
+  hayEncantador && (
+    <a
+      href={`/${idioma}/${RUTA_ENCANTADOR}/`}
+      class="mb-6 flex flex-wrap items-center gap-x-4 gap-y-2 bloque bloque-pulsable bg-superficie-alta p-4"
+    >
+      <span class="min-w-0 flex-1">
+        <span class="block font-extrabold">{ui(idioma, 'encantador.titulo')}</span>
+        <span class="mt-0.5 block text-sm text-texto-suave">
+          {ui(idioma, 'encantador.subtitulo')}
+        </span>
+      </span>
+      <span class="shrink-0 bloque bg-acento px-3 py-1.5 text-sm font-bold text-acento-contraste">
+        {ui(idioma, 'encantador.abrir')}
+      </span>
+    </a>
+  )
+}
 
 {/* La guia comparativa NO va encima de la lista: son tres tablas y empujaban
     los resultados fuera de la pantalla. Vive en un panel, como los filtros. */}

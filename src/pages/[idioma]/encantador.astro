@@ -1,0 +1,330 @@
+---
+import Base from '../../layouts/Base.astro'
+import { codigosIdioma, ui, entidadesDe, t, rutaDe } from '../../lib/datos.js'
+
+export function getStaticPaths() {
+  return codigosIdioma.map((idioma) => ({ params: { idioma } }))
+}
+
+const { idioma } = Astro.params
+
+/**
+ * Todo lo que el optimizador necesita viaja en la pagina. Son 42 entradas
+ * cortas: cuesta menos enviarlas que pedirlas despues, y asi la herramienta
+ * funciona aunque se pierda la conexion.
+ */
+const encantamientos = entidadesDe('enchantments')
+  .map(({ entidad }) => ({
+    id: entidad.id,
+    nombre: t(idioma, entidad.id).nombre,
+    url: rutaDe(idioma, entidad.id),
+    max: entidad.nivelMaximo,
+    aplica: entidad.aplicableA ?? [],
+    choca: entidad.incompatibleCon ?? [],
+    libro: entidad.costeYunque?.libro ?? null
+  }))
+  .filter((e) => e.libro != null)
+  .sort((a, b) => a.nombre.localeCompare(b.nombre))
+
+/** Las familias de equipo que admiten encantamientos, sacadas de los datos. */
+const categorias = [...new Set(encantamientos.flatMap((e) => e.aplica))]
+  .map((c) => ({ id: c, nombre: ui(idioma, `faceta.${c}`) }))
+  .sort((a, b) => a.nombre.localeCompare(b.nombre))
+---
+
+<Base
+  idioma={idioma}
+  titulo={ui(idioma, 'encantador.titulo')}
+  descripcion={ui(idioma, 'encantador.subtitulo')}
+>
+  <header class="mb-8 border-b-2 border-borde pb-5">
+    <h1 class="text-4xl font-extrabold sm:text-5xl">{ui(idioma, 'encantador.titulo')}</h1>
+    <p class="mt-4 max-w-4xl text-lg leading-relaxed">{ui(idioma, 'encantador.subtitulo')}</p>
+  </header>
+
+  <div class="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
+    <div>
+      <section class="mb-8">
+        <h2 class="titulo-seccion">{ui(idioma, 'encantador.paso1')}</h2>
+        <select
+          data-categoria
+          class="h-12 w-full bloque bg-superficie-alta px-3 text-base font-semibold sm:max-w-xs"
+        >
+          {/* El pico primero y no la primera por orden alfabetico: es la pieza
+              que mas gente encanta, y asi al abrir la pagina ya hay algo util
+              en pantalla en vez de la lista del arco. */}
+          {categorias.map((c) => (
+            <option value={c.id} selected={c.id === 'pico'}>
+              {c.nombre}
+            </option>
+          ))}
+        </select>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="titulo-seccion">{ui(idioma, 'encantador.paso2')}</h2>
+
+        <ul data-lista-encantamientos class="space-y-1">
+          {
+            encantamientos.map((e) => (
+              <li
+                data-encantamiento={e.id}
+                data-aplica={e.aplica.join(' ')}
+                data-choca={e.choca.join(' ')}
+                hidden
+                class="flex flex-wrap items-center gap-x-3 gap-y-1 bloque px-3 py-2"
+              >
+                <a href={e.url} class="min-w-0 flex-1 font-semibold hover:text-acento">
+                  {e.nombre}
+                </a>
+                <span data-aviso class="w-full text-xs text-[var(--etapa-nether)]" hidden />
+                <span class="flex gap-1">
+                  {Array.from({ length: e.max }, (_, i) => i + 1).map((n) => (
+                    <button
+                      type="button"
+                      data-nivel={n}
+                      aria-pressed="false"
+                      class="grid h-9 w-9 place-items-center bloque bloque-pulsable text-sm font-bold aria-pressed:bg-acento aria-pressed:text-acento-contraste disabled:opacity-40"
+                    >
+                      {n}
+                    </button>
+                  ))}
+                </span>
+              </li>
+            ))
+          }
+        </ul>
+
+        <p data-vacio hidden class="text-texto-suave">{ui(idioma, 'encantador.sinEncantamientos')}</p>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="titulo-seccion">{ui(idioma, 'encantador.paso3')}</h2>
+        <input
+          type="number"
+          data-trabajos
+          value="0"
+          min="0"
+          max="6"
+          class="h-12 w-24 bloque bg-superficie-alta px-3 text-base font-semibold"
+        />
+        <p class="mt-2 max-w-prose text-sm text-texto-suave">
+          {ui(idioma, 'encantador.trabajosAyuda')}
+        </p>
+      </section>
+
+      <div class="flex flex-wrap gap-3">
+        <button
+          type="button"
+          data-calcular
+          class="flex h-12 items-center bloque bloque-pulsable bg-acento px-4 font-bold text-acento-contraste"
+        >
+          {ui(idioma, 'encantador.calcular')}
+        </button>
+        <button
+          type="button"
+          data-limpiar
+          class="flex h-12 items-center bloque bloque-pulsable px-4 font-semibold"
+        >
+          {ui(idioma, 'encantador.limpiar')}
+        </button>
+      </div>
+    </div>
+
+    <div data-resultado aria-live="polite"></div>
+  </div>
+
+  {/* Plantillas de texto: se rellenan en el navegador para no repetir aqui el
+      sistema de traduccion entero. */}
+  <script
+    type="application/json"
+    data-textos
+    set:html={JSON.stringify({
+      resultado: ui(idioma, 'encantador.resultado'),
+      coste: ui(idioma, 'encantador.coste'),
+      niveles: ui(idioma, 'encantador.niveles', { n: '§' }),
+      operaciones: ui(idioma, 'encantador.operaciones', { n: '§' }),
+      experiencia: ui(idioma, 'encantador.experiencia', { n: '§' }),
+      pasoObjeto: ui(idioma, 'encantador.pasoObjeto', { objeto: '§O', libro: '§L' }),
+      pasoLibros: ui(idioma, 'encantador.pasoLibros', { a: '§A', b: '§B' }),
+      libroCon: ui(idioma, 'encantador.libroCon', { lista: '§' }),
+      tuObjeto: ui(idioma, 'encantador.tuObjeto'),
+      elige: ui(idioma, 'encantador.elige'),
+      demasiadoCaro: ui(idioma, 'encantador.demasiadoCaro'),
+      incompatible: ui(idioma, 'encantador.incompatible', { lista: '§' }),
+      comoLeer: ui(idioma, 'encantador.comoLeer')
+    })}
+  />
+
+  <script
+    type="application/json"
+    data-encantamientos
+    set:html={JSON.stringify(
+      Object.fromEntries(encantamientos.map((e) => [e.id, { nombre: e.nombre, libro: e.libro, max: e.max, choca: e.choca }]))
+    )}
+  />
+</Base>
+
+<script>
+  import { optimizar, penalizacion } from '../../lib/yunque.js'
+
+  const raiz = document.querySelector('[data-lista-encantamientos]')
+  if (raiz) {
+    const T = JSON.parse(document.querySelector('[data-textos]').textContent)
+    const DATOS = JSON.parse(document.querySelector('[data-encantamientos]').textContent)
+
+    // La tabla que come el motor: nombre aparte, mecanica aqui.
+    const tabla = Object.fromEntries(
+      Object.entries(DATOS).map(([id, d]) => [
+        id,
+        { libro: d.libro, nivelMaximo: d.max, incompatibleCon: d.choca }
+      ])
+    )
+
+    const filas = [...raiz.children]
+    const seleccion = new Map()
+
+    const rellenar = (plantilla, valores) =>
+      Object.entries(valores).reduce((texto, [marca, valor]) => texto.replaceAll(marca, valor), plantilla)
+
+    // --- Filtrado por tipo de pieza -----------------------------------------
+
+    const categoria = () => document.querySelector('[data-categoria]').value
+
+    const filtrar = () => {
+      const c = categoria()
+      let visibles = 0
+      for (const fila of filas) {
+        const aplica = fila.dataset.aplica.split(' ').includes(c)
+        fila.hidden = !aplica
+        if (aplica) visibles++
+        // Lo que deja de aplicar deja tambien de estar elegido, o el calculo
+        // usaria encantamientos que esa pieza no admite.
+        else if (seleccion.has(fila.dataset.encantamiento)) marcar(fila, null)
+      }
+      document.querySelector('[data-vacio]').hidden = visibles > 0
+      revisarChoques()
+    }
+
+    // --- Seleccion ----------------------------------------------------------
+
+    const marcar = (fila, nivel) => {
+      const id = fila.dataset.encantamiento
+      if (nivel == null) seleccion.delete(id)
+      else seleccion.set(id, nivel)
+      for (const boton of fila.querySelectorAll('[data-nivel]')) {
+        boton.setAttribute('aria-pressed', String(Number(boton.dataset.nivel) === nivel))
+      }
+    }
+
+    /**
+     * Un encantamiento que choca con algo ya elegido se deshabilita y se dice
+     * con que choca. Es mejor impedirlo que dejar elegir y luego dar un error.
+     */
+    const revisarChoques = () => {
+      for (const fila of filas) {
+        const id = fila.dataset.encantamiento
+        const choques = (fila.dataset.choca ? fila.dataset.choca.split(' ') : []).filter(
+          (otro) => seleccion.has(otro)
+        )
+        const aviso = fila.querySelector('[data-aviso]')
+        const bloqueada = choques.length > 0 && !seleccion.has(id)
+
+        for (const boton of fila.querySelectorAll('[data-nivel]')) boton.disabled = bloqueada
+        aviso.hidden = !bloqueada
+        if (bloqueada) {
+          aviso.textContent = rellenar(T.incompatible, {
+            '§': choques.map((c) => DATOS[c]?.nombre ?? c).join(', ')
+          })
+        }
+      }
+    }
+
+    raiz.addEventListener('click', (e) => {
+      const boton = e.target.closest('[data-nivel]')
+      if (!boton || boton.disabled) return
+      const fila = boton.closest('[data-encantamiento]')
+      const nivel = Number(boton.dataset.nivel)
+      marcar(fila, seleccion.get(fila.dataset.encantamiento) === nivel ? null : nivel)
+      revisarChoques()
+    })
+
+    document.querySelector('[data-categoria]').addEventListener('change', filtrar)
+
+    document.querySelector('[data-limpiar]').addEventListener('click', () => {
+      for (const fila of filas) marcar(fila, null)
+      revisarChoques()
+      document.querySelector('[data-resultado]').innerHTML = ''
+    })
+
+    // --- Calculo ------------------------------------------------------------
+
+    const salida = document.querySelector('[data-resultado]')
+
+    const nombresDe = (mascara, libros) =>
+      libros
+        .map((l, i) => (mascara & (1 << i) ? Object.entries(l.ench)[0] : null))
+        .filter(Boolean)
+        .map(([id, n]) => `${DATOS[id].nombre} ${n}`)
+        .join(', ')
+
+    const aviso = (texto) => {
+      salida.innerHTML = `<p class="bloque bg-superficie-alta p-4">${texto}</p>`
+    }
+
+    document.querySelector('[data-calcular]').addEventListener('click', () => {
+      if (seleccion.size === 0) return aviso(T.elige)
+
+      const libros = [...seleccion].map(([id, nivel]) => ({ ench: { [id]: nivel }, trabajos: 0 }))
+      const trabajos = Number(document.querySelector('[data-trabajos]').value) || 0
+
+      const r = optimizar({ ench: {}, trabajos }, libros, tabla)
+      if (r.imposible) return aviso(T.demasiadoCaro)
+
+      // Un nivel no son los mismos puntos de experiencia segun por donde vayas,
+      // asi que se da la suma de los niveles que hay que gastar, no una cifra
+      // exacta que dependeria del nivel de partida.
+      const xp = r.coste * 8
+
+      const pasos = r.pasos
+        .map((p, i) => {
+          const texto =
+            p.tipo === 'objeto'
+              ? rellenar(T.pasoObjeto, {
+                  '§O': `<strong>${T.tuObjeto}</strong>`,
+                  '§L': `<strong>${rellenar(T.libroCon, { '§': nombresDe(p.con, libros) })}</strong>`
+                })
+              : rellenar(T.pasoLibros, {
+                  '§A': `<strong>${rellenar(T.libroCon, { '§': nombresDe(p.de, libros) })}</strong>`,
+                  '§B': `<strong>${rellenar(T.libroCon, { '§': nombresDe(p.con, libros) })}</strong>`
+                })
+          return `
+            <li class="flex gap-3 bloque p-3">
+              <span class="grid h-7 w-7 shrink-0 place-items-center bg-acento text-sm font-extrabold text-acento-contraste">${i + 1}</span>
+              <span class="min-w-0">
+                <span class="block">${texto}</span>
+                <span class="mt-1 block text-sm text-texto-suave">
+                  ${rellenar(T.niveles, { '§': p.coste })}
+                </span>
+              </span>
+            </li>`
+        })
+        .join('')
+
+      salida.innerHTML = `
+        <section class="bloque bg-superficie-alta p-4">
+          <h2 class="titulo-seccion">${T.resultado}</h2>
+          <p class="text-sm font-semibold text-texto-suave">${T.coste}</p>
+          <p class="mb-1 text-3xl font-extrabold">${rellenar(T.niveles, { '§': r.coste })}</p>
+          <p class="mb-5 text-sm text-texto-suave">
+            ${rellenar(T.operaciones, { '§': r.pasos.length })} ·
+            ${rellenar(T.experiencia, { '§': xp })}
+          </p>
+          <ol class="space-y-2">${pasos}</ol>
+          <p class="mt-4 text-sm text-texto-suave">${T.comoLeer}</p>
+        </section>`
+    })
+
+    filtrar()
+  }
+</script>

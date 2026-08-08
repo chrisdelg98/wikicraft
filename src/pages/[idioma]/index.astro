@@ -3,7 +3,15 @@ import Base from '../../layouts/Base.astro'
 import Buscador from '../../components/Buscador.astro'
 import TarjetaEntidad from '../../components/TarjetaEntidad.astro'
 import Icono from '../../components/Icono.astro'
-import { codigosIdioma, ui, modulos, entidadesDe, rutaModulo, grafo } from '../../lib/datos.js'
+import {
+  codigosIdioma,
+  ui,
+  modulos,
+  entidadesDe,
+  rutaModulo,
+  grafo,
+  RUTA_ENCANTADOR
+} from '../../lib/datos.js'
 
 export function getStaticPaths() {
   return codigosIdioma.map((idioma) => ({ params: { idioma } }))
@@ -52,6 +60,24 @@ const primerosPasos = PRIMEROS_PASOS.filter((id) => grafo.has(id))
         </p>
       </div>
     </div>
+  </section>
+
+  {/* La calculadora no es un modulo mas: es lo unico del sitio que hace algo
+      en vez de contarlo, y desde el listado de encantamientos no se llega. */}
+  <section class="mb-12">
+    <a
+      href={`/${idioma}/${RUTA_ENCANTADOR}/`}
+      class="flex flex-wrap items-center gap-x-5 gap-y-2 bloque bloque-pulsable bg-superficie-alta p-5"
+    >
+      <Icono modulo="enchantments" clase="h-10 w-10 shrink-0 text-acento" />
+      <span class="min-w-0 flex-1">
+        <span class="block text-xl font-extrabold">{ui(idioma, 'encantador.titulo')}</span>
+        <span class="mt-1 block text-texto-suave">{ui(idioma, 'encantador.subtitulo')}</span>
+      </span>
+      <span class="shrink-0 bloque bg-acento px-4 py-2 font-bold text-acento-contraste">
+        {ui(idioma, 'encantador.abrir')}
+      </span>
+    </a>
   </section>
 
   <section class="mb-12">
