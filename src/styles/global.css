@@ -38,52 +38,94 @@
   --pila-64: #4f7d33;
   --pila-16: #b07219;
   --pila-1: #a5341d;
+
+  /* -------------------------------------------------------------------------
+     Paleta oscura, con sus valores definidos UNA sola vez.
+     Se enciende desde dos sitios distintos, la preferencia del sistema y el
+     interruptor manual, y tenerla escrita dos veces hizo exactamente lo que
+     cabia esperar: durante varias versiones se actualizo una copia y no la
+     otra, asi que quien no tocaba el interruptor seguia viendo la paleta
+     vieja. Abajo solo se copian los nombres, nunca los colores.
+
+     Tres niveles con pasos amplios y deliberados: antes iban de #13 a #1d y a
+     #27, tan cerca que las tarjetas se fundian con el fondo y el relieve del
+     bloque no llegaba a verse. El neutro tira ligeramente a verde azulado para
+     que el acento parezca parte de la paleta y no un color pegado encima.
+     ------------------------------------------------------------------------- */
+  --o-fondo: #12161a;
+  --o-superficie: #1f252c;
+  --o-superficie-alta: #2d353f;
+  --o-borde: #3e4956;
+  --o-borde-fuerte: #5a6777;
+  --o-texto: #f3f7fa;
+  --o-texto-suave: #adb9c6;
+  --o-acento: #8ed363;
+  --o-acento-claro: #a9e181;
+  --o-acento-contraste: #0f2007;
+  --o-sombra: rgba(0, 0, 0, 0.55);
+
+  --o-etapa-inicio: #8ed363;
+  --o-etapa-hierro: #bcc7d3;
+  --o-etapa-diamante: #5cd0de;
+  --o-etapa-nether: #f0805f;
+  --o-etapa-end: #b499ef;
+
+  --o-pila-64: #8ed363;
+  --o-pila-16: #e3b155;
+  --o-pila-1: #f0805f;
 }
+
+/* Los dos interruptores del tema oscuro. Solo repiten NOMBRES: los colores
+   viven arriba, en las variables --o-*. */
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-tema='claro']) {
-    --fondo: #16151a;
-    --superficie: #1e1d24;
-    --superficie-alta: #26252e;
-    --borde: #35333e;
-    --borde-fuerte: #4a4757;
-    --texto: #ece9f0;
-    --texto-suave: #a29eb0;
-    --acento: #7cb85c;
-    --acento-claro: #92cf70;
-    --acento-contraste: #10230a;
-    --sombra: rgba(0, 0, 0, 0.4);
+    --fondo: var(--o-fondo);
+    --superficie: var(--o-superficie);
+    --superficie-alta: var(--o-superficie-alta);
+    --borde: var(--o-borde);
+    --borde-fuerte: var(--o-borde-fuerte);
+    --texto: var(--o-texto);
+    --texto-suave: var(--o-texto-suave);
+    --acento: var(--o-acento);
+    --acento-claro: var(--o-acento-claro);
+    --acento-contraste: var(--o-acento-contraste);
+    --sombra: var(--o-sombra);
 
-    --etapa-inicio: #7cb85c;
-    --etapa-hierro: #b0b0b0;
-    --etapa-diamante: #58d3df;
-    --etapa-nether: #e06a4f;
-    --etapa-end: #a98fe0;
+    --etapa-inicio: var(--o-etapa-inicio);
+    --etapa-hierro: var(--o-etapa-hierro);
+    --etapa-diamante: var(--o-etapa-diamante);
+    --etapa-nether: var(--o-etapa-nether);
+    --etapa-end: var(--o-etapa-end);
+
+    --pila-64: var(--o-pila-64);
+    --pila-16: var(--o-pila-16);
+    --pila-1: var(--o-pila-1);
   }
 }
 
 :root[data-tema='oscuro'] {
-  --fondo: #131218;
-  --superficie: #1d1c24;
-  --superficie-alta: #272630;
-  --borde: #403d4d;
-  --borde-fuerte: #57536a;
-  --texto: #f6f4fa;
-  --texto-suave: #c2bed0;
-  --acento: #92cf70;
-  --acento-claro: #a8de89;
-  --acento-contraste: #0d1c07;
-  --sombra: rgba(0, 0, 0, 0.5);
+  --fondo: var(--o-fondo);
+  --superficie: var(--o-superficie);
+  --superficie-alta: var(--o-superficie-alta);
+  --borde: var(--o-borde);
+  --borde-fuerte: var(--o-borde-fuerte);
+  --texto: var(--o-texto);
+  --texto-suave: var(--o-texto-suave);
+  --acento: var(--o-acento);
+  --acento-claro: var(--o-acento-claro);
+  --acento-contraste: var(--o-acento-contraste);
+  --sombra: var(--o-sombra);
 
-  --etapa-inicio: #92cf70;
-  --etapa-hierro: #c2c2c2;
-  --etapa-diamante: #67dbe7;
-  --etapa-nether: #f07f63;
-  --etapa-end: #bba4ef;
+  --etapa-inicio: var(--o-etapa-inicio);
+  --etapa-hierro: var(--o-etapa-hierro);
+  --etapa-diamante: var(--o-etapa-diamante);
+  --etapa-nether: var(--o-etapa-nether);
+  --etapa-end: var(--o-etapa-end);
 
-  --pila-64: #92cf70;
-  --pila-16: #e0a94a;
-  --pila-1: #f07f63;
+  --pila-64: var(--o-pila-64);
+  --pila-16: var(--o-pila-16);
+  --pila-1: var(--o-pila-1);
 }
 
 @theme inline {
@@ -285,7 +327,11 @@ a {
 .bloque-pulsable:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 0 -2px var(--sombra);
+  /* El contorno se aclara ademas de la sombra: sobre fondo oscuro una sombra
+     negra no se ve, y el elemento parecia no responder al puntero. */
+  border-color: var(--borde-fuerte);
   border-bottom-color: var(--acento);
+  border-right-color: var(--acento);
 }
 
 .bloque-pulsable:active {

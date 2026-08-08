@@ -19,6 +19,13 @@ const tituloCompleto = titulo
   ? `${titulo} · ${ui(idioma, 'sitio.nombre')}`
   : `${ui(idioma, 'sitio.nombre')} · ${ui(idioma, 'sitio.lema')}`
 
+// Modulo en el que estas ahora, para dejar su pestana encendida. Se deduce de
+// la ruta y no hay que pasarlo desde cada pagina, asi que no se puede olvidar.
+const rutaActual = Astro.url.pathname
+const moduloActivo = modulos.find((m) =>
+  rutaActual.startsWith(`/${idioma}/${rutaModulo(idioma, m)}/`)
+)
+
 const otrosIdiomas = idiomas
   .filter((i) => i.codigo !== idioma)
   .map((i) => ({
@@ -131,9 +138,18 @@ const otrosIdiomas = idiomas
                 <li>
                   <a
                     href={`/${idioma}/${rutaModulo(idioma, modulo)}/`}
-                    class="flex items-center gap-2 bloque bloque-pulsable px-3 py-1.5 text-sm font-semibold whitespace-nowrap"
+                    aria-current={modulo === moduloActivo ? 'page' : undefined}
+                    class:list={[
+                      'flex items-center gap-2 bloque bloque-pulsable px-3 py-1.5 text-sm font-semibold whitespace-nowrap',
+                      modulo === moduloActivo
+                        ? 'bg-acento text-acento-contraste'
+                        : 'text-texto'
+                    ]}
                   >
-                    <Icono modulo={modulo} clase="h-4 w-4 text-acento" />
+                    <Icono
+                      modulo={modulo}
+                      clase={`h-4 w-4 ${modulo === moduloActivo ? '' : 'text-acento'}`}
+                    />
                     {ui(idioma, `nav.${modulo}`)}
                   </a>
                 </li>
