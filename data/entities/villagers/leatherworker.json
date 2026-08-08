@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schemas/villager.schema.json",
+  "id": "leatherworker",
+  "tipo": "aldeano",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "mesaDeTrabajo": "cauldron",
+  "niveles": [
+    {
+      "nivel": 1,
+      "tradeos": [
+        {
+          "id": "leatherworker_n1_compra",
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "recibe": [
+            {
+              "item": "leather",
+              "cantidad": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nivel": 2,
+      "tradeos": [
+        {
+          "id": "leatherworker_n2_venta",
+          "entrega": {
+            "item": "leather_boots",
+            "cantidad": 1
+          },
+          "recibe": [
+            {
+              "item": "emerald",
+              "cantidad": 3
+            }
+          ],
+          "precioMinimo": 1,
+          "precioMaximo": 3
+        }
+      ]
+    }
+  ],
+  "etiquetas": [
+    "peletero",
+    "leatherworker",
+    "aldeano",
+    "comercio",
+    "esmeraldas"
+  ]
+}

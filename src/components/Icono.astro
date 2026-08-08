@@ -1,0 +1,7 @@
+---
+const { modulo, clase = 'h-5 w-5' } = Astro.props
+---
+
+<svg class={clase} aria-hidden="true" focusable="false">
+  <use href={`#ic-${modulo}`}></use>
+</svg>

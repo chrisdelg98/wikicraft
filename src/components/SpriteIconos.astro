@@ -1,0 +1,32 @@
+---
+import { MAPAS, aRectangulos } from '../lib/iconos.js'
+
+// Los nueve iconos se declaran UNA vez por pagina como simbolos, y cada uso
+// posterior es un <use> de unos pocos bytes. Inline y no como archivo aparte
+// porque son minusculos y asi no cuestan una peticion de red.
+const simbolos = Object.entries(MAPAS).map(([modulo, mapa]) => ({
+  modulo,
+  rects: aRectangulos(mapa)
+}))
+---
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    {
+      simbolos.map(({ modulo, rects }) => (
+        <symbol id={`ic-${modulo}`} viewBox="0 0 12 12" shape-rendering="crispEdges">
+          {rects.map((r) => (
+            <rect
+              x={r.x}
+              y={r.y}
+              width={r.ancho}
+              height="1"
+              fill="currentColor"
+              opacity={r.acento ? '0.55' : '1'}
+            />
+          ))}
+        </symbol>
+      ))
+    }
+  </defs>
+</svg>

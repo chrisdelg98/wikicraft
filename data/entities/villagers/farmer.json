@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schemas/villager.schema.json",
+  "id": "farmer",
+  "tipo": "aldeano",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "mesaDeTrabajo": "composter",
+  "niveles": [
+    {
+      "nivel": 1,
+      "tradeos": [
+        {
+          "id": "farmer_n1_compra",
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "recibe": [
+            {
+              "item": "wheat",
+              "cantidad": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nivel": 2,
+      "tradeos": [
+        {
+          "id": "farmer_n2_venta",
+          "entrega": {
+            "item": "bread",
+            "cantidad": 6
+          },
+          "recibe": [
+            {
+              "item": "emerald",
+              "cantidad": 1
+            }
+          ],
+          "precioMinimo": 1,
+          "precioMaximo": 1
+        }
+      ]
+    }
+  ],
+  "etiquetas": [
+    "granjero",
+    "farmer",
+    "aldeano",
+    "comercio",
+    "esmeraldas"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schemas/villager.schema.json",
+  "id": "cleric",
+  "tipo": "aldeano",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "mesaDeTrabajo": "brewing_stand",
+  "niveles": [
+    {
+      "nivel": 1,
+      "tradeos": [
+        {
+          "id": "cleric_n1_compra",
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "recibe": [
+            {
+              "item": "rotten_flesh",
+              "cantidad": 32
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nivel": 2,
+      "tradeos": [
+        {
+          "id": "cleric_n2_venta",
+          "entrega": {
+            "item": "redstone",
+            "cantidad": 2
+          },
+          "recibe": [
+            {
+              "item": "emerald",
+              "cantidad": 1
+            }
+          ],
+          "precioMinimo": 1,
+          "precioMaximo": 1
+        }
+      ]
+    }
+  ],
+  "etiquetas": [
+    "clérigo",
+    "cleric",
+    "aldeano",
+    "comercio",
+    "esmeraldas"
+  ]
+}

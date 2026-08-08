@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schemas/villager.schema.json",
+  "id": "mason",
+  "tipo": "aldeano",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "mesaDeTrabajo": "stonecutter",
+  "niveles": [
+    {
+      "nivel": 1,
+      "tradeos": [
+        {
+          "id": "mason_n1_compra",
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "recibe": [
+            {
+              "item": "clay_ball",
+              "cantidad": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nivel": 2,
+      "tradeos": [
+        {
+          "id": "mason_n2_venta",
+          "entrega": {
+            "item": "bricks",
+            "cantidad": 1
+          },
+          "recibe": [
+            {
+              "item": "emerald",
+              "cantidad": 1
+            }
+          ],
+          "precioMinimo": 1,
+          "precioMaximo": 1
+        }
+      ]
+    }
+  ],
+  "etiquetas": [
+    "cantero",
+    "mason",
+    "aldeano",
+    "comercio",
+    "esmeraldas"
+  ]
+}

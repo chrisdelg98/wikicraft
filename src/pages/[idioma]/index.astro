@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro'
 import Buscador from '../../components/Buscador.astro'
 import TarjetaEntidad from '../../components/TarjetaEntidad.astro'
+import Icono from '../../components/Icono.astro'
 import { codigosIdioma, ui, modulos, entidadesDe, rutaModulo, grafo } from '../../lib/datos.js'
 
 export function getStaticPaths() {
@@ -10,12 +11,22 @@ export function getStaticPaths() {
 
 const { idioma } = Astro.params
 
-// Se muestran las entidades de la etapa inicial: es lo que necesita quien
-// acaba de empezar, que es justo quien menos sabe que buscar.
-const primerosPasos = [...grafo.values()]
-  .filter((e) => e.entidad.etapa === 'inicio')
-  .slice(0, 8)
-  .map((e) => e.entidad.id)
+// Seleccion a mano, y no las primeras entidades que salgan de la etapa inicial:
+// eso devolvia ocho biomas seguidos, que no le sirven de nada a quien acaba de
+// aparecer en un mundo nuevo. Esto es, literalmente, lo primero que hace
+// cualquiera al empezar una partida.
+const PRIMEROS_PASOS = [
+  'oak_planks',
+  'stick',
+  'crafting_table',
+  'wooden_pickaxe',
+  'furnace',
+  'torch',
+  'chest',
+  'bread'
+]
+
+const primerosPasos = PRIMEROS_PASOS.filter((id) => grafo.has(id))
 ---
 
 <Base idioma={idioma}>
@@ -45,10 +56,11 @@ const primerosPasos = [...grafo.values()]
           <li>
             <a
               href={`/${idioma}/${rutaModulo(idioma, modulo)}/`}
-              class="flex h-full flex-col justify-between gap-1 bloque bloque-pulsable p-3"
+              class="flex h-full flex-col gap-2 bloque bloque-pulsable p-3"
             >
+              <Icono modulo={modulo} clase="h-8 w-8 text-acento" />
               <span class="font-bold">{ui(idioma, `nav.${modulo}`)}</span>
-              <span class="text-sm text-texto-suave">{entidadesDe(modulo).length}</span>
+              <span class="mt-auto text-sm text-texto-suave">{entidadesDe(modulo).length}</span>
             </a>
           </li>
         ))
@@ -59,7 +71,7 @@ const primerosPasos = [...grafo.values()]
   {
     primerosPasos.length > 0 && (
       <section>
-        <h2 class="mb-4 text-xl font-bold">{ui(idioma, 'etapa.inicio')}</h2>
+        <h2 class="mb-4 text-xl font-bold">{ui(idioma, 'portada.primerosPasos')}</h2>
         <ul class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {primerosPasos.map((id) => (
             <li>

@@ -1,6 +1,8 @@
 ---
 import '../styles/global.css'
 import Buscador from '../components/Buscador.astro'
+import SpriteIconos from '../components/SpriteIconos.astro'
+import Icono from '../components/Icono.astro'
 import { ui, idiomas, modulos, rutaModulo, rutaDe, grafo } from '../lib/datos.js'
 
 const {
@@ -61,6 +63,8 @@ const otrosIdiomas = idiomas
   </head>
 
   <body class="min-h-screen flex flex-col">
+    <SpriteIconos />
+
     <a
       href="#contenido"
       class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bloque focus:px-4 focus:py-2"
@@ -127,8 +131,9 @@ const otrosIdiomas = idiomas
                 <li>
                   <a
                     href={`/${idioma}/${rutaModulo(idioma, modulo)}/`}
-                    class="block bloque bloque-pulsable px-3 py-1.5 text-sm font-semibold whitespace-nowrap"
+                    class="flex items-center gap-2 bloque bloque-pulsable px-3 py-1.5 text-sm font-semibold whitespace-nowrap"
                   >
+                    <Icono modulo={modulo} clase="h-4 w-4 text-acento" />
                     {ui(idioma, `nav.${modulo}`)}
                   </a>
                 </li>

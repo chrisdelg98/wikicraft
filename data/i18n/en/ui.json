@@ -48,6 +48,16 @@
 
   "tema.cambiar": "Switch theme",
 
+  "filtro.buscarEnLista": "Filter by name…",
+  "filtro.todas": "All",
+  "filtro.ambito": "These filters narrow down what you see on this page. To search the whole wiki, use the box above.",
+  "filtro.nadaCoincide": "Nothing matches that filter. Try removing one.",
+
+  "listado.resumen": "{n} in total · page {pagina} of {total}",
+  "listado.anterior": "← Previous",
+  "listado.siguiente": "Next →",
+
+  "portada.primerosPasos": "What you will need first",
   "portada.titulo": "Search anything in Minecraft",
   "portada.subtitulo": "And land on everything related at once, without searching again.",
   "portada.explora": "Or start here",

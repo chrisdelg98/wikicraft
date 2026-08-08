@@ -1,15 +1,195 @@
 {
+  "aqua_affinity": {
+    "nombre": "Afinidad acuática",
+    "slug": "afinidad-acuatica",
+    "descripcion": "Te deja picar a velocidad normal bajo el agua. Sin él, excavar sumergido es desesperantemente lento.",
+    "notas": "Va en el casco. Es casi obligatorio si vas a construir bajo el mar."
+  },
+  "bane_of_arthropods": {
+    "nombre": "Perdición de los artrópodos",
+    "slug": "perdicion-de-los-artropodos",
+    "descripcion": "Hace mucho más daño a arañas, lepismas y abejas, y además las deja aturdidas un momento.",
+    "notas": "Contra cualquier otra cosa no sirve de nada. Filo es mejor opción salvo que vivas rodeado de arañas."
+  },
+  "binding_curse": {
+    "nombre": "Maldición de vinculación",
+    "slug": "maldicion-de-vinculacion",
+    "descripcion": "La pieza se te queda pegada: no puedes quitártela hasta que se rompe o hasta que mueres.",
+    "notas": "Es una maldición, no una mejora. Aparece en botín y en tratos para fastidiarte."
+  },
+  "blast_protection": {
+    "nombre": "Protección contra explosiones",
+    "slug": "proteccion-contra-explosiones",
+    "descripcion": "Reduce el daño de creepers, cargas de TNT y bolas de fuego, y te empuja menos al estallar.",
+    "notas": "No se puede combinar con las otras protecciones en la misma pieza."
+  },
+  "breach": {
+    "nombre": "Brecha",
+    "slug": "brecha",
+    "descripcion": "Hace que tus golpes con la maza ignoren parte de la armadura del enemigo.",
+    "notas": "Solo funciona en la maza."
+  },
+  "channeling": {
+    "nombre": "Canalización",
+    "slug": "canalizacion",
+    "descripcion": "Si lanzas el tridente durante una tormenta y aciertas, cae un rayo sobre el objetivo.",
+    "notas": "Solo funciona si está lloviendo con tormenta y el objetivo está a cielo abierto."
+  },
+  "density": {
+    "nombre": "Densidad",
+    "slug": "densidad",
+    "descripcion": "Aumenta el daño extra que hace la maza al caer desde alto. Cuanto más caes, más pega.",
+    "notas": "Solo funciona en la maza."
+  },
+  "depth_strider": {
+    "nombre": "Agilidad acuática",
+    "slug": "agilidad-acuatica",
+    "descripcion": "Te deja caminar y nadar mucho más rápido dentro del agua.",
+    "notas": "Va en las botas y no se lleva bien con Paso helado."
+  },
+  "efficiency": {
+    "nombre": "Eficiencia",
+    "slug": "eficiencia",
+    "descripcion": "Rompes bloques mucho más rápido. Es el encantamiento que más tiempo te ahorra en toda la partida.",
+    "notas": "Con Eficiencia V en un pico de diamante, la piedra desaparece al instante."
+  },
+  "feather_falling": {
+    "nombre": "Caída de pluma",
+    "slug": "caida-de-pluma",
+    "descripcion": "Reduce muchísimo el daño de las caídas. Con el nivel máximo sobrevives a caídas que te matarían sin él.",
+    "notas": "Va en las botas y es de los encantamientos que más muertes evita."
+  },
+  "fire_aspect": {
+    "nombre": "Aspecto ígneo",
+    "slug": "aspecto-igneo",
+    "descripcion": "Tus golpes prenden fuego al enemigo, que sigue perdiendo vida después.",
+    "notas": "Si matas animales con fuego, sueltan la carne ya cocinada."
+  },
+  "fire_protection": {
+    "nombre": "Protección contra el fuego",
+    "slug": "proteccion-contra-el-fuego",
+    "descripcion": "Reduce el daño del fuego y la lava, y te apagas antes si te prendes.",
+    "notas": "Muy recomendable antes de ir al Nether, donde hay lava por todas partes."
+  },
+  "flame": {
+    "nombre": "Fuego",
+    "slug": "fuego",
+    "descripcion": "Tus flechas salen ardiendo y prenden fuego a lo que alcanzan.",
+    "notas": "Va en el arco. Contra enemigos que ya son de fuego no sirve."
+  },
+  "fortune": {
+    "nombre": "Fortuna",
+    "slug": "fortuna",
+    "descripcion": "Consigues más recursos al romper minerales: más diamantes, más carbón, más lapislázuli del mismo bloque.",
+    "notas": "No se puede llevar junto a Toque de seda. Para minerales quieres Fortuna; para bloques enteros, Toque de seda."
+  },
+  "frost_walker": {
+    "nombre": "Paso helado",
+    "slug": "paso-helado",
+    "descripcion": "El agua se congela bajo tus pies, así que puedes cruzar lagos y mares caminando.",
+    "notas": "Va en las botas, no se combina con Agilidad acuática y solo se consigue en botín o comerciando."
+  },
+  "impaling": {
+    "nombre": "Empalar",
+    "slug": "empalar",
+    "descripcion": "El tridente hace mucho más daño a las criaturas acuáticas.",
+    "notas": "Muy útil contra guardianes en un monumento oceánico."
+  },
+  "infinity": {
+    "nombre": "Infinidad",
+    "slug": "infinidad",
+    "descripcion": "Permite disparar sin gastar flechas mientras lleves al menos una en el inventario.",
+    "notas": "Incompatible con Reparación. No funciona con flechas especiales, que sí se gastan."
+  },
+  "knockback": {
+    "nombre": "Empuje",
+    "slug": "empuje",
+    "descripcion": "Tus golpes lanzan al enemigo mucho más lejos.",
+    "notas": "Sirve para quitarte cosas de encima, pero también aleja a los enemigos que intentas rematar."
+  },
+  "looting": {
+    "nombre": "Botín",
+    "slug": "botin",
+    "descripcion": "Los mobs sueltan más objetos al morir, y aumenta la probabilidad de que suelten los raros.",
+    "notas": "Es imprescindible en cualquier granja de mobs: multiplica lo que sacas por el mismo esfuerzo."
+  },
+  "loyalty": {
+    "nombre": "Lealtad",
+    "slug": "lealtad",
+    "descripcion": "El tridente vuelve solo a tu mano después de lanzarlo.",
+    "notas": "Sin esto, cada lanzamiento significa ir a recogerlo. Es lo primero que quieres en un tridente."
+  },
+  "luck_of_the_sea": {
+    "nombre": "Suerte marina",
+    "slug": "suerte-marina",
+    "descripcion": "Al pescar sacas más tesoros y menos basura.",
+    "notas": "Va en la caña. Combinado con Atracción convierte la pesca en una fuente decente de libros encantados."
+  },
+  "lure": {
+    "nombre": "Atracción",
+    "slug": "atraccion",
+    "descripcion": "Los peces pican antes, así que pescas mucho más rápido.",
+    "notas": "Va en la caña."
+  },
   "mending": {
     "nombre": "Reparación",
     "slug": "reparacion",
     "descripcion": "Convierte la experiencia que recoges en durabilidad para la pieza equipada. Mientras sigas ganando experiencia, el equipo no se gasta.",
     "notas": "Es incompatible con Infinidad, así que en un arco hay que elegir entre no gastar flechas o no gastar el arco."
   },
-  "unbreaking": {
-    "nombre": "Irrompibilidad",
-    "slug": "irrompibilidad",
-    "descripcion": "Da una probabilidad de que un uso no descuente durabilidad. En la práctica multiplica la vida útil de la pieza.",
-    "notas": "Combina especialmente bien con Reparación: menos desgaste que compensar."
+  "multishot": {
+    "nombre": "Multidisparo",
+    "slug": "multidisparo",
+    "descripcion": "La ballesta dispara tres flechas de golpe gastando solo una.",
+    "notas": "No se puede llevar junto a Perforación."
+  },
+  "piercing": {
+    "nombre": "Perforación",
+    "slug": "perforacion",
+    "descripcion": "Las flechas atraviesan a los enemigos y siguen su camino, así que un disparo puede alcanzar a varios.",
+    "notas": "Además puedes recoger la flecha después. No se combina con Multidisparo."
+  },
+  "power": {
+    "nombre": "Poder",
+    "slug": "poder",
+    "descripcion": "Aumenta mucho el daño de tus flechas. Es el encantamiento básico de cualquier arco.",
+    "notas": "Con Poder V, un disparo cargado del todo mata a casi cualquier mob común."
+  },
+  "projectile_protection": {
+    "nombre": "Protección contra proyectiles",
+    "slug": "proteccion-contra-proyectiles",
+    "descripcion": "Reduce el daño de flechas, bolas de fuego y todo lo que te lancen desde lejos.",
+    "notas": "No se puede combinar con las otras protecciones en la misma pieza."
+  },
+  "protection": {
+    "nombre": "Protección",
+    "slug": "proteccion",
+    "descripcion": "Reduce el daño de casi cualquier fuente. Es la opción segura si no sabes cuál elegir.",
+    "notas": "Las cuatro protecciones son incompatibles entre sí. Esta es la más general y la que conviene por defecto."
+  },
+  "punch": {
+    "nombre": "Retroceso",
+    "slug": "retroceso",
+    "descripcion": "Tus flechas empujan mucho más lejos al enemigo que alcanzan.",
+    "notas": "Va en el arco. Útil para mantener la distancia."
+  },
+  "quick_charge": {
+    "nombre": "Carga rápida",
+    "slug": "carga-rapida",
+    "descripcion": "La ballesta tarda menos en cargarse entre disparo y disparo.",
+    "notas": "Compensa la mayor pega de la ballesta frente al arco."
+  },
+  "respiration": {
+    "nombre": "Respiración",
+    "slug": "respiracion",
+    "descripcion": "Aguantas mucho más tiempo bajo el agua antes de empezar a ahogarte.",
+    "notas": "Va en el casco. Imprescindible para explorar monumentos oceánicos."
+  },
+  "riptide": {
+    "nombre": "Propulsión acuática",
+    "slug": "propulsion-acuatica",
+    "descripcion": "Al lanzar el tridente bajo la lluvia o dentro del agua, sales disparado con él.",
+    "notas": "Es la forma más divertida de moverse en una tormenta, pero no se combina con Lealtad."
   },
   "sharpness": {
     "nombre": "Filo",
@@ -17,16 +197,58 @@
     "descripcion": "Aumenta el daño contra cualquier objetivo. Es la opción por defecto en espadas y hachas.",
     "notas": "No puede convivir con Castigo. Filo es mejor de forma general; Castigo solo gana contra no muertos."
   },
+  "silk_touch": {
+    "nombre": "Toque de seda",
+    "slug": "toque-de-seda",
+    "descripcion": "Los bloques caen enteros en vez de romperse: consigues el bloque de mineral, el cristal o la hierba tal cual.",
+    "notas": "Es la única forma de llevarte un generador de mobs a casa, y no se combina con Fortuna."
+  },
   "smite": {
     "nombre": "Castigo",
     "slug": "castigo",
     "descripcion": "Aumenta mucho el daño contra criaturas no muertas como zombis, esqueletos y ahogados, pero no afecta al resto.",
     "notas": "Solo compensa frente a Filo si tienes una granja centrada en no muertos."
   },
-  "infinity": {
-    "nombre": "Infinidad",
-    "slug": "infinidad",
-    "descripcion": "Permite disparar sin consumir flechas mientras lleves al menos una en el inventario.",
-    "notas": "Incompatible con Reparación. No funciona con flechas especiales, que sí se gastan."
+  "soul_speed": {
+    "nombre": "Velocidad de almas",
+    "slug": "velocidad-de-almas",
+    "descripcion": "Corres muy rápido sobre la arena de almas y la tierra de almas, que normalmente te frenan.",
+    "notas": "Solo se consigue regateando con piglins. Va en las botas y es muy útil en el Nether."
+  },
+  "sweeping_edge": {
+    "nombre": "Filo barredor",
+    "slug": "filo-barredor",
+    "descripcion": "El golpe de barrido de la espada hace mucho más daño a todo lo que tienes alrededor.",
+    "notas": "Muy bueno cuando te rodean varios enemigos a la vez."
+  },
+  "swift_sneak": {
+    "nombre": "Sigilo rápido",
+    "slug": "sigilo-rapido",
+    "descripcion": "Te mueves mucho más rápido mientras vas agachado.",
+    "notas": "Solo aparece en los cofres de la ciudad antigua, que es justo donde más falta te hace ir agachado."
+  },
+  "thorns": {
+    "nombre": "Espinas",
+    "slug": "espinas",
+    "descripcion": "Quien te golpee recibe daño de vuelta sin que tú hagas nada.",
+    "notas": "Gasta la durabilidad de la armadura más deprisa, así que va muy bien acompañado de Reparación."
+  },
+  "unbreaking": {
+    "nombre": "Irrompibilidad",
+    "slug": "irrompibilidad",
+    "descripcion": "Da una probabilidad de que un uso no descuente durabilidad. En la práctica multiplica la vida útil de la pieza.",
+    "notas": "Combina especialmente bien con Reparación: menos desgaste que compensar."
+  },
+  "vanishing_curse": {
+    "nombre": "Maldición de desvanecimiento",
+    "slug": "maldicion-de-desvanecimiento",
+    "descripcion": "La pieza desaparece para siempre cuando mueres, en vez de quedarse en el suelo.",
+    "notas": "Es una maldición. Si te toca en algo bueno, mejor no equiparlo."
+  },
+  "wind_burst": {
+    "nombre": "Ráfaga de viento",
+    "slug": "rafaga-de-viento",
+    "descripcion": "Al golpear con la maza sales impulsado hacia arriba, lo que te permite encadenar otro golpe desde alto.",
+    "notas": "Solo funciona en la maza, y se consigue en los ensayos."
   }
 }

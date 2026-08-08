@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schemas/villager.schema.json",
+  "id": "toolsmith",
+  "tipo": "aldeano",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "mesaDeTrabajo": "smithing_table",
+  "niveles": [
+    {
+      "nivel": 1,
+      "tradeos": [
+        {
+          "id": "toolsmith_n1_compra",
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "recibe": [
+            {
+              "item": "coal",
+              "cantidad": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nivel": 2,
+      "tradeos": [
+        {
+          "id": "toolsmith_n2_venta",
+          "entrega": {
+            "item": "iron_pickaxe",
+            "cantidad": 1
+          },
+          "recibe": [
+            {
+              "item": "emerald",
+              "cantidad": 8
+            }
+          ],
+          "precioMinimo": 4,
+          "precioMaximo": 8
+        }
+      ]
+    }
+  ],
+  "etiquetas": [
+    "herrero",
+    "toolsmith",
+    "aldeano",
+    "comercio",
+    "esmeraldas"
+  ]
+}

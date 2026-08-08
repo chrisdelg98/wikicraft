@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schemas/villager.schema.json",
+  "id": "cartographer",
+  "tipo": "aldeano",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "mesaDeTrabajo": "cartography_table",
+  "niveles": [
+    {
+      "nivel": 1,
+      "tradeos": [
+        {
+          "id": "cartographer_n1_compra",
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "recibe": [
+            {
+              "item": "paper",
+              "cantidad": 24
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nivel": 2,
+      "tradeos": [
+        {
+          "id": "cartographer_n2_venta",
+          "entrega": {
+            "item": "map",
+            "cantidad": 1
+          },
+          "recibe": [
+            {
+              "item": "emerald",
+              "cantidad": 7
+            }
+          ],
+          "precioMinimo": 3,
+          "precioMaximo": 7
+        }
+      ]
+    }
+  ],
+  "etiquetas": [
+    "cartógrafo",
+    "cartographer",
+    "aldeano",
+    "comercio",
+    "esmeraldas"
+  ]
+}

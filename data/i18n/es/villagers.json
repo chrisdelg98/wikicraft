@@ -1,8 +1,92 @@
 {
+  "armorer": {
+    "nombre": "Armero",
+    "slug": "armero",
+    "descripcion": "Compra carbón y hierro, y vende armaduras. En sus niveles altos vende armadura de diamante, que sale mucho más barata que buscar los diamantes.",
+    "notas": "Es de los aldeanos que más compensa subir de nivel: la diferencia entre lo que vende de novato y de maestro es enorme.",
+    "advertencia": "Las cantidades son orientativas: Minecraft sortea el precio de cada trato dentro de un rango, y baja de forma permanente si curas al aldeano de zombi."
+  },
+  "butcher": {
+    "nombre": "Carnicero",
+    "slug": "carnicero",
+    "descripcion": "Compra carne cruda y vende carne cocinada. Combina de maravilla con cualquier granja de animales.",
+    "notas": "Cocinar tú la carne y vendérsela cocinada no compensa: págale con la cruda y quédate la cocinada.",
+    "advertencia": "Las cantidades son orientativas: Minecraft sortea el precio de cada trato dentro de un rango, y baja de forma permanente si curas al aldeano de zombi."
+  },
+  "cartographer": {
+    "nombre": "Cartógrafo",
+    "slug": "cartografo",
+    "descripcion": "Compra papel y vende mapas, incluidos los mapas del tesoro que marcan mansiones y monumentos oceánicos.",
+    "notas": "Sus mapas de exploración son la única forma práctica de encontrar una mansión del bosque.",
+    "advertencia": "Las cantidades son orientativas: Minecraft sortea el precio de cada trato dentro de un rango, y baja de forma permanente si curas al aldeano de zombi."
+  },
+  "cleric": {
+    "nombre": "Clérigo",
+    "slug": "clerigo",
+    "descripcion": "Compra carne podrida y vende redstone, lapislázuli y perlas de ender. Es la forma más segura de conseguir perlas sin pelear con endermen.",
+    "notas": "La carne podrida no sirve casi para nada más, así que este aldeano convierte basura en material útil.",
+    "advertencia": "Las cantidades son orientativas: Minecraft sortea el precio de cada trato dentro de un rango, y baja de forma permanente si curas al aldeano de zombi."
+  },
+  "farmer": {
+    "nombre": "Granjero",
+    "slug": "granjero",
+    "descripcion": "Compra cultivos y vende comida. Es el aldeano más fácil de conseguir y el que resuelve el hambre en las primeras horas de partida.",
+    "notas": "Si plantas un huerto grande, el granjero convierte el trigo sobrante en esmeraldas sin que tengas que hacer nada más.",
+    "advertencia": "Las cantidades son orientativas: Minecraft sortea el precio de cada trato dentro de un rango, y baja de forma permanente si curas al aldeano de zombi."
+  },
+  "fisherman": {
+    "nombre": "Pescador",
+    "slug": "pescador",
+    "descripcion": "Compra cuerda y pescado, y vende pescado cocinado y cañas. Es útil si tienes una granja de arañas o pescas a menudo.",
+    "notas": "También vende la brújula, que necesitas para hacer mapas.",
+    "advertencia": "Las cantidades son orientativas: Minecraft sortea el precio de cada trato dentro de un rango, y baja de forma permanente si curas al aldeano de zombi."
+  },
+  "fletcher": {
+    "nombre": "Flechero",
+    "slug": "flechero",
+    "descripcion": "Compra palos, pedernal y plumas, y vende flechas y arcos. Como los palos salen de la madera, es el aldeano más barato de explotar.",
+    "notas": "Treinta y dos palos son cuatro troncos. Es la forma más rápida de conseguir tus primeras esmeraldas.",
+    "advertencia": "Las cantidades son orientativas: Minecraft sortea el precio de cada trato dentro de un rango, y baja de forma permanente si curas al aldeano de zombi."
+  },
+  "leatherworker": {
+    "nombre": "Peletero",
+    "slug": "peletero",
+    "descripcion": "Compra cuero y vende armadura de cuero teñida y sillas de montar. La silla no se puede fabricar, así que es una de las pocas formas de conseguirla.",
+    "notas": "Si tienes vacas, el cuero es infinito y este aldeano se vuelve muy rentable.",
+    "advertencia": "Las cantidades son orientativas: Minecraft sortea el precio de cada trato dentro de un rango, y baja de forma permanente si curas al aldeano de zombi."
+  },
   "librarian": {
     "nombre": "Bibliotecario",
     "slug": "bibliotecario",
     "descripcion": "La profesión más rentable del juego. Vende libros encantados, incluidos los de tesoro que no pueden salir de la mesa de encantamientos.",
     "notas": "Antes de comerciar con él por primera vez puedes romper y recolocar su atril para volver a tirar sus tratos. Curarlo de zombi baja los precios de forma permanente y acumulable."
+  },
+  "mason": {
+    "nombre": "Cantero",
+    "slug": "cantero",
+    "descripcion": "Compra arcilla y piedra, y vende bloques decorativos: ladrillos, cuarzo y terracota de colores. Es el aldeano de quien construye.",
+    "notas": "Vende cuarzo sin necesidad de ir al Nether, que para construir en grande sale muchísimo más cómodo.",
+    "advertencia": "Las cantidades son orientativas: Minecraft sortea el precio de cada trato dentro de un rango, y baja de forma permanente si curas al aldeano de zombi."
+  },
+  "shepherd": {
+    "nombre": "Pastor",
+    "slug": "pastor",
+    "descripcion": "Compra lana y tintes, y vende tijeras, camas, alfombras y cuadros. Con unas cuantas ovejas se convierte en una fuente constante de esmeraldas.",
+    "notas": "Esquilar una oveja no la mata y la lana vuelve a crecer, así que este trato es totalmente renovable.",
+    "advertencia": "Las cantidades son orientativas: Minecraft sortea el precio de cada trato dentro de un rango, y baja de forma permanente si curas al aldeano de zombi."
+  },
+  "toolsmith": {
+    "nombre": "Herrero",
+    "slug": "herrero",
+    "descripcion": "Compra carbón y hierro, y vende herramientas: picos, hachas, palas y azadas, encantadas en los niveles altos.",
+    "notas": "Su pico de diamante con Eficiencia ahorra muchísimo tiempo de excavación.",
+    "advertencia": "Las cantidades son orientativas: Minecraft sortea el precio de cada trato dentro de un rango, y baja de forma permanente si curas al aldeano de zombi."
+  },
+  "weaponsmith": {
+    "nombre": "Armero de armas",
+    "slug": "armero-de-armas",
+    "descripcion": "Compra carbón y hierro, y vende espadas y hachas, encantadas a partir del nivel oficial.",
+    "notas": "Una espada de diamante encantada suya suele salir más barata que fabricarla y encantarla por tu cuenta.",
+    "advertencia": "Las cantidades son orientativas: Minecraft sortea el precio de cada trato dentro de un rango, y baja de forma permanente si curas al aldeano de zombi."
   }
 }

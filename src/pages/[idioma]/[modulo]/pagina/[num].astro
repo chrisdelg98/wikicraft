@@ -1,0 +1,29 @@
+---
+import Base from '../../../../layouts/Base.astro'
+import Listado, { POR_PAGINA } from '../../../../components/Listado.astro'
+import { codigosIdioma, modulos, ui, rutaModulo, entidadesDe } from '../../../../lib/datos.js'
+
+export function getStaticPaths() {
+  return codigosIdioma.flatMap((idioma) =>
+    modulos.flatMap((modulo) => {
+      const total = Math.max(1, Math.ceil(entidadesDe(modulo).length / POR_PAGINA))
+      // La pagina 1 vive en la raiz del modulo; aqui solo van de la 2 en
+      // adelante, para no tener la misma lista en dos URL distintas.
+      return Array.from({ length: Math.max(0, total - 1) }, (_, i) => ({
+        params: { idioma, modulo: rutaModulo(idioma, modulo), num: String(i + 2) },
+        props: { modulo, pagina: i + 2 }
+      }))
+    })
+  )
+}
+
+const { idioma } = Astro.params
+const { modulo, pagina } = Astro.props
+---
+
+<Base
+  idioma={idioma}
+  titulo={`${ui(idioma, `nav.${modulo}`)} · ${pagina}`}
+>
+  <Listado idioma={idioma} modulo={modulo} pagina={pagina} />
+</Base>

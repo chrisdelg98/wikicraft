@@ -125,6 +125,16 @@
 
   "tema.cambiar": "Cambiar tema",
 
+  "filtro.buscarEnLista": "Filtrar por nombre…",
+  "filtro.todas": "Todas",
+  "filtro.ambito": "Estos filtros afinan lo que ves en esta página. Para buscar en toda la wiki, usa el buscador de arriba.",
+  "filtro.nadaCoincide": "Nada coincide con ese filtro. Prueba a quitar alguno.",
+
+  "listado.resumen": "{n} en total · página {pagina} de {total}",
+  "listado.anterior": "← Anterior",
+  "listado.siguiente": "Siguiente →",
+
+  "portada.primerosPasos": "Lo primero que vas a necesitar",
   "portada.titulo": "Busca cualquier cosa de Minecraft",
   "portada.subtitulo": "Y llega de una vez a todo lo relacionado, sin volver a buscar.",
   "portada.explora": "O empieza por aquí",

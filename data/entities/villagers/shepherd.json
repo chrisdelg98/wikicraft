@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schemas/villager.schema.json",
+  "id": "shepherd",
+  "tipo": "aldeano",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "mesaDeTrabajo": "loom",
+  "niveles": [
+    {
+      "nivel": 1,
+      "tradeos": [
+        {
+          "id": "shepherd_n1_compra",
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "recibe": [
+            {
+              "item": "white_wool",
+              "cantidad": 18
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nivel": 2,
+      "tradeos": [
+        {
+          "id": "shepherd_n2_venta",
+          "entrega": {
+            "item": "shears",
+            "cantidad": 1
+          },
+          "recibe": [
+            {
+              "item": "emerald",
+              "cantidad": 2
+            }
+          ],
+          "precioMinimo": 1,
+          "precioMaximo": 2
+        }
+      ]
+    }
+  ],
+  "etiquetas": [
+    "pastor",
+    "shepherd",
+    "aldeano",
+    "comercio",
+    "esmeraldas"
+  ]
+}

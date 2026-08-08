@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schemas/villager.schema.json",
+  "id": "fletcher",
+  "tipo": "aldeano",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "mesaDeTrabajo": "fletching_table",
+  "niveles": [
+    {
+      "nivel": 1,
+      "tradeos": [
+        {
+          "id": "fletcher_n1_compra",
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "recibe": [
+            {
+              "item": "stick",
+              "cantidad": 32
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nivel": 2,
+      "tradeos": [
+        {
+          "id": "fletcher_n2_venta",
+          "entrega": {
+            "item": "arrow",
+            "cantidad": 16
+          },
+          "recibe": [
+            {
+              "item": "emerald",
+              "cantidad": 1
+            }
+          ],
+          "precioMinimo": 1,
+          "precioMaximo": 1
+        }
+      ]
+    }
+  ],
+  "etiquetas": [
+    "flechero",
+    "fletcher",
+    "aldeano",
+    "comercio",
+    "esmeraldas"
+  ]
+}

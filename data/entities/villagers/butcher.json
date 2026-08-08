@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schemas/villager.schema.json",
+  "id": "butcher",
+  "tipo": "aldeano",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "mesaDeTrabajo": "smoker",
+  "niveles": [
+    {
+      "nivel": 1,
+      "tradeos": [
+        {
+          "id": "butcher_n1_compra",
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "recibe": [
+            {
+              "item": "chicken",
+              "cantidad": 14
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nivel": 2,
+      "tradeos": [
+        {
+          "id": "butcher_n2_venta",
+          "entrega": {
+            "item": "cooked_porkchop",
+            "cantidad": 5
+          },
+          "recibe": [
+            {
+              "item": "emerald",
+              "cantidad": 1
+            }
+          ],
+          "precioMinimo": 1,
+          "precioMaximo": 1
+        }
+      ]
+    }
+  ],
+  "etiquetas": [
+    "carnicero",
+    "butcher",
+    "aldeano",
+    "comercio",
+    "esmeraldas"
+  ]
+}

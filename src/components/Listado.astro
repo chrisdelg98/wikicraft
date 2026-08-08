@@ -1,0 +1,189 @@
+---
+import TarjetaEntidad from './TarjetaEntidad.astro'
+import Icono from './Icono.astro'
+import { ui, entidadesDe, rutaModulo, t, normalizar } from '../lib/datos.js'
+
+const { idioma, modulo, pagina = 1 } = Astro.props
+
+export const POR_PAGINA = 60
+
+// Primero lo que sirve desde el principio, que es por donde deberia empezar
+// quien no sabe todavia que busca. Dentro de cada etapa, alfabetico.
+const ORDEN = ['inicio', 'hierro', 'diamante', 'nether', 'end']
+
+const todas = entidadesDe(modulo)
+  .map((e) => ({
+    id: e.entidad.id,
+    etapa: e.entidad.etapa,
+    nombre: t(idioma, e.entidad.id).nombre
+  }))
+  .sort(
+    (a, b) => ORDEN.indexOf(a.etapa) - ORDEN.indexOf(b.etapa) || a.nombre.localeCompare(b.nombre)
+  )
+
+const totalPaginas = Math.max(1, Math.ceil(todas.length / POR_PAGINA))
+const actual = Math.min(Math.max(1, pagina), totalPaginas)
+const visibles = todas.slice((actual - 1) * POR_PAGINA, actual * POR_PAGINA)
+
+const etapasPresentes = ORDEN.filter((e) => visibles.some((x) => x.etapa === e))
+const titulo = ui(idioma, `nav.${modulo}`)
+const base = `/${idioma}/${rutaModulo(idioma, modulo)}`
+const urlPagina = (n) => (n === 1 ? `${base}/` : `${base}/pagina/${n}/`)
+
+// Ventana de paginas alrededor de la actual, para no pintar veintitantos
+// numeros seguidos en pantallas pequenas.
+const ventana = []
+for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n++) ventana.push(n)
+---
+
+<div class="mb-6 flex items-center gap-3">
+  <Icono modulo={modulo} clase="h-10 w-10 shrink-0 text-acento" />
+  <div>
+    <h1 class="text-3xl font-extrabold">{titulo}</h1>
+    <p class="text-texto-suave">
+      {ui(idioma, 'listado.resumen', { n: todas.length, pagina: actual, total: totalPaginas })}
+    </p>
+  </div>
+</div>
+
+{
+  (etapasPresentes.length > 1 || visibles.length > 12) && (
+    <div class="mb-6 flex flex-col gap-3">
+      <input
+        type="search"
+        data-filtro-texto
+        placeholder={ui(idioma, 'filtro.buscarEnLista')}
+        aria-label={ui(idioma, 'filtro.buscarEnLista')}
+        class="w-full bloque bg-superficie-alta px-3 py-2 placeholder:text-texto-suave sm:max-w-sm"
+      />
+
+      {etapasPresentes.length > 1 && (
+        <div class="flex flex-wrap gap-2">
+          <button
+            type="button"
+            data-filtro-etapa=""
+            aria-pressed="true"
+            class="bloque bloque-pulsable px-3 py-1.5 text-sm font-semibold aria-pressed:border-b-acento aria-pressed:bg-superficie-alta"
+          >
+            {ui(idioma, 'filtro.todas')}
+          </button>
+          {etapasPresentes.map((etapa) => (
+            <button
+              type="button"
+              data-filtro-etapa={etapa}
+              aria-pressed="false"
+              class="flex items-center gap-1.5 bloque bloque-pulsable px-3 py-1.5 text-sm font-semibold aria-pressed:border-b-acento aria-pressed:bg-superficie-alta"
+            >
+              <span class="h-2.5 w-2.5" style={`background:var(--etapa-${etapa})`} aria-hidden="true" />
+              {ui(idioma, `etapa.${etapa}`)}
+            </button>
+          ))}
+        </div>
+      )}
+
+      <p class="text-sm text-texto-suave">{ui(idioma, 'filtro.ambito')}</p>
+    </div>
+  )
+}
+
+<ul data-lista class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
+  {
+    visibles.map(({ id, etapa, nombre }) => (
+      <li data-etapa={etapa} data-nombre={normalizar(nombre)}>
+        <TarjetaEntidad idioma={idioma} id={id} />
+      </li>
+    ))
+  }
+</ul>
+
+<p data-vacio hidden class="mt-8 text-center text-texto-suave">
+  {ui(idioma, 'filtro.nadaCoincide')}
+</p>
+
+{
+  totalPaginas > 1 && (
+    <nav class="mt-8 flex flex-wrap items-center justify-center gap-2" aria-label="paginas">
+      {actual > 1 && (
+        <a href={urlPagina(actual - 1)} class="bloque bloque-pulsable px-3 py-2 text-sm font-semibold">
+          {ui(idioma, 'listado.anterior')}
+        </a>
+      )}
+      {!ventana.includes(1) && (
+        <a href={urlPagina(1)} class="bloque bloque-pulsable px-3 py-2 text-sm font-semibold">
+          1
+        </a>
+      )}
+      {ventana.map((n) =>
+        n === actual ? (
+          <span
+            aria-current="page"
+            class="bloque bg-acento px-3 py-2 text-sm font-bold text-acento-contraste"
+          >
+            {n}
+          </span>
+        ) : (
+          <a href={urlPagina(n)} class="bloque bloque-pulsable px-3 py-2 text-sm font-semibold">
+            {n}
+          </a>
+        )
+      )}
+      {!ventana.includes(totalPaginas) && (
+        <a href={urlPagina(totalPaginas)} class="bloque bloque-pulsable px-3 py-2 text-sm font-semibold">
+          {totalPaginas}
+        </a>
+      )}
+      {actual < totalPaginas && (
+        <a href={urlPagina(actual + 1)} class="bloque bloque-pulsable px-3 py-2 text-sm font-semibold">
+          {ui(idioma, 'listado.siguiente')}
+        </a>
+      )}
+    </nav>
+  )
+}
+
+<style>
+  [data-lista] > li[hidden] {
+    display: none;
+  }
+</style>
+
+<script>
+  // Filtrado dentro de la pagina. Para buscar en todo el sitio esta el buscador
+  // de arriba; esto es para afinar lo que ya tienes delante.
+  const lista = document.querySelector('[data-lista]')
+  if (lista) {
+    const elementos = [...lista.children]
+    const vacio = document.querySelector('[data-vacio]')
+
+    let etapa = ''
+    let texto = ''
+
+    const normalizar = (t) => t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+
+    const aplicar = () => {
+      let visibles = 0
+      for (const li of elementos) {
+        const coincide =
+          (!etapa || li.dataset.etapa === etapa) && (!texto || li.dataset.nombre.includes(texto))
+        li.hidden = !coincide
+        if (coincide) visibles++
+      }
+      if (vacio) vacio.hidden = visibles > 0
+    }
+
+    document.querySelector('[data-filtro-texto]')?.addEventListener('input', (e) => {
+      texto = normalizar(e.target.value.trim())
+      aplicar()
+    })
+
+    for (const boton of document.querySelectorAll('[data-filtro-etapa]')) {
+      boton.addEventListener('click', () => {
+        etapa = boton.dataset.filtroEtapa
+        for (const otro of document.querySelectorAll('[data-filtro-etapa]')) {
+          otro.setAttribute('aria-pressed', String(otro === boton))
+        }
+        aplicar()
+      })
+    }
+  }
+</script>

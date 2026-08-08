@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schemas/villager.schema.json",
+  "id": "armorer",
+  "tipo": "aldeano",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "mesaDeTrabajo": "blast_furnace",
+  "niveles": [
+    {
+      "nivel": 1,
+      "tradeos": [
+        {
+          "id": "armorer_n1_compra",
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "recibe": [
+            {
+              "item": "coal",
+              "cantidad": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nivel": 2,
+      "tradeos": [
+        {
+          "id": "armorer_n2_venta",
+          "entrega": {
+            "item": "iron_helmet",
+            "cantidad": 1
+          },
+          "recibe": [
+            {
+              "item": "emerald",
+              "cantidad": 4
+            }
+          ],
+          "precioMinimo": 2,
+          "precioMaximo": 4
+        }
+      ]
+    }
+  ],
+  "etiquetas": [
+    "armero",
+    "armorer",
+    "aldeano",
+    "comercio",
+    "esmeraldas"
+  ]
+}

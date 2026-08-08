@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schemas/villager.schema.json",
+  "id": "weaponsmith",
+  "tipo": "aldeano",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "mesaDeTrabajo": "grindstone",
+  "niveles": [
+    {
+      "nivel": 1,
+      "tradeos": [
+        {
+          "id": "weaponsmith_n1_compra",
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          },
+          "recibe": [
+            {
+              "item": "coal",
+              "cantidad": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nivel": 2,
+      "tradeos": [
+        {
+          "id": "weaponsmith_n2_venta",
+          "entrega": {
+            "item": "iron_sword",
+            "cantidad": 1
+          },
+          "recibe": [
+            {
+              "item": "emerald",
+              "cantidad": 7
+            }
+          ],
+          "precioMinimo": 3,
+          "precioMaximo": 7
+        }
+      ]
+    }
+  ],
+  "etiquetas": [
+    "armero de armas",
+    "weaponsmith",
+    "aldeano",
+    "comercio",
+    "esmeraldas"
+  ]
+}
