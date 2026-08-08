@@ -281,6 +281,35 @@ a {
   box-shadow: none;
 }
 
+/* ---------------------------------------------------------------------------
+   Panel modal
+   Se usa <dialog> nativo: trae el fondo, el foco atrapado y el cierre con
+   Escape sin JavaScript propio. Solo hay que vestirlo.
+   --------------------------------------------------------------------------- */
+
+dialog {
+  margin: auto;
+  width: 100%;
+  max-width: min(42rem, calc(100vw - 2rem));
+  max-height: calc(100vh - 4rem);
+  padding: 0;
+  overflow: auto;
+  color: var(--texto);
+  background: var(--superficie);
+  border: 2px solid var(--borde);
+  border-top-color: var(--superficie-alta);
+  border-left-color: var(--superficie-alta);
+  border-bottom-color: var(--borde-fuerte);
+  border-right-color: var(--borde-fuerte);
+  border-radius: var(--radius-bloque);
+  box-shadow: 0 12px 32px var(--sombra);
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(5px);
+}
+
 /* Trama sutil de cuadricula, como el pixelado de una textura vista de lejos. */
 @utility trama {
   background-image:

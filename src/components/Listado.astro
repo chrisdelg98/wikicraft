@@ -30,11 +30,15 @@ const visibles = todas.slice((actual - 1) * POR_PAGINA, actual * POR_PAGINA)
 
 const etapasPresentes = ORDEN.filter((e) => visibles.some((x) => x.etapa === e))
 
-// Categorias presentes en esta pagina, ordenadas por cuantas entidades cubren.
+// Categorias presentes en esta pagina. Se descartan las que cubren TODO lo
+// visible: un filtro que no descarta nada solo ocupa sitio.
 const facetasPresentes = [...new Set(visibles.flatMap((x) => x.facetas))]
   .map((f) => ({ clave: f, cuantas: visibles.filter((x) => x.facetas.includes(f)).length }))
+  .filter(({ cuantas }) => cuantas < visibles.length)
   .sort((a, b) => b.cuantas - a.cuantas)
-  .slice(0, 10)
+  .slice(0, 12)
+
+const hayFiltros = etapasPresentes.length > 1 || facetasPresentes.length > 1
 const titulo = ui(idioma, `nav.${modulo}`)
 const base = `/${idioma}/${rutaModulo(idioma, modulo)}`
 const urlPagina = (n) => (n === 1 ? `${base}/` : `${base}/pagina/${n}/`)
@@ -60,67 +64,137 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
 {actual === 1 && modulo === 'villagers' && <ResumenAldeanos idioma={idioma} />}
 {actual === 1 && modulo === 'potions' && <ResumenPociones idioma={idioma} />}
 
+{/* Barra compacta: solo lo que se usa siempre. Los filtros por categoria y
+    etapa viven en un panel aparte, porque ocupaban media pantalla antes de
+    dejar ver un solo resultado. */}
 {
-  (etapasPresentes.length > 1 || visibles.length > 12) && (
-    <div class="mb-6 flex flex-col gap-3">
+  (hayFiltros || visibles.length > 12) && (
+    <div class="mb-6 flex flex-wrap items-center gap-3">
       <input
         type="search"
         data-filtro-texto
         placeholder={ui(idioma, 'filtro.buscarEnLista')}
         aria-label={ui(idioma, 'filtro.buscarEnLista')}
-        class="w-full bloque bg-superficie-alta px-3 py-2 placeholder:text-texto-suave sm:max-w-sm"
+        class="min-w-0 flex-1 bloque bg-superficie-alta px-3 py-2 placeholder:text-texto-suave sm:max-w-xs sm:flex-none"
       />
 
-      {etapasPresentes.length > 1 && (
-        <div class="flex flex-wrap gap-2">
-          <button
-            type="button"
-            data-filtro-etapa=""
-            aria-pressed="true"
-            class="bloque bloque-pulsable px-3 py-1.5 text-sm font-semibold aria-pressed:border-b-acento aria-pressed:bg-superficie-alta"
-          >
-            {ui(idioma, 'filtro.todas')}
-          </button>
-          {etapasPresentes.map((etapa) => (
-            <button
-              type="button"
-              data-filtro-etapa={etapa}
-              aria-pressed="false"
-              class="flex items-center gap-1.5 bloque bloque-pulsable px-3 py-1.5 text-sm font-semibold aria-pressed:border-b-acento aria-pressed:bg-superficie-alta"
-            >
-              <span class="h-2.5 w-2.5" style={`background:var(--etapa-${etapa})`} aria-hidden="true" />
-              {ui(idioma, `etapa.${etapa}`)}
-            </button>
-          ))}
-        </div>
+      {hayFiltros && (
+        <button
+          type="button"
+          data-abrir-filtros
+          class="flex shrink-0 items-center gap-2 bloque bloque-pulsable px-3 py-2 text-sm font-semibold"
+        >
+          <svg viewBox="0 0 16 16" class="h-4 w-4" fill="currentColor" aria-hidden="true">
+            <path d="M1 3h14v2H1zM3 7h10v2H3zM6 11h4v2H6z" />
+          </svg>
+          {ui(idioma, 'filtro.abrir')}
+          <span
+            data-cuenta-filtros
+            hidden
+            class="grid h-5 min-w-5 place-items-center bg-acento px-1 text-xs font-bold text-acento-contraste"
+          />
+        </button>
       )}
 
-      {facetasPresentes.length > 1 && (
-        <div class="flex flex-wrap gap-2">
-          <button
-            type="button"
-            data-filtro-faceta=""
-            aria-pressed="true"
-            class="bloque bloque-pulsable px-3 py-1.5 text-sm font-semibold aria-pressed:border-b-acento aria-pressed:bg-superficie-alta"
-          >
-            {ui(idioma, 'faceta.etiqueta')}: {ui(idioma, 'filtro.todas')}
-          </button>
-          {facetasPresentes.map(({ clave, cuantas }) => (
-            <button
-              type="button"
-              data-filtro-faceta={clave}
-              aria-pressed="false"
-              class="bloque bloque-pulsable px-3 py-1.5 text-sm font-semibold aria-pressed:border-b-acento aria-pressed:bg-superficie-alta"
-            >
-              {ui(idioma, `faceta.${clave}`)}
-              <span class="ml-1.5 text-texto-suave">{cuantas}</span>
-            </button>
-          ))}
-        </div>
-      )}
-
-      <p class="text-sm text-texto-suave">{ui(idioma, 'filtro.ambito')}</p>
+      <span
+        data-resumen-filtro
+        data-plantilla={ui(idioma, 'buscador.resultados', { n: '§' })}
+        class="text-sm text-texto-suave"
+      />
     </div>
+  )
+}
+
+{
+  hayFiltros && (
+    <dialog data-panel-filtros aria-label={ui(idioma, 'filtro.abrir')}>
+      <div class="flex items-center justify-between gap-4 border-b-2 border-borde px-4 py-3">
+        <h2 class="text-lg font-extrabold">{ui(idioma, 'filtro.abrir')}</h2>
+        <button
+          type="button"
+          data-cerrar-filtros
+          class="bloque bloque-pulsable px-2.5 py-1 text-sm font-semibold"
+          aria-label={ui(idioma, 'filtro.cerrar')}
+        >
+          ✕
+        </button>
+      </div>
+
+      <div class="space-y-6 px-4 py-4">
+        {etapasPresentes.length > 1 && (
+          <div>
+            <h3 class="mb-2 text-sm font-bold uppercase tracking-wide text-texto-suave">
+              {ui(idioma, 'etapa.explicacion')}
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <button
+                type="button"
+                data-filtro-etapa=""
+                aria-pressed="true"
+                class="bloque bloque-pulsable px-3 py-1.5 text-sm font-semibold aria-pressed:border-b-acento aria-pressed:bg-superficie-alta"
+              >
+                {ui(idioma, 'filtro.todas')}
+              </button>
+              {etapasPresentes.map((etapa) => (
+                <button
+                  type="button"
+                  data-filtro-etapa={etapa}
+                  aria-pressed="false"
+                  class="flex items-center gap-1.5 bloque bloque-pulsable px-3 py-1.5 text-sm font-semibold aria-pressed:border-b-acento aria-pressed:bg-superficie-alta"
+                >
+                  <span class="h-2.5 w-2.5" style={`background:var(--etapa-${etapa})`} aria-hidden="true" />
+                  {ui(idioma, `etapa.${etapa}`)}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {facetasPresentes.length > 1 && (
+          <div>
+            <h3 class="mb-2 text-sm font-bold uppercase tracking-wide text-texto-suave">
+              {ui(idioma, 'faceta.etiqueta')}
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <button
+                type="button"
+                data-filtro-faceta=""
+                aria-pressed="true"
+                class="bloque bloque-pulsable px-3 py-1.5 text-sm font-semibold aria-pressed:border-b-acento aria-pressed:bg-superficie-alta"
+              >
+                {ui(idioma, 'filtro.todas')}
+              </button>
+              {facetasPresentes.map(({ clave, cuantas }) => (
+                <button
+                  type="button"
+                  data-filtro-faceta={clave}
+                  aria-pressed="false"
+                  class="bloque bloque-pulsable px-3 py-1.5 text-sm font-semibold aria-pressed:border-b-acento aria-pressed:bg-superficie-alta"
+                >
+                  {ui(idioma, `faceta.${clave}`)}
+                  <span class="ml-1.5 text-texto-suave">{cuantas}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <p class="text-sm text-texto-suave">{ui(idioma, 'filtro.ambito')}</p>
+      </div>
+
+      <div class="flex flex-wrap justify-end gap-2 border-t-2 border-borde px-4 py-3">
+        <button type="button" data-limpiar-filtros class="bloque bloque-pulsable px-3 py-2 text-sm font-semibold">
+          {ui(idioma, 'filtro.limpiar')}
+        </button>
+        <button
+          type="button"
+          data-cerrar-filtros
+          class="bloque bloque-pulsable bg-acento px-4 py-2 text-sm font-bold text-acento-contraste"
+        >
+          {ui(idioma, 'filtro.aplicar')}
+        </button>
+      </div>
+    </dialog>
   )
 }
 
@@ -209,6 +283,10 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
     const elementos = [...lista.children]
     const vacio = document.querySelector('[data-vacio]')
 
+    const panel = document.querySelector('[data-panel-filtros]')
+    const contador = document.querySelector('[data-cuenta-filtros]')
+    const resumen = document.querySelector('[data-resumen-filtro]')
+
     let etapa = ''
     let faceta = ''
     let texto = ''
@@ -226,6 +304,20 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
         if (coincide) visibles++
       }
       if (vacio) vacio.hidden = visibles > 0
+
+      // El boton lleva cuantos filtros hay puestos, porque una vez cerrado el
+      // panel no hay otra forma de saber que la lista esta recortada.
+      const activos = [etapa, faceta].filter(Boolean).length
+      if (contador) {
+        contador.hidden = activos === 0
+        contador.textContent = String(activos)
+      }
+      if (resumen) {
+        const filtrando = activos > 0 || texto
+        resumen.textContent = filtrando
+          ? (resumen.dataset.plantilla ?? '§').replace('§', String(visibles))
+          : ''
+      }
     }
 
     /** Deja pulsado solo el boton elegido dentro de su grupo. */
@@ -256,10 +348,32 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
       })
     }
 
+    // Panel de filtros. Se usa <dialog> nativo: trae el fondo, el foco
+    // atrapado y el cierre con Escape sin una linea de JavaScript propia.
+    document.querySelector('[data-abrir-filtros]')?.addEventListener('click', () => {
+      panel?.showModal()
+    })
+    for (const boton of document.querySelectorAll('[data-cerrar-filtros]')) {
+      boton.addEventListener('click', () => panel?.close())
+    }
+    document.querySelector('[data-limpiar-filtros]')?.addEventListener('click', () => {
+      etapa = ''
+      faceta = ''
+      marcar('data-filtro-etapa', document.querySelector('[data-filtro-etapa=""]'))
+      marcar('data-filtro-faceta', document.querySelector('[data-filtro-faceta=""]'))
+      aplicar()
+    })
+    // Un clic en el fondo tambien cierra, que es lo que espera todo el mundo.
+    panel?.addEventListener('click', (e) => {
+      if (e.target === panel) panel.close()
+    })
+
     // Salto directo de pagina: con veintitrés páginas, ir de una en una no es
     // una forma razonable de llegar a la mitad de la lista.
     document.querySelector('[data-salto-pagina]')?.addEventListener('change', (e) => {
       if (e.target.value) location.href = e.target.value
     })
+
+    aplicar()
   }
 </script>

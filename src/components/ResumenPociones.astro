@@ -29,9 +29,12 @@ const todas = entidadesDe('potions')
   .filter((p) => p.efecto !== 'ninguno')
   .sort((a, b) => (b.utilidad ?? 0) - (a.utilidad ?? 0) || a.nombre.localeCompare(b.nombre))
 
+// Ordenadas siguiendo el arbol y no el alfabeto: la botella de agua va antes
+// que la pocion rara porque la segunda sale de la primera.
 const bases = entidadesDe('potions')
   .map(({ entidad }) => entidad)
   .filter((p) => p.efecto === 'ninguno')
+  .sort((a, b) => (a.derivaDe === b.id ? 1 : b.derivaDe === a.id ? -1 : 0))
 
 const tabla = (titulo, lista) => ({ titulo, lista })
 const secciones = [

@@ -168,6 +168,10 @@
   "tema.cambiar": "Switch theme",
 
   "filtro.buscarEnLista": "Filter by name…",
+  "filtro.abrir": "Filters",
+  "filtro.cerrar": "Close",
+  "filtro.limpiar": "Clear filters",
+  "filtro.aplicar": "See results",
   "filtro.todas": "All",
   "filtro.ambito": "These filters narrow down what you see on this page. To search the whole wiki, use the box above.",
   "filtro.nadaCoincide": "Nothing matches that filter. Try removing one.",

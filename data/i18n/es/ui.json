@@ -312,6 +312,10 @@
   "tema.cambiar": "Cambiar tema",
 
   "filtro.buscarEnLista": "Filtrar por nombre…",
+  "filtro.abrir": "Filtros",
+  "filtro.cerrar": "Cerrar",
+  "filtro.limpiar": "Quitar filtros",
+  "filtro.aplicar": "Ver resultados",
   "filtro.todas": "Todas",
   "filtro.ambito": "Estos filtros afinan lo que ves en esta página. Para buscar en toda la wiki, usa el buscador de arriba.",
   "filtro.nadaCoincide": "Nada coincide con ese filtro. Prueba a quitar alguno.",
