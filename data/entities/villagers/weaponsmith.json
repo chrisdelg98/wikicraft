@@ -10,37 +10,49 @@
       "nivel": 1,
       "tradeos": [
         {
-          "id": "weaponsmith_n1_compra",
-          "entrega": {
-            "item": "emerald",
-            "cantidad": 1
-          },
+          "id": "weaponsmith_n1_carbon",
+          "tipo": "compra",
           "recibe": [
             {
               "item": "coal",
-              "cantidad": 15
+              "minimo": 15,
+              "maximo": 16
             }
-          ]
-        }
-      ]
-    },
-    {
-      "nivel": 2,
-      "tradeos": [
-        {
-          "id": "weaponsmith_n2_venta",
+          ],
           "entrega": {
-            "item": "iron_sword",
+            "item": "emerald",
             "cantidad": 1
-          },
+          }
+        },
+        {
+          "id": "weaponsmith_n1_hacha",
+          "tipo": "venta",
           "recibe": [
             {
               "item": "emerald",
-              "cantidad": 7
+              "minimo": 7,
+              "maximo": 9
             }
           ],
-          "precioMinimo": 3,
-          "precioMaximo": 7
+          "entrega": {
+            "item": "iron_axe",
+            "cantidad": 1
+          }
+        },
+        {
+          "id": "weaponsmith_n1_espada",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 7,
+              "maximo": 9
+            }
+          ],
+          "entrega": {
+            "item": "iron_sword",
+            "cantidad": 1
+          }
         }
       ]
     }

@@ -10,37 +10,55 @@
       "nivel": 1,
       "tradeos": [
         {
-          "id": "armorer_n1_compra",
+          "id": "armorer_n1_carbon",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "coal",
+              "minimo": 15,
+              "maximo": 16
+            }
+          ],
           "entrega": {
             "item": "emerald",
             "cantidad": 1
           },
+          "usosMaximos": 16,
+          "experiencia": 2
+        },
+        {
+          "id": "armorer_n1_casco",
+          "tipo": "venta",
           "recibe": [
             {
-              "item": "coal",
-              "cantidad": 15
+              "item": "emerald",
+              "minimo": 5,
+              "maximo": 7
             }
-          ]
-        }
-      ]
-    },
-    {
-      "nivel": 2,
-      "tradeos": [
-        {
-          "id": "armorer_n2_venta",
+          ],
           "entrega": {
             "item": "iron_helmet",
             "cantidad": 1
           },
+          "usosMaximos": 12,
+          "experiencia": 1
+        },
+        {
+          "id": "armorer_n1_pechera",
+          "tipo": "venta",
           "recibe": [
             {
               "item": "emerald",
-              "cantidad": 4
+              "minimo": 9,
+              "maximo": 11
             }
           ],
-          "precioMinimo": 2,
-          "precioMaximo": 4
+          "entrega": {
+            "item": "iron_chestplate",
+            "cantidad": 1
+          },
+          "usosMaximos": 12,
+          "experiencia": 1
         }
       ]
     }

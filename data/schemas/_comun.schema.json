@@ -111,6 +111,18 @@
       }
     },
 
+    "rangoIngrediente": {
+      "type": "object",
+      "required": ["item", "minimo", "maximo"],
+      "additionalProperties": false,
+      "description": "Un ingrediente cuya cantidad el juego sortea dentro de un rango. Cuando la cantidad es fija, minimo y maximo valen lo mismo: guardar siempre las dos evita tener dos formas de escribir lo mismo.",
+      "properties": {
+        "item": { "$ref": "#/$defs/referencia" },
+        "minimo": { "$ref": "#/$defs/cantidad" },
+        "maximo": { "$ref": "#/$defs/cantidad" }
+      }
+    },
+
     "ingrediente": {
       "type": "object",
       "required": ["item", "cantidad"],

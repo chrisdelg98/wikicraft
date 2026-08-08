@@ -10,46 +10,19 @@
       "nivel": 1,
       "tradeos": [
         {
-          "id": "butcher_n1_compra",
-          "entrega": {
-            "item": "emerald",
-            "cantidad": 1
-          },
-          "recibe": [
-            {
-              "item": "chicken",
-              "cantidad": 14
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "nivel": 2,
-      "tradeos": [
+          "id": "butcher_n1_pollo",
+          "tipo": "compra",
+          "recibe": [{ "item": "chicken", "minimo": 14, "maximo": 14 }],
+          "entrega": { "item": "emerald", "cantidad": 1 }
+        },
         {
-          "id": "butcher_n2_venta",
-          "entrega": {
-            "item": "cooked_porkchop",
-            "cantidad": 5
-          },
-          "recibe": [
-            {
-              "item": "emerald",
-              "cantidad": 1
-            }
-          ],
-          "precioMinimo": 1,
-          "precioMaximo": 1
+          "id": "butcher_n1_cerdo",
+          "tipo": "compra",
+          "recibe": [{ "item": "porkchop", "minimo": 7, "maximo": 7 }],
+          "entrega": { "item": "emerald", "cantidad": 1 }
         }
       ]
     }
   ],
-  "etiquetas": [
-    "carnicero",
-    "butcher",
-    "aldeano",
-    "comercio",
-    "esmeraldas"
-  ]
+  "etiquetas": ["carnicero", "butcher", "aldeano", "comercio", "esmeraldas"]
 }

@@ -148,6 +148,9 @@ const grupos = relacionesDe(id).filter(
   (g) => !(YA_EN_TABLA[entidad.tipo] ?? []).includes(g.etiqueta)
 )
 
+/** "15" si la cantidad es fija, "15–16" si el juego la sortea. */
+const rango = ({ minimo, maximo }) => (minimo === maximo ? `${minimo}` : `${minimo}–${maximo}`)
+
 const facetas = facetasDe(grafo.get(id))
 
 // "De donde saco esto" es la pregunta que mas se hace quien juega, asi que va
@@ -354,16 +357,18 @@ const consejos = [
     entidad.niveles && (
       <section class="mb-10">
         <h2 class="titulo-seccion">{ui(idioma, 'ficha.tradeos')}</h2>
+        {/* Una fila por trato, con el rango real que sortea el juego. Antes
+            habia columnas sueltas de cantidad y no se entendia a que se
+            referian; ahora la cantidad va pegada a su objeto. */}
         <div class="tabla-envoltorio">
           <table>
             <thead>
               <tr>
                 <th>{ui(idioma, 'tabla.nivel')}</th>
-                <th>{ui(idioma, 'tabla.leDas')}</th>
-                <th>{ui(idioma, 'tabla.cantidad')}</th>
-                <th>{ui(idioma, 'tabla.teDa')}</th>
-                <th>{ui(idioma, 'tabla.cantidad')}</th>
-                <th>{ui(idioma, 'tabla.mejorPrecio')}</th>
+                <th>{ui(idioma, 'tabla.tipoTrato')}</th>
+                <th class="envuelve">{ui(idioma, 'tabla.leDas')}</th>
+                <th class="envuelve">{ui(idioma, 'tabla.teDa')}</th>
+                <th>{ui(idioma, 'tabla.usos')}</th>
               </tr>
             </thead>
             <tbody>
@@ -377,23 +382,26 @@ const consejos = [
                           {ui(idioma, `aldeano.nivel.${nivel.nivel}`)}
                         </td>
                       )}
-                      <td>
+                      <td class="text-texto-suave">
+                        {ui(idioma, `tabla.trato.${trato.tipo ?? 'venta'}`)}
+                      </td>
+                      <td class="envuelve">
                         {trato.recibe.map((r, j) => (
                           <>
                             {j > 0 && <span class="text-texto-suave"> + </span>}
+                            <span class="font-semibold">{rango(r)}</span>{' '}
                             <a href={enlace(r.item).url}>{enlace(r.item).nombre}</a>
                           </>
                         ))}
                       </td>
-                      <td>{trato.recibe.map((r) => r.cantidad).join(' + ')}</td>
-                      <td>
+                      <td class="envuelve">
+                        <span class="font-semibold">{trato.entrega.cantidad ?? 1}</span>{' '}
                         <a href={enlace(daObjeto).url}>{enlace(daObjeto).nombre}</a>
                         {trato.entrega.encantamiento && trato.entrega.nivelEncantamiento > 1 && (
                           <span> {trato.entrega.nivelEncantamiento}</span>
                         )}
                       </td>
-                      <td>{trato.entrega.cantidad ?? 1}</td>
-                      <td>{trato.precioMinimo ?? '—'}</td>
+                      <td class="text-texto-suave">{trato.usosMaximos ?? '—'}</td>
                     </tr>
                   )
                 })
@@ -401,6 +409,14 @@ const consejos = [
             </tbody>
           </table>
         </div>
+
+        {/* Decirlo es mejor que dejar pensar que el aldeano solo tiene estos
+            tratos, sobre todo cuando los niveles altos son los que compensan. */}
+        {entidad.niveles.length === 1 && (
+          <p class="mt-3 bloque bg-superficie-alta p-3 text-sm text-texto-suave">
+            {ui(idioma, 'aldeano.soloNovato')}
+          </p>
+        )}
       </section>
     )
   }

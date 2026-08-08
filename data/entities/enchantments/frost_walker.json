@@ -13,5 +13,8 @@
     "depth_strider"
   ],
   "esTesoro": true,
-  "esMaldicion": false
+  "esMaldicion": false,
+  "obtenidoDe": [
+    "librarian"
+  ]
 }

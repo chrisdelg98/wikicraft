@@ -10,37 +10,34 @@
       "nivel": 1,
       "tradeos": [
         {
-          "id": "fisherman_n1_compra",
-          "entrega": {
-            "item": "emerald",
-            "cantidad": 1
-          },
+          "id": "fisherman_n1_hilo",
+          "tipo": "compra",
           "recibe": [
             {
               "item": "string",
-              "cantidad": 20
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "nivel": 2,
-      "tradeos": [
-        {
-          "id": "fisherman_n2_venta",
-          "entrega": {
-            "item": "cooked_cod",
-            "cantidad": 6
-          },
-          "recibe": [
-            {
-              "item": "emerald",
-              "cantidad": 1
+              "minimo": 15,
+              "maximo": 20
             }
           ],
-          "precioMinimo": 1,
-          "precioMaximo": 1
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          }
+        },
+        {
+          "id": "fisherman_n1_bacalao",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "cod",
+              "minimo": 15,
+              "maximo": 15
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          }
         }
       ]
     }

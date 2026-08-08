@@ -18,5 +18,8 @@
     "projectile_protection"
   ],
   "esTesoro": false,
-  "esMaldicion": false
+  "esMaldicion": false,
+  "obtenidoDe": [
+    "librarian"
+  ]
 }

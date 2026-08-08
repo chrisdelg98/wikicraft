@@ -13,5 +13,8 @@
     "frost_walker"
   ],
   "esTesoro": false,
-  "esMaldicion": false
+  "esMaldicion": false,
+  "obtenidoDe": [
+    "librarian"
+  ]
 }

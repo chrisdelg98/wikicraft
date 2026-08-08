@@ -10,37 +10,34 @@
       "nivel": 1,
       "tradeos": [
         {
-          "id": "fletcher_n1_compra",
-          "entrega": {
-            "item": "emerald",
-            "cantidad": 1
-          },
+          "id": "fletcher_n1_palos",
+          "tipo": "compra",
           "recibe": [
             {
               "item": "stick",
-              "cantidad": 32
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "nivel": 2,
-      "tradeos": [
-        {
-          "id": "fletcher_n2_venta",
-          "entrega": {
-            "item": "arrow",
-            "cantidad": 16
-          },
-          "recibe": [
-            {
-              "item": "emerald",
-              "cantidad": 1
+              "minimo": 26,
+              "maximo": 32
             }
           ],
-          "precioMinimo": 1,
-          "precioMaximo": 1
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          }
+        },
+        {
+          "id": "fletcher_n1_pedernal",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "flint",
+              "minimo": 26,
+              "maximo": 32
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          }
         }
       ]
     }

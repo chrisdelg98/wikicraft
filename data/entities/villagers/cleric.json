@@ -10,37 +10,19 @@
       "nivel": 1,
       "tradeos": [
         {
-          "id": "cleric_n1_compra",
-          "entrega": {
-            "item": "emerald",
-            "cantidad": 1
-          },
+          "id": "cleric_n1_carne",
+          "tipo": "compra",
           "recibe": [
             {
               "item": "rotten_flesh",
-              "cantidad": 32
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "nivel": 2,
-      "tradeos": [
-        {
-          "id": "cleric_n2_venta",
-          "entrega": {
-            "item": "redstone",
-            "cantidad": 2
-          },
-          "recibe": [
-            {
-              "item": "emerald",
-              "cantidad": 1
+              "minimo": 32,
+              "maximo": 40
             }
           ],
-          "precioMinimo": 1,
-          "precioMaximo": 1
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          }
         }
       ]
     }

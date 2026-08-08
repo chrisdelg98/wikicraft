@@ -10,37 +10,19 @@
       "nivel": 1,
       "tradeos": [
         {
-          "id": "leatherworker_n1_compra",
-          "entrega": {
-            "item": "emerald",
-            "cantidad": 1
-          },
+          "id": "leatherworker_n1_cuero",
+          "tipo": "compra",
           "recibe": [
             {
               "item": "leather",
-              "cantidad": 6
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "nivel": 2,
-      "tradeos": [
-        {
-          "id": "leatherworker_n2_venta",
-          "entrega": {
-            "item": "leather_boots",
-            "cantidad": 1
-          },
-          "recibe": [
-            {
-              "item": "emerald",
-              "cantidad": 3
+              "minimo": 6,
+              "maximo": 7
             }
           ],
-          "precioMinimo": 1,
-          "precioMaximo": 3
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          }
         }
       ]
     }

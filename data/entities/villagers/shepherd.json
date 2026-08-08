@@ -10,37 +10,34 @@
       "nivel": 1,
       "tradeos": [
         {
-          "id": "shepherd_n1_compra",
-          "entrega": {
-            "item": "emerald",
-            "cantidad": 1
-          },
+          "id": "shepherd_n1_lana",
+          "tipo": "compra",
           "recibe": [
             {
               "item": "white_wool",
-              "cantidad": 18
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "nivel": 2,
-      "tradeos": [
-        {
-          "id": "shepherd_n2_venta",
-          "entrega": {
-            "item": "shears",
-            "cantidad": 1
-          },
-          "recibe": [
-            {
-              "item": "emerald",
-              "cantidad": 2
+              "minimo": 18,
+              "maximo": 22
             }
           ],
-          "precioMinimo": 1,
-          "precioMaximo": 2
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          }
+        },
+        {
+          "id": "shepherd_n1_tinte",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "white_dye",
+              "minimo": 12,
+              "maximo": 15
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          }
         }
       ]
     }

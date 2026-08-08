@@ -28,5 +28,8 @@
   ],
   "incompatibleCon": [],
   "esTesoro": true,
-  "esMaldicion": true
+  "esMaldicion": true,
+  "obtenidoDe": [
+    "librarian"
+  ]
 }

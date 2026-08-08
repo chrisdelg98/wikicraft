@@ -10,37 +10,39 @@
       "nivel": 1,
       "tradeos": [
         {
-          "id": "cartographer_n1_compra",
-          "entrega": {
-            "item": "emerald",
-            "cantidad": 1
-          },
+          "id": "cartographer_n1_papel",
+          "tipo": "compra",
           "recibe": [
             {
               "item": "paper",
-              "cantidad": 24
+              "minimo": 24,
+              "maximo": 35
             }
-          ]
-        }
-      ]
-    },
-    {
-      "nivel": 2,
-      "tradeos": [
-        {
-          "id": "cartographer_n2_venta",
+          ],
           "entrega": {
-            "item": "map",
+            "item": "emerald",
             "cantidad": 1
-          },
+          }
+        },
+        {
+          "id": "cartographer_n1_mapa",
+          "tipo": "venta",
           "recibe": [
             {
               "item": "emerald",
-              "cantidad": 7
+              "minimo": 7,
+              "maximo": 7
+            },
+            {
+              "item": "glass_pane",
+              "minimo": 1,
+              "maximo": 1
             }
           ],
-          "precioMinimo": 3,
-          "precioMaximo": 7
+          "entrega": {
+            "item": "map",
+            "cantidad": 1
+          }
         }
       ]
     }

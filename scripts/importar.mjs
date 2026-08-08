@@ -269,11 +269,15 @@ for (const e of mc.enchantmentsArray) {
     aplicableA: EQUIPO_POR_CATEGORIA[e.category] ?? ['espada'],
     incompatibleCon: [...(exclusiones.get(e.name) ?? [])].sort(),
     esTesoro: Boolean(e.treasureOnly),
-    esMaldicion: Boolean(e.curse)
+    esMaldicion: Boolean(e.curse),
+    // Si el juego lo marca como comerciable, el bibliotecario lo vende. Es lo
+    // que permite responder a "quien vende Reparacion" desde su propia ficha,
+    // y hasta ahora solo lo tenian los cinco escritos a mano.
+    ...(e.tradeable ? { obtenidoDe: ['librarian'] } : {})
   }
   await guardarEntidad('enchantments', entidad, [
     'nivelMaximo', 'categoria', 'aplicableA', 'incompatibleCon', 'esTesoro',
-    'esMaldicion', 'relevancia'
+    'esMaldicion', 'relevancia', 'obtenidoDe'
   ])
   anotar('enchantments', e.name, e.displayName)
   importados.add(e.name)

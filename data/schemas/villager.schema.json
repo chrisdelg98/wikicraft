@@ -52,10 +52,16 @@
   "$defs": {
     "tradeo": {
       "type": "object",
-      "required": ["id", "entrega", "recibe"],
+      "required": ["id", "tipo", "entrega", "recibe"],
       "additionalProperties": false,
       "properties": {
         "id": { "$ref": "_comun.schema.json#/$defs/id" },
+
+        "tipo": {
+          "type": "string",
+          "enum": ["compra", "venta"],
+          "description": "Visto desde el jugador: 'compra' es que el aldeano te compra algo y te paga en esmeraldas, 'venta' es que te vende algo a cambio de esmeraldas. Sin este campo no se puede responder a 'quien me compra papel'."
+        },
 
         "entrega": {
           "type": "object",
@@ -77,17 +83,21 @@
           "type": "array",
           "minItems": 1,
           "maxItems": 2,
-          "description": "Lo que el jugador paga. Como maximo dos ingredientes, que es el limite del juego.",
-          "items": { "$ref": "_comun.schema.json#/$defs/ingrediente" }
+          "description": "Lo que el jugador entrega. Como maximo dos ingredientes, que es el limite del juego.",
+          "items": { "$ref": "_comun.schema.json#/$defs/rangoIngrediente" }
         },
 
-        "precioMinimo": {
+        "usosMaximos": {
           "type": "integer",
           "minimum": 1,
-          "description": "Coste mas bajo alcanzable en esmeraldas, aplicando descuentos por curacion y reputacion."
+          "description": "Cuantas veces se puede repetir antes de que el trato se agote y haya que esperar a que el aldeano reponga."
         },
 
-        "precioMaximo": { "type": "integer", "minimum": 1 }
+        "experiencia": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Experiencia que gana el aldeano con cada trato. Es lo que le hace subir de nivel."
+        }
       }
     }
   }

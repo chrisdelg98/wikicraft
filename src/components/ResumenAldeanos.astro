@@ -2,32 +2,77 @@
 import { ui, entidadesDe, rutaDe, t, grafo } from '../lib/datos.js'
 
 /**
- * Tabla comparativa de las profesiones.
+ * Guia de aldeanos.
  *
- * Un listado de trece tarjetas obliga a entrar en cada una para comparar, que
- * es justo lo que hace falta aqui: lo que se quiere saber de un aldeano es que
- * bloque lo crea y que se le puede sacar barato. Se resuelve en una tabla y sin
- * datos nuevos, porque ya estan todos en las fichas.
+ * Un listado de trece tarjetas obliga a entrar en cada una para comparar, y las
+ * dos preguntas que trae quien llega aqui son justo comparativas: que bloque
+ * crea cada profesion y a quien le vendo lo que me sobra para sacar esmeraldas.
+ * Las dos se responden con tablas, y las dos salen de datos que ya estan en las
+ * fichas.
  */
 
 const { idioma } = Astro.props
 
-const filas = entidadesDe('villagers')
-  .map(({ entidad }) => {
-    const primero = entidad.niveles?.[0]?.tradeos?.[0]
-    return {
-      id: entidad.id,
-      nombre: t(idioma, entidad.id).nombre,
-      mesa: entidad.mesaDeTrabajo,
-      pide: primero?.recibe?.[0],
-      entrega: primero?.entrega
-    }
-  })
-  .sort((a, b) => a.nombre.localeCompare(b.nombre))
-
 const enlace = (otro) =>
   grafo.has(otro) ? { url: rutaDe(idioma, otro), nombre: t(idioma, otro).nombre } : null
+
+const rango = ({ minimo, maximo }) => (minimo === maximo ? `${minimo}` : `${minimo}–${maximo}`)
+
+const aldeanos = entidadesDe('villagers')
+  .map(({ entidad }) => ({ ...entidad, nombre: t(idioma, entidad.id).nombre }))
+  .sort((a, b) => a.nombre.localeCompare(b.nombre))
+
+const tratosDe = (a) => (a.niveles ?? []).flatMap((n) => n.tradeos)
+
+/**
+ * Todas las formas de sacar esmeraldas, ordenadas por lo poco que hay que
+ * entregar. Lo barato primero, que es el orden en que se busca.
+ */
+const paraEsmeraldas = aldeanos
+  .flatMap((a) =>
+    tratosDe(a)
+      .filter((tr) => tr.tipo === 'compra')
+      .map((tr) => ({ aldeano: a, trato: tr, pide: tr.recibe[0] }))
+  )
+  .filter((x) => x.pide)
+  .sort((a, b) => a.pide.minimo - b.pide.minimo)
 ---
+
+<section class="mb-10">
+  <h2 class="titulo-seccion">{ui(idioma, 'resumen.esmeraldas')}</h2>
+  <p class="mb-3 text-sm text-texto-suave">{ui(idioma, 'resumen.esmeraldasNota')}</p>
+
+  <div class="tabla-envoltorio">
+    <table>
+      <thead>
+        <tr>
+          <th class="envuelve">{ui(idioma, 'resumen.leDasEsto')}</th>
+          <th>{ui(idioma, 'tabla.cantidad')}</th>
+          <th>{ui(idioma, 'nav.villagers')}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          paraEsmeraldas.map(({ aldeano, pide }) => (
+            <tr>
+              <td class="envuelve">
+                {enlace(pide.item) ? (
+                  <a href={enlace(pide.item).url}>{enlace(pide.item).nombre}</a>
+                ) : (
+                  pide.item
+                )}
+              </td>
+              <td class="font-semibold">{rango(pide)}</td>
+              <td>
+                <a href={rutaDe(idioma, aldeano.id)}>{aldeano.nombre}</a>
+              </td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+</section>
 
 <section class="mb-8">
   <h2 class="titulo-seccion">{ui(idioma, 'resumen.aldeanos')}</h2>
@@ -38,30 +83,43 @@ const enlace = (otro) =>
         <tr>
           <th>{ui(idioma, 'nav.villagers')}</th>
           <th>{ui(idioma, 'rel.mesaDeTrabajo')}</th>
-          <th class="envuelve">{ui(idioma, 'resumen.primerTrato')}</th>
+          <th class="envuelve">{ui(idioma, 'resumen.queCompra')}</th>
+          <th class="envuelve">{ui(idioma, 'resumen.queVende')}</th>
         </tr>
       </thead>
       <tbody>
         {
-          filas.map((f) => (
-            <tr>
-              <td>
-                <a href={rutaDe(idioma, f.id)}>{f.nombre}</a>
-              </td>
-              <td>{enlace(f.mesa) ? <a href={enlace(f.mesa).url}>{enlace(f.mesa).nombre}</a> : '—'}</td>
-              <td class="envuelve">
-                {f.pide && f.entrega ? (
-                  <span>
-                    {f.pide.cantidad} × {enlace(f.pide.item)?.nombre ?? f.pide.item}
-                    <span class="text-texto-suave"> → </span>
-                    {f.entrega.cantidad ?? 1} × {enlace(f.entrega.item)?.nombre ?? f.entrega.item}
-                  </span>
-                ) : (
-                  '—'
-                )}
-              </td>
-            </tr>
-          ))
+          aldeanos.map((a) => {
+            const compra = tratosDe(a).filter((tr) => tr.tipo === 'compra')
+            const vende = tratosDe(a).filter((tr) => tr.tipo === 'venta')
+            const lista = (tratos, campo) =>
+              tratos.length === 0
+                ? '—'
+                : tratos
+                    .map((tr) =>
+                      campo === 'compra'
+                        ? (enlace(tr.recibe[0]?.item)?.nombre ?? tr.recibe[0]?.item)
+                        : (enlace(tr.entrega.item)?.nombre ?? tr.entrega.item)
+                    )
+                    .join(', ')
+
+            return (
+              <tr>
+                <td>
+                  <a href={rutaDe(idioma, a.id)}>{a.nombre}</a>
+                </td>
+                <td>
+                  {enlace(a.mesaDeTrabajo) ? (
+                    <a href={enlace(a.mesaDeTrabajo).url}>{enlace(a.mesaDeTrabajo).nombre}</a>
+                  ) : (
+                    '—'
+                  )}
+                </td>
+                <td class="envuelve text-texto-suave">{lista(compra, 'compra')}</td>
+                <td class="envuelve text-texto-suave">{lista(vende, 'venta')}</td>
+              </tr>
+            )
+          })
         }
       </tbody>
     </table>

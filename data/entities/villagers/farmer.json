@@ -10,37 +10,79 @@
       "nivel": 1,
       "tradeos": [
         {
-          "id": "farmer_n1_compra",
-          "entrega": {
-            "item": "emerald",
-            "cantidad": 1
-          },
+          "id": "farmer_n1_trigo",
+          "tipo": "compra",
           "recibe": [
             {
               "item": "wheat",
-              "cantidad": 20
+              "minimo": 20,
+              "maximo": 22
             }
-          ]
-        }
-      ]
-    },
-    {
-      "nivel": 2,
-      "tradeos": [
-        {
-          "id": "farmer_n2_venta",
+          ],
           "entrega": {
-            "item": "bread",
-            "cantidad": 6
-          },
+            "item": "emerald",
+            "cantidad": 1
+          }
+        },
+        {
+          "id": "farmer_n1_patata",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "potato",
+              "minimo": 15,
+              "maximo": 19
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          }
+        },
+        {
+          "id": "farmer_n1_zanahoria",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "carrot",
+              "minimo": 15,
+              "maximo": 19
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          }
+        },
+        {
+          "id": "farmer_n1_remolacha",
+          "tipo": "compra",
+          "recibe": [
+            {
+              "item": "beetroot",
+              "minimo": 15,
+              "maximo": 19
+            }
+          ],
+          "entrega": {
+            "item": "emerald",
+            "cantidad": 1
+          }
+        },
+        {
+          "id": "farmer_n1_pan",
+          "tipo": "venta",
           "recibe": [
             {
               "item": "emerald",
-              "cantidad": 1
+              "minimo": 1,
+              "maximo": 1
             }
           ],
-          "precioMinimo": 1,
-          "precioMaximo": 1
+          "entrega": {
+            "item": "bread",
+            "cantidad": 6
+          }
         }
       ]
     }

@@ -10,37 +10,79 @@
       "nivel": 1,
       "tradeos": [
         {
-          "id": "toolsmith_n1_compra",
-          "entrega": {
-            "item": "emerald",
-            "cantidad": 1
-          },
+          "id": "toolsmith_n1_carbon",
+          "tipo": "compra",
           "recibe": [
             {
               "item": "coal",
-              "cantidad": 15
+              "minimo": 15,
+              "maximo": 16
             }
-          ]
-        }
-      ]
-    },
-    {
-      "nivel": 2,
-      "tradeos": [
-        {
-          "id": "toolsmith_n2_venta",
+          ],
           "entrega": {
-            "item": "iron_pickaxe",
+            "item": "emerald",
             "cantidad": 1
-          },
+          }
+        },
+        {
+          "id": "toolsmith_n1_hacha",
+          "tipo": "venta",
           "recibe": [
             {
               "item": "emerald",
-              "cantidad": 8
+              "minimo": 1,
+              "maximo": 1
             }
           ],
-          "precioMinimo": 4,
-          "precioMaximo": 8
+          "entrega": {
+            "item": "stone_axe",
+            "cantidad": 1
+          }
+        },
+        {
+          "id": "toolsmith_n1_pico",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "stone_pickaxe",
+            "cantidad": 1
+          }
+        },
+        {
+          "id": "toolsmith_n1_pala",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "stone_shovel",
+            "cantidad": 1
+          }
+        },
+        {
+          "id": "toolsmith_n1_azada",
+          "tipo": "venta",
+          "recibe": [
+            {
+              "item": "emerald",
+              "minimo": 1,
+              "maximo": 1
+            }
+          ],
+          "entrega": {
+            "item": "stone_hoe",
+            "cantidad": 1
+          }
         }
       ]
     }
