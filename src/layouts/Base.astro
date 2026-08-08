@@ -141,8 +141,11 @@ const otrosIdiomas = idiomas
                     aria-current={modulo === moduloActivo ? 'page' : undefined}
                     class:list={[
                       'flex items-center gap-2 bloque bloque-pulsable px-3 py-1.5 text-sm whitespace-nowrap',
+                      // La barra inferior es lo que de verdad se ve. Oscurecer
+                      // el verde un paso no lo notaba nadie; una franja clara
+                      // cruzando el pie del boton se reconoce sin mirar.
                       modulo === moduloActivo
-                        ? 'bg-acento-activo font-extrabold text-acento-activo-texto border-b-acento border-r-acento'
+                        ? 'bg-acento-activo font-extrabold text-acento-activo-texto shadow-[inset_0_-4px_0_0_var(--acento-claro)]'
                         : 'font-semibold text-texto'
                     ]}
                   >
