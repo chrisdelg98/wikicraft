@@ -193,6 +193,7 @@
   "pocion.persistenteResultado": "Persistente, afecta a quien pase por ahí",
   "pocion.persistenteComo": "{item}, después de hacerla arrojadiza",
   "pocion.instantaneo": "Instantáneo",
+  "pocion.nivelII": "nivel II",
 
   "resumen.pocionesUtiles": "Las más útiles, de más a menos",
   "resumen.pocionesNegativas": "Negativas (para lanzarlas, no para beberlas)",

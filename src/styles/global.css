@@ -189,6 +189,18 @@ h3 {
   white-space: nowrap;
 }
 
+/* Las celdas cortas no se parten, que quedan feas en dos lineas. Las largas
+   si: forzar una tabla entera a no partirse obliga a desplazarla en horizontal
+   incluso en pantallas anchas, y eso esconde justo la columna que mas dice. El
+   contenedor sigue pudiendo desplazarse cuando de verdad no cabe, que es lo
+   que salva al movil. */
+.tabla-envoltorio th.envuelve,
+.tabla-envoltorio td.envuelve {
+  white-space: normal;
+  min-width: 14rem;
+  vertical-align: top;
+}
+
 .tabla-envoltorio thead th {
   background: var(--superficie-alta);
   border-bottom: 2px solid var(--borde-fuerte);

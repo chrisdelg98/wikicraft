@@ -68,7 +68,7 @@ const secciones = [
                   <th>{ui(idioma, 'nav.potions')}</th>
                   <th>{ui(idioma, 'resumen.ingrediente')}</th>
                   <th>{ui(idioma, 'ficha.duracion')}</th>
-                  <th>{ui(idioma, 'pocion.mejorar')}</th>
+                  <th class="envuelve">{ui(idioma, 'pocion.mejorar')}</th>
                 </tr>
               </thead>
               <tbody>
@@ -90,14 +90,26 @@ const secciones = [
                       )}
                     </td>
                     <td>{duracion(p.duracionSegundos)}</td>
-                    <td class="text-texto-suave">
-                      {[
-                        p.prolongada &&
-                          `${enlace(p.prolongada.ingrediente)?.nombre} = ${duracion(p.prolongada.duracionSegundos)}`,
-                        p.mejorada && `${enlace(p.mejorada.ingrediente)?.nombre} = ${p.nombre} II`
-                      ]
-                        .filter(Boolean)
-                        .join(' · ') || '—'}
+                    {/* Una mejora por linea. Unidas con un punto medio formaban
+                        una frase larguisima que obligaba a desplazar la tabla,
+                        y ademas el nombre de la pocion ya esta en la fila: no
+                        hace falta repetirlo para decir "nivel II". */}
+                    <td class="envuelve text-texto-suave">
+                      {!p.prolongada && !p.mejorada && '—'}
+                      {p.prolongada && (
+                        <span class="block">
+                          {enlace(p.prolongada.ingrediente)?.nombre}
+                          <span aria-hidden="true"> → </span>
+                          {duracion(p.prolongada.duracionSegundos)}
+                        </span>
+                      )}
+                      {p.mejorada && (
+                        <span class="block">
+                          {enlace(p.mejorada.ingrediente)?.nombre}
+                          <span aria-hidden="true"> → </span>
+                          {ui(idioma, 'pocion.nivelII')}
+                        </span>
+                      )}
                     </td>
                   </tr>
                 ))}

@@ -38,7 +38,7 @@ const enlace = (otro) =>
         <tr>
           <th>{ui(idioma, 'nav.villagers')}</th>
           <th>{ui(idioma, 'rel.mesaDeTrabajo')}</th>
-          <th>{ui(idioma, 'resumen.primerTrato')}</th>
+          <th class="envuelve">{ui(idioma, 'resumen.primerTrato')}</th>
         </tr>
       </thead>
       <tbody>
@@ -49,7 +49,7 @@ const enlace = (otro) =>
                 <a href={rutaDe(idioma, f.id)}>{f.nombre}</a>
               </td>
               <td>{enlace(f.mesa) ? <a href={enlace(f.mesa).url}>{enlace(f.mesa).nombre}</a> : '—'}</td>
-              <td>
+              <td class="envuelve">
                 {f.pide && f.entrega ? (
                   <span>
                     {f.pide.cantidad} × {enlace(f.pide.item)?.nombre ?? f.pide.item}
