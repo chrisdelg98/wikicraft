@@ -18,6 +18,7 @@
     "librarian"
   ],
   "costeYunque": {
-    "libro": 1
+    "libro": 1,
+    "objeto": 1
   }
 }

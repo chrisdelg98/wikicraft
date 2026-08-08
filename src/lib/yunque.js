@@ -42,10 +42,13 @@ export const unir = (destino, sacrificio, tabla, limite = DEMASIADO_CARO) => {
     const datos = tabla[id]
     if (!datos || datos.libro == null) return null
 
-    // Un encantamiento que choca con algo que ya lleva la pieza no se pega, y
-    // en Java tampoco se cobra.
+    // Un encantamiento que choca con algo que ya lleva la pieza no se pega,
+    // pero en Java aun asi cobra un nivel por cada choque.
     const choca = (datos.incompatibleCon ?? []).some((otro) => ench[otro] != null)
-    if (choca) continue
+    if (choca) {
+      coste += 1
+      continue
+    }
 
     const actual = ench[id]
     let resultante

@@ -38,6 +38,7 @@
   ],
   "relevancia": "alta",
   "costeYunque": {
-    "libro": 1
+    "libro": 1,
+    "objeto": 2
   }
 }

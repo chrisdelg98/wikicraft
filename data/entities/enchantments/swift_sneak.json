@@ -13,6 +13,7 @@
   "esTesoro": true,
   "esMaldicion": false,
   "costeYunque": {
-    "libro": 4
+    "libro": 4,
+    "objeto": 8
   }
 }
