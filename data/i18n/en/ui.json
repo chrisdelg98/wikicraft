@@ -168,6 +168,10 @@
   "tema.cambiar": "Switch theme",
 
   "filtro.buscarEnLista": "Filter by name…",
+  "guia.abrir": "Quick guide",
+  "guia.titulo.potions": "Potion guide",
+  "guia.titulo.villagers": "Villager guide",
+
   "filtro.abrir": "Filters",
   "filtro.cerrar": "Close",
   "filtro.limpiar": "Clear filters",

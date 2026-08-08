@@ -305,6 +305,11 @@ dialog {
   box-shadow: 0 12px 32px var(--sombra);
 }
 
+/* Las guias llevan tablas y necesitan mas ancho que un panel de filtros. */
+dialog.ancho {
+  max-width: min(76rem, calc(100vw - 2rem));
+}
+
 dialog::backdrop {
   background: rgba(0, 0, 0, 0.55);
   backdrop-filter: blur(5px);
