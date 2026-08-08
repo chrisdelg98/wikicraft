@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "glowstone_receta",
+  "tipo": "receta",
+  "etapa": "nether",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "glowstone",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AA",
+    "AA"
+  ],
+  "clave": {
+    "A": "glowstone_dust"
+  },
+  "estacion": "inventario"
+}

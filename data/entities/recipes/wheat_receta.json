@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "wheat_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "wheat",
+    "cantidad": 9
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "hay_block",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

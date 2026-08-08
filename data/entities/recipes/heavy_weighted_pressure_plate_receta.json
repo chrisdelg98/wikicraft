@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "heavy_weighted_pressure_plate_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "heavy_weighted_pressure_plate",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AA"
+  ],
+  "clave": {
+    "A": "iron_ingot"
+  },
+  "estacion": "inventario"
+}

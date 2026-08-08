@@ -1,0 +1,11 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "totem_of_undying",
+  "tipo": "item",
+  "etapa": "inicio",
+  "relevancia": "normal",
+  "categorias": [
+    "material"
+  ],
+  "pila": 1
+}

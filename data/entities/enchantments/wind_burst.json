@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schemas/enchantment.schema.json",
+  "id": "wind_burst",
+  "tipo": "encantamiento",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "nivelMaximo": 3,
+  "categoria": "dano",
+  "aplicableA": [
+    "maza"
+  ],
+  "incompatibleCon": [],
+  "esTesoro": true,
+  "esMaldicion": false
+}

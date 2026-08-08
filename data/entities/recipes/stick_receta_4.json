@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "stick_receta_4",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "stick",
+    "cantidad": 4
+  },
+  "conForma": true,
+  "patron": [
+    "A",
+    "A"
+  ],
+  "clave": {
+    "A": "mangrove_planks"
+  },
+  "estacion": "inventario"
+}

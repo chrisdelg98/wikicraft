@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "stone_pressure_plate_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "stone_pressure_plate",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AA"
+  ],
+  "clave": {
+    "A": "stone"
+  },
+  "estacion": "inventario"
+}

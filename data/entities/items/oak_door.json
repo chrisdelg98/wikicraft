@@ -1,0 +1,11 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "oak_door",
+  "tipo": "item",
+  "etapa": "inicio",
+  "relevancia": "normal",
+  "categorias": [
+    "bloque"
+  ],
+  "pila": 64
+}

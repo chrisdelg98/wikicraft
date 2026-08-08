@@ -1,0 +1,11 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "iron_bars",
+  "tipo": "item",
+  "etapa": "hierro",
+  "relevancia": "normal",
+  "categorias": [
+    "bloque"
+  ],
+  "pila": 64
+}

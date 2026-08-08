@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "netherite_upgrade_smithing_template_receta",
+  "tipo": "receta",
+  "etapa": "nether",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "netherite_upgrade_smithing_template",
+    "cantidad": 2
+  },
+  "conForma": true,
+  "patron": [
+    "ABA",
+    "ACA",
+    "AAA"
+  ],
+  "clave": {
+    "A": "diamond",
+    "B": "netherite_upgrade_smithing_template",
+    "C": "netherrack"
+  },
+  "estacion": "mesa_de_trabajo"
+}

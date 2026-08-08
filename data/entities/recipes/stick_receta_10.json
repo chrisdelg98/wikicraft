@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "stick_receta_10",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "stick",
+    "cantidad": 4
+  },
+  "conForma": true,
+  "patron": [
+    "A",
+    "A"
+  ],
+  "clave": {
+    "A": "birch_planks"
+  },
+  "estacion": "inventario"
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "diamond_receta",
+  "tipo": "receta",
+  "etapa": "diamante",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "diamond",
+    "cantidad": 9
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "diamond_block",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

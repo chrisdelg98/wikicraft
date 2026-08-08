@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "detector_rail_receta",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "detector_rail",
+    "cantidad": 6
+  },
+  "conForma": true,
+  "patron": [
+    "A A",
+    "ABA",
+    "ACA"
+  ],
+  "clave": {
+    "A": "iron_ingot",
+    "B": "stone_pressure_plate",
+    "C": "redstone"
+  },
+  "estacion": "mesa_de_trabajo"
+}

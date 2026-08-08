@@ -1,0 +1,8 @@
+{
+  "$schema": "../../schemas/biome.schema.json",
+  "id": "soul_sand_valley",
+  "tipo": "bioma",
+  "etapa": "nether",
+  "relevancia": "normal",
+  "dimension": "nether"
+}

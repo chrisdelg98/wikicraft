@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "purple_dye_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "purple_dye",
+    "cantidad": 2
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "blue_dye",
+      "cantidad": 1
+    },
+    {
+      "item": "red_dye",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

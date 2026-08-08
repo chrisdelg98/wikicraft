@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "hopper_receta",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "hopper",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "A A",
+    "ABA",
+    " A"
+  ],
+  "clave": {
+    "A": "iron_ingot",
+    "B": "chest"
+  },
+  "estacion": "mesa_de_trabajo"
+}

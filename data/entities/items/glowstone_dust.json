@@ -3,8 +3,15 @@
   "id": "glowstone_dust",
   "tipo": "item",
   "etapa": "nether",
-  "categorias": ["material"],
+  "categorias": [
+    "material"
+  ],
   "pila": 64,
   "renovable": true,
-  "etiquetas": ["polvo de piedra luminosa", "nivel II", "pociones"]
+  "etiquetas": [
+    "polvo de piedra luminosa",
+    "nivel II",
+    "pociones"
+  ],
+  "relevancia": "normal"
 }

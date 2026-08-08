@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "arrow_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "arrow",
+    "cantidad": 4
+  },
+  "conForma": true,
+  "patron": [
+    "A",
+    "B",
+    "C"
+  ],
+  "clave": {
+    "A": "flint",
+    "B": "stick",
+    "C": "feather"
+  },
+  "estacion": "mesa_de_trabajo"
+}

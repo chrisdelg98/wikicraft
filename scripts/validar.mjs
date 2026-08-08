@@ -311,8 +311,15 @@ for (const { entidad, donde } of grafo.values()) {
 
 const cobertura = []
 
+// Con mil entidades, un aviso por cada traducción ausente sería ilegible y
+// nadie lo leería. Se agregan por módulo y se muestran unos pocos ejemplos.
+const resumir = (ids, cuantos = 4) =>
+  `${ids.slice(0, cuantos).join(', ')}${ids.length > cuantos ? `… y ${ids.length - cuantos} más` : ''}`
+
+/** Entidades con traducción en al menos un idioma. Las que no, son un error. */
+const traducidasEnAlgunIdioma = new Set()
+
 for (const idioma of idiomas) {
-  const esBase = idioma === idiomaBase
   let totalEsperado = 0
   let totalPresente = 0
 
@@ -325,8 +332,12 @@ for (const idioma of idiomas) {
     totalEsperado += idsDelModulo.length
 
     if (!existsSync(ruta)) {
-      const mensaje = `Falta el archivo de traducción de "${modulo}" (${idsDelModulo.length} entidades sin traducir).`
-      esBase ? error(`data/i18n/${idioma}`, mensaje) : aviso(`data/i18n/${idioma}`, mensaje)
+      if (idsDelModulo.length > 0) {
+        aviso(
+          `data/i18n/${idioma}`,
+          `Falta el archivo de "${modulo}": ${idsDelModulo.length} entidades sin traducir.`
+        )
+      }
       continue
     }
 
@@ -335,12 +346,12 @@ for (const idioma of idiomas) {
 
     const donde = `data/i18n/${idioma}/${modulo}.json`
     const slugs = new Map()
+    const sinTraducir = []
 
     for (const id of idsDelModulo) {
       const entrada = textos[id]
       if (!entrada) {
-        const mensaje = `Falta la traducción de "${id}".`
-        esBase ? error(donde, mensaje) : aviso(donde, mensaje)
+        sinTraducir.push(id)
         continue
       }
 
@@ -358,14 +369,21 @@ for (const idioma of idiomas) {
       }
       slugs.set(entrada.slug, id)
 
+      traducidasEnAlgunIdioma.add(id)
       totalPresente++
     }
 
+    if (sinTraducir.length > 0) {
+      aviso(donde, `${sinTraducir.length} sin traducir: ${resumir(sinTraducir)}`)
+    }
+
     // Traducciones que ya no corresponden a ninguna entidad.
-    for (const clave of Object.keys(textos)) {
-      if (!idsDelModulo.includes(clave)) {
-        aviso(donde, `"${clave}" no corresponde a ninguna entidad. ¿Se renombró o se borró?`)
-      }
+    const huerfanas = Object.keys(textos).filter((c) => !idsDelModulo.includes(c))
+    if (huerfanas.length > 0) {
+      aviso(
+        donde,
+        `${huerfanas.length} traducciones sin entidad detrás (¿renombradas o borradas?): ${resumir(huerfanas)}`
+      )
     }
   }
 
@@ -376,18 +394,31 @@ for (const idioma of idiomas) {
     const ui = (await leerJson(rutaUi)) ?? {}
     const uiBase = (await leerJson(rutaUiBase)) ?? {}
     const faltan = Object.keys(uiBase).filter((k) => !(k in ui))
-    if (faltan.length > 0 && !esBase) {
+    if (faltan.length > 0 && idioma !== idiomaBase) {
       aviso(
         `data/i18n/${idioma}/ui.json`,
-        `${faltan.length} textos de interfaz sin traducir: ${faltan.slice(0, 5).join(', ')}${faltan.length > 5 ? '…' : ''}`
+        `${faltan.length} textos de interfaz sin traducir: ${resumir(faltan, 5)}`
       )
     }
   } else if (!existsSync(rutaUi)) {
-    const mensaje = 'Falta el archivo de textos de interfaz ui.json.'
-    esBase ? error(`data/i18n/${idioma}`, mensaje) : aviso(`data/i18n/${idioma}`, mensaje)
+    // Los textos de interfaz sí son obligatorios en todos los idiomas: sin
+    // ellos la navegación entera queda en otro idioma, que es mucho más
+    // desconcertante que una ficha suelta sin traducir.
+    error(`data/i18n/${idioma}`, 'Falta el archivo de textos de interfaz ui.json.')
   }
 
   cobertura.push({ idioma, presente: totalPresente, esperado: totalEsperado })
+}
+
+// Que una ficha esté sin traducir a un idioma es normal y se resuelve con el
+// respaldo. Que no tenga nombre en NINGUNO significa que se mostraría con su
+// identificador interno, y eso sí es una ficha rota.
+const sinNombreEnNingunIdioma = [...grafo.keys()].filter((id) => !traducidasEnAlgunIdioma.has(id))
+if (sinNombreEnNingunIdioma.length > 0) {
+  error(
+    'data/i18n',
+    `${sinNombreEnNingunIdioma.length} entidades no tienen nombre en ningún idioma: ${resumir(sinNombreEnNingunIdioma)}`
+  )
 }
 
 // ---------------------------------------------------------------------------

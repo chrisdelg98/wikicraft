@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "lead_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "lead",
+    "cantidad": 2
+  },
+  "conForma": true,
+  "patron": [
+    "AA",
+    "AB",
+    "  A"
+  ],
+  "clave": {
+    "A": "string",
+    "B": "slime_ball"
+  },
+  "estacion": "mesa_de_trabajo"
+}

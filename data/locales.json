@@ -6,7 +6,7 @@
       "nombre": "Español",
       "nombreNativo": "Español",
       "direccion": "ltr",
-      "respaldo": null
+      "respaldo": "en"
     },
     {
       "codigo": "en",
@@ -27,5 +27,5 @@
     "biomes",
     "farms"
   ],
-  "notas": "El idioma base nunca puede tener claves ausentes: es el respaldo final de todos los demas. Anadir un idioma es anadir una entrada aqui y una carpeta en data/i18n/. Los modulos listados son los que ya tienen esquema; se amplia conforme avanza la Fase 0."
+  "notas": "El respaldo es mutuo entre espanol e ingles, y la cadena corta al detectar un ciclo. Eso permite importar datos con nombres en ingles y traducirlos al espanol poco a poco, sin que ninguna ficha quede sin nombre por el camino. Lo unico inaceptable es una entidad sin traduccion en NINGUN idioma; eso el validador lo marca como error. Anadir un idioma es anadir una entrada aqui y una carpeta en data/i18n/."
 }

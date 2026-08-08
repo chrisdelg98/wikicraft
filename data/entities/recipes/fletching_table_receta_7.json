@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "fletching_table_receta_7",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "fletching_table",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AA",
+    "BB",
+    "BB"
+  ],
+  "clave": {
+    "A": "flint",
+    "B": "dark_oak_planks"
+  },
+  "estacion": "mesa_de_trabajo"
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/mob.schema.json",
+  "id": "cod_mob",
+  "tipo": "mob",
+  "etapa": "inicio",
+  "relevancia": "normal",
+  "categoria": "pasivo",
+  "botin": [
+    {
+      "item": "cod",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 1
+    },
+    {
+      "item": "bone_meal",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 0.05
+    }
+  ]
+}

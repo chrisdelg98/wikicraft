@@ -1,0 +1,11 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "wither_skeleton_spawn_egg",
+  "tipo": "item",
+  "etapa": "nether",
+  "relevancia": "normal",
+  "categorias": [
+    "material"
+  ],
+  "pila": 64
+}

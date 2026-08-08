@@ -3,9 +3,18 @@
   "id": "enchanted_book",
   "tipo": "item",
   "etapa": "hierro",
-  "categorias": ["utilidad"],
+  "categorias": [
+    "utilidad"
+  ],
   "pila": 1,
   "renovable": true,
-  "obtenidoDe": ["librarian"],
-  "etiquetas": ["libro encantado", "yunque", "encantamiento"]
+  "obtenidoDe": [
+    "librarian"
+  ],
+  "etiquetas": [
+    "libro encantado",
+    "yunque",
+    "encantamiento"
+  ],
+  "relevancia": "normal"
 }

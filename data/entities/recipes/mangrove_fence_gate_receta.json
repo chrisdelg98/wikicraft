@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "mangrove_fence_gate_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "mangrove_fence_gate",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "ABA",
+    "ABA"
+  ],
+  "clave": {
+    "A": "stick",
+    "B": "mangrove_planks"
+  },
+  "estacion": "mesa_de_trabajo"
+}

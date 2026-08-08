@@ -1,0 +1,11 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "leather_horse_armor",
+  "tipo": "item",
+  "etapa": "inicio",
+  "relevancia": "normal",
+  "categorias": [
+    "material"
+  ],
+  "pila": 1
+}

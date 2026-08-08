@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "chainmail_chestplate",
+  "tipo": "armadura",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "categoria": "pechera",
+  "material": "malla",
+  "durabilidad": 240,
+  "reparadoCon": [
+    "iron_ingot"
+  ]
+}

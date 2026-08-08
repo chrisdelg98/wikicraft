@@ -1,0 +1,29 @@
+{
+  "$schema": "../../schemas/mob.schema.json",
+  "id": "zombified_piglin",
+  "tipo": "mob",
+  "etapa": "nether",
+  "relevancia": "alta",
+  "categoria": "hostil",
+  "botin": [
+    {
+      "item": "rotten_flesh",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 1
+    },
+    {
+      "item": "gold_nugget",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 1
+    },
+    {
+      "item": "gold_ingot",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 0.025,
+      "soloAlMorirPorJugador": true
+    }
+  ]
+}

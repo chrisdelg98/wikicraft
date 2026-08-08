@@ -5,10 +5,26 @@
   "etapa": "hierro",
   "nivelMaximo": 5,
   "categoria": "dano",
-  "aplicableA": ["espada", "hacha"],
-  "incompatibleCon": ["sharpness"],
+  "aplicableA": [
+    "espada",
+    "hacha"
+  ],
+  "incompatibleCon": [
+    "bane_of_arthropods",
+    "breach",
+    "density",
+    "impaling",
+    "sharpness"
+  ],
   "esTesoro": false,
   "esMaldicion": false,
-  "obtenidoDe": ["librarian"],
-  "etiquetas": ["castigo", "smite", "no muertos"]
+  "obtenidoDe": [
+    "librarian"
+  ],
+  "etiquetas": [
+    "castigo",
+    "smite",
+    "no muertos"
+  ],
+  "relevancia": "alta"
 }

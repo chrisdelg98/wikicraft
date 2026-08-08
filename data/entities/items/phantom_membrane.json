@@ -1,0 +1,11 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "phantom_membrane",
+  "tipo": "item",
+  "etapa": "inicio",
+  "relevancia": "normal",
+  "categorias": [
+    "material"
+  ],
+  "pila": 64
+}

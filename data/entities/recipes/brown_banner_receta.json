@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "brown_banner_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "brown_banner",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "AAA",
+    " B"
+  ],
+  "clave": {
+    "A": "brown_wool",
+    "B": "stick"
+  },
+  "estacion": "mesa_de_trabajo"
+}

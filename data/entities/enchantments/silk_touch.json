@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schemas/enchantment.schema.json",
+  "id": "silk_touch",
+  "tipo": "encantamiento",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "nivelMaximo": 1,
+  "categoria": "recoleccion",
+  "aplicableA": [
+    "pico",
+    "pala",
+    "hacha"
+  ],
+  "incompatibleCon": [
+    "fortune"
+  ],
+  "esTesoro": false,
+  "esMaldicion": false
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "diamond_ore",
+  "tipo": "item",
+  "etapa": "diamante",
+  "relevancia": "normal",
+  "categorias": [
+    "bloque",
+    "mineral"
+  ],
+  "pila": 64
+}

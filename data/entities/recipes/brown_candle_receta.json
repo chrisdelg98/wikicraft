@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "brown_candle_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "brown_candle",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "candle",
+      "cantidad": 1
+    },
+    {
+      "item": "brown_dye",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

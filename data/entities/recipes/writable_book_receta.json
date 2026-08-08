@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "writable_book_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "writable_book",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "book",
+      "cantidad": 1
+    },
+    {
+      "item": "ink_sac",
+      "cantidad": 1
+    },
+    {
+      "item": "feather",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

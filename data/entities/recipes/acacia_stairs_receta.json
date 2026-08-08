@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "acacia_stairs_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "acacia_stairs",
+    "cantidad": 4
+  },
+  "conForma": true,
+  "patron": [
+    "A",
+    "AA",
+    "AAA"
+  ],
+  "clave": {
+    "A": "acacia_planks"
+  },
+  "estacion": "mesa_de_trabajo"
+}

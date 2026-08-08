@@ -1,0 +1,24 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "shield",
+  "tipo": "herramienta",
+  "etapa": "hierro",
+  "relevancia": "alta",
+  "categoria": "escudo",
+  "material": "ninguno",
+  "durabilidad": 336,
+  "reparadoCon": [
+    "oak_planks",
+    "spruce_planks",
+    "birch_planks",
+    "jungle_planks",
+    "acacia_planks",
+    "cherry_planks",
+    "dark_oak_planks",
+    "pale_oak_planks",
+    "mangrove_planks",
+    "bamboo_planks",
+    "crimson_planks",
+    "warped_planks"
+  ]
+}

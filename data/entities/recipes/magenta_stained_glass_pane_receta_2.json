@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "magenta_stained_glass_pane_receta_2",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "magenta_stained_glass_pane",
+    "cantidad": 8
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "clave": {
+    "A": "glass_pane",
+    "B": "magenta_dye"
+  },
+  "estacion": "mesa_de_trabajo"
+}

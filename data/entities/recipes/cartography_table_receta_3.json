@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "cartography_table_receta_3",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "cartography_table",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AA",
+    "BB",
+    "BB"
+  ],
+  "clave": {
+    "A": "paper",
+    "B": "bamboo_planks"
+  },
+  "estacion": "mesa_de_trabajo"
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "cut_red_sandstone_slab_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "cut_red_sandstone_slab",
+    "cantidad": 6
+  },
+  "conForma": true,
+  "patron": [
+    "AAA"
+  ],
+  "clave": {
+    "A": "cut_red_sandstone"
+  },
+  "estacion": "mesa_de_trabajo"
+}

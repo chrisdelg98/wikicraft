@@ -1,0 +1,11 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "spider_eye",
+  "tipo": "item",
+  "etapa": "inicio",
+  "relevancia": "normal",
+  "categorias": [
+    "comida"
+  ],
+  "pila": 64
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "glistering_melon_slice_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "glistering_melon_slice",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "clave": {
+    "A": "gold_nugget",
+    "B": "melon_slice"
+  },
+  "estacion": "mesa_de_trabajo"
+}

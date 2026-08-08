@@ -3,8 +3,15 @@
   "id": "blaze_powder",
   "tipo": "item",
   "etapa": "nether",
-  "categorias": ["material"],
+  "categorias": [
+    "material"
+  ],
   "pila": 64,
   "renovable": true,
-  "etiquetas": ["polvo de blaze", "combustible del soporte", "fuerza"]
+  "etiquetas": [
+    "polvo de blaze",
+    "combustible del soporte",
+    "fuerza"
+  ],
+  "relevancia": "normal"
 }

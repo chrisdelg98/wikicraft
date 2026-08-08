@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "chainmail_boots",
+  "tipo": "armadura",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "categoria": "botas",
+  "material": "malla",
+  "durabilidad": 195,
+  "reparadoCon": [
+    "iron_ingot"
+  ]
+}

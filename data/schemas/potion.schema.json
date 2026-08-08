@@ -15,6 +15,7 @@
     "desdeVersion": { "$ref": "_comun.schema.json#/$defs/version" },
     "hastaVersion": { "$ref": "_comun.schema.json#/$defs/version" },
     "etapa": { "$ref": "_comun.schema.json#/$defs/etapa" },
+    "relevancia": { "$ref": "_comun.schema.json#/$defs/relevancia" },
     "etiquetas": { "type": "array", "items": { "type": "string" } },
 
     "efecto": {

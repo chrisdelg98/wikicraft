@@ -1,0 +1,29 @@
+{
+  "$schema": "../../schemas/mob.schema.json",
+  "id": "wither_skeleton",
+  "tipo": "mob",
+  "etapa": "nether",
+  "relevancia": "alta",
+  "categoria": "hostil",
+  "botin": [
+    {
+      "item": "coal",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 1
+    },
+    {
+      "item": "bone",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 1
+    },
+    {
+      "item": "wither_skeleton_skull",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 0.025,
+      "soloAlMorirPorJugador": true
+    }
+  ]
+}

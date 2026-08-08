@@ -2,7 +2,8 @@
   "_nota": "Mapa de todas las relaciones del grafo, por tipo de entidad. Lo leen el validador (para comprobar integridad) y el generador del sitio (para pintar las fichas). Vivir en un solo sitio evita que se desincronicen. 'campo' usa la sintaxis a[].b para recorrer arrays. 'etiqueta' e 'inversa' son claves de ui.json: la primera titula la relacion vista desde esta entidad, la segunda vista desde la entidad apuntada.",
 
   "item": [
-    { "campo": "obtenidoDe[]", "etiqueta": "rel.obtenidoDe", "inversa": "rel.aquiConsigues" }
+    { "campo": "obtenidoDe[]", "etiqueta": "rel.obtenidoDe", "inversa": "rel.aquiConsigues" },
+    { "campo": "varianteDe", "etiqueta": "rel.varianteDe", "inversa": "rel.variantes" }
   ],
 
   "encantamiento": [

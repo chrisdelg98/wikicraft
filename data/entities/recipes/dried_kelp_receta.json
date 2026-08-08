@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "dried_kelp_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "dried_kelp",
+    "cantidad": 9
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "dried_kelp_block",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

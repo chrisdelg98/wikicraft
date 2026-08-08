@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "crimson_sign_receta",
+  "tipo": "receta",
+  "etapa": "nether",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "crimson_sign",
+    "cantidad": 3
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "AAA",
+    " B"
+  ],
+  "clave": {
+    "A": "crimson_planks",
+    "B": "stick"
+  },
+  "estacion": "mesa_de_trabajo"
+}

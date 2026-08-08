@@ -7,7 +7,7 @@
   "allOf": [{ "$ref": "_comun.schema.json#/$defs/entidad" }],
 
   "type": "object",
-  "required": ["id", "tipo", "categoria", "vida", "etapa"],
+  "required": ["id", "tipo", "categoria", "etapa"],
   "properties": {
     "$schema": { "type": "string" },
     "id": { "$ref": "_comun.schema.json#/$defs/id" },
@@ -15,6 +15,7 @@
     "desdeVersion": { "$ref": "_comun.schema.json#/$defs/version" },
     "hastaVersion": { "$ref": "_comun.schema.json#/$defs/version" },
     "etapa": { "$ref": "_comun.schema.json#/$defs/etapa" },
+    "relevancia": { "$ref": "_comun.schema.json#/$defs/relevancia" },
     "etiquetas": { "type": "array", "items": { "type": "string" } },
 
     "categoria": {
@@ -25,7 +26,7 @@
     "vida": {
       "type": "number",
       "exclusiveMinimum": 0,
-      "description": "Puntos de salud. Dos puntos son un corazon; la interfaz muestra corazones, no este numero."
+      "description": "Puntos de salud. Dos puntos son un corazon; la interfaz muestra corazones, no este numero. No es obligatorio porque minecraft-data no lo trae: es un dato que anadimos a mano y por eso llega despues que el resto."
     },
 
     "dano": {

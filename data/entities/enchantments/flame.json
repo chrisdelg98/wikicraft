@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schemas/enchantment.schema.json",
+  "id": "flame",
+  "tipo": "encantamiento",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "nivelMaximo": 1,
+  "categoria": "dano",
+  "aplicableA": [
+    "arco"
+  ],
+  "incompatibleCon": [],
+  "esTesoro": false,
+  "esMaldicion": false
+}

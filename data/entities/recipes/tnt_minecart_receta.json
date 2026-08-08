@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "tnt_minecart_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "tnt_minecart",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "tnt",
+      "cantidad": 1
+    },
+    {
+      "item": "minecart",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

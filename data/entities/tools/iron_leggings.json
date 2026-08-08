@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "iron_leggings",
+  "tipo": "armadura",
+  "etapa": "hierro",
+  "relevancia": "alta",
+  "categoria": "pantalones",
+  "material": "hierro",
+  "durabilidad": 225,
+  "reparadoCon": [
+    "iron_ingot"
+  ]
+}

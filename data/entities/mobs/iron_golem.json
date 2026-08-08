@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/mob.schema.json",
+  "id": "iron_golem",
+  "tipo": "mob",
+  "etapa": "hierro",
+  "relevancia": "normal",
+  "categoria": "neutral",
+  "botin": [
+    {
+      "item": "poppy",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 1
+    },
+    {
+      "item": "iron_ingot",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 1
+    }
+  ]
+}

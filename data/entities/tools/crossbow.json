@@ -1,0 +1,11 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "crossbow",
+  "tipo": "herramienta",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "categoria": "ballesta",
+  "material": "ninguno",
+  "durabilidad": 465,
+  "reparadoCon": []
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "blue_banner_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "blue_banner",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "AAA",
+    " B"
+  ],
+  "clave": {
+    "A": "blue_wool",
+    "B": "stick"
+  },
+  "estacion": "mesa_de_trabajo"
+}

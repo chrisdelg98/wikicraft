@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "stone_shovel",
+  "tipo": "herramienta",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "categoria": "pala",
+  "material": "piedra",
+  "durabilidad": 131,
+  "reparadoCon": [
+    "cobbled_deepslate",
+    "cobblestone",
+    "blackstone"
+  ]
+}

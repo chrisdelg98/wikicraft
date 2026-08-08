@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "acacia_trapdoor_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "acacia_trapdoor",
+    "cantidad": 2
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "AAA"
+  ],
+  "clave": {
+    "A": "acacia_planks"
+  },
+  "estacion": "mesa_de_trabajo"
+}

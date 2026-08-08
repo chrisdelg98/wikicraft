@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "end_crystal_receta",
+  "tipo": "receta",
+  "etapa": "end",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "end_crystal",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "ABA",
+    "ACA"
+  ],
+  "clave": {
+    "A": "glass",
+    "B": "ender_eye",
+    "C": "ghast_tear"
+  },
+  "estacion": "mesa_de_trabajo"
+}

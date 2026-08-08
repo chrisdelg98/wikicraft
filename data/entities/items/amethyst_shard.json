@@ -1,0 +1,11 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "amethyst_shard",
+  "tipo": "item",
+  "etapa": "hierro",
+  "relevancia": "normal",
+  "categorias": [
+    "material"
+  ],
+  "pila": 64
+}

@@ -93,6 +93,8 @@
   "rel.requiereMobs": "Necesita",
   "rel.lugar": "Se construye en",
   "rel.granjas": "Granjas relacionadas",
+  "rel.varianteDe": "Es una variante de",
+  "rel.variantes": "Sus variantes",
 
   "ficha.durabilidad": "Durabilidad",
   "ficha.dano": "Daño",

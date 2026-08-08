@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "sandstone_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "sandstone",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AA",
+    "AA"
+  ],
+  "clave": {
+    "A": "sand"
+  },
+  "estacion": "inventario"
+}

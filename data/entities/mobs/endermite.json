@@ -1,0 +1,8 @@
+{
+  "$schema": "../../schemas/mob.schema.json",
+  "id": "endermite",
+  "tipo": "mob",
+  "etapa": "end",
+  "relevancia": "alta",
+  "categoria": "hostil"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "spruce_wood_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "spruce_wood",
+    "cantidad": 3
+  },
+  "conForma": true,
+  "patron": [
+    "AA",
+    "AA"
+  ],
+  "clave": {
+    "A": "spruce_log"
+  },
+  "estacion": "inventario"
+}

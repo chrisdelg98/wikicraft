@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "mushroom_stew_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "mushroom_stew",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "brown_mushroom",
+      "cantidad": 1
+    },
+    {
+      "item": "red_mushroom",
+      "cantidad": 1
+    },
+    {
+      "item": "bowl",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

@@ -1,14 +1,174 @@
 {
+  "aqua_affinity": {
+    "nombre": "Aqua Affinity",
+    "slug": "aqua-affinity"
+  },
+  "bane_of_arthropods": {
+    "nombre": "Bane of Arthropods",
+    "slug": "bane-of-arthropods"
+  },
+  "binding_curse": {
+    "nombre": "Curse of Binding",
+    "slug": "curse-of-binding"
+  },
+  "blast_protection": {
+    "nombre": "Blast Protection",
+    "slug": "blast-protection"
+  },
+  "breach": {
+    "nombre": "Breach",
+    "slug": "breach"
+  },
+  "channeling": {
+    "nombre": "Channeling",
+    "slug": "channeling"
+  },
+  "density": {
+    "nombre": "Density",
+    "slug": "density"
+  },
+  "depth_strider": {
+    "nombre": "Depth Strider",
+    "slug": "depth-strider"
+  },
+  "efficiency": {
+    "nombre": "Efficiency",
+    "slug": "efficiency"
+  },
+  "feather_falling": {
+    "nombre": "Feather Falling",
+    "slug": "feather-falling"
+  },
+  "fire_aspect": {
+    "nombre": "Fire Aspect",
+    "slug": "fire-aspect"
+  },
+  "fire_protection": {
+    "nombre": "Fire Protection",
+    "slug": "fire-protection"
+  },
+  "flame": {
+    "nombre": "Flame",
+    "slug": "flame"
+  },
+  "fortune": {
+    "nombre": "Fortune",
+    "slug": "fortune"
+  },
+  "frost_walker": {
+    "nombre": "Frost Walker",
+    "slug": "frost-walker"
+  },
+  "impaling": {
+    "nombre": "Impaling",
+    "slug": "impaling"
+  },
+  "infinity": {
+    "nombre": "Infinity",
+    "slug": "infinity"
+  },
+  "knockback": {
+    "nombre": "Knockback",
+    "slug": "knockback"
+  },
+  "looting": {
+    "nombre": "Looting",
+    "slug": "looting"
+  },
+  "loyalty": {
+    "nombre": "Loyalty",
+    "slug": "loyalty"
+  },
+  "luck_of_the_sea": {
+    "nombre": "Luck of the Sea",
+    "slug": "luck-of-the-sea"
+  },
+  "lure": {
+    "nombre": "Lure",
+    "slug": "lure"
+  },
   "mending": {
     "nombre": "Mending",
     "slug": "mending",
     "descripcion": "Converts the experience you pick up into durability for the gear you are wearing or holding. As long as you keep earning experience, your equipment never wears out.",
     "notas": "It conflicts with Infinity, so on a bow you must choose between never spending arrows and never spending the bow."
   },
+  "multishot": {
+    "nombre": "Multishot",
+    "slug": "multishot"
+  },
+  "piercing": {
+    "nombre": "Piercing",
+    "slug": "piercing"
+  },
+  "power": {
+    "nombre": "Power",
+    "slug": "power"
+  },
+  "projectile_protection": {
+    "nombre": "Projectile Protection",
+    "slug": "projectile-protection"
+  },
+  "protection": {
+    "nombre": "Protection",
+    "slug": "protection"
+  },
+  "punch": {
+    "nombre": "Punch",
+    "slug": "punch"
+  },
+  "quick_charge": {
+    "nombre": "Quick Charge",
+    "slug": "quick-charge"
+  },
+  "respiration": {
+    "nombre": "Respiration",
+    "slug": "respiration"
+  },
+  "riptide": {
+    "nombre": "Riptide",
+    "slug": "riptide"
+  },
   "sharpness": {
     "nombre": "Sharpness",
     "slug": "sharpness",
     "descripcion": "Increases damage against any target. It is the default choice on swords and axes.",
     "notas": "Cannot coexist with Smite. Sharpness is better in general; Smite only wins against undead."
+  },
+  "silk_touch": {
+    "nombre": "Silk Touch",
+    "slug": "silk-touch"
+  },
+  "smite": {
+    "nombre": "Smite",
+    "slug": "smite"
+  },
+  "soul_speed": {
+    "nombre": "Soul Speed",
+    "slug": "soul-speed"
+  },
+  "sweeping_edge": {
+    "nombre": "Sweeping Edge",
+    "slug": "sweeping-edge"
+  },
+  "swift_sneak": {
+    "nombre": "Swift Sneak",
+    "slug": "swift-sneak"
+  },
+  "thorns": {
+    "nombre": "Thorns",
+    "slug": "thorns"
+  },
+  "unbreaking": {
+    "nombre": "Unbreaking",
+    "slug": "unbreaking"
+  },
+  "vanishing_curse": {
+    "nombre": "Curse of Vanishing",
+    "slug": "curse-of-vanishing"
+  },
+  "wind_burst": {
+    "nombre": "Wind Burst",
+    "slug": "wind-burst"
   }
 }

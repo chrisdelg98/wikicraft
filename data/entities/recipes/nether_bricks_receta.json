@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "nether_bricks_receta",
+  "tipo": "receta",
+  "etapa": "nether",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "nether_bricks",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AA",
+    "AA"
+  ],
+  "clave": {
+    "A": "nether_brick"
+  },
+  "estacion": "inventario"
+}

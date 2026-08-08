@@ -1,0 +1,8 @@
+{
+  "$schema": "../../schemas/biome.schema.json",
+  "id": "small_end_islands",
+  "tipo": "bioma",
+  "etapa": "end",
+  "relevancia": "normal",
+  "dimension": "end"
+}

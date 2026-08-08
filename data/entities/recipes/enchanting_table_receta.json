@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "enchanting_table_receta",
+  "tipo": "receta",
+  "etapa": "diamante",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "enchanting_table",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    " A",
+    "BCB",
+    "CCC"
+  ],
+  "clave": {
+    "A": "book",
+    "B": "diamond",
+    "C": "obsidian"
+  },
+  "estacion": "mesa_de_trabajo"
+}

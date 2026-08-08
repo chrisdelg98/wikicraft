@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "bundle_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "bundle",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "A",
+    "B"
+  ],
+  "clave": {
+    "A": "string",
+    "B": "leather"
+  },
+  "estacion": "inventario"
+}

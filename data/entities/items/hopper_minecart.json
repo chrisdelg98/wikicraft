@@ -1,0 +1,11 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "hopper_minecart",
+  "tipo": "item",
+  "etapa": "hierro",
+  "relevancia": "normal",
+  "categorias": [
+    "material"
+  ],
+  "pila": 1
+}

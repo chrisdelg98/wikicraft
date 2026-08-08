@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "stone_axe",
+  "tipo": "herramienta",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "categoria": "hacha",
+  "material": "piedra",
+  "durabilidad": 131,
+  "reparadoCon": [
+    "cobbled_deepslate",
+    "cobblestone",
+    "blackstone"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "armor_stand_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "armor_stand",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    " A",
+    "ABA"
+  ],
+  "clave": {
+    "A": "stick",
+    "B": "smooth_stone_slab"
+  },
+  "estacion": "mesa_de_trabajo"
+}

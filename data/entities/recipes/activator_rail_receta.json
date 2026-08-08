@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "activator_rail_receta",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "activator_rail",
+    "cantidad": 6
+  },
+  "conForma": true,
+  "patron": [
+    "ABA",
+    "ACA",
+    "ABA"
+  ],
+  "clave": {
+    "A": "iron_ingot",
+    "B": "stick",
+    "C": "redstone_torch"
+  },
+  "estacion": "mesa_de_trabajo"
+}

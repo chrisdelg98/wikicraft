@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "sea_lantern_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "sea_lantern",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "ABA",
+    "BBB",
+    "ABA"
+  ],
+  "clave": {
+    "A": "prismarine_shard",
+    "B": "prismarine_crystals"
+  },
+  "estacion": "mesa_de_trabajo"
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "glow_item_frame_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "glow_item_frame",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "item_frame",
+      "cantidad": 1
+    },
+    {
+      "item": "glow_ink_sac",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

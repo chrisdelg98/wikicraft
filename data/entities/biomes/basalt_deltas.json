@@ -1,0 +1,8 @@
+{
+  "$schema": "../../schemas/biome.schema.json",
+  "id": "basalt_deltas",
+  "tipo": "bioma",
+  "etapa": "nether",
+  "relevancia": "normal",
+  "dimension": "nether"
+}

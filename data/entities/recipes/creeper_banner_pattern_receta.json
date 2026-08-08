@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "creeper_banner_pattern_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "creeper_banner_pattern",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "paper",
+      "cantidad": 1
+    },
+    {
+      "item": "creeper_head",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

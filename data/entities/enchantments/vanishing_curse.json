@@ -1,0 +1,32 @@
+{
+  "$schema": "../../schemas/enchantment.schema.json",
+  "id": "vanishing_curse",
+  "tipo": "encantamiento",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "nivelMaximo": 1,
+  "categoria": "maldicion",
+  "aplicableA": [
+    "espada",
+    "hacha",
+    "pico",
+    "pala",
+    "azada",
+    "arco",
+    "ballesta",
+    "tridente",
+    "maza",
+    "casco",
+    "pechera",
+    "pantalones",
+    "botas",
+    "elitros",
+    "escudo",
+    "cana",
+    "tijeras",
+    "mechero"
+  ],
+  "incompatibleCon": [],
+  "esTesoro": true,
+  "esMaldicion": true
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "iron_axe",
+  "tipo": "herramienta",
+  "etapa": "hierro",
+  "relevancia": "alta",
+  "categoria": "hacha",
+  "material": "hierro",
+  "durabilidad": 250,
+  "reparadoCon": [
+    "iron_ingot"
+  ]
+}

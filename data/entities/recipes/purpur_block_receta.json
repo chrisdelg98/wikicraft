@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "purpur_block_receta",
+  "tipo": "receta",
+  "etapa": "end",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "purpur_block",
+    "cantidad": 4
+  },
+  "conForma": true,
+  "patron": [
+    "AA",
+    "AA"
+  ],
+  "clave": {
+    "A": "popped_chorus_fruit"
+  },
+  "estacion": "inventario"
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "lapis_lazuli_receta",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "lapis_lazuli",
+    "cantidad": 9
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "lapis_block",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

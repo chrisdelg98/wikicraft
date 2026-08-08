@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "light_blue_stained_glass_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "light_blue_stained_glass",
+    "cantidad": 8
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "clave": {
+    "A": "glass",
+    "B": "light_blue_dye"
+  },
+  "estacion": "mesa_de_trabajo"
+}

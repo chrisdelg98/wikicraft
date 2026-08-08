@@ -3,8 +3,15 @@
   "id": "gunpowder",
   "tipo": "item",
   "etapa": "inicio",
-  "categorias": ["material"],
+  "categorias": [
+    "material"
+  ],
   "pila": 64,
   "renovable": true,
-  "etiquetas": ["polvora", "arrojadiza", "creeper"]
+  "etiquetas": [
+    "polvora",
+    "arrojadiza",
+    "creeper"
+  ],
+  "relevancia": "normal"
 }

@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "pink_bed_receta_5",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "pink_bed",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "BBB"
+  ],
+  "clave": {
+    "A": "pink_wool",
+    "B": "warped_planks"
+  },
+  "estacion": "mesa_de_trabajo"
+}

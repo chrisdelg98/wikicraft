@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "waxed_exposed_cut_copper_receta_1",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "waxed_exposed_cut_copper",
+    "cantidad": 4
+  },
+  "conForma": true,
+  "patron": [
+    "AA",
+    "AA"
+  ],
+  "clave": {
+    "A": "waxed_exposed_copper"
+  },
+  "estacion": "inventario"
+}

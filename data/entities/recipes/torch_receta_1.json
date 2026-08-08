@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "torch_receta_1",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "torch",
+    "cantidad": 4
+  },
+  "conForma": true,
+  "patron": [
+    "A",
+    "B"
+  ],
+  "clave": {
+    "A": "charcoal",
+    "B": "stick"
+  },
+  "estacion": "inventario"
+}

@@ -5,7 +5,17 @@
   "etapa": "nether",
   "dimension": "nether",
   "peligro": "dificil",
-  "contiene": ["nether_fortress"],
-  "recursos": ["glowstone_dust"],
-  "etiquetas": ["nether", "paramos", "infierno", "portal"]
+  "contiene": [
+    "nether_fortress"
+  ],
+  "recursos": [
+    "glowstone_dust"
+  ],
+  "etiquetas": [
+    "nether",
+    "paramos",
+    "infierno",
+    "portal"
+  ],
+  "relevancia": "normal"
 }

@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "honey_bottle_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "honey_bottle",
+    "cantidad": 4
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "honey_block",
+      "cantidad": 1
+    },
+    {
+      "item": "glass_bottle",
+      "cantidad": 4
+    }
+  ],
+  "estacion": "mesa_de_trabajo"
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schemas/enchantment.schema.json",
+  "id": "efficiency",
+  "tipo": "encantamiento",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "nivelMaximo": 5,
+  "categoria": "recoleccion",
+  "aplicableA": [
+    "pico",
+    "pala",
+    "hacha",
+    "azada"
+  ],
+  "incompatibleCon": [],
+  "esTesoro": false,
+  "esMaldicion": false
+}

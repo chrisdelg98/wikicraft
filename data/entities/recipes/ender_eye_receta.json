@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "ender_eye_receta",
+  "tipo": "receta",
+  "etapa": "diamante",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "ender_eye",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "ender_pearl",
+      "cantidad": 1
+    },
+    {
+      "item": "blaze_powder",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

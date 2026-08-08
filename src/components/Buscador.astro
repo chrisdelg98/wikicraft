@@ -86,8 +86,11 @@ const id = `buscador-${Math.random().toString(36).slice(2, 9)}`
     const nombre = normalizar(registro.n)
     if (nombre === consulta) return 100
     if (nombre.startsWith(consulta)) return 75
-    if (registro.b.split(' ').some((t) => t.startsWith(consulta))) return 50
-    if (registro.b.includes(consulta)) return 25
+    if (nombre.split(' ').some((p) => p.startsWith(consulta))) return 60
+    if (nombre.includes(consulta)) return 40
+    const extra = registro.b ?? ''
+    if (extra.split(' ').some((p) => p.startsWith(consulta))) return 25
+    if (extra.includes(consulta)) return 10
     return 0
   }
 
@@ -97,10 +100,10 @@ const id = `buscador-${Math.random().toString(36).slice(2, 9)}`
     const urlIndice = raiz.dataset.indice
     const plantillaVacio = raiz.dataset.sinResultados
 
-    let registros = null
+    let indice = null
     let seleccion = -1
 
-    const precargar = () => cargarIndice(urlIndice).then((r) => (registros = r))
+    const precargar = () => cargarIndice(urlIndice).then((r) => (indice = r))
     entrada.addEventListener('focus', precargar, { once: true })
     entrada.addEventListener('pointerdown', precargar, { once: true })
 
@@ -124,16 +127,22 @@ const id = `buscador-${Math.random().toString(36).slice(2, 9)}`
         return
       }
 
+      const escapar = (texto) =>
+        texto.replace(/[<>&"]/g, (c) => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;', '"': '&quot;' })[c])
+
       salida.innerHTML = encontrados
-        .map(
-          (r, i) => `
-            <a href="${r.u}" role="option" aria-selected="${i === 0}"
+        .map((r, i) => {
+          // La URL se reconstruye aqui en vez de venir repetida en cada entrada
+          // del indice, que es lo que mas engordaba la descarga.
+          const url = `/${indice.idioma}/${indice.rutas[r.m]}/${r.s}/`
+          return `
+            <a href="${url}" role="option" aria-selected="${i === 0}"
                class="flex items-center gap-3 rounded-sm px-3 py-2 hover:bg-fondo aria-selected:bg-fondo">
               <span class="h-2.5 w-2.5 shrink-0" style="background:var(--etapa-${r.e})"></span>
-              <span class="min-w-0 flex-1 truncate font-semibold">${r.n}</span>
-              <span class="shrink-0 text-xs text-texto-suave">${r.m}</span>
+              <span class="min-w-0 flex-1 truncate font-semibold">${escapar(r.n)}</span>
+              <span class="shrink-0 text-xs text-texto-suave">${escapar(indice.nombres[r.m] ?? r.m)}</span>
             </a>`
-        )
+        })
         .join('')
       seleccion = 0
     }
@@ -150,9 +159,9 @@ const id = `buscador-${Math.random().toString(36).slice(2, 9)}`
       const consulta = normalizar(entrada.value.trim())
       if (!consulta) return cerrar()
 
-      registros ??= await cargarIndice(urlIndice)
+      indice ??= await cargarIndice(urlIndice)
 
-      const encontrados = registros
+      const encontrados = indice.entradas
         .map((r) => ({ r, p: puntuar(r, consulta) }))
         .filter((x) => x.p > 0)
         .sort((a, b) => b.p - a.p || a.r.n.localeCompare(b.r.n))

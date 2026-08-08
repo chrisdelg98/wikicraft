@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "stonecutter_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "stonecutter",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    " A",
+    "BBB"
+  ],
+  "clave": {
+    "A": "iron_ingot",
+    "B": "stone"
+  },
+  "estacion": "mesa_de_trabajo"
+}

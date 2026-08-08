@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/mob.schema.json",
+  "id": "ghast",
+  "tipo": "mob",
+  "etapa": "nether",
+  "relevancia": "normal",
+  "categoria": "neutral",
+  "botin": [
+    {
+      "item": "ghast_tear",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 1
+    },
+    {
+      "item": "gunpowder",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 1
+    }
+  ]
+}

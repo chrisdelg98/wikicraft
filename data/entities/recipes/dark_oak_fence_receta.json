@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "dark_oak_fence_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "dark_oak_fence",
+    "cantidad": 3
+  },
+  "conForma": true,
+  "patron": [
+    "ABA",
+    "ABA"
+  ],
+  "clave": {
+    "A": "dark_oak_planks",
+    "B": "stick"
+  },
+  "estacion": "mesa_de_trabajo"
+}

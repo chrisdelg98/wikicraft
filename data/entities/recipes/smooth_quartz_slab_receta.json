@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "smooth_quartz_slab_receta",
+  "tipo": "receta",
+  "etapa": "nether",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "smooth_quartz_slab",
+    "cantidad": 6
+  },
+  "conForma": true,
+  "patron": [
+    "AAA"
+  ],
+  "clave": {
+    "A": "smooth_quartz"
+  },
+  "estacion": "mesa_de_trabajo"
+}

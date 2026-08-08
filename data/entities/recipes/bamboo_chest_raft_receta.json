@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "bamboo_chest_raft_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "bamboo_chest_raft",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "chest",
+      "cantidad": 1
+    },
+    {
+      "item": "bamboo_raft",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "polished_blackstone_brick_wall_receta",
+  "tipo": "receta",
+  "etapa": "nether",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "polished_blackstone_brick_wall",
+    "cantidad": 6
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "AAA"
+  ],
+  "clave": {
+    "A": "polished_blackstone_bricks"
+  },
+  "estacion": "mesa_de_trabajo"
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "fermented_spider_eye_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "fermented_spider_eye",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "spider_eye",
+      "cantidad": 1
+    },
+    {
+      "item": "brown_mushroom",
+      "cantidad": 1
+    },
+    {
+      "item": "sugar",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

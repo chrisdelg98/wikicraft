@@ -1,0 +1,11 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "golden_horse_armor",
+  "tipo": "item",
+  "etapa": "hierro",
+  "relevancia": "normal",
+  "categorias": [
+    "material"
+  ],
+  "pila": 1
+}

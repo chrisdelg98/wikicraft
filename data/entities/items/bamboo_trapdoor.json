@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "bamboo_trapdoor",
+  "tipo": "item",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "categorias": [
+    "bloque"
+  ],
+  "pila": 64,
+  "varianteDe": "oak_trapdoor"
+}

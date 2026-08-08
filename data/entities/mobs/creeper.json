@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schemas/mob.schema.json",
+  "id": "creeper",
+  "tipo": "mob",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "categoria": "hostil",
+  "botin": [
+    {
+      "item": "gunpowder",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 1
+    }
+  ]
+}

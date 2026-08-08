@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "golden_leggings",
+  "tipo": "armadura",
+  "etapa": "hierro",
+  "relevancia": "alta",
+  "categoria": "pantalones",
+  "material": "oro",
+  "durabilidad": 105,
+  "reparadoCon": [
+    "gold_ingot"
+  ]
+}

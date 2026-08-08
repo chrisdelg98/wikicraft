@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "beehive_receta_10",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "beehive",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "BBB",
+    "AAA"
+  ],
+  "clave": {
+    "A": "birch_planks",
+    "B": "honeycomb"
+  },
+  "estacion": "mesa_de_trabajo"
+}

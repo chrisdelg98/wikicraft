@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schemas/enchantment.schema.json",
+  "id": "feather_falling",
+  "tipo": "encantamiento",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "nivelMaximo": 4,
+  "categoria": "proteccion",
+  "aplicableA": [
+    "botas"
+  ],
+  "incompatibleCon": [],
+  "esTesoro": false,
+  "esMaldicion": false
+}

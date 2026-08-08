@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "pink_terracotta",
+  "tipo": "item",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "categorias": [
+    "bloque"
+  ],
+  "pila": 64,
+  "varianteDe": "terracotta"
+}

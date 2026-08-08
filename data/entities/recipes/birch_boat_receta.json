@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "birch_boat_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "birch_boat",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "A A",
+    "AAA"
+  ],
+  "clave": {
+    "A": "birch_planks"
+  },
+  "estacion": "mesa_de_trabajo"
+}

@@ -52,6 +52,13 @@
       "description": "Cuanto cuesta conseguirlo o construirlo para alguien que empieza."
     },
 
+    "relevancia": {
+      "type": "string",
+      "enum": ["alta", "normal", "baja"],
+      "default": "normal",
+      "description": "Cuanta prioridad tiene en el buscador y los listados. Minecraft tiene decenas de variantes de color y de madera que son ruido para casi cualquier busqueda: se marcan como baja para que no tapen lo que la gente busca de verdad."
+    },
+
     "debilidad": {
       "type": "string",
       "enum": [
@@ -94,6 +101,7 @@
         "desdeVersion": { "$ref": "#/$defs/version" },
         "hastaVersion": { "$ref": "#/$defs/version" },
         "etapa": { "$ref": "#/$defs/etapa" },
+        "relevancia": { "$ref": "#/$defs/relevancia" },
         "etiquetas": {
           "type": "array",
           "items": { "type": "string" },

@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "lectern_receta_1",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "lectern",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    " B",
+    " A"
+  ],
+  "clave": {
+    "A": "pale_oak_slab",
+    "B": "bookshelf"
+  },
+  "estacion": "mesa_de_trabajo"
+}

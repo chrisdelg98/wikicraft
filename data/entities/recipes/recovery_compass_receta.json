@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "recovery_compass_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "recovery_compass",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "clave": {
+    "A": "echo_shard",
+    "B": "compass"
+  },
+  "estacion": "mesa_de_trabajo"
+}

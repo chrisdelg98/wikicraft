@@ -8,10 +8,47 @@
   "dano": 3,
   "experiencia": 5,
   "noMuerto": true,
-  "apareceEn": ["plains"],
-  "botin": [
-    { "item": "rotten_flesh", "minimo": 0, "maximo": 2 }
+  "apareceEn": [
+    "plains"
   ],
-  "debilidades": ["luz_solar", "no_muerto", "cuerpo_a_cuerpo"],
-  "etiquetas": ["zombi", "no muerto", "noche"]
+  "botin": [
+    {
+      "item": "rotten_flesh",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 1
+    },
+    {
+      "item": "iron_ingot",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 0.008333333333333333,
+      "soloAlMorirPorJugador": true
+    },
+    {
+      "item": "carrot",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 0.008333333333333333,
+      "soloAlMorirPorJugador": true
+    },
+    {
+      "item": "potato",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 0.008333333333333333,
+      "soloAlMorirPorJugador": true
+    }
+  ],
+  "debilidades": [
+    "luz_solar",
+    "no_muerto",
+    "cuerpo_a_cuerpo"
+  ],
+  "etiquetas": [
+    "zombi",
+    "no muerto",
+    "noche"
+  ],
+  "relevancia": "alta"
 }

@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "cobblestone_stairs_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "cobblestone_stairs",
+    "cantidad": 4
+  },
+  "conForma": true,
+  "patron": [
+    "A",
+    "AA",
+    "AAA"
+  ],
+  "clave": {
+    "A": "cobblestone"
+  },
+  "estacion": "mesa_de_trabajo"
+}

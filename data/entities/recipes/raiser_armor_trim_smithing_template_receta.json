@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "raiser_armor_trim_smithing_template_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "raiser_armor_trim_smithing_template",
+    "cantidad": 2
+  },
+  "conForma": true,
+  "patron": [
+    "ABA",
+    "ACA",
+    "AAA"
+  ],
+  "clave": {
+    "A": "diamond",
+    "B": "raiser_armor_trim_smithing_template",
+    "C": "terracotta"
+  },
+  "estacion": "mesa_de_trabajo"
+}

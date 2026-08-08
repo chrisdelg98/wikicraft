@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "diamond_chestplate",
+  "tipo": "armadura",
+  "etapa": "diamante",
+  "relevancia": "alta",
+  "categoria": "pechera",
+  "material": "diamante",
+  "durabilidad": 528,
+  "reparadoCon": [
+    "diamond"
+  ]
+}

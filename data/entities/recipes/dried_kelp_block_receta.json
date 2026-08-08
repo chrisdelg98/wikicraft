@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "dried_kelp_block_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "dried_kelp_block",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "clave": {
+    "A": "dried_kelp"
+  },
+  "estacion": "mesa_de_trabajo"
+}

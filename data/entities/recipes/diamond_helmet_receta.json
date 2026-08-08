@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "diamond_helmet_receta",
+  "tipo": "receta",
+  "etapa": "diamante",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "diamond_helmet",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "A A"
+  ],
+  "clave": {
+    "A": "diamond"
+  },
+  "estacion": "mesa_de_trabajo"
+}

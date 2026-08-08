@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "leather_chestplate_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "leather_chestplate",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "A A",
+    "AAA",
+    "AAA"
+  ],
+  "clave": {
+    "A": "leather"
+  },
+  "estacion": "mesa_de_trabajo"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "candle_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "candle",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "A",
+    "B"
+  ],
+  "clave": {
+    "A": "string",
+    "B": "honeycomb"
+  },
+  "estacion": "inventario"
+}

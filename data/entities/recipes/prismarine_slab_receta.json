@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "prismarine_slab_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "prismarine_slab",
+    "cantidad": 6
+  },
+  "conForma": true,
+  "patron": [
+    "AAA"
+  ],
+  "clave": {
+    "A": "prismarine"
+  },
+  "estacion": "mesa_de_trabajo"
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "birch_planks_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "birch_planks",
+    "cantidad": 4
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "birch_log",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

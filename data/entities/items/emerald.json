@@ -3,8 +3,16 @@
   "id": "emerald",
   "tipo": "item",
   "etapa": "inicio",
-  "categorias": ["mineral", "material"],
+  "categorias": [
+    "mineral",
+    "material"
+  ],
   "pila": 64,
   "renovable": true,
-  "etiquetas": ["esmeralda", "moneda", "comercio"]
+  "etiquetas": [
+    "esmeralda",
+    "moneda",
+    "comercio"
+  ],
+  "relevancia": "normal"
 }

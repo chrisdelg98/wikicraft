@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "deepslate_brick_slab_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "deepslate_brick_slab",
+    "cantidad": 6
+  },
+  "conForma": true,
+  "patron": [
+    "AAA"
+  ],
+  "clave": {
+    "A": "deepslate_bricks"
+  },
+  "estacion": "mesa_de_trabajo"
+}

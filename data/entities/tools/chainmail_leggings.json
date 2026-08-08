@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "chainmail_leggings",
+  "tipo": "armadura",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "categoria": "pantalones",
+  "material": "malla",
+  "durabilidad": 225,
+  "reparadoCon": [
+    "iron_ingot"
+  ]
+}

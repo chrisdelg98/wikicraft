@@ -1,0 +1,24 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "cake_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "cake",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "BCB",
+    "DDD"
+  ],
+  "clave": {
+    "A": "milk_bucket",
+    "B": "sugar",
+    "C": "egg",
+    "D": "wheat"
+  },
+  "estacion": "mesa_de_trabajo"
+}

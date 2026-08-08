@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "mangrove_chest_boat",
+  "tipo": "item",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "categorias": [
+    "material"
+  ],
+  "pila": 1,
+  "varianteDe": "oak_chest_boat"
+}

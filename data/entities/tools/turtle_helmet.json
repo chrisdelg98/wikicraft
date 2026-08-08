@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "turtle_helmet",
+  "tipo": "armadura",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "categoria": "casco",
+  "material": "caparazon",
+  "durabilidad": 275,
+  "reparadoCon": [
+    "turtle_scute"
+  ]
+}

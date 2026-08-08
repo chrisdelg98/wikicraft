@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "leather_chestplate",
+  "tipo": "armadura",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "categoria": "pechera",
+  "material": "cuero",
+  "durabilidad": 80,
+  "reparadoCon": [
+    "leather"
+  ]
+}

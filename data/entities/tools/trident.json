@@ -1,0 +1,11 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "trident",
+  "tipo": "herramienta",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "categoria": "tridente",
+  "material": "ninguno",
+  "durabilidad": 250,
+  "reparadoCon": []
+}

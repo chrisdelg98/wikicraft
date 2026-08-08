@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "acacia_hanging_sign_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "acacia_hanging_sign",
+    "cantidad": 6
+  },
+  "conForma": true,
+  "patron": [
+    "A A",
+    "BBB",
+    "BBB"
+  ],
+  "clave": {
+    "A": "chain",
+    "B": "stripped_acacia_log"
+  },
+  "estacion": "mesa_de_trabajo"
+}

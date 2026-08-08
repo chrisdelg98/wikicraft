@@ -6,14 +6,38 @@
   "nivelMaximo": 1,
   "categoria": "utilidad",
   "aplicableA": [
-    "espada", "hacha", "pico", "pala", "azada",
-    "arco", "ballesta", "tridente",
-    "casco", "pechera", "pantalones", "botas",
-    "elitros", "escudo", "cana", "tijeras", "mechero"
+    "espada",
+    "hacha",
+    "pico",
+    "pala",
+    "azada",
+    "arco",
+    "ballesta",
+    "tridente",
+    "maza",
+    "casco",
+    "pechera",
+    "pantalones",
+    "botas",
+    "elitros",
+    "escudo",
+    "cana",
+    "tijeras",
+    "mechero"
   ],
-  "incompatibleCon": ["infinity"],
+  "incompatibleCon": [
+    "infinity"
+  ],
   "esTesoro": true,
   "esMaldicion": false,
-  "obtenidoDe": ["librarian"],
-  "etiquetas": ["reparacion", "mending", "experiencia", "durabilidad infinita"]
+  "obtenidoDe": [
+    "librarian"
+  ],
+  "etiquetas": [
+    "reparacion",
+    "mending",
+    "experiencia",
+    "durabilidad infinita"
+  ],
+  "relevancia": "alta"
 }

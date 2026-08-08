@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "acacia_boat_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "acacia_boat",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "A A",
+    "AAA"
+  ],
+  "clave": {
+    "A": "acacia_planks"
+  },
+  "estacion": "mesa_de_trabajo"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/enchantment.schema.json",
+  "id": "density",
+  "tipo": "encantamiento",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "nivelMaximo": 5,
+  "categoria": "dano",
+  "aplicableA": [
+    "maza"
+  ],
+  "incompatibleCon": [
+    "bane_of_arthropods",
+    "breach",
+    "impaling",
+    "sharpness",
+    "smite"
+  ],
+  "esTesoro": false,
+  "esMaldicion": false
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "bordure_indented_banner_pattern_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "bordure_indented_banner_pattern",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "paper",
+      "cantidad": 1
+    },
+    {
+      "item": "vine",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

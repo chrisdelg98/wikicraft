@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "slime_ball_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "slime_ball",
+    "cantidad": 9
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "slime_block",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

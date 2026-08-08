@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "diamond_hoe_receta",
+  "tipo": "receta",
+  "etapa": "diamante",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "diamond_hoe",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AA",
+    " B",
+    " B"
+  ],
+  "clave": {
+    "A": "diamond",
+    "B": "stick"
+  },
+  "estacion": "mesa_de_trabajo"
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "book_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "book",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "paper",
+      "cantidad": 3
+    },
+    {
+      "item": "leather",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

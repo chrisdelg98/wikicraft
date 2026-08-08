@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "pale_oak_planks_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "pale_oak_planks",
+    "cantidad": 4
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "pale_oak_log",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

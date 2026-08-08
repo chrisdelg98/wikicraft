@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "leather_horse_armor_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "leather_horse_armor",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "A A",
+    "AAA",
+    "A A"
+  ],
+  "clave": {
+    "A": "leather"
+  },
+  "estacion": "mesa_de_trabajo"
+}

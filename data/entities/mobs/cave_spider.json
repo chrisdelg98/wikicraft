@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/mob.schema.json",
+  "id": "cave_spider",
+  "tipo": "mob",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "categoria": "hostil",
+  "botin": [
+    {
+      "item": "string",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 1
+    },
+    {
+      "item": "spider_eye",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 1,
+      "soloAlMorirPorJugador": true
+    }
+  ]
+}

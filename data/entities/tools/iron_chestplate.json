@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "iron_chestplate",
+  "tipo": "armadura",
+  "etapa": "hierro",
+  "relevancia": "alta",
+  "categoria": "pechera",
+  "material": "hierro",
+  "durabilidad": 240,
+  "reparadoCon": [
+    "iron_ingot"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "leather_leggings_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "leather_leggings",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "A A",
+    "A A"
+  ],
+  "clave": {
+    "A": "leather"
+  },
+  "estacion": "mesa_de_trabajo"
+}

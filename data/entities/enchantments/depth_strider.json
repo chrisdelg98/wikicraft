@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schemas/enchantment.schema.json",
+  "id": "depth_strider",
+  "tipo": "encantamiento",
+  "etapa": "nether",
+  "relevancia": "alta",
+  "nivelMaximo": 3,
+  "categoria": "proteccion",
+  "aplicableA": [
+    "botas"
+  ],
+  "incompatibleCon": [
+    "frost_walker"
+  ],
+  "esTesoro": false,
+  "esMaldicion": false
+}

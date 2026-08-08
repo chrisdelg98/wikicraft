@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "light_weighted_pressure_plate_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "light_weighted_pressure_plate",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AA"
+  ],
+  "clave": {
+    "A": "gold_ingot"
+  },
+  "estacion": "inventario"
+}

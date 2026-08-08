@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "golden_boots",
+  "tipo": "armadura",
+  "etapa": "hierro",
+  "relevancia": "alta",
+  "categoria": "botas",
+  "material": "oro",
+  "durabilidad": 91,
+  "reparadoCon": [
+    "gold_ingot"
+  ]
+}

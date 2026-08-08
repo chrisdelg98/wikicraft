@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "prismarine_bricks_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "prismarine_bricks",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "prismarine_shard",
+      "cantidad": 9
+    }
+  ],
+  "estacion": "mesa_de_trabajo"
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "chest_minecart_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "chest_minecart",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "chest",
+      "cantidad": 1
+    },
+    {
+      "item": "minecart",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

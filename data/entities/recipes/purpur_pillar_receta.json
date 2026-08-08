@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "purpur_pillar_receta",
+  "tipo": "receta",
+  "etapa": "end",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "purpur_pillar",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "A",
+    "A"
+  ],
+  "clave": {
+    "A": "purpur_slab"
+  },
+  "estacion": "inventario"
+}

@@ -3,8 +3,16 @@
   "id": "diamond",
   "tipo": "item",
   "etapa": "hierro",
-  "categorias": ["mineral", "material"],
+  "categorias": [
+    "mineral",
+    "material"
+  ],
   "pila": 64,
   "renovable": false,
-  "etiquetas": ["diamante", "gema", "mineral raro"]
+  "etiquetas": [
+    "diamante",
+    "gema",
+    "mineral raro"
+  ],
+  "relevancia": "normal"
 }

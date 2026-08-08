@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "firework_rocket_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "firework_rocket",
+    "cantidad": 3
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "gunpowder",
+      "cantidad": 1
+    },
+    {
+      "item": "paper",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

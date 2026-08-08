@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "daylight_detector_receta_7",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "daylight_detector",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "BBB",
+    "CCC"
+  ],
+  "clave": {
+    "A": "glass",
+    "B": "quartz",
+    "C": "dark_oak_slab"
+  },
+  "estacion": "mesa_de_trabajo"
+}

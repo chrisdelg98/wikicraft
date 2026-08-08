@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "carrot_on_a_stick_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "carrot_on_a_stick",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "A",
+    " B"
+  ],
+  "clave": {
+    "A": "fishing_rod",
+    "B": "carrot"
+  },
+  "estacion": "inventario"
+}

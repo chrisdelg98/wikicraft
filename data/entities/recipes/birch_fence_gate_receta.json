@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "birch_fence_gate_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "birch_fence_gate",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "ABA",
+    "ABA"
+  ],
+  "clave": {
+    "A": "stick",
+    "B": "birch_planks"
+  },
+  "estacion": "mesa_de_trabajo"
+}

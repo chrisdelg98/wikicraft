@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/enchantment.schema.json",
+  "id": "blast_protection",
+  "tipo": "encantamiento",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "nivelMaximo": 4,
+  "categoria": "proteccion",
+  "aplicableA": [
+    "casco",
+    "pechera",
+    "pantalones",
+    "botas"
+  ],
+  "incompatibleCon": [
+    "fire_protection",
+    "projectile_protection",
+    "protection"
+  ],
+  "esTesoro": false,
+  "esMaldicion": false
+}

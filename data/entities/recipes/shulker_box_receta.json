@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "shulker_box_receta",
+  "tipo": "receta",
+  "etapa": "end",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "shulker_box",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "A",
+    "B",
+    "A"
+  ],
+  "clave": {
+    "A": "shulker_shell",
+    "B": "chest"
+  },
+  "estacion": "mesa_de_trabajo"
+}

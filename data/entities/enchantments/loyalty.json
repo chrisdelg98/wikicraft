@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schemas/enchantment.schema.json",
+  "id": "loyalty",
+  "tipo": "encantamiento",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "nivelMaximo": 3,
+  "categoria": "dano",
+  "aplicableA": [
+    "tridente"
+  ],
+  "incompatibleCon": [
+    "riptide"
+  ],
+  "esTesoro": false,
+  "esMaldicion": false
+}

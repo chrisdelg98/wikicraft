@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "warped_sign_receta",
+  "tipo": "receta",
+  "etapa": "nether",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "warped_sign",
+    "cantidad": 3
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "AAA",
+    " B"
+  ],
+  "clave": {
+    "A": "warped_planks",
+    "B": "stick"
+  },
+  "estacion": "mesa_de_trabajo"
+}

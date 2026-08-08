@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "netherite_pickaxe",
+  "tipo": "herramienta",
+  "etapa": "nether",
+  "relevancia": "alta",
+  "categoria": "pico",
+  "material": "netherita",
+  "durabilidad": 2031,
+  "reparadoCon": [
+    "netherite_ingot"
+  ]
+}

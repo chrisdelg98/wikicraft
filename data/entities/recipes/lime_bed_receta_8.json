@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "lime_bed_receta_8",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "lime_bed",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "BBB"
+  ],
+  "clave": {
+    "A": "lime_wool",
+    "B": "acacia_planks"
+  },
+  "estacion": "mesa_de_trabajo"
+}

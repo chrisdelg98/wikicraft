@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "diamond_sword_receta",
+  "tipo": "receta",
+  "etapa": "diamante",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "diamond_sword",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "A",
+    "A",
+    "B"
+  ],
+  "clave": {
+    "A": "diamond",
+    "B": "stick"
+  },
+  "estacion": "mesa_de_trabajo"
+}

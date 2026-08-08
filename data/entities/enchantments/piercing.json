@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schemas/enchantment.schema.json",
+  "id": "piercing",
+  "tipo": "encantamiento",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "nivelMaximo": 4,
+  "categoria": "dano",
+  "aplicableA": [
+    "ballesta"
+  ],
+  "incompatibleCon": [
+    "multishot"
+  ],
+  "esTesoro": false,
+  "esMaldicion": false
+}

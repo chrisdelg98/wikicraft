@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schemas/enchantment.schema.json",
+  "id": "binding_curse",
+  "tipo": "encantamiento",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "nivelMaximo": 1,
+  "categoria": "maldicion",
+  "aplicableA": [
+    "casco",
+    "pechera",
+    "pantalones",
+    "botas",
+    "elitros"
+  ],
+  "incompatibleCon": [],
+  "esTesoro": true,
+  "esMaldicion": true
+}

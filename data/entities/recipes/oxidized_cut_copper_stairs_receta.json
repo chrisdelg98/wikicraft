@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "oxidized_cut_copper_stairs_receta",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "oxidized_cut_copper_stairs",
+    "cantidad": 4
+  },
+  "conForma": true,
+  "patron": [
+    "A",
+    "AA",
+    "AAA"
+  ],
+  "clave": {
+    "A": "oxidized_cut_copper"
+  },
+  "estacion": "mesa_de_trabajo"
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schemas/mob.schema.json",
+  "id": "enderman",
+  "tipo": "mob",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "categoria": "hostil",
+  "botin": [
+    {
+      "item": "ender_pearl",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 1
+    }
+  ]
+}

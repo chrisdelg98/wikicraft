@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "jack_o_lantern_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "jack_o_lantern",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "A",
+    "B"
+  ],
+  "clave": {
+    "A": "carved_pumpkin",
+    "B": "torch"
+  },
+  "estacion": "inventario"
+}

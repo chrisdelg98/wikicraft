@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "bow_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "bow",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    " AB",
+    "A B",
+    " AB"
+  ],
+  "clave": {
+    "A": "stick",
+    "B": "string"
+  },
+  "estacion": "mesa_de_trabajo"
+}

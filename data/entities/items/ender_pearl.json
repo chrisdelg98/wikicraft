@@ -1,0 +1,11 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "ender_pearl",
+  "tipo": "item",
+  "etapa": "diamante",
+  "relevancia": "normal",
+  "categorias": [
+    "material"
+  ],
+  "pila": 16
+}

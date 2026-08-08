@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schemas/enchantment.schema.json",
+  "id": "luck_of_the_sea",
+  "tipo": "encantamiento",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "nivelMaximo": 3,
+  "categoria": "recoleccion",
+  "aplicableA": [
+    "cana"
+  ],
+  "incompatibleCon": [],
+  "esTesoro": false,
+  "esMaldicion": false
+}

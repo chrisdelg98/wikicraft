@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "magenta_dye_receta_4",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "magenta_dye",
+    "cantidad": 2
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "lilac",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

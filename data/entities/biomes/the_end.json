@@ -1,0 +1,8 @@
+{
+  "$schema": "../../schemas/biome.schema.json",
+  "id": "the_end",
+  "tipo": "bioma",
+  "etapa": "end",
+  "relevancia": "normal",
+  "dimension": "end"
+}

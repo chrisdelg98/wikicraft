@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "mangrove_pressure_plate_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "mangrove_pressure_plate",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AA"
+  ],
+  "clave": {
+    "A": "mangrove_planks"
+  },
+  "estacion": "inventario"
+}

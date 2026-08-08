@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "redstone_lamp_receta",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "redstone_lamp",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    " A",
+    "ABA",
+    " A"
+  ],
+  "clave": {
+    "A": "redstone",
+    "B": "glowstone"
+  },
+  "estacion": "mesa_de_trabajo"
+}

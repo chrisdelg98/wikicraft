@@ -1,0 +1,31 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "suspicious_stew_receta_14",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "suspicious_stew",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "bowl",
+      "cantidad": 1
+    },
+    {
+      "item": "brown_mushroom",
+      "cantidad": 1
+    },
+    {
+      "item": "red_mushroom",
+      "cantidad": 1
+    },
+    {
+      "item": "wither_rose",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

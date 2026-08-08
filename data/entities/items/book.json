@@ -3,8 +3,16 @@
   "id": "book",
   "tipo": "item",
   "etapa": "inicio",
-  "categorias": ["material", "utilidad"],
+  "categorias": [
+    "material",
+    "utilidad"
+  ],
   "pila": 64,
   "renovable": true,
-  "etiquetas": ["libro", "papel", "cuero"]
+  "etiquetas": [
+    "libro",
+    "papel",
+    "cuero"
+  ],
+  "relevancia": "normal"
 }

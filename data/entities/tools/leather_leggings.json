@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "leather_leggings",
+  "tipo": "armadura",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "categoria": "pantalones",
+  "material": "cuero",
+  "durabilidad": 75,
+  "reparadoCon": [
+    "leather"
+  ]
+}

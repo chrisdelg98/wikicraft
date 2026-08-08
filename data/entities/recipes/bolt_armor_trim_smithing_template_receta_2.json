@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "bolt_armor_trim_smithing_template_receta_2",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "bolt_armor_trim_smithing_template",
+    "cantidad": 2
+  },
+  "conForma": true,
+  "patron": [
+    "ABA",
+    "ACA",
+    "AAA"
+  ],
+  "clave": {
+    "A": "diamond",
+    "B": "bolt_armor_trim_smithing_template",
+    "C": "copper_block"
+  },
+  "estacion": "mesa_de_trabajo"
+}

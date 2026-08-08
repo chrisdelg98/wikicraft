@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schemas/enchantment.schema.json",
+  "id": "power",
+  "tipo": "encantamiento",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "nivelMaximo": 5,
+  "categoria": "dano",
+  "aplicableA": [
+    "arco"
+  ],
+  "incompatibleCon": [],
+  "esTesoro": false,
+  "esMaldicion": false
+}

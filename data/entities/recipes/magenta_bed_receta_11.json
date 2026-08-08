@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "magenta_bed_receta_11",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "magenta_bed",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "BBB"
+  ],
+  "clave": {
+    "A": "magenta_wool",
+    "B": "spruce_planks"
+  },
+  "estacion": "mesa_de_trabajo"
+}

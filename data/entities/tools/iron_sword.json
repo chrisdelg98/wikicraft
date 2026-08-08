@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "iron_sword",
+  "tipo": "herramienta",
+  "etapa": "hierro",
+  "relevancia": "alta",
+  "categoria": "espada",
+  "material": "hierro",
+  "durabilidad": 250,
+  "reparadoCon": [
+    "iron_ingot"
+  ]
+}

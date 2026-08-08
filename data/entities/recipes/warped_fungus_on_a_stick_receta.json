@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "warped_fungus_on_a_stick_receta",
+  "tipo": "receta",
+  "etapa": "nether",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "warped_fungus_on_a_stick",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "A",
+    " B"
+  ],
+  "clave": {
+    "A": "fishing_rod",
+    "B": "warped_fungus"
+  },
+  "estacion": "inventario"
+}

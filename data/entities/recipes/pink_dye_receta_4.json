@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "pink_dye_receta_4",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "pink_dye",
+    "cantidad": 2
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "red_dye",
+      "cantidad": 1
+    },
+    {
+      "item": "white_dye",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

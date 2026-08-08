@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "netherite_chestplate",
+  "tipo": "armadura",
+  "etapa": "nether",
+  "relevancia": "alta",
+  "categoria": "pechera",
+  "material": "netherita",
+  "durabilidad": 592,
+  "reparadoCon": [
+    "netherite_ingot"
+  ]
+}

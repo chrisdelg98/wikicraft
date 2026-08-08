@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "end_stone_bricks_receta",
+  "tipo": "receta",
+  "etapa": "end",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "end_stone_bricks",
+    "cantidad": 4
+  },
+  "conForma": true,
+  "patron": [
+    "AA",
+    "AA"
+  ],
+  "clave": {
+    "A": "end_stone"
+  },
+  "estacion": "inventario"
+}

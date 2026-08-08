@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "chiseled_bookshelf_receta_12",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "chiseled_bookshelf",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "BBB",
+    "AAA"
+  ],
+  "clave": {
+    "A": "oak_planks",
+    "B": "oak_slab"
+  },
+  "estacion": "mesa_de_trabajo"
+}

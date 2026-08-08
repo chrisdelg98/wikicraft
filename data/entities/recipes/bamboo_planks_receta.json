@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "bamboo_planks_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "bamboo_planks",
+    "cantidad": 2
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "bamboo_block",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

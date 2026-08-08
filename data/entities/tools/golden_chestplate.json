@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "golden_chestplate",
+  "tipo": "armadura",
+  "etapa": "hierro",
+  "relevancia": "alta",
+  "categoria": "pechera",
+  "material": "oro",
+  "durabilidad": 112,
+  "reparadoCon": [
+    "gold_ingot"
+  ]
+}

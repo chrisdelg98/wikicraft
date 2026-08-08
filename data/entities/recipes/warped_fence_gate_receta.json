@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "warped_fence_gate_receta",
+  "tipo": "receta",
+  "etapa": "nether",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "warped_fence_gate",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "ABA",
+    "ABA"
+  ],
+  "clave": {
+    "A": "stick",
+    "B": "warped_planks"
+  },
+  "estacion": "mesa_de_trabajo"
+}

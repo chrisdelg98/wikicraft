@@ -1,0 +1,11 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "enchanted_golden_apple",
+  "tipo": "item",
+  "etapa": "diamante",
+  "relevancia": "normal",
+  "categorias": [
+    "comida"
+  ],
+  "pila": 64
+}

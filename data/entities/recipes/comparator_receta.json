@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "comparator_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "comparator",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    " A",
+    "ABA",
+    "CCC"
+  ],
+  "clave": {
+    "A": "redstone_torch",
+    "B": "quartz",
+    "C": "stone"
+  },
+  "estacion": "mesa_de_trabajo"
+}

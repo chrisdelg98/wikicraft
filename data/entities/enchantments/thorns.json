@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schemas/enchantment.schema.json",
+  "id": "thorns",
+  "tipo": "encantamiento",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "nivelMaximo": 3,
+  "categoria": "proteccion",
+  "aplicableA": [
+    "casco",
+    "pechera",
+    "pantalones",
+    "botas"
+  ],
+  "incompatibleCon": [],
+  "esTesoro": false,
+  "esMaldicion": false
+}

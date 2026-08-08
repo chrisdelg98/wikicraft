@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "chiseled_polished_blackstone_receta",
+  "tipo": "receta",
+  "etapa": "nether",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "chiseled_polished_blackstone",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "A",
+    "A"
+  ],
+  "clave": {
+    "A": "polished_blackstone_slab"
+  },
+  "estacion": "inventario"
+}

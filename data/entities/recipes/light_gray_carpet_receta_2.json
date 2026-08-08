@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "light_gray_carpet_receta_2",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "light_gray_carpet",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "light_gray_dye",
+      "cantidad": 1
+    },
+    {
+      "item": "black_carpet",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

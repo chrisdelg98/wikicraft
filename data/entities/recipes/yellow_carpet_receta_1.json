@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "yellow_carpet_receta_1",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "yellow_carpet",
+    "cantidad": 3
+  },
+  "conForma": true,
+  "patron": [
+    "AA"
+  ],
+  "clave": {
+    "A": "yellow_wool"
+  },
+  "estacion": "inventario"
+}

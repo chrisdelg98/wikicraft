@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "blast_furnace_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "blast_furnace",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "ABA",
+    "CCC"
+  ],
+  "clave": {
+    "A": "iron_ingot",
+    "B": "furnace",
+    "C": "smooth_stone"
+  },
+  "estacion": "mesa_de_trabajo"
+}

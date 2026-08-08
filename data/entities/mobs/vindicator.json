@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schemas/mob.schema.json",
+  "id": "vindicator",
+  "tipo": "mob",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "categoria": "hostil",
+  "botin": [
+    {
+      "item": "emerald",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 1,
+      "soloAlMorirPorJugador": true
+    }
+  ]
+}

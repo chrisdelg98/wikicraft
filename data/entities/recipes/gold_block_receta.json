@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "gold_block_receta",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "gold_block",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "clave": {
+    "A": "gold_ingot"
+  },
+  "estacion": "mesa_de_trabajo"
+}

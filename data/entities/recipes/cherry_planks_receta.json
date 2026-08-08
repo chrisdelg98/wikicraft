@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "cherry_planks_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "cherry_planks",
+    "cantidad": 4
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "cherry_log",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "stone_sword_receta_2",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "stone_sword",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "A",
+    "A",
+    "B"
+  ],
+  "clave": {
+    "A": "blackstone",
+    "B": "stick"
+  },
+  "estacion": "mesa_de_trabajo"
+}

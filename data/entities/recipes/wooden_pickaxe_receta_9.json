@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "wooden_pickaxe_receta_9",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "wooden_pickaxe",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    " B",
+    " B"
+  ],
+  "clave": {
+    "A": "jungle_planks",
+    "B": "stick"
+  },
+  "estacion": "mesa_de_trabajo"
+}

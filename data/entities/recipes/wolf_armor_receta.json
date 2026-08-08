@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "wolf_armor_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "wolf_armor",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "A",
+    "AAA",
+    "A A"
+  ],
+  "clave": {
+    "A": "armadillo_scute"
+  },
+  "estacion": "mesa_de_trabajo"
+}

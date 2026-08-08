@@ -243,22 +243,40 @@ export const normalizar = (texto) =>
     .replace(/[̀-ͯ]/g, '')
 
 /**
- * Indice que se envia al navegador. Solo lleva lo imprescindible para buscar y
- * pintar un resultado: cada campo de mas se paga en tiempo de carga.
+ * Indice que se envia al navegador.
+ *
+ * Se queda fuera todo lo marcado como relevancia baja: las variantes de color y
+ * de madera, y las recetas. No es solo por peso; es que mejora los resultados.
+ * Buscar "puerta" devolviendo doce maderas casi identicas es peor que devolver
+ * la puerta base, cuya ficha lista sus variantes. Esas paginas siguen
+ * existiendo y siguen siendo accesibles desde su ficha base y desde Google.
+ *
+ * El formato es corto a proposito: la URL se reconstruye en el navegador a
+ * partir del modulo y el slug en vez de repetir el prefijo en cada entrada.
  */
-export const indiceBusqueda = (idioma) =>
-  entidades.map(({ entidad, modulo }) => {
-    const texto = t(idioma, entidad.id)
-    return {
-      i: entidad.id,
-      n: texto.nombre,
-      m: modulo,
-      e: entidad.etapa,
-      u: rutaDe(idioma, entidad.id),
-      // Terminos por los que se puede encontrar, ya normalizados para no tener
-      // que hacerlo en cada pulsacion de tecla.
-      b: [...new Set([texto.nombre, entidad.id, ...(entidad.etiquetas ?? [])])]
+export const indiceBusqueda = (idioma) => ({
+  rutas: Object.fromEntries(modulos.map((m) => [m, rutaModulo(idioma, m)])),
+  nombres: Object.fromEntries(modulos.map((m) => [m, ui(idioma, `nav.${m}`)])),
+  idioma,
+  entradas: entidades
+    .filter(({ entidad }) => entidad.relevancia !== 'baja')
+    .map(({ entidad, modulo }) => {
+      const texto = t(idioma, entidad.id)
+      const nombreNormalizado = normalizar(texto.nombre)
+
+      // Terminos extra por los que tambien se puede encontrar. Se omite lo que
+      // ya esta en el nombre: repetirlo solo engorda la descarga.
+      const extra = [...new Set([entidad.id, ...(entidad.etiquetas ?? [])])]
         .map(normalizar)
+        .filter((termino) => termino && !nombreNormalizado.includes(termino))
         .join(' ')
-    }
-  })
+
+      return {
+        n: texto.nombre,
+        s: texto.slug,
+        m: modulo,
+        e: entidad.etapa,
+        ...(extra ? { b: extra } : {})
+      }
+    })
+})

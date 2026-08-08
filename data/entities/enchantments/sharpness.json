@@ -5,10 +5,26 @@
   "etapa": "hierro",
   "nivelMaximo": 5,
   "categoria": "dano",
-  "aplicableA": ["espada", "hacha"],
-  "incompatibleCon": ["smite"],
+  "aplicableA": [
+    "espada",
+    "hacha"
+  ],
+  "incompatibleCon": [
+    "bane_of_arthropods",
+    "breach",
+    "density",
+    "impaling",
+    "smite"
+  ],
   "esTesoro": false,
   "esMaldicion": false,
-  "obtenidoDe": ["librarian"],
-  "etiquetas": ["filo", "sharpness", "dano"]
+  "obtenidoDe": [
+    "librarian"
+  ],
+  "etiquetas": [
+    "filo",
+    "sharpness",
+    "dano"
+  ],
+  "relevancia": "alta"
 }

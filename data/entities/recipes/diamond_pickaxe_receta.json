@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "diamond_pickaxe_receta",
+  "tipo": "receta",
+  "etapa": "diamante",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "diamond_pickaxe",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    " B",
+    " B"
+  ],
+  "clave": {
+    "A": "diamond",
+    "B": "stick"
+  },
+  "estacion": "mesa_de_trabajo"
+}

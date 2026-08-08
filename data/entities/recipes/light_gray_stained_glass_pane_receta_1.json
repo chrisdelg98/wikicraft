@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "light_gray_stained_glass_pane_receta_1",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "light_gray_stained_glass_pane",
+    "cantidad": 16
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "AAA"
+  ],
+  "clave": {
+    "A": "light_gray_stained_glass"
+  },
+  "estacion": "mesa_de_trabajo"
+}

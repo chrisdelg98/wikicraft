@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "beacon_receta",
+  "tipo": "receta",
+  "etapa": "diamante",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "beacon",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "ABA",
+    "CCC"
+  ],
+  "clave": {
+    "A": "glass",
+    "B": "nether_star",
+    "C": "obsidian"
+  },
+  "estacion": "mesa_de_trabajo"
+}

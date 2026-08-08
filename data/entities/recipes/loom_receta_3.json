@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "loom_receta_3",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "loom",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AA",
+    "BB"
+  ],
+  "clave": {
+    "A": "string",
+    "B": "bamboo_planks"
+  },
+  "estacion": "inventario"
+}

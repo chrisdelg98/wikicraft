@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "campfire_receta_13",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "campfire",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    " A",
+    "ABA",
+    "CCC"
+  ],
+  "clave": {
+    "A": "stick",
+    "B": "coal",
+    "C": "stripped_cherry_wood"
+  },
+  "estacion": "mesa_de_trabajo"
+}

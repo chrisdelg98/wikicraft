@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "cherry_boat_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "cherry_boat",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "A A",
+    "AAA"
+  ],
+  "clave": {
+    "A": "cherry_planks"
+  },
+  "estacion": "mesa_de_trabajo"
+}

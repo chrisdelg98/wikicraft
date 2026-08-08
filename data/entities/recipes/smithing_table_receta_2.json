@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "smithing_table_receta_2",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "smithing_table",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AA",
+    "BB",
+    "BB"
+  ],
+  "clave": {
+    "A": "iron_ingot",
+    "B": "cherry_planks"
+  },
+  "estacion": "mesa_de_trabajo"
+}

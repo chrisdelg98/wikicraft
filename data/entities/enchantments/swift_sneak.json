@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schemas/enchantment.schema.json",
+  "id": "swift_sneak",
+  "tipo": "encantamiento",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "nivelMaximo": 3,
+  "categoria": "proteccion",
+  "aplicableA": [
+    "pantalones"
+  ],
+  "incompatibleCon": [],
+  "esTesoro": true,
+  "esMaldicion": false
+}

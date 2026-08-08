@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "stone_hoe",
+  "tipo": "herramienta",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "categoria": "azada",
+  "material": "piedra",
+  "durabilidad": 131,
+  "reparadoCon": [
+    "cobbled_deepslate",
+    "cobblestone",
+    "blackstone"
+  ]
+}

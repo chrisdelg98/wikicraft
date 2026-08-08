@@ -5,6 +5,14 @@
   "etapa": "inicio",
   "dimension": "superficie",
   "peligro": "facil",
-  "mobs": ["zombie"],
-  "etiquetas": ["llanura", "praderas", "aldeas", "seguro"]
+  "mobs": [
+    "zombie"
+  ],
+  "etiquetas": [
+    "llanura",
+    "praderas",
+    "aldeas",
+    "seguro"
+  ],
+  "relevancia": "normal"
 }

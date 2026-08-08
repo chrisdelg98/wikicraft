@@ -1,32 +1,5304 @@
 {
-  "diamond": {
-    "nombre": "Diamond",
-    "slug": "diamond",
-    "descripcion": "An uncommon gem found in the deep layers of the world. It is the material behind high-end gear before netherite."
+  "acacia_boat": {
+    "nombre": "Acacia Boat",
+    "slug": "acacia-boat"
   },
-  "stick": {
-    "nombre": "Stick",
-    "slug": "stick",
-    "descripcion": "A basic material that forms the handle of nearly every tool and weapon. Crafted from planks and effectively unlimited."
+  "acacia_button": {
+    "nombre": "Acacia Button",
+    "slug": "acacia-button"
   },
-  "emerald": {
-    "nombre": "Emerald",
-    "slug": "emerald",
-    "descripcion": "The currency of villager trading. It is not used as gear material, but it unlocks everything villagers sell."
+  "acacia_chest_boat": {
+    "nombre": "Acacia Boat with Chest",
+    "slug": "acacia-boat-with-chest"
+  },
+  "acacia_door": {
+    "nombre": "Acacia Door",
+    "slug": "acacia-door"
+  },
+  "acacia_fence": {
+    "nombre": "Acacia Fence",
+    "slug": "acacia-fence"
+  },
+  "acacia_fence_gate": {
+    "nombre": "Acacia Fence Gate",
+    "slug": "acacia-fence-gate"
+  },
+  "acacia_hanging_sign": {
+    "nombre": "Acacia Hanging Sign",
+    "slug": "acacia-hanging-sign"
+  },
+  "acacia_leaves": {
+    "nombre": "Acacia Leaves",
+    "slug": "acacia-leaves"
+  },
+  "acacia_log": {
+    "nombre": "Acacia Log",
+    "slug": "acacia-log"
+  },
+  "acacia_planks": {
+    "nombre": "Acacia Planks",
+    "slug": "acacia-planks"
+  },
+  "acacia_pressure_plate": {
+    "nombre": "Acacia Pressure Plate",
+    "slug": "acacia-pressure-plate"
+  },
+  "acacia_sapling": {
+    "nombre": "Acacia Sapling",
+    "slug": "acacia-sapling"
+  },
+  "acacia_sign": {
+    "nombre": "Acacia Sign",
+    "slug": "acacia-sign"
+  },
+  "acacia_slab": {
+    "nombre": "Acacia Slab",
+    "slug": "acacia-slab"
+  },
+  "acacia_stairs": {
+    "nombre": "Acacia Stairs",
+    "slug": "acacia-stairs"
+  },
+  "acacia_trapdoor": {
+    "nombre": "Acacia Trapdoor",
+    "slug": "acacia-trapdoor"
+  },
+  "acacia_wood": {
+    "nombre": "Acacia Wood",
+    "slug": "acacia-wood"
+  },
+  "activator_rail": {
+    "nombre": "Activator Rail",
+    "slug": "activator-rail"
+  },
+  "air": {
+    "nombre": "Air",
+    "slug": "air"
+  },
+  "allay_spawn_egg": {
+    "nombre": "Allay Spawn Egg",
+    "slug": "allay-spawn-egg"
+  },
+  "allium": {
+    "nombre": "Allium",
+    "slug": "allium"
+  },
+  "amethyst_block": {
+    "nombre": "Block of Amethyst",
+    "slug": "block-of-amethyst"
+  },
+  "amethyst_cluster": {
+    "nombre": "Amethyst Cluster",
+    "slug": "amethyst-cluster"
+  },
+  "amethyst_shard": {
+    "nombre": "Amethyst Shard",
+    "slug": "amethyst-shard"
+  },
+  "ancient_debris": {
+    "nombre": "Ancient Debris",
+    "slug": "ancient-debris"
+  },
+  "andesite": {
+    "nombre": "Andesite",
+    "slug": "andesite"
+  },
+  "andesite_slab": {
+    "nombre": "Andesite Slab",
+    "slug": "andesite-slab"
+  },
+  "andesite_stairs": {
+    "nombre": "Andesite Stairs",
+    "slug": "andesite-stairs"
+  },
+  "andesite_wall": {
+    "nombre": "Andesite Wall",
+    "slug": "andesite-wall"
+  },
+  "angler_pottery_sherd": {
+    "nombre": "Angler Pottery Sherd",
+    "slug": "angler-pottery-sherd"
+  },
+  "anvil": {
+    "nombre": "Anvil",
+    "slug": "anvil"
+  },
+  "apple": {
+    "nombre": "Apple",
+    "slug": "apple"
+  },
+  "archer_pottery_sherd": {
+    "nombre": "Archer Pottery Sherd",
+    "slug": "archer-pottery-sherd"
+  },
+  "armadillo_scute": {
+    "nombre": "Armadillo Scute",
+    "slug": "armadillo-scute"
+  },
+  "armadillo_spawn_egg": {
+    "nombre": "Armadillo Spawn Egg",
+    "slug": "armadillo-spawn-egg"
+  },
+  "armor_stand": {
+    "nombre": "Armor Stand",
+    "slug": "armor-stand"
+  },
+  "arms_up_pottery_sherd": {
+    "nombre": "Arms Up Pottery Sherd",
+    "slug": "arms-up-pottery-sherd"
+  },
+  "arrow": {
+    "nombre": "Arrow",
+    "slug": "arrow"
+  },
+  "axolotl_bucket": {
+    "nombre": "Bucket of Axolotl",
+    "slug": "bucket-of-axolotl"
+  },
+  "axolotl_spawn_egg": {
+    "nombre": "Axolotl Spawn Egg",
+    "slug": "axolotl-spawn-egg"
+  },
+  "azalea": {
+    "nombre": "Azalea",
+    "slug": "azalea"
+  },
+  "azalea_leaves": {
+    "nombre": "Azalea Leaves",
+    "slug": "azalea-leaves"
+  },
+  "azure_bluet": {
+    "nombre": "Azure Bluet",
+    "slug": "azure-bluet"
+  },
+  "baked_potato": {
+    "nombre": "Baked Potato",
+    "slug": "baked-potato"
+  },
+  "bamboo": {
+    "nombre": "Bamboo",
+    "slug": "bamboo"
+  },
+  "bamboo_block": {
+    "nombre": "Block of Bamboo",
+    "slug": "block-of-bamboo"
+  },
+  "bamboo_button": {
+    "nombre": "Bamboo Button",
+    "slug": "bamboo-button"
+  },
+  "bamboo_chest_raft": {
+    "nombre": "Bamboo Raft with Chest",
+    "slug": "bamboo-raft-with-chest"
+  },
+  "bamboo_door": {
+    "nombre": "Bamboo Door",
+    "slug": "bamboo-door"
+  },
+  "bamboo_fence": {
+    "nombre": "Bamboo Fence",
+    "slug": "bamboo-fence"
+  },
+  "bamboo_fence_gate": {
+    "nombre": "Bamboo Fence Gate",
+    "slug": "bamboo-fence-gate"
+  },
+  "bamboo_hanging_sign": {
+    "nombre": "Bamboo Hanging Sign",
+    "slug": "bamboo-hanging-sign"
+  },
+  "bamboo_mosaic": {
+    "nombre": "Bamboo Mosaic",
+    "slug": "bamboo-mosaic"
+  },
+  "bamboo_mosaic_slab": {
+    "nombre": "Bamboo Mosaic Slab",
+    "slug": "bamboo-mosaic-slab"
+  },
+  "bamboo_mosaic_stairs": {
+    "nombre": "Bamboo Mosaic Stairs",
+    "slug": "bamboo-mosaic-stairs"
+  },
+  "bamboo_planks": {
+    "nombre": "Bamboo Planks",
+    "slug": "bamboo-planks"
+  },
+  "bamboo_pressure_plate": {
+    "nombre": "Bamboo Pressure Plate",
+    "slug": "bamboo-pressure-plate"
+  },
+  "bamboo_raft": {
+    "nombre": "Bamboo Raft",
+    "slug": "bamboo-raft"
+  },
+  "bamboo_sign": {
+    "nombre": "Bamboo Sign",
+    "slug": "bamboo-sign"
+  },
+  "bamboo_slab": {
+    "nombre": "Bamboo Slab",
+    "slug": "bamboo-slab"
+  },
+  "bamboo_stairs": {
+    "nombre": "Bamboo Stairs",
+    "slug": "bamboo-stairs"
+  },
+  "bamboo_trapdoor": {
+    "nombre": "Bamboo Trapdoor",
+    "slug": "bamboo-trapdoor"
+  },
+  "barrel": {
+    "nombre": "Barrel",
+    "slug": "barrel"
+  },
+  "barrier": {
+    "nombre": "Barrier",
+    "slug": "barrier"
+  },
+  "basalt": {
+    "nombre": "Basalt",
+    "slug": "basalt"
+  },
+  "bat_spawn_egg": {
+    "nombre": "Bat Spawn Egg",
+    "slug": "bat-spawn-egg"
+  },
+  "beacon": {
+    "nombre": "Beacon",
+    "slug": "beacon"
+  },
+  "bedrock": {
+    "nombre": "Bedrock",
+    "slug": "bedrock"
+  },
+  "bee_nest": {
+    "nombre": "Bee Nest",
+    "slug": "bee-nest"
+  },
+  "bee_spawn_egg": {
+    "nombre": "Bee Spawn Egg",
+    "slug": "bee-spawn-egg"
+  },
+  "beef": {
+    "nombre": "Raw Beef",
+    "slug": "raw-beef"
+  },
+  "beehive": {
+    "nombre": "Beehive",
+    "slug": "beehive"
+  },
+  "beetroot": {
+    "nombre": "Beetroot",
+    "slug": "beetroot"
+  },
+  "beetroot_seeds": {
+    "nombre": "Beetroot Seeds",
+    "slug": "beetroot-seeds"
+  },
+  "beetroot_soup": {
+    "nombre": "Beetroot Soup",
+    "slug": "beetroot-soup"
+  },
+  "bell": {
+    "nombre": "Bell",
+    "slug": "bell"
+  },
+  "big_dripleaf": {
+    "nombre": "Big Dripleaf",
+    "slug": "big-dripleaf"
+  },
+  "birch_boat": {
+    "nombre": "Birch Boat",
+    "slug": "birch-boat"
+  },
+  "birch_button": {
+    "nombre": "Birch Button",
+    "slug": "birch-button"
+  },
+  "birch_chest_boat": {
+    "nombre": "Birch Boat with Chest",
+    "slug": "birch-boat-with-chest"
+  },
+  "birch_door": {
+    "nombre": "Birch Door",
+    "slug": "birch-door"
+  },
+  "birch_fence": {
+    "nombre": "Birch Fence",
+    "slug": "birch-fence"
+  },
+  "birch_fence_gate": {
+    "nombre": "Birch Fence Gate",
+    "slug": "birch-fence-gate"
+  },
+  "birch_hanging_sign": {
+    "nombre": "Birch Hanging Sign",
+    "slug": "birch-hanging-sign"
+  },
+  "birch_leaves": {
+    "nombre": "Birch Leaves",
+    "slug": "birch-leaves"
+  },
+  "birch_log": {
+    "nombre": "Birch Log",
+    "slug": "birch-log"
+  },
+  "birch_planks": {
+    "nombre": "Birch Planks",
+    "slug": "birch-planks"
+  },
+  "birch_pressure_plate": {
+    "nombre": "Birch Pressure Plate",
+    "slug": "birch-pressure-plate"
+  },
+  "birch_sapling": {
+    "nombre": "Birch Sapling",
+    "slug": "birch-sapling"
+  },
+  "birch_sign": {
+    "nombre": "Birch Sign",
+    "slug": "birch-sign"
+  },
+  "birch_slab": {
+    "nombre": "Birch Slab",
+    "slug": "birch-slab"
+  },
+  "birch_stairs": {
+    "nombre": "Birch Stairs",
+    "slug": "birch-stairs"
+  },
+  "birch_trapdoor": {
+    "nombre": "Birch Trapdoor",
+    "slug": "birch-trapdoor"
+  },
+  "birch_wood": {
+    "nombre": "Birch Wood",
+    "slug": "birch-wood"
+  },
+  "black_banner": {
+    "nombre": "Black Banner",
+    "slug": "black-banner"
+  },
+  "black_bed": {
+    "nombre": "Black Bed",
+    "slug": "black-bed"
+  },
+  "black_bundle": {
+    "nombre": "Black Bundle",
+    "slug": "black-bundle"
+  },
+  "black_candle": {
+    "nombre": "Black Candle",
+    "slug": "black-candle"
+  },
+  "black_carpet": {
+    "nombre": "Black Carpet",
+    "slug": "black-carpet"
+  },
+  "black_concrete": {
+    "nombre": "Black Concrete",
+    "slug": "black-concrete"
+  },
+  "black_concrete_powder": {
+    "nombre": "Black Concrete Powder",
+    "slug": "black-concrete-powder"
+  },
+  "black_dye": {
+    "nombre": "Black Dye",
+    "slug": "black-dye"
+  },
+  "black_glazed_terracotta": {
+    "nombre": "Black Glazed Terracotta",
+    "slug": "black-glazed-terracotta"
+  },
+  "black_shulker_box": {
+    "nombre": "Black Shulker Box",
+    "slug": "black-shulker-box"
+  },
+  "black_stained_glass": {
+    "nombre": "Black Stained Glass",
+    "slug": "black-stained-glass"
+  },
+  "black_stained_glass_pane": {
+    "nombre": "Black Stained Glass Pane",
+    "slug": "black-stained-glass-pane"
+  },
+  "black_terracotta": {
+    "nombre": "Black Terracotta",
+    "slug": "black-terracotta"
+  },
+  "black_wool": {
+    "nombre": "Black Wool",
+    "slug": "black-wool"
+  },
+  "blackstone": {
+    "nombre": "Blackstone",
+    "slug": "blackstone"
+  },
+  "blackstone_slab": {
+    "nombre": "Blackstone Slab",
+    "slug": "blackstone-slab"
+  },
+  "blackstone_stairs": {
+    "nombre": "Blackstone Stairs",
+    "slug": "blackstone-stairs"
+  },
+  "blackstone_wall": {
+    "nombre": "Blackstone Wall",
+    "slug": "blackstone-wall"
+  },
+  "blade_pottery_sherd": {
+    "nombre": "Blade Pottery Sherd",
+    "slug": "blade-pottery-sherd"
+  },
+  "blast_furnace": {
+    "nombre": "Blast Furnace",
+    "slug": "blast-furnace"
+  },
+  "blaze_powder": {
+    "nombre": "Blaze Powder",
+    "slug": "blaze-powder"
+  },
+  "blaze_rod": {
+    "nombre": "Blaze Rod",
+    "slug": "blaze-rod"
+  },
+  "blaze_spawn_egg": {
+    "nombre": "Blaze Spawn Egg",
+    "slug": "blaze-spawn-egg"
+  },
+  "blue_banner": {
+    "nombre": "Blue Banner",
+    "slug": "blue-banner"
+  },
+  "blue_bed": {
+    "nombre": "Blue Bed",
+    "slug": "blue-bed"
+  },
+  "blue_bundle": {
+    "nombre": "Blue Bundle",
+    "slug": "blue-bundle"
+  },
+  "blue_candle": {
+    "nombre": "Blue Candle",
+    "slug": "blue-candle"
+  },
+  "blue_carpet": {
+    "nombre": "Blue Carpet",
+    "slug": "blue-carpet"
+  },
+  "blue_concrete": {
+    "nombre": "Blue Concrete",
+    "slug": "blue-concrete"
+  },
+  "blue_concrete_powder": {
+    "nombre": "Blue Concrete Powder",
+    "slug": "blue-concrete-powder"
+  },
+  "blue_dye": {
+    "nombre": "Blue Dye",
+    "slug": "blue-dye"
+  },
+  "blue_glazed_terracotta": {
+    "nombre": "Blue Glazed Terracotta",
+    "slug": "blue-glazed-terracotta"
+  },
+  "blue_ice": {
+    "nombre": "Blue Ice",
+    "slug": "blue-ice"
+  },
+  "blue_orchid": {
+    "nombre": "Blue Orchid",
+    "slug": "blue-orchid"
+  },
+  "blue_shulker_box": {
+    "nombre": "Blue Shulker Box",
+    "slug": "blue-shulker-box"
+  },
+  "blue_stained_glass": {
+    "nombre": "Blue Stained Glass",
+    "slug": "blue-stained-glass"
+  },
+  "blue_stained_glass_pane": {
+    "nombre": "Blue Stained Glass Pane",
+    "slug": "blue-stained-glass-pane"
+  },
+  "blue_terracotta": {
+    "nombre": "Blue Terracotta",
+    "slug": "blue-terracotta"
+  },
+  "blue_wool": {
+    "nombre": "Blue Wool",
+    "slug": "blue-wool"
+  },
+  "bogged_spawn_egg": {
+    "nombre": "Bogged Spawn Egg",
+    "slug": "bogged-spawn-egg"
+  },
+  "bolt_armor_trim_smithing_template": {
+    "nombre": "Bolt Armor Trim",
+    "slug": "bolt-armor-trim"
+  },
+  "bone": {
+    "nombre": "Bone",
+    "slug": "bone"
+  },
+  "bone_block": {
+    "nombre": "Bone Block",
+    "slug": "bone-block"
+  },
+  "bone_meal": {
+    "nombre": "Bone Meal",
+    "slug": "bone-meal"
   },
   "book": {
     "nombre": "Book",
     "slug": "book",
     "descripcion": "Crafted from paper and leather. A common ingredient in librarian trades and at the enchanting table."
   },
+  "bookshelf": {
+    "nombre": "Bookshelf",
+    "slug": "bookshelf"
+  },
+  "bordure_indented_banner_pattern": {
+    "nombre": "Bordure Indented Banner Pattern",
+    "slug": "bordure-indented-banner-pattern"
+  },
+  "bowl": {
+    "nombre": "Bowl",
+    "slug": "bowl"
+  },
+  "brain_coral": {
+    "nombre": "Brain Coral",
+    "slug": "brain-coral"
+  },
+  "brain_coral_block": {
+    "nombre": "Brain Coral Block",
+    "slug": "brain-coral-block"
+  },
+  "brain_coral_fan": {
+    "nombre": "Brain Coral Fan",
+    "slug": "brain-coral-fan"
+  },
+  "bread": {
+    "nombre": "Bread",
+    "slug": "bread"
+  },
+  "breeze_rod": {
+    "nombre": "Breeze Rod",
+    "slug": "breeze-rod"
+  },
+  "breeze_spawn_egg": {
+    "nombre": "Breeze Spawn Egg",
+    "slug": "breeze-spawn-egg"
+  },
+  "brewer_pottery_sherd": {
+    "nombre": "Brewer Pottery Sherd",
+    "slug": "brewer-pottery-sherd"
+  },
+  "brewing_stand": {
+    "nombre": "Brewing Stand",
+    "slug": "brewing-stand"
+  },
+  "brick": {
+    "nombre": "Brick",
+    "slug": "brick"
+  },
+  "brick_slab": {
+    "nombre": "Brick Slab",
+    "slug": "brick-slab"
+  },
+  "brick_stairs": {
+    "nombre": "Brick Stairs",
+    "slug": "brick-stairs"
+  },
+  "brick_wall": {
+    "nombre": "Brick Wall",
+    "slug": "brick-wall"
+  },
+  "bricks": {
+    "nombre": "Bricks",
+    "slug": "bricks"
+  },
+  "brown_banner": {
+    "nombre": "Brown Banner",
+    "slug": "brown-banner"
+  },
+  "brown_bed": {
+    "nombre": "Brown Bed",
+    "slug": "brown-bed"
+  },
+  "brown_bundle": {
+    "nombre": "Brown Bundle",
+    "slug": "brown-bundle"
+  },
+  "brown_candle": {
+    "nombre": "Brown Candle",
+    "slug": "brown-candle"
+  },
+  "brown_carpet": {
+    "nombre": "Brown Carpet",
+    "slug": "brown-carpet"
+  },
+  "brown_concrete": {
+    "nombre": "Brown Concrete",
+    "slug": "brown-concrete"
+  },
+  "brown_concrete_powder": {
+    "nombre": "Brown Concrete Powder",
+    "slug": "brown-concrete-powder"
+  },
+  "brown_dye": {
+    "nombre": "Brown Dye",
+    "slug": "brown-dye"
+  },
+  "brown_glazed_terracotta": {
+    "nombre": "Brown Glazed Terracotta",
+    "slug": "brown-glazed-terracotta"
+  },
+  "brown_mushroom": {
+    "nombre": "Brown Mushroom",
+    "slug": "brown-mushroom"
+  },
+  "brown_mushroom_block": {
+    "nombre": "Brown Mushroom Block",
+    "slug": "brown-mushroom-block"
+  },
+  "brown_shulker_box": {
+    "nombre": "Brown Shulker Box",
+    "slug": "brown-shulker-box"
+  },
+  "brown_stained_glass": {
+    "nombre": "Brown Stained Glass",
+    "slug": "brown-stained-glass"
+  },
+  "brown_stained_glass_pane": {
+    "nombre": "Brown Stained Glass Pane",
+    "slug": "brown-stained-glass-pane"
+  },
+  "brown_terracotta": {
+    "nombre": "Brown Terracotta",
+    "slug": "brown-terracotta"
+  },
+  "brown_wool": {
+    "nombre": "Brown Wool",
+    "slug": "brown-wool"
+  },
+  "brush": {
+    "nombre": "Brush",
+    "slug": "brush"
+  },
+  "bubble_coral": {
+    "nombre": "Bubble Coral",
+    "slug": "bubble-coral"
+  },
+  "bubble_coral_block": {
+    "nombre": "Bubble Coral Block",
+    "slug": "bubble-coral-block"
+  },
+  "bubble_coral_fan": {
+    "nombre": "Bubble Coral Fan",
+    "slug": "bubble-coral-fan"
+  },
+  "bucket": {
+    "nombre": "Bucket",
+    "slug": "bucket"
+  },
+  "budding_amethyst": {
+    "nombre": "Budding Amethyst",
+    "slug": "budding-amethyst"
+  },
+  "bundle": {
+    "nombre": "Bundle",
+    "slug": "bundle"
+  },
+  "burn_pottery_sherd": {
+    "nombre": "Burn Pottery Sherd",
+    "slug": "burn-pottery-sherd"
+  },
+  "cactus": {
+    "nombre": "Cactus",
+    "slug": "cactus"
+  },
+  "cake": {
+    "nombre": "Cake",
+    "slug": "cake"
+  },
+  "calcite": {
+    "nombre": "Calcite",
+    "slug": "calcite"
+  },
+  "calibrated_sculk_sensor": {
+    "nombre": "Calibrated Sculk Sensor",
+    "slug": "calibrated-sculk-sensor"
+  },
+  "camel_spawn_egg": {
+    "nombre": "Camel Spawn Egg",
+    "slug": "camel-spawn-egg"
+  },
+  "campfire": {
+    "nombre": "Campfire",
+    "slug": "campfire"
+  },
+  "candle": {
+    "nombre": "Candle",
+    "slug": "candle"
+  },
+  "carrot": {
+    "nombre": "Carrot",
+    "slug": "carrot"
+  },
+  "carrot_on_a_stick": {
+    "nombre": "Carrot on a Stick",
+    "slug": "carrot-on-a-stick"
+  },
+  "cartography_table": {
+    "nombre": "Cartography Table",
+    "slug": "cartography-table"
+  },
+  "carved_pumpkin": {
+    "nombre": "Carved Pumpkin",
+    "slug": "carved-pumpkin"
+  },
+  "cat_spawn_egg": {
+    "nombre": "Cat Spawn Egg",
+    "slug": "cat-spawn-egg"
+  },
+  "cauldron": {
+    "nombre": "Cauldron",
+    "slug": "cauldron"
+  },
+  "cave_spider_spawn_egg": {
+    "nombre": "Cave Spider Spawn Egg",
+    "slug": "cave-spider-spawn-egg"
+  },
+  "chain": {
+    "nombre": "Chain",
+    "slug": "chain"
+  },
+  "chain_command_block": {
+    "nombre": "Chain Command Block",
+    "slug": "chain-command-block"
+  },
+  "charcoal": {
+    "nombre": "Charcoal",
+    "slug": "charcoal"
+  },
+  "cherry_boat": {
+    "nombre": "Cherry Boat",
+    "slug": "cherry-boat"
+  },
+  "cherry_button": {
+    "nombre": "Cherry Button",
+    "slug": "cherry-button"
+  },
+  "cherry_chest_boat": {
+    "nombre": "Cherry Boat with Chest",
+    "slug": "cherry-boat-with-chest"
+  },
+  "cherry_door": {
+    "nombre": "Cherry Door",
+    "slug": "cherry-door"
+  },
+  "cherry_fence": {
+    "nombre": "Cherry Fence",
+    "slug": "cherry-fence"
+  },
+  "cherry_fence_gate": {
+    "nombre": "Cherry Fence Gate",
+    "slug": "cherry-fence-gate"
+  },
+  "cherry_hanging_sign": {
+    "nombre": "Cherry Hanging Sign",
+    "slug": "cherry-hanging-sign"
+  },
+  "cherry_leaves": {
+    "nombre": "Cherry Leaves",
+    "slug": "cherry-leaves"
+  },
+  "cherry_log": {
+    "nombre": "Cherry Log",
+    "slug": "cherry-log"
+  },
+  "cherry_planks": {
+    "nombre": "Cherry Planks",
+    "slug": "cherry-planks"
+  },
+  "cherry_pressure_plate": {
+    "nombre": "Cherry Pressure Plate",
+    "slug": "cherry-pressure-plate"
+  },
+  "cherry_sapling": {
+    "nombre": "Cherry Sapling",
+    "slug": "cherry-sapling"
+  },
+  "cherry_sign": {
+    "nombre": "Cherry Sign",
+    "slug": "cherry-sign"
+  },
+  "cherry_slab": {
+    "nombre": "Cherry Slab",
+    "slug": "cherry-slab"
+  },
+  "cherry_stairs": {
+    "nombre": "Cherry Stairs",
+    "slug": "cherry-stairs"
+  },
+  "cherry_trapdoor": {
+    "nombre": "Cherry Trapdoor",
+    "slug": "cherry-trapdoor"
+  },
+  "cherry_wood": {
+    "nombre": "Cherry Wood",
+    "slug": "cherry-wood"
+  },
+  "chest": {
+    "nombre": "Chest",
+    "slug": "chest"
+  },
+  "chest_minecart": {
+    "nombre": "Minecart with Chest",
+    "slug": "minecart-with-chest"
+  },
+  "chicken": {
+    "nombre": "Raw Chicken",
+    "slug": "raw-chicken"
+  },
+  "chicken_spawn_egg": {
+    "nombre": "Chicken Spawn Egg",
+    "slug": "chicken-spawn-egg"
+  },
+  "chipped_anvil": {
+    "nombre": "Chipped Anvil",
+    "slug": "chipped-anvil"
+  },
+  "chiseled_bookshelf": {
+    "nombre": "Chiseled Bookshelf",
+    "slug": "chiseled-bookshelf"
+  },
+  "chiseled_copper": {
+    "nombre": "Chiseled Copper",
+    "slug": "chiseled-copper"
+  },
+  "chiseled_deepslate": {
+    "nombre": "Chiseled Deepslate",
+    "slug": "chiseled-deepslate"
+  },
+  "chiseled_nether_bricks": {
+    "nombre": "Chiseled Nether Bricks",
+    "slug": "chiseled-nether-bricks"
+  },
+  "chiseled_polished_blackstone": {
+    "nombre": "Chiseled Polished Blackstone",
+    "slug": "chiseled-polished-blackstone"
+  },
+  "chiseled_quartz_block": {
+    "nombre": "Chiseled Quartz Block",
+    "slug": "chiseled-quartz-block"
+  },
+  "chiseled_red_sandstone": {
+    "nombre": "Chiseled Red Sandstone",
+    "slug": "chiseled-red-sandstone"
+  },
+  "chiseled_resin_bricks": {
+    "nombre": "Chiseled Resin Bricks",
+    "slug": "chiseled-resin-bricks"
+  },
+  "chiseled_sandstone": {
+    "nombre": "Chiseled Sandstone",
+    "slug": "chiseled-sandstone"
+  },
+  "chiseled_stone_bricks": {
+    "nombre": "Chiseled Stone Bricks",
+    "slug": "chiseled-stone-bricks"
+  },
+  "chiseled_tuff": {
+    "nombre": "Chiseled Tuff",
+    "slug": "chiseled-tuff"
+  },
+  "chiseled_tuff_bricks": {
+    "nombre": "Chiseled Tuff Bricks",
+    "slug": "chiseled-tuff-bricks"
+  },
+  "chorus_flower": {
+    "nombre": "Chorus Flower",
+    "slug": "chorus-flower"
+  },
+  "chorus_fruit": {
+    "nombre": "Chorus Fruit",
+    "slug": "chorus-fruit"
+  },
+  "chorus_plant": {
+    "nombre": "Chorus Plant",
+    "slug": "chorus-plant"
+  },
+  "clay": {
+    "nombre": "Clay",
+    "slug": "clay"
+  },
+  "clay_ball": {
+    "nombre": "Clay Ball",
+    "slug": "clay-ball"
+  },
+  "clock": {
+    "nombre": "Clock",
+    "slug": "clock"
+  },
+  "closed_eyeblossom": {
+    "nombre": "Closed Eyeblossom",
+    "slug": "closed-eyeblossom"
+  },
+  "coal": {
+    "nombre": "Coal",
+    "slug": "coal"
+  },
+  "coal_block": {
+    "nombre": "Block of Coal",
+    "slug": "block-of-coal"
+  },
+  "coal_ore": {
+    "nombre": "Coal Ore",
+    "slug": "coal-ore"
+  },
+  "coarse_dirt": {
+    "nombre": "Coarse Dirt",
+    "slug": "coarse-dirt"
+  },
+  "coast_armor_trim_smithing_template": {
+    "nombre": "Coast Armor Trim",
+    "slug": "coast-armor-trim"
+  },
+  "cobbled_deepslate": {
+    "nombre": "Cobbled Deepslate",
+    "slug": "cobbled-deepslate"
+  },
+  "cobbled_deepslate_slab": {
+    "nombre": "Cobbled Deepslate Slab",
+    "slug": "cobbled-deepslate-slab"
+  },
+  "cobbled_deepslate_stairs": {
+    "nombre": "Cobbled Deepslate Stairs",
+    "slug": "cobbled-deepslate-stairs"
+  },
+  "cobbled_deepslate_wall": {
+    "nombre": "Cobbled Deepslate Wall",
+    "slug": "cobbled-deepslate-wall"
+  },
+  "cobblestone": {
+    "nombre": "Cobblestone",
+    "slug": "cobblestone"
+  },
+  "cobblestone_slab": {
+    "nombre": "Cobblestone Slab",
+    "slug": "cobblestone-slab"
+  },
+  "cobblestone_stairs": {
+    "nombre": "Cobblestone Stairs",
+    "slug": "cobblestone-stairs"
+  },
+  "cobblestone_wall": {
+    "nombre": "Cobblestone Wall",
+    "slug": "cobblestone-wall"
+  },
+  "cobweb": {
+    "nombre": "Cobweb",
+    "slug": "cobweb"
+  },
+  "cocoa_beans": {
+    "nombre": "Cocoa Beans",
+    "slug": "cocoa-beans"
+  },
+  "cod": {
+    "nombre": "Raw Cod",
+    "slug": "raw-cod"
+  },
+  "cod_bucket": {
+    "nombre": "Bucket of Cod",
+    "slug": "bucket-of-cod"
+  },
+  "cod_spawn_egg": {
+    "nombre": "Cod Spawn Egg",
+    "slug": "cod-spawn-egg"
+  },
+  "command_block": {
+    "nombre": "Command Block",
+    "slug": "command-block"
+  },
+  "command_block_minecart": {
+    "nombre": "Minecart with Command Block",
+    "slug": "minecart-with-command-block"
+  },
+  "comparator": {
+    "nombre": "Redstone Comparator",
+    "slug": "redstone-comparator"
+  },
+  "compass": {
+    "nombre": "Compass",
+    "slug": "compass"
+  },
+  "composter": {
+    "nombre": "Composter",
+    "slug": "composter"
+  },
+  "conduit": {
+    "nombre": "Conduit",
+    "slug": "conduit"
+  },
+  "cooked_beef": {
+    "nombre": "Steak",
+    "slug": "steak"
+  },
+  "cooked_chicken": {
+    "nombre": "Cooked Chicken",
+    "slug": "cooked-chicken"
+  },
+  "cooked_cod": {
+    "nombre": "Cooked Cod",
+    "slug": "cooked-cod"
+  },
+  "cooked_mutton": {
+    "nombre": "Cooked Mutton",
+    "slug": "cooked-mutton"
+  },
+  "cooked_porkchop": {
+    "nombre": "Cooked Porkchop",
+    "slug": "cooked-porkchop"
+  },
+  "cooked_rabbit": {
+    "nombre": "Cooked Rabbit",
+    "slug": "cooked-rabbit"
+  },
+  "cooked_salmon": {
+    "nombre": "Cooked Salmon",
+    "slug": "cooked-salmon"
+  },
+  "cookie": {
+    "nombre": "Cookie",
+    "slug": "cookie"
+  },
+  "copper_block": {
+    "nombre": "Block of Copper",
+    "slug": "block-of-copper"
+  },
+  "copper_bulb": {
+    "nombre": "Copper Bulb",
+    "slug": "copper-bulb"
+  },
+  "copper_door": {
+    "nombre": "Copper Door",
+    "slug": "copper-door"
+  },
+  "copper_grate": {
+    "nombre": "Copper Grate",
+    "slug": "copper-grate"
+  },
+  "copper_ingot": {
+    "nombre": "Copper Ingot",
+    "slug": "copper-ingot"
+  },
+  "copper_ore": {
+    "nombre": "Copper Ore",
+    "slug": "copper-ore"
+  },
+  "copper_trapdoor": {
+    "nombre": "Copper Trapdoor",
+    "slug": "copper-trapdoor"
+  },
+  "cornflower": {
+    "nombre": "Cornflower",
+    "slug": "cornflower"
+  },
+  "cow_spawn_egg": {
+    "nombre": "Cow Spawn Egg",
+    "slug": "cow-spawn-egg"
+  },
+  "cracked_deepslate_bricks": {
+    "nombre": "Cracked Deepslate Bricks",
+    "slug": "cracked-deepslate-bricks"
+  },
+  "cracked_deepslate_tiles": {
+    "nombre": "Cracked Deepslate Tiles",
+    "slug": "cracked-deepslate-tiles"
+  },
+  "cracked_nether_bricks": {
+    "nombre": "Cracked Nether Bricks",
+    "slug": "cracked-nether-bricks"
+  },
+  "cracked_polished_blackstone_bricks": {
+    "nombre": "Cracked Polished Blackstone Bricks",
+    "slug": "cracked-polished-blackstone-bricks"
+  },
+  "cracked_stone_bricks": {
+    "nombre": "Cracked Stone Bricks",
+    "slug": "cracked-stone-bricks"
+  },
+  "crafter": {
+    "nombre": "Crafter",
+    "slug": "crafter"
+  },
+  "crafting_table": {
+    "nombre": "Crafting Table",
+    "slug": "crafting-table"
+  },
+  "creaking_heart": {
+    "nombre": "Creaking Heart",
+    "slug": "creaking-heart"
+  },
+  "creaking_spawn_egg": {
+    "nombre": "Creaking Spawn Egg",
+    "slug": "creaking-spawn-egg"
+  },
+  "creeper_banner_pattern": {
+    "nombre": "Creeper Charge Banner Pattern",
+    "slug": "creeper-charge-banner-pattern"
+  },
+  "creeper_head": {
+    "nombre": "Creeper Head",
+    "slug": "creeper-head"
+  },
+  "creeper_spawn_egg": {
+    "nombre": "Creeper Spawn Egg",
+    "slug": "creeper-spawn-egg"
+  },
+  "crimson_button": {
+    "nombre": "Crimson Button",
+    "slug": "crimson-button"
+  },
+  "crimson_door": {
+    "nombre": "Crimson Door",
+    "slug": "crimson-door"
+  },
+  "crimson_fence": {
+    "nombre": "Crimson Fence",
+    "slug": "crimson-fence"
+  },
+  "crimson_fence_gate": {
+    "nombre": "Crimson Fence Gate",
+    "slug": "crimson-fence-gate"
+  },
+  "crimson_fungus": {
+    "nombre": "Crimson Fungus",
+    "slug": "crimson-fungus"
+  },
+  "crimson_hanging_sign": {
+    "nombre": "Crimson Hanging Sign",
+    "slug": "crimson-hanging-sign"
+  },
+  "crimson_hyphae": {
+    "nombre": "Crimson Hyphae",
+    "slug": "crimson-hyphae"
+  },
+  "crimson_nylium": {
+    "nombre": "Crimson Nylium",
+    "slug": "crimson-nylium"
+  },
+  "crimson_planks": {
+    "nombre": "Crimson Planks",
+    "slug": "crimson-planks"
+  },
+  "crimson_pressure_plate": {
+    "nombre": "Crimson Pressure Plate",
+    "slug": "crimson-pressure-plate"
+  },
+  "crimson_roots": {
+    "nombre": "Crimson Roots",
+    "slug": "crimson-roots"
+  },
+  "crimson_sign": {
+    "nombre": "Crimson Sign",
+    "slug": "crimson-sign"
+  },
+  "crimson_slab": {
+    "nombre": "Crimson Slab",
+    "slug": "crimson-slab"
+  },
+  "crimson_stairs": {
+    "nombre": "Crimson Stairs",
+    "slug": "crimson-stairs"
+  },
+  "crimson_stem": {
+    "nombre": "Crimson Stem",
+    "slug": "crimson-stem"
+  },
+  "crimson_trapdoor": {
+    "nombre": "Crimson Trapdoor",
+    "slug": "crimson-trapdoor"
+  },
+  "crying_obsidian": {
+    "nombre": "Crying Obsidian",
+    "slug": "crying-obsidian"
+  },
+  "cut_copper": {
+    "nombre": "Cut Copper",
+    "slug": "cut-copper"
+  },
+  "cut_copper_slab": {
+    "nombre": "Cut Copper Slab",
+    "slug": "cut-copper-slab"
+  },
+  "cut_copper_stairs": {
+    "nombre": "Cut Copper Stairs",
+    "slug": "cut-copper-stairs"
+  },
+  "cut_red_sandstone": {
+    "nombre": "Cut Red Sandstone",
+    "slug": "cut-red-sandstone"
+  },
+  "cut_red_sandstone_slab": {
+    "nombre": "Cut Red Sandstone Slab",
+    "slug": "cut-red-sandstone-slab"
+  },
+  "cut_sandstone": {
+    "nombre": "Cut Sandstone",
+    "slug": "cut-sandstone"
+  },
+  "cut_sandstone_slab": {
+    "nombre": "Cut Sandstone Slab",
+    "slug": "cut-sandstone-slab"
+  },
+  "cyan_banner": {
+    "nombre": "Cyan Banner",
+    "slug": "cyan-banner"
+  },
+  "cyan_bed": {
+    "nombre": "Cyan Bed",
+    "slug": "cyan-bed"
+  },
+  "cyan_bundle": {
+    "nombre": "Cyan Bundle",
+    "slug": "cyan-bundle"
+  },
+  "cyan_candle": {
+    "nombre": "Cyan Candle",
+    "slug": "cyan-candle"
+  },
+  "cyan_carpet": {
+    "nombre": "Cyan Carpet",
+    "slug": "cyan-carpet"
+  },
+  "cyan_concrete": {
+    "nombre": "Cyan Concrete",
+    "slug": "cyan-concrete"
+  },
+  "cyan_concrete_powder": {
+    "nombre": "Cyan Concrete Powder",
+    "slug": "cyan-concrete-powder"
+  },
+  "cyan_dye": {
+    "nombre": "Cyan Dye",
+    "slug": "cyan-dye"
+  },
+  "cyan_glazed_terracotta": {
+    "nombre": "Cyan Glazed Terracotta",
+    "slug": "cyan-glazed-terracotta"
+  },
+  "cyan_shulker_box": {
+    "nombre": "Cyan Shulker Box",
+    "slug": "cyan-shulker-box"
+  },
+  "cyan_stained_glass": {
+    "nombre": "Cyan Stained Glass",
+    "slug": "cyan-stained-glass"
+  },
+  "cyan_stained_glass_pane": {
+    "nombre": "Cyan Stained Glass Pane",
+    "slug": "cyan-stained-glass-pane"
+  },
+  "cyan_terracotta": {
+    "nombre": "Cyan Terracotta",
+    "slug": "cyan-terracotta"
+  },
+  "cyan_wool": {
+    "nombre": "Cyan Wool",
+    "slug": "cyan-wool"
+  },
+  "damaged_anvil": {
+    "nombre": "Damaged Anvil",
+    "slug": "damaged-anvil"
+  },
+  "dandelion": {
+    "nombre": "Dandelion",
+    "slug": "dandelion"
+  },
+  "danger_pottery_sherd": {
+    "nombre": "Danger Pottery Sherd",
+    "slug": "danger-pottery-sherd"
+  },
+  "dark_oak_boat": {
+    "nombre": "Dark Oak Boat",
+    "slug": "dark-oak-boat"
+  },
+  "dark_oak_button": {
+    "nombre": "Dark Oak Button",
+    "slug": "dark-oak-button"
+  },
+  "dark_oak_chest_boat": {
+    "nombre": "Dark Oak Boat with Chest",
+    "slug": "dark-oak-boat-with-chest"
+  },
+  "dark_oak_door": {
+    "nombre": "Dark Oak Door",
+    "slug": "dark-oak-door"
+  },
+  "dark_oak_fence": {
+    "nombre": "Dark Oak Fence",
+    "slug": "dark-oak-fence"
+  },
+  "dark_oak_fence_gate": {
+    "nombre": "Dark Oak Fence Gate",
+    "slug": "dark-oak-fence-gate"
+  },
+  "dark_oak_hanging_sign": {
+    "nombre": "Dark Oak Hanging Sign",
+    "slug": "dark-oak-hanging-sign"
+  },
+  "dark_oak_leaves": {
+    "nombre": "Dark Oak Leaves",
+    "slug": "dark-oak-leaves"
+  },
+  "dark_oak_log": {
+    "nombre": "Dark Oak Log",
+    "slug": "dark-oak-log"
+  },
+  "dark_oak_planks": {
+    "nombre": "Dark Oak Planks",
+    "slug": "dark-oak-planks"
+  },
+  "dark_oak_pressure_plate": {
+    "nombre": "Dark Oak Pressure Plate",
+    "slug": "dark-oak-pressure-plate"
+  },
+  "dark_oak_sapling": {
+    "nombre": "Dark Oak Sapling",
+    "slug": "dark-oak-sapling"
+  },
+  "dark_oak_sign": {
+    "nombre": "Dark Oak Sign",
+    "slug": "dark-oak-sign"
+  },
+  "dark_oak_slab": {
+    "nombre": "Dark Oak Slab",
+    "slug": "dark-oak-slab"
+  },
+  "dark_oak_stairs": {
+    "nombre": "Dark Oak Stairs",
+    "slug": "dark-oak-stairs"
+  },
+  "dark_oak_trapdoor": {
+    "nombre": "Dark Oak Trapdoor",
+    "slug": "dark-oak-trapdoor"
+  },
+  "dark_oak_wood": {
+    "nombre": "Dark Oak Wood",
+    "slug": "dark-oak-wood"
+  },
+  "dark_prismarine": {
+    "nombre": "Dark Prismarine",
+    "slug": "dark-prismarine"
+  },
+  "dark_prismarine_slab": {
+    "nombre": "Dark Prismarine Slab",
+    "slug": "dark-prismarine-slab"
+  },
+  "dark_prismarine_stairs": {
+    "nombre": "Dark Prismarine Stairs",
+    "slug": "dark-prismarine-stairs"
+  },
+  "daylight_detector": {
+    "nombre": "Daylight Detector",
+    "slug": "daylight-detector"
+  },
+  "dead_brain_coral": {
+    "nombre": "Dead Brain Coral",
+    "slug": "dead-brain-coral"
+  },
+  "dead_brain_coral_block": {
+    "nombre": "Dead Brain Coral Block",
+    "slug": "dead-brain-coral-block"
+  },
+  "dead_brain_coral_fan": {
+    "nombre": "Dead Brain Coral Fan",
+    "slug": "dead-brain-coral-fan"
+  },
+  "dead_bubble_coral": {
+    "nombre": "Dead Bubble Coral",
+    "slug": "dead-bubble-coral"
+  },
+  "dead_bubble_coral_block": {
+    "nombre": "Dead Bubble Coral Block",
+    "slug": "dead-bubble-coral-block"
+  },
+  "dead_bubble_coral_fan": {
+    "nombre": "Dead Bubble Coral Fan",
+    "slug": "dead-bubble-coral-fan"
+  },
+  "dead_bush": {
+    "nombre": "Dead Bush",
+    "slug": "dead-bush"
+  },
+  "dead_fire_coral": {
+    "nombre": "Dead Fire Coral",
+    "slug": "dead-fire-coral"
+  },
+  "dead_fire_coral_block": {
+    "nombre": "Dead Fire Coral Block",
+    "slug": "dead-fire-coral-block"
+  },
+  "dead_fire_coral_fan": {
+    "nombre": "Dead Fire Coral Fan",
+    "slug": "dead-fire-coral-fan"
+  },
+  "dead_horn_coral": {
+    "nombre": "Dead Horn Coral",
+    "slug": "dead-horn-coral"
+  },
+  "dead_horn_coral_block": {
+    "nombre": "Dead Horn Coral Block",
+    "slug": "dead-horn-coral-block"
+  },
+  "dead_horn_coral_fan": {
+    "nombre": "Dead Horn Coral Fan",
+    "slug": "dead-horn-coral-fan"
+  },
+  "dead_tube_coral": {
+    "nombre": "Dead Tube Coral",
+    "slug": "dead-tube-coral"
+  },
+  "dead_tube_coral_block": {
+    "nombre": "Dead Tube Coral Block",
+    "slug": "dead-tube-coral-block"
+  },
+  "dead_tube_coral_fan": {
+    "nombre": "Dead Tube Coral Fan",
+    "slug": "dead-tube-coral-fan"
+  },
+  "debug_stick": {
+    "nombre": "Debug Stick",
+    "slug": "debug-stick"
+  },
+  "decorated_pot": {
+    "nombre": "Decorated Pot",
+    "slug": "decorated-pot"
+  },
+  "deepslate": {
+    "nombre": "Deepslate",
+    "slug": "deepslate"
+  },
+  "deepslate_brick_slab": {
+    "nombre": "Deepslate Brick Slab",
+    "slug": "deepslate-brick-slab"
+  },
+  "deepslate_brick_stairs": {
+    "nombre": "Deepslate Brick Stairs",
+    "slug": "deepslate-brick-stairs"
+  },
+  "deepslate_brick_wall": {
+    "nombre": "Deepslate Brick Wall",
+    "slug": "deepslate-brick-wall"
+  },
+  "deepslate_bricks": {
+    "nombre": "Deepslate Bricks",
+    "slug": "deepslate-bricks"
+  },
+  "deepslate_coal_ore": {
+    "nombre": "Deepslate Coal Ore",
+    "slug": "deepslate-coal-ore"
+  },
+  "deepslate_copper_ore": {
+    "nombre": "Deepslate Copper Ore",
+    "slug": "deepslate-copper-ore"
+  },
+  "deepslate_diamond_ore": {
+    "nombre": "Deepslate Diamond Ore",
+    "slug": "deepslate-diamond-ore"
+  },
+  "deepslate_emerald_ore": {
+    "nombre": "Deepslate Emerald Ore",
+    "slug": "deepslate-emerald-ore"
+  },
+  "deepslate_gold_ore": {
+    "nombre": "Deepslate Gold Ore",
+    "slug": "deepslate-gold-ore"
+  },
+  "deepslate_iron_ore": {
+    "nombre": "Deepslate Iron Ore",
+    "slug": "deepslate-iron-ore"
+  },
+  "deepslate_lapis_ore": {
+    "nombre": "Deepslate Lapis Lazuli Ore",
+    "slug": "deepslate-lapis-lazuli-ore"
+  },
+  "deepslate_redstone_ore": {
+    "nombre": "Deepslate Redstone Ore",
+    "slug": "deepslate-redstone-ore"
+  },
+  "deepslate_tile_slab": {
+    "nombre": "Deepslate Tile Slab",
+    "slug": "deepslate-tile-slab"
+  },
+  "deepslate_tile_stairs": {
+    "nombre": "Deepslate Tile Stairs",
+    "slug": "deepslate-tile-stairs"
+  },
+  "deepslate_tile_wall": {
+    "nombre": "Deepslate Tile Wall",
+    "slug": "deepslate-tile-wall"
+  },
+  "deepslate_tiles": {
+    "nombre": "Deepslate Tiles",
+    "slug": "deepslate-tiles"
+  },
+  "detector_rail": {
+    "nombre": "Detector Rail",
+    "slug": "detector-rail"
+  },
+  "diamond": {
+    "nombre": "Diamond",
+    "slug": "diamond",
+    "descripcion": "An uncommon gem found in the deep layers of the world. It is the material behind high-end gear before netherite."
+  },
+  "diamond_block": {
+    "nombre": "Block of Diamond",
+    "slug": "block-of-diamond"
+  },
+  "diamond_horse_armor": {
+    "nombre": "Diamond Horse Armor",
+    "slug": "diamond-horse-armor"
+  },
+  "diamond_ore": {
+    "nombre": "Diamond Ore",
+    "slug": "diamond-ore"
+  },
+  "diorite": {
+    "nombre": "Diorite",
+    "slug": "diorite"
+  },
+  "diorite_slab": {
+    "nombre": "Diorite Slab",
+    "slug": "diorite-slab"
+  },
+  "diorite_stairs": {
+    "nombre": "Diorite Stairs",
+    "slug": "diorite-stairs"
+  },
+  "diorite_wall": {
+    "nombre": "Diorite Wall",
+    "slug": "diorite-wall"
+  },
+  "dirt": {
+    "nombre": "Dirt",
+    "slug": "dirt"
+  },
+  "dirt_path": {
+    "nombre": "Dirt Path",
+    "slug": "dirt-path"
+  },
+  "disc_fragment_5": {
+    "nombre": "Disc Fragment",
+    "slug": "disc-fragment"
+  },
+  "dispenser": {
+    "nombre": "Dispenser",
+    "slug": "dispenser"
+  },
+  "dolphin_spawn_egg": {
+    "nombre": "Dolphin Spawn Egg",
+    "slug": "dolphin-spawn-egg"
+  },
+  "donkey_spawn_egg": {
+    "nombre": "Donkey Spawn Egg",
+    "slug": "donkey-spawn-egg"
+  },
+  "dragon_breath": {
+    "nombre": "Dragon's Breath",
+    "slug": "dragon-s-breath"
+  },
+  "dragon_egg": {
+    "nombre": "Dragon Egg",
+    "slug": "dragon-egg"
+  },
+  "dragon_head": {
+    "nombre": "Dragon Head",
+    "slug": "dragon-head"
+  },
+  "dried_kelp": {
+    "nombre": "Dried Kelp",
+    "slug": "dried-kelp"
+  },
+  "dried_kelp_block": {
+    "nombre": "Dried Kelp Block",
+    "slug": "dried-kelp-block"
+  },
+  "dripstone_block": {
+    "nombre": "Dripstone Block",
+    "slug": "dripstone-block"
+  },
+  "dropper": {
+    "nombre": "Dropper",
+    "slug": "dropper"
+  },
+  "drowned_spawn_egg": {
+    "nombre": "Drowned Spawn Egg",
+    "slug": "drowned-spawn-egg"
+  },
+  "dune_armor_trim_smithing_template": {
+    "nombre": "Dune Armor Trim",
+    "slug": "dune-armor-trim"
+  },
+  "echo_shard": {
+    "nombre": "Echo Shard",
+    "slug": "echo-shard"
+  },
+  "egg": {
+    "nombre": "Egg",
+    "slug": "egg"
+  },
+  "elder_guardian_spawn_egg": {
+    "nombre": "Elder Guardian Spawn Egg",
+    "slug": "elder-guardian-spawn-egg"
+  },
+  "emerald": {
+    "nombre": "Emerald",
+    "slug": "emerald",
+    "descripcion": "The currency of villager trading. It is not used as gear material, but it unlocks everything villagers sell."
+  },
+  "emerald_block": {
+    "nombre": "Block of Emerald",
+    "slug": "block-of-emerald"
+  },
+  "emerald_ore": {
+    "nombre": "Emerald Ore",
+    "slug": "emerald-ore"
+  },
   "enchanted_book": {
     "nombre": "Enchanted Book",
     "slug": "enchanted-book",
     "descripcion": "Holds an enchantment until it is applied to a piece of gear on an anvil. It is the only practical way to obtain treasure enchantments."
   },
+  "enchanted_golden_apple": {
+    "nombre": "Enchanted Golden Apple",
+    "slug": "enchanted-golden-apple"
+  },
+  "enchanting_table": {
+    "nombre": "Enchanting Table",
+    "slug": "enchanting-table"
+  },
+  "end_crystal": {
+    "nombre": "End Crystal",
+    "slug": "end-crystal"
+  },
+  "end_portal_frame": {
+    "nombre": "End Portal Frame",
+    "slug": "end-portal-frame"
+  },
+  "end_rod": {
+    "nombre": "End Rod",
+    "slug": "end-rod"
+  },
+  "end_stone": {
+    "nombre": "End Stone",
+    "slug": "end-stone"
+  },
+  "end_stone_brick_slab": {
+    "nombre": "End Stone Brick Slab",
+    "slug": "end-stone-brick-slab"
+  },
+  "end_stone_brick_stairs": {
+    "nombre": "End Stone Brick Stairs",
+    "slug": "end-stone-brick-stairs"
+  },
+  "end_stone_brick_wall": {
+    "nombre": "End Stone Brick Wall",
+    "slug": "end-stone-brick-wall"
+  },
+  "end_stone_bricks": {
+    "nombre": "End Stone Bricks",
+    "slug": "end-stone-bricks"
+  },
+  "ender_chest": {
+    "nombre": "Ender Chest",
+    "slug": "ender-chest"
+  },
+  "ender_dragon_spawn_egg": {
+    "nombre": "Ender Dragon Spawn Egg",
+    "slug": "ender-dragon-spawn-egg"
+  },
+  "ender_eye": {
+    "nombre": "Eye of Ender",
+    "slug": "eye-of-ender"
+  },
+  "ender_pearl": {
+    "nombre": "Ender Pearl",
+    "slug": "ender-pearl"
+  },
+  "enderman_spawn_egg": {
+    "nombre": "Enderman Spawn Egg",
+    "slug": "enderman-spawn-egg"
+  },
+  "endermite_spawn_egg": {
+    "nombre": "Endermite Spawn Egg",
+    "slug": "endermite-spawn-egg"
+  },
+  "evoker_spawn_egg": {
+    "nombre": "Evoker Spawn Egg",
+    "slug": "evoker-spawn-egg"
+  },
+  "experience_bottle": {
+    "nombre": "Bottle o' Enchanting",
+    "slug": "bottle-o-enchanting"
+  },
+  "explorer_pottery_sherd": {
+    "nombre": "Explorer Pottery Sherd",
+    "slug": "explorer-pottery-sherd"
+  },
+  "exposed_chiseled_copper": {
+    "nombre": "Exposed Chiseled Copper",
+    "slug": "exposed-chiseled-copper"
+  },
+  "exposed_copper": {
+    "nombre": "Exposed Copper",
+    "slug": "exposed-copper"
+  },
+  "exposed_copper_bulb": {
+    "nombre": "Exposed Copper Bulb",
+    "slug": "exposed-copper-bulb"
+  },
+  "exposed_copper_door": {
+    "nombre": "Exposed Copper Door",
+    "slug": "exposed-copper-door"
+  },
+  "exposed_copper_grate": {
+    "nombre": "Exposed Copper Grate",
+    "slug": "exposed-copper-grate"
+  },
+  "exposed_copper_trapdoor": {
+    "nombre": "Exposed Copper Trapdoor",
+    "slug": "exposed-copper-trapdoor"
+  },
+  "exposed_cut_copper": {
+    "nombre": "Exposed Cut Copper",
+    "slug": "exposed-cut-copper"
+  },
+  "exposed_cut_copper_slab": {
+    "nombre": "Exposed Cut Copper Slab",
+    "slug": "exposed-cut-copper-slab"
+  },
+  "exposed_cut_copper_stairs": {
+    "nombre": "Exposed Cut Copper Stairs",
+    "slug": "exposed-cut-copper-stairs"
+  },
+  "eye_armor_trim_smithing_template": {
+    "nombre": "Eye Armor Trim",
+    "slug": "eye-armor-trim"
+  },
+  "farmland": {
+    "nombre": "Farmland",
+    "slug": "farmland"
+  },
+  "feather": {
+    "nombre": "Feather",
+    "slug": "feather"
+  },
+  "fermented_spider_eye": {
+    "nombre": "Fermented Spider Eye",
+    "slug": "fermented-spider-eye"
+  },
+  "fern": {
+    "nombre": "Fern",
+    "slug": "fern"
+  },
+  "field_masoned_banner_pattern": {
+    "nombre": "Field Masoned Banner Pattern",
+    "slug": "field-masoned-banner-pattern"
+  },
+  "filled_map": {
+    "nombre": "Map",
+    "slug": "map"
+  },
+  "fire_charge": {
+    "nombre": "Fire Charge",
+    "slug": "fire-charge"
+  },
+  "fire_coral": {
+    "nombre": "Fire Coral",
+    "slug": "fire-coral"
+  },
+  "fire_coral_block": {
+    "nombre": "Fire Coral Block",
+    "slug": "fire-coral-block"
+  },
+  "fire_coral_fan": {
+    "nombre": "Fire Coral Fan",
+    "slug": "fire-coral-fan"
+  },
+  "firework_rocket": {
+    "nombre": "Firework Rocket",
+    "slug": "firework-rocket"
+  },
+  "firework_star": {
+    "nombre": "Firework Star",
+    "slug": "firework-star"
+  },
+  "fishing_rod": {
+    "nombre": "Fishing Rod",
+    "slug": "fishing-rod"
+  },
+  "fletching_table": {
+    "nombre": "Fletching Table",
+    "slug": "fletching-table"
+  },
+  "flint": {
+    "nombre": "Flint",
+    "slug": "flint"
+  },
+  "flint_and_steel": {
+    "nombre": "Flint and Steel",
+    "slug": "flint-and-steel"
+  },
+  "flow_armor_trim_smithing_template": {
+    "nombre": "Flow Armor Trim",
+    "slug": "flow-armor-trim"
+  },
+  "flow_banner_pattern": {
+    "nombre": "Flow Banner Pattern",
+    "slug": "flow-banner-pattern"
+  },
+  "flow_pottery_sherd": {
+    "nombre": "Flow Pottery Sherd",
+    "slug": "flow-pottery-sherd"
+  },
+  "flower_banner_pattern": {
+    "nombre": "Flower Charge Banner Pattern",
+    "slug": "flower-charge-banner-pattern"
+  },
+  "flower_pot": {
+    "nombre": "Flower Pot",
+    "slug": "flower-pot"
+  },
+  "flowering_azalea": {
+    "nombre": "Flowering Azalea",
+    "slug": "flowering-azalea"
+  },
+  "flowering_azalea_leaves": {
+    "nombre": "Flowering Azalea Leaves",
+    "slug": "flowering-azalea-leaves"
+  },
+  "fox_spawn_egg": {
+    "nombre": "Fox Spawn Egg",
+    "slug": "fox-spawn-egg"
+  },
+  "friend_pottery_sherd": {
+    "nombre": "Friend Pottery Sherd",
+    "slug": "friend-pottery-sherd"
+  },
+  "frog_spawn_egg": {
+    "nombre": "Frog Spawn Egg",
+    "slug": "frog-spawn-egg"
+  },
+  "frogspawn": {
+    "nombre": "Frogspawn",
+    "slug": "frogspawn"
+  },
+  "furnace": {
+    "nombre": "Furnace",
+    "slug": "furnace"
+  },
+  "furnace_minecart": {
+    "nombre": "Minecart with Furnace",
+    "slug": "minecart-with-furnace"
+  },
+  "ghast_spawn_egg": {
+    "nombre": "Ghast Spawn Egg",
+    "slug": "ghast-spawn-egg"
+  },
+  "ghast_tear": {
+    "nombre": "Ghast Tear",
+    "slug": "ghast-tear"
+  },
+  "gilded_blackstone": {
+    "nombre": "Gilded Blackstone",
+    "slug": "gilded-blackstone"
+  },
+  "glass": {
+    "nombre": "Glass",
+    "slug": "glass"
+  },
+  "glass_bottle": {
+    "nombre": "Glass Bottle",
+    "slug": "glass-bottle"
+  },
+  "glass_pane": {
+    "nombre": "Glass Pane",
+    "slug": "glass-pane"
+  },
+  "glistering_melon_slice": {
+    "nombre": "Glistering Melon Slice",
+    "slug": "glistering-melon-slice"
+  },
+  "globe_banner_pattern": {
+    "nombre": "Globe Banner Pattern",
+    "slug": "globe-banner-pattern"
+  },
+  "glow_berries": {
+    "nombre": "Glow Berries",
+    "slug": "glow-berries"
+  },
+  "glow_ink_sac": {
+    "nombre": "Glow Ink Sac",
+    "slug": "glow-ink-sac"
+  },
+  "glow_item_frame": {
+    "nombre": "Glow Item Frame",
+    "slug": "glow-item-frame"
+  },
+  "glow_lichen": {
+    "nombre": "Glow Lichen",
+    "slug": "glow-lichen"
+  },
+  "glow_squid_spawn_egg": {
+    "nombre": "Glow Squid Spawn Egg",
+    "slug": "glow-squid-spawn-egg"
+  },
+  "glowstone": {
+    "nombre": "Glowstone",
+    "slug": "glowstone"
+  },
+  "glowstone_dust": {
+    "nombre": "Glowstone Dust",
+    "slug": "glowstone-dust"
+  },
+  "goat_horn": {
+    "nombre": "Goat Horn",
+    "slug": "goat-horn"
+  },
+  "goat_spawn_egg": {
+    "nombre": "Goat Spawn Egg",
+    "slug": "goat-spawn-egg"
+  },
+  "gold_block": {
+    "nombre": "Block of Gold",
+    "slug": "block-of-gold"
+  },
+  "gold_ingot": {
+    "nombre": "Gold Ingot",
+    "slug": "gold-ingot"
+  },
+  "gold_nugget": {
+    "nombre": "Gold Nugget",
+    "slug": "gold-nugget"
+  },
+  "gold_ore": {
+    "nombre": "Gold Ore",
+    "slug": "gold-ore"
+  },
+  "golden_apple": {
+    "nombre": "Golden Apple",
+    "slug": "golden-apple"
+  },
+  "golden_carrot": {
+    "nombre": "Golden Carrot",
+    "slug": "golden-carrot"
+  },
+  "golden_horse_armor": {
+    "nombre": "Golden Horse Armor",
+    "slug": "golden-horse-armor"
+  },
+  "granite": {
+    "nombre": "Granite",
+    "slug": "granite"
+  },
+  "granite_slab": {
+    "nombre": "Granite Slab",
+    "slug": "granite-slab"
+  },
+  "granite_stairs": {
+    "nombre": "Granite Stairs",
+    "slug": "granite-stairs"
+  },
+  "granite_wall": {
+    "nombre": "Granite Wall",
+    "slug": "granite-wall"
+  },
+  "grass_block": {
+    "nombre": "Grass Block",
+    "slug": "grass-block"
+  },
+  "gravel": {
+    "nombre": "Gravel",
+    "slug": "gravel"
+  },
+  "gray_banner": {
+    "nombre": "Gray Banner",
+    "slug": "gray-banner"
+  },
+  "gray_bed": {
+    "nombre": "Gray Bed",
+    "slug": "gray-bed"
+  },
+  "gray_bundle": {
+    "nombre": "Gray Bundle",
+    "slug": "gray-bundle"
+  },
+  "gray_candle": {
+    "nombre": "Gray Candle",
+    "slug": "gray-candle"
+  },
+  "gray_carpet": {
+    "nombre": "Gray Carpet",
+    "slug": "gray-carpet"
+  },
+  "gray_concrete": {
+    "nombre": "Gray Concrete",
+    "slug": "gray-concrete"
+  },
+  "gray_concrete_powder": {
+    "nombre": "Gray Concrete Powder",
+    "slug": "gray-concrete-powder"
+  },
+  "gray_dye": {
+    "nombre": "Gray Dye",
+    "slug": "gray-dye"
+  },
+  "gray_glazed_terracotta": {
+    "nombre": "Gray Glazed Terracotta",
+    "slug": "gray-glazed-terracotta"
+  },
+  "gray_shulker_box": {
+    "nombre": "Gray Shulker Box",
+    "slug": "gray-shulker-box"
+  },
+  "gray_stained_glass": {
+    "nombre": "Gray Stained Glass",
+    "slug": "gray-stained-glass"
+  },
+  "gray_stained_glass_pane": {
+    "nombre": "Gray Stained Glass Pane",
+    "slug": "gray-stained-glass-pane"
+  },
+  "gray_terracotta": {
+    "nombre": "Gray Terracotta",
+    "slug": "gray-terracotta"
+  },
+  "gray_wool": {
+    "nombre": "Gray Wool",
+    "slug": "gray-wool"
+  },
+  "green_banner": {
+    "nombre": "Green Banner",
+    "slug": "green-banner"
+  },
+  "green_bed": {
+    "nombre": "Green Bed",
+    "slug": "green-bed"
+  },
+  "green_bundle": {
+    "nombre": "Green Bundle",
+    "slug": "green-bundle"
+  },
+  "green_candle": {
+    "nombre": "Green Candle",
+    "slug": "green-candle"
+  },
+  "green_carpet": {
+    "nombre": "Green Carpet",
+    "slug": "green-carpet"
+  },
+  "green_concrete": {
+    "nombre": "Green Concrete",
+    "slug": "green-concrete"
+  },
+  "green_concrete_powder": {
+    "nombre": "Green Concrete Powder",
+    "slug": "green-concrete-powder"
+  },
+  "green_dye": {
+    "nombre": "Green Dye",
+    "slug": "green-dye"
+  },
+  "green_glazed_terracotta": {
+    "nombre": "Green Glazed Terracotta",
+    "slug": "green-glazed-terracotta"
+  },
+  "green_shulker_box": {
+    "nombre": "Green Shulker Box",
+    "slug": "green-shulker-box"
+  },
+  "green_stained_glass": {
+    "nombre": "Green Stained Glass",
+    "slug": "green-stained-glass"
+  },
+  "green_stained_glass_pane": {
+    "nombre": "Green Stained Glass Pane",
+    "slug": "green-stained-glass-pane"
+  },
+  "green_terracotta": {
+    "nombre": "Green Terracotta",
+    "slug": "green-terracotta"
+  },
+  "green_wool": {
+    "nombre": "Green Wool",
+    "slug": "green-wool"
+  },
+  "grindstone": {
+    "nombre": "Grindstone",
+    "slug": "grindstone"
+  },
+  "guardian_spawn_egg": {
+    "nombre": "Guardian Spawn Egg",
+    "slug": "guardian-spawn-egg"
+  },
+  "gunpowder": {
+    "nombre": "Gunpowder",
+    "slug": "gunpowder"
+  },
+  "guster_banner_pattern": {
+    "nombre": "Guster Banner Pattern",
+    "slug": "guster-banner-pattern"
+  },
+  "guster_pottery_sherd": {
+    "nombre": "Guster Pottery Sherd",
+    "slug": "guster-pottery-sherd"
+  },
+  "hanging_roots": {
+    "nombre": "Hanging Roots",
+    "slug": "hanging-roots"
+  },
+  "hay_block": {
+    "nombre": "Hay Bale",
+    "slug": "hay-bale"
+  },
+  "heart_of_the_sea": {
+    "nombre": "Heart of the Sea",
+    "slug": "heart-of-the-sea"
+  },
+  "heart_pottery_sherd": {
+    "nombre": "Heart Pottery Sherd",
+    "slug": "heart-pottery-sherd"
+  },
+  "heartbreak_pottery_sherd": {
+    "nombre": "Heartbreak Pottery Sherd",
+    "slug": "heartbreak-pottery-sherd"
+  },
+  "heavy_core": {
+    "nombre": "Heavy Core",
+    "slug": "heavy-core"
+  },
+  "heavy_weighted_pressure_plate": {
+    "nombre": "Heavy Weighted Pressure Plate",
+    "slug": "heavy-weighted-pressure-plate"
+  },
+  "hoglin_spawn_egg": {
+    "nombre": "Hoglin Spawn Egg",
+    "slug": "hoglin-spawn-egg"
+  },
+  "honey_block": {
+    "nombre": "Honey Block",
+    "slug": "honey-block"
+  },
+  "honey_bottle": {
+    "nombre": "Honey Bottle",
+    "slug": "honey-bottle"
+  },
+  "honeycomb": {
+    "nombre": "Honeycomb",
+    "slug": "honeycomb"
+  },
+  "honeycomb_block": {
+    "nombre": "Honeycomb Block",
+    "slug": "honeycomb-block"
+  },
+  "hopper": {
+    "nombre": "Hopper",
+    "slug": "hopper"
+  },
+  "hopper_minecart": {
+    "nombre": "Minecart with Hopper",
+    "slug": "minecart-with-hopper"
+  },
+  "horn_coral": {
+    "nombre": "Horn Coral",
+    "slug": "horn-coral"
+  },
+  "horn_coral_block": {
+    "nombre": "Horn Coral Block",
+    "slug": "horn-coral-block"
+  },
+  "horn_coral_fan": {
+    "nombre": "Horn Coral Fan",
+    "slug": "horn-coral-fan"
+  },
+  "horse_spawn_egg": {
+    "nombre": "Horse Spawn Egg",
+    "slug": "horse-spawn-egg"
+  },
+  "host_armor_trim_smithing_template": {
+    "nombre": "Host Armor Trim",
+    "slug": "host-armor-trim"
+  },
+  "howl_pottery_sherd": {
+    "nombre": "Howl Pottery Sherd",
+    "slug": "howl-pottery-sherd"
+  },
+  "husk_spawn_egg": {
+    "nombre": "Husk Spawn Egg",
+    "slug": "husk-spawn-egg"
+  },
+  "ice": {
+    "nombre": "Ice",
+    "slug": "ice"
+  },
+  "infested_chiseled_stone_bricks": {
+    "nombre": "Infested Chiseled Stone Bricks",
+    "slug": "infested-chiseled-stone-bricks"
+  },
+  "infested_cobblestone": {
+    "nombre": "Infested Cobblestone",
+    "slug": "infested-cobblestone"
+  },
+  "infested_cracked_stone_bricks": {
+    "nombre": "Infested Cracked Stone Bricks",
+    "slug": "infested-cracked-stone-bricks"
+  },
+  "infested_deepslate": {
+    "nombre": "Infested Deepslate",
+    "slug": "infested-deepslate"
+  },
+  "infested_mossy_stone_bricks": {
+    "nombre": "Infested Mossy Stone Bricks",
+    "slug": "infested-mossy-stone-bricks"
+  },
+  "infested_stone": {
+    "nombre": "Infested Stone",
+    "slug": "infested-stone"
+  },
+  "infested_stone_bricks": {
+    "nombre": "Infested Stone Bricks",
+    "slug": "infested-stone-bricks"
+  },
+  "ink_sac": {
+    "nombre": "Ink Sac",
+    "slug": "ink-sac"
+  },
+  "iron_bars": {
+    "nombre": "Iron Bars",
+    "slug": "iron-bars"
+  },
+  "iron_block": {
+    "nombre": "Block of Iron",
+    "slug": "block-of-iron"
+  },
+  "iron_door": {
+    "nombre": "Iron Door",
+    "slug": "iron-door"
+  },
+  "iron_golem_spawn_egg": {
+    "nombre": "Iron Golem Spawn Egg",
+    "slug": "iron-golem-spawn-egg"
+  },
+  "iron_horse_armor": {
+    "nombre": "Iron Horse Armor",
+    "slug": "iron-horse-armor"
+  },
+  "iron_ingot": {
+    "nombre": "Iron Ingot",
+    "slug": "iron-ingot"
+  },
+  "iron_nugget": {
+    "nombre": "Iron Nugget",
+    "slug": "iron-nugget"
+  },
+  "iron_ore": {
+    "nombre": "Iron Ore",
+    "slug": "iron-ore"
+  },
+  "iron_trapdoor": {
+    "nombre": "Iron Trapdoor",
+    "slug": "iron-trapdoor"
+  },
+  "item_frame": {
+    "nombre": "Item Frame",
+    "slug": "item-frame"
+  },
+  "jack_o_lantern": {
+    "nombre": "Jack o'Lantern",
+    "slug": "jack-o-lantern"
+  },
+  "jigsaw": {
+    "nombre": "Jigsaw Block",
+    "slug": "jigsaw-block"
+  },
+  "jukebox": {
+    "nombre": "Jukebox",
+    "slug": "jukebox"
+  },
+  "jungle_boat": {
+    "nombre": "Jungle Boat",
+    "slug": "jungle-boat"
+  },
+  "jungle_button": {
+    "nombre": "Jungle Button",
+    "slug": "jungle-button"
+  },
+  "jungle_chest_boat": {
+    "nombre": "Jungle Boat with Chest",
+    "slug": "jungle-boat-with-chest"
+  },
+  "jungle_door": {
+    "nombre": "Jungle Door",
+    "slug": "jungle-door"
+  },
+  "jungle_fence": {
+    "nombre": "Jungle Fence",
+    "slug": "jungle-fence"
+  },
+  "jungle_fence_gate": {
+    "nombre": "Jungle Fence Gate",
+    "slug": "jungle-fence-gate"
+  },
+  "jungle_hanging_sign": {
+    "nombre": "Jungle Hanging Sign",
+    "slug": "jungle-hanging-sign"
+  },
+  "jungle_leaves": {
+    "nombre": "Jungle Leaves",
+    "slug": "jungle-leaves"
+  },
+  "jungle_log": {
+    "nombre": "Jungle Log",
+    "slug": "jungle-log"
+  },
+  "jungle_planks": {
+    "nombre": "Jungle Planks",
+    "slug": "jungle-planks"
+  },
+  "jungle_pressure_plate": {
+    "nombre": "Jungle Pressure Plate",
+    "slug": "jungle-pressure-plate"
+  },
+  "jungle_sapling": {
+    "nombre": "Jungle Sapling",
+    "slug": "jungle-sapling"
+  },
+  "jungle_sign": {
+    "nombre": "Jungle Sign",
+    "slug": "jungle-sign"
+  },
+  "jungle_slab": {
+    "nombre": "Jungle Slab",
+    "slug": "jungle-slab"
+  },
+  "jungle_stairs": {
+    "nombre": "Jungle Stairs",
+    "slug": "jungle-stairs"
+  },
+  "jungle_trapdoor": {
+    "nombre": "Jungle Trapdoor",
+    "slug": "jungle-trapdoor"
+  },
+  "jungle_wood": {
+    "nombre": "Jungle Wood",
+    "slug": "jungle-wood"
+  },
+  "kelp": {
+    "nombre": "Kelp",
+    "slug": "kelp"
+  },
+  "knowledge_book": {
+    "nombre": "Knowledge Book",
+    "slug": "knowledge-book"
+  },
+  "ladder": {
+    "nombre": "Ladder",
+    "slug": "ladder"
+  },
+  "lantern": {
+    "nombre": "Lantern",
+    "slug": "lantern"
+  },
+  "lapis_block": {
+    "nombre": "Block of Lapis Lazuli",
+    "slug": "block-of-lapis-lazuli"
+  },
+  "lapis_lazuli": {
+    "nombre": "Lapis Lazuli",
+    "slug": "lapis-lazuli"
+  },
+  "lapis_ore": {
+    "nombre": "Lapis Lazuli Ore",
+    "slug": "lapis-lazuli-ore"
+  },
+  "large_amethyst_bud": {
+    "nombre": "Large Amethyst Bud",
+    "slug": "large-amethyst-bud"
+  },
+  "large_fern": {
+    "nombre": "Large Fern",
+    "slug": "large-fern"
+  },
+  "lava_bucket": {
+    "nombre": "Lava Bucket",
+    "slug": "lava-bucket"
+  },
+  "lead": {
+    "nombre": "Lead",
+    "slug": "lead"
+  },
+  "leather": {
+    "nombre": "Leather",
+    "slug": "leather"
+  },
+  "leather_horse_armor": {
+    "nombre": "Leather Horse Armor",
+    "slug": "leather-horse-armor"
+  },
   "lectern": {
     "nombre": "Lectern",
     "slug": "lectern",
     "descripcion": "The block that turns an unemployed villager into a librarian. Breaking and replacing it rerolls their trades."
+  },
+  "lever": {
+    "nombre": "Lever",
+    "slug": "lever"
+  },
+  "light": {
+    "nombre": "Light",
+    "slug": "light"
+  },
+  "light_blue_banner": {
+    "nombre": "Light Blue Banner",
+    "slug": "light-blue-banner"
+  },
+  "light_blue_bed": {
+    "nombre": "Light Blue Bed",
+    "slug": "light-blue-bed"
+  },
+  "light_blue_bundle": {
+    "nombre": "Light Blue Bundle",
+    "slug": "light-blue-bundle"
+  },
+  "light_blue_candle": {
+    "nombre": "Light Blue Candle",
+    "slug": "light-blue-candle"
+  },
+  "light_blue_carpet": {
+    "nombre": "Light Blue Carpet",
+    "slug": "light-blue-carpet"
+  },
+  "light_blue_concrete": {
+    "nombre": "Light Blue Concrete",
+    "slug": "light-blue-concrete"
+  },
+  "light_blue_concrete_powder": {
+    "nombre": "Light Blue Concrete Powder",
+    "slug": "light-blue-concrete-powder"
+  },
+  "light_blue_dye": {
+    "nombre": "Light Blue Dye",
+    "slug": "light-blue-dye"
+  },
+  "light_blue_glazed_terracotta": {
+    "nombre": "Light Blue Glazed Terracotta",
+    "slug": "light-blue-glazed-terracotta"
+  },
+  "light_blue_shulker_box": {
+    "nombre": "Light Blue Shulker Box",
+    "slug": "light-blue-shulker-box"
+  },
+  "light_blue_stained_glass": {
+    "nombre": "Light Blue Stained Glass",
+    "slug": "light-blue-stained-glass"
+  },
+  "light_blue_stained_glass_pane": {
+    "nombre": "Light Blue Stained Glass Pane",
+    "slug": "light-blue-stained-glass-pane"
+  },
+  "light_blue_terracotta": {
+    "nombre": "Light Blue Terracotta",
+    "slug": "light-blue-terracotta"
+  },
+  "light_blue_wool": {
+    "nombre": "Light Blue Wool",
+    "slug": "light-blue-wool"
+  },
+  "light_gray_banner": {
+    "nombre": "Light Gray Banner",
+    "slug": "light-gray-banner"
+  },
+  "light_gray_bed": {
+    "nombre": "Light Gray Bed",
+    "slug": "light-gray-bed"
+  },
+  "light_gray_bundle": {
+    "nombre": "Light Gray Bundle",
+    "slug": "light-gray-bundle"
+  },
+  "light_gray_candle": {
+    "nombre": "Light Gray Candle",
+    "slug": "light-gray-candle"
+  },
+  "light_gray_carpet": {
+    "nombre": "Light Gray Carpet",
+    "slug": "light-gray-carpet"
+  },
+  "light_gray_concrete": {
+    "nombre": "Light Gray Concrete",
+    "slug": "light-gray-concrete"
+  },
+  "light_gray_concrete_powder": {
+    "nombre": "Light Gray Concrete Powder",
+    "slug": "light-gray-concrete-powder"
+  },
+  "light_gray_dye": {
+    "nombre": "Light Gray Dye",
+    "slug": "light-gray-dye"
+  },
+  "light_gray_glazed_terracotta": {
+    "nombre": "Light Gray Glazed Terracotta",
+    "slug": "light-gray-glazed-terracotta"
+  },
+  "light_gray_shulker_box": {
+    "nombre": "Light Gray Shulker Box",
+    "slug": "light-gray-shulker-box"
+  },
+  "light_gray_stained_glass": {
+    "nombre": "Light Gray Stained Glass",
+    "slug": "light-gray-stained-glass"
+  },
+  "light_gray_stained_glass_pane": {
+    "nombre": "Light Gray Stained Glass Pane",
+    "slug": "light-gray-stained-glass-pane"
+  },
+  "light_gray_terracotta": {
+    "nombre": "Light Gray Terracotta",
+    "slug": "light-gray-terracotta"
+  },
+  "light_gray_wool": {
+    "nombre": "Light Gray Wool",
+    "slug": "light-gray-wool"
+  },
+  "light_weighted_pressure_plate": {
+    "nombre": "Light Weighted Pressure Plate",
+    "slug": "light-weighted-pressure-plate"
+  },
+  "lightning_rod": {
+    "nombre": "Lightning Rod",
+    "slug": "lightning-rod"
+  },
+  "lilac": {
+    "nombre": "Lilac",
+    "slug": "lilac"
+  },
+  "lily_of_the_valley": {
+    "nombre": "Lily of the Valley",
+    "slug": "lily-of-the-valley"
+  },
+  "lily_pad": {
+    "nombre": "Lily Pad",
+    "slug": "lily-pad"
+  },
+  "lime_banner": {
+    "nombre": "Lime Banner",
+    "slug": "lime-banner"
+  },
+  "lime_bed": {
+    "nombre": "Lime Bed",
+    "slug": "lime-bed"
+  },
+  "lime_bundle": {
+    "nombre": "Lime Bundle",
+    "slug": "lime-bundle"
+  },
+  "lime_candle": {
+    "nombre": "Lime Candle",
+    "slug": "lime-candle"
+  },
+  "lime_carpet": {
+    "nombre": "Lime Carpet",
+    "slug": "lime-carpet"
+  },
+  "lime_concrete": {
+    "nombre": "Lime Concrete",
+    "slug": "lime-concrete"
+  },
+  "lime_concrete_powder": {
+    "nombre": "Lime Concrete Powder",
+    "slug": "lime-concrete-powder"
+  },
+  "lime_dye": {
+    "nombre": "Lime Dye",
+    "slug": "lime-dye"
+  },
+  "lime_glazed_terracotta": {
+    "nombre": "Lime Glazed Terracotta",
+    "slug": "lime-glazed-terracotta"
+  },
+  "lime_shulker_box": {
+    "nombre": "Lime Shulker Box",
+    "slug": "lime-shulker-box"
+  },
+  "lime_stained_glass": {
+    "nombre": "Lime Stained Glass",
+    "slug": "lime-stained-glass"
+  },
+  "lime_stained_glass_pane": {
+    "nombre": "Lime Stained Glass Pane",
+    "slug": "lime-stained-glass-pane"
+  },
+  "lime_terracotta": {
+    "nombre": "Lime Terracotta",
+    "slug": "lime-terracotta"
+  },
+  "lime_wool": {
+    "nombre": "Lime Wool",
+    "slug": "lime-wool"
+  },
+  "lingering_potion": {
+    "nombre": "Lingering Potion",
+    "slug": "lingering-potion"
+  },
+  "llama_spawn_egg": {
+    "nombre": "Llama Spawn Egg",
+    "slug": "llama-spawn-egg"
+  },
+  "lodestone": {
+    "nombre": "Lodestone",
+    "slug": "lodestone"
+  },
+  "loom": {
+    "nombre": "Loom",
+    "slug": "loom"
+  },
+  "magenta_banner": {
+    "nombre": "Magenta Banner",
+    "slug": "magenta-banner"
+  },
+  "magenta_bed": {
+    "nombre": "Magenta Bed",
+    "slug": "magenta-bed"
+  },
+  "magenta_bundle": {
+    "nombre": "Magenta Bundle",
+    "slug": "magenta-bundle"
+  },
+  "magenta_candle": {
+    "nombre": "Magenta Candle",
+    "slug": "magenta-candle"
+  },
+  "magenta_carpet": {
+    "nombre": "Magenta Carpet",
+    "slug": "magenta-carpet"
+  },
+  "magenta_concrete": {
+    "nombre": "Magenta Concrete",
+    "slug": "magenta-concrete"
+  },
+  "magenta_concrete_powder": {
+    "nombre": "Magenta Concrete Powder",
+    "slug": "magenta-concrete-powder"
+  },
+  "magenta_dye": {
+    "nombre": "Magenta Dye",
+    "slug": "magenta-dye"
+  },
+  "magenta_glazed_terracotta": {
+    "nombre": "Magenta Glazed Terracotta",
+    "slug": "magenta-glazed-terracotta"
+  },
+  "magenta_shulker_box": {
+    "nombre": "Magenta Shulker Box",
+    "slug": "magenta-shulker-box"
+  },
+  "magenta_stained_glass": {
+    "nombre": "Magenta Stained Glass",
+    "slug": "magenta-stained-glass"
+  },
+  "magenta_stained_glass_pane": {
+    "nombre": "Magenta Stained Glass Pane",
+    "slug": "magenta-stained-glass-pane"
+  },
+  "magenta_terracotta": {
+    "nombre": "Magenta Terracotta",
+    "slug": "magenta-terracotta"
+  },
+  "magenta_wool": {
+    "nombre": "Magenta Wool",
+    "slug": "magenta-wool"
+  },
+  "magma_block": {
+    "nombre": "Magma Block",
+    "slug": "magma-block"
+  },
+  "magma_cream": {
+    "nombre": "Magma Cream",
+    "slug": "magma-cream"
+  },
+  "magma_cube_spawn_egg": {
+    "nombre": "Magma Cube Spawn Egg",
+    "slug": "magma-cube-spawn-egg"
+  },
+  "mangrove_boat": {
+    "nombre": "Mangrove Boat",
+    "slug": "mangrove-boat"
+  },
+  "mangrove_button": {
+    "nombre": "Mangrove Button",
+    "slug": "mangrove-button"
+  },
+  "mangrove_chest_boat": {
+    "nombre": "Mangrove Boat with Chest",
+    "slug": "mangrove-boat-with-chest"
+  },
+  "mangrove_door": {
+    "nombre": "Mangrove Door",
+    "slug": "mangrove-door"
+  },
+  "mangrove_fence": {
+    "nombre": "Mangrove Fence",
+    "slug": "mangrove-fence"
+  },
+  "mangrove_fence_gate": {
+    "nombre": "Mangrove Fence Gate",
+    "slug": "mangrove-fence-gate"
+  },
+  "mangrove_hanging_sign": {
+    "nombre": "Mangrove Hanging Sign",
+    "slug": "mangrove-hanging-sign"
+  },
+  "mangrove_leaves": {
+    "nombre": "Mangrove Leaves",
+    "slug": "mangrove-leaves"
+  },
+  "mangrove_log": {
+    "nombre": "Mangrove Log",
+    "slug": "mangrove-log"
+  },
+  "mangrove_planks": {
+    "nombre": "Mangrove Planks",
+    "slug": "mangrove-planks"
+  },
+  "mangrove_pressure_plate": {
+    "nombre": "Mangrove Pressure Plate",
+    "slug": "mangrove-pressure-plate"
+  },
+  "mangrove_propagule": {
+    "nombre": "Mangrove Propagule",
+    "slug": "mangrove-propagule"
+  },
+  "mangrove_roots": {
+    "nombre": "Mangrove Roots",
+    "slug": "mangrove-roots"
+  },
+  "mangrove_sign": {
+    "nombre": "Mangrove Sign",
+    "slug": "mangrove-sign"
+  },
+  "mangrove_slab": {
+    "nombre": "Mangrove Slab",
+    "slug": "mangrove-slab"
+  },
+  "mangrove_stairs": {
+    "nombre": "Mangrove Stairs",
+    "slug": "mangrove-stairs"
+  },
+  "mangrove_trapdoor": {
+    "nombre": "Mangrove Trapdoor",
+    "slug": "mangrove-trapdoor"
+  },
+  "mangrove_wood": {
+    "nombre": "Mangrove Wood",
+    "slug": "mangrove-wood"
+  },
+  "map": {
+    "nombre": "Empty Map",
+    "slug": "empty-map"
+  },
+  "medium_amethyst_bud": {
+    "nombre": "Medium Amethyst Bud",
+    "slug": "medium-amethyst-bud"
+  },
+  "melon": {
+    "nombre": "Melon",
+    "slug": "melon"
+  },
+  "melon_seeds": {
+    "nombre": "Melon Seeds",
+    "slug": "melon-seeds"
+  },
+  "melon_slice": {
+    "nombre": "Melon Slice",
+    "slug": "melon-slice"
+  },
+  "milk_bucket": {
+    "nombre": "Milk Bucket",
+    "slug": "milk-bucket"
+  },
+  "minecart": {
+    "nombre": "Minecart",
+    "slug": "minecart"
+  },
+  "miner_pottery_sherd": {
+    "nombre": "Miner Pottery Sherd",
+    "slug": "miner-pottery-sherd"
+  },
+  "mojang_banner_pattern": {
+    "nombre": "Thing Banner Pattern",
+    "slug": "thing-banner-pattern"
+  },
+  "mooshroom_spawn_egg": {
+    "nombre": "Mooshroom Spawn Egg",
+    "slug": "mooshroom-spawn-egg"
+  },
+  "moss_block": {
+    "nombre": "Moss Block",
+    "slug": "moss-block"
+  },
+  "moss_carpet": {
+    "nombre": "Moss Carpet",
+    "slug": "moss-carpet"
+  },
+  "mossy_cobblestone": {
+    "nombre": "Mossy Cobblestone",
+    "slug": "mossy-cobblestone"
+  },
+  "mossy_cobblestone_slab": {
+    "nombre": "Mossy Cobblestone Slab",
+    "slug": "mossy-cobblestone-slab"
+  },
+  "mossy_cobblestone_stairs": {
+    "nombre": "Mossy Cobblestone Stairs",
+    "slug": "mossy-cobblestone-stairs"
+  },
+  "mossy_cobblestone_wall": {
+    "nombre": "Mossy Cobblestone Wall",
+    "slug": "mossy-cobblestone-wall"
+  },
+  "mossy_stone_brick_slab": {
+    "nombre": "Mossy Stone Brick Slab",
+    "slug": "mossy-stone-brick-slab"
+  },
+  "mossy_stone_brick_stairs": {
+    "nombre": "Mossy Stone Brick Stairs",
+    "slug": "mossy-stone-brick-stairs"
+  },
+  "mossy_stone_brick_wall": {
+    "nombre": "Mossy Stone Brick Wall",
+    "slug": "mossy-stone-brick-wall"
+  },
+  "mossy_stone_bricks": {
+    "nombre": "Mossy Stone Bricks",
+    "slug": "mossy-stone-bricks"
+  },
+  "mourner_pottery_sherd": {
+    "nombre": "Mourner Pottery Sherd",
+    "slug": "mourner-pottery-sherd"
+  },
+  "mud": {
+    "nombre": "Mud",
+    "slug": "mud"
+  },
+  "mud_brick_slab": {
+    "nombre": "Mud Brick Slab",
+    "slug": "mud-brick-slab"
+  },
+  "mud_brick_stairs": {
+    "nombre": "Mud Brick Stairs",
+    "slug": "mud-brick-stairs"
+  },
+  "mud_brick_wall": {
+    "nombre": "Mud Brick Wall",
+    "slug": "mud-brick-wall"
+  },
+  "mud_bricks": {
+    "nombre": "Mud Bricks",
+    "slug": "mud-bricks"
+  },
+  "muddy_mangrove_roots": {
+    "nombre": "Muddy Mangrove Roots",
+    "slug": "muddy-mangrove-roots"
+  },
+  "mule_spawn_egg": {
+    "nombre": "Mule Spawn Egg",
+    "slug": "mule-spawn-egg"
+  },
+  "mushroom_stem": {
+    "nombre": "Mushroom Stem",
+    "slug": "mushroom-stem"
+  },
+  "mushroom_stew": {
+    "nombre": "Mushroom Stew",
+    "slug": "mushroom-stew"
+  },
+  "music_disc_11": {
+    "nombre": "Music Disc",
+    "slug": "music-disc-11"
+  },
+  "music_disc_13": {
+    "nombre": "Music Disc",
+    "slug": "music-disc"
+  },
+  "music_disc_5": {
+    "nombre": "Music Disc",
+    "slug": "music-disc-5"
+  },
+  "music_disc_blocks": {
+    "nombre": "Music Disc",
+    "slug": "music-disc-blocks"
+  },
+  "music_disc_cat": {
+    "nombre": "Music Disc",
+    "slug": "music-disc-cat"
+  },
+  "music_disc_chirp": {
+    "nombre": "Music Disc",
+    "slug": "music-disc-chirp"
+  },
+  "music_disc_creator": {
+    "nombre": "Music Disc",
+    "slug": "music-disc-creator"
+  },
+  "music_disc_creator_music_box": {
+    "nombre": "Music Disc",
+    "slug": "music-disc-creator-music-box"
+  },
+  "music_disc_far": {
+    "nombre": "Music Disc",
+    "slug": "music-disc-far"
+  },
+  "music_disc_mall": {
+    "nombre": "Music Disc",
+    "slug": "music-disc-mall"
+  },
+  "music_disc_mellohi": {
+    "nombre": "Music Disc",
+    "slug": "music-disc-mellohi"
+  },
+  "music_disc_otherside": {
+    "nombre": "Music Disc",
+    "slug": "music-disc-otherside"
+  },
+  "music_disc_pigstep": {
+    "nombre": "Music Disc",
+    "slug": "music-disc-pigstep"
+  },
+  "music_disc_precipice": {
+    "nombre": "Music Disc",
+    "slug": "music-disc-precipice"
+  },
+  "music_disc_relic": {
+    "nombre": "Music Disc",
+    "slug": "music-disc-relic"
+  },
+  "music_disc_stal": {
+    "nombre": "Music Disc",
+    "slug": "music-disc-stal"
+  },
+  "music_disc_strad": {
+    "nombre": "Music Disc",
+    "slug": "music-disc-strad"
+  },
+  "music_disc_wait": {
+    "nombre": "Music Disc",
+    "slug": "music-disc-wait"
+  },
+  "music_disc_ward": {
+    "nombre": "Music Disc",
+    "slug": "music-disc-ward"
+  },
+  "mutton": {
+    "nombre": "Raw Mutton",
+    "slug": "raw-mutton"
+  },
+  "mycelium": {
+    "nombre": "Mycelium",
+    "slug": "mycelium"
+  },
+  "name_tag": {
+    "nombre": "Name Tag",
+    "slug": "name-tag"
+  },
+  "nautilus_shell": {
+    "nombre": "Nautilus Shell",
+    "slug": "nautilus-shell"
+  },
+  "nether_brick": {
+    "nombre": "Nether Brick",
+    "slug": "nether-brick"
+  },
+  "nether_brick_fence": {
+    "nombre": "Nether Brick Fence",
+    "slug": "nether-brick-fence"
+  },
+  "nether_brick_slab": {
+    "nombre": "Nether Brick Slab",
+    "slug": "nether-brick-slab"
+  },
+  "nether_brick_stairs": {
+    "nombre": "Nether Brick Stairs",
+    "slug": "nether-brick-stairs"
+  },
+  "nether_brick_wall": {
+    "nombre": "Nether Brick Wall",
+    "slug": "nether-brick-wall"
+  },
+  "nether_bricks": {
+    "nombre": "Nether Bricks",
+    "slug": "nether-bricks"
+  },
+  "nether_gold_ore": {
+    "nombre": "Nether Gold Ore",
+    "slug": "nether-gold-ore"
+  },
+  "nether_quartz_ore": {
+    "nombre": "Nether Quartz Ore",
+    "slug": "nether-quartz-ore"
+  },
+  "nether_sprouts": {
+    "nombre": "Nether Sprouts",
+    "slug": "nether-sprouts"
+  },
+  "nether_star": {
+    "nombre": "Nether Star",
+    "slug": "nether-star"
+  },
+  "nether_wart": {
+    "nombre": "Nether Wart",
+    "slug": "nether-wart"
+  },
+  "nether_wart_block": {
+    "nombre": "Nether Wart Block",
+    "slug": "nether-wart-block"
+  },
+  "netherite_block": {
+    "nombre": "Block of Netherite",
+    "slug": "block-of-netherite"
+  },
+  "netherite_ingot": {
+    "nombre": "Netherite Ingot",
+    "slug": "netherite-ingot"
+  },
+  "netherite_scrap": {
+    "nombre": "Netherite Scrap",
+    "slug": "netherite-scrap"
+  },
+  "netherite_upgrade_smithing_template": {
+    "nombre": "Netherite Upgrade",
+    "slug": "netherite-upgrade"
+  },
+  "netherrack": {
+    "nombre": "Netherrack",
+    "slug": "netherrack"
+  },
+  "note_block": {
+    "nombre": "Note Block",
+    "slug": "note-block"
+  },
+  "oak_boat": {
+    "nombre": "Oak Boat",
+    "slug": "oak-boat"
+  },
+  "oak_button": {
+    "nombre": "Oak Button",
+    "slug": "oak-button"
+  },
+  "oak_chest_boat": {
+    "nombre": "Oak Boat with Chest",
+    "slug": "oak-boat-with-chest"
+  },
+  "oak_door": {
+    "nombre": "Oak Door",
+    "slug": "oak-door"
+  },
+  "oak_fence": {
+    "nombre": "Oak Fence",
+    "slug": "oak-fence"
+  },
+  "oak_fence_gate": {
+    "nombre": "Oak Fence Gate",
+    "slug": "oak-fence-gate"
+  },
+  "oak_hanging_sign": {
+    "nombre": "Oak Hanging Sign",
+    "slug": "oak-hanging-sign"
+  },
+  "oak_leaves": {
+    "nombre": "Oak Leaves",
+    "slug": "oak-leaves"
+  },
+  "oak_log": {
+    "nombre": "Oak Log",
+    "slug": "oak-log"
+  },
+  "oak_planks": {
+    "nombre": "Oak Planks",
+    "slug": "oak-planks"
+  },
+  "oak_pressure_plate": {
+    "nombre": "Oak Pressure Plate",
+    "slug": "oak-pressure-plate"
+  },
+  "oak_sapling": {
+    "nombre": "Oak Sapling",
+    "slug": "oak-sapling"
+  },
+  "oak_sign": {
+    "nombre": "Oak Sign",
+    "slug": "oak-sign"
+  },
+  "oak_slab": {
+    "nombre": "Oak Slab",
+    "slug": "oak-slab"
+  },
+  "oak_stairs": {
+    "nombre": "Oak Stairs",
+    "slug": "oak-stairs"
+  },
+  "oak_trapdoor": {
+    "nombre": "Oak Trapdoor",
+    "slug": "oak-trapdoor"
+  },
+  "oak_wood": {
+    "nombre": "Oak Wood",
+    "slug": "oak-wood"
+  },
+  "observer": {
+    "nombre": "Observer",
+    "slug": "observer"
+  },
+  "obsidian": {
+    "nombre": "Obsidian",
+    "slug": "obsidian"
+  },
+  "ocelot_spawn_egg": {
+    "nombre": "Ocelot Spawn Egg",
+    "slug": "ocelot-spawn-egg"
+  },
+  "ochre_froglight": {
+    "nombre": "Ochre Froglight",
+    "slug": "ochre-froglight"
+  },
+  "ominous_bottle": {
+    "nombre": "Ominous Bottle",
+    "slug": "ominous-bottle"
+  },
+  "ominous_trial_key": {
+    "nombre": "Ominous Trial Key",
+    "slug": "ominous-trial-key"
+  },
+  "open_eyeblossom": {
+    "nombre": "Open Eyeblossom",
+    "slug": "open-eyeblossom"
+  },
+  "orange_banner": {
+    "nombre": "Orange Banner",
+    "slug": "orange-banner"
+  },
+  "orange_bed": {
+    "nombre": "Orange Bed",
+    "slug": "orange-bed"
+  },
+  "orange_bundle": {
+    "nombre": "Orange Bundle",
+    "slug": "orange-bundle"
+  },
+  "orange_candle": {
+    "nombre": "Orange Candle",
+    "slug": "orange-candle"
+  },
+  "orange_carpet": {
+    "nombre": "Orange Carpet",
+    "slug": "orange-carpet"
+  },
+  "orange_concrete": {
+    "nombre": "Orange Concrete",
+    "slug": "orange-concrete"
+  },
+  "orange_concrete_powder": {
+    "nombre": "Orange Concrete Powder",
+    "slug": "orange-concrete-powder"
+  },
+  "orange_dye": {
+    "nombre": "Orange Dye",
+    "slug": "orange-dye"
+  },
+  "orange_glazed_terracotta": {
+    "nombre": "Orange Glazed Terracotta",
+    "slug": "orange-glazed-terracotta"
+  },
+  "orange_shulker_box": {
+    "nombre": "Orange Shulker Box",
+    "slug": "orange-shulker-box"
+  },
+  "orange_stained_glass": {
+    "nombre": "Orange Stained Glass",
+    "slug": "orange-stained-glass"
+  },
+  "orange_stained_glass_pane": {
+    "nombre": "Orange Stained Glass Pane",
+    "slug": "orange-stained-glass-pane"
+  },
+  "orange_terracotta": {
+    "nombre": "Orange Terracotta",
+    "slug": "orange-terracotta"
+  },
+  "orange_tulip": {
+    "nombre": "Orange Tulip",
+    "slug": "orange-tulip"
+  },
+  "orange_wool": {
+    "nombre": "Orange Wool",
+    "slug": "orange-wool"
+  },
+  "oxeye_daisy": {
+    "nombre": "Oxeye Daisy",
+    "slug": "oxeye-daisy"
+  },
+  "oxidized_chiseled_copper": {
+    "nombre": "Oxidized Chiseled Copper",
+    "slug": "oxidized-chiseled-copper"
+  },
+  "oxidized_copper": {
+    "nombre": "Oxidized Copper",
+    "slug": "oxidized-copper"
+  },
+  "oxidized_copper_bulb": {
+    "nombre": "Oxidized Copper Bulb",
+    "slug": "oxidized-copper-bulb"
+  },
+  "oxidized_copper_door": {
+    "nombre": "Oxidized Copper Door",
+    "slug": "oxidized-copper-door"
+  },
+  "oxidized_copper_grate": {
+    "nombre": "Oxidized Copper Grate",
+    "slug": "oxidized-copper-grate"
+  },
+  "oxidized_copper_trapdoor": {
+    "nombre": "Oxidized Copper Trapdoor",
+    "slug": "oxidized-copper-trapdoor"
+  },
+  "oxidized_cut_copper": {
+    "nombre": "Oxidized Cut Copper",
+    "slug": "oxidized-cut-copper"
+  },
+  "oxidized_cut_copper_slab": {
+    "nombre": "Oxidized Cut Copper Slab",
+    "slug": "oxidized-cut-copper-slab"
+  },
+  "oxidized_cut_copper_stairs": {
+    "nombre": "Oxidized Cut Copper Stairs",
+    "slug": "oxidized-cut-copper-stairs"
+  },
+  "packed_ice": {
+    "nombre": "Packed Ice",
+    "slug": "packed-ice"
+  },
+  "packed_mud": {
+    "nombre": "Packed Mud",
+    "slug": "packed-mud"
+  },
+  "painting": {
+    "nombre": "Painting",
+    "slug": "painting"
+  },
+  "pale_hanging_moss": {
+    "nombre": "Pale Hanging Moss",
+    "slug": "pale-hanging-moss"
+  },
+  "pale_moss_block": {
+    "nombre": "Pale Moss Block",
+    "slug": "pale-moss-block"
+  },
+  "pale_moss_carpet": {
+    "nombre": "Pale Moss Carpet",
+    "slug": "pale-moss-carpet"
+  },
+  "pale_oak_boat": {
+    "nombre": "Pale Oak Boat",
+    "slug": "pale-oak-boat"
+  },
+  "pale_oak_button": {
+    "nombre": "Pale Oak Button",
+    "slug": "pale-oak-button"
+  },
+  "pale_oak_chest_boat": {
+    "nombre": "Pale Oak Boat with Chest",
+    "slug": "pale-oak-boat-with-chest"
+  },
+  "pale_oak_door": {
+    "nombre": "Pale Oak Door",
+    "slug": "pale-oak-door"
+  },
+  "pale_oak_fence": {
+    "nombre": "Pale Oak Fence",
+    "slug": "pale-oak-fence"
+  },
+  "pale_oak_fence_gate": {
+    "nombre": "Pale Oak Fence Gate",
+    "slug": "pale-oak-fence-gate"
+  },
+  "pale_oak_hanging_sign": {
+    "nombre": "Pale Oak Hanging Sign",
+    "slug": "pale-oak-hanging-sign"
+  },
+  "pale_oak_leaves": {
+    "nombre": "Pale Oak Leaves",
+    "slug": "pale-oak-leaves"
+  },
+  "pale_oak_log": {
+    "nombre": "Pale Oak Log",
+    "slug": "pale-oak-log"
+  },
+  "pale_oak_planks": {
+    "nombre": "Pale Oak Planks",
+    "slug": "pale-oak-planks"
+  },
+  "pale_oak_pressure_plate": {
+    "nombre": "Pale Oak Pressure Plate",
+    "slug": "pale-oak-pressure-plate"
+  },
+  "pale_oak_sapling": {
+    "nombre": "Pale Oak Sapling",
+    "slug": "pale-oak-sapling"
+  },
+  "pale_oak_sign": {
+    "nombre": "Pale Oak Sign",
+    "slug": "pale-oak-sign"
+  },
+  "pale_oak_slab": {
+    "nombre": "Pale Oak Slab",
+    "slug": "pale-oak-slab"
+  },
+  "pale_oak_stairs": {
+    "nombre": "Pale Oak Stairs",
+    "slug": "pale-oak-stairs"
+  },
+  "pale_oak_trapdoor": {
+    "nombre": "Pale Oak Trapdoor",
+    "slug": "pale-oak-trapdoor"
+  },
+  "pale_oak_wood": {
+    "nombre": "Pale Oak Wood",
+    "slug": "pale-oak-wood"
+  },
+  "panda_spawn_egg": {
+    "nombre": "Panda Spawn Egg",
+    "slug": "panda-spawn-egg"
+  },
+  "paper": {
+    "nombre": "Paper",
+    "slug": "paper"
+  },
+  "parrot_spawn_egg": {
+    "nombre": "Parrot Spawn Egg",
+    "slug": "parrot-spawn-egg"
+  },
+  "pearlescent_froglight": {
+    "nombre": "Pearlescent Froglight",
+    "slug": "pearlescent-froglight"
+  },
+  "peony": {
+    "nombre": "Peony",
+    "slug": "peony"
+  },
+  "petrified_oak_slab": {
+    "nombre": "Petrified Oak Slab",
+    "slug": "petrified-oak-slab"
+  },
+  "phantom_membrane": {
+    "nombre": "Phantom Membrane",
+    "slug": "phantom-membrane"
+  },
+  "phantom_spawn_egg": {
+    "nombre": "Phantom Spawn Egg",
+    "slug": "phantom-spawn-egg"
+  },
+  "pig_spawn_egg": {
+    "nombre": "Pig Spawn Egg",
+    "slug": "pig-spawn-egg"
+  },
+  "piglin_banner_pattern": {
+    "nombre": "Snout Banner Pattern",
+    "slug": "snout-banner-pattern"
+  },
+  "piglin_brute_spawn_egg": {
+    "nombre": "Piglin Brute Spawn Egg",
+    "slug": "piglin-brute-spawn-egg"
+  },
+  "piglin_head": {
+    "nombre": "Piglin Head",
+    "slug": "piglin-head"
+  },
+  "piglin_spawn_egg": {
+    "nombre": "Piglin Spawn Egg",
+    "slug": "piglin-spawn-egg"
+  },
+  "pillager_spawn_egg": {
+    "nombre": "Pillager Spawn Egg",
+    "slug": "pillager-spawn-egg"
+  },
+  "pink_banner": {
+    "nombre": "Pink Banner",
+    "slug": "pink-banner"
+  },
+  "pink_bed": {
+    "nombre": "Pink Bed",
+    "slug": "pink-bed"
+  },
+  "pink_bundle": {
+    "nombre": "Pink Bundle",
+    "slug": "pink-bundle"
+  },
+  "pink_candle": {
+    "nombre": "Pink Candle",
+    "slug": "pink-candle"
+  },
+  "pink_carpet": {
+    "nombre": "Pink Carpet",
+    "slug": "pink-carpet"
+  },
+  "pink_concrete": {
+    "nombre": "Pink Concrete",
+    "slug": "pink-concrete"
+  },
+  "pink_concrete_powder": {
+    "nombre": "Pink Concrete Powder",
+    "slug": "pink-concrete-powder"
+  },
+  "pink_dye": {
+    "nombre": "Pink Dye",
+    "slug": "pink-dye"
+  },
+  "pink_glazed_terracotta": {
+    "nombre": "Pink Glazed Terracotta",
+    "slug": "pink-glazed-terracotta"
+  },
+  "pink_petals": {
+    "nombre": "Pink Petals",
+    "slug": "pink-petals"
+  },
+  "pink_shulker_box": {
+    "nombre": "Pink Shulker Box",
+    "slug": "pink-shulker-box"
+  },
+  "pink_stained_glass": {
+    "nombre": "Pink Stained Glass",
+    "slug": "pink-stained-glass"
+  },
+  "pink_stained_glass_pane": {
+    "nombre": "Pink Stained Glass Pane",
+    "slug": "pink-stained-glass-pane"
+  },
+  "pink_terracotta": {
+    "nombre": "Pink Terracotta",
+    "slug": "pink-terracotta"
+  },
+  "pink_tulip": {
+    "nombre": "Pink Tulip",
+    "slug": "pink-tulip"
+  },
+  "pink_wool": {
+    "nombre": "Pink Wool",
+    "slug": "pink-wool"
+  },
+  "piston": {
+    "nombre": "Piston",
+    "slug": "piston"
+  },
+  "pitcher_plant": {
+    "nombre": "Pitcher Plant",
+    "slug": "pitcher-plant"
+  },
+  "pitcher_pod": {
+    "nombre": "Pitcher Pod",
+    "slug": "pitcher-pod"
+  },
+  "player_head": {
+    "nombre": "Player Head",
+    "slug": "player-head"
+  },
+  "plenty_pottery_sherd": {
+    "nombre": "Plenty Pottery Sherd",
+    "slug": "plenty-pottery-sherd"
+  },
+  "podzol": {
+    "nombre": "Podzol",
+    "slug": "podzol"
+  },
+  "pointed_dripstone": {
+    "nombre": "Pointed Dripstone",
+    "slug": "pointed-dripstone"
+  },
+  "poisonous_potato": {
+    "nombre": "Poisonous Potato",
+    "slug": "poisonous-potato"
+  },
+  "polar_bear_spawn_egg": {
+    "nombre": "Polar Bear Spawn Egg",
+    "slug": "polar-bear-spawn-egg"
+  },
+  "polished_andesite": {
+    "nombre": "Polished Andesite",
+    "slug": "polished-andesite"
+  },
+  "polished_andesite_slab": {
+    "nombre": "Polished Andesite Slab",
+    "slug": "polished-andesite-slab"
+  },
+  "polished_andesite_stairs": {
+    "nombre": "Polished Andesite Stairs",
+    "slug": "polished-andesite-stairs"
+  },
+  "polished_basalt": {
+    "nombre": "Polished Basalt",
+    "slug": "polished-basalt"
+  },
+  "polished_blackstone": {
+    "nombre": "Polished Blackstone",
+    "slug": "polished-blackstone"
+  },
+  "polished_blackstone_brick_slab": {
+    "nombre": "Polished Blackstone Brick Slab",
+    "slug": "polished-blackstone-brick-slab"
+  },
+  "polished_blackstone_brick_stairs": {
+    "nombre": "Polished Blackstone Brick Stairs",
+    "slug": "polished-blackstone-brick-stairs"
+  },
+  "polished_blackstone_brick_wall": {
+    "nombre": "Polished Blackstone Brick Wall",
+    "slug": "polished-blackstone-brick-wall"
+  },
+  "polished_blackstone_bricks": {
+    "nombre": "Polished Blackstone Bricks",
+    "slug": "polished-blackstone-bricks"
+  },
+  "polished_blackstone_button": {
+    "nombre": "Polished Blackstone Button",
+    "slug": "polished-blackstone-button"
+  },
+  "polished_blackstone_pressure_plate": {
+    "nombre": "Polished Blackstone Pressure Plate",
+    "slug": "polished-blackstone-pressure-plate"
+  },
+  "polished_blackstone_slab": {
+    "nombre": "Polished Blackstone Slab",
+    "slug": "polished-blackstone-slab"
+  },
+  "polished_blackstone_stairs": {
+    "nombre": "Polished Blackstone Stairs",
+    "slug": "polished-blackstone-stairs"
+  },
+  "polished_blackstone_wall": {
+    "nombre": "Polished Blackstone Wall",
+    "slug": "polished-blackstone-wall"
+  },
+  "polished_deepslate": {
+    "nombre": "Polished Deepslate",
+    "slug": "polished-deepslate"
+  },
+  "polished_deepslate_slab": {
+    "nombre": "Polished Deepslate Slab",
+    "slug": "polished-deepslate-slab"
+  },
+  "polished_deepslate_stairs": {
+    "nombre": "Polished Deepslate Stairs",
+    "slug": "polished-deepslate-stairs"
+  },
+  "polished_deepslate_wall": {
+    "nombre": "Polished Deepslate Wall",
+    "slug": "polished-deepslate-wall"
+  },
+  "polished_diorite": {
+    "nombre": "Polished Diorite",
+    "slug": "polished-diorite"
+  },
+  "polished_diorite_slab": {
+    "nombre": "Polished Diorite Slab",
+    "slug": "polished-diorite-slab"
+  },
+  "polished_diorite_stairs": {
+    "nombre": "Polished Diorite Stairs",
+    "slug": "polished-diorite-stairs"
+  },
+  "polished_granite": {
+    "nombre": "Polished Granite",
+    "slug": "polished-granite"
+  },
+  "polished_granite_slab": {
+    "nombre": "Polished Granite Slab",
+    "slug": "polished-granite-slab"
+  },
+  "polished_granite_stairs": {
+    "nombre": "Polished Granite Stairs",
+    "slug": "polished-granite-stairs"
+  },
+  "polished_tuff": {
+    "nombre": "Polished Tuff",
+    "slug": "polished-tuff"
+  },
+  "polished_tuff_slab": {
+    "nombre": "Polished Tuff Slab",
+    "slug": "polished-tuff-slab"
+  },
+  "polished_tuff_stairs": {
+    "nombre": "Polished Tuff Stairs",
+    "slug": "polished-tuff-stairs"
+  },
+  "polished_tuff_wall": {
+    "nombre": "Polished Tuff Wall",
+    "slug": "polished-tuff-wall"
+  },
+  "popped_chorus_fruit": {
+    "nombre": "Popped Chorus Fruit",
+    "slug": "popped-chorus-fruit"
+  },
+  "poppy": {
+    "nombre": "Poppy",
+    "slug": "poppy"
+  },
+  "porkchop": {
+    "nombre": "Raw Porkchop",
+    "slug": "raw-porkchop"
+  },
+  "potato": {
+    "nombre": "Potato",
+    "slug": "potato"
+  },
+  "potion": {
+    "nombre": "Potion",
+    "slug": "potion"
+  },
+  "powder_snow_bucket": {
+    "nombre": "Powder Snow Bucket",
+    "slug": "powder-snow-bucket"
+  },
+  "powered_rail": {
+    "nombre": "Powered Rail",
+    "slug": "powered-rail"
+  },
+  "prismarine": {
+    "nombre": "Prismarine",
+    "slug": "prismarine"
+  },
+  "prismarine_brick_slab": {
+    "nombre": "Prismarine Brick Slab",
+    "slug": "prismarine-brick-slab"
+  },
+  "prismarine_brick_stairs": {
+    "nombre": "Prismarine Brick Stairs",
+    "slug": "prismarine-brick-stairs"
+  },
+  "prismarine_bricks": {
+    "nombre": "Prismarine Bricks",
+    "slug": "prismarine-bricks"
+  },
+  "prismarine_crystals": {
+    "nombre": "Prismarine Crystals",
+    "slug": "prismarine-crystals"
+  },
+  "prismarine_shard": {
+    "nombre": "Prismarine Shard",
+    "slug": "prismarine-shard"
+  },
+  "prismarine_slab": {
+    "nombre": "Prismarine Slab",
+    "slug": "prismarine-slab"
+  },
+  "prismarine_stairs": {
+    "nombre": "Prismarine Stairs",
+    "slug": "prismarine-stairs"
+  },
+  "prismarine_wall": {
+    "nombre": "Prismarine Wall",
+    "slug": "prismarine-wall"
+  },
+  "prize_pottery_sherd": {
+    "nombre": "Prize Pottery Sherd",
+    "slug": "prize-pottery-sherd"
+  },
+  "pufferfish": {
+    "nombre": "Pufferfish",
+    "slug": "pufferfish"
+  },
+  "pufferfish_bucket": {
+    "nombre": "Bucket of Pufferfish",
+    "slug": "bucket-of-pufferfish"
+  },
+  "pufferfish_spawn_egg": {
+    "nombre": "Pufferfish Spawn Egg",
+    "slug": "pufferfish-spawn-egg"
+  },
+  "pumpkin": {
+    "nombre": "Pumpkin",
+    "slug": "pumpkin"
+  },
+  "pumpkin_pie": {
+    "nombre": "Pumpkin Pie",
+    "slug": "pumpkin-pie"
+  },
+  "pumpkin_seeds": {
+    "nombre": "Pumpkin Seeds",
+    "slug": "pumpkin-seeds"
+  },
+  "purple_banner": {
+    "nombre": "Purple Banner",
+    "slug": "purple-banner"
+  },
+  "purple_bed": {
+    "nombre": "Purple Bed",
+    "slug": "purple-bed"
+  },
+  "purple_bundle": {
+    "nombre": "Purple Bundle",
+    "slug": "purple-bundle"
+  },
+  "purple_candle": {
+    "nombre": "Purple Candle",
+    "slug": "purple-candle"
+  },
+  "purple_carpet": {
+    "nombre": "Purple Carpet",
+    "slug": "purple-carpet"
+  },
+  "purple_concrete": {
+    "nombre": "Purple Concrete",
+    "slug": "purple-concrete"
+  },
+  "purple_concrete_powder": {
+    "nombre": "Purple Concrete Powder",
+    "slug": "purple-concrete-powder"
+  },
+  "purple_dye": {
+    "nombre": "Purple Dye",
+    "slug": "purple-dye"
+  },
+  "purple_glazed_terracotta": {
+    "nombre": "Purple Glazed Terracotta",
+    "slug": "purple-glazed-terracotta"
+  },
+  "purple_shulker_box": {
+    "nombre": "Purple Shulker Box",
+    "slug": "purple-shulker-box"
+  },
+  "purple_stained_glass": {
+    "nombre": "Purple Stained Glass",
+    "slug": "purple-stained-glass"
+  },
+  "purple_stained_glass_pane": {
+    "nombre": "Purple Stained Glass Pane",
+    "slug": "purple-stained-glass-pane"
+  },
+  "purple_terracotta": {
+    "nombre": "Purple Terracotta",
+    "slug": "purple-terracotta"
+  },
+  "purple_wool": {
+    "nombre": "Purple Wool",
+    "slug": "purple-wool"
+  },
+  "purpur_block": {
+    "nombre": "Purpur Block",
+    "slug": "purpur-block"
+  },
+  "purpur_pillar": {
+    "nombre": "Purpur Pillar",
+    "slug": "purpur-pillar"
+  },
+  "purpur_slab": {
+    "nombre": "Purpur Slab",
+    "slug": "purpur-slab"
+  },
+  "purpur_stairs": {
+    "nombre": "Purpur Stairs",
+    "slug": "purpur-stairs"
+  },
+  "quartz": {
+    "nombre": "Nether Quartz",
+    "slug": "nether-quartz"
+  },
+  "quartz_block": {
+    "nombre": "Block of Quartz",
+    "slug": "block-of-quartz"
+  },
+  "quartz_bricks": {
+    "nombre": "Quartz Bricks",
+    "slug": "quartz-bricks"
+  },
+  "quartz_pillar": {
+    "nombre": "Quartz Pillar",
+    "slug": "quartz-pillar"
+  },
+  "quartz_slab": {
+    "nombre": "Quartz Slab",
+    "slug": "quartz-slab"
+  },
+  "quartz_stairs": {
+    "nombre": "Quartz Stairs",
+    "slug": "quartz-stairs"
+  },
+  "rabbit": {
+    "nombre": "Raw Rabbit",
+    "slug": "raw-rabbit"
+  },
+  "rabbit_foot": {
+    "nombre": "Rabbit's Foot",
+    "slug": "rabbit-s-foot"
+  },
+  "rabbit_hide": {
+    "nombre": "Rabbit Hide",
+    "slug": "rabbit-hide"
+  },
+  "rabbit_spawn_egg": {
+    "nombre": "Rabbit Spawn Egg",
+    "slug": "rabbit-spawn-egg"
+  },
+  "rabbit_stew": {
+    "nombre": "Rabbit Stew",
+    "slug": "rabbit-stew"
+  },
+  "rail": {
+    "nombre": "Rail",
+    "slug": "rail"
+  },
+  "raiser_armor_trim_smithing_template": {
+    "nombre": "Raiser Armor Trim",
+    "slug": "raiser-armor-trim"
+  },
+  "ravager_spawn_egg": {
+    "nombre": "Ravager Spawn Egg",
+    "slug": "ravager-spawn-egg"
+  },
+  "raw_copper": {
+    "nombre": "Raw Copper",
+    "slug": "raw-copper"
+  },
+  "raw_copper_block": {
+    "nombre": "Block of Raw Copper",
+    "slug": "block-of-raw-copper"
+  },
+  "raw_gold": {
+    "nombre": "Raw Gold",
+    "slug": "raw-gold"
+  },
+  "raw_gold_block": {
+    "nombre": "Block of Raw Gold",
+    "slug": "block-of-raw-gold"
+  },
+  "raw_iron": {
+    "nombre": "Raw Iron",
+    "slug": "raw-iron"
+  },
+  "raw_iron_block": {
+    "nombre": "Block of Raw Iron",
+    "slug": "block-of-raw-iron"
+  },
+  "recovery_compass": {
+    "nombre": "Recovery Compass",
+    "slug": "recovery-compass"
+  },
+  "red_banner": {
+    "nombre": "Red Banner",
+    "slug": "red-banner"
+  },
+  "red_bed": {
+    "nombre": "Red Bed",
+    "slug": "red-bed"
+  },
+  "red_bundle": {
+    "nombre": "Red Bundle",
+    "slug": "red-bundle"
+  },
+  "red_candle": {
+    "nombre": "Red Candle",
+    "slug": "red-candle"
+  },
+  "red_carpet": {
+    "nombre": "Red Carpet",
+    "slug": "red-carpet"
+  },
+  "red_concrete": {
+    "nombre": "Red Concrete",
+    "slug": "red-concrete"
+  },
+  "red_concrete_powder": {
+    "nombre": "Red Concrete Powder",
+    "slug": "red-concrete-powder"
+  },
+  "red_dye": {
+    "nombre": "Red Dye",
+    "slug": "red-dye"
+  },
+  "red_glazed_terracotta": {
+    "nombre": "Red Glazed Terracotta",
+    "slug": "red-glazed-terracotta"
+  },
+  "red_mushroom": {
+    "nombre": "Red Mushroom",
+    "slug": "red-mushroom"
+  },
+  "red_mushroom_block": {
+    "nombre": "Red Mushroom Block",
+    "slug": "red-mushroom-block"
+  },
+  "red_nether_brick_slab": {
+    "nombre": "Red Nether Brick Slab",
+    "slug": "red-nether-brick-slab"
+  },
+  "red_nether_brick_stairs": {
+    "nombre": "Red Nether Brick Stairs",
+    "slug": "red-nether-brick-stairs"
+  },
+  "red_nether_brick_wall": {
+    "nombre": "Red Nether Brick Wall",
+    "slug": "red-nether-brick-wall"
+  },
+  "red_nether_bricks": {
+    "nombre": "Red Nether Bricks",
+    "slug": "red-nether-bricks"
+  },
+  "red_sand": {
+    "nombre": "Red Sand",
+    "slug": "red-sand"
+  },
+  "red_sandstone": {
+    "nombre": "Red Sandstone",
+    "slug": "red-sandstone"
+  },
+  "red_sandstone_slab": {
+    "nombre": "Red Sandstone Slab",
+    "slug": "red-sandstone-slab"
+  },
+  "red_sandstone_stairs": {
+    "nombre": "Red Sandstone Stairs",
+    "slug": "red-sandstone-stairs"
+  },
+  "red_sandstone_wall": {
+    "nombre": "Red Sandstone Wall",
+    "slug": "red-sandstone-wall"
+  },
+  "red_shulker_box": {
+    "nombre": "Red Shulker Box",
+    "slug": "red-shulker-box"
+  },
+  "red_stained_glass": {
+    "nombre": "Red Stained Glass",
+    "slug": "red-stained-glass"
+  },
+  "red_stained_glass_pane": {
+    "nombre": "Red Stained Glass Pane",
+    "slug": "red-stained-glass-pane"
+  },
+  "red_terracotta": {
+    "nombre": "Red Terracotta",
+    "slug": "red-terracotta"
+  },
+  "red_tulip": {
+    "nombre": "Red Tulip",
+    "slug": "red-tulip"
+  },
+  "red_wool": {
+    "nombre": "Red Wool",
+    "slug": "red-wool"
+  },
+  "redstone": {
+    "nombre": "Redstone Dust",
+    "slug": "redstone-dust"
+  },
+  "redstone_block": {
+    "nombre": "Block of Redstone",
+    "slug": "block-of-redstone"
+  },
+  "redstone_lamp": {
+    "nombre": "Redstone Lamp",
+    "slug": "redstone-lamp"
+  },
+  "redstone_ore": {
+    "nombre": "Redstone Ore",
+    "slug": "redstone-ore"
+  },
+  "redstone_torch": {
+    "nombre": "Redstone Torch",
+    "slug": "redstone-torch"
+  },
+  "reinforced_deepslate": {
+    "nombre": "Reinforced Deepslate",
+    "slug": "reinforced-deepslate"
+  },
+  "repeater": {
+    "nombre": "Redstone Repeater",
+    "slug": "redstone-repeater"
+  },
+  "repeating_command_block": {
+    "nombre": "Repeating Command Block",
+    "slug": "repeating-command-block"
+  },
+  "resin_block": {
+    "nombre": "Block of Resin",
+    "slug": "block-of-resin"
+  },
+  "resin_brick": {
+    "nombre": "Resin Brick",
+    "slug": "resin-brick"
+  },
+  "resin_brick_slab": {
+    "nombre": "Resin Brick Slab",
+    "slug": "resin-brick-slab"
+  },
+  "resin_brick_stairs": {
+    "nombre": "Resin Brick Stairs",
+    "slug": "resin-brick-stairs"
+  },
+  "resin_brick_wall": {
+    "nombre": "Resin Brick Wall",
+    "slug": "resin-brick-wall"
+  },
+  "resin_bricks": {
+    "nombre": "Resin Bricks",
+    "slug": "resin-bricks"
+  },
+  "resin_clump": {
+    "nombre": "Resin Clump",
+    "slug": "resin-clump"
+  },
+  "respawn_anchor": {
+    "nombre": "Respawn Anchor",
+    "slug": "respawn-anchor"
+  },
+  "rib_armor_trim_smithing_template": {
+    "nombre": "Rib Armor Trim",
+    "slug": "rib-armor-trim"
+  },
+  "rooted_dirt": {
+    "nombre": "Rooted Dirt",
+    "slug": "rooted-dirt"
+  },
+  "rose_bush": {
+    "nombre": "Rose Bush",
+    "slug": "rose-bush"
+  },
+  "rotten_flesh": {
+    "nombre": "Rotten Flesh",
+    "slug": "rotten-flesh"
+  },
+  "saddle": {
+    "nombre": "Saddle",
+    "slug": "saddle"
+  },
+  "salmon": {
+    "nombre": "Raw Salmon",
+    "slug": "raw-salmon"
+  },
+  "salmon_bucket": {
+    "nombre": "Bucket of Salmon",
+    "slug": "bucket-of-salmon"
+  },
+  "salmon_spawn_egg": {
+    "nombre": "Salmon Spawn Egg",
+    "slug": "salmon-spawn-egg"
+  },
+  "sand": {
+    "nombre": "Sand",
+    "slug": "sand"
+  },
+  "sandstone": {
+    "nombre": "Sandstone",
+    "slug": "sandstone"
+  },
+  "sandstone_slab": {
+    "nombre": "Sandstone Slab",
+    "slug": "sandstone-slab"
+  },
+  "sandstone_stairs": {
+    "nombre": "Sandstone Stairs",
+    "slug": "sandstone-stairs"
+  },
+  "sandstone_wall": {
+    "nombre": "Sandstone Wall",
+    "slug": "sandstone-wall"
+  },
+  "scaffolding": {
+    "nombre": "Scaffolding",
+    "slug": "scaffolding"
+  },
+  "scrape_pottery_sherd": {
+    "nombre": "Scrape Pottery Sherd",
+    "slug": "scrape-pottery-sherd"
+  },
+  "sculk": {
+    "nombre": "Sculk",
+    "slug": "sculk"
+  },
+  "sculk_catalyst": {
+    "nombre": "Sculk Catalyst",
+    "slug": "sculk-catalyst"
+  },
+  "sculk_sensor": {
+    "nombre": "Sculk Sensor",
+    "slug": "sculk-sensor"
+  },
+  "sculk_shrieker": {
+    "nombre": "Sculk Shrieker",
+    "slug": "sculk-shrieker"
+  },
+  "sculk_vein": {
+    "nombre": "Sculk Vein",
+    "slug": "sculk-vein"
+  },
+  "sea_lantern": {
+    "nombre": "Sea Lantern",
+    "slug": "sea-lantern"
+  },
+  "sea_pickle": {
+    "nombre": "Sea Pickle",
+    "slug": "sea-pickle"
+  },
+  "seagrass": {
+    "nombre": "Seagrass",
+    "slug": "seagrass"
+  },
+  "sentry_armor_trim_smithing_template": {
+    "nombre": "Sentry Armor Trim",
+    "slug": "sentry-armor-trim"
+  },
+  "shaper_armor_trim_smithing_template": {
+    "nombre": "Shaper Armor Trim",
+    "slug": "shaper-armor-trim"
+  },
+  "sheaf_pottery_sherd": {
+    "nombre": "Sheaf Pottery Sherd",
+    "slug": "sheaf-pottery-sherd"
+  },
+  "shears": {
+    "nombre": "Shears",
+    "slug": "shears"
+  },
+  "sheep_spawn_egg": {
+    "nombre": "Sheep Spawn Egg",
+    "slug": "sheep-spawn-egg"
+  },
+  "shelter_pottery_sherd": {
+    "nombre": "Shelter Pottery Sherd",
+    "slug": "shelter-pottery-sherd"
+  },
+  "short_grass": {
+    "nombre": "Short Grass",
+    "slug": "short-grass"
+  },
+  "shroomlight": {
+    "nombre": "Shroomlight",
+    "slug": "shroomlight"
+  },
+  "shulker_box": {
+    "nombre": "Shulker Box",
+    "slug": "shulker-box"
+  },
+  "shulker_shell": {
+    "nombre": "Shulker Shell",
+    "slug": "shulker-shell"
+  },
+  "shulker_spawn_egg": {
+    "nombre": "Shulker Spawn Egg",
+    "slug": "shulker-spawn-egg"
+  },
+  "silence_armor_trim_smithing_template": {
+    "nombre": "Silence Armor Trim",
+    "slug": "silence-armor-trim"
+  },
+  "silverfish_spawn_egg": {
+    "nombre": "Silverfish Spawn Egg",
+    "slug": "silverfish-spawn-egg"
+  },
+  "skeleton_horse_spawn_egg": {
+    "nombre": "Skeleton Horse Spawn Egg",
+    "slug": "skeleton-horse-spawn-egg"
+  },
+  "skeleton_skull": {
+    "nombre": "Skeleton Skull",
+    "slug": "skeleton-skull"
+  },
+  "skeleton_spawn_egg": {
+    "nombre": "Skeleton Spawn Egg",
+    "slug": "skeleton-spawn-egg"
+  },
+  "skull_banner_pattern": {
+    "nombre": "Skull Charge Banner Pattern",
+    "slug": "skull-charge-banner-pattern"
+  },
+  "skull_pottery_sherd": {
+    "nombre": "Skull Pottery Sherd",
+    "slug": "skull-pottery-sherd"
+  },
+  "slime_ball": {
+    "nombre": "Slimeball",
+    "slug": "slimeball"
+  },
+  "slime_block": {
+    "nombre": "Slime Block",
+    "slug": "slime-block"
+  },
+  "slime_spawn_egg": {
+    "nombre": "Slime Spawn Egg",
+    "slug": "slime-spawn-egg"
+  },
+  "small_amethyst_bud": {
+    "nombre": "Small Amethyst Bud",
+    "slug": "small-amethyst-bud"
+  },
+  "small_dripleaf": {
+    "nombre": "Small Dripleaf",
+    "slug": "small-dripleaf"
+  },
+  "smithing_table": {
+    "nombre": "Smithing Table",
+    "slug": "smithing-table"
+  },
+  "smoker": {
+    "nombre": "Smoker",
+    "slug": "smoker"
+  },
+  "smooth_basalt": {
+    "nombre": "Smooth Basalt",
+    "slug": "smooth-basalt"
+  },
+  "smooth_quartz": {
+    "nombre": "Smooth Quartz Block",
+    "slug": "smooth-quartz-block"
+  },
+  "smooth_quartz_slab": {
+    "nombre": "Smooth Quartz Slab",
+    "slug": "smooth-quartz-slab"
+  },
+  "smooth_quartz_stairs": {
+    "nombre": "Smooth Quartz Stairs",
+    "slug": "smooth-quartz-stairs"
+  },
+  "smooth_red_sandstone": {
+    "nombre": "Smooth Red Sandstone",
+    "slug": "smooth-red-sandstone"
+  },
+  "smooth_red_sandstone_slab": {
+    "nombre": "Smooth Red Sandstone Slab",
+    "slug": "smooth-red-sandstone-slab"
+  },
+  "smooth_red_sandstone_stairs": {
+    "nombre": "Smooth Red Sandstone Stairs",
+    "slug": "smooth-red-sandstone-stairs"
+  },
+  "smooth_sandstone": {
+    "nombre": "Smooth Sandstone",
+    "slug": "smooth-sandstone"
+  },
+  "smooth_sandstone_slab": {
+    "nombre": "Smooth Sandstone Slab",
+    "slug": "smooth-sandstone-slab"
+  },
+  "smooth_sandstone_stairs": {
+    "nombre": "Smooth Sandstone Stairs",
+    "slug": "smooth-sandstone-stairs"
+  },
+  "smooth_stone": {
+    "nombre": "Smooth Stone",
+    "slug": "smooth-stone"
+  },
+  "smooth_stone_slab": {
+    "nombre": "Smooth Stone Slab",
+    "slug": "smooth-stone-slab"
+  },
+  "sniffer_egg": {
+    "nombre": "Sniffer Egg",
+    "slug": "sniffer-egg"
+  },
+  "sniffer_spawn_egg": {
+    "nombre": "Sniffer Spawn Egg",
+    "slug": "sniffer-spawn-egg"
+  },
+  "snort_pottery_sherd": {
+    "nombre": "Snort Pottery Sherd",
+    "slug": "snort-pottery-sherd"
+  },
+  "snout_armor_trim_smithing_template": {
+    "nombre": "Snout Armor Trim",
+    "slug": "snout-armor-trim"
+  },
+  "snow": {
+    "nombre": "Snow",
+    "slug": "snow"
+  },
+  "snow_block": {
+    "nombre": "Snow Block",
+    "slug": "snow-block"
+  },
+  "snow_golem_spawn_egg": {
+    "nombre": "Snow Golem Spawn Egg",
+    "slug": "snow-golem-spawn-egg"
+  },
+  "snowball": {
+    "nombre": "Snowball",
+    "slug": "snowball"
+  },
+  "soul_campfire": {
+    "nombre": "Soul Campfire",
+    "slug": "soul-campfire"
+  },
+  "soul_lantern": {
+    "nombre": "Soul Lantern",
+    "slug": "soul-lantern"
+  },
+  "soul_sand": {
+    "nombre": "Soul Sand",
+    "slug": "soul-sand"
+  },
+  "soul_soil": {
+    "nombre": "Soul Soil",
+    "slug": "soul-soil"
+  },
+  "soul_torch": {
+    "nombre": "Soul Torch",
+    "slug": "soul-torch"
+  },
+  "spawner": {
+    "nombre": "Monster Spawner",
+    "slug": "monster-spawner"
+  },
+  "spectral_arrow": {
+    "nombre": "Spectral Arrow",
+    "slug": "spectral-arrow"
+  },
+  "spider_eye": {
+    "nombre": "Spider Eye",
+    "slug": "spider-eye"
+  },
+  "spider_spawn_egg": {
+    "nombre": "Spider Spawn Egg",
+    "slug": "spider-spawn-egg"
+  },
+  "spire_armor_trim_smithing_template": {
+    "nombre": "Spire Armor Trim",
+    "slug": "spire-armor-trim"
+  },
+  "splash_potion": {
+    "nombre": "Splash Potion",
+    "slug": "splash-potion"
+  },
+  "sponge": {
+    "nombre": "Sponge",
+    "slug": "sponge"
+  },
+  "spore_blossom": {
+    "nombre": "Spore Blossom",
+    "slug": "spore-blossom"
+  },
+  "spruce_boat": {
+    "nombre": "Spruce Boat",
+    "slug": "spruce-boat"
+  },
+  "spruce_button": {
+    "nombre": "Spruce Button",
+    "slug": "spruce-button"
+  },
+  "spruce_chest_boat": {
+    "nombre": "Spruce Boat with Chest",
+    "slug": "spruce-boat-with-chest"
+  },
+  "spruce_door": {
+    "nombre": "Spruce Door",
+    "slug": "spruce-door"
+  },
+  "spruce_fence": {
+    "nombre": "Spruce Fence",
+    "slug": "spruce-fence"
+  },
+  "spruce_fence_gate": {
+    "nombre": "Spruce Fence Gate",
+    "slug": "spruce-fence-gate"
+  },
+  "spruce_hanging_sign": {
+    "nombre": "Spruce Hanging Sign",
+    "slug": "spruce-hanging-sign"
+  },
+  "spruce_leaves": {
+    "nombre": "Spruce Leaves",
+    "slug": "spruce-leaves"
+  },
+  "spruce_log": {
+    "nombre": "Spruce Log",
+    "slug": "spruce-log"
+  },
+  "spruce_planks": {
+    "nombre": "Spruce Planks",
+    "slug": "spruce-planks"
+  },
+  "spruce_pressure_plate": {
+    "nombre": "Spruce Pressure Plate",
+    "slug": "spruce-pressure-plate"
+  },
+  "spruce_sapling": {
+    "nombre": "Spruce Sapling",
+    "slug": "spruce-sapling"
+  },
+  "spruce_sign": {
+    "nombre": "Spruce Sign",
+    "slug": "spruce-sign"
+  },
+  "spruce_slab": {
+    "nombre": "Spruce Slab",
+    "slug": "spruce-slab"
+  },
+  "spruce_stairs": {
+    "nombre": "Spruce Stairs",
+    "slug": "spruce-stairs"
+  },
+  "spruce_trapdoor": {
+    "nombre": "Spruce Trapdoor",
+    "slug": "spruce-trapdoor"
+  },
+  "spruce_wood": {
+    "nombre": "Spruce Wood",
+    "slug": "spruce-wood"
+  },
+  "spyglass": {
+    "nombre": "Spyglass",
+    "slug": "spyglass"
+  },
+  "squid_spawn_egg": {
+    "nombre": "Squid Spawn Egg",
+    "slug": "squid-spawn-egg"
+  },
+  "stick": {
+    "nombre": "Stick",
+    "slug": "stick",
+    "descripcion": "A basic material that forms the handle of nearly every tool and weapon. Crafted from planks and effectively unlimited."
+  },
+  "sticky_piston": {
+    "nombre": "Sticky Piston",
+    "slug": "sticky-piston"
+  },
+  "stone": {
+    "nombre": "Stone",
+    "slug": "stone"
+  },
+  "stone_brick_slab": {
+    "nombre": "Stone Brick Slab",
+    "slug": "stone-brick-slab"
+  },
+  "stone_brick_stairs": {
+    "nombre": "Stone Brick Stairs",
+    "slug": "stone-brick-stairs"
+  },
+  "stone_brick_wall": {
+    "nombre": "Stone Brick Wall",
+    "slug": "stone-brick-wall"
+  },
+  "stone_bricks": {
+    "nombre": "Stone Bricks",
+    "slug": "stone-bricks"
+  },
+  "stone_button": {
+    "nombre": "Stone Button",
+    "slug": "stone-button"
+  },
+  "stone_pressure_plate": {
+    "nombre": "Stone Pressure Plate",
+    "slug": "stone-pressure-plate"
+  },
+  "stone_slab": {
+    "nombre": "Stone Slab",
+    "slug": "stone-slab"
+  },
+  "stone_stairs": {
+    "nombre": "Stone Stairs",
+    "slug": "stone-stairs"
+  },
+  "stonecutter": {
+    "nombre": "Stonecutter",
+    "slug": "stonecutter"
+  },
+  "stray_spawn_egg": {
+    "nombre": "Stray Spawn Egg",
+    "slug": "stray-spawn-egg"
+  },
+  "strider_spawn_egg": {
+    "nombre": "Strider Spawn Egg",
+    "slug": "strider-spawn-egg"
+  },
+  "string": {
+    "nombre": "String",
+    "slug": "string"
+  },
+  "stripped_acacia_log": {
+    "nombre": "Stripped Acacia Log",
+    "slug": "stripped-acacia-log"
+  },
+  "stripped_acacia_wood": {
+    "nombre": "Stripped Acacia Wood",
+    "slug": "stripped-acacia-wood"
+  },
+  "stripped_bamboo_block": {
+    "nombre": "Block of Stripped Bamboo",
+    "slug": "block-of-stripped-bamboo"
+  },
+  "stripped_birch_log": {
+    "nombre": "Stripped Birch Log",
+    "slug": "stripped-birch-log"
+  },
+  "stripped_birch_wood": {
+    "nombre": "Stripped Birch Wood",
+    "slug": "stripped-birch-wood"
+  },
+  "stripped_cherry_log": {
+    "nombre": "Stripped Cherry Log",
+    "slug": "stripped-cherry-log"
+  },
+  "stripped_cherry_wood": {
+    "nombre": "Stripped Cherry Wood",
+    "slug": "stripped-cherry-wood"
+  },
+  "stripped_crimson_hyphae": {
+    "nombre": "Stripped Crimson Hyphae",
+    "slug": "stripped-crimson-hyphae"
+  },
+  "stripped_crimson_stem": {
+    "nombre": "Stripped Crimson Stem",
+    "slug": "stripped-crimson-stem"
+  },
+  "stripped_dark_oak_log": {
+    "nombre": "Stripped Dark Oak Log",
+    "slug": "stripped-dark-oak-log"
+  },
+  "stripped_dark_oak_wood": {
+    "nombre": "Stripped Dark Oak Wood",
+    "slug": "stripped-dark-oak-wood"
+  },
+  "stripped_jungle_log": {
+    "nombre": "Stripped Jungle Log",
+    "slug": "stripped-jungle-log"
+  },
+  "stripped_jungle_wood": {
+    "nombre": "Stripped Jungle Wood",
+    "slug": "stripped-jungle-wood"
+  },
+  "stripped_mangrove_log": {
+    "nombre": "Stripped Mangrove Log",
+    "slug": "stripped-mangrove-log"
+  },
+  "stripped_mangrove_wood": {
+    "nombre": "Stripped Mangrove Wood",
+    "slug": "stripped-mangrove-wood"
+  },
+  "stripped_oak_log": {
+    "nombre": "Stripped Oak Log",
+    "slug": "stripped-oak-log"
+  },
+  "stripped_oak_wood": {
+    "nombre": "Stripped Oak Wood",
+    "slug": "stripped-oak-wood"
+  },
+  "stripped_pale_oak_log": {
+    "nombre": "Stripped Pale Oak Log",
+    "slug": "stripped-pale-oak-log"
+  },
+  "stripped_pale_oak_wood": {
+    "nombre": "Stripped Pale Oak Wood",
+    "slug": "stripped-pale-oak-wood"
+  },
+  "stripped_spruce_log": {
+    "nombre": "Stripped Spruce Log",
+    "slug": "stripped-spruce-log"
+  },
+  "stripped_spruce_wood": {
+    "nombre": "Stripped Spruce Wood",
+    "slug": "stripped-spruce-wood"
+  },
+  "stripped_warped_hyphae": {
+    "nombre": "Stripped Warped Hyphae",
+    "slug": "stripped-warped-hyphae"
+  },
+  "stripped_warped_stem": {
+    "nombre": "Stripped Warped Stem",
+    "slug": "stripped-warped-stem"
+  },
+  "structure_block": {
+    "nombre": "Structure Block",
+    "slug": "structure-block"
+  },
+  "structure_void": {
+    "nombre": "Structure Void",
+    "slug": "structure-void"
+  },
+  "sugar": {
+    "nombre": "Sugar",
+    "slug": "sugar"
+  },
+  "sugar_cane": {
+    "nombre": "Sugar Cane",
+    "slug": "sugar-cane"
+  },
+  "sunflower": {
+    "nombre": "Sunflower",
+    "slug": "sunflower"
+  },
+  "suspicious_gravel": {
+    "nombre": "Suspicious Gravel",
+    "slug": "suspicious-gravel"
+  },
+  "suspicious_sand": {
+    "nombre": "Suspicious Sand",
+    "slug": "suspicious-sand"
+  },
+  "suspicious_stew": {
+    "nombre": "Suspicious Stew",
+    "slug": "suspicious-stew"
+  },
+  "sweet_berries": {
+    "nombre": "Sweet Berries",
+    "slug": "sweet-berries"
+  },
+  "tadpole_bucket": {
+    "nombre": "Bucket of Tadpole",
+    "slug": "bucket-of-tadpole"
+  },
+  "tadpole_spawn_egg": {
+    "nombre": "Tadpole Spawn Egg",
+    "slug": "tadpole-spawn-egg"
+  },
+  "tall_grass": {
+    "nombre": "Tall Grass",
+    "slug": "tall-grass"
+  },
+  "target": {
+    "nombre": "Target",
+    "slug": "target"
+  },
+  "terracotta": {
+    "nombre": "Terracotta",
+    "slug": "terracotta"
+  },
+  "tide_armor_trim_smithing_template": {
+    "nombre": "Tide Armor Trim",
+    "slug": "tide-armor-trim"
+  },
+  "tinted_glass": {
+    "nombre": "Tinted Glass",
+    "slug": "tinted-glass"
+  },
+  "tipped_arrow": {
+    "nombre": "Tipped Arrow",
+    "slug": "tipped-arrow"
+  },
+  "tnt": {
+    "nombre": "TNT",
+    "slug": "tnt"
+  },
+  "tnt_minecart": {
+    "nombre": "Minecart with TNT",
+    "slug": "minecart-with-tnt"
+  },
+  "torch": {
+    "nombre": "Torch",
+    "slug": "torch"
+  },
+  "torchflower": {
+    "nombre": "Torchflower",
+    "slug": "torchflower"
+  },
+  "torchflower_seeds": {
+    "nombre": "Torchflower Seeds",
+    "slug": "torchflower-seeds"
+  },
+  "totem_of_undying": {
+    "nombre": "Totem of Undying",
+    "slug": "totem-of-undying"
+  },
+  "trader_llama_spawn_egg": {
+    "nombre": "Trader Llama Spawn Egg",
+    "slug": "trader-llama-spawn-egg"
+  },
+  "trapped_chest": {
+    "nombre": "Trapped Chest",
+    "slug": "trapped-chest"
+  },
+  "trial_key": {
+    "nombre": "Trial Key",
+    "slug": "trial-key"
+  },
+  "trial_spawner": {
+    "nombre": "Trial Spawner",
+    "slug": "trial-spawner"
+  },
+  "tripwire_hook": {
+    "nombre": "Tripwire Hook",
+    "slug": "tripwire-hook"
+  },
+  "tropical_fish": {
+    "nombre": "Tropical Fish",
+    "slug": "tropical-fish"
+  },
+  "tropical_fish_bucket": {
+    "nombre": "Bucket of Tropical Fish",
+    "slug": "bucket-of-tropical-fish"
+  },
+  "tropical_fish_spawn_egg": {
+    "nombre": "Tropical Fish Spawn Egg",
+    "slug": "tropical-fish-spawn-egg"
+  },
+  "tube_coral": {
+    "nombre": "Tube Coral",
+    "slug": "tube-coral"
+  },
+  "tube_coral_block": {
+    "nombre": "Tube Coral Block",
+    "slug": "tube-coral-block"
+  },
+  "tube_coral_fan": {
+    "nombre": "Tube Coral Fan",
+    "slug": "tube-coral-fan"
+  },
+  "tuff": {
+    "nombre": "Tuff",
+    "slug": "tuff"
+  },
+  "tuff_brick_slab": {
+    "nombre": "Tuff Brick Slab",
+    "slug": "tuff-brick-slab"
+  },
+  "tuff_brick_stairs": {
+    "nombre": "Tuff Brick Stairs",
+    "slug": "tuff-brick-stairs"
+  },
+  "tuff_brick_wall": {
+    "nombre": "Tuff Brick Wall",
+    "slug": "tuff-brick-wall"
+  },
+  "tuff_bricks": {
+    "nombre": "Tuff Bricks",
+    "slug": "tuff-bricks"
+  },
+  "tuff_slab": {
+    "nombre": "Tuff Slab",
+    "slug": "tuff-slab"
+  },
+  "tuff_stairs": {
+    "nombre": "Tuff Stairs",
+    "slug": "tuff-stairs"
+  },
+  "tuff_wall": {
+    "nombre": "Tuff Wall",
+    "slug": "tuff-wall"
+  },
+  "turtle_egg": {
+    "nombre": "Turtle Egg",
+    "slug": "turtle-egg"
+  },
+  "turtle_scute": {
+    "nombre": "Turtle Scute",
+    "slug": "turtle-scute"
+  },
+  "turtle_spawn_egg": {
+    "nombre": "Turtle Spawn Egg",
+    "slug": "turtle-spawn-egg"
+  },
+  "twisting_vines": {
+    "nombre": "Twisting Vines",
+    "slug": "twisting-vines"
+  },
+  "vault": {
+    "nombre": "Vault",
+    "slug": "vault"
+  },
+  "verdant_froglight": {
+    "nombre": "Verdant Froglight",
+    "slug": "verdant-froglight"
+  },
+  "vex_armor_trim_smithing_template": {
+    "nombre": "Vex Armor Trim",
+    "slug": "vex-armor-trim"
+  },
+  "vex_spawn_egg": {
+    "nombre": "Vex Spawn Egg",
+    "slug": "vex-spawn-egg"
+  },
+  "villager_spawn_egg": {
+    "nombre": "Villager Spawn Egg",
+    "slug": "villager-spawn-egg"
+  },
+  "vindicator_spawn_egg": {
+    "nombre": "Vindicator Spawn Egg",
+    "slug": "vindicator-spawn-egg"
+  },
+  "vine": {
+    "nombre": "Vines",
+    "slug": "vines"
+  },
+  "wandering_trader_spawn_egg": {
+    "nombre": "Wandering Trader Spawn Egg",
+    "slug": "wandering-trader-spawn-egg"
+  },
+  "ward_armor_trim_smithing_template": {
+    "nombre": "Ward Armor Trim",
+    "slug": "ward-armor-trim"
+  },
+  "warden_spawn_egg": {
+    "nombre": "Warden Spawn Egg",
+    "slug": "warden-spawn-egg"
+  },
+  "warped_button": {
+    "nombre": "Warped Button",
+    "slug": "warped-button"
+  },
+  "warped_door": {
+    "nombre": "Warped Door",
+    "slug": "warped-door"
+  },
+  "warped_fence": {
+    "nombre": "Warped Fence",
+    "slug": "warped-fence"
+  },
+  "warped_fence_gate": {
+    "nombre": "Warped Fence Gate",
+    "slug": "warped-fence-gate"
+  },
+  "warped_fungus": {
+    "nombre": "Warped Fungus",
+    "slug": "warped-fungus"
+  },
+  "warped_fungus_on_a_stick": {
+    "nombre": "Warped Fungus on a Stick",
+    "slug": "warped-fungus-on-a-stick"
+  },
+  "warped_hanging_sign": {
+    "nombre": "Warped Hanging Sign",
+    "slug": "warped-hanging-sign"
+  },
+  "warped_hyphae": {
+    "nombre": "Warped Hyphae",
+    "slug": "warped-hyphae"
+  },
+  "warped_nylium": {
+    "nombre": "Warped Nylium",
+    "slug": "warped-nylium"
+  },
+  "warped_planks": {
+    "nombre": "Warped Planks",
+    "slug": "warped-planks"
+  },
+  "warped_pressure_plate": {
+    "nombre": "Warped Pressure Plate",
+    "slug": "warped-pressure-plate"
+  },
+  "warped_roots": {
+    "nombre": "Warped Roots",
+    "slug": "warped-roots"
+  },
+  "warped_sign": {
+    "nombre": "Warped Sign",
+    "slug": "warped-sign"
+  },
+  "warped_slab": {
+    "nombre": "Warped Slab",
+    "slug": "warped-slab"
+  },
+  "warped_stairs": {
+    "nombre": "Warped Stairs",
+    "slug": "warped-stairs"
+  },
+  "warped_stem": {
+    "nombre": "Warped Stem",
+    "slug": "warped-stem"
+  },
+  "warped_trapdoor": {
+    "nombre": "Warped Trapdoor",
+    "slug": "warped-trapdoor"
+  },
+  "warped_wart_block": {
+    "nombre": "Warped Wart Block",
+    "slug": "warped-wart-block"
+  },
+  "water_bucket": {
+    "nombre": "Water Bucket",
+    "slug": "water-bucket"
+  },
+  "waxed_chiseled_copper": {
+    "nombre": "Waxed Chiseled Copper",
+    "slug": "waxed-chiseled-copper"
+  },
+  "waxed_copper_block": {
+    "nombre": "Waxed Block of Copper",
+    "slug": "waxed-block-of-copper"
+  },
+  "waxed_copper_bulb": {
+    "nombre": "Waxed Copper Bulb",
+    "slug": "waxed-copper-bulb"
+  },
+  "waxed_copper_door": {
+    "nombre": "Waxed Copper Door",
+    "slug": "waxed-copper-door"
+  },
+  "waxed_copper_grate": {
+    "nombre": "Waxed Copper Grate",
+    "slug": "waxed-copper-grate"
+  },
+  "waxed_copper_trapdoor": {
+    "nombre": "Waxed Copper Trapdoor",
+    "slug": "waxed-copper-trapdoor"
+  },
+  "waxed_cut_copper": {
+    "nombre": "Waxed Cut Copper",
+    "slug": "waxed-cut-copper"
+  },
+  "waxed_cut_copper_slab": {
+    "nombre": "Waxed Cut Copper Slab",
+    "slug": "waxed-cut-copper-slab"
+  },
+  "waxed_cut_copper_stairs": {
+    "nombre": "Waxed Cut Copper Stairs",
+    "slug": "waxed-cut-copper-stairs"
+  },
+  "waxed_exposed_chiseled_copper": {
+    "nombre": "Waxed Exposed Chiseled Copper",
+    "slug": "waxed-exposed-chiseled-copper"
+  },
+  "waxed_exposed_copper": {
+    "nombre": "Waxed Exposed Copper",
+    "slug": "waxed-exposed-copper"
+  },
+  "waxed_exposed_copper_bulb": {
+    "nombre": "Waxed Exposed Copper Bulb",
+    "slug": "waxed-exposed-copper-bulb"
+  },
+  "waxed_exposed_copper_door": {
+    "nombre": "Waxed Exposed Copper Door",
+    "slug": "waxed-exposed-copper-door"
+  },
+  "waxed_exposed_copper_grate": {
+    "nombre": "Waxed Exposed Copper Grate",
+    "slug": "waxed-exposed-copper-grate"
+  },
+  "waxed_exposed_copper_trapdoor": {
+    "nombre": "Waxed Exposed Copper Trapdoor",
+    "slug": "waxed-exposed-copper-trapdoor"
+  },
+  "waxed_exposed_cut_copper": {
+    "nombre": "Waxed Exposed Cut Copper",
+    "slug": "waxed-exposed-cut-copper"
+  },
+  "waxed_exposed_cut_copper_slab": {
+    "nombre": "Waxed Exposed Cut Copper Slab",
+    "slug": "waxed-exposed-cut-copper-slab"
+  },
+  "waxed_exposed_cut_copper_stairs": {
+    "nombre": "Waxed Exposed Cut Copper Stairs",
+    "slug": "waxed-exposed-cut-copper-stairs"
+  },
+  "waxed_oxidized_chiseled_copper": {
+    "nombre": "Waxed Oxidized Chiseled Copper",
+    "slug": "waxed-oxidized-chiseled-copper"
+  },
+  "waxed_oxidized_copper": {
+    "nombre": "Waxed Oxidized Copper",
+    "slug": "waxed-oxidized-copper"
+  },
+  "waxed_oxidized_copper_bulb": {
+    "nombre": "Waxed Oxidized Copper Bulb",
+    "slug": "waxed-oxidized-copper-bulb"
+  },
+  "waxed_oxidized_copper_door": {
+    "nombre": "Waxed Oxidized Copper Door",
+    "slug": "waxed-oxidized-copper-door"
+  },
+  "waxed_oxidized_copper_grate": {
+    "nombre": "Waxed Oxidized Copper Grate",
+    "slug": "waxed-oxidized-copper-grate"
+  },
+  "waxed_oxidized_copper_trapdoor": {
+    "nombre": "Waxed Oxidized Copper Trapdoor",
+    "slug": "waxed-oxidized-copper-trapdoor"
+  },
+  "waxed_oxidized_cut_copper": {
+    "nombre": "Waxed Oxidized Cut Copper",
+    "slug": "waxed-oxidized-cut-copper"
+  },
+  "waxed_oxidized_cut_copper_slab": {
+    "nombre": "Waxed Oxidized Cut Copper Slab",
+    "slug": "waxed-oxidized-cut-copper-slab"
+  },
+  "waxed_oxidized_cut_copper_stairs": {
+    "nombre": "Waxed Oxidized Cut Copper Stairs",
+    "slug": "waxed-oxidized-cut-copper-stairs"
+  },
+  "waxed_weathered_chiseled_copper": {
+    "nombre": "Waxed Weathered Chiseled Copper",
+    "slug": "waxed-weathered-chiseled-copper"
+  },
+  "waxed_weathered_copper": {
+    "nombre": "Waxed Weathered Copper",
+    "slug": "waxed-weathered-copper"
+  },
+  "waxed_weathered_copper_bulb": {
+    "nombre": "Waxed Weathered Copper Bulb",
+    "slug": "waxed-weathered-copper-bulb"
+  },
+  "waxed_weathered_copper_door": {
+    "nombre": "Waxed Weathered Copper Door",
+    "slug": "waxed-weathered-copper-door"
+  },
+  "waxed_weathered_copper_grate": {
+    "nombre": "Waxed Weathered Copper Grate",
+    "slug": "waxed-weathered-copper-grate"
+  },
+  "waxed_weathered_copper_trapdoor": {
+    "nombre": "Waxed Weathered Copper Trapdoor",
+    "slug": "waxed-weathered-copper-trapdoor"
+  },
+  "waxed_weathered_cut_copper": {
+    "nombre": "Waxed Weathered Cut Copper",
+    "slug": "waxed-weathered-cut-copper"
+  },
+  "waxed_weathered_cut_copper_slab": {
+    "nombre": "Waxed Weathered Cut Copper Slab",
+    "slug": "waxed-weathered-cut-copper-slab"
+  },
+  "waxed_weathered_cut_copper_stairs": {
+    "nombre": "Waxed Weathered Cut Copper Stairs",
+    "slug": "waxed-weathered-cut-copper-stairs"
+  },
+  "wayfinder_armor_trim_smithing_template": {
+    "nombre": "Wayfinder Armor Trim",
+    "slug": "wayfinder-armor-trim"
+  },
+  "weathered_chiseled_copper": {
+    "nombre": "Weathered Chiseled Copper",
+    "slug": "weathered-chiseled-copper"
+  },
+  "weathered_copper": {
+    "nombre": "Weathered Copper",
+    "slug": "weathered-copper"
+  },
+  "weathered_copper_bulb": {
+    "nombre": "Weathered Copper Bulb",
+    "slug": "weathered-copper-bulb"
+  },
+  "weathered_copper_door": {
+    "nombre": "Weathered Copper Door",
+    "slug": "weathered-copper-door"
+  },
+  "weathered_copper_grate": {
+    "nombre": "Weathered Copper Grate",
+    "slug": "weathered-copper-grate"
+  },
+  "weathered_copper_trapdoor": {
+    "nombre": "Weathered Copper Trapdoor",
+    "slug": "weathered-copper-trapdoor"
+  },
+  "weathered_cut_copper": {
+    "nombre": "Weathered Cut Copper",
+    "slug": "weathered-cut-copper"
+  },
+  "weathered_cut_copper_slab": {
+    "nombre": "Weathered Cut Copper Slab",
+    "slug": "weathered-cut-copper-slab"
+  },
+  "weathered_cut_copper_stairs": {
+    "nombre": "Weathered Cut Copper Stairs",
+    "slug": "weathered-cut-copper-stairs"
+  },
+  "weeping_vines": {
+    "nombre": "Weeping Vines",
+    "slug": "weeping-vines"
+  },
+  "wet_sponge": {
+    "nombre": "Wet Sponge",
+    "slug": "wet-sponge"
+  },
+  "wheat": {
+    "nombre": "Wheat",
+    "slug": "wheat"
+  },
+  "wheat_seeds": {
+    "nombre": "Wheat Seeds",
+    "slug": "wheat-seeds"
+  },
+  "white_banner": {
+    "nombre": "White Banner",
+    "slug": "white-banner"
+  },
+  "white_bed": {
+    "nombre": "White Bed",
+    "slug": "white-bed"
+  },
+  "white_bundle": {
+    "nombre": "White Bundle",
+    "slug": "white-bundle"
+  },
+  "white_candle": {
+    "nombre": "White Candle",
+    "slug": "white-candle"
+  },
+  "white_carpet": {
+    "nombre": "White Carpet",
+    "slug": "white-carpet"
+  },
+  "white_concrete": {
+    "nombre": "White Concrete",
+    "slug": "white-concrete"
+  },
+  "white_concrete_powder": {
+    "nombre": "White Concrete Powder",
+    "slug": "white-concrete-powder"
+  },
+  "white_dye": {
+    "nombre": "White Dye",
+    "slug": "white-dye"
+  },
+  "white_glazed_terracotta": {
+    "nombre": "White Glazed Terracotta",
+    "slug": "white-glazed-terracotta"
+  },
+  "white_shulker_box": {
+    "nombre": "White Shulker Box",
+    "slug": "white-shulker-box"
+  },
+  "white_stained_glass": {
+    "nombre": "White Stained Glass",
+    "slug": "white-stained-glass"
+  },
+  "white_stained_glass_pane": {
+    "nombre": "White Stained Glass Pane",
+    "slug": "white-stained-glass-pane"
+  },
+  "white_terracotta": {
+    "nombre": "White Terracotta",
+    "slug": "white-terracotta"
+  },
+  "white_tulip": {
+    "nombre": "White Tulip",
+    "slug": "white-tulip"
+  },
+  "white_wool": {
+    "nombre": "White Wool",
+    "slug": "white-wool"
+  },
+  "wild_armor_trim_smithing_template": {
+    "nombre": "Wild Armor Trim",
+    "slug": "wild-armor-trim"
+  },
+  "wind_charge": {
+    "nombre": "Wind Charge",
+    "slug": "wind-charge"
+  },
+  "witch_spawn_egg": {
+    "nombre": "Witch Spawn Egg",
+    "slug": "witch-spawn-egg"
+  },
+  "wither_rose": {
+    "nombre": "Wither Rose",
+    "slug": "wither-rose"
+  },
+  "wither_skeleton_skull": {
+    "nombre": "Wither Skeleton Skull",
+    "slug": "wither-skeleton-skull"
+  },
+  "wither_skeleton_spawn_egg": {
+    "nombre": "Wither Skeleton Spawn Egg",
+    "slug": "wither-skeleton-spawn-egg"
+  },
+  "wither_spawn_egg": {
+    "nombre": "Wither Spawn Egg",
+    "slug": "wither-spawn-egg"
+  },
+  "wolf_armor": {
+    "nombre": "Wolf Armor",
+    "slug": "wolf-armor"
+  },
+  "wolf_spawn_egg": {
+    "nombre": "Wolf Spawn Egg",
+    "slug": "wolf-spawn-egg"
+  },
+  "writable_book": {
+    "nombre": "Book and Quill",
+    "slug": "book-and-quill"
+  },
+  "written_book": {
+    "nombre": "Written Book",
+    "slug": "written-book"
+  },
+  "yellow_banner": {
+    "nombre": "Yellow Banner",
+    "slug": "yellow-banner"
+  },
+  "yellow_bed": {
+    "nombre": "Yellow Bed",
+    "slug": "yellow-bed"
+  },
+  "yellow_bundle": {
+    "nombre": "Yellow Bundle",
+    "slug": "yellow-bundle"
+  },
+  "yellow_candle": {
+    "nombre": "Yellow Candle",
+    "slug": "yellow-candle"
+  },
+  "yellow_carpet": {
+    "nombre": "Yellow Carpet",
+    "slug": "yellow-carpet"
+  },
+  "yellow_concrete": {
+    "nombre": "Yellow Concrete",
+    "slug": "yellow-concrete"
+  },
+  "yellow_concrete_powder": {
+    "nombre": "Yellow Concrete Powder",
+    "slug": "yellow-concrete-powder"
+  },
+  "yellow_dye": {
+    "nombre": "Yellow Dye",
+    "slug": "yellow-dye"
+  },
+  "yellow_glazed_terracotta": {
+    "nombre": "Yellow Glazed Terracotta",
+    "slug": "yellow-glazed-terracotta"
+  },
+  "yellow_shulker_box": {
+    "nombre": "Yellow Shulker Box",
+    "slug": "yellow-shulker-box"
+  },
+  "yellow_stained_glass": {
+    "nombre": "Yellow Stained Glass",
+    "slug": "yellow-stained-glass"
+  },
+  "yellow_stained_glass_pane": {
+    "nombre": "Yellow Stained Glass Pane",
+    "slug": "yellow-stained-glass-pane"
+  },
+  "yellow_terracotta": {
+    "nombre": "Yellow Terracotta",
+    "slug": "yellow-terracotta"
+  },
+  "yellow_wool": {
+    "nombre": "Yellow Wool",
+    "slug": "yellow-wool"
+  },
+  "zoglin_spawn_egg": {
+    "nombre": "Zoglin Spawn Egg",
+    "slug": "zoglin-spawn-egg"
+  },
+  "zombie_head": {
+    "nombre": "Zombie Head",
+    "slug": "zombie-head"
+  },
+  "zombie_horse_spawn_egg": {
+    "nombre": "Zombie Horse Spawn Egg",
+    "slug": "zombie-horse-spawn-egg"
+  },
+  "zombie_spawn_egg": {
+    "nombre": "Zombie Spawn Egg",
+    "slug": "zombie-spawn-egg"
+  },
+  "zombie_villager_spawn_egg": {
+    "nombre": "Zombie Villager Spawn Egg",
+    "slug": "zombie-villager-spawn-egg"
+  },
+  "zombified_piglin_spawn_egg": {
+    "nombre": "Zombified Piglin Spawn Egg",
+    "slug": "zombified-piglin-spawn-egg"
   }
 }

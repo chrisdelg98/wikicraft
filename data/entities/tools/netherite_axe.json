@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "netherite_axe",
+  "tipo": "herramienta",
+  "etapa": "nether",
+  "relevancia": "alta",
+  "categoria": "hacha",
+  "material": "netherita",
+  "durabilidad": 2031,
+  "reparadoCon": [
+    "netherite_ingot"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schemas/mob.schema.json",
+  "id": "strider",
+  "tipo": "mob",
+  "etapa": "nether",
+  "relevancia": "normal",
+  "categoria": "pasivo",
+  "botin": [
+    {
+      "item": "string",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 1
+    }
+  ]
+}

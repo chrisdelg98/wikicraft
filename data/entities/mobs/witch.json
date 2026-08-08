@@ -1,0 +1,52 @@
+{
+  "$schema": "../../schemas/mob.schema.json",
+  "id": "witch",
+  "tipo": "mob",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "categoria": "hostil",
+  "botin": [
+    {
+      "item": "glowstone_dust",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 0.125
+    },
+    {
+      "item": "sugar",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 0.125
+    },
+    {
+      "item": "redstone",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 0.125
+    },
+    {
+      "item": "spider_eye",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 0.125
+    },
+    {
+      "item": "glass_bottle",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 0.125
+    },
+    {
+      "item": "gunpowder",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 0.125
+    },
+    {
+      "item": "stick",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 0.25
+    }
+  ]
+}

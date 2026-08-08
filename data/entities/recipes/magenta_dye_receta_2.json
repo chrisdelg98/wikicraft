@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "magenta_dye_receta_2",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "magenta_dye",
+    "cantidad": 3
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "blue_dye",
+      "cantidad": 1
+    },
+    {
+      "item": "red_dye",
+      "cantidad": 1
+    },
+    {
+      "item": "pink_dye",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "silence_armor_trim_smithing_template_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "silence_armor_trim_smithing_template",
+    "cantidad": 2
+  },
+  "conForma": true,
+  "patron": [
+    "ABA",
+    "ACA",
+    "AAA"
+  ],
+  "clave": {
+    "A": "diamond",
+    "B": "silence_armor_trim_smithing_template",
+    "C": "cobbled_deepslate"
+  },
+  "estacion": "mesa_de_trabajo"
+}

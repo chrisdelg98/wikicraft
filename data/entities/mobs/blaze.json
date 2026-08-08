@@ -8,10 +8,28 @@
   "dano": 6,
   "experiencia": 10,
   "noMuerto": false,
-  "apareceEn": ["nether_fortress"],
-  "botin": [
-    { "item": "blaze_rod", "minimo": 0, "maximo": 1, "soloAlMorirPorJugador": true }
+  "apareceEn": [
+    "nether_fortress"
   ],
-  "debilidades": ["agua", "nieve", "distancia"],
-  "etiquetas": ["blaze", "fuego", "vara", "fortaleza"]
+  "botin": [
+    {
+      "item": "blaze_rod",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 1,
+      "soloAlMorirPorJugador": true
+    }
+  ],
+  "debilidades": [
+    "agua",
+    "nieve",
+    "distancia"
+  ],
+  "etiquetas": [
+    "blaze",
+    "fuego",
+    "vara",
+    "fortaleza"
+  ],
+  "relevancia": "alta"
 }

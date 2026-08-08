@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "chain_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "chain",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "A",
+    "B",
+    "A"
+  ],
+  "clave": {
+    "A": "iron_nugget",
+    "B": "iron_ingot"
+  },
+  "estacion": "mesa_de_trabajo"
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "black_concrete_powder_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "black_concrete_powder",
+    "cantidad": 8
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "black_dye",
+      "cantidad": 1
+    },
+    {
+      "item": "sand",
+      "cantidad": 4
+    },
+    {
+      "item": "gravel",
+      "cantidad": 4
+    }
+  ],
+  "estacion": "mesa_de_trabajo"
+}

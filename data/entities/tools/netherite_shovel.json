@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "netherite_shovel",
+  "tipo": "herramienta",
+  "etapa": "nether",
+  "relevancia": "alta",
+  "categoria": "pala",
+  "material": "netherita",
+  "durabilidad": 2031,
+  "reparadoCon": [
+    "netherite_ingot"
+  ]
+}

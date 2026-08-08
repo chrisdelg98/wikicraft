@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "golden_pickaxe",
+  "tipo": "herramienta",
+  "etapa": "hierro",
+  "relevancia": "alta",
+  "categoria": "pico",
+  "material": "oro",
+  "durabilidad": 32,
+  "reparadoCon": [
+    "gold_ingot"
+  ]
+}

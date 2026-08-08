@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "netherite_helmet",
+  "tipo": "armadura",
+  "etapa": "nether",
+  "relevancia": "alta",
+  "categoria": "casco",
+  "material": "netherita",
+  "durabilidad": 407,
+  "reparadoCon": [
+    "netherite_ingot"
+  ]
+}

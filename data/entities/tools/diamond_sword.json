@@ -9,11 +9,31 @@
   "dano": 7,
   "velocidadAtaque": 1.6,
   "materiales": [
-    { "item": "diamond", "cantidad": 2 },
-    { "item": "stick", "cantidad": 1 }
+    {
+      "item": "diamond",
+      "cantidad": 2
+    },
+    {
+      "item": "stick",
+      "cantidad": 1
+    }
   ],
-  "reparadoCon": ["diamond"],
-  "encantamientosRecomendados": ["sharpness", "mending", "unbreaking"],
-  "mobsIdeales": ["zombie", "blaze"],
-  "etiquetas": ["espada de diamante", "arma", "cuerpo a cuerpo"]
+  "reparadoCon": [
+    "diamond"
+  ],
+  "encantamientosRecomendados": [
+    "sharpness",
+    "mending",
+    "unbreaking"
+  ],
+  "mobsIdeales": [
+    "zombie",
+    "blaze"
+  ],
+  "etiquetas": [
+    "espada de diamante",
+    "arma",
+    "cuerpo a cuerpo"
+  ],
+  "relevancia": "alta"
 }

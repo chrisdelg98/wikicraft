@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "dispenser_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "dispenser",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "ABA",
+    "ACA"
+  ],
+  "clave": {
+    "A": "cobblestone",
+    "B": "bow",
+    "C": "redstone"
+  },
+  "estacion": "mesa_de_trabajo"
+}

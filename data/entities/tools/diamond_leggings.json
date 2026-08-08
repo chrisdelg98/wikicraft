@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "diamond_leggings",
+  "tipo": "armadura",
+  "etapa": "diamante",
+  "relevancia": "alta",
+  "categoria": "pantalones",
+  "material": "diamante",
+  "durabilidad": 495,
+  "reparadoCon": [
+    "diamond"
+  ]
+}

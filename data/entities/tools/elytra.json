@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "elytra",
+  "tipo": "armadura",
+  "etapa": "end",
+  "relevancia": "alta",
+  "categoria": "elitros",
+  "material": "ninguno",
+  "durabilidad": 432,
+  "reparadoCon": [
+    "phantom_membrane"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "iron_pickaxe",
+  "tipo": "herramienta",
+  "etapa": "hierro",
+  "relevancia": "alta",
+  "categoria": "pico",
+  "material": "hierro",
+  "durabilidad": 250,
+  "reparadoCon": [
+    "iron_ingot"
+  ]
+}

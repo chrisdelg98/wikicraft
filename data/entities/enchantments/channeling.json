@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schemas/enchantment.schema.json",
+  "id": "channeling",
+  "tipo": "encantamiento",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "nivelMaximo": 1,
+  "categoria": "dano",
+  "aplicableA": [
+    "tridente"
+  ],
+  "incompatibleCon": [
+    "riptide"
+  ],
+  "esTesoro": false,
+  "esMaldicion": false
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "crimson_planks_receta",
+  "tipo": "receta",
+  "etapa": "nether",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "crimson_planks",
+    "cantidad": 4
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "crimson_stem",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

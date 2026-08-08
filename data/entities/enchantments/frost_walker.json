@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schemas/enchantment.schema.json",
+  "id": "frost_walker",
+  "tipo": "encantamiento",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "nivelMaximo": 2,
+  "categoria": "proteccion",
+  "aplicableA": [
+    "botas"
+  ],
+  "incompatibleCon": [
+    "depth_strider"
+  ],
+  "esTesoro": true,
+  "esMaldicion": false
+}

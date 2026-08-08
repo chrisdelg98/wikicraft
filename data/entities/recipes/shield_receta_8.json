@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "shield_receta_8",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "shield",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "ABA",
+    "AAA",
+    " A"
+  ],
+  "clave": {
+    "A": "acacia_planks",
+    "B": "iron_ingot"
+  },
+  "estacion": "mesa_de_trabajo"
+}

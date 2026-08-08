@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "iron_shovel",
+  "tipo": "herramienta",
+  "etapa": "hierro",
+  "relevancia": "alta",
+  "categoria": "pala",
+  "material": "hierro",
+  "durabilidad": 250,
+  "reparadoCon": [
+    "iron_ingot"
+  ]
+}

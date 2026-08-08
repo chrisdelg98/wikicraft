@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "decorated_pot_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "decorated_pot",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    " A",
+    "A A",
+    " A"
+  ],
+  "clave": {
+    "A": "brick"
+  },
+  "estacion": "mesa_de_trabajo"
+}

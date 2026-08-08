@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "dark_oak_stairs",
+  "tipo": "item",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "categorias": [
+    "bloque"
+  ],
+  "pila": 64,
+  "varianteDe": "oak_stairs"
+}

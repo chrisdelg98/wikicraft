@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "golden_helmet",
+  "tipo": "armadura",
+  "etapa": "hierro",
+  "relevancia": "alta",
+  "categoria": "casco",
+  "material": "oro",
+  "durabilidad": 77,
+  "reparadoCon": [
+    "gold_ingot"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schemas/mob.schema.json",
+  "id": "snow_golem",
+  "tipo": "mob",
+  "etapa": "inicio",
+  "relevancia": "normal",
+  "categoria": "neutral",
+  "botin": [
+    {
+      "item": "snowball",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 1
+    }
+  ]
+}

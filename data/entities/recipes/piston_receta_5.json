@@ -1,0 +1,24 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "piston_receta_5",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "piston",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "BCB",
+    "BDB"
+  ],
+  "clave": {
+    "A": "warped_planks",
+    "B": "cobblestone",
+    "C": "iron_ingot",
+    "D": "redstone"
+  },
+  "estacion": "mesa_de_trabajo"
+}

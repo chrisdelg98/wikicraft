@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "respawn_anchor_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "respawn_anchor",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "BBB",
+    "AAA"
+  ],
+  "clave": {
+    "A": "crying_obsidian",
+    "B": "glowstone"
+  },
+  "estacion": "mesa_de_trabajo"
+}

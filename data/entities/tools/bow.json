@@ -1,0 +1,11 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "bow",
+  "tipo": "herramienta",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "categoria": "arco",
+  "material": "ninguno",
+  "durabilidad": 384,
+  "reparadoCon": []
+}

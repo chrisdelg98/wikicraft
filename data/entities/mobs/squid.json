@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schemas/mob.schema.json",
+  "id": "squid",
+  "tipo": "mob",
+  "etapa": "inicio",
+  "relevancia": "normal",
+  "categoria": "pasivo",
+  "botin": [
+    {
+      "item": "ink_sac",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 1
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "golden_pickaxe_receta",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "golden_pickaxe",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    " B",
+    " B"
+  ],
+  "clave": {
+    "A": "gold_ingot",
+    "B": "stick"
+  },
+  "estacion": "mesa_de_trabajo"
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "warped_hanging_sign_receta",
+  "tipo": "receta",
+  "etapa": "nether",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "warped_hanging_sign",
+    "cantidad": 6
+  },
+  "conForma": true,
+  "patron": [
+    "A A",
+    "BBB",
+    "BBB"
+  ],
+  "clave": {
+    "A": "chain",
+    "B": "stripped_warped_stem"
+  },
+  "estacion": "mesa_de_trabajo"
+}

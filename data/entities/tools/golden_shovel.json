@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "golden_shovel",
+  "tipo": "herramienta",
+  "etapa": "hierro",
+  "relevancia": "alta",
+  "categoria": "pala",
+  "material": "oro",
+  "durabilidad": 32,
+  "reparadoCon": [
+    "gold_ingot"
+  ]
+}

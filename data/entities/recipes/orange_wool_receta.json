@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "orange_wool_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "orange_wool",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "orange_dye",
+      "cantidad": 1
+    },
+    {
+      "item": "black_wool",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

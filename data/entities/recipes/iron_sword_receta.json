@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "iron_sword_receta",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "iron_sword",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "A",
+    "A",
+    "B"
+  ],
+  "clave": {
+    "A": "iron_ingot",
+    "B": "stick"
+  },
+  "estacion": "mesa_de_trabajo"
+}

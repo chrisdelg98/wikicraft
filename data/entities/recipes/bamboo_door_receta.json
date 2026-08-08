@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "bamboo_door_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "bamboo_door",
+    "cantidad": 3
+  },
+  "conForma": true,
+  "patron": [
+    "AA",
+    "AA",
+    "AA"
+  ],
+  "clave": {
+    "A": "bamboo_planks"
+  },
+  "estacion": "mesa_de_trabajo"
+}

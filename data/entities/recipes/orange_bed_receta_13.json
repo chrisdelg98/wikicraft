@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "orange_bed_receta_13",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "orange_bed",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "orange_dye",
+      "cantidad": 1
+    },
+    {
+      "item": "black_bed",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

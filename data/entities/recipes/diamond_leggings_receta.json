@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "diamond_leggings_receta",
+  "tipo": "receta",
+  "etapa": "diamante",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "diamond_leggings",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "A A",
+    "A A"
+  ],
+  "clave": {
+    "A": "diamond"
+  },
+  "estacion": "mesa_de_trabajo"
+}

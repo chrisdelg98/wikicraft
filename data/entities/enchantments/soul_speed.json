@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schemas/enchantment.schema.json",
+  "id": "soul_speed",
+  "tipo": "encantamiento",
+  "etapa": "nether",
+  "relevancia": "alta",
+  "nivelMaximo": 3,
+  "categoria": "proteccion",
+  "aplicableA": [
+    "botas"
+  ],
+  "incompatibleCon": [],
+  "esTesoro": true,
+  "esMaldicion": false
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "../../schemas/mob.schema.json",
+  "id": "stray",
+  "tipo": "mob",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "categoria": "hostil",
+  "botin": [
+    {
+      "item": "arrow",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 1
+    },
+    {
+      "item": "bone",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 1
+    },
+    {
+      "item": "tipped_arrow",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 1,
+      "soloAlMorirPorJugador": true
+    }
+  ]
+}

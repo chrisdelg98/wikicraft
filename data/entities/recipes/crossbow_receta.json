@@ -1,0 +1,24 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "crossbow_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "crossbow",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "ABA",
+    "CDC",
+    " A"
+  ],
+  "clave": {
+    "A": "stick",
+    "B": "iron_ingot",
+    "C": "string",
+    "D": "tripwire_hook"
+  },
+  "estacion": "mesa_de_trabajo"
+}

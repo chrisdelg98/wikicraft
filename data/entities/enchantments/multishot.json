@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schemas/enchantment.schema.json",
+  "id": "multishot",
+  "tipo": "encantamiento",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "nivelMaximo": 1,
+  "categoria": "dano",
+  "aplicableA": [
+    "ballesta"
+  ],
+  "incompatibleCon": [
+    "piercing"
+  ],
+  "esTesoro": false,
+  "esMaldicion": false
+}

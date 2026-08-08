@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "golden_helmet_receta",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "golden_helmet",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "A A"
+  ],
+  "clave": {
+    "A": "gold_ingot"
+  },
+  "estacion": "mesa_de_trabajo"
+}

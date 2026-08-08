@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "brush_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "brush",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "A",
+    "B",
+    "C"
+  ],
+  "clave": {
+    "A": "feather",
+    "B": "copper_ingot",
+    "C": "stick"
+  },
+  "estacion": "mesa_de_trabajo"
+}

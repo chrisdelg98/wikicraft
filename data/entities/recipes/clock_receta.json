@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "clock_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "clock",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    " A",
+    "ABA",
+    " A"
+  ],
+  "clave": {
+    "A": "gold_ingot",
+    "B": "redstone"
+  },
+  "estacion": "mesa_de_trabajo"
+}

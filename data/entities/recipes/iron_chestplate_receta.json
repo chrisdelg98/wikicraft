@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "iron_chestplate_receta",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "iron_chestplate",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "A A",
+    "AAA",
+    "AAA"
+  ],
+  "clave": {
+    "A": "iron_ingot"
+  },
+  "estacion": "mesa_de_trabajo"
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "mossy_stone_bricks_receta_1",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "mossy_stone_bricks",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "stone_bricks",
+      "cantidad": 1
+    },
+    {
+      "item": "moss_block",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

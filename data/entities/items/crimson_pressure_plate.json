@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "crimson_pressure_plate",
+  "tipo": "item",
+  "etapa": "nether",
+  "relevancia": "baja",
+  "categorias": [
+    "bloque"
+  ],
+  "pila": 64,
+  "varianteDe": "oak_pressure_plate"
+}

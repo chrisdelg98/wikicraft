@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "spruce_chest_boat_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "spruce_chest_boat",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "chest",
+      "cantidad": 1
+    },
+    {
+      "item": "spruce_boat",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "spectral_arrow_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "spectral_arrow",
+    "cantidad": 2
+  },
+  "conForma": true,
+  "patron": [
+    " A",
+    "ABA",
+    " A"
+  ],
+  "clave": {
+    "A": "glowstone_dust",
+    "B": "arrow"
+  },
+  "estacion": "mesa_de_trabajo"
+}

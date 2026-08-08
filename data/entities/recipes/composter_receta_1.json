@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "composter_receta_1",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "composter",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "A A",
+    "A A",
+    "AAA"
+  ],
+  "clave": {
+    "A": "pale_oak_slab"
+  },
+  "estacion": "mesa_de_trabajo"
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "birch_hanging_sign_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "birch_hanging_sign",
+    "cantidad": 6
+  },
+  "conForma": true,
+  "patron": [
+    "A A",
+    "BBB",
+    "BBB"
+  ],
+  "clave": {
+    "A": "chain",
+    "B": "stripped_birch_log"
+  },
+  "estacion": "mesa_de_trabajo"
+}

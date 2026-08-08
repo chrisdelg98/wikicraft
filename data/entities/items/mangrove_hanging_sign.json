@@ -1,0 +1,12 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "mangrove_hanging_sign",
+  "tipo": "item",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "categorias": [
+    "bloque"
+  ],
+  "pila": 16,
+  "varianteDe": "oak_hanging_sign"
+}

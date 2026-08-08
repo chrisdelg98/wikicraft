@@ -3,9 +3,18 @@
   "id": "stick",
   "tipo": "item",
   "etapa": "inicio",
-  "categorias": ["material", "combustible"],
+  "categorias": [
+    "material",
+    "combustible"
+  ],
   "pila": 64,
   "renovable": true,
-  "combustible": { "segundos": 5 },
-  "etiquetas": ["palo", "mango"]
+  "combustible": {
+    "segundos": 5
+  },
+  "etiquetas": [
+    "palo",
+    "mango"
+  ],
+  "relevancia": "normal"
 }

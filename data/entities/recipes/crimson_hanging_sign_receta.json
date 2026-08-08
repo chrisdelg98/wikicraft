@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "crimson_hanging_sign_receta",
+  "tipo": "receta",
+  "etapa": "nether",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "crimson_hanging_sign",
+    "cantidad": 6
+  },
+  "conForma": true,
+  "patron": [
+    "A A",
+    "BBB",
+    "BBB"
+  ],
+  "clave": {
+    "A": "chain",
+    "B": "stripped_crimson_stem"
+  },
+  "estacion": "mesa_de_trabajo"
+}

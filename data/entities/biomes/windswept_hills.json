@@ -1,0 +1,8 @@
+{
+  "$schema": "../../schemas/biome.schema.json",
+  "id": "windswept_hills",
+  "tipo": "bioma",
+  "etapa": "inicio",
+  "relevancia": "normal",
+  "dimension": "superficie"
+}

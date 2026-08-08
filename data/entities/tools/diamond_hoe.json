@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "diamond_hoe",
+  "tipo": "herramienta",
+  "etapa": "diamante",
+  "relevancia": "alta",
+  "categoria": "azada",
+  "material": "diamante",
+  "durabilidad": 1561,
+  "reparadoCon": [
+    "diamond"
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "badlands": {
+    "nombre": "Badlands",
+    "slug": "badlands"
+  },
+  "bamboo_jungle": {
+    "nombre": "Bamboo Jungle",
+    "slug": "bamboo-jungle"
+  },
+  "basalt_deltas": {
+    "nombre": "Basalt Deltas",
+    "slug": "basalt-deltas"
+  },
+  "beach": {
+    "nombre": "Beach",
+    "slug": "beach"
+  },
+  "birch_forest": {
+    "nombre": "Birch Forest",
+    "slug": "birch-forest"
+  },
+  "cherry_grove": {
+    "nombre": "Cherry Grove",
+    "slug": "cherry-grove"
+  },
+  "cold_ocean": {
+    "nombre": "Cold Ocean",
+    "slug": "cold-ocean"
+  },
+  "crimson_forest": {
+    "nombre": "Crimson Forest",
+    "slug": "crimson-forest"
+  },
+  "dark_forest": {
+    "nombre": "Dark Forest",
+    "slug": "dark-forest"
+  },
+  "deep_cold_ocean": {
+    "nombre": "Deep Cold Ocean",
+    "slug": "deep-cold-ocean"
+  },
+  "deep_dark": {
+    "nombre": "Deep Dark",
+    "slug": "deep-dark"
+  },
+  "deep_frozen_ocean": {
+    "nombre": "Deep Frozen Ocean",
+    "slug": "deep-frozen-ocean"
+  },
+  "deep_lukewarm_ocean": {
+    "nombre": "Deep Lukewarm Ocean",
+    "slug": "deep-lukewarm-ocean"
+  },
+  "deep_ocean": {
+    "nombre": "Deep Ocean",
+    "slug": "deep-ocean"
+  },
+  "desert": {
+    "nombre": "Desert",
+    "slug": "desert"
+  },
+  "dripstone_caves": {
+    "nombre": "Dripstone Caves",
+    "slug": "dripstone-caves"
+  },
+  "end_barrens": {
+    "nombre": "End Barrens",
+    "slug": "end-barrens"
+  },
+  "end_highlands": {
+    "nombre": "End Highlands",
+    "slug": "end-highlands"
+  },
+  "end_midlands": {
+    "nombre": "End Midlands",
+    "slug": "end-midlands"
+  },
+  "eroded_badlands": {
+    "nombre": "Eroded Badlands",
+    "slug": "eroded-badlands"
+  },
+  "flower_forest": {
+    "nombre": "Flower Forest",
+    "slug": "flower-forest"
+  },
+  "forest": {
+    "nombre": "Forest",
+    "slug": "forest"
+  },
+  "frozen_ocean": {
+    "nombre": "Frozen Ocean",
+    "slug": "frozen-ocean"
+  },
+  "frozen_peaks": {
+    "nombre": "Frozen Peaks",
+    "slug": "frozen-peaks"
+  },
+  "frozen_river": {
+    "nombre": "Frozen River",
+    "slug": "frozen-river"
+  },
+  "grove": {
+    "nombre": "Grove",
+    "slug": "grove"
+  },
+  "ice_spikes": {
+    "nombre": "Ice Spikes",
+    "slug": "ice-spikes"
+  },
+  "jagged_peaks": {
+    "nombre": "Jagged Peaks",
+    "slug": "jagged-peaks"
+  },
+  "jungle": {
+    "nombre": "Jungle",
+    "slug": "jungle"
+  },
+  "lukewarm_ocean": {
+    "nombre": "Lukewarm Ocean",
+    "slug": "lukewarm-ocean"
+  },
+  "lush_caves": {
+    "nombre": "Lush Caves",
+    "slug": "lush-caves"
+  },
+  "mangrove_swamp": {
+    "nombre": "Mangrove Swamp",
+    "slug": "mangrove-swamp"
+  },
+  "meadow": {
+    "nombre": "Meadow",
+    "slug": "meadow"
+  },
+  "mushroom_fields": {
+    "nombre": "Mushroom Fields",
+    "slug": "mushroom-fields"
+  },
+  "nether_wastes": {
+    "nombre": "Nether Wastes",
+    "slug": "nether-wastes"
+  },
+  "ocean": {
+    "nombre": "Ocean",
+    "slug": "ocean"
+  },
+  "old_growth_birch_forest": {
+    "nombre": "Old Growth Birch Forest",
+    "slug": "old-growth-birch-forest"
+  },
+  "old_growth_pine_taiga": {
+    "nombre": "Old Growth Pine Taiga",
+    "slug": "old-growth-pine-taiga"
+  },
+  "old_growth_spruce_taiga": {
+    "nombre": "Old Growth Spruce Taiga",
+    "slug": "old-growth-spruce-taiga"
+  },
+  "pale_garden": {
+    "nombre": "Pale Garden",
+    "slug": "pale-garden"
+  },
+  "plains": {
+    "nombre": "Plains",
+    "slug": "plains"
+  },
+  "river": {
+    "nombre": "River",
+    "slug": "river"
+  },
+  "savanna": {
+    "nombre": "Savanna",
+    "slug": "savanna"
+  },
+  "savanna_plateau": {
+    "nombre": "Savanna Plateau",
+    "slug": "savanna-plateau"
+  },
+  "small_end_islands": {
+    "nombre": "Small End Islands",
+    "slug": "small-end-islands"
+  },
+  "snowy_beach": {
+    "nombre": "Snowy Beach",
+    "slug": "snowy-beach"
+  },
+  "snowy_plains": {
+    "nombre": "Snowy Plains",
+    "slug": "snowy-plains"
+  },
+  "snowy_slopes": {
+    "nombre": "Snowy Slopes",
+    "slug": "snowy-slopes"
+  },
+  "snowy_taiga": {
+    "nombre": "Snowy Taiga",
+    "slug": "snowy-taiga"
+  },
+  "soul_sand_valley": {
+    "nombre": "Soul Sand Valley",
+    "slug": "soul-sand-valley"
+  },
+  "sparse_jungle": {
+    "nombre": "Sparse Jungle",
+    "slug": "sparse-jungle"
+  },
+  "stony_peaks": {
+    "nombre": "Stony Peaks",
+    "slug": "stony-peaks"
+  },
+  "stony_shore": {
+    "nombre": "Stony Shore",
+    "slug": "stony-shore"
+  },
+  "sunflower_plains": {
+    "nombre": "Sunflower Plains",
+    "slug": "sunflower-plains"
+  },
+  "swamp": {
+    "nombre": "Swamp",
+    "slug": "swamp"
+  },
+  "taiga": {
+    "nombre": "Taiga",
+    "slug": "taiga"
+  },
+  "the_end": {
+    "nombre": "The End",
+    "slug": "the-end"
+  },
+  "the_void": {
+    "nombre": "The Void",
+    "slug": "the-void"
+  },
+  "warm_ocean": {
+    "nombre": "Warm Ocean",
+    "slug": "warm-ocean"
+  },
+  "warped_forest": {
+    "nombre": "Warped Forest",
+    "slug": "warped-forest"
+  },
+  "windswept_forest": {
+    "nombre": "Windswept Forest",
+    "slug": "windswept-forest"
+  },
+  "windswept_gravelly_hills": {
+    "nombre": "Windswept Gravelly Hills",
+    "slug": "windswept-gravelly-hills"
+  },
+  "windswept_hills": {
+    "nombre": "Windswept Hills",
+    "slug": "windswept-hills"
+  },
+  "windswept_savanna": {
+    "nombre": "Windswept Savanna",
+    "slug": "windswept-savanna"
+  },
+  "wooded_badlands": {
+    "nombre": "Wooded Badlands",
+    "slug": "wooded-badlands"
+  }
+}

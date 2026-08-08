@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "bowl_receta_7",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "bowl",
+    "cantidad": 4
+  },
+  "conForma": true,
+  "patron": [
+    "A A",
+    " A"
+  ],
+  "clave": {
+    "A": "dark_oak_planks"
+  },
+  "estacion": "mesa_de_trabajo"
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "fire_charge_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "fire_charge",
+    "cantidad": 3
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "gunpowder",
+      "cantidad": 1
+    },
+    {
+      "item": "blaze_powder",
+      "cantidad": 1
+    },
+    {
+      "item": "coal",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

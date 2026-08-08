@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "gray_candle_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "gray_candle",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "candle",
+      "cantidad": 1
+    },
+    {
+      "item": "gray_dye",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

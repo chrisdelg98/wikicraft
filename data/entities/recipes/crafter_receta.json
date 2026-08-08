@@ -1,0 +1,24 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "crafter_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "crafter",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "ABA",
+    "CDC"
+  ],
+  "clave": {
+    "A": "iron_ingot",
+    "B": "crafting_table",
+    "C": "redstone",
+    "D": "dropper"
+  },
+  "estacion": "mesa_de_trabajo"
+}

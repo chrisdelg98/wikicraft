@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "golden_axe",
+  "tipo": "herramienta",
+  "etapa": "hierro",
+  "relevancia": "alta",
+  "categoria": "hacha",
+  "material": "oro",
+  "durabilidad": 32,
+  "reparadoCon": [
+    "gold_ingot"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "stone_pickaxe_receta_1",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "stone_pickaxe",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    " B",
+    " B"
+  ],
+  "clave": {
+    "A": "cobbled_deepslate",
+    "B": "stick"
+  },
+  "estacion": "mesa_de_trabajo"
+}

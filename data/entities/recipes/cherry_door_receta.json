@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "cherry_door_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "cherry_door",
+    "cantidad": 3
+  },
+  "conForma": true,
+  "patron": [
+    "AA",
+    "AA",
+    "AA"
+  ],
+  "clave": {
+    "A": "cherry_planks"
+  },
+  "estacion": "mesa_de_trabajo"
+}

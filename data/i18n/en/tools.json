@@ -1,8 +1,248 @@
 {
+  "bow": {
+    "nombre": "Bow",
+    "slug": "bow"
+  },
+  "chainmail_boots": {
+    "nombre": "Chainmail Boots",
+    "slug": "chainmail-boots"
+  },
+  "chainmail_chestplate": {
+    "nombre": "Chainmail Chestplate",
+    "slug": "chainmail-chestplate"
+  },
+  "chainmail_helmet": {
+    "nombre": "Chainmail Helmet",
+    "slug": "chainmail-helmet"
+  },
+  "chainmail_leggings": {
+    "nombre": "Chainmail Leggings",
+    "slug": "chainmail-leggings"
+  },
+  "crossbow": {
+    "nombre": "Crossbow",
+    "slug": "crossbow"
+  },
+  "diamond_axe": {
+    "nombre": "Diamond Axe",
+    "slug": "diamond-axe"
+  },
+  "diamond_boots": {
+    "nombre": "Diamond Boots",
+    "slug": "diamond-boots"
+  },
+  "diamond_chestplate": {
+    "nombre": "Diamond Chestplate",
+    "slug": "diamond-chestplate"
+  },
+  "diamond_helmet": {
+    "nombre": "Diamond Helmet",
+    "slug": "diamond-helmet"
+  },
+  "diamond_hoe": {
+    "nombre": "Diamond Hoe",
+    "slug": "diamond-hoe"
+  },
+  "diamond_leggings": {
+    "nombre": "Diamond Leggings",
+    "slug": "diamond-leggings"
+  },
+  "diamond_pickaxe": {
+    "nombre": "Diamond Pickaxe",
+    "slug": "diamond-pickaxe"
+  },
+  "diamond_shovel": {
+    "nombre": "Diamond Shovel",
+    "slug": "diamond-shovel"
+  },
   "diamond_sword": {
     "nombre": "Diamond Sword",
     "slug": "diamond-sword",
     "descripcion": "The reference melee weapon for most of a playthrough. It pairs high damage with durability that survives thousands of hits.",
     "notas": "With Sharpness, Mending and Unbreaking it stops needing maintenance: the experience from the fights themselves repairs it."
+  },
+  "elytra": {
+    "nombre": "Elytra",
+    "slug": "elytra"
+  },
+  "golden_axe": {
+    "nombre": "Golden Axe",
+    "slug": "golden-axe"
+  },
+  "golden_boots": {
+    "nombre": "Golden Boots",
+    "slug": "golden-boots"
+  },
+  "golden_chestplate": {
+    "nombre": "Golden Chestplate",
+    "slug": "golden-chestplate"
+  },
+  "golden_helmet": {
+    "nombre": "Golden Helmet",
+    "slug": "golden-helmet"
+  },
+  "golden_hoe": {
+    "nombre": "Golden Hoe",
+    "slug": "golden-hoe"
+  },
+  "golden_leggings": {
+    "nombre": "Golden Leggings",
+    "slug": "golden-leggings"
+  },
+  "golden_pickaxe": {
+    "nombre": "Golden Pickaxe",
+    "slug": "golden-pickaxe"
+  },
+  "golden_shovel": {
+    "nombre": "Golden Shovel",
+    "slug": "golden-shovel"
+  },
+  "golden_sword": {
+    "nombre": "Golden Sword",
+    "slug": "golden-sword"
+  },
+  "iron_axe": {
+    "nombre": "Iron Axe",
+    "slug": "iron-axe"
+  },
+  "iron_boots": {
+    "nombre": "Iron Boots",
+    "slug": "iron-boots"
+  },
+  "iron_chestplate": {
+    "nombre": "Iron Chestplate",
+    "slug": "iron-chestplate"
+  },
+  "iron_helmet": {
+    "nombre": "Iron Helmet",
+    "slug": "iron-helmet"
+  },
+  "iron_hoe": {
+    "nombre": "Iron Hoe",
+    "slug": "iron-hoe"
+  },
+  "iron_leggings": {
+    "nombre": "Iron Leggings",
+    "slug": "iron-leggings"
+  },
+  "iron_pickaxe": {
+    "nombre": "Iron Pickaxe",
+    "slug": "iron-pickaxe"
+  },
+  "iron_shovel": {
+    "nombre": "Iron Shovel",
+    "slug": "iron-shovel"
+  },
+  "iron_sword": {
+    "nombre": "Iron Sword",
+    "slug": "iron-sword"
+  },
+  "leather_boots": {
+    "nombre": "Leather Boots",
+    "slug": "leather-boots"
+  },
+  "leather_chestplate": {
+    "nombre": "Leather Tunic",
+    "slug": "leather-tunic"
+  },
+  "leather_helmet": {
+    "nombre": "Leather Cap",
+    "slug": "leather-cap"
+  },
+  "leather_leggings": {
+    "nombre": "Leather Pants",
+    "slug": "leather-pants"
+  },
+  "mace": {
+    "nombre": "Mace",
+    "slug": "mace"
+  },
+  "netherite_axe": {
+    "nombre": "Netherite Axe",
+    "slug": "netherite-axe"
+  },
+  "netherite_boots": {
+    "nombre": "Netherite Boots",
+    "slug": "netherite-boots"
+  },
+  "netherite_chestplate": {
+    "nombre": "Netherite Chestplate",
+    "slug": "netherite-chestplate"
+  },
+  "netherite_helmet": {
+    "nombre": "Netherite Helmet",
+    "slug": "netherite-helmet"
+  },
+  "netherite_hoe": {
+    "nombre": "Netherite Hoe",
+    "slug": "netherite-hoe"
+  },
+  "netherite_leggings": {
+    "nombre": "Netherite Leggings",
+    "slug": "netherite-leggings"
+  },
+  "netherite_pickaxe": {
+    "nombre": "Netherite Pickaxe",
+    "slug": "netherite-pickaxe"
+  },
+  "netherite_shovel": {
+    "nombre": "Netherite Shovel",
+    "slug": "netherite-shovel"
+  },
+  "netherite_sword": {
+    "nombre": "Netherite Sword",
+    "slug": "netherite-sword"
+  },
+  "shield": {
+    "nombre": "Shield",
+    "slug": "shield"
+  },
+  "stone_axe": {
+    "nombre": "Stone Axe",
+    "slug": "stone-axe"
+  },
+  "stone_hoe": {
+    "nombre": "Stone Hoe",
+    "slug": "stone-hoe"
+  },
+  "stone_pickaxe": {
+    "nombre": "Stone Pickaxe",
+    "slug": "stone-pickaxe"
+  },
+  "stone_shovel": {
+    "nombre": "Stone Shovel",
+    "slug": "stone-shovel"
+  },
+  "stone_sword": {
+    "nombre": "Stone Sword",
+    "slug": "stone-sword"
+  },
+  "trident": {
+    "nombre": "Trident",
+    "slug": "trident"
+  },
+  "turtle_helmet": {
+    "nombre": "Turtle Shell",
+    "slug": "turtle-shell"
+  },
+  "wooden_axe": {
+    "nombre": "Wooden Axe",
+    "slug": "wooden-axe"
+  },
+  "wooden_hoe": {
+    "nombre": "Wooden Hoe",
+    "slug": "wooden-hoe"
+  },
+  "wooden_pickaxe": {
+    "nombre": "Wooden Pickaxe",
+    "slug": "wooden-pickaxe"
+  },
+  "wooden_shovel": {
+    "nombre": "Wooden Shovel",
+    "slug": "wooden-shovel"
+  },
+  "wooden_sword": {
+    "nombre": "Wooden Sword",
+    "slug": "wooden-sword"
   }
 }

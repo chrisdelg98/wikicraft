@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "soul_campfire_receta_13",
+  "tipo": "receta",
+  "etapa": "nether",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "soul_campfire",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    " A",
+    "ABA",
+    "CCC"
+  ],
+  "clave": {
+    "A": "stick",
+    "B": "soul_sand",
+    "C": "stripped_cherry_wood"
+  },
+  "estacion": "mesa_de_trabajo"
+}

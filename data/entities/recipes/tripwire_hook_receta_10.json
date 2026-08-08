@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "tripwire_hook_receta_10",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "tripwire_hook",
+    "cantidad": 2
+  },
+  "conForma": true,
+  "patron": [
+    "A",
+    "B",
+    "C"
+  ],
+  "clave": {
+    "A": "iron_ingot",
+    "B": "stick",
+    "C": "birch_planks"
+  },
+  "estacion": "mesa_de_trabajo"
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "iron_helmet",
+  "tipo": "armadura",
+  "etapa": "hierro",
+  "relevancia": "alta",
+  "categoria": "casco",
+  "material": "hierro",
+  "durabilidad": 165,
+  "reparadoCon": [
+    "iron_ingot"
+  ]
+}

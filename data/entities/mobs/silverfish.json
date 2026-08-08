@@ -1,0 +1,8 @@
+{
+  "$schema": "../../schemas/mob.schema.json",
+  "id": "silverfish",
+  "tipo": "mob",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "categoria": "hostil"
+}

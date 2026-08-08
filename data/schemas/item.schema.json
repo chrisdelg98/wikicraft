@@ -15,6 +15,11 @@
     "desdeVersion": { "$ref": "_comun.schema.json#/$defs/version" },
     "hastaVersion": { "$ref": "_comun.schema.json#/$defs/version" },
     "etapa": { "$ref": "_comun.schema.json#/$defs/etapa" },
+    "relevancia": { "$ref": "_comun.schema.json#/$defs/relevancia" },
+    "varianteDe": {
+      "$ref": "_comun.schema.json#/$defs/referencia",
+      "description": "Item base del que esto es una variante de color o de madera. Permite agrupar las 16 lanas o los 11 tipos de tablon en una sola ficha en vez de inundar el buscador."
+    },
     "etiquetas": { "type": "array", "items": { "type": "string" } },
 
     "categorias": {

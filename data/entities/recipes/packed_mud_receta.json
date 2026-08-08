@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "packed_mud_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "packed_mud",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "mud",
+      "cantidad": 1
+    },
+    {
+      "item": "wheat",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

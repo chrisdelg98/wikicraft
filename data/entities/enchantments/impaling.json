@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/enchantment.schema.json",
+  "id": "impaling",
+  "tipo": "encantamiento",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "nivelMaximo": 5,
+  "categoria": "dano",
+  "aplicableA": [
+    "tridente"
+  ],
+  "incompatibleCon": [
+    "bane_of_arthropods",
+    "breach",
+    "density",
+    "sharpness",
+    "smite"
+  ],
+  "esTesoro": false,
+  "esMaldicion": false
+}

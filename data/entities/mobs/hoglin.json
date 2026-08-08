@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/mob.schema.json",
+  "id": "hoglin",
+  "tipo": "mob",
+  "etapa": "nether",
+  "relevancia": "normal",
+  "categoria": "pasivo",
+  "botin": [
+    {
+      "item": "porkchop",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 1
+    },
+    {
+      "item": "leather",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 1
+    }
+  ]
+}

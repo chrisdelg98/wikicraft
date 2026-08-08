@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "chainmail_helmet",
+  "tipo": "armadura",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "categoria": "casco",
+  "material": "malla",
+  "durabilidad": 165,
+  "reparadoCon": [
+    "iron_ingot"
+  ]
+}

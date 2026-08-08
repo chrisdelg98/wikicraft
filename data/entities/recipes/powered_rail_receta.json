@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "powered_rail_receta",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "powered_rail",
+    "cantidad": 6
+  },
+  "conForma": true,
+  "patron": [
+    "A A",
+    "ABA",
+    "ACA"
+  ],
+  "clave": {
+    "A": "gold_ingot",
+    "B": "stick",
+    "C": "redstone"
+  },
+  "estacion": "mesa_de_trabajo"
+}

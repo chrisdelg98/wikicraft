@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "weathered_copper_grate_receta",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "weathered_copper_grate",
+    "cantidad": 4
+  },
+  "conForma": true,
+  "patron": [
+    " A",
+    "A A",
+    " A"
+  ],
+  "clave": {
+    "A": "weathered_copper"
+  },
+  "estacion": "mesa_de_trabajo"
+}

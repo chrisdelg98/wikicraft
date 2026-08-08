@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "spyglass_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "spyglass",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "A",
+    "B",
+    "B"
+  ],
+  "clave": {
+    "A": "amethyst_shard",
+    "B": "copper_ingot"
+  },
+  "estacion": "mesa_de_trabajo"
+}

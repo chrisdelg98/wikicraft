@@ -1,0 +1,334 @@
+{
+  "allay": {
+    "nombre": "Allay",
+    "slug": "allay"
+  },
+  "armadillo": {
+    "nombre": "Armadillo",
+    "slug": "armadillo"
+  },
+  "axolotl": {
+    "nombre": "Axolotl",
+    "slug": "axolotl"
+  },
+  "bat": {
+    "nombre": "Bat",
+    "slug": "bat"
+  },
+  "bee": {
+    "nombre": "Bee",
+    "slug": "bee"
+  },
+  "blaze": {
+    "nombre": "Blaze",
+    "slug": "blaze"
+  },
+  "bogged": {
+    "nombre": "Bogged",
+    "slug": "bogged"
+  },
+  "breeze": {
+    "nombre": "Breeze",
+    "slug": "breeze"
+  },
+  "camel": {
+    "nombre": "Camel",
+    "slug": "camel"
+  },
+  "cat": {
+    "nombre": "Cat",
+    "slug": "cat"
+  },
+  "cave_spider": {
+    "nombre": "Cave Spider",
+    "slug": "cave-spider"
+  },
+  "chicken_mob": {
+    "nombre": "Chicken",
+    "slug": "chicken"
+  },
+  "cod_mob": {
+    "nombre": "Cod",
+    "slug": "cod"
+  },
+  "cow": {
+    "nombre": "Cow",
+    "slug": "cow"
+  },
+  "creaking": {
+    "nombre": "Creaking",
+    "slug": "creaking"
+  },
+  "creeper": {
+    "nombre": "Creeper",
+    "slug": "creeper"
+  },
+  "dolphin": {
+    "nombre": "Dolphin",
+    "slug": "dolphin"
+  },
+  "donkey": {
+    "nombre": "Donkey",
+    "slug": "donkey"
+  },
+  "drowned": {
+    "nombre": "Drowned",
+    "slug": "drowned"
+  },
+  "elder_guardian": {
+    "nombre": "Elder Guardian",
+    "slug": "elder-guardian"
+  },
+  "ender_dragon": {
+    "nombre": "Ender Dragon",
+    "slug": "ender-dragon"
+  },
+  "enderman": {
+    "nombre": "Enderman",
+    "slug": "enderman"
+  },
+  "endermite": {
+    "nombre": "Endermite",
+    "slug": "endermite"
+  },
+  "evoker": {
+    "nombre": "Evoker",
+    "slug": "evoker"
+  },
+  "fox": {
+    "nombre": "Fox",
+    "slug": "fox"
+  },
+  "frog": {
+    "nombre": "Frog",
+    "slug": "frog"
+  },
+  "ghast": {
+    "nombre": "Ghast",
+    "slug": "ghast"
+  },
+  "giant": {
+    "nombre": "Giant",
+    "slug": "giant"
+  },
+  "glow_squid": {
+    "nombre": "Glow Squid",
+    "slug": "glow-squid"
+  },
+  "goat": {
+    "nombre": "Goat",
+    "slug": "goat"
+  },
+  "guardian": {
+    "nombre": "Guardian",
+    "slug": "guardian"
+  },
+  "hoglin": {
+    "nombre": "Hoglin",
+    "slug": "hoglin"
+  },
+  "horse": {
+    "nombre": "Horse",
+    "slug": "horse"
+  },
+  "husk": {
+    "nombre": "Husk",
+    "slug": "husk"
+  },
+  "illusioner": {
+    "nombre": "Illusioner",
+    "slug": "illusioner"
+  },
+  "iron_golem": {
+    "nombre": "Iron Golem",
+    "slug": "iron-golem"
+  },
+  "llama": {
+    "nombre": "Llama",
+    "slug": "llama"
+  },
+  "magma_cube": {
+    "nombre": "Magma Cube",
+    "slug": "magma-cube"
+  },
+  "mooshroom": {
+    "nombre": "Mooshroom",
+    "slug": "mooshroom"
+  },
+  "mule": {
+    "nombre": "Mule",
+    "slug": "mule"
+  },
+  "ocelot": {
+    "nombre": "Ocelot",
+    "slug": "ocelot"
+  },
+  "panda": {
+    "nombre": "Panda",
+    "slug": "panda"
+  },
+  "parrot": {
+    "nombre": "Parrot",
+    "slug": "parrot"
+  },
+  "phantom": {
+    "nombre": "Phantom",
+    "slug": "phantom"
+  },
+  "pig": {
+    "nombre": "Pig",
+    "slug": "pig"
+  },
+  "piglin": {
+    "nombre": "Piglin",
+    "slug": "piglin"
+  },
+  "piglin_brute": {
+    "nombre": "Piglin Brute",
+    "slug": "piglin-brute"
+  },
+  "pillager": {
+    "nombre": "Pillager",
+    "slug": "pillager"
+  },
+  "polar_bear": {
+    "nombre": "Polar Bear",
+    "slug": "polar-bear"
+  },
+  "pufferfish_mob": {
+    "nombre": "Pufferfish",
+    "slug": "pufferfish"
+  },
+  "rabbit_mob": {
+    "nombre": "Rabbit",
+    "slug": "rabbit"
+  },
+  "ravager": {
+    "nombre": "Ravager",
+    "slug": "ravager"
+  },
+  "salmon_mob": {
+    "nombre": "Salmon",
+    "slug": "salmon"
+  },
+  "sheep": {
+    "nombre": "Sheep",
+    "slug": "sheep"
+  },
+  "shulker": {
+    "nombre": "Shulker",
+    "slug": "shulker"
+  },
+  "silverfish": {
+    "nombre": "Silverfish",
+    "slug": "silverfish"
+  },
+  "skeleton": {
+    "nombre": "Skeleton",
+    "slug": "skeleton"
+  },
+  "skeleton_horse": {
+    "nombre": "Skeleton Horse",
+    "slug": "skeleton-horse"
+  },
+  "slime": {
+    "nombre": "Slime",
+    "slug": "slime"
+  },
+  "sniffer": {
+    "nombre": "Sniffer",
+    "slug": "sniffer"
+  },
+  "snow_golem": {
+    "nombre": "Snow Golem",
+    "slug": "snow-golem"
+  },
+  "spider": {
+    "nombre": "Spider",
+    "slug": "spider"
+  },
+  "squid": {
+    "nombre": "Squid",
+    "slug": "squid"
+  },
+  "stray": {
+    "nombre": "Stray",
+    "slug": "stray"
+  },
+  "strider": {
+    "nombre": "Strider",
+    "slug": "strider"
+  },
+  "tadpole": {
+    "nombre": "Tadpole",
+    "slug": "tadpole"
+  },
+  "trader_llama": {
+    "nombre": "Trader Llama",
+    "slug": "trader-llama"
+  },
+  "tropical_fish_mob": {
+    "nombre": "Tropical Fish",
+    "slug": "tropical-fish"
+  },
+  "turtle": {
+    "nombre": "Turtle",
+    "slug": "turtle"
+  },
+  "vex": {
+    "nombre": "Vex",
+    "slug": "vex"
+  },
+  "villager": {
+    "nombre": "Villager",
+    "slug": "villager"
+  },
+  "vindicator": {
+    "nombre": "Vindicator",
+    "slug": "vindicator"
+  },
+  "wandering_trader": {
+    "nombre": "Wandering Trader",
+    "slug": "wandering-trader"
+  },
+  "warden": {
+    "nombre": "Warden",
+    "slug": "warden"
+  },
+  "witch": {
+    "nombre": "Witch",
+    "slug": "witch"
+  },
+  "wither": {
+    "nombre": "Wither",
+    "slug": "wither"
+  },
+  "wither_skeleton": {
+    "nombre": "Wither Skeleton",
+    "slug": "wither-skeleton"
+  },
+  "wolf": {
+    "nombre": "Wolf",
+    "slug": "wolf"
+  },
+  "zoglin": {
+    "nombre": "Zoglin",
+    "slug": "zoglin"
+  },
+  "zombie": {
+    "nombre": "Zombie",
+    "slug": "zombie"
+  },
+  "zombie_horse": {
+    "nombre": "Zombie Horse",
+    "slug": "zombie-horse"
+  },
+  "zombie_villager": {
+    "nombre": "Zombie Villager",
+    "slug": "zombie-villager"
+  },
+  "zombified_piglin": {
+    "nombre": "Zombified Piglin",
+    "slug": "zombified-piglin"
+  }
+}

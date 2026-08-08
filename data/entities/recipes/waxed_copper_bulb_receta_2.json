@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "waxed_copper_bulb_receta_2",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "waxed_copper_bulb",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "copper_bulb",
+      "cantidad": 1
+    },
+    {
+      "item": "honeycomb",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

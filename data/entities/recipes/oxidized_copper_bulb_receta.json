@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "oxidized_copper_bulb_receta",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "oxidized_copper_bulb",
+    "cantidad": 4
+  },
+  "conForma": true,
+  "patron": [
+    " A",
+    "ABA",
+    " C"
+  ],
+  "clave": {
+    "A": "oxidized_copper",
+    "B": "blaze_rod",
+    "C": "redstone"
+  },
+  "estacion": "mesa_de_trabajo"
+}

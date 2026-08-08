@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "calibrated_sculk_sensor_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "calibrated_sculk_sensor",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    " A",
+    "ABA"
+  ],
+  "clave": {
+    "A": "amethyst_shard",
+    "B": "sculk_sensor"
+  },
+  "estacion": "mesa_de_trabajo"
+}

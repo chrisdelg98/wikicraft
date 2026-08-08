@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "black_carpet_receta_2",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "black_carpet",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "black_dye",
+      "cantidad": 1
+    },
+    {
+      "item": "blue_carpet",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

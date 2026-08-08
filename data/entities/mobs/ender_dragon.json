@@ -1,0 +1,8 @@
+{
+  "$schema": "../../schemas/mob.schema.json",
+  "id": "ender_dragon",
+  "tipo": "mob",
+  "etapa": "end",
+  "relevancia": "normal",
+  "categoria": "jefe"
+}

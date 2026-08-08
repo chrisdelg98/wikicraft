@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "netherite_leggings",
+  "tipo": "armadura",
+  "etapa": "nether",
+  "relevancia": "alta",
+  "categoria": "pantalones",
+  "material": "netherita",
+  "durabilidad": 555,
+  "reparadoCon": [
+    "netherite_ingot"
+  ]
+}

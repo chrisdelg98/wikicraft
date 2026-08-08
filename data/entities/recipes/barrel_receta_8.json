@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "barrel_receta_8",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "barrel",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "ABA",
+    "A A",
+    "ABA"
+  ],
+  "clave": {
+    "A": "acacia_planks",
+    "B": "acacia_slab"
+  },
+  "estacion": "mesa_de_trabajo"
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "pumpkin_pie_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "pumpkin_pie",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "pumpkin",
+      "cantidad": 1
+    },
+    {
+      "item": "sugar",
+      "cantidad": 1
+    },
+    {
+      "item": "egg",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

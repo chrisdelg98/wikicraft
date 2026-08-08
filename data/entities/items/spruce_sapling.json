@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/item.schema.json",
+  "id": "spruce_sapling",
+  "tipo": "item",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "categorias": [
+    "bloque",
+    "vegetal"
+  ],
+  "pila": 64,
+  "varianteDe": "oak_sapling"
+}

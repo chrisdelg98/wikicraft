@@ -3,8 +3,16 @@
   "id": "lectern",
   "tipo": "item",
   "etapa": "inicio",
-  "categorias": ["bloque", "utilidad"],
+  "categorias": [
+    "bloque",
+    "utilidad"
+  ],
   "pila": 64,
   "renovable": true,
-  "etiquetas": ["atril", "mesa de trabajo", "bibliotecario"]
+  "etiquetas": [
+    "atril",
+    "mesa de trabajo",
+    "bibliotecario"
+  ],
+  "relevancia": "normal"
 }

@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "netherite_boots",
+  "tipo": "armadura",
+  "etapa": "nether",
+  "relevancia": "alta",
+  "categoria": "botas",
+  "material": "netherita",
+  "durabilidad": 481,
+  "reparadoCon": [
+    "netherite_ingot"
+  ]
+}

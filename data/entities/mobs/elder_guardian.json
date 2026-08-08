@@ -1,0 +1,41 @@
+{
+  "$schema": "../../schemas/mob.schema.json",
+  "id": "elder_guardian",
+  "tipo": "mob",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "categoria": "hostil",
+  "botin": [
+    {
+      "item": "prismarine_shard",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 1
+    },
+    {
+      "item": "cod",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 0.6
+    },
+    {
+      "item": "prismarine_crystals",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 0.4
+    },
+    {
+      "item": "wet_sponge",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 1,
+      "soloAlMorirPorJugador": true
+    },
+    {
+      "item": "tide_armor_trim_smithing_template",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 1
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schemas/enchantment.schema.json",
+  "id": "riptide",
+  "tipo": "encantamiento",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "nivelMaximo": 3,
+  "categoria": "dano",
+  "aplicableA": [
+    "tridente"
+  ],
+  "incompatibleCon": [
+    "channeling",
+    "loyalty"
+  ],
+  "esTesoro": false,
+  "esMaldicion": false
+}

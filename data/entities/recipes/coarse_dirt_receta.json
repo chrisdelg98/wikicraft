@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "coarse_dirt_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "coarse_dirt",
+    "cantidad": 4
+  },
+  "conForma": true,
+  "patron": [
+    "AB",
+    "BA"
+  ],
+  "clave": {
+    "A": "dirt",
+    "B": "gravel"
+  },
+  "estacion": "inventario"
+}

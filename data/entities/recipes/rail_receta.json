@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "rail_receta",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "rail",
+    "cantidad": 16
+  },
+  "conForma": true,
+  "patron": [
+    "A A",
+    "ABA",
+    "A A"
+  ],
+  "clave": {
+    "A": "iron_ingot",
+    "B": "stick"
+  },
+  "estacion": "mesa_de_trabajo"
+}

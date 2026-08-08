@@ -3,8 +3,15 @@
   "id": "glass_bottle",
   "tipo": "item",
   "etapa": "inicio",
-  "categorias": ["utilidad"],
+  "categorias": [
+    "utilidad"
+  ],
   "pila": 64,
   "renovable": true,
-  "etiquetas": ["botella", "cristal", "pociones"]
+  "etiquetas": [
+    "botella",
+    "cristal",
+    "pociones"
+  ],
+  "relevancia": "normal"
 }

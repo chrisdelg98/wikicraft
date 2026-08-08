@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "leather_boots",
+  "tipo": "armadura",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "categoria": "botas",
+  "material": "cuero",
+  "durabilidad": 65,
+  "reparadoCon": [
+    "leather"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "diamond_pickaxe",
+  "tipo": "herramienta",
+  "etapa": "diamante",
+  "relevancia": "alta",
+  "categoria": "pico",
+  "material": "diamante",
+  "durabilidad": 1561,
+  "reparadoCon": [
+    "diamond"
+  ]
+}

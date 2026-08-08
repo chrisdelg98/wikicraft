@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "lightning_rod_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "lightning_rod",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "A",
+    "A",
+    "A"
+  ],
+  "clave": {
+    "A": "copper_ingot"
+  },
+  "estacion": "mesa_de_trabajo"
+}

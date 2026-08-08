@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "stone_sword",
+  "tipo": "herramienta",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "categoria": "espada",
+  "material": "piedra",
+  "durabilidad": 131,
+  "reparadoCon": [
+    "cobbled_deepslate",
+    "cobblestone",
+    "blackstone"
+  ]
+}

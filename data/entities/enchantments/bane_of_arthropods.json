@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/enchantment.schema.json",
+  "id": "bane_of_arthropods",
+  "tipo": "encantamiento",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "nivelMaximo": 5,
+  "categoria": "dano",
+  "aplicableA": [
+    "espada",
+    "hacha"
+  ],
+  "incompatibleCon": [
+    "breach",
+    "density",
+    "impaling",
+    "sharpness",
+    "smite"
+  ],
+  "esTesoro": false,
+  "esMaldicion": false
+}

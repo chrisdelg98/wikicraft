@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "scaffolding_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "scaffolding",
+    "cantidad": 6
+  },
+  "conForma": true,
+  "patron": [
+    "ABA",
+    "A A",
+    "A A"
+  ],
+  "clave": {
+    "A": "bamboo",
+    "B": "string"
+  },
+  "estacion": "mesa_de_trabajo"
+}

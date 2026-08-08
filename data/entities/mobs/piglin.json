@@ -1,0 +1,8 @@
+{
+  "$schema": "../../schemas/mob.schema.json",
+  "id": "piglin",
+  "tipo": "mob",
+  "etapa": "nether",
+  "relevancia": "alta",
+  "categoria": "hostil"
+}

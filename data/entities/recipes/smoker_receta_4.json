@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "smoker_receta_4",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "smoker",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    " A",
+    "ABA",
+    " A"
+  ],
+  "clave": {
+    "A": "warped_stem",
+    "B": "furnace"
+  },
+  "estacion": "mesa_de_trabajo"
+}

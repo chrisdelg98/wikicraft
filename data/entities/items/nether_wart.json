@@ -3,9 +3,19 @@
   "id": "nether_wart",
   "tipo": "item",
   "etapa": "nether",
-  "categorias": ["vegetal", "material"],
+  "categorias": [
+    "vegetal",
+    "material"
+  ],
   "pila": 64,
   "renovable": true,
-  "obtenidoDe": ["nether_fortress"],
-  "etiquetas": ["verruga del nether", "pociones", "cultivo"]
+  "obtenidoDe": [
+    "nether_fortress"
+  ],
+  "etiquetas": [
+    "verruga del nether",
+    "pociones",
+    "cultivo"
+  ],
+  "relevancia": "normal"
 }

@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "oak_door_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "oak_door",
+    "cantidad": 3
+  },
+  "conForma": true,
+  "patron": [
+    "AA",
+    "AA",
+    "AA"
+  ],
+  "clave": {
+    "A": "oak_planks"
+  },
+  "estacion": "mesa_de_trabajo"
+}

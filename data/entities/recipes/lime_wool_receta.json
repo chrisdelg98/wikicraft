@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "lime_wool_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "lime_wool",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "lime_dye",
+      "cantidad": 1
+    },
+    {
+      "item": "black_wool",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "mace",
+  "tipo": "herramienta",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "categoria": "maza",
+  "material": "ninguno",
+  "durabilidad": 500,
+  "reparadoCon": [
+    "breeze_rod"
+  ]
+}

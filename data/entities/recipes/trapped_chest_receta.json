@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "trapped_chest_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "trapped_chest",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "chest",
+      "cantidad": 1
+    },
+    {
+      "item": "tripwire_hook",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

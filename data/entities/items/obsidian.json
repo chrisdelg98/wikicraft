@@ -3,8 +3,17 @@
   "id": "obsidian",
   "tipo": "item",
   "etapa": "hierro",
-  "categorias": ["bloque", "material"],
+  "categorias": [
+    "bloque",
+    "material"
+  ],
   "pila": 64,
   "renovable": true,
-  "etiquetas": ["obsidiana", "portal", "nether", "resistente"]
+  "etiquetas": [
+    "obsidiana",
+    "portal",
+    "nether",
+    "resistente"
+  ],
+  "relevancia": "normal"
 }

@@ -1,0 +1,8 @@
+{
+  "$schema": "../../schemas/biome.schema.json",
+  "id": "crimson_forest",
+  "tipo": "bioma",
+  "etapa": "nether",
+  "relevancia": "normal",
+  "dimension": "nether"
+}

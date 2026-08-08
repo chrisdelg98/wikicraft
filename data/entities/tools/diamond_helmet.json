@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "diamond_helmet",
+  "tipo": "armadura",
+  "etapa": "diamante",
+  "relevancia": "alta",
+  "categoria": "casco",
+  "material": "diamante",
+  "durabilidad": 363,
+  "reparadoCon": [
+    "diamond"
+  ]
+}

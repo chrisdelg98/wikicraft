@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "netherite_ingot_receta_1",
+  "tipo": "receta",
+  "etapa": "nether",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "netherite_ingot",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "netherite_scrap",
+      "cantidad": 4
+    },
+    {
+      "item": "gold_ingot",
+      "cantidad": 4
+    }
+  ],
+  "estacion": "mesa_de_trabajo"
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "granite_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "granite",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "item": "diorite",
+      "cantidad": 1
+    },
+    {
+      "item": "quartz",
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}
