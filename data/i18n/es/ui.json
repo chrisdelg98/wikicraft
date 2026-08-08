@@ -241,7 +241,8 @@
   "encantador.libroCon": "el libro con {lista}",
   "encantador.tuObjeto": "tu pieza",
   "encantador.demasiadoCaro": "No hay forma de conseguir todo eso: alguna combinación pasaría de los 39 niveles y el yunque la rechazaría. Prueba a quitar algún encantamiento o a partirlo en dos piezas.",
-  "encantador.incompatible": "no combina con {lista}",
+  "encantador.incompatible": "No compatible",
+  "encantador.incompatibleCon": "No combina con {lista}",
   "encantador.sinEncantamientos": "Esta pieza no admite encantamientos.",
   "encantador.comoLeer": "Cada paso es una operación en el yunque. La penalización crece con cada una, y por eso el orden importa tanto como los encantamientos.",
 

@@ -222,7 +222,8 @@
   "encantador.libroCon": "the book with {lista}",
   "encantador.tuObjeto": "your item",
   "encantador.demasiadoCaro": "There is no way to get all of that: some combination would go over 39 levels and the anvil would refuse it. Try dropping an enchantment, or splitting it across two items.",
-  "encantador.incompatible": "does not go with {lista}",
+  "encantador.incompatible": "Not compatible",
+  "encantador.incompatibleCon": "Does not go with {lista}",
   "encantador.sinEncantamientos": "This item takes no enchantments.",
   "encantador.comoLeer": "Each step is one anvil operation. The penalty grows with every one, which is why the order matters as much as the enchantments."
 }

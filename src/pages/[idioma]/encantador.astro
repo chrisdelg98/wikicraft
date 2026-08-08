@@ -100,19 +100,25 @@ if (sueltas.length > 0) {
 
         <ul data-lista-encantamientos class="space-y-1">
           {
+            // El aviso va en la misma linea que el nombre, no debajo de la
+            // fila: puesto debajo empujaba los botones y la lista entera
+            // bailaba cada vez que marcabas algo. Va corto por lo mismo, y con
+            // cual choca se cuenta en el title.
             encantamientos.map((e) => (
               <li
                 data-encantamiento={e.id}
                 data-aplica={e.aplica.join(' ')}
                 data-choca={e.choca.join(' ')}
                 hidden
-                class="flex flex-wrap items-center gap-x-3 gap-y-1 bloque px-3 py-2"
+                class="flex items-center gap-3 bloque px-3 py-2"
               >
-                <a href={e.url} class="min-w-0 flex-1 font-semibold hover:text-acento">
-                  {e.nombre}
-                </a>
-                <span data-aviso class="w-full text-xs text-[var(--etapa-nether)]" hidden />
-                <span class="flex gap-1">
+                <span class="flex min-w-0 flex-1 flex-wrap items-baseline gap-x-2">
+                  <a href={e.url} class="font-semibold hover:text-acento">
+                    {e.nombre}
+                  </a>
+                  <span data-aviso class="text-xs text-[var(--etapa-nether)]" hidden />
+                </span>
+                <span class="flex shrink-0 gap-1">
                   {Array.from({ length: e.max }, (_, i) => i + 1).map((n) => (
                     <button
                       type="button"
@@ -185,7 +191,8 @@ if (sueltas.length > 0) {
       tuObjeto: ui(idioma, 'encantador.tuObjeto'),
       elige: ui(idioma, 'encantador.elige'),
       demasiadoCaro: ui(idioma, 'encantador.demasiadoCaro'),
-      incompatible: ui(idioma, 'encantador.incompatible', { lista: '§' }),
+      incompatible: ui(idioma, 'encantador.incompatible'),
+      incompatibleCon: ui(idioma, 'encantador.incompatibleCon', { lista: '§' }),
       comoLeer: ui(idioma, 'encantador.comoLeer')
     })}
   />
@@ -267,7 +274,9 @@ if (sueltas.length > 0) {
         for (const boton of fila.querySelectorAll('[data-nivel]')) boton.disabled = bloqueada
         aviso.hidden = !bloqueada
         if (bloqueada) {
-          aviso.textContent = rellenar(T.incompatible, {
+          aviso.textContent = T.incompatible
+          // Con cual choca no cabe en la linea, pero tampoco se pierde.
+          aviso.title = rellenar(T.incompatibleCon, {
             '§': choques.map((c) => DATOS[c]?.nombre ?? c).join(', ')
           })
         }
