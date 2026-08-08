@@ -108,12 +108,15 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
             <circle cx="11" cy="11" r="7" />
             <path d="m20 20-3.5-3.5" stroke-linecap="round" />
           </svg>
+          {/* Altura fija en las tres piezas de la barra. Con relleno vertical
+              cada una acababa midiendo distinto, porque el campo y los botones
+              no comparten ni tamano de letra ni interlineado. */}
           <input
             type="search"
             data-filtro-texto
             placeholder={ui(idioma, 'filtro.buscarEnLista')}
             aria-label={ui(idioma, 'filtro.buscarEnLista')}
-            class="w-full bloque bg-superficie-alta py-3.5 pr-4 pl-12 text-base placeholder:text-texto-suave"
+            class="h-12 w-full bloque bg-superficie-alta pr-4 pl-12 text-base placeholder:text-texto-suave"
           />
         </div>
 
@@ -121,7 +124,7 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
           <button
             type="button"
             data-abrir-guia
-            class="flex shrink-0 items-center gap-2 bloque bloque-pulsable bg-acento px-4 py-3.5 font-bold text-acento-contraste"
+            class="flex h-12 shrink-0 items-center gap-2 bloque bloque-pulsable bg-acento px-4 font-bold text-acento-contraste"
           >
             <svg viewBox="0 0 16 16" class="h-4 w-4" fill="currentColor" aria-hidden="true">
               <path d="M2 2h5v12H2zM9 2h5v12H9zM3 4h3v1H3zM10 4h3v1h-3zM3 6h3v1H3zM10 6h3v1h-3z" />
@@ -134,7 +137,7 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
           <button
             type="button"
             data-abrir-filtros
-            class="flex shrink-0 items-center gap-2 bloque bloque-pulsable px-4 py-3.5 font-semibold"
+            class="flex h-12 shrink-0 items-center gap-2 bloque bloque-pulsable px-4 font-semibold"
           >
             <svg viewBox="0 0 16 16" class="h-4 w-4" fill="currentColor" aria-hidden="true">
               <path d="M1 3h14v2H1zM3 7h10v2H3zM6 11h4v2H6z" />

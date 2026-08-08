@@ -30,13 +30,13 @@
   --acento-claro: #57a03a;
   --acento-contraste: #ffffff;
 
-  /* Estado activo, con su propio par de colores.
-     Verde medio con texto blanco se queda en 4,9:1: cumple el minimo, pero en
-     un boton pequeno no canta. Invertirlo a verde brillante con texto casi
-     negro sube a 7,4:1, se lee de golpe y ademas se parece mas al verde del
-     juego. Los dos temas usan ya el mismo planteamiento. */
-  --acento-activo: #6fbf4a;
-  --acento-activo-texto: #0e2108;
+  /* Estado activo.
+     Se probo invertirlo, con fondo verde brillante y texto casi negro, que
+     mide mejor sobre el papel. En pantalla gana el verde oscuro con texto
+     blanco: sobre una pagina clara lo que separa un boton del fondo no es el
+     contraste interno de su texto, sino lo oscuro que sea el boton entero. */
+  --acento-activo: #35701f;
+  --acento-activo-texto: #ffffff;
   --sombra: rgba(22, 19, 14, 0.16);
 
   --etapa-inicio: #57a03a;
@@ -75,8 +75,10 @@
      oscuro: 8,9:1 contra el fondo y 8,7:1 contra el texto que lleva encima. */
   --o-acento: #79c855;
   --o-acento-claro: #96da77;
+  /* En oscuro se invierte el razonamiento por el mismo motivo: sobre fondo
+     oscuro lo que destaca es el boton claro. */
   --o-acento-activo: #8ad665;
-  --o-acento-activo-texto: #0b1406;
+  --o-acento-activo-texto: #08120a;
   --o-acento-contraste: #0f2007;
   --o-sombra: rgba(0, 0, 0, 0.55);
 
