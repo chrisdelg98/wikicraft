@@ -140,11 +140,11 @@ const otrosIdiomas = idiomas
                     href={`/${idioma}/${rutaModulo(idioma, modulo)}/`}
                     aria-current={modulo === moduloActivo ? 'page' : undefined}
                     class:list={[
-                      'flex items-center gap-2 bloque bloque-pulsable px-3 py-1.5 text-sm whitespace-nowrap',
-                      // Exactamente el mismo relleno y el mismo texto que el
-                      // boton de guia. Tuvo un verde propio, medio tono mas
-                      // oscuro, y lo unico que consiguio fue que los dos no
-                      // acabaran de casar estando uno debajo del otro.
+                      // Mismo color que el boton de guia, y ahora tambien un
+                      // tamano parecido. A igualdad de color el boton mas
+                      // grande parece siempre tener mas contraste, y esa era
+                      // la diferencia que quedaba entre los dos.
+                      'flex items-center gap-2 bloque bloque-pulsable px-4 py-2.5 whitespace-nowrap',
                       modulo === moduloActivo
                         ? 'bg-acento font-bold text-acento-contraste'
                         : 'font-semibold text-texto'
