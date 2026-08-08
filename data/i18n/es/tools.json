@@ -1,8 +1,248 @@
 {
+  "bow": {
+    "nombre": "Arco",
+    "slug": "arco"
+  },
+  "chainmail_boots": {
+    "nombre": "Botas de malla",
+    "slug": "botas-de-malla"
+  },
+  "chainmail_chestplate": {
+    "nombre": "Pechera de malla",
+    "slug": "pechera-de-malla"
+  },
+  "chainmail_helmet": {
+    "nombre": "Casco de malla",
+    "slug": "casco-de-malla"
+  },
+  "chainmail_leggings": {
+    "nombre": "Pantalones de malla",
+    "slug": "pantalones-de-malla"
+  },
+  "crossbow": {
+    "nombre": "Ballesta",
+    "slug": "ballesta"
+  },
+  "diamond_axe": {
+    "nombre": "Hacha de diamante",
+    "slug": "hacha-de-diamante"
+  },
+  "diamond_boots": {
+    "nombre": "Botas de diamante",
+    "slug": "botas-de-diamante"
+  },
+  "diamond_chestplate": {
+    "nombre": "Pechera de diamante",
+    "slug": "pechera-de-diamante"
+  },
+  "diamond_helmet": {
+    "nombre": "Casco de diamante",
+    "slug": "casco-de-diamante"
+  },
+  "diamond_hoe": {
+    "nombre": "Azada de diamante",
+    "slug": "azada-de-diamante"
+  },
+  "diamond_leggings": {
+    "nombre": "Pantalones de diamante",
+    "slug": "pantalones-de-diamante"
+  },
+  "diamond_pickaxe": {
+    "nombre": "Pico de diamante",
+    "slug": "pico-de-diamante"
+  },
+  "diamond_shovel": {
+    "nombre": "Pala de diamante",
+    "slug": "pala-de-diamante"
+  },
   "diamond_sword": {
     "nombre": "Espada de Diamante",
     "slug": "espada-de-diamante",
     "descripcion": "El arma cuerpo a cuerpo de referencia durante casi toda la partida. Combina un daño alto con una durabilidad que aguanta miles de golpes.",
     "notas": "Encantada con Filo, Reparación e Irrompibilidad deja de necesitar mantenimiento: la experiencia de los propios combates la repara sola."
+  },
+  "elytra": {
+    "nombre": "Élitros",
+    "slug": "elitros"
+  },
+  "golden_axe": {
+    "nombre": "Hacha de oro",
+    "slug": "hacha-de-oro"
+  },
+  "golden_boots": {
+    "nombre": "Botas de oro",
+    "slug": "botas-de-oro"
+  },
+  "golden_chestplate": {
+    "nombre": "Pechera de oro",
+    "slug": "pechera-de-oro"
+  },
+  "golden_helmet": {
+    "nombre": "Casco de oro",
+    "slug": "casco-de-oro"
+  },
+  "golden_hoe": {
+    "nombre": "Azada de oro",
+    "slug": "azada-de-oro"
+  },
+  "golden_leggings": {
+    "nombre": "Pantalones de oro",
+    "slug": "pantalones-de-oro"
+  },
+  "golden_pickaxe": {
+    "nombre": "Pico de oro",
+    "slug": "pico-de-oro"
+  },
+  "golden_shovel": {
+    "nombre": "Pala de oro",
+    "slug": "pala-de-oro"
+  },
+  "golden_sword": {
+    "nombre": "Espada de oro",
+    "slug": "espada-de-oro"
+  },
+  "iron_axe": {
+    "nombre": "Hacha de hierro",
+    "slug": "hacha-de-hierro"
+  },
+  "iron_boots": {
+    "nombre": "Botas de hierro",
+    "slug": "botas-de-hierro"
+  },
+  "iron_chestplate": {
+    "nombre": "Pechera de hierro",
+    "slug": "pechera-de-hierro"
+  },
+  "iron_helmet": {
+    "nombre": "Casco de hierro",
+    "slug": "casco-de-hierro"
+  },
+  "iron_hoe": {
+    "nombre": "Azada de hierro",
+    "slug": "azada-de-hierro"
+  },
+  "iron_leggings": {
+    "nombre": "Pantalones de hierro",
+    "slug": "pantalones-de-hierro"
+  },
+  "iron_pickaxe": {
+    "nombre": "Pico de hierro",
+    "slug": "pico-de-hierro"
+  },
+  "iron_shovel": {
+    "nombre": "Pala de hierro",
+    "slug": "pala-de-hierro"
+  },
+  "iron_sword": {
+    "nombre": "Espada de hierro",
+    "slug": "espada-de-hierro"
+  },
+  "leather_boots": {
+    "nombre": "Botas de cuero",
+    "slug": "botas-de-cuero"
+  },
+  "leather_chestplate": {
+    "nombre": "Pechera de cuero",
+    "slug": "pechera-de-cuero"
+  },
+  "leather_helmet": {
+    "nombre": "Casco de cuero",
+    "slug": "casco-de-cuero"
+  },
+  "leather_leggings": {
+    "nombre": "Pantalones de cuero",
+    "slug": "pantalones-de-cuero"
+  },
+  "mace": {
+    "nombre": "Maza",
+    "slug": "maza"
+  },
+  "netherite_axe": {
+    "nombre": "Hacha de netherita",
+    "slug": "hacha-de-netherita"
+  },
+  "netherite_boots": {
+    "nombre": "Botas de netherita",
+    "slug": "botas-de-netherita"
+  },
+  "netherite_chestplate": {
+    "nombre": "Pechera de netherita",
+    "slug": "pechera-de-netherita"
+  },
+  "netherite_helmet": {
+    "nombre": "Casco de netherita",
+    "slug": "casco-de-netherita"
+  },
+  "netherite_hoe": {
+    "nombre": "Azada de netherita",
+    "slug": "azada-de-netherita"
+  },
+  "netherite_leggings": {
+    "nombre": "Pantalones de netherita",
+    "slug": "pantalones-de-netherita"
+  },
+  "netherite_pickaxe": {
+    "nombre": "Pico de netherita",
+    "slug": "pico-de-netherita"
+  },
+  "netherite_shovel": {
+    "nombre": "Pala de netherita",
+    "slug": "pala-de-netherita"
+  },
+  "netherite_sword": {
+    "nombre": "Espada de netherita",
+    "slug": "espada-de-netherita"
+  },
+  "shield": {
+    "nombre": "Escudo",
+    "slug": "escudo"
+  },
+  "stone_axe": {
+    "nombre": "Hacha de piedra",
+    "slug": "hacha-de-piedra"
+  },
+  "stone_hoe": {
+    "nombre": "Azada de piedra",
+    "slug": "azada-de-piedra"
+  },
+  "stone_pickaxe": {
+    "nombre": "Pico de piedra",
+    "slug": "pico-de-piedra"
+  },
+  "stone_shovel": {
+    "nombre": "Pala de piedra",
+    "slug": "pala-de-piedra"
+  },
+  "stone_sword": {
+    "nombre": "Espada de piedra",
+    "slug": "espada-de-piedra"
+  },
+  "trident": {
+    "nombre": "Tridente",
+    "slug": "tridente"
+  },
+  "turtle_helmet": {
+    "nombre": "Casco de caparazón",
+    "slug": "casco-de-caparazon"
+  },
+  "wooden_axe": {
+    "nombre": "Hacha de madera",
+    "slug": "hacha-de-madera"
+  },
+  "wooden_hoe": {
+    "nombre": "Azada de madera",
+    "slug": "azada-de-madera"
+  },
+  "wooden_pickaxe": {
+    "nombre": "Pico de madera",
+    "slug": "pico-de-madera"
+  },
+  "wooden_shovel": {
+    "nombre": "Pala de madera",
+    "slug": "pala-de-madera"
+  },
+  "wooden_sword": {
+    "nombre": "Espada de madera",
+    "slug": "espada-de-madera"
   }
 }

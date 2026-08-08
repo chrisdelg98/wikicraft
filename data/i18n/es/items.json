@@ -1,72 +1,5312 @@
 {
-  "diamond": {
-    "nombre": "Diamante",
-    "slug": "diamante",
-    "descripcion": "La gema más valiosa que encontrarás excavando. Está muy abajo, cerca del fondo del mundo, y necesitas un pico de hierro o mejor para recogerla: con uno de piedra el bloque desaparece sin darte nada."
+  "acacia_boat": {
+    "nombre": "Barca de acacia",
+    "slug": "barca-de-acacia"
   },
-  "stick": {
-    "nombre": "Palo",
-    "slug": "palo",
-    "descripcion": "El mango de casi todas tus herramientas y armas. Se hace con dos tablones, y como la madera nunca se acaba, nunca te quedarás sin palos."
+  "acacia_button": {
+    "nombre": "Botón de acacia",
+    "slug": "boton-de-acacia"
   },
-  "emerald": {
-    "nombre": "Esmeralda",
-    "slug": "esmeralda",
-    "descripcion": "El dinero de los aldeanos. No sirve para fabricar equipo, pero con ella compras casi cualquier cosa en una aldea."
+  "acacia_chest_boat": {
+    "nombre": "Barca con cofre de acacia",
+    "slug": "barca-con-cofre-de-acacia"
   },
-  "book": {
-    "nombre": "Libro",
-    "slug": "libro",
-    "descripcion": "Se fabrica con tres papeles y un cuero. Lo necesitas para la mesa de encantamientos y para comprar libros encantados al bibliotecario."
+  "acacia_door": {
+    "nombre": "Puerta de acacia",
+    "slug": "puerta-de-acacia"
   },
-  "enchanted_book": {
-    "nombre": "Libro encantado",
-    "slug": "libro-encantado",
-    "descripcion": "Guarda un encantamiento hasta que lo pasas a una herramienta o armadura usando un yunque. Es la forma más segura de conseguir el encantamiento que quieres, en vez de confiar en la suerte de la mesa."
+  "acacia_fence": {
+    "nombre": "Valla de acacia",
+    "slug": "valla-de-acacia"
   },
-  "lectern": {
-    "nombre": "Atril",
-    "slug": "atril",
-    "descripcion": "Colócalo junto a un aldeano sin trabajo y se convertirá en bibliotecario. Si no te gusta lo que vende, rompe el atril y vuelve a ponerlo: cambiará su oferta."
+  "acacia_fence_gate": {
+    "nombre": "Puerta de valla de acacia",
+    "slug": "puerta-de-valla-de-acacia"
   },
-  "blaze_rod": {
-    "nombre": "Vara de blaze",
-    "slug": "vara-de-blaze",
-    "descripcion": "Solo la sueltan los blazes, y solo si los matas tú. Es imprescindible para fabricar pociones y para llegar al End, así que vas a necesitar bastantes."
+  "acacia_hanging_sign": {
+    "nombre": "Cartel colgante de acacia",
+    "slug": "cartel-colgante-de-acacia"
+  },
+  "acacia_leaves": {
+    "nombre": "Hojas de acacia",
+    "slug": "hojas-de-acacia"
+  },
+  "acacia_log": {
+    "nombre": "Tronco de acacia",
+    "slug": "tronco-de-acacia"
+  },
+  "acacia_planks": {
+    "nombre": "Tablones de acacia",
+    "slug": "tablones-de-acacia"
+  },
+  "acacia_pressure_plate": {
+    "nombre": "Placa de presión de acacia",
+    "slug": "placa-de-presion-de-acacia"
+  },
+  "acacia_sapling": {
+    "nombre": "Brote de acacia",
+    "slug": "brote-de-acacia"
+  },
+  "acacia_sign": {
+    "nombre": "Cartel de acacia",
+    "slug": "cartel-de-acacia"
+  },
+  "acacia_slab": {
+    "nombre": "Losa de acacia",
+    "slug": "losa-de-acacia"
+  },
+  "acacia_stairs": {
+    "nombre": "Escaleras de acacia",
+    "slug": "escaleras-de-acacia"
+  },
+  "acacia_trapdoor": {
+    "nombre": "Trampilla de acacia",
+    "slug": "trampilla-de-acacia"
+  },
+  "acacia_wood": {
+    "nombre": "Madera de acacia",
+    "slug": "madera-de-acacia"
+  },
+  "activator_rail": {
+    "nombre": "Raíl activador",
+    "slug": "rail-activador"
+  },
+  "air": {
+    "nombre": "Aire",
+    "slug": "aire"
+  },
+  "allay_spawn_egg": {
+    "nombre": "Huevo generador de Allay",
+    "slug": "huevo-generador-de-allay"
+  },
+  "allium": {
+    "nombre": "Alium",
+    "slug": "alium"
+  },
+  "amethyst_block": {
+    "nombre": "Bloque de amatista",
+    "slug": "bloque-de-amatista"
+  },
+  "amethyst_cluster": {
+    "nombre": "Racimo de amatista",
+    "slug": "racimo-de-amatista"
+  },
+  "amethyst_shard": {
+    "nombre": "Fragmento de amatista",
+    "slug": "fragmento-de-amatista"
+  },
+  "ancient_debris": {
+    "nombre": "Escombros antiguos",
+    "slug": "escombros-antiguos"
+  },
+  "andesite": {
+    "nombre": "Andesita",
+    "slug": "andesita"
+  },
+  "andesite_slab": {
+    "nombre": "Losa de andesita",
+    "slug": "losa-de-andesita"
+  },
+  "andesite_stairs": {
+    "nombre": "Escaleras de andesita",
+    "slug": "escaleras-de-andesita"
+  },
+  "andesite_wall": {
+    "nombre": "Muro de andesita",
+    "slug": "muro-de-andesita"
+  },
+  "angler_pottery_sherd": {
+    "nombre": "Fragmento de cerámica del pescador",
+    "slug": "fragmento-de-ceramica-del-pescador"
+  },
+  "anvil": {
+    "nombre": "Yunque",
+    "slug": "yunque"
+  },
+  "apple": {
+    "nombre": "Manzana",
+    "slug": "manzana"
+  },
+  "archer_pottery_sherd": {
+    "nombre": "Fragmento de cerámica del arquero",
+    "slug": "fragmento-de-ceramica-del-arquero"
+  },
+  "armadillo_scute": {
+    "nombre": "Escama de armadillo",
+    "slug": "escama-de-armadillo"
+  },
+  "armadillo_spawn_egg": {
+    "nombre": "Huevo generador de Armadillo",
+    "slug": "huevo-generador-de-armadillo"
+  },
+  "armor_stand": {
+    "nombre": "Soporte para armaduras",
+    "slug": "soporte-para-armaduras"
+  },
+  "arms_up_pottery_sherd": {
+    "nombre": "Fragmento de cerámica de brazos en alto",
+    "slug": "fragmento-de-ceramica-de-brazos-en-alto"
+  },
+  "arrow": {
+    "nombre": "Flecha",
+    "slug": "flecha"
+  },
+  "axolotl_bucket": {
+    "nombre": "Cubo con ajolote",
+    "slug": "cubo-con-ajolote"
+  },
+  "axolotl_spawn_egg": {
+    "nombre": "Huevo generador de Ajolote",
+    "slug": "huevo-generador-de-ajolote"
+  },
+  "azalea": {
+    "nombre": "Azalea",
+    "slug": "azalea"
+  },
+  "azalea_leaves": {
+    "nombre": "Hojas de azalea",
+    "slug": "hojas-de-azalea"
+  },
+  "azure_bluet": {
+    "nombre": "Miosotis",
+    "slug": "miosotis"
+  },
+  "baked_potato": {
+    "nombre": "Patata asada",
+    "slug": "patata-asada"
+  },
+  "bamboo": {
+    "nombre": "Bambú",
+    "slug": "bambu"
+  },
+  "bamboo_block": {
+    "nombre": "Bloque de bambú",
+    "slug": "bloque-de-bambu"
+  },
+  "bamboo_button": {
+    "nombre": "Botón de bambú",
+    "slug": "boton-de-bambu"
+  },
+  "bamboo_chest_raft": {
+    "nombre": "Balsa con cofre de bambú",
+    "slug": "balsa-con-cofre-de-bambu"
+  },
+  "bamboo_door": {
+    "nombre": "Puerta de bambú",
+    "slug": "puerta-de-bambu"
+  },
+  "bamboo_fence": {
+    "nombre": "Valla de bambú",
+    "slug": "valla-de-bambu"
+  },
+  "bamboo_fence_gate": {
+    "nombre": "Puerta de valla de bambú",
+    "slug": "puerta-de-valla-de-bambu"
+  },
+  "bamboo_hanging_sign": {
+    "nombre": "Cartel colgante de bambú",
+    "slug": "cartel-colgante-de-bambu"
+  },
+  "bamboo_mosaic": {
+    "nombre": "Mosaico de bambú",
+    "slug": "mosaico-de-bambu"
+  },
+  "bamboo_mosaic_slab": {
+    "nombre": "Losa de mosaico de bambú",
+    "slug": "losa-de-mosaico-de-bambu"
+  },
+  "bamboo_mosaic_stairs": {
+    "nombre": "Escaleras de mosaico de bambú",
+    "slug": "escaleras-de-mosaico-de-bambu"
+  },
+  "bamboo_planks": {
+    "nombre": "Tablones de bambú",
+    "slug": "tablones-de-bambu"
+  },
+  "bamboo_pressure_plate": {
+    "nombre": "Placa de presión de bambú",
+    "slug": "placa-de-presion-de-bambu"
+  },
+  "bamboo_raft": {
+    "nombre": "Balsa de bambú",
+    "slug": "balsa-de-bambu"
+  },
+  "bamboo_sign": {
+    "nombre": "Cartel de bambú",
+    "slug": "cartel-de-bambu"
+  },
+  "bamboo_slab": {
+    "nombre": "Losa de bambú",
+    "slug": "losa-de-bambu"
+  },
+  "bamboo_stairs": {
+    "nombre": "Escaleras de bambú",
+    "slug": "escaleras-de-bambu"
+  },
+  "bamboo_trapdoor": {
+    "nombre": "Trampilla de bambú",
+    "slug": "trampilla-de-bambu"
+  },
+  "barrel": {
+    "nombre": "Barril",
+    "slug": "barril"
+  },
+  "barrier": {
+    "nombre": "Barrera",
+    "slug": "barrera"
+  },
+  "basalt": {
+    "nombre": "Basalto",
+    "slug": "basalto"
+  },
+  "bat_spawn_egg": {
+    "nombre": "Huevo generador de Murciélago",
+    "slug": "huevo-generador-de-murcielago"
+  },
+  "beacon": {
+    "nombre": "Faro",
+    "slug": "faro"
+  },
+  "bedrock": {
+    "nombre": "Roca madre",
+    "slug": "roca-madre"
+  },
+  "bee_nest": {
+    "nombre": "Panal silvestre",
+    "slug": "panal-silvestre"
+  },
+  "bee_spawn_egg": {
+    "nombre": "Huevo generador de Abeja",
+    "slug": "huevo-generador-de-abeja"
+  },
+  "beef": {
+    "nombre": "Filete crudo",
+    "slug": "filete-crudo"
+  },
+  "beehive": {
+    "nombre": "Colmena",
+    "slug": "colmena"
+  },
+  "beetroot": {
+    "nombre": "Remolacha",
+    "slug": "remolacha"
+  },
+  "beetroot_seeds": {
+    "nombre": "Semillas de remolacha",
+    "slug": "semillas-de-remolacha"
+  },
+  "beetroot_soup": {
+    "nombre": "Sopa de remolacha",
+    "slug": "sopa-de-remolacha"
+  },
+  "bell": {
+    "nombre": "Campana",
+    "slug": "campana"
+  },
+  "big_dripleaf": {
+    "nombre": "Hoja de goteo grande",
+    "slug": "hoja-de-goteo-grande"
+  },
+  "birch_boat": {
+    "nombre": "Barca de abedul",
+    "slug": "barca-de-abedul"
+  },
+  "birch_button": {
+    "nombre": "Botón de abedul",
+    "slug": "boton-de-abedul"
+  },
+  "birch_chest_boat": {
+    "nombre": "Barca con cofre de abedul",
+    "slug": "barca-con-cofre-de-abedul"
+  },
+  "birch_door": {
+    "nombre": "Puerta de abedul",
+    "slug": "puerta-de-abedul"
+  },
+  "birch_fence": {
+    "nombre": "Valla de abedul",
+    "slug": "valla-de-abedul"
+  },
+  "birch_fence_gate": {
+    "nombre": "Puerta de valla de abedul",
+    "slug": "puerta-de-valla-de-abedul"
+  },
+  "birch_hanging_sign": {
+    "nombre": "Cartel colgante de abedul",
+    "slug": "cartel-colgante-de-abedul"
+  },
+  "birch_leaves": {
+    "nombre": "Hojas de abedul",
+    "slug": "hojas-de-abedul"
+  },
+  "birch_log": {
+    "nombre": "Tronco de abedul",
+    "slug": "tronco-de-abedul"
+  },
+  "birch_planks": {
+    "nombre": "Tablones de abedul",
+    "slug": "tablones-de-abedul"
+  },
+  "birch_pressure_plate": {
+    "nombre": "Placa de presión de abedul",
+    "slug": "placa-de-presion-de-abedul"
+  },
+  "birch_sapling": {
+    "nombre": "Brote de abedul",
+    "slug": "brote-de-abedul"
+  },
+  "birch_sign": {
+    "nombre": "Cartel de abedul",
+    "slug": "cartel-de-abedul"
+  },
+  "birch_slab": {
+    "nombre": "Losa de abedul",
+    "slug": "losa-de-abedul"
+  },
+  "birch_stairs": {
+    "nombre": "Escaleras de abedul",
+    "slug": "escaleras-de-abedul"
+  },
+  "birch_trapdoor": {
+    "nombre": "Trampilla de abedul",
+    "slug": "trampilla-de-abedul"
+  },
+  "birch_wood": {
+    "nombre": "Madera de abedul",
+    "slug": "madera-de-abedul"
+  },
+  "black_banner": {
+    "nombre": "Estandarte negro",
+    "slug": "estandarte-negro"
+  },
+  "black_bed": {
+    "nombre": "Cama negra",
+    "slug": "cama-negra"
+  },
+  "black_bundle": {
+    "nombre": "Saco negro",
+    "slug": "saco-negro"
+  },
+  "black_candle": {
+    "nombre": "Vela negra",
+    "slug": "vela-negra"
+  },
+  "black_carpet": {
+    "nombre": "Alfombra negra",
+    "slug": "alfombra-negra"
+  },
+  "black_concrete": {
+    "nombre": "Hormigón negro",
+    "slug": "hormigon-negro"
+  },
+  "black_concrete_powder": {
+    "nombre": "Hormigón en polvo negro",
+    "slug": "hormigon-en-polvo-negro"
+  },
+  "black_dye": {
+    "nombre": "Tinte negro",
+    "slug": "tinte-negro"
+  },
+  "black_glazed_terracotta": {
+    "nombre": "Terracota vidriada negra",
+    "slug": "terracota-vidriada-negra"
+  },
+  "black_shulker_box": {
+    "nombre": "Caja de shulker negra",
+    "slug": "caja-de-shulker-negra"
+  },
+  "black_stained_glass": {
+    "nombre": "Vidriera negra",
+    "slug": "vidriera-negra"
+  },
+  "black_stained_glass_pane": {
+    "nombre": "Panel de vidriera negro",
+    "slug": "panel-de-vidriera-negro"
+  },
+  "black_terracotta": {
+    "nombre": "Terracota negra",
+    "slug": "terracota-negra"
+  },
+  "black_wool": {
+    "nombre": "Lana negra",
+    "slug": "lana-negra"
+  },
+  "blackstone": {
+    "nombre": "Piedra negra",
+    "slug": "piedra-negra"
+  },
+  "blackstone_slab": {
+    "nombre": "Losa de piedra negra",
+    "slug": "losa-de-piedra-negra"
+  },
+  "blackstone_stairs": {
+    "nombre": "Escaleras de piedra negra",
+    "slug": "escaleras-de-piedra-negra"
+  },
+  "blackstone_wall": {
+    "nombre": "Muro de piedra negra",
+    "slug": "muro-de-piedra-negra"
+  },
+  "blade_pottery_sherd": {
+    "nombre": "Fragmento de cerámica de la hoja",
+    "slug": "fragmento-de-ceramica-de-la-hoja"
+  },
+  "blast_furnace": {
+    "nombre": "Alto horno",
+    "slug": "alto-horno"
   },
   "blaze_powder": {
     "nombre": "Polvo de blaze",
     "slug": "polvo-de-blaze",
     "descripcion": "Se obtiene partiendo una vara de blaze en dos. Sirve para dos cosas: es el combustible del soporte para pociones y el ingrediente de la poción de fuerza."
   },
-  "nether_wart": {
-    "nombre": "Verruga del Nether",
-    "slug": "verruga-del-nether",
-    "descripcion": "Crece en las fortalezas del Nether, sobre arena de almas. Es el primer ingrediente de casi todas las pociones útiles, y puedes plantarla en casa para no volver a buscarla."
+  "blaze_rod": {
+    "nombre": "Vara de blaze",
+    "slug": "vara-de-blaze",
+    "descripcion": "Solo la sueltan los blazes, y solo si los matas tú. Es imprescindible para fabricar pociones y para llegar al End, así que vas a necesitar bastantes."
+  },
+  "blaze_spawn_egg": {
+    "nombre": "Huevo generador de Blaze",
+    "slug": "huevo-generador-de-blaze"
+  },
+  "blue_banner": {
+    "nombre": "Estandarte azul",
+    "slug": "estandarte-azul"
+  },
+  "blue_bed": {
+    "nombre": "Cama azul",
+    "slug": "cama-azul"
+  },
+  "blue_bundle": {
+    "nombre": "Saco azul",
+    "slug": "saco-azul"
+  },
+  "blue_candle": {
+    "nombre": "Vela azul",
+    "slug": "vela-azul"
+  },
+  "blue_carpet": {
+    "nombre": "Alfombra azul",
+    "slug": "alfombra-azul"
+  },
+  "blue_concrete": {
+    "nombre": "Hormigón azul",
+    "slug": "hormigon-azul"
+  },
+  "blue_concrete_powder": {
+    "nombre": "Hormigón en polvo azul",
+    "slug": "hormigon-en-polvo-azul"
+  },
+  "blue_dye": {
+    "nombre": "Tinte azul",
+    "slug": "tinte-azul"
+  },
+  "blue_glazed_terracotta": {
+    "nombre": "Terracota vidriada azul",
+    "slug": "terracota-vidriada-azul"
+  },
+  "blue_ice": {
+    "nombre": "Hielo azul",
+    "slug": "hielo-azul"
+  },
+  "blue_orchid": {
+    "nombre": "Orquídea azul",
+    "slug": "orquidea-azul"
+  },
+  "blue_shulker_box": {
+    "nombre": "Caja de shulker azul",
+    "slug": "caja-de-shulker-azul"
+  },
+  "blue_stained_glass": {
+    "nombre": "Vidriera azul",
+    "slug": "vidriera-azul"
+  },
+  "blue_stained_glass_pane": {
+    "nombre": "Panel de vidriera azul",
+    "slug": "panel-de-vidriera-azul"
+  },
+  "blue_terracotta": {
+    "nombre": "Terracota azul",
+    "slug": "terracota-azul"
+  },
+  "blue_wool": {
+    "nombre": "Lana azul",
+    "slug": "lana-azul"
+  },
+  "bogged_spawn_egg": {
+    "nombre": "Huevo generador de Esqueleto cenagoso",
+    "slug": "huevo-generador-de-esqueleto-cenagoso"
+  },
+  "bolt_armor_trim_smithing_template": {
+    "nombre": "Plantilla de adorno del rayo",
+    "slug": "plantilla-de-adorno-del-rayo"
+  },
+  "bone": {
+    "nombre": "Hueso",
+    "slug": "hueso"
+  },
+  "bone_block": {
+    "nombre": "Bloque de hueso",
+    "slug": "bloque-de-hueso"
+  },
+  "bone_meal": {
+    "nombre": "Polvo de hueso",
+    "slug": "polvo-de-hueso"
+  },
+  "book": {
+    "nombre": "Libro",
+    "slug": "libro",
+    "descripcion": "Se fabrica con tres papeles y un cuero. Lo necesitas para la mesa de encantamientos y para comprar libros encantados al bibliotecario."
+  },
+  "bookshelf": {
+    "nombre": "Estantería",
+    "slug": "estanteria"
+  },
+  "bordure_indented_banner_pattern": {
+    "nombre": "Patrón de estandarte de borde dentado",
+    "slug": "patron-de-estandarte-de-borde-dentado"
+  },
+  "bowl": {
+    "nombre": "Cuenco",
+    "slug": "cuenco"
+  },
+  "brain_coral": {
+    "nombre": "Coral de cerebro",
+    "slug": "coral-de-cerebro"
+  },
+  "brain_coral_block": {
+    "nombre": "Bloque de coral de cerebro",
+    "slug": "bloque-de-coral-de-cerebro"
+  },
+  "brain_coral_fan": {
+    "nombre": "Abanico de coral de cerebro",
+    "slug": "abanico-de-coral-de-cerebro"
+  },
+  "bread": {
+    "nombre": "Pan",
+    "slug": "pan"
+  },
+  "breeze_rod": {
+    "nombre": "Vara de brisa",
+    "slug": "vara-de-brisa"
+  },
+  "breeze_spawn_egg": {
+    "nombre": "Huevo generador de Brisa",
+    "slug": "huevo-generador-de-brisa"
+  },
+  "brewer_pottery_sherd": {
+    "nombre": "Fragmento de cerámica del alquimista",
+    "slug": "fragmento-de-ceramica-del-alquimista"
+  },
+  "brewing_stand": {
+    "nombre": "Soporte para pociones",
+    "slug": "soporte-para-pociones"
+  },
+  "brick": {
+    "nombre": "Ladrillo",
+    "slug": "ladrillo"
+  },
+  "brick_slab": {
+    "nombre": "Losa de ladrillo",
+    "slug": "losa-de-ladrillo"
+  },
+  "brick_stairs": {
+    "nombre": "Escaleras de ladrillo",
+    "slug": "escaleras-de-ladrillo"
+  },
+  "brick_wall": {
+    "nombre": "Muro de ladrillo",
+    "slug": "muro-de-ladrillo"
+  },
+  "bricks": {
+    "nombre": "Ladrillos",
+    "slug": "ladrillos"
+  },
+  "brown_banner": {
+    "nombre": "Estandarte marrón",
+    "slug": "estandarte-marron"
+  },
+  "brown_bed": {
+    "nombre": "Cama marrón",
+    "slug": "cama-marron"
+  },
+  "brown_bundle": {
+    "nombre": "Saco marrón",
+    "slug": "saco-marron"
+  },
+  "brown_candle": {
+    "nombre": "Vela marrón",
+    "slug": "vela-marron"
+  },
+  "brown_carpet": {
+    "nombre": "Alfombra marrón",
+    "slug": "alfombra-marron"
+  },
+  "brown_concrete": {
+    "nombre": "Hormigón marrón",
+    "slug": "hormigon-marron"
+  },
+  "brown_concrete_powder": {
+    "nombre": "Hormigón en polvo marrón",
+    "slug": "hormigon-en-polvo-marron"
+  },
+  "brown_dye": {
+    "nombre": "Tinte marrón",
+    "slug": "tinte-marron"
+  },
+  "brown_glazed_terracotta": {
+    "nombre": "Terracota vidriada marrón",
+    "slug": "terracota-vidriada-marron"
+  },
+  "brown_mushroom": {
+    "nombre": "Seta marrón",
+    "slug": "seta-marron"
+  },
+  "brown_mushroom_block": {
+    "nombre": "Bloque de seta marrón",
+    "slug": "bloque-de-seta-marron"
+  },
+  "brown_shulker_box": {
+    "nombre": "Caja de shulker marrón",
+    "slug": "caja-de-shulker-marron"
+  },
+  "brown_stained_glass": {
+    "nombre": "Vidriera marrón",
+    "slug": "vidriera-marron"
+  },
+  "brown_stained_glass_pane": {
+    "nombre": "Panel de vidriera marrón",
+    "slug": "panel-de-vidriera-marron"
+  },
+  "brown_terracotta": {
+    "nombre": "Terracota marrón",
+    "slug": "terracota-marron"
+  },
+  "brown_wool": {
+    "nombre": "Lana marrón",
+    "slug": "lana-marron"
+  },
+  "brush": {
+    "nombre": "Cepillo",
+    "slug": "cepillo"
+  },
+  "bubble_coral": {
+    "nombre": "Coral de burbuja",
+    "slug": "coral-de-burbuja"
+  },
+  "bubble_coral_block": {
+    "nombre": "Bloque de coral de burbuja",
+    "slug": "bloque-de-coral-de-burbuja"
+  },
+  "bubble_coral_fan": {
+    "nombre": "Abanico de coral de burbuja",
+    "slug": "abanico-de-coral-de-burbuja"
+  },
+  "bucket": {
+    "nombre": "Cubo",
+    "slug": "cubo"
+  },
+  "budding_amethyst": {
+    "nombre": "Amatista en formación",
+    "slug": "amatista-en-formacion"
+  },
+  "bundle": {
+    "nombre": "Saco",
+    "slug": "saco"
+  },
+  "burn_pottery_sherd": {
+    "nombre": "Fragmento de cerámica de la quemadura",
+    "slug": "fragmento-de-ceramica-de-la-quemadura"
+  },
+  "cactus": {
+    "nombre": "Cactus",
+    "slug": "cactus"
+  },
+  "cake": {
+    "nombre": "Tarta",
+    "slug": "tarta"
+  },
+  "calcite": {
+    "nombre": "Calcita",
+    "slug": "calcita"
+  },
+  "calibrated_sculk_sensor": {
+    "nombre": "Sensor de sculk calibrado",
+    "slug": "sensor-de-sculk-calibrado"
+  },
+  "camel_spawn_egg": {
+    "nombre": "Huevo generador de Camello",
+    "slug": "huevo-generador-de-camello"
+  },
+  "campfire": {
+    "nombre": "Hoguera",
+    "slug": "hoguera"
+  },
+  "candle": {
+    "nombre": "Vela",
+    "slug": "vela"
+  },
+  "carrot": {
+    "nombre": "Zanahoria",
+    "slug": "zanahoria"
+  },
+  "carrot_on_a_stick": {
+    "nombre": "Zanahoria en una caña",
+    "slug": "zanahoria-en-una-cana"
+  },
+  "cartography_table": {
+    "nombre": "Mesa de cartografía",
+    "slug": "mesa-de-cartografia"
+  },
+  "carved_pumpkin": {
+    "nombre": "Calabaza tallada",
+    "slug": "calabaza-tallada"
+  },
+  "cat_spawn_egg": {
+    "nombre": "Huevo generador de Gato",
+    "slug": "huevo-generador-de-gato"
+  },
+  "cauldron": {
+    "nombre": "Caldero",
+    "slug": "caldero"
+  },
+  "cave_spider_spawn_egg": {
+    "nombre": "Huevo generador de Araña de cueva",
+    "slug": "huevo-generador-de-arana-de-cueva"
+  },
+  "chain": {
+    "nombre": "Cadena",
+    "slug": "cadena"
+  },
+  "chain_command_block": {
+    "nombre": "Bloque de comandos en cadena",
+    "slug": "bloque-de-comandos-en-cadena"
+  },
+  "charcoal": {
+    "nombre": "Carbón vegetal",
+    "slug": "carbon-vegetal"
+  },
+  "cherry_boat": {
+    "nombre": "Barca de cerezo",
+    "slug": "barca-de-cerezo"
+  },
+  "cherry_button": {
+    "nombre": "Botón de cerezo",
+    "slug": "boton-de-cerezo"
+  },
+  "cherry_chest_boat": {
+    "nombre": "Barca con cofre de cerezo",
+    "slug": "barca-con-cofre-de-cerezo"
+  },
+  "cherry_door": {
+    "nombre": "Puerta de cerezo",
+    "slug": "puerta-de-cerezo"
+  },
+  "cherry_fence": {
+    "nombre": "Valla de cerezo",
+    "slug": "valla-de-cerezo"
+  },
+  "cherry_fence_gate": {
+    "nombre": "Puerta de valla de cerezo",
+    "slug": "puerta-de-valla-de-cerezo"
+  },
+  "cherry_hanging_sign": {
+    "nombre": "Cartel colgante de cerezo",
+    "slug": "cartel-colgante-de-cerezo"
+  },
+  "cherry_leaves": {
+    "nombre": "Hojas de cerezo",
+    "slug": "hojas-de-cerezo"
+  },
+  "cherry_log": {
+    "nombre": "Tronco de cerezo",
+    "slug": "tronco-de-cerezo"
+  },
+  "cherry_planks": {
+    "nombre": "Tablones de cerezo",
+    "slug": "tablones-de-cerezo"
+  },
+  "cherry_pressure_plate": {
+    "nombre": "Placa de presión de cerezo",
+    "slug": "placa-de-presion-de-cerezo"
+  },
+  "cherry_sapling": {
+    "nombre": "Brote de cerezo",
+    "slug": "brote-de-cerezo"
+  },
+  "cherry_sign": {
+    "nombre": "Cartel de cerezo",
+    "slug": "cartel-de-cerezo"
+  },
+  "cherry_slab": {
+    "nombre": "Losa de cerezo",
+    "slug": "losa-de-cerezo"
+  },
+  "cherry_stairs": {
+    "nombre": "Escaleras de cerezo",
+    "slug": "escaleras-de-cerezo"
+  },
+  "cherry_trapdoor": {
+    "nombre": "Trampilla de cerezo",
+    "slug": "trampilla-de-cerezo"
+  },
+  "cherry_wood": {
+    "nombre": "Madera de cerezo",
+    "slug": "madera-de-cerezo"
+  },
+  "chest": {
+    "nombre": "Cofre",
+    "slug": "cofre"
+  },
+  "chest_minecart": {
+    "nombre": "Vagoneta con cofre",
+    "slug": "vagoneta-con-cofre"
+  },
+  "chicken": {
+    "nombre": "Pollo crudo",
+    "slug": "pollo-crudo"
+  },
+  "chicken_spawn_egg": {
+    "nombre": "Huevo generador de Pollo",
+    "slug": "huevo-generador-de-pollo"
+  },
+  "chipped_anvil": {
+    "nombre": "Yunque dañado",
+    "slug": "yunque-danado"
+  },
+  "chiseled_bookshelf": {
+    "nombre": "Estantería cincelada",
+    "slug": "estanteria-cincelada"
+  },
+  "chiseled_copper": {
+    "nombre": "Cobre cincelado",
+    "slug": "cobre-cincelado"
+  },
+  "chiseled_deepslate": {
+    "nombre": "Pizarra cincelada",
+    "slug": "pizarra-cincelada"
+  },
+  "chiseled_nether_bricks": {
+    "nombre": "Ladrillos del Nether cincelados",
+    "slug": "ladrillos-del-nether-cincelados"
+  },
+  "chiseled_polished_blackstone": {
+    "nombre": "Piedra negra pulida cincelada",
+    "slug": "piedra-negra-pulida-cincelada"
+  },
+  "chiseled_quartz_block": {
+    "nombre": "Bloque de cuarzo cincelado",
+    "slug": "bloque-de-cuarzo-cincelado"
+  },
+  "chiseled_red_sandstone": {
+    "nombre": "Arenisca roja cincelada",
+    "slug": "arenisca-roja-cincelada"
+  },
+  "chiseled_resin_bricks": {
+    "nombre": "Ladrillos de resina cincelados",
+    "slug": "ladrillos-de-resina-cincelados"
+  },
+  "chiseled_sandstone": {
+    "nombre": "Arenisca cincelada",
+    "slug": "arenisca-cincelada"
+  },
+  "chiseled_stone_bricks": {
+    "nombre": "Ladrillos de piedra cincelados",
+    "slug": "ladrillos-de-piedra-cincelados"
+  },
+  "chiseled_tuff": {
+    "nombre": "Toba cincelada",
+    "slug": "toba-cincelada"
+  },
+  "chiseled_tuff_bricks": {
+    "nombre": "Ladrillos de toba cincelados",
+    "slug": "ladrillos-de-toba-cincelados"
+  },
+  "chorus_flower": {
+    "nombre": "Flor de coro",
+    "slug": "flor-de-coro"
+  },
+  "chorus_fruit": {
+    "nombre": "Fruta de coro",
+    "slug": "fruta-de-coro"
+  },
+  "chorus_plant": {
+    "nombre": "Planta de coro",
+    "slug": "planta-de-coro"
+  },
+  "clay": {
+    "nombre": "Arcilla",
+    "slug": "arcilla"
+  },
+  "clay_ball": {
+    "nombre": "Bola de arcilla",
+    "slug": "bola-de-arcilla"
+  },
+  "clock": {
+    "nombre": "Reloj",
+    "slug": "reloj"
+  },
+  "closed_eyeblossom": {
+    "nombre": "Flor ojo cerrada",
+    "slug": "flor-ojo-cerrada"
+  },
+  "coal": {
+    "nombre": "Carbón",
+    "slug": "carbon"
+  },
+  "coal_block": {
+    "nombre": "Bloque de carbón",
+    "slug": "bloque-de-carbon"
+  },
+  "coal_ore": {
+    "nombre": "Mena de carbón",
+    "slug": "mena-de-carbon"
+  },
+  "coarse_dirt": {
+    "nombre": "Tierra gruesa",
+    "slug": "tierra-gruesa"
+  },
+  "coast_armor_trim_smithing_template": {
+    "nombre": "Plantilla de adorno de la costa",
+    "slug": "plantilla-de-adorno-de-la-costa"
+  },
+  "cobbled_deepslate": {
+    "nombre": "Pizarra en bruto",
+    "slug": "pizarra-en-bruto"
+  },
+  "cobbled_deepslate_slab": {
+    "nombre": "Losa de pizarra en bruto",
+    "slug": "losa-de-pizarra-en-bruto"
+  },
+  "cobbled_deepslate_stairs": {
+    "nombre": "Escaleras de pizarra en bruto",
+    "slug": "escaleras-de-pizarra-en-bruto"
+  },
+  "cobbled_deepslate_wall": {
+    "nombre": "Muro de pizarra en bruto",
+    "slug": "muro-de-pizarra-en-bruto"
+  },
+  "cobblestone": {
+    "nombre": "Roca",
+    "slug": "roca"
+  },
+  "cobblestone_slab": {
+    "nombre": "Losa de roca",
+    "slug": "losa-de-roca"
+  },
+  "cobblestone_stairs": {
+    "nombre": "Escaleras de roca",
+    "slug": "escaleras-de-roca"
+  },
+  "cobblestone_wall": {
+    "nombre": "Muro de roca",
+    "slug": "muro-de-roca"
+  },
+  "cobweb": {
+    "nombre": "Telaraña",
+    "slug": "telarana"
+  },
+  "cocoa_beans": {
+    "nombre": "Granos de cacao",
+    "slug": "granos-de-cacao"
+  },
+  "cod": {
+    "nombre": "Bacalao crudo",
+    "slug": "bacalao-crudo"
+  },
+  "cod_bucket": {
+    "nombre": "Cubo con bacalao",
+    "slug": "cubo-con-bacalao"
+  },
+  "cod_spawn_egg": {
+    "nombre": "Huevo generador de Bacalao",
+    "slug": "huevo-generador-de-bacalao"
+  },
+  "command_block": {
+    "nombre": "Bloque de comandos",
+    "slug": "bloque-de-comandos"
+  },
+  "command_block_minecart": {
+    "nombre": "Vagoneta con bloque de comandos",
+    "slug": "vagoneta-con-bloque-de-comandos"
+  },
+  "comparator": {
+    "nombre": "Comparador",
+    "slug": "comparador"
+  },
+  "compass": {
+    "nombre": "Brújula",
+    "slug": "brujula"
+  },
+  "composter": {
+    "nombre": "Compostador",
+    "slug": "compostador"
+  },
+  "conduit": {
+    "nombre": "Conducto",
+    "slug": "conducto"
+  },
+  "cooked_beef": {
+    "nombre": "Filete",
+    "slug": "filete"
+  },
+  "cooked_chicken": {
+    "nombre": "Pollo asado",
+    "slug": "pollo-asado"
+  },
+  "cooked_cod": {
+    "nombre": "Bacalao cocinado",
+    "slug": "bacalao-cocinado"
+  },
+  "cooked_mutton": {
+    "nombre": "Cordero",
+    "slug": "cordero"
+  },
+  "cooked_porkchop": {
+    "nombre": "Chuleta de cerdo",
+    "slug": "chuleta-de-cerdo"
+  },
+  "cooked_rabbit": {
+    "nombre": "Conejo cocinado",
+    "slug": "conejo-cocinado"
+  },
+  "cooked_salmon": {
+    "nombre": "Salmón cocinado",
+    "slug": "salmon-cocinado"
+  },
+  "cookie": {
+    "nombre": "Galleta",
+    "slug": "galleta"
+  },
+  "copper_block": {
+    "nombre": "Bloque de cobre",
+    "slug": "bloque-de-cobre"
+  },
+  "copper_bulb": {
+    "nombre": "Bombilla de cobre",
+    "slug": "bombilla-de-cobre"
+  },
+  "copper_door": {
+    "nombre": "Puerta de cobre",
+    "slug": "puerta-de-cobre"
+  },
+  "copper_grate": {
+    "nombre": "Rejilla de cobre",
+    "slug": "rejilla-de-cobre"
+  },
+  "copper_ingot": {
+    "nombre": "Lingote de cobre",
+    "slug": "lingote-de-cobre"
+  },
+  "copper_ore": {
+    "nombre": "Mena de cobre",
+    "slug": "mena-de-cobre"
+  },
+  "copper_trapdoor": {
+    "nombre": "Trampilla de cobre",
+    "slug": "trampilla-de-cobre"
+  },
+  "cornflower": {
+    "nombre": "Aciano",
+    "slug": "aciano"
+  },
+  "cow_spawn_egg": {
+    "nombre": "Huevo generador de Vaca",
+    "slug": "huevo-generador-de-vaca"
+  },
+  "cracked_deepslate_bricks": {
+    "nombre": "Ladrillos de pizarra agrietados",
+    "slug": "ladrillos-de-pizarra-agrietados"
+  },
+  "cracked_deepslate_tiles": {
+    "nombre": "Baldosas de pizarra agrietadas",
+    "slug": "baldosas-de-pizarra-agrietadas"
+  },
+  "cracked_nether_bricks": {
+    "nombre": "Ladrillos del Nether agrietados",
+    "slug": "ladrillos-del-nether-agrietados"
+  },
+  "cracked_polished_blackstone_bricks": {
+    "nombre": "Ladrillos de piedra negra agrietados",
+    "slug": "ladrillos-de-piedra-negra-agrietados"
+  },
+  "cracked_stone_bricks": {
+    "nombre": "Ladrillos de piedra agrietados",
+    "slug": "ladrillos-de-piedra-agrietados"
+  },
+  "crafter": {
+    "nombre": "Fabricador",
+    "slug": "fabricador"
+  },
+  "crafting_table": {
+    "nombre": "Mesa de trabajo",
+    "slug": "mesa-de-trabajo"
+  },
+  "creaking_heart": {
+    "nombre": "Corazón de acechador",
+    "slug": "corazon-de-acechador"
+  },
+  "creaking_spawn_egg": {
+    "nombre": "Huevo generador de Acechador",
+    "slug": "huevo-generador-de-acechador"
+  },
+  "creeper_banner_pattern": {
+    "nombre": "Patrón de estandarte de creeper",
+    "slug": "patron-de-estandarte-de-creeper"
+  },
+  "creeper_head": {
+    "nombre": "Cabeza de creeper",
+    "slug": "cabeza-de-creeper"
+  },
+  "creeper_spawn_egg": {
+    "nombre": "Huevo generador de Creeper",
+    "slug": "huevo-generador-de-creeper"
+  },
+  "crimson_button": {
+    "nombre": "Botón carmesí",
+    "slug": "boton-carmesi"
+  },
+  "crimson_door": {
+    "nombre": "Puerta carmesí",
+    "slug": "puerta-carmesi"
+  },
+  "crimson_fence": {
+    "nombre": "Valla carmesí",
+    "slug": "valla-carmesi"
+  },
+  "crimson_fence_gate": {
+    "nombre": "Puerta de valla carmesí",
+    "slug": "puerta-de-valla-carmesi"
+  },
+  "crimson_fungus": {
+    "nombre": "Hongo carmesí",
+    "slug": "hongo-carmesi"
+  },
+  "crimson_hanging_sign": {
+    "nombre": "Cartel colgante carmesí",
+    "slug": "cartel-colgante-carmesi"
+  },
+  "crimson_hyphae": {
+    "nombre": "Hifas carmesíes",
+    "slug": "hifas-carmesies"
+  },
+  "crimson_nylium": {
+    "nombre": "Nylium carmesí",
+    "slug": "nylium-carmesi"
+  },
+  "crimson_planks": {
+    "nombre": "Tablones carmesí",
+    "slug": "tablones-carmesi"
+  },
+  "crimson_pressure_plate": {
+    "nombre": "Placa de presión carmesí",
+    "slug": "placa-de-presion-carmesi"
+  },
+  "crimson_roots": {
+    "nombre": "Raíces carmesíes",
+    "slug": "raices-carmesies"
+  },
+  "crimson_sign": {
+    "nombre": "Cartel carmesí",
+    "slug": "cartel-carmesi"
+  },
+  "crimson_slab": {
+    "nombre": "Losa carmesí",
+    "slug": "losa-carmesi"
+  },
+  "crimson_stairs": {
+    "nombre": "Escaleras carmesí",
+    "slug": "escaleras-carmesi"
+  },
+  "crimson_stem": {
+    "nombre": "Tallo carmesí",
+    "slug": "tallo-carmesi"
+  },
+  "crimson_trapdoor": {
+    "nombre": "Trampilla carmesí",
+    "slug": "trampilla-carmesi"
+  },
+  "crying_obsidian": {
+    "nombre": "Obsidiana llorosa",
+    "slug": "obsidiana-llorosa"
+  },
+  "cut_copper": {
+    "nombre": "Cobre cortado",
+    "slug": "cobre-cortado"
+  },
+  "cut_copper_slab": {
+    "nombre": "Losa de cobre cortado",
+    "slug": "losa-de-cobre-cortado"
+  },
+  "cut_copper_stairs": {
+    "nombre": "Escaleras de cobre cortado",
+    "slug": "escaleras-de-cobre-cortado"
+  },
+  "cut_red_sandstone": {
+    "nombre": "Arenisca roja cortada",
+    "slug": "arenisca-roja-cortada"
+  },
+  "cut_red_sandstone_slab": {
+    "nombre": "Losa de arenisca roja cortada",
+    "slug": "losa-de-arenisca-roja-cortada"
+  },
+  "cut_sandstone": {
+    "nombre": "Arenisca cortada",
+    "slug": "arenisca-cortada"
+  },
+  "cut_sandstone_slab": {
+    "nombre": "Losa de arenisca cortada",
+    "slug": "losa-de-arenisca-cortada"
+  },
+  "cyan_banner": {
+    "nombre": "Estandarte cian",
+    "slug": "estandarte-cian"
+  },
+  "cyan_bed": {
+    "nombre": "Cama cian",
+    "slug": "cama-cian"
+  },
+  "cyan_bundle": {
+    "nombre": "Saco cian",
+    "slug": "saco-cian"
+  },
+  "cyan_candle": {
+    "nombre": "Vela cian",
+    "slug": "vela-cian"
+  },
+  "cyan_carpet": {
+    "nombre": "Alfombra cian",
+    "slug": "alfombra-cian"
+  },
+  "cyan_concrete": {
+    "nombre": "Hormigón cian",
+    "slug": "hormigon-cian"
+  },
+  "cyan_concrete_powder": {
+    "nombre": "Hormigón en polvo cian",
+    "slug": "hormigon-en-polvo-cian"
+  },
+  "cyan_dye": {
+    "nombre": "Tinte cian",
+    "slug": "tinte-cian"
+  },
+  "cyan_glazed_terracotta": {
+    "nombre": "Terracota vidriada cian",
+    "slug": "terracota-vidriada-cian"
+  },
+  "cyan_shulker_box": {
+    "nombre": "Caja de shulker cian",
+    "slug": "caja-de-shulker-cian"
+  },
+  "cyan_stained_glass": {
+    "nombre": "Vidriera cian",
+    "slug": "vidriera-cian"
+  },
+  "cyan_stained_glass_pane": {
+    "nombre": "Panel de vidriera cian",
+    "slug": "panel-de-vidriera-cian"
+  },
+  "cyan_terracotta": {
+    "nombre": "Terracota cian",
+    "slug": "terracota-cian"
+  },
+  "cyan_wool": {
+    "nombre": "Lana cian",
+    "slug": "lana-cian"
+  },
+  "damaged_anvil": {
+    "nombre": "Yunque muy dañado",
+    "slug": "yunque-muy-danado"
+  },
+  "dandelion": {
+    "nombre": "Diente de león",
+    "slug": "diente-de-leon"
+  },
+  "danger_pottery_sherd": {
+    "nombre": "Fragmento de cerámica del peligro",
+    "slug": "fragmento-de-ceramica-del-peligro"
+  },
+  "dark_oak_boat": {
+    "nombre": "Barca de roble oscuro",
+    "slug": "barca-de-roble-oscuro"
+  },
+  "dark_oak_button": {
+    "nombre": "Botón de roble oscuro",
+    "slug": "boton-de-roble-oscuro"
+  },
+  "dark_oak_chest_boat": {
+    "nombre": "Barca con cofre de roble oscuro",
+    "slug": "barca-con-cofre-de-roble-oscuro"
+  },
+  "dark_oak_door": {
+    "nombre": "Puerta de roble oscuro",
+    "slug": "puerta-de-roble-oscuro"
+  },
+  "dark_oak_fence": {
+    "nombre": "Valla de roble oscuro",
+    "slug": "valla-de-roble-oscuro"
+  },
+  "dark_oak_fence_gate": {
+    "nombre": "Puerta de valla de roble oscuro",
+    "slug": "puerta-de-valla-de-roble-oscuro"
+  },
+  "dark_oak_hanging_sign": {
+    "nombre": "Cartel colgante de roble oscuro",
+    "slug": "cartel-colgante-de-roble-oscuro"
+  },
+  "dark_oak_leaves": {
+    "nombre": "Hojas de roble oscuro",
+    "slug": "hojas-de-roble-oscuro"
+  },
+  "dark_oak_log": {
+    "nombre": "Tronco de roble oscuro",
+    "slug": "tronco-de-roble-oscuro"
+  },
+  "dark_oak_planks": {
+    "nombre": "Tablones de roble oscuro",
+    "slug": "tablones-de-roble-oscuro"
+  },
+  "dark_oak_pressure_plate": {
+    "nombre": "Placa de presión de roble oscuro",
+    "slug": "placa-de-presion-de-roble-oscuro"
+  },
+  "dark_oak_sapling": {
+    "nombre": "Brote de roble oscuro",
+    "slug": "brote-de-roble-oscuro"
+  },
+  "dark_oak_sign": {
+    "nombre": "Cartel de roble oscuro",
+    "slug": "cartel-de-roble-oscuro"
+  },
+  "dark_oak_slab": {
+    "nombre": "Losa de roble oscuro",
+    "slug": "losa-de-roble-oscuro"
+  },
+  "dark_oak_stairs": {
+    "nombre": "Escaleras de roble oscuro",
+    "slug": "escaleras-de-roble-oscuro"
+  },
+  "dark_oak_trapdoor": {
+    "nombre": "Trampilla de roble oscuro",
+    "slug": "trampilla-de-roble-oscuro"
+  },
+  "dark_oak_wood": {
+    "nombre": "Madera de roble oscuro",
+    "slug": "madera-de-roble-oscuro"
+  },
+  "dark_prismarine": {
+    "nombre": "Prismarina oscura",
+    "slug": "prismarina-oscura"
+  },
+  "dark_prismarine_slab": {
+    "nombre": "Losa de prismarina oscura",
+    "slug": "losa-de-prismarina-oscura"
+  },
+  "dark_prismarine_stairs": {
+    "nombre": "Escaleras de prismarina oscura",
+    "slug": "escaleras-de-prismarina-oscura"
+  },
+  "daylight_detector": {
+    "nombre": "Sensor de luz solar",
+    "slug": "sensor-de-luz-solar"
+  },
+  "dead_brain_coral": {
+    "nombre": "Coral de cerebro muerto",
+    "slug": "coral-de-cerebro-muerto"
+  },
+  "dead_brain_coral_block": {
+    "nombre": "Bloque de coral de cerebro muerto",
+    "slug": "bloque-de-coral-de-cerebro-muerto"
+  },
+  "dead_brain_coral_fan": {
+    "nombre": "Abanico de coral de cerebro muerto",
+    "slug": "abanico-de-coral-de-cerebro-muerto"
+  },
+  "dead_bubble_coral": {
+    "nombre": "Coral de burbuja muerto",
+    "slug": "coral-de-burbuja-muerto"
+  },
+  "dead_bubble_coral_block": {
+    "nombre": "Bloque de coral de burbuja muerto",
+    "slug": "bloque-de-coral-de-burbuja-muerto"
+  },
+  "dead_bubble_coral_fan": {
+    "nombre": "Abanico de coral de burbuja muerto",
+    "slug": "abanico-de-coral-de-burbuja-muerto"
+  },
+  "dead_bush": {
+    "nombre": "Arbusto muerto",
+    "slug": "arbusto-muerto"
+  },
+  "dead_fire_coral": {
+    "nombre": "Coral de fuego muerto",
+    "slug": "coral-de-fuego-muerto"
+  },
+  "dead_fire_coral_block": {
+    "nombre": "Bloque de coral de fuego muerto",
+    "slug": "bloque-de-coral-de-fuego-muerto"
+  },
+  "dead_fire_coral_fan": {
+    "nombre": "Abanico de coral de fuego muerto",
+    "slug": "abanico-de-coral-de-fuego-muerto"
+  },
+  "dead_horn_coral": {
+    "nombre": "Coral de cuerno muerto",
+    "slug": "coral-de-cuerno-muerto"
+  },
+  "dead_horn_coral_block": {
+    "nombre": "Bloque de coral de cuerno muerto",
+    "slug": "bloque-de-coral-de-cuerno-muerto"
+  },
+  "dead_horn_coral_fan": {
+    "nombre": "Abanico de coral de cuerno muerto",
+    "slug": "abanico-de-coral-de-cuerno-muerto"
+  },
+  "dead_tube_coral": {
+    "nombre": "Coral de tubo muerto",
+    "slug": "coral-de-tubo-muerto"
+  },
+  "dead_tube_coral_block": {
+    "nombre": "Bloque de coral de tubo muerto",
+    "slug": "bloque-de-coral-de-tubo-muerto"
+  },
+  "dead_tube_coral_fan": {
+    "nombre": "Abanico de coral de tubo muerto",
+    "slug": "abanico-de-coral-de-tubo-muerto"
+  },
+  "debug_stick": {
+    "nombre": "Palo de depuración",
+    "slug": "palo-de-depuracion"
+  },
+  "decorated_pot": {
+    "nombre": "Vasija decorada",
+    "slug": "vasija-decorada"
+  },
+  "deepslate": {
+    "nombre": "Pizarra profunda",
+    "slug": "pizarra-profunda"
+  },
+  "deepslate_brick_slab": {
+    "nombre": "Losa de ladrillo de pizarra",
+    "slug": "losa-de-ladrillo-de-pizarra"
+  },
+  "deepslate_brick_stairs": {
+    "nombre": "Escaleras de ladrillo de pizarra",
+    "slug": "escaleras-de-ladrillo-de-pizarra"
+  },
+  "deepslate_brick_wall": {
+    "nombre": "Muro de ladrillo de pizarra",
+    "slug": "muro-de-ladrillo-de-pizarra"
+  },
+  "deepslate_bricks": {
+    "nombre": "Ladrillos de pizarra profunda",
+    "slug": "ladrillos-de-pizarra-profunda"
+  },
+  "deepslate_coal_ore": {
+    "nombre": "Mena de carbón de pizarra",
+    "slug": "mena-de-carbon-de-pizarra"
+  },
+  "deepslate_copper_ore": {
+    "nombre": "Mena de cobre de pizarra",
+    "slug": "mena-de-cobre-de-pizarra"
+  },
+  "deepslate_diamond_ore": {
+    "nombre": "Mena de diamante de pizarra",
+    "slug": "mena-de-diamante-de-pizarra"
+  },
+  "deepslate_emerald_ore": {
+    "nombre": "Mena de esmeralda de pizarra",
+    "slug": "mena-de-esmeralda-de-pizarra"
+  },
+  "deepslate_gold_ore": {
+    "nombre": "Mena de oro de pizarra",
+    "slug": "mena-de-oro-de-pizarra"
+  },
+  "deepslate_iron_ore": {
+    "nombre": "Mena de hierro de pizarra",
+    "slug": "mena-de-hierro-de-pizarra"
+  },
+  "deepslate_lapis_ore": {
+    "nombre": "Mena de lapislázuli de pizarra",
+    "slug": "mena-de-lapislazuli-de-pizarra"
+  },
+  "deepslate_redstone_ore": {
+    "nombre": "Mena de redstone de pizarra",
+    "slug": "mena-de-redstone-de-pizarra"
+  },
+  "deepslate_tile_slab": {
+    "nombre": "Losa de baldosa de pizarra",
+    "slug": "losa-de-baldosa-de-pizarra"
+  },
+  "deepslate_tile_stairs": {
+    "nombre": "Escaleras de baldosa de pizarra",
+    "slug": "escaleras-de-baldosa-de-pizarra"
+  },
+  "deepslate_tile_wall": {
+    "nombre": "Muro de baldosa de pizarra",
+    "slug": "muro-de-baldosa-de-pizarra"
+  },
+  "deepslate_tiles": {
+    "nombre": "Baldosas de pizarra profunda",
+    "slug": "baldosas-de-pizarra-profunda"
+  },
+  "detector_rail": {
+    "nombre": "Raíl detector",
+    "slug": "rail-detector"
+  },
+  "diamond": {
+    "nombre": "Diamante",
+    "slug": "diamante",
+    "descripcion": "La gema más valiosa que encontrarás excavando. Está muy abajo, cerca del fondo del mundo, y necesitas un pico de hierro o mejor para recogerla: con uno de piedra el bloque desaparece sin darte nada."
+  },
+  "diamond_block": {
+    "nombre": "Bloque de diamante",
+    "slug": "bloque-de-diamante"
+  },
+  "diamond_horse_armor": {
+    "nombre": "Armadura de diamante para caballo",
+    "slug": "armadura-de-diamante-para-caballo"
+  },
+  "diamond_ore": {
+    "nombre": "Mena de diamante",
+    "slug": "mena-de-diamante"
+  },
+  "diorite": {
+    "nombre": "Diorita",
+    "slug": "diorita"
+  },
+  "diorite_slab": {
+    "nombre": "Losa de diorita",
+    "slug": "losa-de-diorita"
+  },
+  "diorite_stairs": {
+    "nombre": "Escaleras de diorita",
+    "slug": "escaleras-de-diorita"
+  },
+  "diorite_wall": {
+    "nombre": "Muro de diorita",
+    "slug": "muro-de-diorita"
+  },
+  "dirt": {
+    "nombre": "Tierra",
+    "slug": "tierra"
+  },
+  "dirt_path": {
+    "nombre": "Camino de tierra",
+    "slug": "camino-de-tierra"
+  },
+  "disc_fragment_5": {
+    "nombre": "Fragmento de disco",
+    "slug": "fragmento-de-disco"
+  },
+  "dispenser": {
+    "nombre": "Dispensador",
+    "slug": "dispensador"
+  },
+  "dolphin_spawn_egg": {
+    "nombre": "Huevo generador de Delfín",
+    "slug": "huevo-generador-de-delfin"
+  },
+  "donkey_spawn_egg": {
+    "nombre": "Huevo generador de Burro",
+    "slug": "huevo-generador-de-burro"
+  },
+  "dragon_breath": {
+    "nombre": "Aliento de dragón",
+    "slug": "aliento-de-dragon"
+  },
+  "dragon_egg": {
+    "nombre": "Huevo de dragón",
+    "slug": "huevo-de-dragon"
+  },
+  "dragon_head": {
+    "nombre": "Cabeza de dragón",
+    "slug": "cabeza-de-dragon"
+  },
+  "dried_kelp": {
+    "nombre": "Alga seca",
+    "slug": "alga-seca"
+  },
+  "dried_kelp_block": {
+    "nombre": "Bloque de alga seca",
+    "slug": "bloque-de-alga-seca"
+  },
+  "dripstone_block": {
+    "nombre": "Bloque de goteo",
+    "slug": "bloque-de-goteo"
+  },
+  "dropper": {
+    "nombre": "Soltador",
+    "slug": "soltador"
+  },
+  "drowned_spawn_egg": {
+    "nombre": "Huevo generador de Ahogado",
+    "slug": "huevo-generador-de-ahogado"
+  },
+  "dune_armor_trim_smithing_template": {
+    "nombre": "Plantilla de adorno de la duna",
+    "slug": "plantilla-de-adorno-de-la-duna"
+  },
+  "echo_shard": {
+    "nombre": "Fragmento de eco",
+    "slug": "fragmento-de-eco"
+  },
+  "egg": {
+    "nombre": "Huevo",
+    "slug": "huevo"
+  },
+  "elder_guardian_spawn_egg": {
+    "nombre": "Huevo generador de Guardián anciano",
+    "slug": "huevo-generador-de-guardian-anciano"
+  },
+  "emerald": {
+    "nombre": "Esmeralda",
+    "slug": "esmeralda",
+    "descripcion": "El dinero de los aldeanos. No sirve para fabricar equipo, pero con ella compras casi cualquier cosa en una aldea."
+  },
+  "emerald_block": {
+    "nombre": "Bloque de esmeralda",
+    "slug": "bloque-de-esmeralda"
+  },
+  "emerald_ore": {
+    "nombre": "Mena de esmeralda",
+    "slug": "mena-de-esmeralda"
+  },
+  "enchanted_book": {
+    "nombre": "Libro encantado",
+    "slug": "libro-encantado",
+    "descripcion": "Guarda un encantamiento hasta que lo pasas a una herramienta o armadura usando un yunque. Es la forma más segura de conseguir el encantamiento que quieres, en vez de confiar en la suerte de la mesa."
+  },
+  "enchanted_golden_apple": {
+    "nombre": "Manzana dorada encantada",
+    "slug": "manzana-dorada-encantada"
+  },
+  "enchanting_table": {
+    "nombre": "Mesa de encantamientos",
+    "slug": "mesa-de-encantamientos"
+  },
+  "end_crystal": {
+    "nombre": "Cristal del End",
+    "slug": "cristal-del-end"
+  },
+  "end_portal_frame": {
+    "nombre": "Marco de portal del End",
+    "slug": "marco-de-portal-del-end"
+  },
+  "end_rod": {
+    "nombre": "Vara del End",
+    "slug": "vara-del-end"
+  },
+  "end_stone": {
+    "nombre": "Piedra del End",
+    "slug": "piedra-del-end"
+  },
+  "end_stone_brick_slab": {
+    "nombre": "Losa de ladrillo del End",
+    "slug": "losa-de-ladrillo-del-end"
+  },
+  "end_stone_brick_stairs": {
+    "nombre": "Escaleras de ladrillo del End",
+    "slug": "escaleras-de-ladrillo-del-end"
+  },
+  "end_stone_brick_wall": {
+    "nombre": "Muro de ladrillo del End",
+    "slug": "muro-de-ladrillo-del-end"
+  },
+  "end_stone_bricks": {
+    "nombre": "Ladrillos de piedra del End",
+    "slug": "ladrillos-de-piedra-del-end"
+  },
+  "ender_chest": {
+    "nombre": "Cofre de ender",
+    "slug": "cofre-de-ender"
+  },
+  "ender_dragon_spawn_egg": {
+    "nombre": "Huevo generador de Dragón del End",
+    "slug": "huevo-generador-de-dragon-del-end"
+  },
+  "ender_eye": {
+    "nombre": "Ojo de ender",
+    "slug": "ojo-de-ender"
+  },
+  "ender_pearl": {
+    "nombre": "Perla de ender",
+    "slug": "perla-de-ender"
+  },
+  "enderman_spawn_egg": {
+    "nombre": "Huevo generador de Enderman",
+    "slug": "huevo-generador-de-enderman"
+  },
+  "endermite_spawn_egg": {
+    "nombre": "Huevo generador de Endermita",
+    "slug": "huevo-generador-de-endermita"
+  },
+  "evoker_spawn_egg": {
+    "nombre": "Huevo generador de Invocador",
+    "slug": "huevo-generador-de-invocador"
+  },
+  "experience_bottle": {
+    "nombre": "Botella de experiencia",
+    "slug": "botella-de-experiencia"
+  },
+  "explorer_pottery_sherd": {
+    "nombre": "Fragmento de cerámica del explorador",
+    "slug": "fragmento-de-ceramica-del-explorador"
+  },
+  "exposed_chiseled_copper": {
+    "nombre": "Cobre cincelado expuesto",
+    "slug": "cobre-cincelado-expuesto"
+  },
+  "exposed_copper": {
+    "nombre": "Bloque de cobre expuesto",
+    "slug": "bloque-de-cobre-expuesto"
+  },
+  "exposed_copper_bulb": {
+    "nombre": "Bombilla de cobre expuesta",
+    "slug": "bombilla-de-cobre-expuesta"
+  },
+  "exposed_copper_door": {
+    "nombre": "Puerta de cobre expuesto",
+    "slug": "puerta-de-cobre-expuesto"
+  },
+  "exposed_copper_grate": {
+    "nombre": "Rejilla de cobre expuesta",
+    "slug": "rejilla-de-cobre-expuesta"
+  },
+  "exposed_copper_trapdoor": {
+    "nombre": "Trampilla de cobre expuesto",
+    "slug": "trampilla-de-cobre-expuesto"
+  },
+  "exposed_cut_copper": {
+    "nombre": "Cobre cortado expuesto",
+    "slug": "cobre-cortado-expuesto"
+  },
+  "exposed_cut_copper_slab": {
+    "nombre": "Losa de cobre cortado expuesta",
+    "slug": "losa-de-cobre-cortado-expuesta"
+  },
+  "exposed_cut_copper_stairs": {
+    "nombre": "Escaleras de cobre cortado expuestas",
+    "slug": "escaleras-de-cobre-cortado-expuestas"
+  },
+  "eye_armor_trim_smithing_template": {
+    "nombre": "Plantilla de adorno del ojo",
+    "slug": "plantilla-de-adorno-del-ojo"
+  },
+  "farmland": {
+    "nombre": "Tierra de cultivo",
+    "slug": "tierra-de-cultivo"
+  },
+  "feather": {
+    "nombre": "Pluma",
+    "slug": "pluma"
+  },
+  "fermented_spider_eye": {
+    "nombre": "Ojo de araña fermentado",
+    "slug": "ojo-de-arana-fermentado"
+  },
+  "fern": {
+    "nombre": "Helecho",
+    "slug": "helecho"
+  },
+  "field_masoned_banner_pattern": {
+    "nombre": "Patrón de estandarte de ladrillos",
+    "slug": "patron-de-estandarte-de-ladrillos"
+  },
+  "filled_map": {
+    "nombre": "Mapa",
+    "slug": "mapa"
+  },
+  "fire_charge": {
+    "nombre": "Carga ígnea",
+    "slug": "carga-ignea"
+  },
+  "fire_coral": {
+    "nombre": "Coral de fuego",
+    "slug": "coral-de-fuego"
+  },
+  "fire_coral_block": {
+    "nombre": "Bloque de coral de fuego",
+    "slug": "bloque-de-coral-de-fuego"
+  },
+  "fire_coral_fan": {
+    "nombre": "Abanico de coral de fuego",
+    "slug": "abanico-de-coral-de-fuego"
+  },
+  "firework_rocket": {
+    "nombre": "Cohete de fuegos artificiales",
+    "slug": "cohete-de-fuegos-artificiales"
+  },
+  "firework_star": {
+    "nombre": "Estrella de fuegos artificiales",
+    "slug": "estrella-de-fuegos-artificiales"
+  },
+  "fishing_rod": {
+    "nombre": "Caña de pescar",
+    "slug": "cana-de-pescar"
+  },
+  "fletching_table": {
+    "nombre": "Mesa de flechero",
+    "slug": "mesa-de-flechero"
+  },
+  "flint": {
+    "nombre": "Pedernal",
+    "slug": "pedernal"
+  },
+  "flint_and_steel": {
+    "nombre": "Mechero",
+    "slug": "mechero"
+  },
+  "flow_armor_trim_smithing_template": {
+    "nombre": "Plantilla de adorno del flujo",
+    "slug": "plantilla-de-adorno-del-flujo"
+  },
+  "flow_banner_pattern": {
+    "nombre": "Patrón de estandarte de flujo",
+    "slug": "patron-de-estandarte-de-flujo"
+  },
+  "flow_pottery_sherd": {
+    "nombre": "Fragmento de cerámica del flujo",
+    "slug": "fragmento-de-ceramica-del-flujo"
+  },
+  "flower_banner_pattern": {
+    "nombre": "Patrón de estandarte de flor",
+    "slug": "patron-de-estandarte-de-flor"
+  },
+  "flower_pot": {
+    "nombre": "Maceta",
+    "slug": "maceta"
+  },
+  "flowering_azalea": {
+    "nombre": "Azalea florida",
+    "slug": "azalea-florida"
+  },
+  "flowering_azalea_leaves": {
+    "nombre": "Hojas de azalea florida",
+    "slug": "hojas-de-azalea-florida"
+  },
+  "fox_spawn_egg": {
+    "nombre": "Huevo generador de Zorro",
+    "slug": "huevo-generador-de-zorro"
+  },
+  "friend_pottery_sherd": {
+    "nombre": "Fragmento de cerámica del amigo",
+    "slug": "fragmento-de-ceramica-del-amigo"
+  },
+  "frog_spawn_egg": {
+    "nombre": "Huevo generador de Rana",
+    "slug": "huevo-generador-de-rana"
+  },
+  "frogspawn": {
+    "nombre": "Huevos de rana",
+    "slug": "huevos-de-rana"
+  },
+  "furnace": {
+    "nombre": "Horno",
+    "slug": "horno"
+  },
+  "furnace_minecart": {
+    "nombre": "Vagoneta con horno",
+    "slug": "vagoneta-con-horno"
+  },
+  "ghast_spawn_egg": {
+    "nombre": "Huevo generador de Ghast",
+    "slug": "huevo-generador-de-ghast"
+  },
+  "ghast_tear": {
+    "nombre": "Lágrima de ghast",
+    "slug": "lagrima-de-ghast"
+  },
+  "gilded_blackstone": {
+    "nombre": "Piedra negra dorada",
+    "slug": "piedra-negra-dorada"
+  },
+  "glass": {
+    "nombre": "Cristal",
+    "slug": "cristal"
   },
   "glass_bottle": {
     "nombre": "Botella de cristal",
     "slug": "botella-de-cristal",
     "descripcion": "Se hace con tres bloques de cristal. Llénala en cualquier agua para empezar a fabricar pociones."
   },
+  "glass_pane": {
+    "nombre": "Panel de cristal",
+    "slug": "panel-de-cristal"
+  },
+  "glistering_melon_slice": {
+    "nombre": "Rodaja de sandía brillante",
+    "slug": "rodaja-de-sandia-brillante"
+  },
+  "globe_banner_pattern": {
+    "nombre": "Patrón de estandarte de globo",
+    "slug": "patron-de-estandarte-de-globo"
+  },
+  "glow_berries": {
+    "nombre": "Bayas luminosas",
+    "slug": "bayas-luminosas"
+  },
+  "glow_ink_sac": {
+    "nombre": "Bolsa de tinta brillante",
+    "slug": "bolsa-de-tinta-brillante"
+  },
+  "glow_item_frame": {
+    "nombre": "Marco brillante",
+    "slug": "marco-brillante"
+  },
+  "glow_lichen": {
+    "nombre": "Liquen luminoso",
+    "slug": "liquen-luminoso"
+  },
+  "glow_squid_spawn_egg": {
+    "nombre": "Huevo generador de Calamar luminoso",
+    "slug": "huevo-generador-de-calamar-luminoso"
+  },
+  "glowstone": {
+    "nombre": "Piedra luminosa",
+    "slug": "piedra-luminosa"
+  },
   "glowstone_dust": {
     "nombre": "Polvo de piedra luminosa",
     "slug": "polvo-de-piedra-luminosa",
     "descripcion": "Se saca de los bloques brillantes que cuelgan del techo del Nether. Añádelo a una poción para subirla a nivel II: hace más efecto, pero dura menos."
+  },
+  "goat_horn": {
+    "nombre": "Cuerno de cabra",
+    "slug": "cuerno-de-cabra"
+  },
+  "goat_spawn_egg": {
+    "nombre": "Huevo generador de Cabra",
+    "slug": "huevo-generador-de-cabra"
+  },
+  "gold_block": {
+    "nombre": "Bloque de oro",
+    "slug": "bloque-de-oro"
+  },
+  "gold_ingot": {
+    "nombre": "Lingote de oro",
+    "slug": "lingote-de-oro"
+  },
+  "gold_nugget": {
+    "nombre": "Pepita de oro",
+    "slug": "pepita-de-oro"
+  },
+  "gold_ore": {
+    "nombre": "Mena de oro",
+    "slug": "mena-de-oro"
+  },
+  "golden_apple": {
+    "nombre": "Manzana dorada",
+    "slug": "manzana-dorada"
+  },
+  "golden_carrot": {
+    "nombre": "Zanahoria dorada",
+    "slug": "zanahoria-dorada"
+  },
+  "golden_horse_armor": {
+    "nombre": "Armadura de oro para caballo",
+    "slug": "armadura-de-oro-para-caballo"
+  },
+  "granite": {
+    "nombre": "Granito",
+    "slug": "granito"
+  },
+  "granite_slab": {
+    "nombre": "Losa de granito",
+    "slug": "losa-de-granito"
+  },
+  "granite_stairs": {
+    "nombre": "Escaleras de granito",
+    "slug": "escaleras-de-granito"
+  },
+  "granite_wall": {
+    "nombre": "Muro de granito",
+    "slug": "muro-de-granito"
+  },
+  "grass_block": {
+    "nombre": "Bloque de hierba",
+    "slug": "bloque-de-hierba"
+  },
+  "gravel": {
+    "nombre": "Grava",
+    "slug": "grava"
+  },
+  "gray_banner": {
+    "nombre": "Estandarte gris",
+    "slug": "estandarte-gris"
+  },
+  "gray_bed": {
+    "nombre": "Cama gris",
+    "slug": "cama-gris"
+  },
+  "gray_bundle": {
+    "nombre": "Saco gris",
+    "slug": "saco-gris"
+  },
+  "gray_candle": {
+    "nombre": "Vela gris",
+    "slug": "vela-gris"
+  },
+  "gray_carpet": {
+    "nombre": "Alfombra gris",
+    "slug": "alfombra-gris"
+  },
+  "gray_concrete": {
+    "nombre": "Hormigón gris",
+    "slug": "hormigon-gris"
+  },
+  "gray_concrete_powder": {
+    "nombre": "Hormigón en polvo gris",
+    "slug": "hormigon-en-polvo-gris"
+  },
+  "gray_dye": {
+    "nombre": "Tinte gris",
+    "slug": "tinte-gris"
+  },
+  "gray_glazed_terracotta": {
+    "nombre": "Terracota vidriada gris",
+    "slug": "terracota-vidriada-gris"
+  },
+  "gray_shulker_box": {
+    "nombre": "Caja de shulker gris",
+    "slug": "caja-de-shulker-gris"
+  },
+  "gray_stained_glass": {
+    "nombre": "Vidriera gris",
+    "slug": "vidriera-gris"
+  },
+  "gray_stained_glass_pane": {
+    "nombre": "Panel de vidriera gris",
+    "slug": "panel-de-vidriera-gris"
+  },
+  "gray_terracotta": {
+    "nombre": "Terracota gris",
+    "slug": "terracota-gris"
+  },
+  "gray_wool": {
+    "nombre": "Lana gris",
+    "slug": "lana-gris"
+  },
+  "green_banner": {
+    "nombre": "Estandarte verde",
+    "slug": "estandarte-verde"
+  },
+  "green_bed": {
+    "nombre": "Cama verde",
+    "slug": "cama-verde"
+  },
+  "green_bundle": {
+    "nombre": "Saco verde",
+    "slug": "saco-verde"
+  },
+  "green_candle": {
+    "nombre": "Vela verde",
+    "slug": "vela-verde"
+  },
+  "green_carpet": {
+    "nombre": "Alfombra verde",
+    "slug": "alfombra-verde"
+  },
+  "green_concrete": {
+    "nombre": "Hormigón verde",
+    "slug": "hormigon-verde"
+  },
+  "green_concrete_powder": {
+    "nombre": "Hormigón en polvo verde",
+    "slug": "hormigon-en-polvo-verde"
+  },
+  "green_dye": {
+    "nombre": "Tinte verde",
+    "slug": "tinte-verde"
+  },
+  "green_glazed_terracotta": {
+    "nombre": "Terracota vidriada verde",
+    "slug": "terracota-vidriada-verde"
+  },
+  "green_shulker_box": {
+    "nombre": "Caja de shulker verde",
+    "slug": "caja-de-shulker-verde"
+  },
+  "green_stained_glass": {
+    "nombre": "Vidriera verde",
+    "slug": "vidriera-verde"
+  },
+  "green_stained_glass_pane": {
+    "nombre": "Panel de vidriera verde",
+    "slug": "panel-de-vidriera-verde"
+  },
+  "green_terracotta": {
+    "nombre": "Terracota verde",
+    "slug": "terracota-verde"
+  },
+  "green_wool": {
+    "nombre": "Lana verde",
+    "slug": "lana-verde"
+  },
+  "grindstone": {
+    "nombre": "Piedra de afilar",
+    "slug": "piedra-de-afilar"
+  },
+  "guardian_spawn_egg": {
+    "nombre": "Huevo generador de Guardián",
+    "slug": "huevo-generador-de-guardian"
   },
   "gunpowder": {
     "nombre": "Pólvora",
     "slug": "polvora",
     "descripcion": "La sueltan los creepers al morir. Convierte cualquier poción en arrojadiza, para poder lanzársela a otra persona o a un mob."
   },
-  "rotten_flesh": {
-    "nombre": "Carne podrida",
-    "slug": "carne-podrida",
-    "descripcion": "Lo que sueltan los zombis. Se puede comer, pero muchas veces te da hambre y te quita comida en vez de darte. Úsala solo si no tienes nada mejor."
+  "guster_banner_pattern": {
+    "nombre": "Patrón de estandarte de ráfaga",
+    "slug": "patron-de-estandarte-de-rafaga"
+  },
+  "guster_pottery_sherd": {
+    "nombre": "Fragmento de cerámica de la ráfaga",
+    "slug": "fragmento-de-ceramica-de-la-rafaga"
+  },
+  "hanging_roots": {
+    "nombre": "Raíces colgantes",
+    "slug": "raices-colgantes"
+  },
+  "hay_block": {
+    "nombre": "Bloque de heno",
+    "slug": "bloque-de-heno"
+  },
+  "heart_of_the_sea": {
+    "nombre": "Corazón del mar",
+    "slug": "corazon-del-mar"
+  },
+  "heart_pottery_sherd": {
+    "nombre": "Fragmento de cerámica del corazón",
+    "slug": "fragmento-de-ceramica-del-corazon"
+  },
+  "heartbreak_pottery_sherd": {
+    "nombre": "Fragmento de cerámica del corazón roto",
+    "slug": "fragmento-de-ceramica-del-corazon-roto"
+  },
+  "heavy_core": {
+    "nombre": "Núcleo pesado",
+    "slug": "nucleo-pesado"
+  },
+  "heavy_weighted_pressure_plate": {
+    "nombre": "Placa de presión de peso alto",
+    "slug": "placa-de-presion-de-peso-alto"
+  },
+  "hoglin_spawn_egg": {
+    "nombre": "Huevo generador de Hoglin",
+    "slug": "huevo-generador-de-hoglin"
+  },
+  "honey_block": {
+    "nombre": "Bloque de miel",
+    "slug": "bloque-de-miel"
+  },
+  "honey_bottle": {
+    "nombre": "Botella de miel",
+    "slug": "botella-de-miel"
+  },
+  "honeycomb": {
+    "nombre": "Panal",
+    "slug": "panal"
+  },
+  "honeycomb_block": {
+    "nombre": "Bloque de panal",
+    "slug": "bloque-de-panal"
+  },
+  "hopper": {
+    "nombre": "Embudo",
+    "slug": "embudo"
+  },
+  "hopper_minecart": {
+    "nombre": "Vagoneta con embudo",
+    "slug": "vagoneta-con-embudo"
+  },
+  "horn_coral": {
+    "nombre": "Coral de cuerno",
+    "slug": "coral-de-cuerno"
+  },
+  "horn_coral_block": {
+    "nombre": "Bloque de coral de cuerno",
+    "slug": "bloque-de-coral-de-cuerno"
+  },
+  "horn_coral_fan": {
+    "nombre": "Abanico de coral de cuerno",
+    "slug": "abanico-de-coral-de-cuerno"
+  },
+  "horse_spawn_egg": {
+    "nombre": "Huevo generador de Caballo",
+    "slug": "huevo-generador-de-caballo"
+  },
+  "host_armor_trim_smithing_template": {
+    "nombre": "Plantilla de adorno del anfitrión",
+    "slug": "plantilla-de-adorno-del-anfitrion"
+  },
+  "howl_pottery_sherd": {
+    "nombre": "Fragmento de cerámica del aullido",
+    "slug": "fragmento-de-ceramica-del-aullido"
+  },
+  "husk_spawn_egg": {
+    "nombre": "Huevo generador de Husk",
+    "slug": "huevo-generador-de-husk"
+  },
+  "ice": {
+    "nombre": "Hielo",
+    "slug": "hielo"
+  },
+  "infested_chiseled_stone_bricks": {
+    "nombre": "Ladrillos de piedra cincelados infestados",
+    "slug": "ladrillos-de-piedra-cincelados-infestados"
+  },
+  "infested_cobblestone": {
+    "nombre": "Roca infestada",
+    "slug": "roca-infestada"
+  },
+  "infested_cracked_stone_bricks": {
+    "nombre": "Ladrillos de piedra agrietados infestados",
+    "slug": "ladrillos-de-piedra-agrietados-infestados"
+  },
+  "infested_deepslate": {
+    "nombre": "Pizarra infestada",
+    "slug": "pizarra-infestada"
+  },
+  "infested_mossy_stone_bricks": {
+    "nombre": "Ladrillos de piedra musgosos infestados",
+    "slug": "ladrillos-de-piedra-musgosos-infestados"
+  },
+  "infested_stone": {
+    "nombre": "Piedra infestada",
+    "slug": "piedra-infestada"
+  },
+  "infested_stone_bricks": {
+    "nombre": "Ladrillos de piedra infestados",
+    "slug": "ladrillos-de-piedra-infestados"
+  },
+  "ink_sac": {
+    "nombre": "Bolsa de tinta",
+    "slug": "bolsa-de-tinta"
+  },
+  "iron_bars": {
+    "nombre": "Barrotes de hierro",
+    "slug": "barrotes-de-hierro"
+  },
+  "iron_block": {
+    "nombre": "Bloque de hierro",
+    "slug": "bloque-de-hierro"
+  },
+  "iron_door": {
+    "nombre": "Puerta de hierro",
+    "slug": "puerta-de-hierro"
+  },
+  "iron_golem_spawn_egg": {
+    "nombre": "Huevo generador de Gólem de hierro",
+    "slug": "huevo-generador-de-golem-de-hierro"
+  },
+  "iron_horse_armor": {
+    "nombre": "Armadura de hierro para caballo",
+    "slug": "armadura-de-hierro-para-caballo"
+  },
+  "iron_ingot": {
+    "nombre": "Lingote de hierro",
+    "slug": "lingote-de-hierro"
+  },
+  "iron_nugget": {
+    "nombre": "Pepita de hierro",
+    "slug": "pepita-de-hierro"
+  },
+  "iron_ore": {
+    "nombre": "Mena de hierro",
+    "slug": "mena-de-hierro"
+  },
+  "iron_trapdoor": {
+    "nombre": "Trampilla de hierro",
+    "slug": "trampilla-de-hierro"
+  },
+  "item_frame": {
+    "nombre": "Marco",
+    "slug": "marco"
+  },
+  "jack_o_lantern": {
+    "nombre": "Calabaza iluminada",
+    "slug": "calabaza-iluminada"
+  },
+  "jigsaw": {
+    "nombre": "Bloque de ensamblaje",
+    "slug": "bloque-de-ensamblaje"
+  },
+  "jukebox": {
+    "nombre": "Tocadiscos",
+    "slug": "tocadiscos"
+  },
+  "jungle_boat": {
+    "nombre": "Barca de jungla",
+    "slug": "barca-de-jungla"
+  },
+  "jungle_button": {
+    "nombre": "Botón de jungla",
+    "slug": "boton-de-jungla"
+  },
+  "jungle_chest_boat": {
+    "nombre": "Barca con cofre de jungla",
+    "slug": "barca-con-cofre-de-jungla"
+  },
+  "jungle_door": {
+    "nombre": "Puerta de jungla",
+    "slug": "puerta-de-jungla"
+  },
+  "jungle_fence": {
+    "nombre": "Valla de jungla",
+    "slug": "valla-de-jungla"
+  },
+  "jungle_fence_gate": {
+    "nombre": "Puerta de valla de jungla",
+    "slug": "puerta-de-valla-de-jungla"
+  },
+  "jungle_hanging_sign": {
+    "nombre": "Cartel colgante de jungla",
+    "slug": "cartel-colgante-de-jungla"
+  },
+  "jungle_leaves": {
+    "nombre": "Hojas de jungla",
+    "slug": "hojas-de-jungla"
+  },
+  "jungle_log": {
+    "nombre": "Tronco de jungla",
+    "slug": "tronco-de-jungla"
+  },
+  "jungle_planks": {
+    "nombre": "Tablones de jungla",
+    "slug": "tablones-de-jungla"
+  },
+  "jungle_pressure_plate": {
+    "nombre": "Placa de presión de jungla",
+    "slug": "placa-de-presion-de-jungla"
+  },
+  "jungle_sapling": {
+    "nombre": "Brote de jungla",
+    "slug": "brote-de-jungla"
+  },
+  "jungle_sign": {
+    "nombre": "Cartel de jungla",
+    "slug": "cartel-de-jungla"
+  },
+  "jungle_slab": {
+    "nombre": "Losa de jungla",
+    "slug": "losa-de-jungla"
+  },
+  "jungle_stairs": {
+    "nombre": "Escaleras de jungla",
+    "slug": "escaleras-de-jungla"
+  },
+  "jungle_trapdoor": {
+    "nombre": "Trampilla de jungla",
+    "slug": "trampilla-de-jungla"
+  },
+  "jungle_wood": {
+    "nombre": "Madera de jungla",
+    "slug": "madera-de-jungla"
+  },
+  "kelp": {
+    "nombre": "Alga",
+    "slug": "alga"
+  },
+  "knowledge_book": {
+    "nombre": "Libro de conocimiento",
+    "slug": "libro-de-conocimiento"
+  },
+  "ladder": {
+    "nombre": "Escalera de mano",
+    "slug": "escalera-de-mano"
+  },
+  "lantern": {
+    "nombre": "Farol",
+    "slug": "farol"
+  },
+  "lapis_block": {
+    "nombre": "Bloque de lapislázuli",
+    "slug": "bloque-de-lapislazuli"
+  },
+  "lapis_lazuli": {
+    "nombre": "Lapislázuli",
+    "slug": "lapislazuli"
+  },
+  "lapis_ore": {
+    "nombre": "Mena de lapislázuli",
+    "slug": "mena-de-lapislazuli"
+  },
+  "large_amethyst_bud": {
+    "nombre": "Brote grande de amatista",
+    "slug": "brote-grande-de-amatista"
+  },
+  "large_fern": {
+    "nombre": "Helecho grande",
+    "slug": "helecho-grande"
+  },
+  "lava_bucket": {
+    "nombre": "Cubo de lava",
+    "slug": "cubo-de-lava"
+  },
+  "lead": {
+    "nombre": "Cuerda para animales",
+    "slug": "cuerda-para-animales"
+  },
+  "leather": {
+    "nombre": "Cuero",
+    "slug": "cuero"
+  },
+  "leather_horse_armor": {
+    "nombre": "Armadura de cuero para caballo",
+    "slug": "armadura-de-cuero-para-caballo"
+  },
+  "lectern": {
+    "nombre": "Atril",
+    "slug": "atril",
+    "descripcion": "Colócalo junto a un aldeano sin trabajo y se convertirá en bibliotecario. Si no te gusta lo que vende, rompe el atril y vuelve a ponerlo: cambiará su oferta."
+  },
+  "lever": {
+    "nombre": "Palanca",
+    "slug": "palanca"
+  },
+  "light": {
+    "nombre": "Luz",
+    "slug": "luz"
+  },
+  "light_blue_banner": {
+    "nombre": "Estandarte azul claro",
+    "slug": "estandarte-azul-claro"
+  },
+  "light_blue_bed": {
+    "nombre": "Cama azul claro",
+    "slug": "cama-azul-claro"
+  },
+  "light_blue_bundle": {
+    "nombre": "Saco azul claro",
+    "slug": "saco-azul-claro"
+  },
+  "light_blue_candle": {
+    "nombre": "Vela azul claro",
+    "slug": "vela-azul-claro"
+  },
+  "light_blue_carpet": {
+    "nombre": "Alfombra azul claro",
+    "slug": "alfombra-azul-claro"
+  },
+  "light_blue_concrete": {
+    "nombre": "Hormigón azul claro",
+    "slug": "hormigon-azul-claro"
+  },
+  "light_blue_concrete_powder": {
+    "nombre": "Hormigón en polvo azul claro",
+    "slug": "hormigon-en-polvo-azul-claro"
+  },
+  "light_blue_dye": {
+    "nombre": "Tinte azul claro",
+    "slug": "tinte-azul-claro"
+  },
+  "light_blue_glazed_terracotta": {
+    "nombre": "Terracota vidriada azul claro",
+    "slug": "terracota-vidriada-azul-claro"
+  },
+  "light_blue_shulker_box": {
+    "nombre": "Caja de shulker azul claro",
+    "slug": "caja-de-shulker-azul-claro"
+  },
+  "light_blue_stained_glass": {
+    "nombre": "Vidriera azul claro",
+    "slug": "vidriera-azul-claro"
+  },
+  "light_blue_stained_glass_pane": {
+    "nombre": "Panel de vidriera azul claro",
+    "slug": "panel-de-vidriera-azul-claro"
+  },
+  "light_blue_terracotta": {
+    "nombre": "Terracota azul claro",
+    "slug": "terracota-azul-claro"
+  },
+  "light_blue_wool": {
+    "nombre": "Lana azul claro",
+    "slug": "lana-azul-claro"
+  },
+  "light_gray_banner": {
+    "nombre": "Estandarte gris claro",
+    "slug": "estandarte-gris-claro"
+  },
+  "light_gray_bed": {
+    "nombre": "Cama gris claro",
+    "slug": "cama-gris-claro"
+  },
+  "light_gray_bundle": {
+    "nombre": "Saco gris claro",
+    "slug": "saco-gris-claro"
+  },
+  "light_gray_candle": {
+    "nombre": "Vela gris claro",
+    "slug": "vela-gris-claro"
+  },
+  "light_gray_carpet": {
+    "nombre": "Alfombra gris claro",
+    "slug": "alfombra-gris-claro"
+  },
+  "light_gray_concrete": {
+    "nombre": "Hormigón gris claro",
+    "slug": "hormigon-gris-claro"
+  },
+  "light_gray_concrete_powder": {
+    "nombre": "Hormigón en polvo gris claro",
+    "slug": "hormigon-en-polvo-gris-claro"
+  },
+  "light_gray_dye": {
+    "nombre": "Tinte gris claro",
+    "slug": "tinte-gris-claro"
+  },
+  "light_gray_glazed_terracotta": {
+    "nombre": "Terracota vidriada gris claro",
+    "slug": "terracota-vidriada-gris-claro"
+  },
+  "light_gray_shulker_box": {
+    "nombre": "Caja de shulker gris claro",
+    "slug": "caja-de-shulker-gris-claro"
+  },
+  "light_gray_stained_glass": {
+    "nombre": "Vidriera gris claro",
+    "slug": "vidriera-gris-claro"
+  },
+  "light_gray_stained_glass_pane": {
+    "nombre": "Panel de vidriera gris claro",
+    "slug": "panel-de-vidriera-gris-claro"
+  },
+  "light_gray_terracotta": {
+    "nombre": "Terracota gris claro",
+    "slug": "terracota-gris-claro"
+  },
+  "light_gray_wool": {
+    "nombre": "Lana gris claro",
+    "slug": "lana-gris-claro"
+  },
+  "light_weighted_pressure_plate": {
+    "nombre": "Placa de presión de peso bajo",
+    "slug": "placa-de-presion-de-peso-bajo"
+  },
+  "lightning_rod": {
+    "nombre": "Pararrayos",
+    "slug": "pararrayos"
+  },
+  "lilac": {
+    "nombre": "Lila",
+    "slug": "lila"
+  },
+  "lily_of_the_valley": {
+    "nombre": "Lirio de los valles",
+    "slug": "lirio-de-los-valles"
+  },
+  "lily_pad": {
+    "nombre": "Nenúfar",
+    "slug": "nenufar"
+  },
+  "lime_banner": {
+    "nombre": "Estandarte lima",
+    "slug": "estandarte-lima"
+  },
+  "lime_bed": {
+    "nombre": "Cama lima",
+    "slug": "cama-lima"
+  },
+  "lime_bundle": {
+    "nombre": "Saco lima",
+    "slug": "saco-lima"
+  },
+  "lime_candle": {
+    "nombre": "Vela lima",
+    "slug": "vela-lima"
+  },
+  "lime_carpet": {
+    "nombre": "Alfombra lima",
+    "slug": "alfombra-lima"
+  },
+  "lime_concrete": {
+    "nombre": "Hormigón lima",
+    "slug": "hormigon-lima"
+  },
+  "lime_concrete_powder": {
+    "nombre": "Hormigón en polvo lima",
+    "slug": "hormigon-en-polvo-lima"
+  },
+  "lime_dye": {
+    "nombre": "Tinte lima",
+    "slug": "tinte-lima"
+  },
+  "lime_glazed_terracotta": {
+    "nombre": "Terracota vidriada lima",
+    "slug": "terracota-vidriada-lima"
+  },
+  "lime_shulker_box": {
+    "nombre": "Caja de shulker lima",
+    "slug": "caja-de-shulker-lima"
+  },
+  "lime_stained_glass": {
+    "nombre": "Vidriera lima",
+    "slug": "vidriera-lima"
+  },
+  "lime_stained_glass_pane": {
+    "nombre": "Panel de vidriera lima",
+    "slug": "panel-de-vidriera-lima"
+  },
+  "lime_terracotta": {
+    "nombre": "Terracota lima",
+    "slug": "terracota-lima"
+  },
+  "lime_wool": {
+    "nombre": "Lana lima",
+    "slug": "lana-lima"
+  },
+  "lingering_potion": {
+    "nombre": "Poción persistente",
+    "slug": "pocion-persistente"
+  },
+  "llama_spawn_egg": {
+    "nombre": "Huevo generador de Llama",
+    "slug": "huevo-generador-de-llama"
+  },
+  "lodestone": {
+    "nombre": "Piedra imán",
+    "slug": "piedra-iman"
+  },
+  "loom": {
+    "nombre": "Telar",
+    "slug": "telar"
+  },
+  "magenta_banner": {
+    "nombre": "Estandarte magenta",
+    "slug": "estandarte-magenta"
+  },
+  "magenta_bed": {
+    "nombre": "Cama magenta",
+    "slug": "cama-magenta"
+  },
+  "magenta_bundle": {
+    "nombre": "Saco magenta",
+    "slug": "saco-magenta"
+  },
+  "magenta_candle": {
+    "nombre": "Vela magenta",
+    "slug": "vela-magenta"
+  },
+  "magenta_carpet": {
+    "nombre": "Alfombra magenta",
+    "slug": "alfombra-magenta"
+  },
+  "magenta_concrete": {
+    "nombre": "Hormigón magenta",
+    "slug": "hormigon-magenta"
+  },
+  "magenta_concrete_powder": {
+    "nombre": "Hormigón en polvo magenta",
+    "slug": "hormigon-en-polvo-magenta"
+  },
+  "magenta_dye": {
+    "nombre": "Tinte magenta",
+    "slug": "tinte-magenta"
+  },
+  "magenta_glazed_terracotta": {
+    "nombre": "Terracota vidriada magenta",
+    "slug": "terracota-vidriada-magenta"
+  },
+  "magenta_shulker_box": {
+    "nombre": "Caja de shulker magenta",
+    "slug": "caja-de-shulker-magenta"
+  },
+  "magenta_stained_glass": {
+    "nombre": "Vidriera magenta",
+    "slug": "vidriera-magenta"
+  },
+  "magenta_stained_glass_pane": {
+    "nombre": "Panel de vidriera magenta",
+    "slug": "panel-de-vidriera-magenta"
+  },
+  "magenta_terracotta": {
+    "nombre": "Terracota magenta",
+    "slug": "terracota-magenta"
+  },
+  "magenta_wool": {
+    "nombre": "Lana magenta",
+    "slug": "lana-magenta"
+  },
+  "magma_block": {
+    "nombre": "Bloque de magma",
+    "slug": "bloque-de-magma"
+  },
+  "magma_cream": {
+    "nombre": "Crema de magma",
+    "slug": "crema-de-magma"
+  },
+  "magma_cube_spawn_egg": {
+    "nombre": "Huevo generador de Cubo de magma",
+    "slug": "huevo-generador-de-cubo-de-magma"
+  },
+  "mangrove_boat": {
+    "nombre": "Barca de mangle",
+    "slug": "barca-de-mangle"
+  },
+  "mangrove_button": {
+    "nombre": "Botón de mangle",
+    "slug": "boton-de-mangle"
+  },
+  "mangrove_chest_boat": {
+    "nombre": "Barca con cofre de mangle",
+    "slug": "barca-con-cofre-de-mangle"
+  },
+  "mangrove_door": {
+    "nombre": "Puerta de mangle",
+    "slug": "puerta-de-mangle"
+  },
+  "mangrove_fence": {
+    "nombre": "Valla de mangle",
+    "slug": "valla-de-mangle"
+  },
+  "mangrove_fence_gate": {
+    "nombre": "Puerta de valla de mangle",
+    "slug": "puerta-de-valla-de-mangle"
+  },
+  "mangrove_hanging_sign": {
+    "nombre": "Cartel colgante de mangle",
+    "slug": "cartel-colgante-de-mangle"
+  },
+  "mangrove_leaves": {
+    "nombre": "Hojas de mangle",
+    "slug": "hojas-de-mangle"
+  },
+  "mangrove_log": {
+    "nombre": "Tronco de mangle",
+    "slug": "tronco-de-mangle"
+  },
+  "mangrove_planks": {
+    "nombre": "Tablones de mangle",
+    "slug": "tablones-de-mangle"
+  },
+  "mangrove_pressure_plate": {
+    "nombre": "Placa de presión de mangle",
+    "slug": "placa-de-presion-de-mangle"
+  },
+  "mangrove_propagule": {
+    "nombre": "Propágulo de mangle",
+    "slug": "propagulo-de-mangle"
+  },
+  "mangrove_roots": {
+    "nombre": "Raíces de mangle",
+    "slug": "raices-de-mangle"
+  },
+  "mangrove_sign": {
+    "nombre": "Cartel de mangle",
+    "slug": "cartel-de-mangle"
+  },
+  "mangrove_slab": {
+    "nombre": "Losa de mangle",
+    "slug": "losa-de-mangle"
+  },
+  "mangrove_stairs": {
+    "nombre": "Escaleras de mangle",
+    "slug": "escaleras-de-mangle"
+  },
+  "mangrove_trapdoor": {
+    "nombre": "Trampilla de mangle",
+    "slug": "trampilla-de-mangle"
+  },
+  "mangrove_wood": {
+    "nombre": "Madera de mangle",
+    "slug": "madera-de-mangle"
+  },
+  "map": {
+    "nombre": "Mapa en blanco",
+    "slug": "mapa-en-blanco"
+  },
+  "medium_amethyst_bud": {
+    "nombre": "Brote mediano de amatista",
+    "slug": "brote-mediano-de-amatista"
+  },
+  "melon": {
+    "nombre": "Sandía",
+    "slug": "sandia"
+  },
+  "melon_seeds": {
+    "nombre": "Semillas de sandía",
+    "slug": "semillas-de-sandia"
+  },
+  "melon_slice": {
+    "nombre": "Rodaja de sandía",
+    "slug": "rodaja-de-sandia"
+  },
+  "milk_bucket": {
+    "nombre": "Cubo de leche",
+    "slug": "cubo-de-leche"
+  },
+  "minecart": {
+    "nombre": "Vagoneta",
+    "slug": "vagoneta"
+  },
+  "miner_pottery_sherd": {
+    "nombre": "Fragmento de cerámica del minero",
+    "slug": "fragmento-de-ceramica-del-minero"
+  },
+  "mojang_banner_pattern": {
+    "nombre": "Patrón de estandarte de Mojang",
+    "slug": "patron-de-estandarte-de-mojang"
+  },
+  "mooshroom_spawn_egg": {
+    "nombre": "Huevo generador de Champivaca",
+    "slug": "huevo-generador-de-champivaca"
+  },
+  "moss_block": {
+    "nombre": "Bloque de musgo",
+    "slug": "bloque-de-musgo"
+  },
+  "moss_carpet": {
+    "nombre": "Alfombra de musgo",
+    "slug": "alfombra-de-musgo"
+  },
+  "mossy_cobblestone": {
+    "nombre": "Roca musgosa",
+    "slug": "roca-musgosa"
+  },
+  "mossy_cobblestone_slab": {
+    "nombre": "Losa de roca musgosa",
+    "slug": "losa-de-roca-musgosa"
+  },
+  "mossy_cobblestone_stairs": {
+    "nombre": "Escaleras de roca musgosa",
+    "slug": "escaleras-de-roca-musgosa"
+  },
+  "mossy_cobblestone_wall": {
+    "nombre": "Muro de roca musgosa",
+    "slug": "muro-de-roca-musgosa"
+  },
+  "mossy_stone_brick_slab": {
+    "nombre": "Losa de ladrillo de piedra musgoso",
+    "slug": "losa-de-ladrillo-de-piedra-musgoso"
+  },
+  "mossy_stone_brick_stairs": {
+    "nombre": "Escaleras de ladrillo de piedra musgoso",
+    "slug": "escaleras-de-ladrillo-de-piedra-musgoso"
+  },
+  "mossy_stone_brick_wall": {
+    "nombre": "Muro de ladrillo de piedra musgoso",
+    "slug": "muro-de-ladrillo-de-piedra-musgoso"
+  },
+  "mossy_stone_bricks": {
+    "nombre": "Ladrillos de piedra musgosos",
+    "slug": "ladrillos-de-piedra-musgosos"
+  },
+  "mourner_pottery_sherd": {
+    "nombre": "Fragmento de cerámica del doliente",
+    "slug": "fragmento-de-ceramica-del-doliente"
+  },
+  "mud": {
+    "nombre": "Barro",
+    "slug": "barro"
+  },
+  "mud_brick_slab": {
+    "nombre": "Losa de ladrillo de barro",
+    "slug": "losa-de-ladrillo-de-barro"
+  },
+  "mud_brick_stairs": {
+    "nombre": "Escaleras de ladrillo de barro",
+    "slug": "escaleras-de-ladrillo-de-barro"
+  },
+  "mud_brick_wall": {
+    "nombre": "Muro de ladrillo de barro",
+    "slug": "muro-de-ladrillo-de-barro"
+  },
+  "mud_bricks": {
+    "nombre": "Ladrillos de barro",
+    "slug": "ladrillos-de-barro"
+  },
+  "muddy_mangrove_roots": {
+    "nombre": "Raíces de mangle embarradas",
+    "slug": "raices-de-mangle-embarradas"
+  },
+  "mule_spawn_egg": {
+    "nombre": "Huevo generador de Mula",
+    "slug": "huevo-generador-de-mula"
+  },
+  "mushroom_stem": {
+    "nombre": "Tallo de seta",
+    "slug": "tallo-de-seta"
+  },
+  "mushroom_stew": {
+    "nombre": "Estofado de setas",
+    "slug": "estofado-de-setas"
+  },
+  "music_disc_11": {
+    "nombre": "Disco de música «11»",
+    "slug": "disco-de-musica-11"
+  },
+  "music_disc_13": {
+    "nombre": "Disco de música «13»",
+    "slug": "disco-de-musica-13"
+  },
+  "music_disc_5": {
+    "nombre": "Disco de música «5»",
+    "slug": "disco-de-musica-5"
+  },
+  "music_disc_blocks": {
+    "nombre": "Disco de música «Blocks»",
+    "slug": "disco-de-musica-blocks"
+  },
+  "music_disc_cat": {
+    "nombre": "Disco de música «Cat»",
+    "slug": "disco-de-musica-cat"
+  },
+  "music_disc_chirp": {
+    "nombre": "Disco de música «Chirp»",
+    "slug": "disco-de-musica-chirp"
+  },
+  "music_disc_creator": {
+    "nombre": "Disco de música «Creator»",
+    "slug": "disco-de-musica-creator"
+  },
+  "music_disc_creator_music_box": {
+    "nombre": "Disco de música «Creator Music Box»",
+    "slug": "disco-de-musica-creator-music-box"
+  },
+  "music_disc_far": {
+    "nombre": "Disco de música «Far»",
+    "slug": "disco-de-musica-far"
+  },
+  "music_disc_mall": {
+    "nombre": "Disco de música «Mall»",
+    "slug": "disco-de-musica-mall"
+  },
+  "music_disc_mellohi": {
+    "nombre": "Disco de música «Mellohi»",
+    "slug": "disco-de-musica-mellohi"
+  },
+  "music_disc_otherside": {
+    "nombre": "Disco de música «Otherside»",
+    "slug": "disco-de-musica-otherside"
+  },
+  "music_disc_pigstep": {
+    "nombre": "Disco de música «Pigstep»",
+    "slug": "disco-de-musica-pigstep"
+  },
+  "music_disc_precipice": {
+    "nombre": "Disco de música «Precipice»",
+    "slug": "disco-de-musica-precipice"
+  },
+  "music_disc_relic": {
+    "nombre": "Disco de música «Relic»",
+    "slug": "disco-de-musica-relic"
+  },
+  "music_disc_stal": {
+    "nombre": "Disco de música «Stal»",
+    "slug": "disco-de-musica-stal"
+  },
+  "music_disc_strad": {
+    "nombre": "Disco de música «Strad»",
+    "slug": "disco-de-musica-strad"
+  },
+  "music_disc_wait": {
+    "nombre": "Disco de música «Wait»",
+    "slug": "disco-de-musica-wait"
+  },
+  "music_disc_ward": {
+    "nombre": "Disco de música «Ward»",
+    "slug": "disco-de-musica-ward"
+  },
+  "mutton": {
+    "nombre": "Cordero crudo",
+    "slug": "cordero-crudo"
+  },
+  "mycelium": {
+    "nombre": "Micelio",
+    "slug": "micelio"
+  },
+  "name_tag": {
+    "nombre": "Etiqueta",
+    "slug": "etiqueta"
+  },
+  "nautilus_shell": {
+    "nombre": "Concha de nautilo",
+    "slug": "concha-de-nautilo"
+  },
+  "nether_brick": {
+    "nombre": "Ladrillo del Nether",
+    "slug": "ladrillo-del-nether"
+  },
+  "nether_brick_fence": {
+    "nombre": "Valla de ladrillo del Nether",
+    "slug": "valla-de-ladrillo-del-nether"
+  },
+  "nether_brick_slab": {
+    "nombre": "Losa de ladrillo del Nether",
+    "slug": "losa-de-ladrillo-del-nether"
+  },
+  "nether_brick_stairs": {
+    "nombre": "Escaleras de ladrillo del Nether",
+    "slug": "escaleras-de-ladrillo-del-nether"
+  },
+  "nether_brick_wall": {
+    "nombre": "Muro de ladrillo del Nether",
+    "slug": "muro-de-ladrillo-del-nether"
+  },
+  "nether_bricks": {
+    "nombre": "Ladrillos del Nether",
+    "slug": "ladrillos-del-nether"
+  },
+  "nether_gold_ore": {
+    "nombre": "Mena de oro del Nether",
+    "slug": "mena-de-oro-del-nether"
+  },
+  "nether_quartz_ore": {
+    "nombre": "Mena de cuarzo del Nether",
+    "slug": "mena-de-cuarzo-del-nether"
+  },
+  "nether_sprouts": {
+    "nombre": "Brotes del Nether",
+    "slug": "brotes-del-nether"
+  },
+  "nether_star": {
+    "nombre": "Estrella del Nether",
+    "slug": "estrella-del-nether"
+  },
+  "nether_wart": {
+    "nombre": "Verruga del Nether",
+    "slug": "verruga-del-nether",
+    "descripcion": "Crece en las fortalezas del Nether, sobre arena de almas. Es el primer ingrediente de casi todas las pociones útiles, y puedes plantarla en casa para no volver a buscarla."
+  },
+  "nether_wart_block": {
+    "nombre": "Bloque de verruga del Nether",
+    "slug": "bloque-de-verruga-del-nether"
+  },
+  "netherite_block": {
+    "nombre": "Bloque de netherita",
+    "slug": "bloque-de-netherita"
+  },
+  "netherite_ingot": {
+    "nombre": "Lingote de netherita",
+    "slug": "lingote-de-netherita"
+  },
+  "netherite_scrap": {
+    "nombre": "Chatarra de netherita",
+    "slug": "chatarra-de-netherita"
+  },
+  "netherite_upgrade_smithing_template": {
+    "nombre": "Plantilla de mejora a netherita",
+    "slug": "plantilla-de-mejora-a-netherita"
+  },
+  "netherrack": {
+    "nombre": "Roca del Nether",
+    "slug": "roca-del-nether"
+  },
+  "note_block": {
+    "nombre": "Bloque musical",
+    "slug": "bloque-musical"
+  },
+  "oak_boat": {
+    "nombre": "Barca de roble",
+    "slug": "barca-de-roble"
+  },
+  "oak_button": {
+    "nombre": "Botón de roble",
+    "slug": "boton-de-roble"
+  },
+  "oak_chest_boat": {
+    "nombre": "Barca con cofre de roble",
+    "slug": "barca-con-cofre-de-roble"
+  },
+  "oak_door": {
+    "nombre": "Puerta de roble",
+    "slug": "puerta-de-roble"
+  },
+  "oak_fence": {
+    "nombre": "Valla de roble",
+    "slug": "valla-de-roble"
+  },
+  "oak_fence_gate": {
+    "nombre": "Puerta de valla de roble",
+    "slug": "puerta-de-valla-de-roble"
+  },
+  "oak_hanging_sign": {
+    "nombre": "Cartel colgante de roble",
+    "slug": "cartel-colgante-de-roble"
+  },
+  "oak_leaves": {
+    "nombre": "Hojas de roble",
+    "slug": "hojas-de-roble"
+  },
+  "oak_log": {
+    "nombre": "Tronco de roble",
+    "slug": "tronco-de-roble"
+  },
+  "oak_planks": {
+    "nombre": "Tablones de roble",
+    "slug": "tablones-de-roble"
+  },
+  "oak_pressure_plate": {
+    "nombre": "Placa de presión de roble",
+    "slug": "placa-de-presion-de-roble"
+  },
+  "oak_sapling": {
+    "nombre": "Brote de roble",
+    "slug": "brote-de-roble"
+  },
+  "oak_sign": {
+    "nombre": "Cartel de roble",
+    "slug": "cartel-de-roble"
+  },
+  "oak_slab": {
+    "nombre": "Losa de roble",
+    "slug": "losa-de-roble"
+  },
+  "oak_stairs": {
+    "nombre": "Escaleras de roble",
+    "slug": "escaleras-de-roble"
+  },
+  "oak_trapdoor": {
+    "nombre": "Trampilla de roble",
+    "slug": "trampilla-de-roble"
+  },
+  "oak_wood": {
+    "nombre": "Madera de roble",
+    "slug": "madera-de-roble"
+  },
+  "observer": {
+    "nombre": "Observador",
+    "slug": "observador"
   },
   "obsidian": {
     "nombre": "Obsidiana",
     "slug": "obsidiana",
     "descripcion": "Aparece cuando el agua toca la lava. Es el bloque más duro que puedes recoger, y necesitas un pico de diamante y mucha paciencia. Con ella se construye el portal al Nether."
+  },
+  "ocelot_spawn_egg": {
+    "nombre": "Huevo generador de Ocelote",
+    "slug": "huevo-generador-de-ocelote"
+  },
+  "ochre_froglight": {
+    "nombre": "Farol de rana ocre",
+    "slug": "farol-de-rana-ocre"
+  },
+  "ominous_bottle": {
+    "nombre": "Botella siniestra",
+    "slug": "botella-siniestra"
+  },
+  "ominous_trial_key": {
+    "nombre": "Llave siniestra",
+    "slug": "llave-siniestra"
+  },
+  "open_eyeblossom": {
+    "nombre": "Flor ojo abierta",
+    "slug": "flor-ojo-abierta"
+  },
+  "orange_banner": {
+    "nombre": "Estandarte naranja",
+    "slug": "estandarte-naranja"
+  },
+  "orange_bed": {
+    "nombre": "Cama naranja",
+    "slug": "cama-naranja"
+  },
+  "orange_bundle": {
+    "nombre": "Saco naranja",
+    "slug": "saco-naranja"
+  },
+  "orange_candle": {
+    "nombre": "Vela naranja",
+    "slug": "vela-naranja"
+  },
+  "orange_carpet": {
+    "nombre": "Alfombra naranja",
+    "slug": "alfombra-naranja"
+  },
+  "orange_concrete": {
+    "nombre": "Hormigón naranja",
+    "slug": "hormigon-naranja"
+  },
+  "orange_concrete_powder": {
+    "nombre": "Hormigón en polvo naranja",
+    "slug": "hormigon-en-polvo-naranja"
+  },
+  "orange_dye": {
+    "nombre": "Tinte naranja",
+    "slug": "tinte-naranja"
+  },
+  "orange_glazed_terracotta": {
+    "nombre": "Terracota vidriada naranja",
+    "slug": "terracota-vidriada-naranja"
+  },
+  "orange_shulker_box": {
+    "nombre": "Caja de shulker naranja",
+    "slug": "caja-de-shulker-naranja"
+  },
+  "orange_stained_glass": {
+    "nombre": "Vidriera naranja",
+    "slug": "vidriera-naranja"
+  },
+  "orange_stained_glass_pane": {
+    "nombre": "Panel de vidriera naranja",
+    "slug": "panel-de-vidriera-naranja"
+  },
+  "orange_terracotta": {
+    "nombre": "Terracota naranja",
+    "slug": "terracota-naranja"
+  },
+  "orange_tulip": {
+    "nombre": "Tulipán naranja",
+    "slug": "tulipan-naranja"
+  },
+  "orange_wool": {
+    "nombre": "Lana naranja",
+    "slug": "lana-naranja"
+  },
+  "oxeye_daisy": {
+    "nombre": "Margarita",
+    "slug": "margarita"
+  },
+  "oxidized_chiseled_copper": {
+    "nombre": "Cobre cincelado oxidado",
+    "slug": "cobre-cincelado-oxidado"
+  },
+  "oxidized_copper": {
+    "nombre": "Bloque de cobre oxidado",
+    "slug": "bloque-de-cobre-oxidado"
+  },
+  "oxidized_copper_bulb": {
+    "nombre": "Bombilla de cobre oxidada",
+    "slug": "bombilla-de-cobre-oxidada"
+  },
+  "oxidized_copper_door": {
+    "nombre": "Puerta de cobre oxidado",
+    "slug": "puerta-de-cobre-oxidado"
+  },
+  "oxidized_copper_grate": {
+    "nombre": "Rejilla de cobre oxidada",
+    "slug": "rejilla-de-cobre-oxidada"
+  },
+  "oxidized_copper_trapdoor": {
+    "nombre": "Trampilla de cobre oxidado",
+    "slug": "trampilla-de-cobre-oxidado"
+  },
+  "oxidized_cut_copper": {
+    "nombre": "Cobre cortado oxidado",
+    "slug": "cobre-cortado-oxidado"
+  },
+  "oxidized_cut_copper_slab": {
+    "nombre": "Losa de cobre cortado oxidada",
+    "slug": "losa-de-cobre-cortado-oxidada"
+  },
+  "oxidized_cut_copper_stairs": {
+    "nombre": "Escaleras de cobre cortado oxidadas",
+    "slug": "escaleras-de-cobre-cortado-oxidadas"
+  },
+  "packed_ice": {
+    "nombre": "Hielo compacto",
+    "slug": "hielo-compacto"
+  },
+  "packed_mud": {
+    "nombre": "Barro compacto",
+    "slug": "barro-compacto"
+  },
+  "painting": {
+    "nombre": "Cuadro",
+    "slug": "cuadro"
+  },
+  "pale_hanging_moss": {
+    "nombre": "Musgo pálido colgante",
+    "slug": "musgo-palido-colgante"
+  },
+  "pale_moss_block": {
+    "nombre": "Bloque de musgo pálido",
+    "slug": "bloque-de-musgo-palido"
+  },
+  "pale_moss_carpet": {
+    "nombre": "Alfombra de musgo pálido",
+    "slug": "alfombra-de-musgo-palido"
+  },
+  "pale_oak_boat": {
+    "nombre": "Barca de roble pálido",
+    "slug": "barca-de-roble-palido"
+  },
+  "pale_oak_button": {
+    "nombre": "Botón de roble pálido",
+    "slug": "boton-de-roble-palido"
+  },
+  "pale_oak_chest_boat": {
+    "nombre": "Barca con cofre de roble pálido",
+    "slug": "barca-con-cofre-de-roble-palido"
+  },
+  "pale_oak_door": {
+    "nombre": "Puerta de roble pálido",
+    "slug": "puerta-de-roble-palido"
+  },
+  "pale_oak_fence": {
+    "nombre": "Valla de roble pálido",
+    "slug": "valla-de-roble-palido"
+  },
+  "pale_oak_fence_gate": {
+    "nombre": "Puerta de valla de roble pálido",
+    "slug": "puerta-de-valla-de-roble-palido"
+  },
+  "pale_oak_hanging_sign": {
+    "nombre": "Cartel colgante de roble pálido",
+    "slug": "cartel-colgante-de-roble-palido"
+  },
+  "pale_oak_leaves": {
+    "nombre": "Hojas de roble pálido",
+    "slug": "hojas-de-roble-palido"
+  },
+  "pale_oak_log": {
+    "nombre": "Tronco de roble pálido",
+    "slug": "tronco-de-roble-palido"
+  },
+  "pale_oak_planks": {
+    "nombre": "Tablones de roble pálido",
+    "slug": "tablones-de-roble-palido"
+  },
+  "pale_oak_pressure_plate": {
+    "nombre": "Placa de presión de roble pálido",
+    "slug": "placa-de-presion-de-roble-palido"
+  },
+  "pale_oak_sapling": {
+    "nombre": "Brote de roble pálido",
+    "slug": "brote-de-roble-palido"
+  },
+  "pale_oak_sign": {
+    "nombre": "Cartel de roble pálido",
+    "slug": "cartel-de-roble-palido"
+  },
+  "pale_oak_slab": {
+    "nombre": "Losa de roble pálido",
+    "slug": "losa-de-roble-palido"
+  },
+  "pale_oak_stairs": {
+    "nombre": "Escaleras de roble pálido",
+    "slug": "escaleras-de-roble-palido"
+  },
+  "pale_oak_trapdoor": {
+    "nombre": "Trampilla de roble pálido",
+    "slug": "trampilla-de-roble-palido"
+  },
+  "pale_oak_wood": {
+    "nombre": "Madera de roble pálido",
+    "slug": "madera-de-roble-palido"
+  },
+  "panda_spawn_egg": {
+    "nombre": "Huevo generador de Panda",
+    "slug": "huevo-generador-de-panda"
+  },
+  "paper": {
+    "nombre": "Papel",
+    "slug": "papel"
+  },
+  "parrot_spawn_egg": {
+    "nombre": "Huevo generador de Loro",
+    "slug": "huevo-generador-de-loro"
+  },
+  "pearlescent_froglight": {
+    "nombre": "Farol de rana perlado",
+    "slug": "farol-de-rana-perlado"
+  },
+  "peony": {
+    "nombre": "Peonía",
+    "slug": "peonia"
+  },
+  "petrified_oak_slab": {
+    "nombre": "Losa de roble petrificado",
+    "slug": "losa-de-roble-petrificado"
+  },
+  "phantom_membrane": {
+    "nombre": "Membrana de phantom",
+    "slug": "membrana-de-phantom"
+  },
+  "phantom_spawn_egg": {
+    "nombre": "Huevo generador de Phantom",
+    "slug": "huevo-generador-de-phantom"
+  },
+  "pig_spawn_egg": {
+    "nombre": "Huevo generador de Cerdo",
+    "slug": "huevo-generador-de-cerdo"
+  },
+  "piglin_banner_pattern": {
+    "nombre": "Patrón de estandarte de piglin",
+    "slug": "patron-de-estandarte-de-piglin"
+  },
+  "piglin_brute_spawn_egg": {
+    "nombre": "Huevo generador de Piglin bruto",
+    "slug": "huevo-generador-de-piglin-bruto"
+  },
+  "piglin_head": {
+    "nombre": "Cabeza de piglin",
+    "slug": "cabeza-de-piglin"
+  },
+  "piglin_spawn_egg": {
+    "nombre": "Huevo generador de Piglin",
+    "slug": "huevo-generador-de-piglin"
+  },
+  "pillager_spawn_egg": {
+    "nombre": "Huevo generador de Saqueador",
+    "slug": "huevo-generador-de-saqueador"
+  },
+  "pink_banner": {
+    "nombre": "Estandarte rosa",
+    "slug": "estandarte-rosa"
+  },
+  "pink_bed": {
+    "nombre": "Cama rosa",
+    "slug": "cama-rosa"
+  },
+  "pink_bundle": {
+    "nombre": "Saco rosa",
+    "slug": "saco-rosa"
+  },
+  "pink_candle": {
+    "nombre": "Vela rosa",
+    "slug": "vela-rosa"
+  },
+  "pink_carpet": {
+    "nombre": "Alfombra rosa",
+    "slug": "alfombra-rosa"
+  },
+  "pink_concrete": {
+    "nombre": "Hormigón rosa",
+    "slug": "hormigon-rosa"
+  },
+  "pink_concrete_powder": {
+    "nombre": "Hormigón en polvo rosa",
+    "slug": "hormigon-en-polvo-rosa"
+  },
+  "pink_dye": {
+    "nombre": "Tinte rosa",
+    "slug": "tinte-rosa"
+  },
+  "pink_glazed_terracotta": {
+    "nombre": "Terracota vidriada rosa",
+    "slug": "terracota-vidriada-rosa"
+  },
+  "pink_petals": {
+    "nombre": "Pétalos rosas",
+    "slug": "petalos-rosas"
+  },
+  "pink_shulker_box": {
+    "nombre": "Caja de shulker rosa",
+    "slug": "caja-de-shulker-rosa"
+  },
+  "pink_stained_glass": {
+    "nombre": "Vidriera rosa",
+    "slug": "vidriera-rosa"
+  },
+  "pink_stained_glass_pane": {
+    "nombre": "Panel de vidriera rosa",
+    "slug": "panel-de-vidriera-rosa"
+  },
+  "pink_terracotta": {
+    "nombre": "Terracota rosa",
+    "slug": "terracota-rosa"
+  },
+  "pink_tulip": {
+    "nombre": "Tulipán rosa",
+    "slug": "tulipan-rosa"
+  },
+  "pink_wool": {
+    "nombre": "Lana rosa",
+    "slug": "lana-rosa"
+  },
+  "piston": {
+    "nombre": "Pistón",
+    "slug": "piston"
+  },
+  "pitcher_plant": {
+    "nombre": "Planta jarro",
+    "slug": "planta-jarro"
+  },
+  "pitcher_pod": {
+    "nombre": "Vaina de planta jarro",
+    "slug": "vaina-de-planta-jarro"
+  },
+  "player_head": {
+    "nombre": "Cabeza de jugador",
+    "slug": "cabeza-de-jugador"
+  },
+  "plenty_pottery_sherd": {
+    "nombre": "Fragmento de cerámica de la abundancia",
+    "slug": "fragmento-de-ceramica-de-la-abundancia"
+  },
+  "podzol": {
+    "nombre": "Podzol",
+    "slug": "podzol"
+  },
+  "pointed_dripstone": {
+    "nombre": "Estalactita",
+    "slug": "estalactita"
+  },
+  "poisonous_potato": {
+    "nombre": "Patata venenosa",
+    "slug": "patata-venenosa"
+  },
+  "polar_bear_spawn_egg": {
+    "nombre": "Huevo generador de Oso polar",
+    "slug": "huevo-generador-de-oso-polar"
+  },
+  "polished_andesite": {
+    "nombre": "Andesita pulida",
+    "slug": "andesita-pulida"
+  },
+  "polished_andesite_slab": {
+    "nombre": "Losa de andesita pulida",
+    "slug": "losa-de-andesita-pulida"
+  },
+  "polished_andesite_stairs": {
+    "nombre": "Escaleras de andesita pulida",
+    "slug": "escaleras-de-andesita-pulida"
+  },
+  "polished_basalt": {
+    "nombre": "Basalto pulido",
+    "slug": "basalto-pulido"
+  },
+  "polished_blackstone": {
+    "nombre": "Piedra negra pulida",
+    "slug": "piedra-negra-pulida"
+  },
+  "polished_blackstone_brick_slab": {
+    "nombre": "Losa de ladrillo de piedra negra",
+    "slug": "losa-de-ladrillo-de-piedra-negra"
+  },
+  "polished_blackstone_brick_stairs": {
+    "nombre": "Escaleras de ladrillo de piedra negra",
+    "slug": "escaleras-de-ladrillo-de-piedra-negra"
+  },
+  "polished_blackstone_brick_wall": {
+    "nombre": "Muro de ladrillo de piedra negra",
+    "slug": "muro-de-ladrillo-de-piedra-negra"
+  },
+  "polished_blackstone_bricks": {
+    "nombre": "Ladrillos de piedra negra pulida",
+    "slug": "ladrillos-de-piedra-negra-pulida"
+  },
+  "polished_blackstone_button": {
+    "nombre": "Botón de piedra negra pulida",
+    "slug": "boton-de-piedra-negra-pulida"
+  },
+  "polished_blackstone_pressure_plate": {
+    "nombre": "Placa de presión de piedra negra pulida",
+    "slug": "placa-de-presion-de-piedra-negra-pulida"
+  },
+  "polished_blackstone_slab": {
+    "nombre": "Losa de piedra negra pulida",
+    "slug": "losa-de-piedra-negra-pulida"
+  },
+  "polished_blackstone_stairs": {
+    "nombre": "Escaleras de piedra negra pulida",
+    "slug": "escaleras-de-piedra-negra-pulida"
+  },
+  "polished_blackstone_wall": {
+    "nombre": "Muro de piedra negra pulida",
+    "slug": "muro-de-piedra-negra-pulida"
+  },
+  "polished_deepslate": {
+    "nombre": "Pizarra pulida",
+    "slug": "pizarra-pulida"
+  },
+  "polished_deepslate_slab": {
+    "nombre": "Losa de pizarra pulida",
+    "slug": "losa-de-pizarra-pulida"
+  },
+  "polished_deepslate_stairs": {
+    "nombre": "Escaleras de pizarra pulida",
+    "slug": "escaleras-de-pizarra-pulida"
+  },
+  "polished_deepslate_wall": {
+    "nombre": "Muro de pizarra pulida",
+    "slug": "muro-de-pizarra-pulida"
+  },
+  "polished_diorite": {
+    "nombre": "Diorita pulida",
+    "slug": "diorita-pulida"
+  },
+  "polished_diorite_slab": {
+    "nombre": "Losa de diorita pulida",
+    "slug": "losa-de-diorita-pulida"
+  },
+  "polished_diorite_stairs": {
+    "nombre": "Escaleras de diorita pulida",
+    "slug": "escaleras-de-diorita-pulida"
+  },
+  "polished_granite": {
+    "nombre": "Granito pulido",
+    "slug": "granito-pulido"
+  },
+  "polished_granite_slab": {
+    "nombre": "Losa de granito pulido",
+    "slug": "losa-de-granito-pulido"
+  },
+  "polished_granite_stairs": {
+    "nombre": "Escaleras de granito pulido",
+    "slug": "escaleras-de-granito-pulido"
+  },
+  "polished_tuff": {
+    "nombre": "Toba pulida",
+    "slug": "toba-pulida"
+  },
+  "polished_tuff_slab": {
+    "nombre": "Losa de toba pulida",
+    "slug": "losa-de-toba-pulida"
+  },
+  "polished_tuff_stairs": {
+    "nombre": "Escaleras de toba pulida",
+    "slug": "escaleras-de-toba-pulida"
+  },
+  "polished_tuff_wall": {
+    "nombre": "Muro de toba pulida",
+    "slug": "muro-de-toba-pulida"
+  },
+  "popped_chorus_fruit": {
+    "nombre": "Fruta de coro cocinada",
+    "slug": "fruta-de-coro-cocinada"
+  },
+  "poppy": {
+    "nombre": "Amapola",
+    "slug": "amapola"
+  },
+  "porkchop": {
+    "nombre": "Chuleta de cerdo cruda",
+    "slug": "chuleta-de-cerdo-cruda"
+  },
+  "potato": {
+    "nombre": "Patata",
+    "slug": "patata"
+  },
+  "potion": {
+    "nombre": "Poción",
+    "slug": "pocion"
+  },
+  "powder_snow_bucket": {
+    "nombre": "Cubo de nieve polvo",
+    "slug": "cubo-de-nieve-polvo"
+  },
+  "powered_rail": {
+    "nombre": "Raíl propulsor",
+    "slug": "rail-propulsor"
+  },
+  "prismarine": {
+    "nombre": "Prismarina",
+    "slug": "prismarina"
+  },
+  "prismarine_brick_slab": {
+    "nombre": "Losa de ladrillo de prismarina",
+    "slug": "losa-de-ladrillo-de-prismarina"
+  },
+  "prismarine_brick_stairs": {
+    "nombre": "Escaleras de ladrillo de prismarina",
+    "slug": "escaleras-de-ladrillo-de-prismarina"
+  },
+  "prismarine_bricks": {
+    "nombre": "Ladrillos de prismarina",
+    "slug": "ladrillos-de-prismarina"
+  },
+  "prismarine_crystals": {
+    "nombre": "Cristales de prismarina",
+    "slug": "cristales-de-prismarina"
+  },
+  "prismarine_shard": {
+    "nombre": "Fragmento de prismarina",
+    "slug": "fragmento-de-prismarina"
+  },
+  "prismarine_slab": {
+    "nombre": "Losa de prismarina",
+    "slug": "losa-de-prismarina"
+  },
+  "prismarine_stairs": {
+    "nombre": "Escaleras de prismarina",
+    "slug": "escaleras-de-prismarina"
+  },
+  "prismarine_wall": {
+    "nombre": "Muro de prismarina",
+    "slug": "muro-de-prismarina"
+  },
+  "prize_pottery_sherd": {
+    "nombre": "Fragmento de cerámica del premio",
+    "slug": "fragmento-de-ceramica-del-premio"
+  },
+  "pufferfish": {
+    "nombre": "Pez globo",
+    "slug": "pez-globo"
+  },
+  "pufferfish_bucket": {
+    "nombre": "Cubo con pez globo",
+    "slug": "cubo-con-pez-globo"
+  },
+  "pufferfish_spawn_egg": {
+    "nombre": "Huevo generador de Pez globo",
+    "slug": "huevo-generador-de-pez-globo"
+  },
+  "pumpkin": {
+    "nombre": "Calabaza",
+    "slug": "calabaza"
+  },
+  "pumpkin_pie": {
+    "nombre": "Tarta de calabaza",
+    "slug": "tarta-de-calabaza"
+  },
+  "pumpkin_seeds": {
+    "nombre": "Semillas de calabaza",
+    "slug": "semillas-de-calabaza"
+  },
+  "purple_banner": {
+    "nombre": "Estandarte morado",
+    "slug": "estandarte-morado"
+  },
+  "purple_bed": {
+    "nombre": "Cama morada",
+    "slug": "cama-morada"
+  },
+  "purple_bundle": {
+    "nombre": "Saco morado",
+    "slug": "saco-morado"
+  },
+  "purple_candle": {
+    "nombre": "Vela morada",
+    "slug": "vela-morada"
+  },
+  "purple_carpet": {
+    "nombre": "Alfombra morada",
+    "slug": "alfombra-morada"
+  },
+  "purple_concrete": {
+    "nombre": "Hormigón morado",
+    "slug": "hormigon-morado"
+  },
+  "purple_concrete_powder": {
+    "nombre": "Hormigón en polvo morado",
+    "slug": "hormigon-en-polvo-morado"
+  },
+  "purple_dye": {
+    "nombre": "Tinte morado",
+    "slug": "tinte-morado"
+  },
+  "purple_glazed_terracotta": {
+    "nombre": "Terracota vidriada morada",
+    "slug": "terracota-vidriada-morada"
+  },
+  "purple_shulker_box": {
+    "nombre": "Caja de shulker morada",
+    "slug": "caja-de-shulker-morada"
+  },
+  "purple_stained_glass": {
+    "nombre": "Vidriera morada",
+    "slug": "vidriera-morada"
+  },
+  "purple_stained_glass_pane": {
+    "nombre": "Panel de vidriera morado",
+    "slug": "panel-de-vidriera-morado"
+  },
+  "purple_terracotta": {
+    "nombre": "Terracota morada",
+    "slug": "terracota-morada"
+  },
+  "purple_wool": {
+    "nombre": "Lana morada",
+    "slug": "lana-morada"
+  },
+  "purpur_block": {
+    "nombre": "Bloque de purpur",
+    "slug": "bloque-de-purpur"
+  },
+  "purpur_pillar": {
+    "nombre": "Purpur con pilar",
+    "slug": "purpur-con-pilar"
+  },
+  "purpur_slab": {
+    "nombre": "Losa de purpur",
+    "slug": "losa-de-purpur"
+  },
+  "purpur_stairs": {
+    "nombre": "Escaleras de purpur",
+    "slug": "escaleras-de-purpur"
+  },
+  "quartz": {
+    "nombre": "Cuarzo del Nether",
+    "slug": "cuarzo-del-nether"
+  },
+  "quartz_block": {
+    "nombre": "Bloque de cuarzo",
+    "slug": "bloque-de-cuarzo"
+  },
+  "quartz_bricks": {
+    "nombre": "Ladrillos de cuarzo",
+    "slug": "ladrillos-de-cuarzo"
+  },
+  "quartz_pillar": {
+    "nombre": "Cuarzo con pilar",
+    "slug": "cuarzo-con-pilar"
+  },
+  "quartz_slab": {
+    "nombre": "Losa de cuarzo",
+    "slug": "losa-de-cuarzo"
+  },
+  "quartz_stairs": {
+    "nombre": "Escaleras de cuarzo",
+    "slug": "escaleras-de-cuarzo"
+  },
+  "rabbit": {
+    "nombre": "Conejo crudo",
+    "slug": "conejo-crudo"
+  },
+  "rabbit_foot": {
+    "nombre": "Pata de conejo",
+    "slug": "pata-de-conejo"
+  },
+  "rabbit_hide": {
+    "nombre": "Piel de conejo",
+    "slug": "piel-de-conejo"
+  },
+  "rabbit_spawn_egg": {
+    "nombre": "Huevo generador de Conejo",
+    "slug": "huevo-generador-de-conejo"
+  },
+  "rabbit_stew": {
+    "nombre": "Estofado de conejo",
+    "slug": "estofado-de-conejo"
+  },
+  "rail": {
+    "nombre": "Raíl",
+    "slug": "rail"
+  },
+  "raiser_armor_trim_smithing_template": {
+    "nombre": "Plantilla de adorno del alzador",
+    "slug": "plantilla-de-adorno-del-alzador"
+  },
+  "ravager_spawn_egg": {
+    "nombre": "Huevo generador de Devastador",
+    "slug": "huevo-generador-de-devastador"
+  },
+  "raw_copper": {
+    "nombre": "Cobre en bruto",
+    "slug": "cobre-en-bruto"
+  },
+  "raw_copper_block": {
+    "nombre": "Bloque de cobre en bruto",
+    "slug": "bloque-de-cobre-en-bruto"
+  },
+  "raw_gold": {
+    "nombre": "Oro en bruto",
+    "slug": "oro-en-bruto"
+  },
+  "raw_gold_block": {
+    "nombre": "Bloque de oro en bruto",
+    "slug": "bloque-de-oro-en-bruto"
+  },
+  "raw_iron": {
+    "nombre": "Hierro en bruto",
+    "slug": "hierro-en-bruto"
+  },
+  "raw_iron_block": {
+    "nombre": "Bloque de hierro en bruto",
+    "slug": "bloque-de-hierro-en-bruto"
+  },
+  "recovery_compass": {
+    "nombre": "Brújula de recuperación",
+    "slug": "brujula-de-recuperacion"
+  },
+  "red_banner": {
+    "nombre": "Estandarte rojo",
+    "slug": "estandarte-rojo"
+  },
+  "red_bed": {
+    "nombre": "Cama roja",
+    "slug": "cama-roja"
+  },
+  "red_bundle": {
+    "nombre": "Saco rojo",
+    "slug": "saco-rojo"
+  },
+  "red_candle": {
+    "nombre": "Vela roja",
+    "slug": "vela-roja"
+  },
+  "red_carpet": {
+    "nombre": "Alfombra roja",
+    "slug": "alfombra-roja"
+  },
+  "red_concrete": {
+    "nombre": "Hormigón rojo",
+    "slug": "hormigon-rojo"
+  },
+  "red_concrete_powder": {
+    "nombre": "Hormigón en polvo rojo",
+    "slug": "hormigon-en-polvo-rojo"
+  },
+  "red_dye": {
+    "nombre": "Tinte rojo",
+    "slug": "tinte-rojo"
+  },
+  "red_glazed_terracotta": {
+    "nombre": "Terracota vidriada roja",
+    "slug": "terracota-vidriada-roja"
+  },
+  "red_mushroom": {
+    "nombre": "Seta roja",
+    "slug": "seta-roja"
+  },
+  "red_mushroom_block": {
+    "nombre": "Bloque de seta roja",
+    "slug": "bloque-de-seta-roja"
+  },
+  "red_nether_brick_slab": {
+    "nombre": "Losa de ladrillo rojo del Nether",
+    "slug": "losa-de-ladrillo-rojo-del-nether"
+  },
+  "red_nether_brick_stairs": {
+    "nombre": "Escaleras de ladrillo rojo del Nether",
+    "slug": "escaleras-de-ladrillo-rojo-del-nether"
+  },
+  "red_nether_brick_wall": {
+    "nombre": "Muro de ladrillo rojo del Nether",
+    "slug": "muro-de-ladrillo-rojo-del-nether"
+  },
+  "red_nether_bricks": {
+    "nombre": "Ladrillos rojos del Nether",
+    "slug": "ladrillos-rojos-del-nether"
+  },
+  "red_sand": {
+    "nombre": "Arena roja",
+    "slug": "arena-roja"
+  },
+  "red_sandstone": {
+    "nombre": "Arenisca roja",
+    "slug": "arenisca-roja"
+  },
+  "red_sandstone_slab": {
+    "nombre": "Losa de arenisca roja",
+    "slug": "losa-de-arenisca-roja"
+  },
+  "red_sandstone_stairs": {
+    "nombre": "Escaleras de arenisca roja",
+    "slug": "escaleras-de-arenisca-roja"
+  },
+  "red_sandstone_wall": {
+    "nombre": "Muro de arenisca roja",
+    "slug": "muro-de-arenisca-roja"
+  },
+  "red_shulker_box": {
+    "nombre": "Caja de shulker roja",
+    "slug": "caja-de-shulker-roja"
+  },
+  "red_stained_glass": {
+    "nombre": "Vidriera roja",
+    "slug": "vidriera-roja"
+  },
+  "red_stained_glass_pane": {
+    "nombre": "Panel de vidriera rojo",
+    "slug": "panel-de-vidriera-rojo"
+  },
+  "red_terracotta": {
+    "nombre": "Terracota roja",
+    "slug": "terracota-roja"
+  },
+  "red_tulip": {
+    "nombre": "Tulipán rojo",
+    "slug": "tulipan-rojo"
+  },
+  "red_wool": {
+    "nombre": "Lana roja",
+    "slug": "lana-roja"
+  },
+  "redstone": {
+    "nombre": "Redstone",
+    "slug": "redstone"
+  },
+  "redstone_block": {
+    "nombre": "Bloque de redstone",
+    "slug": "bloque-de-redstone"
+  },
+  "redstone_lamp": {
+    "nombre": "Lámpara de redstone",
+    "slug": "lampara-de-redstone"
+  },
+  "redstone_ore": {
+    "nombre": "Mena de redstone",
+    "slug": "mena-de-redstone"
+  },
+  "redstone_torch": {
+    "nombre": "Antorcha de redstone",
+    "slug": "antorcha-de-redstone"
+  },
+  "reinforced_deepslate": {
+    "nombre": "Pizarra reforzada",
+    "slug": "pizarra-reforzada"
+  },
+  "repeater": {
+    "nombre": "Repetidor",
+    "slug": "repetidor"
+  },
+  "repeating_command_block": {
+    "nombre": "Bloque de comandos repetitivo",
+    "slug": "bloque-de-comandos-repetitivo"
+  },
+  "resin_block": {
+    "nombre": "Bloque de resina",
+    "slug": "bloque-de-resina"
+  },
+  "resin_brick": {
+    "nombre": "Ladrillo de resina",
+    "slug": "ladrillo-de-resina"
+  },
+  "resin_brick_slab": {
+    "nombre": "Losa de ladrillo de resina",
+    "slug": "losa-de-ladrillo-de-resina"
+  },
+  "resin_brick_stairs": {
+    "nombre": "Escaleras de ladrillo de resina",
+    "slug": "escaleras-de-ladrillo-de-resina"
+  },
+  "resin_brick_wall": {
+    "nombre": "Muro de ladrillo de resina",
+    "slug": "muro-de-ladrillo-de-resina"
+  },
+  "resin_bricks": {
+    "nombre": "Ladrillos de resina",
+    "slug": "ladrillos-de-resina"
+  },
+  "resin_clump": {
+    "nombre": "Grumo de resina",
+    "slug": "grumo-de-resina"
+  },
+  "respawn_anchor": {
+    "nombre": "Ancla de renacimiento",
+    "slug": "ancla-de-renacimiento"
+  },
+  "rib_armor_trim_smithing_template": {
+    "nombre": "Plantilla de adorno de la costilla",
+    "slug": "plantilla-de-adorno-de-la-costilla"
+  },
+  "rooted_dirt": {
+    "nombre": "Tierra con raíces",
+    "slug": "tierra-con-raices"
+  },
+  "rose_bush": {
+    "nombre": "Rosal",
+    "slug": "rosal"
+  },
+  "rotten_flesh": {
+    "nombre": "Carne podrida",
+    "slug": "carne-podrida",
+    "descripcion": "Lo que sueltan los zombis. Se puede comer, pero muchas veces te da hambre y te quita comida en vez de darte. Úsala solo si no tienes nada mejor."
+  },
+  "saddle": {
+    "nombre": "Silla de montar",
+    "slug": "silla-de-montar"
+  },
+  "salmon": {
+    "nombre": "Salmón crudo",
+    "slug": "salmon-crudo"
+  },
+  "salmon_bucket": {
+    "nombre": "Cubo con salmón",
+    "slug": "cubo-con-salmon"
+  },
+  "salmon_spawn_egg": {
+    "nombre": "Huevo generador de Salmón",
+    "slug": "huevo-generador-de-salmon"
+  },
+  "sand": {
+    "nombre": "Arena",
+    "slug": "arena"
+  },
+  "sandstone": {
+    "nombre": "Arenisca",
+    "slug": "arenisca"
+  },
+  "sandstone_slab": {
+    "nombre": "Losa de arenisca",
+    "slug": "losa-de-arenisca"
+  },
+  "sandstone_stairs": {
+    "nombre": "Escaleras de arenisca",
+    "slug": "escaleras-de-arenisca"
+  },
+  "sandstone_wall": {
+    "nombre": "Muro de arenisca",
+    "slug": "muro-de-arenisca"
+  },
+  "scaffolding": {
+    "nombre": "Andamio",
+    "slug": "andamio"
+  },
+  "scrape_pottery_sherd": {
+    "nombre": "Fragmento de cerámica del rasguño",
+    "slug": "fragmento-de-ceramica-del-rasguno"
+  },
+  "sculk": {
+    "nombre": "Sculk",
+    "slug": "sculk"
+  },
+  "sculk_catalyst": {
+    "nombre": "Catalizador de sculk",
+    "slug": "catalizador-de-sculk"
+  },
+  "sculk_sensor": {
+    "nombre": "Sensor de sculk",
+    "slug": "sensor-de-sculk"
+  },
+  "sculk_shrieker": {
+    "nombre": "Chillón de sculk",
+    "slug": "chillon-de-sculk"
+  },
+  "sculk_vein": {
+    "nombre": "Vena de sculk",
+    "slug": "vena-de-sculk"
+  },
+  "sea_lantern": {
+    "nombre": "Lámpara marina",
+    "slug": "lampara-marina"
+  },
+  "sea_pickle": {
+    "nombre": "Pepino de mar",
+    "slug": "pepino-de-mar"
+  },
+  "seagrass": {
+    "nombre": "Alga marina",
+    "slug": "alga-marina"
+  },
+  "sentry_armor_trim_smithing_template": {
+    "nombre": "Plantilla de adorno del centinela",
+    "slug": "plantilla-de-adorno-del-centinela"
+  },
+  "shaper_armor_trim_smithing_template": {
+    "nombre": "Plantilla de adorno del moldeador",
+    "slug": "plantilla-de-adorno-del-moldeador"
+  },
+  "sheaf_pottery_sherd": {
+    "nombre": "Fragmento de cerámica de la gavilla",
+    "slug": "fragmento-de-ceramica-de-la-gavilla"
+  },
+  "shears": {
+    "nombre": "Tijeras",
+    "slug": "tijeras"
+  },
+  "sheep_spawn_egg": {
+    "nombre": "Huevo generador de Oveja",
+    "slug": "huevo-generador-de-oveja"
+  },
+  "shelter_pottery_sherd": {
+    "nombre": "Fragmento de cerámica del refugio",
+    "slug": "fragmento-de-ceramica-del-refugio"
+  },
+  "short_grass": {
+    "nombre": "Hierba",
+    "slug": "hierba"
+  },
+  "shroomlight": {
+    "nombre": "Hongo luminoso",
+    "slug": "hongo-luminoso"
+  },
+  "shulker_box": {
+    "nombre": "Caja de shulker",
+    "slug": "caja-de-shulker"
+  },
+  "shulker_shell": {
+    "nombre": "Caparazón de shulker",
+    "slug": "caparazon-de-shulker"
+  },
+  "shulker_spawn_egg": {
+    "nombre": "Huevo generador de Shulker",
+    "slug": "huevo-generador-de-shulker"
+  },
+  "silence_armor_trim_smithing_template": {
+    "nombre": "Plantilla de adorno del silencio",
+    "slug": "plantilla-de-adorno-del-silencio"
+  },
+  "silverfish_spawn_egg": {
+    "nombre": "Huevo generador de Lepisma",
+    "slug": "huevo-generador-de-lepisma"
+  },
+  "skeleton_horse_spawn_egg": {
+    "nombre": "Huevo generador de Caballo esqueleto",
+    "slug": "huevo-generador-de-caballo-esqueleto"
+  },
+  "skeleton_skull": {
+    "nombre": "Cráneo de esqueleto",
+    "slug": "craneo-de-esqueleto"
+  },
+  "skeleton_spawn_egg": {
+    "nombre": "Huevo generador de Esqueleto",
+    "slug": "huevo-generador-de-esqueleto"
+  },
+  "skull_banner_pattern": {
+    "nombre": "Patrón de estandarte de calavera",
+    "slug": "patron-de-estandarte-de-calavera"
+  },
+  "skull_pottery_sherd": {
+    "nombre": "Fragmento de cerámica de la calavera",
+    "slug": "fragmento-de-ceramica-de-la-calavera"
+  },
+  "slime_ball": {
+    "nombre": "Bola de slime",
+    "slug": "bola-de-slime"
+  },
+  "slime_block": {
+    "nombre": "Bloque de slime",
+    "slug": "bloque-de-slime"
+  },
+  "slime_spawn_egg": {
+    "nombre": "Huevo generador de Slime",
+    "slug": "huevo-generador-de-slime"
+  },
+  "small_amethyst_bud": {
+    "nombre": "Brote pequeño de amatista",
+    "slug": "brote-pequeno-de-amatista"
+  },
+  "small_dripleaf": {
+    "nombre": "Hoja de goteo pequeña",
+    "slug": "hoja-de-goteo-pequena"
+  },
+  "smithing_table": {
+    "nombre": "Mesa de herrería",
+    "slug": "mesa-de-herreria"
+  },
+  "smoker": {
+    "nombre": "Ahumador",
+    "slug": "ahumador"
+  },
+  "smooth_basalt": {
+    "nombre": "Basalto liso",
+    "slug": "basalto-liso"
+  },
+  "smooth_quartz": {
+    "nombre": "Cuarzo liso",
+    "slug": "cuarzo-liso"
+  },
+  "smooth_quartz_slab": {
+    "nombre": "Losa de cuarzo liso",
+    "slug": "losa-de-cuarzo-liso"
+  },
+  "smooth_quartz_stairs": {
+    "nombre": "Escaleras de cuarzo liso",
+    "slug": "escaleras-de-cuarzo-liso"
+  },
+  "smooth_red_sandstone": {
+    "nombre": "Arenisca roja lisa",
+    "slug": "arenisca-roja-lisa"
+  },
+  "smooth_red_sandstone_slab": {
+    "nombre": "Losa de arenisca roja lisa",
+    "slug": "losa-de-arenisca-roja-lisa"
+  },
+  "smooth_red_sandstone_stairs": {
+    "nombre": "Escaleras de arenisca roja lisa",
+    "slug": "escaleras-de-arenisca-roja-lisa"
+  },
+  "smooth_sandstone": {
+    "nombre": "Arenisca lisa",
+    "slug": "arenisca-lisa"
+  },
+  "smooth_sandstone_slab": {
+    "nombre": "Losa de arenisca lisa",
+    "slug": "losa-de-arenisca-lisa"
+  },
+  "smooth_sandstone_stairs": {
+    "nombre": "Escaleras de arenisca lisa",
+    "slug": "escaleras-de-arenisca-lisa"
+  },
+  "smooth_stone": {
+    "nombre": "Piedra lisa",
+    "slug": "piedra-lisa"
+  },
+  "smooth_stone_slab": {
+    "nombre": "Losa de piedra lisa",
+    "slug": "losa-de-piedra-lisa"
+  },
+  "sniffer_egg": {
+    "nombre": "Huevo de rastreador",
+    "slug": "huevo-de-rastreador"
+  },
+  "sniffer_spawn_egg": {
+    "nombre": "Huevo generador de Rastreador",
+    "slug": "huevo-generador-de-rastreador"
+  },
+  "snort_pottery_sherd": {
+    "nombre": "Fragmento de cerámica del resoplido",
+    "slug": "fragmento-de-ceramica-del-resoplido"
+  },
+  "snout_armor_trim_smithing_template": {
+    "nombre": "Plantilla de adorno del hocico",
+    "slug": "plantilla-de-adorno-del-hocico"
+  },
+  "snow": {
+    "nombre": "Nieve",
+    "slug": "nieve"
+  },
+  "snow_block": {
+    "nombre": "Bloque de nieve",
+    "slug": "bloque-de-nieve"
+  },
+  "snow_golem_spawn_egg": {
+    "nombre": "Huevo generador de Gólem de nieve",
+    "slug": "huevo-generador-de-golem-de-nieve"
+  },
+  "snowball": {
+    "nombre": "Bola de nieve",
+    "slug": "bola-de-nieve"
+  },
+  "soul_campfire": {
+    "nombre": "Hoguera de almas",
+    "slug": "hoguera-de-almas"
+  },
+  "soul_lantern": {
+    "nombre": "Farol de almas",
+    "slug": "farol-de-almas"
+  },
+  "soul_sand": {
+    "nombre": "Arena de almas",
+    "slug": "arena-de-almas"
+  },
+  "soul_soil": {
+    "nombre": "Tierra de almas",
+    "slug": "tierra-de-almas"
+  },
+  "soul_torch": {
+    "nombre": "Antorcha de almas",
+    "slug": "antorcha-de-almas"
+  },
+  "spawner": {
+    "nombre": "Generador de monstruos",
+    "slug": "generador-de-monstruos"
+  },
+  "spectral_arrow": {
+    "nombre": "Flecha espectral",
+    "slug": "flecha-espectral"
+  },
+  "spider_eye": {
+    "nombre": "Ojo de araña",
+    "slug": "ojo-de-arana"
+  },
+  "spider_spawn_egg": {
+    "nombre": "Huevo generador de Araña",
+    "slug": "huevo-generador-de-arana"
+  },
+  "spire_armor_trim_smithing_template": {
+    "nombre": "Plantilla de adorno de la aguja",
+    "slug": "plantilla-de-adorno-de-la-aguja"
+  },
+  "splash_potion": {
+    "nombre": "Poción arrojadiza",
+    "slug": "pocion-arrojadiza"
+  },
+  "sponge": {
+    "nombre": "Esponja",
+    "slug": "esponja"
+  },
+  "spore_blossom": {
+    "nombre": "Flor de esporas",
+    "slug": "flor-de-esporas"
+  },
+  "spruce_boat": {
+    "nombre": "Barca de abeto",
+    "slug": "barca-de-abeto"
+  },
+  "spruce_button": {
+    "nombre": "Botón de abeto",
+    "slug": "boton-de-abeto"
+  },
+  "spruce_chest_boat": {
+    "nombre": "Barca con cofre de abeto",
+    "slug": "barca-con-cofre-de-abeto"
+  },
+  "spruce_door": {
+    "nombre": "Puerta de abeto",
+    "slug": "puerta-de-abeto"
+  },
+  "spruce_fence": {
+    "nombre": "Valla de abeto",
+    "slug": "valla-de-abeto"
+  },
+  "spruce_fence_gate": {
+    "nombre": "Puerta de valla de abeto",
+    "slug": "puerta-de-valla-de-abeto"
+  },
+  "spruce_hanging_sign": {
+    "nombre": "Cartel colgante de abeto",
+    "slug": "cartel-colgante-de-abeto"
+  },
+  "spruce_leaves": {
+    "nombre": "Hojas de abeto",
+    "slug": "hojas-de-abeto"
+  },
+  "spruce_log": {
+    "nombre": "Tronco de abeto",
+    "slug": "tronco-de-abeto"
+  },
+  "spruce_planks": {
+    "nombre": "Tablones de abeto",
+    "slug": "tablones-de-abeto"
+  },
+  "spruce_pressure_plate": {
+    "nombre": "Placa de presión de abeto",
+    "slug": "placa-de-presion-de-abeto"
+  },
+  "spruce_sapling": {
+    "nombre": "Brote de abeto",
+    "slug": "brote-de-abeto"
+  },
+  "spruce_sign": {
+    "nombre": "Cartel de abeto",
+    "slug": "cartel-de-abeto"
+  },
+  "spruce_slab": {
+    "nombre": "Losa de abeto",
+    "slug": "losa-de-abeto"
+  },
+  "spruce_stairs": {
+    "nombre": "Escaleras de abeto",
+    "slug": "escaleras-de-abeto"
+  },
+  "spruce_trapdoor": {
+    "nombre": "Trampilla de abeto",
+    "slug": "trampilla-de-abeto"
+  },
+  "spruce_wood": {
+    "nombre": "Madera de abeto",
+    "slug": "madera-de-abeto"
+  },
+  "spyglass": {
+    "nombre": "Catalejo",
+    "slug": "catalejo"
+  },
+  "squid_spawn_egg": {
+    "nombre": "Huevo generador de Calamar",
+    "slug": "huevo-generador-de-calamar"
+  },
+  "stick": {
+    "nombre": "Palo",
+    "slug": "palo",
+    "descripcion": "El mango de casi todas tus herramientas y armas. Se hace con dos tablones, y como la madera nunca se acaba, nunca te quedarás sin palos."
+  },
+  "sticky_piston": {
+    "nombre": "Pistón pegajoso",
+    "slug": "piston-pegajoso"
+  },
+  "stone": {
+    "nombre": "Piedra",
+    "slug": "piedra"
+  },
+  "stone_brick_slab": {
+    "nombre": "Losa de ladrillo de piedra",
+    "slug": "losa-de-ladrillo-de-piedra"
+  },
+  "stone_brick_stairs": {
+    "nombre": "Escaleras de ladrillo de piedra",
+    "slug": "escaleras-de-ladrillo-de-piedra"
+  },
+  "stone_brick_wall": {
+    "nombre": "Muro de ladrillo de piedra",
+    "slug": "muro-de-ladrillo-de-piedra"
+  },
+  "stone_bricks": {
+    "nombre": "Ladrillos de piedra",
+    "slug": "ladrillos-de-piedra"
+  },
+  "stone_button": {
+    "nombre": "Botón de piedra",
+    "slug": "boton-de-piedra"
+  },
+  "stone_pressure_plate": {
+    "nombre": "Placa de presión de piedra",
+    "slug": "placa-de-presion-de-piedra"
+  },
+  "stone_slab": {
+    "nombre": "Losa de piedra",
+    "slug": "losa-de-piedra"
+  },
+  "stone_stairs": {
+    "nombre": "Escaleras de piedra",
+    "slug": "escaleras-de-piedra"
+  },
+  "stonecutter": {
+    "nombre": "Cortador de piedra",
+    "slug": "cortador-de-piedra"
+  },
+  "stray_spawn_egg": {
+    "nombre": "Huevo generador de Esqueleto glacial",
+    "slug": "huevo-generador-de-esqueleto-glacial"
+  },
+  "strider_spawn_egg": {
+    "nombre": "Huevo generador de Lava Strider",
+    "slug": "huevo-generador-de-lava-strider"
+  },
+  "string": {
+    "nombre": "Cuerda",
+    "slug": "cuerda"
+  },
+  "stripped_acacia_log": {
+    "nombre": "Tronco de acacia descortezado",
+    "slug": "tronco-de-acacia-descortezado"
+  },
+  "stripped_acacia_wood": {
+    "nombre": "Madera de acacia descortezado",
+    "slug": "madera-de-acacia-descortezado"
+  },
+  "stripped_bamboo_block": {
+    "nombre": "Bloque de bambú descortezado",
+    "slug": "bloque-de-bambu-descortezado"
+  },
+  "stripped_birch_log": {
+    "nombre": "Tronco de abedul descortezado",
+    "slug": "tronco-de-abedul-descortezado"
+  },
+  "stripped_birch_wood": {
+    "nombre": "Madera de abedul descortezado",
+    "slug": "madera-de-abedul-descortezado"
+  },
+  "stripped_cherry_log": {
+    "nombre": "Tronco de cerezo descortezado",
+    "slug": "tronco-de-cerezo-descortezado"
+  },
+  "stripped_cherry_wood": {
+    "nombre": "Madera de cerezo descortezado",
+    "slug": "madera-de-cerezo-descortezado"
+  },
+  "stripped_crimson_hyphae": {
+    "nombre": "Hifas carmesíes descortezadas",
+    "slug": "hifas-carmesies-descortezadas"
+  },
+  "stripped_crimson_stem": {
+    "nombre": "Tallo carmesí descortezado",
+    "slug": "tallo-carmesi-descortezado"
+  },
+  "stripped_dark_oak_log": {
+    "nombre": "Tronco de roble oscuro descortezado",
+    "slug": "tronco-de-roble-oscuro-descortezado"
+  },
+  "stripped_dark_oak_wood": {
+    "nombre": "Madera de roble oscuro descortezado",
+    "slug": "madera-de-roble-oscuro-descortezado"
+  },
+  "stripped_jungle_log": {
+    "nombre": "Tronco de jungla descortezado",
+    "slug": "tronco-de-jungla-descortezado"
+  },
+  "stripped_jungle_wood": {
+    "nombre": "Madera de jungla descortezado",
+    "slug": "madera-de-jungla-descortezado"
+  },
+  "stripped_mangrove_log": {
+    "nombre": "Tronco de mangle descortezado",
+    "slug": "tronco-de-mangle-descortezado"
+  },
+  "stripped_mangrove_wood": {
+    "nombre": "Madera de mangle descortezado",
+    "slug": "madera-de-mangle-descortezado"
+  },
+  "stripped_oak_log": {
+    "nombre": "Tronco de roble descortezado",
+    "slug": "tronco-de-roble-descortezado"
+  },
+  "stripped_oak_wood": {
+    "nombre": "Madera de roble descortezado",
+    "slug": "madera-de-roble-descortezado"
+  },
+  "stripped_pale_oak_log": {
+    "nombre": "Tronco de roble pálido descortezado",
+    "slug": "tronco-de-roble-palido-descortezado"
+  },
+  "stripped_pale_oak_wood": {
+    "nombre": "Madera de roble pálido descortezado",
+    "slug": "madera-de-roble-palido-descortezado"
+  },
+  "stripped_spruce_log": {
+    "nombre": "Tronco de abeto descortezado",
+    "slug": "tronco-de-abeto-descortezado"
+  },
+  "stripped_spruce_wood": {
+    "nombre": "Madera de abeto descortezado",
+    "slug": "madera-de-abeto-descortezado"
+  },
+  "stripped_warped_hyphae": {
+    "nombre": "Hifas deformadas descortezadas",
+    "slug": "hifas-deformadas-descortezadas"
+  },
+  "stripped_warped_stem": {
+    "nombre": "Tallo deformado descortezado",
+    "slug": "tallo-deformado-descortezado"
+  },
+  "structure_block": {
+    "nombre": "Bloque de estructura",
+    "slug": "bloque-de-estructura"
+  },
+  "structure_void": {
+    "nombre": "Vacío estructural",
+    "slug": "vacio-estructural"
+  },
+  "sugar": {
+    "nombre": "Azúcar",
+    "slug": "azucar"
+  },
+  "sugar_cane": {
+    "nombre": "Caña de azúcar",
+    "slug": "cana-de-azucar"
+  },
+  "sunflower": {
+    "nombre": "Girasol",
+    "slug": "girasol"
+  },
+  "suspicious_gravel": {
+    "nombre": "Grava sospechosa",
+    "slug": "grava-sospechosa"
+  },
+  "suspicious_sand": {
+    "nombre": "Arena sospechosa",
+    "slug": "arena-sospechosa"
+  },
+  "suspicious_stew": {
+    "nombre": "Estofado sospechoso",
+    "slug": "estofado-sospechoso"
+  },
+  "sweet_berries": {
+    "nombre": "Bayas dulces",
+    "slug": "bayas-dulces"
+  },
+  "tadpole_bucket": {
+    "nombre": "Cubo con renacuajo",
+    "slug": "cubo-con-renacuajo"
+  },
+  "tadpole_spawn_egg": {
+    "nombre": "Huevo generador de Renacuajo",
+    "slug": "huevo-generador-de-renacuajo"
+  },
+  "tall_grass": {
+    "nombre": "Hierba alta",
+    "slug": "hierba-alta"
+  },
+  "target": {
+    "nombre": "Diana",
+    "slug": "diana"
+  },
+  "terracotta": {
+    "nombre": "Terracota",
+    "slug": "terracota"
+  },
+  "tide_armor_trim_smithing_template": {
+    "nombre": "Plantilla de adorno de la marea",
+    "slug": "plantilla-de-adorno-de-la-marea"
+  },
+  "tinted_glass": {
+    "nombre": "Cristal tintado",
+    "slug": "cristal-tintado"
+  },
+  "tipped_arrow": {
+    "nombre": "Flecha con efecto",
+    "slug": "flecha-con-efecto"
+  },
+  "tnt": {
+    "nombre": "Dinamita",
+    "slug": "dinamita"
+  },
+  "tnt_minecart": {
+    "nombre": "Vagoneta con dinamita",
+    "slug": "vagoneta-con-dinamita"
+  },
+  "torch": {
+    "nombre": "Antorcha",
+    "slug": "antorcha"
+  },
+  "torchflower": {
+    "nombre": "Flor antorcha",
+    "slug": "flor-antorcha"
+  },
+  "torchflower_seeds": {
+    "nombre": "Semillas de flor antorcha",
+    "slug": "semillas-de-flor-antorcha"
+  },
+  "totem_of_undying": {
+    "nombre": "Tótem de la inmortalidad",
+    "slug": "totem-de-la-inmortalidad"
+  },
+  "trader_llama_spawn_egg": {
+    "nombre": "Huevo generador de Llama de mercader",
+    "slug": "huevo-generador-de-llama-de-mercader"
+  },
+  "trapped_chest": {
+    "nombre": "Cofre trampa",
+    "slug": "cofre-trampa"
+  },
+  "trial_key": {
+    "nombre": "Llave de desafío",
+    "slug": "llave-de-desafio"
+  },
+  "trial_spawner": {
+    "nombre": "Generador de desafío",
+    "slug": "generador-de-desafio"
+  },
+  "tripwire_hook": {
+    "nombre": "Gancho de cable trampa",
+    "slug": "gancho-de-cable-trampa"
+  },
+  "tropical_fish": {
+    "nombre": "Pez tropical",
+    "slug": "pez-tropical"
+  },
+  "tropical_fish_bucket": {
+    "nombre": "Cubo con pez tropical",
+    "slug": "cubo-con-pez-tropical"
+  },
+  "tropical_fish_spawn_egg": {
+    "nombre": "Huevo generador de Pez tropical",
+    "slug": "huevo-generador-de-pez-tropical"
+  },
+  "tube_coral": {
+    "nombre": "Coral de tubo",
+    "slug": "coral-de-tubo"
+  },
+  "tube_coral_block": {
+    "nombre": "Bloque de coral de tubo",
+    "slug": "bloque-de-coral-de-tubo"
+  },
+  "tube_coral_fan": {
+    "nombre": "Abanico de coral de tubo",
+    "slug": "abanico-de-coral-de-tubo"
+  },
+  "tuff": {
+    "nombre": "Toba",
+    "slug": "toba"
+  },
+  "tuff_brick_slab": {
+    "nombre": "Losa de ladrillo de toba",
+    "slug": "losa-de-ladrillo-de-toba"
+  },
+  "tuff_brick_stairs": {
+    "nombre": "Escaleras de ladrillo de toba",
+    "slug": "escaleras-de-ladrillo-de-toba"
+  },
+  "tuff_brick_wall": {
+    "nombre": "Muro de ladrillo de toba",
+    "slug": "muro-de-ladrillo-de-toba"
+  },
+  "tuff_bricks": {
+    "nombre": "Ladrillos de toba",
+    "slug": "ladrillos-de-toba"
+  },
+  "tuff_slab": {
+    "nombre": "Losa de toba",
+    "slug": "losa-de-toba"
+  },
+  "tuff_stairs": {
+    "nombre": "Escaleras de toba",
+    "slug": "escaleras-de-toba"
+  },
+  "tuff_wall": {
+    "nombre": "Muro de toba",
+    "slug": "muro-de-toba"
+  },
+  "turtle_egg": {
+    "nombre": "Huevo de tortuga",
+    "slug": "huevo-de-tortuga"
+  },
+  "turtle_scute": {
+    "nombre": "Escama de tortuga",
+    "slug": "escama-de-tortuga"
+  },
+  "turtle_spawn_egg": {
+    "nombre": "Huevo generador de Tortuga",
+    "slug": "huevo-generador-de-tortuga"
+  },
+  "twisting_vines": {
+    "nombre": "Lianas retorcidas",
+    "slug": "lianas-retorcidas"
+  },
+  "vault": {
+    "nombre": "Cámara acorazada",
+    "slug": "camara-acorazada"
+  },
+  "verdant_froglight": {
+    "nombre": "Farol de rana verde",
+    "slug": "farol-de-rana-verde"
+  },
+  "vex_armor_trim_smithing_template": {
+    "nombre": "Plantilla de adorno del vex",
+    "slug": "plantilla-de-adorno-del-vex"
+  },
+  "vex_spawn_egg": {
+    "nombre": "Huevo generador de Vex",
+    "slug": "huevo-generador-de-vex"
+  },
+  "villager_spawn_egg": {
+    "nombre": "Huevo generador de Aldeano",
+    "slug": "huevo-generador-de-aldeano"
+  },
+  "vindicator_spawn_egg": {
+    "nombre": "Huevo generador de Vindicador",
+    "slug": "huevo-generador-de-vindicador"
+  },
+  "vine": {
+    "nombre": "Liana",
+    "slug": "liana"
+  },
+  "wandering_trader_spawn_egg": {
+    "nombre": "Huevo generador de Mercader errante",
+    "slug": "huevo-generador-de-mercader-errante"
+  },
+  "ward_armor_trim_smithing_template": {
+    "nombre": "Plantilla de adorno del guardián",
+    "slug": "plantilla-de-adorno-del-guardian"
+  },
+  "warden_spawn_egg": {
+    "nombre": "Huevo generador de Warden",
+    "slug": "huevo-generador-de-warden"
+  },
+  "warped_button": {
+    "nombre": "Botón deformado",
+    "slug": "boton-deformado"
+  },
+  "warped_door": {
+    "nombre": "Puerta deformada",
+    "slug": "puerta-deformada"
+  },
+  "warped_fence": {
+    "nombre": "Valla deformada",
+    "slug": "valla-deformada"
+  },
+  "warped_fence_gate": {
+    "nombre": "Puerta de valla deformada",
+    "slug": "puerta-de-valla-deformada"
+  },
+  "warped_fungus": {
+    "nombre": "Hongo deformado",
+    "slug": "hongo-deformado"
+  },
+  "warped_fungus_on_a_stick": {
+    "nombre": "Hongo deformado en una caña",
+    "slug": "hongo-deformado-en-una-cana"
+  },
+  "warped_hanging_sign": {
+    "nombre": "Cartel colgante deformado",
+    "slug": "cartel-colgante-deformado"
+  },
+  "warped_hyphae": {
+    "nombre": "Hifas deformadas",
+    "slug": "hifas-deformadas"
+  },
+  "warped_nylium": {
+    "nombre": "Nylium deformado",
+    "slug": "nylium-deformado"
+  },
+  "warped_planks": {
+    "nombre": "Tablones deformado",
+    "slug": "tablones-deformado"
+  },
+  "warped_pressure_plate": {
+    "nombre": "Placa de presión deformada",
+    "slug": "placa-de-presion-deformada"
+  },
+  "warped_roots": {
+    "nombre": "Raíces deformadas",
+    "slug": "raices-deformadas"
+  },
+  "warped_sign": {
+    "nombre": "Cartel deformado",
+    "slug": "cartel-deformado"
+  },
+  "warped_slab": {
+    "nombre": "Losa deformada",
+    "slug": "losa-deformada"
+  },
+  "warped_stairs": {
+    "nombre": "Escaleras deformada",
+    "slug": "escaleras-deformada"
+  },
+  "warped_stem": {
+    "nombre": "Tallo deformado",
+    "slug": "tallo-deformado"
+  },
+  "warped_trapdoor": {
+    "nombre": "Trampilla deformada",
+    "slug": "trampilla-deformada"
+  },
+  "warped_wart_block": {
+    "nombre": "Bloque de verruga deformada",
+    "slug": "bloque-de-verruga-deformada"
+  },
+  "water_bucket": {
+    "nombre": "Cubo de agua",
+    "slug": "cubo-de-agua"
+  },
+  "waxed_chiseled_copper": {
+    "nombre": "Cobre cincelado encerado",
+    "slug": "cobre-cincelado-encerado"
+  },
+  "waxed_copper_block": {
+    "nombre": "Bloque de cobre encerado",
+    "slug": "bloque-de-cobre-encerado"
+  },
+  "waxed_copper_bulb": {
+    "nombre": "Bombilla de cobre encerada",
+    "slug": "bombilla-de-cobre-encerada"
+  },
+  "waxed_copper_door": {
+    "nombre": "Puerta de cobre encerada",
+    "slug": "puerta-de-cobre-encerada"
+  },
+  "waxed_copper_grate": {
+    "nombre": "Rejilla de cobre encerada",
+    "slug": "rejilla-de-cobre-encerada"
+  },
+  "waxed_copper_trapdoor": {
+    "nombre": "Trampilla de cobre encerada",
+    "slug": "trampilla-de-cobre-encerada"
+  },
+  "waxed_cut_copper": {
+    "nombre": "Cobre cortado encerado",
+    "slug": "cobre-cortado-encerado"
+  },
+  "waxed_cut_copper_slab": {
+    "nombre": "Losa de cobre cortado encerada",
+    "slug": "losa-de-cobre-cortado-encerada"
+  },
+  "waxed_cut_copper_stairs": {
+    "nombre": "Escaleras de cobre cortado enceradas",
+    "slug": "escaleras-de-cobre-cortado-enceradas"
+  },
+  "waxed_exposed_chiseled_copper": {
+    "nombre": "Cobre cincelado expuesto encerado",
+    "slug": "cobre-cincelado-expuesto-encerado"
+  },
+  "waxed_exposed_copper": {
+    "nombre": "Bloque de cobre expuesto encerado",
+    "slug": "bloque-de-cobre-expuesto-encerado"
+  },
+  "waxed_exposed_copper_bulb": {
+    "nombre": "Bombilla de cobre expuesta encerada",
+    "slug": "bombilla-de-cobre-expuesta-encerada"
+  },
+  "waxed_exposed_copper_door": {
+    "nombre": "Puerta de cobre expuesta encerada",
+    "slug": "puerta-de-cobre-expuesta-encerada"
+  },
+  "waxed_exposed_copper_grate": {
+    "nombre": "Rejilla de cobre expuesta encerada",
+    "slug": "rejilla-de-cobre-expuesta-encerada"
+  },
+  "waxed_exposed_copper_trapdoor": {
+    "nombre": "Trampilla de cobre expuesta encerada",
+    "slug": "trampilla-de-cobre-expuesta-encerada"
+  },
+  "waxed_exposed_cut_copper": {
+    "nombre": "Cobre cortado expuesto encerado",
+    "slug": "cobre-cortado-expuesto-encerado"
+  },
+  "waxed_exposed_cut_copper_slab": {
+    "nombre": "Losa de cobre cortado expuesta encerada",
+    "slug": "losa-de-cobre-cortado-expuesta-encerada"
+  },
+  "waxed_exposed_cut_copper_stairs": {
+    "nombre": "Escaleras de cobre cortado expuestas enceradas",
+    "slug": "escaleras-de-cobre-cortado-expuestas-enceradas"
+  },
+  "waxed_oxidized_chiseled_copper": {
+    "nombre": "Cobre cincelado oxidado encerado",
+    "slug": "cobre-cincelado-oxidado-encerado"
+  },
+  "waxed_oxidized_copper": {
+    "nombre": "Bloque de cobre oxidado encerado",
+    "slug": "bloque-de-cobre-oxidado-encerado"
+  },
+  "waxed_oxidized_copper_bulb": {
+    "nombre": "Bombilla de cobre oxidada encerada",
+    "slug": "bombilla-de-cobre-oxidada-encerada"
+  },
+  "waxed_oxidized_copper_door": {
+    "nombre": "Puerta de cobre oxidada encerada",
+    "slug": "puerta-de-cobre-oxidada-encerada"
+  },
+  "waxed_oxidized_copper_grate": {
+    "nombre": "Rejilla de cobre oxidada encerada",
+    "slug": "rejilla-de-cobre-oxidada-encerada"
+  },
+  "waxed_oxidized_copper_trapdoor": {
+    "nombre": "Trampilla de cobre oxidada encerada",
+    "slug": "trampilla-de-cobre-oxidada-encerada"
+  },
+  "waxed_oxidized_cut_copper": {
+    "nombre": "Cobre cortado oxidado encerado",
+    "slug": "cobre-cortado-oxidado-encerado"
+  },
+  "waxed_oxidized_cut_copper_slab": {
+    "nombre": "Losa de cobre cortado oxidada encerada",
+    "slug": "losa-de-cobre-cortado-oxidada-encerada"
+  },
+  "waxed_oxidized_cut_copper_stairs": {
+    "nombre": "Escaleras de cobre cortado oxidadas enceradas",
+    "slug": "escaleras-de-cobre-cortado-oxidadas-enceradas"
+  },
+  "waxed_weathered_chiseled_copper": {
+    "nombre": "Cobre cincelado desgastado encerado",
+    "slug": "cobre-cincelado-desgastado-encerado"
+  },
+  "waxed_weathered_copper": {
+    "nombre": "Bloque de cobre desgastado encerado",
+    "slug": "bloque-de-cobre-desgastado-encerado"
+  },
+  "waxed_weathered_copper_bulb": {
+    "nombre": "Bombilla de cobre desgastada encerada",
+    "slug": "bombilla-de-cobre-desgastada-encerada"
+  },
+  "waxed_weathered_copper_door": {
+    "nombre": "Puerta de cobre desgastada encerada",
+    "slug": "puerta-de-cobre-desgastada-encerada"
+  },
+  "waxed_weathered_copper_grate": {
+    "nombre": "Rejilla de cobre desgastada encerada",
+    "slug": "rejilla-de-cobre-desgastada-encerada"
+  },
+  "waxed_weathered_copper_trapdoor": {
+    "nombre": "Trampilla de cobre desgastada encerada",
+    "slug": "trampilla-de-cobre-desgastada-encerada"
+  },
+  "waxed_weathered_cut_copper": {
+    "nombre": "Cobre cortado desgastado encerado",
+    "slug": "cobre-cortado-desgastado-encerado"
+  },
+  "waxed_weathered_cut_copper_slab": {
+    "nombre": "Losa de cobre cortado desgastada encerada",
+    "slug": "losa-de-cobre-cortado-desgastada-encerada"
+  },
+  "waxed_weathered_cut_copper_stairs": {
+    "nombre": "Escaleras de cobre cortado desgastadas enceradas",
+    "slug": "escaleras-de-cobre-cortado-desgastadas-enceradas"
+  },
+  "wayfinder_armor_trim_smithing_template": {
+    "nombre": "Plantilla de adorno del explorador",
+    "slug": "plantilla-de-adorno-del-explorador"
+  },
+  "weathered_chiseled_copper": {
+    "nombre": "Cobre cincelado desgastado",
+    "slug": "cobre-cincelado-desgastado"
+  },
+  "weathered_copper": {
+    "nombre": "Bloque de cobre desgastado",
+    "slug": "bloque-de-cobre-desgastado"
+  },
+  "weathered_copper_bulb": {
+    "nombre": "Bombilla de cobre desgastada",
+    "slug": "bombilla-de-cobre-desgastada"
+  },
+  "weathered_copper_door": {
+    "nombre": "Puerta de cobre desgastado",
+    "slug": "puerta-de-cobre-desgastado"
+  },
+  "weathered_copper_grate": {
+    "nombre": "Rejilla de cobre desgastada",
+    "slug": "rejilla-de-cobre-desgastada"
+  },
+  "weathered_copper_trapdoor": {
+    "nombre": "Trampilla de cobre desgastado",
+    "slug": "trampilla-de-cobre-desgastado"
+  },
+  "weathered_cut_copper": {
+    "nombre": "Cobre cortado desgastado",
+    "slug": "cobre-cortado-desgastado"
+  },
+  "weathered_cut_copper_slab": {
+    "nombre": "Losa de cobre cortado desgastada",
+    "slug": "losa-de-cobre-cortado-desgastada"
+  },
+  "weathered_cut_copper_stairs": {
+    "nombre": "Escaleras de cobre cortado desgastadas",
+    "slug": "escaleras-de-cobre-cortado-desgastadas"
+  },
+  "weeping_vines": {
+    "nombre": "Lianas llorosas",
+    "slug": "lianas-llorosas"
+  },
+  "wet_sponge": {
+    "nombre": "Esponja mojada",
+    "slug": "esponja-mojada"
+  },
+  "wheat": {
+    "nombre": "Trigo",
+    "slug": "trigo"
+  },
+  "wheat_seeds": {
+    "nombre": "Semillas de trigo",
+    "slug": "semillas-de-trigo"
+  },
+  "white_banner": {
+    "nombre": "Estandarte blanco",
+    "slug": "estandarte-blanco"
+  },
+  "white_bed": {
+    "nombre": "Cama blanca",
+    "slug": "cama-blanca"
+  },
+  "white_bundle": {
+    "nombre": "Saco blanco",
+    "slug": "saco-blanco"
+  },
+  "white_candle": {
+    "nombre": "Vela blanca",
+    "slug": "vela-blanca"
+  },
+  "white_carpet": {
+    "nombre": "Alfombra blanca",
+    "slug": "alfombra-blanca"
+  },
+  "white_concrete": {
+    "nombre": "Hormigón blanco",
+    "slug": "hormigon-blanco"
+  },
+  "white_concrete_powder": {
+    "nombre": "Hormigón en polvo blanco",
+    "slug": "hormigon-en-polvo-blanco"
+  },
+  "white_dye": {
+    "nombre": "Tinte blanco",
+    "slug": "tinte-blanco"
+  },
+  "white_glazed_terracotta": {
+    "nombre": "Terracota vidriada blanca",
+    "slug": "terracota-vidriada-blanca"
+  },
+  "white_shulker_box": {
+    "nombre": "Caja de shulker blanca",
+    "slug": "caja-de-shulker-blanca"
+  },
+  "white_stained_glass": {
+    "nombre": "Vidriera blanca",
+    "slug": "vidriera-blanca"
+  },
+  "white_stained_glass_pane": {
+    "nombre": "Panel de vidriera blanco",
+    "slug": "panel-de-vidriera-blanco"
+  },
+  "white_terracotta": {
+    "nombre": "Terracota blanca",
+    "slug": "terracota-blanca"
+  },
+  "white_tulip": {
+    "nombre": "Tulipán blanco",
+    "slug": "tulipan-blanco"
+  },
+  "white_wool": {
+    "nombre": "Lana blanca",
+    "slug": "lana-blanca"
+  },
+  "wild_armor_trim_smithing_template": {
+    "nombre": "Plantilla de adorno de lo salvaje",
+    "slug": "plantilla-de-adorno-de-lo-salvaje"
+  },
+  "wind_charge": {
+    "nombre": "Carga de viento",
+    "slug": "carga-de-viento"
+  },
+  "witch_spawn_egg": {
+    "nombre": "Huevo generador de Bruja",
+    "slug": "huevo-generador-de-bruja"
+  },
+  "wither_rose": {
+    "nombre": "Rosa del wither",
+    "slug": "rosa-del-wither"
+  },
+  "wither_skeleton_skull": {
+    "nombre": "Cráneo de esqueleto wither",
+    "slug": "craneo-de-esqueleto-wither"
+  },
+  "wither_skeleton_spawn_egg": {
+    "nombre": "Huevo generador de Esqueleto wither",
+    "slug": "huevo-generador-de-esqueleto-wither"
+  },
+  "wither_spawn_egg": {
+    "nombre": "Huevo generador de Wither",
+    "slug": "huevo-generador-de-wither"
+  },
+  "wolf_armor": {
+    "nombre": "Armadura para lobo",
+    "slug": "armadura-para-lobo"
+  },
+  "wolf_spawn_egg": {
+    "nombre": "Huevo generador de Lobo",
+    "slug": "huevo-generador-de-lobo"
+  },
+  "writable_book": {
+    "nombre": "Libro y pluma",
+    "slug": "libro-y-pluma"
+  },
+  "written_book": {
+    "nombre": "Libro escrito",
+    "slug": "libro-escrito"
+  },
+  "yellow_banner": {
+    "nombre": "Estandarte amarillo",
+    "slug": "estandarte-amarillo"
+  },
+  "yellow_bed": {
+    "nombre": "Cama amarilla",
+    "slug": "cama-amarilla"
+  },
+  "yellow_bundle": {
+    "nombre": "Saco amarillo",
+    "slug": "saco-amarillo"
+  },
+  "yellow_candle": {
+    "nombre": "Vela amarilla",
+    "slug": "vela-amarilla"
+  },
+  "yellow_carpet": {
+    "nombre": "Alfombra amarilla",
+    "slug": "alfombra-amarilla"
+  },
+  "yellow_concrete": {
+    "nombre": "Hormigón amarillo",
+    "slug": "hormigon-amarillo"
+  },
+  "yellow_concrete_powder": {
+    "nombre": "Hormigón en polvo amarillo",
+    "slug": "hormigon-en-polvo-amarillo"
+  },
+  "yellow_dye": {
+    "nombre": "Tinte amarillo",
+    "slug": "tinte-amarillo"
+  },
+  "yellow_glazed_terracotta": {
+    "nombre": "Terracota vidriada amarilla",
+    "slug": "terracota-vidriada-amarilla"
+  },
+  "yellow_shulker_box": {
+    "nombre": "Caja de shulker amarilla",
+    "slug": "caja-de-shulker-amarilla"
+  },
+  "yellow_stained_glass": {
+    "nombre": "Vidriera amarilla",
+    "slug": "vidriera-amarilla"
+  },
+  "yellow_stained_glass_pane": {
+    "nombre": "Panel de vidriera amarillo",
+    "slug": "panel-de-vidriera-amarillo"
+  },
+  "yellow_terracotta": {
+    "nombre": "Terracota amarilla",
+    "slug": "terracota-amarilla"
+  },
+  "yellow_wool": {
+    "nombre": "Lana amarilla",
+    "slug": "lana-amarilla"
+  },
+  "zoglin_spawn_egg": {
+    "nombre": "Huevo generador de Zoglin",
+    "slug": "huevo-generador-de-zoglin"
+  },
+  "zombie_head": {
+    "nombre": "Cabeza de zombi",
+    "slug": "cabeza-de-zombi"
+  },
+  "zombie_horse_spawn_egg": {
+    "nombre": "Huevo generador de Caballo zombi",
+    "slug": "huevo-generador-de-caballo-zombi"
+  },
+  "zombie_spawn_egg": {
+    "nombre": "Huevo generador de Zombi",
+    "slug": "huevo-generador-de-zombi"
+  },
+  "zombie_villager_spawn_egg": {
+    "nombre": "Huevo generador de Aldeano zombi",
+    "slug": "huevo-generador-de-aldeano-zombi"
+  },
+  "zombified_piglin_spawn_egg": {
+    "nombre": "Huevo generador de Piglin zombificado",
+    "slug": "huevo-generador-de-piglin-zombificado"
   }
 }

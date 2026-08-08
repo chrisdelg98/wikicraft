@@ -174,12 +174,20 @@ const otrosIdiomas = idiomas
         } catch {}
       })
 
-      // El service worker se registra despues de cargar: instalarlo nunca debe
-      // competir por ancho de banda con la pagina que el usuario esta viendo.
+      // El service worker solo se registra en produccion. En desarrollo cachea
+      // las paginas de localhost y acabas viendo versiones viejas del sitio sin
+      // entender por que; si ya quedo uno instalado de antes, se retira.
       if ('serviceWorker' in navigator) {
-        addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js').catch(() => {})
-        })
+        if (import.meta.env.PROD) {
+          addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js').catch(() => {})
+          })
+        } else {
+          navigator.serviceWorker
+            .getRegistrations()
+            .then((rs) => rs.forEach((r) => r.unregister()))
+            .catch(() => {})
+        }
       }
     </script>
   </body>
