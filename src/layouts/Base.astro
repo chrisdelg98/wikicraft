@@ -131,8 +131,49 @@ const otrosIdiomas = idiomas
           </div>
         </div>
 
-        <nav class="mt-3 -mx-1 overflow-x-auto" aria-label={ui(idioma, 'nav.inicio')}>
-          <ul class="flex w-max gap-1 px-1 pb-1">
+        {/* Dos navegaciones que se turnan por ancho. Los nueve modulos no caben
+            en una fila por debajo de 1280 px, y una barra de desplazamiento
+            horizontal ahi es fea y ademas facil de no ver: quien no la note
+            creera que la wiki tiene seis secciones. Por debajo se pliegan en un
+            desplegable, hecho con <details> para no gastar JavaScript en algo
+            que el navegador ya sabe hacer. */}
+        <nav class="mt-3" aria-label={ui(idioma, 'nav.secciones')}>
+          <details class="relative xl:hidden" data-menu-secciones>
+            <summary class="flex w-full cursor-pointer list-none items-center gap-2 bloque bloque-pulsable px-4 py-2.5 font-semibold [&::-webkit-details-marker]:hidden">
+              <Icono modulo={moduloActivo ?? 'items'} clase="h-4 w-4 text-acento" />
+              <span>{moduloActivo ? ui(idioma, `nav.${moduloActivo}`) : ui(idioma, 'nav.secciones')}</span>
+              <svg viewBox="0 0 16 16" class="ml-auto h-4 w-4" fill="currentColor" aria-hidden="true">
+                <path d="M3 6h10L8 12z" />
+              </svg>
+            </summary>
+
+            <ul class="absolute inset-x-0 top-full z-50 mt-1 grid grid-cols-2 gap-1 bloque bg-superficie-alta p-2 shadow-lg sm:grid-cols-3">
+              {
+                modulos.map((modulo) => (
+                  <li>
+                    <a
+                      href={`/${idioma}/${rutaModulo(idioma, modulo)}/`}
+                      aria-current={modulo === moduloActivo ? 'page' : undefined}
+                      class:list={[
+                        'flex items-center gap-2 bloque bloque-pulsable px-3 py-2 text-sm whitespace-nowrap',
+                        modulo === moduloActivo
+                          ? 'bg-acento font-bold text-acento-contraste'
+                          : 'font-semibold text-texto'
+                      ]}
+                    >
+                      <Icono
+                        modulo={modulo}
+                        clase={`h-4 w-4 ${modulo === moduloActivo ? '' : 'text-acento'}`}
+                      />
+                      {ui(idioma, `nav.${modulo}`)}
+                    </a>
+                  </li>
+                ))
+              }
+            </ul>
+          </details>
+
+          <ul class="hidden gap-1 xl:flex">
             {
               modulos.map((modulo) => (
                 <li>
@@ -140,11 +181,7 @@ const otrosIdiomas = idiomas
                     href={`/${idioma}/${rutaModulo(idioma, modulo)}/`}
                     aria-current={modulo === moduloActivo ? 'page' : undefined}
                     class:list={[
-                      // Mismo color que el boton de guia, y ahora tambien un
-                      // tamano parecido. A igualdad de color el boton mas
-                      // grande parece siempre tener mas contraste, y esa era
-                      // la diferencia que quedaba entre los dos.
-                      'flex items-center gap-2 bloque bloque-pulsable px-4 py-2.5 whitespace-nowrap',
+                      'flex items-center gap-2 bloque bloque-pulsable px-3 py-2 text-sm whitespace-nowrap',
                       modulo === moduloActivo
                         ? 'bg-acento font-bold text-acento-contraste'
                         : 'font-semibold text-texto'
