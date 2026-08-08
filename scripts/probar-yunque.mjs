@@ -39,12 +39,20 @@ for (const archivo of (await readdir(carpeta)).filter((f) => f.endsWith('.json')
 
 // --- Pruebas ---------------------------------------------------------------
 
-const { casos, secuencias } = await leer(join(RAIZ, 'data/pruebas/yunque.json'))
+const { casos, secuencias, uniones } = await leer(join(RAIZ, 'data/pruebas/yunque.json'))
 
 const fallos = []
 const linea = '-'.repeat(70)
 
 console.log(`\n${linea}\n  Motor del yunque\n${linea}\n`)
+
+for (const u of uniones ?? []) {
+  const r = unir(u.destino, u.sacrificio, tabla)
+  const bien = r?.coste === u.costeEsperado
+  console.log(`  ${bien ? 'OK  ' : 'MAL '} ${u.nombre}`)
+  console.log(`       coste ${r?.coste ?? 'imposible'} (esperado ${u.costeEsperado})`)
+  if (!bien) fallos.push(`${u.id}: coste ${r?.coste}, se esperaba ${u.costeEsperado}`)
+}
 
 for (const s of secuencias) {
   let estado = s.objeto

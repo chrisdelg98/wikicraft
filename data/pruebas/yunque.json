@@ -35,6 +35,23 @@
     },
 
     {
+      "id": "botas_siete_libros",
+      "nombre": "Botas de diamante con los siete encantamientos que admiten",
+      "objeto": { "ench": {}, "trabajos": 0 },
+      "libros": [
+        { "soul_speed": 3 },
+        { "thorns": 3 },
+        { "feather_falling": 4 },
+        { "depth_strider": 3 },
+        { "protection": 4 },
+        { "unbreaking": 3 },
+        { "mending": 1 }
+      ],
+      "costeEsperado": 66,
+      "comprueba": "El caso mas exigente que hemos encontrado, resuelto en la wiki oficial. Aplicar los siete libros de uno en uno ni siquiera es posible: alguna operacion pasaria del limite del yunque. La wiki da dos rutas, una de 68 buscando la minima penalizacion y otra de 66 buscando el minimo coste, y el motor encuentra 66."
+    },
+
+    {
       "id": "espada_ya_encantada",
       "nombre": "Espada de diamante que ya lleva Filo IV y Botin II",
       "objeto": { "ench": { "sharpness": 4, "looting": 2 }, "trabajos": 0 },
@@ -42,6 +59,24 @@
       "costeEsperado": 14,
       "resultadoEsperado": { "sharpness": 5, "looting": 2, "unbreaking": 3, "mending": 1 },
       "comprueba": "Que partir de una pieza ya encantada funciona, y que dos veces el mismo nivel suben uno: Filo IV mas Filo IV da Filo V."
+    }
+  ],
+
+  "uniones": [
+    {
+      "id": "asimetria_ranuras",
+      "nombre": "Cual va en la primera ranura cambia el precio",
+      "destino": { "ench": { "soul_speed": 3 }, "trabajos": 0 },
+      "sacrificio": { "ench": { "mending": 1 }, "trabajos": 0 },
+      "costeEsperado": 2,
+      "comprueba": "Con Velocidad del alma III a la izquierda y Reparacion a la derecha cuesta 2, porque solo se paga lo que se transfiere. Al reves cuesta 12, y el libro resultante es el mismo. Es la trampa que mas caro sale y la razon de que el motor pruebe las dos direcciones."
+    },
+    {
+      "id": "asimetria_ranuras_invertida",
+      "nombre": "El mismo par, con las ranuras al reves",
+      "destino": { "ench": { "mending": 1 }, "trabajos": 0 },
+      "sacrificio": { "ench": { "soul_speed": 3 }, "trabajos": 0 },
+      "costeEsperado": 12
     }
   ],
 
