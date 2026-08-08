@@ -598,13 +598,19 @@ const consejos = [
       <section class="border-t-2 border-borde pt-8">
         <h2 class="mb-6 text-2xl font-extrabold">{ui(idioma, 'ficha.relacionado')}</h2>
 
+        {/* Tarjeta compacta y mas columnas. Una ficha puede enlazar treinta y
+            cuatro entidades, y con la tarjeta entera esa lista ocupaba mas que
+            el contenido propio de la ficha. Aqui hace falta ojear y elegir. */}
         {grupos.map((grupo) => (
           <div class="mb-8">
-            <h3 class="titulo-seccion">{ui(idioma, grupo.etiqueta)}</h3>
-            <ul class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            <h3 class="titulo-seccion">
+              {ui(idioma, grupo.etiqueta)}
+              <span class="text-sm font-semibold text-texto-suave">{grupo.ids.length}</span>
+            </h3>
+            <ul class="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
               {grupo.ids.map((otro) => (
                 <li>
-                  <TarjetaEntidad idioma={idioma} id={otro} />
+                  <TarjetaEntidad idioma={idioma} id={otro} compacto={true} />
                 </li>
               ))}
             </ul>

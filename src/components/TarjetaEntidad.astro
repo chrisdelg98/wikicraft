@@ -3,15 +3,34 @@ import Etapa from './Etapa.astro'
 import Apilamiento from './Apilamiento.astro'
 import { t, rutaDe, grafo, ui, facetasDe } from '../lib/datos.js'
 
-const { idioma, id } = Astro.props
+/**
+ * compacto: solo nombre y categoria, para las listas de relaciones. Una ficha
+ * puede enlazar treinta y cuatro entidades, y con la tarjeta entera esa lista
+ * ocupaba mas que el contenido propio de la ficha. Ahi lo que hace falta es
+ * poder ojear y elegir, no leer.
+ */
+const { idioma, id, compacto = false } = Astro.props
 const nodo = grafo.get(id)
 const { entidad } = nodo
 const texto = t(idioma, id)
 
 // Dos facetas como maximo: con mas, la tarjeta vuelve a ser un muro de texto y
 // deja de leerse de un vistazo, que es justo lo que se quiere evitar.
-const facetas = facetasDe(nodo).slice(0, 2)
+const facetas = facetasDe(nodo).slice(0, compacto ? 1 : 2)
 ---
+
+{
+  compacto ? (
+    <a
+      href={rutaDe(idioma, id)}
+      class="flex h-full flex-col gap-1 bloque bloque-pulsable px-3 py-2"
+    >
+      <span class="text-sm font-bold">{texto.nombre}</span>
+      {facetas.length > 0 && (
+        <span class="text-xs text-texto-suave">{ui(idioma, `faceta.${facetas[0]}`)}</span>
+      )}
+    </a>
+  ) : (
 
 <a href={rutaDe(idioma, id)} class="flex h-full flex-col gap-2 bloque bloque-pulsable p-3">
   <span class="font-bold">{texto.nombre}</span>
@@ -55,3 +74,5 @@ const facetas = facetasDe(nodo).slice(0, 2)
     </span>
   </span>
 </a>
+  )
+}
