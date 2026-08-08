@@ -26,10 +26,45 @@ const encantamientos = entidadesDe('enchantments')
   .filter((e) => e.libro != null)
   .sort((a, b) => a.nombre.localeCompare(b.nombre))
 
+/**
+ * Dieciocho piezas seguidas en orden alfabetico obligan a leerlas todas para
+ * encontrar la tuya. Agrupadas, la mirada va primero al grupo. La armadura va
+ * delante porque es lo que mas gente encanta y lo que mas piezas tiene: son
+ * cinco decisiones seguidas, y ahi es donde el orden del yunque duele.
+ *
+ * El reparto es de presentacion, no de datos, y por eso vive aqui: en el juego
+ * un hacha es a la vez herramienta y arma, y para elegir en un desplegable hay
+ * que decidirse por una.
+ */
+const GRUPOS = [
+  { id: 'armadura', miembros: ['casco', 'pechera', 'pantalones', 'botas', 'elitros'] },
+  { id: 'armas', miembros: ['espada', 'arco', 'ballesta', 'tridente', 'maza', 'escudo'] },
+  {
+    id: 'herramientas',
+    miembros: ['pico', 'hacha', 'pala', 'azada', 'tijeras', 'cana', 'mechero']
+  }
+]
+
 /** Las familias de equipo que admiten encantamientos, sacadas de los datos. */
-const categorias = [...new Set(encantamientos.flatMap((e) => e.aplica))]
+const presentes = new Set(encantamientos.flatMap((e) => e.aplica))
+
+const grupos = GRUPOS.map(({ id, miembros }) => ({
+  nombre: ui(idioma, `encantador.grupo.${id}`),
+  categorias: miembros
+    .filter((c) => presentes.has(c))
+    .map((c) => ({ id: c, nombre: ui(idioma, `faceta.${c}`) }))
+})).filter((g) => g.categorias.length > 0)
+
+// Red de seguridad: si algun dia un encantamiento estrena una categoria, que
+// aparezca al final en vez de desaparecer del desplegable sin avisar.
+const sueltas = [...presentes]
+  .filter((c) => !GRUPOS.some((g) => g.miembros.includes(c)))
   .map((c) => ({ id: c, nombre: ui(idioma, `faceta.${c}`) }))
   .sort((a, b) => a.nombre.localeCompare(b.nombre))
+
+if (sueltas.length > 0) {
+  grupos.push({ nombre: ui(idioma, 'encantador.grupo.otros'), categorias: sueltas })
+}
 ---
 
 <Base
@@ -50,13 +85,12 @@ const categorias = [...new Set(encantamientos.flatMap((e) => e.aplica))]
           data-categoria
           class="h-12 w-full bloque bg-superficie-alta px-3 text-base font-semibold sm:max-w-xs"
         >
-          {/* El pico primero y no la primera por orden alfabetico: es la pieza
-              que mas gente encanta, y asi al abrir la pagina ya hay algo util
-              en pantalla en vez de la lista del arco. */}
-          {categorias.map((c) => (
-            <option value={c.id} selected={c.id === 'pico'}>
-              {c.nombre}
-            </option>
+          {grupos.map((g) => (
+            <optgroup label={g.nombre}>
+              {g.categorias.map((c) => (
+                <option value={c.id}>{c.nombre}</option>
+              ))}
+            </optgroup>
           ))}
         </select>
       </section>
