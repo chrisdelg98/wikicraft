@@ -1,0 +1,26 @@
+{
+  "$schema": "../../schemas/potion.schema.json",
+  "id": "healing_potion",
+  "tipo": "pocion",
+  "etapa": "nether",
+  "relevancia": "alta",
+  "efecto": "curacion",
+  "presentacion": "bebible",
+  "variante": "normal",
+  "nivel": 1,
+  "utilidad": 5,
+  "beneficiosa": true,
+  "duracionSegundos": 0,
+  "derivaDe": "awkward_potion",
+  "ingrediente": "glistering_melon_slice",
+  "mejorada": {
+    "ingrediente": "glowstone_dust",
+    "duracionSegundos": 0
+  },
+  "etiquetas": [
+    "poción de curación",
+    "curacion",
+    "pocion",
+    "soporte para pociones"
+  ]
+}

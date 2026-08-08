@@ -1,0 +1,28 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "waxed_oxidized_cut_copper_slab_receta_con_honeycomb",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "waxed_oxidized_cut_copper_slab",
+    "cantidad": 1
+  },
+  "variantePor": "honeycomb",
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "honeycomb"
+      ],
+      "cantidad": 1
+    },
+    {
+      "opciones": [
+        "oxidized_cut_copper_slab"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

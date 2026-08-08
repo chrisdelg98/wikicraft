@@ -1,0 +1,28 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "light_gray_dye_receta_con_black_dye",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "light_gray_dye",
+    "cantidad": 3
+  },
+  "variantePor": "black_dye",
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "black_dye"
+      ],
+      "cantidad": 1
+    },
+    {
+      "opciones": [
+        "white_dye"
+      ],
+      "cantidad": 2
+    }
+  ],
+  "estacion": "inventario"
+}

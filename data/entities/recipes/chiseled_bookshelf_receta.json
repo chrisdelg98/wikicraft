@@ -1,0 +1,48 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "chiseled_bookshelf_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "chiseled_bookshelf",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "BBB",
+    "AAA"
+  ],
+  "clave": {
+    "A": [
+      "acacia_planks",
+      "bamboo_planks",
+      "birch_planks",
+      "cherry_planks",
+      "crimson_planks",
+      "dark_oak_planks",
+      "jungle_planks",
+      "mangrove_planks",
+      "oak_planks",
+      "pale_oak_planks",
+      "spruce_planks",
+      "warped_planks"
+    ],
+    "B": [
+      "acacia_slab",
+      "bamboo_slab",
+      "birch_slab",
+      "cherry_slab",
+      "crimson_slab",
+      "dark_oak_slab",
+      "jungle_slab",
+      "mangrove_slab",
+      "oak_slab",
+      "pale_oak_slab",
+      "spruce_slab",
+      "warped_slab"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

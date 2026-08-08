@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "white_carpet_receta_con_white_wool",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "white_carpet",
+    "cantidad": 3
+  },
+  "variantePor": "white_wool",
+  "conForma": true,
+  "patron": [
+    "AA"
+  ],
+  "clave": {
+    "A": [
+      "white_wool"
+    ]
+  },
+  "estacion": "inventario"
+}

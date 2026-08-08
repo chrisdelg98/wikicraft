@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "sugar_receta_con_honey_bottle",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "sugar",
+    "cantidad": 3
+  },
+  "variantePor": "honey_bottle",
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "honey_bottle"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

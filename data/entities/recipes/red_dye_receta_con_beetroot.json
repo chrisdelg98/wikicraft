@@ -1,0 +1,24 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "red_dye_receta_con_beetroot",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "red_dye",
+    "cantidad": 1
+  },
+  "variantePor": "beetroot",
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "beetroot",
+        "poppy",
+        "red_tulip"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

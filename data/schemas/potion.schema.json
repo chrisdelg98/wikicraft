@@ -74,6 +74,35 @@
     "beneficiosa": {
       "type": "boolean",
       "description": "Si el efecto ayuda o perjudica a quien la recibe. Determina si tiene sentido bebersela o lanzarla."
+    },
+
+    "utilidad": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Cuanto compensa esta pocion en la practica, combinando lo util que es su efecto con lo facil que es conseguir el ingrediente. Es un juicio editorial y sirve para ordenar el ranking."
+    },
+
+    "prolongada": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ingrediente", "duracionSegundos"],
+      "description": "Que se le anade para que dure mas, y cuanto pasa a durar.",
+      "properties": {
+        "ingrediente": { "$ref": "_comun.schema.json#/$defs/referencia" },
+        "duracionSegundos": { "type": "integer", "minimum": 1 }
+      }
+    },
+
+    "mejorada": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ingrediente"],
+      "description": "Que se le anade para subirla a nivel II, y cuanto dura entonces. No todas las pociones admiten nivel II.",
+      "properties": {
+        "ingrediente": { "$ref": "_comun.schema.json#/$defs/referencia" },
+        "duracionSegundos": { "type": "integer", "minimum": 0 }
+      }
     }
   },
   "additionalProperties": false

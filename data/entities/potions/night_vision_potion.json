@@ -1,0 +1,26 @@
+{
+  "$schema": "../../schemas/potion.schema.json",
+  "id": "night_vision_potion",
+  "tipo": "pocion",
+  "etapa": "nether",
+  "relevancia": "alta",
+  "efecto": "vision_nocturna",
+  "presentacion": "bebible",
+  "variante": "normal",
+  "nivel": 1,
+  "utilidad": 4,
+  "beneficiosa": true,
+  "duracionSegundos": 180,
+  "derivaDe": "awkward_potion",
+  "ingrediente": "golden_carrot",
+  "prolongada": {
+    "ingrediente": "redstone",
+    "duracionSegundos": 480
+  },
+  "etiquetas": [
+    "poción de visión nocturna",
+    "vision_nocturna",
+    "pocion",
+    "soporte para pociones"
+  ]
+}

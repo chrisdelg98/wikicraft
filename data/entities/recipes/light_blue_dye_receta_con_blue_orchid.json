@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "light_blue_dye_receta_con_blue_orchid",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "light_blue_dye",
+    "cantidad": 1
+  },
+  "variantePor": "blue_orchid",
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "blue_orchid"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

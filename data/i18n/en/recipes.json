@@ -159,53 +159,9 @@
     "nombre": "Bamboo Trapdoor Recipe",
     "slug": "bamboo-trapdoor-recipe"
   },
-  "barrel_receta_1": {
-    "nombre": "Barrel Recipe 1",
-    "slug": "barrel-recipe-1"
-  },
-  "barrel_receta_10": {
-    "nombre": "Barrel Recipe 10",
-    "slug": "barrel-recipe-10"
-  },
-  "barrel_receta_11": {
-    "nombre": "Barrel Recipe 11",
-    "slug": "barrel-recipe-11"
-  },
-  "barrel_receta_12": {
-    "nombre": "Barrel Recipe 12",
-    "slug": "barrel-recipe-12"
-  },
-  "barrel_receta_2": {
-    "nombre": "Barrel Recipe 2",
-    "slug": "barrel-recipe-2"
-  },
-  "barrel_receta_3": {
-    "nombre": "Barrel Recipe 3",
-    "slug": "barrel-recipe-3"
-  },
-  "barrel_receta_4": {
-    "nombre": "Barrel Recipe 4",
-    "slug": "barrel-recipe-4"
-  },
-  "barrel_receta_5": {
-    "nombre": "Barrel Recipe 5",
-    "slug": "barrel-recipe-5"
-  },
-  "barrel_receta_6": {
-    "nombre": "Barrel Recipe 6",
-    "slug": "barrel-recipe-6"
-  },
-  "barrel_receta_7": {
-    "nombre": "Barrel Recipe 7",
-    "slug": "barrel-recipe-7"
-  },
-  "barrel_receta_8": {
-    "nombre": "Barrel Recipe 8",
-    "slug": "barrel-recipe-8"
-  },
-  "barrel_receta_9": {
-    "nombre": "Barrel Recipe 9",
-    "slug": "barrel-recipe-9"
+  "barrel_receta": {
+    "nombre": "Barrel Recipe",
+    "slug": "barrel-recipe"
   },
   "beacon_receta": {
     "nombre": "Beacon Recipe",
@@ -279,25 +235,25 @@
     "nombre": "Black Banner Recipe",
     "slug": "black-banner-recipe"
   },
-  "black_bed_receta_1": {
-    "nombre": "Black Bed Recipe 1",
-    "slug": "black-bed-recipe-1"
+  "black_bed_receta_con_black_dye": {
+    "nombre": "Black Bed Recipe (with Black Dye)",
+    "slug": "black-bed-recipe-with-black-dye"
   },
-  "black_bed_receta_2": {
-    "nombre": "Black Bed Recipe 2",
-    "slug": "black-bed-recipe-2"
+  "black_bed_receta_con_black_wool": {
+    "nombre": "Black Bed Recipe (with Black Wool)",
+    "slug": "black-bed-recipe-with-black-wool"
   },
   "black_candle_receta": {
     "nombre": "Black Candle Recipe",
     "slug": "black-candle-recipe"
   },
-  "black_carpet_receta_1": {
-    "nombre": "Black Carpet Recipe 1",
-    "slug": "black-carpet-recipe-1"
+  "black_carpet_receta_con_black_dye": {
+    "nombre": "Black Carpet Recipe (with Black Dye)",
+    "slug": "black-carpet-recipe-with-black-dye"
   },
-  "black_carpet_receta_2": {
-    "nombre": "Black Carpet Recipe 2",
-    "slug": "black-carpet-recipe-2"
+  "black_carpet_receta_con_black_wool": {
+    "nombre": "Black Carpet Recipe (with Black Wool)",
+    "slug": "black-carpet-recipe-with-black-wool"
   },
   "black_concrete_powder_receta": {
     "nombre": "Black Concrete Powder Recipe",
@@ -307,13 +263,13 @@
     "nombre": "Black Dye Recipe",
     "slug": "black-dye-recipe"
   },
-  "black_stained_glass_pane_receta_1": {
-    "nombre": "Black Stained Glass Pane Recipe 1",
-    "slug": "black-stained-glass-pane-recipe-1"
+  "black_stained_glass_pane_receta_con_black_stained_glass": {
+    "nombre": "Black Stained Glass Pane Recipe (with Black Stained Glass)",
+    "slug": "black-stained-glass-pane-recipe-with-black-stained-glass"
   },
-  "black_stained_glass_pane_receta_2": {
-    "nombre": "Black Stained Glass Pane Recipe 2",
-    "slug": "black-stained-glass-pane-recipe-2"
+  "black_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Black Stained Glass Pane Recipe (with Glass Pane)",
+    "slug": "black-stained-glass-pane-recipe-with-glass-pane"
   },
   "black_stained_glass_receta": {
     "nombre": "Black Stained Glass Recipe",
@@ -351,25 +307,25 @@
     "nombre": "Blue Banner Recipe",
     "slug": "blue-banner-recipe"
   },
-  "blue_bed_receta_1": {
-    "nombre": "Blue Bed Recipe 1",
-    "slug": "blue-bed-recipe-1"
+  "blue_bed_receta_con_black_bed": {
+    "nombre": "Blue Bed Recipe (with Black Bed)",
+    "slug": "blue-bed-recipe-with-black-bed"
   },
-  "blue_bed_receta_2": {
-    "nombre": "Blue Bed Recipe 2",
-    "slug": "blue-bed-recipe-2"
+  "blue_bed_receta_con_blue_wool": {
+    "nombre": "Blue Bed Recipe (with Blue Wool)",
+    "slug": "blue-bed-recipe-with-blue-wool"
   },
   "blue_candle_receta": {
     "nombre": "Blue Candle Recipe",
     "slug": "blue-candle-recipe"
   },
-  "blue_carpet_receta_1": {
-    "nombre": "Blue Carpet Recipe 1",
-    "slug": "blue-carpet-recipe-1"
+  "blue_carpet_receta_con_black_carpet": {
+    "nombre": "Blue Carpet Recipe (with Black Carpet)",
+    "slug": "blue-carpet-recipe-with-black-carpet"
   },
-  "blue_carpet_receta_2": {
-    "nombre": "Blue Carpet Recipe 2",
-    "slug": "blue-carpet-recipe-2"
+  "blue_carpet_receta_con_blue_wool": {
+    "nombre": "Blue Carpet Recipe (with Blue Wool)",
+    "slug": "blue-carpet-recipe-with-blue-wool"
   },
   "blue_concrete_powder_receta": {
     "nombre": "Blue Concrete Powder Recipe",
@@ -383,13 +339,13 @@
     "nombre": "Blue Ice Recipe",
     "slug": "blue-ice-recipe"
   },
-  "blue_stained_glass_pane_receta_1": {
-    "nombre": "Blue Stained Glass Pane Recipe 1",
-    "slug": "blue-stained-glass-pane-recipe-1"
+  "blue_stained_glass_pane_receta_con_blue_stained_glass": {
+    "nombre": "Blue Stained Glass Pane Recipe (with Blue Stained Glass)",
+    "slug": "blue-stained-glass-pane-recipe-with-blue-stained-glass"
   },
-  "blue_stained_glass_pane_receta_2": {
-    "nombre": "Blue Stained Glass Pane Recipe 2",
-    "slug": "blue-stained-glass-pane-recipe-2"
+  "blue_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Blue Stained Glass Pane Recipe (with Glass Pane)",
+    "slug": "blue-stained-glass-pane-recipe-with-glass-pane"
   },
   "blue_stained_glass_receta": {
     "nombre": "Blue Stained Glass Recipe",
@@ -411,13 +367,13 @@
     "nombre": "Bone Block Recipe",
     "slug": "bone-block-recipe"
   },
-  "bone_meal_receta_1": {
-    "nombre": "Bone Meal Recipe 1",
-    "slug": "bone-meal-recipe-1"
+  "bone_meal_receta_con_bone": {
+    "nombre": "Bone Meal Recipe (with Bone)",
+    "slug": "bone-meal-recipe-with-bone"
   },
-  "bone_meal_receta_2": {
-    "nombre": "Bone Meal Recipe 2",
-    "slug": "bone-meal-recipe-2"
+  "bone_meal_receta_con_bone_block": {
+    "nombre": "Bone Meal Recipe (with Bone Block)",
+    "slug": "bone-meal-recipe-with-bone-block"
   },
   "book_receta": {
     "nombre": "Book Recipe",
@@ -467,25 +423,25 @@
     "nombre": "Brown Banner Recipe",
     "slug": "brown-banner-recipe"
   },
-  "brown_bed_receta_1": {
-    "nombre": "Brown Bed Recipe 1",
-    "slug": "brown-bed-recipe-1"
+  "brown_bed_receta_con_black_bed": {
+    "nombre": "Brown Bed Recipe (with Black Bed)",
+    "slug": "brown-bed-recipe-with-black-bed"
   },
-  "brown_bed_receta_2": {
-    "nombre": "Brown Bed Recipe 2",
-    "slug": "brown-bed-recipe-2"
+  "brown_bed_receta_con_brown_wool": {
+    "nombre": "Brown Bed Recipe (with Brown Wool)",
+    "slug": "brown-bed-recipe-with-brown-wool"
   },
   "brown_candle_receta": {
     "nombre": "Brown Candle Recipe",
     "slug": "brown-candle-recipe"
   },
-  "brown_carpet_receta_1": {
-    "nombre": "Brown Carpet Recipe 1",
-    "slug": "brown-carpet-recipe-1"
+  "brown_carpet_receta_con_black_carpet": {
+    "nombre": "Brown Carpet Recipe (with Black Carpet)",
+    "slug": "brown-carpet-recipe-with-black-carpet"
   },
-  "brown_carpet_receta_2": {
-    "nombre": "Brown Carpet Recipe 2",
-    "slug": "brown-carpet-recipe-2"
+  "brown_carpet_receta_con_brown_wool": {
+    "nombre": "Brown Carpet Recipe (with Brown Wool)",
+    "slug": "brown-carpet-recipe-with-brown-wool"
   },
   "brown_concrete_powder_receta": {
     "nombre": "Brown Concrete Powder Recipe",
@@ -495,13 +451,13 @@
     "nombre": "Brown Dye Recipe",
     "slug": "brown-dye-recipe"
   },
-  "brown_stained_glass_pane_receta_1": {
-    "nombre": "Brown Stained Glass Pane Recipe 1",
-    "slug": "brown-stained-glass-pane-recipe-1"
+  "brown_stained_glass_pane_receta_con_brown_stained_glass": {
+    "nombre": "Brown Stained Glass Pane Recipe (with Brown Stained Glass)",
+    "slug": "brown-stained-glass-pane-recipe-with-brown-stained-glass"
   },
-  "brown_stained_glass_pane_receta_2": {
-    "nombre": "Brown Stained Glass Pane Recipe 2",
-    "slug": "brown-stained-glass-pane-recipe-2"
+  "brown_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Brown Stained Glass Pane Recipe (with Glass Pane)",
+    "slug": "brown-stained-glass-pane-recipe-with-glass-pane"
   },
   "brown_stained_glass_receta": {
     "nombre": "Brown Stained Glass Recipe",
@@ -535,181 +491,9 @@
     "nombre": "Calibrated Sculk Sensor Recipe",
     "slug": "calibrated-sculk-sensor-recipe"
   },
-  "campfire_receta_1": {
-    "nombre": "Campfire Recipe 1",
-    "slug": "campfire-recipe-1"
-  },
-  "campfire_receta_10": {
-    "nombre": "Campfire Recipe 10",
-    "slug": "campfire-recipe-10"
-  },
-  "campfire_receta_11": {
-    "nombre": "Campfire Recipe 11",
-    "slug": "campfire-recipe-11"
-  },
-  "campfire_receta_12": {
-    "nombre": "Campfire Recipe 12",
-    "slug": "campfire-recipe-12"
-  },
-  "campfire_receta_13": {
-    "nombre": "Campfire Recipe 13",
-    "slug": "campfire-recipe-13"
-  },
-  "campfire_receta_14": {
-    "nombre": "Campfire Recipe 14",
-    "slug": "campfire-recipe-14"
-  },
-  "campfire_receta_15": {
-    "nombre": "Campfire Recipe 15",
-    "slug": "campfire-recipe-15"
-  },
-  "campfire_receta_16": {
-    "nombre": "Campfire Recipe 16",
-    "slug": "campfire-recipe-16"
-  },
-  "campfire_receta_17": {
-    "nombre": "Campfire Recipe 17",
-    "slug": "campfire-recipe-17"
-  },
-  "campfire_receta_18": {
-    "nombre": "Campfire Recipe 18",
-    "slug": "campfire-recipe-18"
-  },
-  "campfire_receta_19": {
-    "nombre": "Campfire Recipe 19",
-    "slug": "campfire-recipe-19"
-  },
-  "campfire_receta_2": {
-    "nombre": "Campfire Recipe 2",
-    "slug": "campfire-recipe-2"
-  },
-  "campfire_receta_20": {
-    "nombre": "Campfire Recipe 20",
-    "slug": "campfire-recipe-20"
-  },
-  "campfire_receta_21": {
-    "nombre": "Campfire Recipe 21",
-    "slug": "campfire-recipe-21"
-  },
-  "campfire_receta_22": {
-    "nombre": "Campfire Recipe 22",
-    "slug": "campfire-recipe-22"
-  },
-  "campfire_receta_23": {
-    "nombre": "Campfire Recipe 23",
-    "slug": "campfire-recipe-23"
-  },
-  "campfire_receta_24": {
-    "nombre": "Campfire Recipe 24",
-    "slug": "campfire-recipe-24"
-  },
-  "campfire_receta_25": {
-    "nombre": "Campfire Recipe 25",
-    "slug": "campfire-recipe-25"
-  },
-  "campfire_receta_26": {
-    "nombre": "Campfire Recipe 26",
-    "slug": "campfire-recipe-26"
-  },
-  "campfire_receta_27": {
-    "nombre": "Campfire Recipe 27",
-    "slug": "campfire-recipe-27"
-  },
-  "campfire_receta_28": {
-    "nombre": "Campfire Recipe 28",
-    "slug": "campfire-recipe-28"
-  },
-  "campfire_receta_29": {
-    "nombre": "Campfire Recipe 29",
-    "slug": "campfire-recipe-29"
-  },
-  "campfire_receta_3": {
-    "nombre": "Campfire Recipe 3",
-    "slug": "campfire-recipe-3"
-  },
-  "campfire_receta_30": {
-    "nombre": "Campfire Recipe 30",
-    "slug": "campfire-recipe-30"
-  },
-  "campfire_receta_31": {
-    "nombre": "Campfire Recipe 31",
-    "slug": "campfire-recipe-31"
-  },
-  "campfire_receta_32": {
-    "nombre": "Campfire Recipe 32",
-    "slug": "campfire-recipe-32"
-  },
-  "campfire_receta_33": {
-    "nombre": "Campfire Recipe 33",
-    "slug": "campfire-recipe-33"
-  },
-  "campfire_receta_34": {
-    "nombre": "Campfire Recipe 34",
-    "slug": "campfire-recipe-34"
-  },
-  "campfire_receta_35": {
-    "nombre": "Campfire Recipe 35",
-    "slug": "campfire-recipe-35"
-  },
-  "campfire_receta_36": {
-    "nombre": "Campfire Recipe 36",
-    "slug": "campfire-recipe-36"
-  },
-  "campfire_receta_37": {
-    "nombre": "Campfire Recipe 37",
-    "slug": "campfire-recipe-37"
-  },
-  "campfire_receta_38": {
-    "nombre": "Campfire Recipe 38",
-    "slug": "campfire-recipe-38"
-  },
-  "campfire_receta_39": {
-    "nombre": "Campfire Recipe 39",
-    "slug": "campfire-recipe-39"
-  },
-  "campfire_receta_4": {
-    "nombre": "Campfire Recipe 4",
-    "slug": "campfire-recipe-4"
-  },
-  "campfire_receta_40": {
-    "nombre": "Campfire Recipe 40",
-    "slug": "campfire-recipe-40"
-  },
-  "campfire_receta_41": {
-    "nombre": "Campfire Recipe 41",
-    "slug": "campfire-recipe-41"
-  },
-  "campfire_receta_42": {
-    "nombre": "Campfire Recipe 42",
-    "slug": "campfire-recipe-42"
-  },
-  "campfire_receta_43": {
-    "nombre": "Campfire Recipe 43",
-    "slug": "campfire-recipe-43"
-  },
-  "campfire_receta_44": {
-    "nombre": "Campfire Recipe 44",
-    "slug": "campfire-recipe-44"
-  },
-  "campfire_receta_5": {
-    "nombre": "Campfire Recipe 5",
-    "slug": "campfire-recipe-5"
-  },
-  "campfire_receta_6": {
-    "nombre": "Campfire Recipe 6",
-    "slug": "campfire-recipe-6"
-  },
-  "campfire_receta_7": {
-    "nombre": "Campfire Recipe 7",
-    "slug": "campfire-recipe-7"
-  },
-  "campfire_receta_8": {
-    "nombre": "Campfire Recipe 8",
-    "slug": "campfire-recipe-8"
-  },
-  "campfire_receta_9": {
-    "nombre": "Campfire Recipe 9",
-    "slug": "campfire-recipe-9"
+  "campfire_receta": {
+    "nombre": "Campfire Recipe",
+    "slug": "campfire-recipe"
   },
   "candle_receta": {
     "nombre": "Candle Recipe",
@@ -795,53 +579,9 @@
     "nombre": "Chest Recipe",
     "slug": "chest-recipe"
   },
-  "chiseled_bookshelf_receta_1": {
-    "nombre": "Chiseled Bookshelf Recipe 1",
-    "slug": "chiseled-bookshelf-recipe-1"
-  },
-  "chiseled_bookshelf_receta_10": {
-    "nombre": "Chiseled Bookshelf Recipe 10",
-    "slug": "chiseled-bookshelf-recipe-10"
-  },
-  "chiseled_bookshelf_receta_11": {
-    "nombre": "Chiseled Bookshelf Recipe 11",
-    "slug": "chiseled-bookshelf-recipe-11"
-  },
-  "chiseled_bookshelf_receta_12": {
-    "nombre": "Chiseled Bookshelf Recipe 12",
-    "slug": "chiseled-bookshelf-recipe-12"
-  },
-  "chiseled_bookshelf_receta_2": {
-    "nombre": "Chiseled Bookshelf Recipe 2",
-    "slug": "chiseled-bookshelf-recipe-2"
-  },
-  "chiseled_bookshelf_receta_3": {
-    "nombre": "Chiseled Bookshelf Recipe 3",
-    "slug": "chiseled-bookshelf-recipe-3"
-  },
-  "chiseled_bookshelf_receta_4": {
-    "nombre": "Chiseled Bookshelf Recipe 4",
-    "slug": "chiseled-bookshelf-recipe-4"
-  },
-  "chiseled_bookshelf_receta_5": {
-    "nombre": "Chiseled Bookshelf Recipe 5",
-    "slug": "chiseled-bookshelf-recipe-5"
-  },
-  "chiseled_bookshelf_receta_6": {
-    "nombre": "Chiseled Bookshelf Recipe 6",
-    "slug": "chiseled-bookshelf-recipe-6"
-  },
-  "chiseled_bookshelf_receta_7": {
-    "nombre": "Chiseled Bookshelf Recipe 7",
-    "slug": "chiseled-bookshelf-recipe-7"
-  },
-  "chiseled_bookshelf_receta_8": {
-    "nombre": "Chiseled Bookshelf Recipe 8",
-    "slug": "chiseled-bookshelf-recipe-8"
-  },
-  "chiseled_bookshelf_receta_9": {
-    "nombre": "Chiseled Bookshelf Recipe 9",
-    "slug": "chiseled-bookshelf-recipe-9"
+  "chiseled_bookshelf_receta": {
+    "nombre": "Chiseled Bookshelf Recipe",
+    "slug": "chiseled-bookshelf-recipe"
   },
   "chiseled_copper_receta": {
     "nombre": "Chiseled Copper Recipe",
@@ -1071,45 +811,45 @@
     "nombre": "Cyan Banner Recipe",
     "slug": "cyan-banner-recipe"
   },
-  "cyan_bed_receta_1": {
-    "nombre": "Cyan Bed Recipe 1",
-    "slug": "cyan-bed-recipe-1"
+  "cyan_bed_receta_con_black_bed": {
+    "nombre": "Cyan Bed Recipe (with Black Bed)",
+    "slug": "cyan-bed-recipe-with-black-bed"
   },
-  "cyan_bed_receta_2": {
-    "nombre": "Cyan Bed Recipe 2",
-    "slug": "cyan-bed-recipe-2"
+  "cyan_bed_receta_con_cyan_wool": {
+    "nombre": "Cyan Bed Recipe (with Cyan Wool)",
+    "slug": "cyan-bed-recipe-with-cyan-wool"
   },
   "cyan_candle_receta": {
     "nombre": "Cyan Candle Recipe",
     "slug": "cyan-candle-recipe"
   },
-  "cyan_carpet_receta_1": {
-    "nombre": "Cyan Carpet Recipe 1",
-    "slug": "cyan-carpet-recipe-1"
+  "cyan_carpet_receta_con_black_carpet": {
+    "nombre": "Cyan Carpet Recipe (with Black Carpet)",
+    "slug": "cyan-carpet-recipe-with-black-carpet"
   },
-  "cyan_carpet_receta_2": {
-    "nombre": "Cyan Carpet Recipe 2",
-    "slug": "cyan-carpet-recipe-2"
+  "cyan_carpet_receta_con_cyan_wool": {
+    "nombre": "Cyan Carpet Recipe (with Cyan Wool)",
+    "slug": "cyan-carpet-recipe-with-cyan-wool"
   },
   "cyan_concrete_powder_receta": {
     "nombre": "Cyan Concrete Powder Recipe",
     "slug": "cyan-concrete-powder-recipe"
   },
-  "cyan_dye_receta_1": {
-    "nombre": "Cyan Dye Recipe 1",
-    "slug": "cyan-dye-recipe-1"
+  "cyan_dye_receta_con_blue_dye": {
+    "nombre": "Cyan Dye Recipe (with Blue Dye)",
+    "slug": "cyan-dye-recipe-with-blue-dye"
   },
-  "cyan_dye_receta_2": {
-    "nombre": "Cyan Dye Recipe 2",
-    "slug": "cyan-dye-recipe-2"
+  "cyan_dye_receta_con_pitcher_plant": {
+    "nombre": "Cyan Dye Recipe (with Pitcher Plant)",
+    "slug": "cyan-dye-recipe-with-pitcher-plant"
   },
-  "cyan_stained_glass_pane_receta_1": {
-    "nombre": "Cyan Stained Glass Pane Recipe 1",
-    "slug": "cyan-stained-glass-pane-recipe-1"
+  "cyan_stained_glass_pane_receta_con_cyan_stained_glass": {
+    "nombre": "Cyan Stained Glass Pane Recipe (with Cyan Stained Glass)",
+    "slug": "cyan-stained-glass-pane-recipe-with-cyan-stained-glass"
   },
-  "cyan_stained_glass_pane_receta_2": {
-    "nombre": "Cyan Stained Glass Pane Recipe 2",
-    "slug": "cyan-stained-glass-pane-recipe-2"
+  "cyan_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Cyan Stained Glass Pane Recipe (with Glass Pane)",
+    "slug": "cyan-stained-glass-pane-recipe-with-glass-pane"
   },
   "cyan_stained_glass_receta": {
     "nombre": "Cyan Stained Glass Recipe",
@@ -1463,13 +1203,13 @@
     "nombre": "Block of Gold Recipe",
     "slug": "block-of-gold-recipe"
   },
-  "gold_ingot_receta_1": {
-    "nombre": "Gold Ingot Recipe 1",
-    "slug": "gold-ingot-recipe-1"
+  "gold_ingot_receta_con_gold_block": {
+    "nombre": "Gold Ingot Recipe (with Block of Gold)",
+    "slug": "gold-ingot-recipe-with-block-of-gold"
   },
-  "gold_ingot_receta_2": {
-    "nombre": "Gold Ingot Recipe 2",
-    "slug": "gold-ingot-recipe-2"
+  "gold_ingot_receta_con_gold_nugget": {
+    "nombre": "Gold Ingot Recipe (with Gold Nugget)",
+    "slug": "gold-ingot-recipe-with-gold-nugget"
   },
   "gold_nugget_receta": {
     "nombre": "Gold Nugget Recipe",
@@ -1539,25 +1279,25 @@
     "nombre": "Gray Banner Recipe",
     "slug": "gray-banner-recipe"
   },
-  "gray_bed_receta_1": {
-    "nombre": "Gray Bed Recipe 1",
-    "slug": "gray-bed-recipe-1"
+  "gray_bed_receta_con_black_bed": {
+    "nombre": "Gray Bed Recipe (with Black Bed)",
+    "slug": "gray-bed-recipe-with-black-bed"
   },
-  "gray_bed_receta_2": {
-    "nombre": "Gray Bed Recipe 2",
-    "slug": "gray-bed-recipe-2"
+  "gray_bed_receta_con_gray_wool": {
+    "nombre": "Gray Bed Recipe (with Gray Wool)",
+    "slug": "gray-bed-recipe-with-gray-wool"
   },
   "gray_candle_receta": {
     "nombre": "Gray Candle Recipe",
     "slug": "gray-candle-recipe"
   },
-  "gray_carpet_receta_1": {
-    "nombre": "Gray Carpet Recipe 1",
-    "slug": "gray-carpet-recipe-1"
+  "gray_carpet_receta_con_black_carpet": {
+    "nombre": "Gray Carpet Recipe (with Black Carpet)",
+    "slug": "gray-carpet-recipe-with-black-carpet"
   },
-  "gray_carpet_receta_2": {
-    "nombre": "Gray Carpet Recipe 2",
-    "slug": "gray-carpet-recipe-2"
+  "gray_carpet_receta_con_gray_wool": {
+    "nombre": "Gray Carpet Recipe (with Gray Wool)",
+    "slug": "gray-carpet-recipe-with-gray-wool"
   },
   "gray_concrete_powder_receta": {
     "nombre": "Gray Concrete Powder Recipe",
@@ -1567,13 +1307,13 @@
     "nombre": "Gray Dye Recipe",
     "slug": "gray-dye-recipe"
   },
-  "gray_stained_glass_pane_receta_1": {
-    "nombre": "Gray Stained Glass Pane Recipe 1",
-    "slug": "gray-stained-glass-pane-recipe-1"
+  "gray_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Gray Stained Glass Pane Recipe (with Glass Pane)",
+    "slug": "gray-stained-glass-pane-recipe-with-glass-pane"
   },
-  "gray_stained_glass_pane_receta_2": {
-    "nombre": "Gray Stained Glass Pane Recipe 2",
-    "slug": "gray-stained-glass-pane-recipe-2"
+  "gray_stained_glass_pane_receta_con_gray_stained_glass": {
+    "nombre": "Gray Stained Glass Pane Recipe (with Gray Stained Glass)",
+    "slug": "gray-stained-glass-pane-recipe-with-gray-stained-glass"
   },
   "gray_stained_glass_receta": {
     "nombre": "Gray Stained Glass Recipe",
@@ -1591,37 +1331,37 @@
     "nombre": "Green Banner Recipe",
     "slug": "green-banner-recipe"
   },
-  "green_bed_receta_1": {
-    "nombre": "Green Bed Recipe 1",
-    "slug": "green-bed-recipe-1"
+  "green_bed_receta_con_black_bed": {
+    "nombre": "Green Bed Recipe (with Black Bed)",
+    "slug": "green-bed-recipe-with-black-bed"
   },
-  "green_bed_receta_2": {
-    "nombre": "Green Bed Recipe 2",
-    "slug": "green-bed-recipe-2"
+  "green_bed_receta_con_green_wool": {
+    "nombre": "Green Bed Recipe (with Green Wool)",
+    "slug": "green-bed-recipe-with-green-wool"
   },
   "green_candle_receta": {
     "nombre": "Green Candle Recipe",
     "slug": "green-candle-recipe"
   },
-  "green_carpet_receta_1": {
-    "nombre": "Green Carpet Recipe 1",
-    "slug": "green-carpet-recipe-1"
+  "green_carpet_receta_con_black_carpet": {
+    "nombre": "Green Carpet Recipe (with Black Carpet)",
+    "slug": "green-carpet-recipe-with-black-carpet"
   },
-  "green_carpet_receta_2": {
-    "nombre": "Green Carpet Recipe 2",
-    "slug": "green-carpet-recipe-2"
+  "green_carpet_receta_con_green_wool": {
+    "nombre": "Green Carpet Recipe (with Green Wool)",
+    "slug": "green-carpet-recipe-with-green-wool"
   },
   "green_concrete_powder_receta": {
     "nombre": "Green Concrete Powder Recipe",
     "slug": "green-concrete-powder-recipe"
   },
-  "green_stained_glass_pane_receta_1": {
-    "nombre": "Green Stained Glass Pane Recipe 1",
-    "slug": "green-stained-glass-pane-recipe-1"
+  "green_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Green Stained Glass Pane Recipe (with Glass Pane)",
+    "slug": "green-stained-glass-pane-recipe-with-glass-pane"
   },
-  "green_stained_glass_pane_receta_2": {
-    "nombre": "Green Stained Glass Pane Recipe 2",
-    "slug": "green-stained-glass-pane-recipe-2"
+  "green_stained_glass_pane_receta_con_green_stained_glass": {
+    "nombre": "Green Stained Glass Pane Recipe (with Green Stained Glass)",
+    "slug": "green-stained-glass-pane-recipe-with-green-stained-glass"
   },
   "green_stained_glass_receta": {
     "nombre": "Green Stained Glass Recipe",
@@ -1703,13 +1443,13 @@
     "nombre": "Iron Hoe Recipe",
     "slug": "iron-hoe-recipe"
   },
-  "iron_ingot_receta_1": {
-    "nombre": "Iron Ingot Recipe 1",
-    "slug": "iron-ingot-recipe-1"
+  "iron_ingot_receta_con_iron_block": {
+    "nombre": "Iron Ingot Recipe (with Block of Iron)",
+    "slug": "iron-ingot-recipe-with-block-of-iron"
   },
-  "iron_ingot_receta_2": {
-    "nombre": "Iron Ingot Recipe 2",
-    "slug": "iron-ingot-recipe-2"
+  "iron_ingot_receta_con_iron_nugget": {
+    "nombre": "Iron Ingot Recipe (with Iron Nugget)",
+    "slug": "iron-ingot-recipe-with-iron-nugget"
   },
   "iron_leggings_receta": {
     "nombre": "Iron Leggings Recipe",
@@ -1859,45 +1599,45 @@
     "nombre": "Light Blue Banner Recipe",
     "slug": "light-blue-banner-recipe"
   },
-  "light_blue_bed_receta_1": {
-    "nombre": "Light Blue Bed Recipe 1",
-    "slug": "light-blue-bed-recipe-1"
+  "light_blue_bed_receta_con_black_bed": {
+    "nombre": "Light Blue Bed Recipe (with Black Bed)",
+    "slug": "light-blue-bed-recipe-with-black-bed"
   },
-  "light_blue_bed_receta_2": {
-    "nombre": "Light Blue Bed Recipe 2",
-    "slug": "light-blue-bed-recipe-2"
+  "light_blue_bed_receta_con_light_blue_wool": {
+    "nombre": "Light Blue Bed Recipe (with Light Blue Wool)",
+    "slug": "light-blue-bed-recipe-with-light-blue-wool"
   },
   "light_blue_candle_receta": {
     "nombre": "Light Blue Candle Recipe",
     "slug": "light-blue-candle-recipe"
   },
-  "light_blue_carpet_receta_1": {
-    "nombre": "Light Blue Carpet Recipe 1",
-    "slug": "light-blue-carpet-recipe-1"
+  "light_blue_carpet_receta_con_black_carpet": {
+    "nombre": "Light Blue Carpet Recipe (with Black Carpet)",
+    "slug": "light-blue-carpet-recipe-with-black-carpet"
   },
-  "light_blue_carpet_receta_2": {
-    "nombre": "Light Blue Carpet Recipe 2",
-    "slug": "light-blue-carpet-recipe-2"
+  "light_blue_carpet_receta_con_light_blue_wool": {
+    "nombre": "Light Blue Carpet Recipe (with Light Blue Wool)",
+    "slug": "light-blue-carpet-recipe-with-light-blue-wool"
   },
   "light_blue_concrete_powder_receta": {
     "nombre": "Light Blue Concrete Powder Recipe",
     "slug": "light-blue-concrete-powder-recipe"
   },
-  "light_blue_dye_receta_1": {
-    "nombre": "Light Blue Dye Recipe 1",
-    "slug": "light-blue-dye-recipe-1"
+  "light_blue_dye_receta_con_blue_dye": {
+    "nombre": "Light Blue Dye Recipe (with Blue Dye)",
+    "slug": "light-blue-dye-recipe-with-blue-dye"
   },
-  "light_blue_dye_receta_2": {
-    "nombre": "Light Blue Dye Recipe 2",
-    "slug": "light-blue-dye-recipe-2"
+  "light_blue_dye_receta_con_blue_orchid": {
+    "nombre": "Light Blue Dye Recipe (with Blue Orchid)",
+    "slug": "light-blue-dye-recipe-with-blue-orchid"
   },
-  "light_blue_stained_glass_pane_receta_1": {
-    "nombre": "Light Blue Stained Glass Pane Recipe 1",
-    "slug": "light-blue-stained-glass-pane-recipe-1"
+  "light_blue_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Light Blue Stained Glass Pane Recipe (with Glass Pane)",
+    "slug": "light-blue-stained-glass-pane-recipe-with-glass-pane"
   },
-  "light_blue_stained_glass_pane_receta_2": {
-    "nombre": "Light Blue Stained Glass Pane Recipe 2",
-    "slug": "light-blue-stained-glass-pane-recipe-2"
+  "light_blue_stained_glass_pane_receta_con_light_blue_stained_glass": {
+    "nombre": "Light Blue Stained Glass Pane Recipe (with Light Blue Stained Glass)",
+    "slug": "light-blue-stained-glass-pane-recipe-with-light-blue-stained-glass"
   },
   "light_blue_stained_glass_receta": {
     "nombre": "Light Blue Stained Glass Recipe",
@@ -1915,49 +1655,49 @@
     "nombre": "Light Gray Banner Recipe",
     "slug": "light-gray-banner-recipe"
   },
-  "light_gray_bed_receta_1": {
-    "nombre": "Light Gray Bed Recipe 1",
-    "slug": "light-gray-bed-recipe-1"
+  "light_gray_bed_receta_con_black_bed": {
+    "nombre": "Light Gray Bed Recipe (with Black Bed)",
+    "slug": "light-gray-bed-recipe-with-black-bed"
   },
-  "light_gray_bed_receta_2": {
-    "nombre": "Light Gray Bed Recipe 2",
-    "slug": "light-gray-bed-recipe-2"
+  "light_gray_bed_receta_con_light_gray_wool": {
+    "nombre": "Light Gray Bed Recipe (with Light Gray Wool)",
+    "slug": "light-gray-bed-recipe-with-light-gray-wool"
   },
   "light_gray_candle_receta": {
     "nombre": "Light Gray Candle Recipe",
     "slug": "light-gray-candle-recipe"
   },
-  "light_gray_carpet_receta_1": {
-    "nombre": "Light Gray Carpet Recipe 1",
-    "slug": "light-gray-carpet-recipe-1"
+  "light_gray_carpet_receta_con_black_carpet": {
+    "nombre": "Light Gray Carpet Recipe (with Black Carpet)",
+    "slug": "light-gray-carpet-recipe-with-black-carpet"
   },
-  "light_gray_carpet_receta_2": {
-    "nombre": "Light Gray Carpet Recipe 2",
-    "slug": "light-gray-carpet-recipe-2"
+  "light_gray_carpet_receta_con_light_gray_wool": {
+    "nombre": "Light Gray Carpet Recipe (with Light Gray Wool)",
+    "slug": "light-gray-carpet-recipe-with-light-gray-wool"
   },
   "light_gray_concrete_powder_receta": {
     "nombre": "Light Gray Concrete Powder Recipe",
     "slug": "light-gray-concrete-powder-recipe"
   },
-  "light_gray_dye_receta_1": {
-    "nombre": "Light Gray Dye Recipe 1",
-    "slug": "light-gray-dye-recipe-1"
+  "light_gray_dye_receta_con_azure_bluet": {
+    "nombre": "Light Gray Dye Recipe (with Azure Bluet)",
+    "slug": "light-gray-dye-recipe-with-azure-bluet"
   },
-  "light_gray_dye_receta_2": {
-    "nombre": "Light Gray Dye Recipe 2",
-    "slug": "light-gray-dye-recipe-2"
+  "light_gray_dye_receta_con_black_dye": {
+    "nombre": "Light Gray Dye Recipe (with Black Dye)",
+    "slug": "light-gray-dye-recipe-with-black-dye"
   },
-  "light_gray_dye_receta_3": {
-    "nombre": "Light Gray Dye Recipe 3",
-    "slug": "light-gray-dye-recipe-3"
+  "light_gray_dye_receta_con_gray_dye": {
+    "nombre": "Light Gray Dye Recipe (with Gray Dye)",
+    "slug": "light-gray-dye-recipe-with-gray-dye"
   },
-  "light_gray_stained_glass_pane_receta_1": {
-    "nombre": "Light Gray Stained Glass Pane Recipe 1",
-    "slug": "light-gray-stained-glass-pane-recipe-1"
+  "light_gray_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Light Gray Stained Glass Pane Recipe (with Glass Pane)",
+    "slug": "light-gray-stained-glass-pane-recipe-with-glass-pane"
   },
-  "light_gray_stained_glass_pane_receta_2": {
-    "nombre": "Light Gray Stained Glass Pane Recipe 2",
-    "slug": "light-gray-stained-glass-pane-recipe-2"
+  "light_gray_stained_glass_pane_receta_con_light_gray_stained_glass": {
+    "nombre": "Light Gray Stained Glass Pane Recipe (with Light Gray Stained Glass)",
+    "slug": "light-gray-stained-glass-pane-recipe-with-light-gray-stained-glass"
   },
   "light_gray_stained_glass_receta": {
     "nombre": "Light Gray Stained Glass Recipe",
@@ -1983,25 +1723,25 @@
     "nombre": "Lime Banner Recipe",
     "slug": "lime-banner-recipe"
   },
-  "lime_bed_receta_1": {
-    "nombre": "Lime Bed Recipe 1",
-    "slug": "lime-bed-recipe-1"
+  "lime_bed_receta_con_black_bed": {
+    "nombre": "Lime Bed Recipe (with Black Bed)",
+    "slug": "lime-bed-recipe-with-black-bed"
   },
-  "lime_bed_receta_2": {
-    "nombre": "Lime Bed Recipe 2",
-    "slug": "lime-bed-recipe-2"
+  "lime_bed_receta_con_lime_wool": {
+    "nombre": "Lime Bed Recipe (with Lime Wool)",
+    "slug": "lime-bed-recipe-with-lime-wool"
   },
   "lime_candle_receta": {
     "nombre": "Lime Candle Recipe",
     "slug": "lime-candle-recipe"
   },
-  "lime_carpet_receta_1": {
-    "nombre": "Lime Carpet Recipe 1",
-    "slug": "lime-carpet-recipe-1"
+  "lime_carpet_receta_con_black_carpet": {
+    "nombre": "Lime Carpet Recipe (with Black Carpet)",
+    "slug": "lime-carpet-recipe-with-black-carpet"
   },
-  "lime_carpet_receta_2": {
-    "nombre": "Lime Carpet Recipe 2",
-    "slug": "lime-carpet-recipe-2"
+  "lime_carpet_receta_con_lime_wool": {
+    "nombre": "Lime Carpet Recipe (with Lime Wool)",
+    "slug": "lime-carpet-recipe-with-lime-wool"
   },
   "lime_concrete_powder_receta": {
     "nombre": "Lime Concrete Powder Recipe",
@@ -2011,13 +1751,13 @@
     "nombre": "Lime Dye Recipe",
     "slug": "lime-dye-recipe"
   },
-  "lime_stained_glass_pane_receta_1": {
-    "nombre": "Lime Stained Glass Pane Recipe 1",
-    "slug": "lime-stained-glass-pane-recipe-1"
+  "lime_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Lime Stained Glass Pane Recipe (with Glass Pane)",
+    "slug": "lime-stained-glass-pane-recipe-with-glass-pane"
   },
-  "lime_stained_glass_pane_receta_2": {
-    "nombre": "Lime Stained Glass Pane Recipe 2",
-    "slug": "lime-stained-glass-pane-recipe-2"
+  "lime_stained_glass_pane_receta_con_lime_stained_glass": {
+    "nombre": "Lime Stained Glass Pane Recipe (with Lime Stained Glass)",
+    "slug": "lime-stained-glass-pane-recipe-with-lime-stained-glass"
   },
   "lime_stained_glass_receta": {
     "nombre": "Lime Stained Glass Recipe",
@@ -2047,57 +1787,57 @@
     "nombre": "Magenta Banner Recipe",
     "slug": "magenta-banner-recipe"
   },
-  "magenta_bed_receta_1": {
-    "nombre": "Magenta Bed Recipe 1",
-    "slug": "magenta-bed-recipe-1"
+  "magenta_bed_receta_con_black_bed": {
+    "nombre": "Magenta Bed Recipe (with Black Bed)",
+    "slug": "magenta-bed-recipe-with-black-bed"
   },
-  "magenta_bed_receta_2": {
-    "nombre": "Magenta Bed Recipe 2",
-    "slug": "magenta-bed-recipe-2"
+  "magenta_bed_receta_con_magenta_wool": {
+    "nombre": "Magenta Bed Recipe (with Magenta Wool)",
+    "slug": "magenta-bed-recipe-with-magenta-wool"
   },
   "magenta_candle_receta": {
     "nombre": "Magenta Candle Recipe",
     "slug": "magenta-candle-recipe"
   },
-  "magenta_carpet_receta_1": {
-    "nombre": "Magenta Carpet Recipe 1",
-    "slug": "magenta-carpet-recipe-1"
+  "magenta_carpet_receta_con_black_carpet": {
+    "nombre": "Magenta Carpet Recipe (with Black Carpet)",
+    "slug": "magenta-carpet-recipe-with-black-carpet"
   },
-  "magenta_carpet_receta_2": {
-    "nombre": "Magenta Carpet Recipe 2",
-    "slug": "magenta-carpet-recipe-2"
+  "magenta_carpet_receta_con_magenta_wool": {
+    "nombre": "Magenta Carpet Recipe (with Magenta Wool)",
+    "slug": "magenta-carpet-recipe-with-magenta-wool"
   },
   "magenta_concrete_powder_receta": {
     "nombre": "Magenta Concrete Powder Recipe",
     "slug": "magenta-concrete-powder-recipe"
   },
-  "magenta_dye_receta_1": {
-    "nombre": "Magenta Dye Recipe 1",
-    "slug": "magenta-dye-recipe-1"
-  },
   "magenta_dye_receta_2": {
     "nombre": "Magenta Dye Recipe 2",
     "slug": "magenta-dye-recipe-2"
   },
-  "magenta_dye_receta_3": {
-    "nombre": "Magenta Dye Recipe 3",
-    "slug": "magenta-dye-recipe-3"
+  "magenta_dye_receta_con_allium": {
+    "nombre": "Magenta Dye Recipe (with Allium)",
+    "slug": "magenta-dye-recipe-with-allium"
   },
-  "magenta_dye_receta_4": {
-    "nombre": "Magenta Dye Recipe 4",
-    "slug": "magenta-dye-recipe-4"
+  "magenta_dye_receta_con_lilac": {
+    "nombre": "Magenta Dye Recipe (with Lilac)",
+    "slug": "magenta-dye-recipe-with-lilac"
   },
-  "magenta_dye_receta_5": {
-    "nombre": "Magenta Dye Recipe 5",
-    "slug": "magenta-dye-recipe-5"
+  "magenta_dye_receta_con_purple_dye": {
+    "nombre": "Magenta Dye Recipe (with Purple Dye)",
+    "slug": "magenta-dye-recipe-with-purple-dye"
   },
-  "magenta_stained_glass_pane_receta_1": {
-    "nombre": "Magenta Stained Glass Pane Recipe 1",
-    "slug": "magenta-stained-glass-pane-recipe-1"
+  "magenta_dye_receta_con_white_dye": {
+    "nombre": "Magenta Dye Recipe (with White Dye)",
+    "slug": "magenta-dye-recipe-with-white-dye"
   },
-  "magenta_stained_glass_pane_receta_2": {
-    "nombre": "Magenta Stained Glass Pane Recipe 2",
-    "slug": "magenta-stained-glass-pane-recipe-2"
+  "magenta_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Magenta Stained Glass Pane Recipe (with Glass Pane)",
+    "slug": "magenta-stained-glass-pane-recipe-with-glass-pane"
+  },
+  "magenta_stained_glass_pane_receta_con_magenta_stained_glass": {
+    "nombre": "Magenta Stained Glass Pane Recipe (with Magenta Stained Glass)",
+    "slug": "magenta-stained-glass-pane-recipe-with-magenta-stained-glass"
   },
   "magenta_stained_glass_receta": {
     "nombre": "Magenta Stained Glass Recipe",
@@ -2227,13 +1967,9 @@
     "nombre": "Mossy Stone Brick Wall Recipe",
     "slug": "mossy-stone-brick-wall-recipe"
   },
-  "mossy_stone_bricks_receta_1": {
-    "nombre": "Mossy Stone Bricks Recipe 1",
-    "slug": "mossy-stone-bricks-recipe-1"
-  },
-  "mossy_stone_bricks_receta_2": {
-    "nombre": "Mossy Stone Bricks Recipe 2",
-    "slug": "mossy-stone-bricks-recipe-2"
+  "mossy_stone_bricks_receta": {
+    "nombre": "Mossy Stone Bricks Recipe",
+    "slug": "mossy-stone-bricks-recipe"
   },
   "mud_brick_slab_receta": {
     "nombre": "Mud Brick Slab Recipe",
@@ -2291,13 +2027,13 @@
     "nombre": "Block of Netherite Recipe",
     "slug": "block-of-netherite-recipe"
   },
-  "netherite_ingot_receta_1": {
-    "nombre": "Netherite Ingot Recipe 1",
-    "slug": "netherite-ingot-recipe-1"
+  "netherite_ingot_receta_con_gold_ingot": {
+    "nombre": "Netherite Ingot Recipe (with Gold Ingot)",
+    "slug": "netherite-ingot-recipe-with-gold-ingot"
   },
-  "netherite_ingot_receta_2": {
-    "nombre": "Netherite Ingot Recipe 2",
-    "slug": "netherite-ingot-recipe-2"
+  "netherite_ingot_receta_con_netherite_block": {
+    "nombre": "Netherite Ingot Recipe (with Block of Netherite)",
+    "slug": "netherite-ingot-recipe-with-block-of-netherite"
   },
   "netherite_upgrade_smithing_template_receta": {
     "nombre": "Netherite Upgrade Recipe",
@@ -2371,45 +2107,45 @@
     "nombre": "Orange Banner Recipe",
     "slug": "orange-banner-recipe"
   },
-  "orange_bed_receta_1": {
-    "nombre": "Orange Bed Recipe 1",
-    "slug": "orange-bed-recipe-1"
+  "orange_bed_receta_con_black_bed": {
+    "nombre": "Orange Bed Recipe (with Black Bed)",
+    "slug": "orange-bed-recipe-with-black-bed"
   },
-  "orange_bed_receta_2": {
-    "nombre": "Orange Bed Recipe 2",
-    "slug": "orange-bed-recipe-2"
+  "orange_bed_receta_con_orange_wool": {
+    "nombre": "Orange Bed Recipe (with Orange Wool)",
+    "slug": "orange-bed-recipe-with-orange-wool"
   },
   "orange_candle_receta": {
     "nombre": "Orange Candle Recipe",
     "slug": "orange-candle-recipe"
   },
-  "orange_carpet_receta_1": {
-    "nombre": "Orange Carpet Recipe 1",
-    "slug": "orange-carpet-recipe-1"
+  "orange_carpet_receta_con_black_carpet": {
+    "nombre": "Orange Carpet Recipe (with Black Carpet)",
+    "slug": "orange-carpet-recipe-with-black-carpet"
   },
-  "orange_carpet_receta_2": {
-    "nombre": "Orange Carpet Recipe 2",
-    "slug": "orange-carpet-recipe-2"
+  "orange_carpet_receta_con_orange_wool": {
+    "nombre": "Orange Carpet Recipe (with Orange Wool)",
+    "slug": "orange-carpet-recipe-with-orange-wool"
   },
   "orange_concrete_powder_receta": {
     "nombre": "Orange Concrete Powder Recipe",
     "slug": "orange-concrete-powder-recipe"
   },
-  "orange_dye_receta_1": {
-    "nombre": "Orange Dye Recipe 1",
-    "slug": "orange-dye-recipe-1"
+  "orange_dye_receta_con_orange_tulip": {
+    "nombre": "Orange Dye Recipe (with Orange Tulip)",
+    "slug": "orange-dye-recipe-with-orange-tulip"
   },
-  "orange_dye_receta_2": {
-    "nombre": "Orange Dye Recipe 2",
-    "slug": "orange-dye-recipe-2"
+  "orange_dye_receta_con_red_dye": {
+    "nombre": "Orange Dye Recipe (with Red Dye)",
+    "slug": "orange-dye-recipe-with-red-dye"
   },
-  "orange_stained_glass_pane_receta_1": {
-    "nombre": "Orange Stained Glass Pane Recipe 1",
-    "slug": "orange-stained-glass-pane-recipe-1"
+  "orange_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Orange Stained Glass Pane Recipe (with Glass Pane)",
+    "slug": "orange-stained-glass-pane-recipe-with-glass-pane"
   },
-  "orange_stained_glass_pane_receta_2": {
-    "nombre": "Orange Stained Glass Pane Recipe 2",
-    "slug": "orange-stained-glass-pane-recipe-2"
+  "orange_stained_glass_pane_receta_con_orange_stained_glass": {
+    "nombre": "Orange Stained Glass Pane Recipe (with Orange Stained Glass)",
+    "slug": "orange-stained-glass-pane-recipe-with-orange-stained-glass"
   },
   "orange_stained_glass_receta": {
     "nombre": "Orange Stained Glass Recipe",
@@ -2527,49 +2263,49 @@
     "nombre": "Pink Banner Recipe",
     "slug": "pink-banner-recipe"
   },
-  "pink_bed_receta_1": {
-    "nombre": "Pink Bed Recipe 1",
-    "slug": "pink-bed-recipe-1"
+  "pink_bed_receta_con_black_bed": {
+    "nombre": "Pink Bed Recipe (with Black Bed)",
+    "slug": "pink-bed-recipe-with-black-bed"
   },
-  "pink_bed_receta_2": {
-    "nombre": "Pink Bed Recipe 2",
-    "slug": "pink-bed-recipe-2"
+  "pink_bed_receta_con_pink_wool": {
+    "nombre": "Pink Bed Recipe (with Pink Wool)",
+    "slug": "pink-bed-recipe-with-pink-wool"
   },
   "pink_candle_receta": {
     "nombre": "Pink Candle Recipe",
     "slug": "pink-candle-recipe"
   },
-  "pink_carpet_receta_1": {
-    "nombre": "Pink Carpet Recipe 1",
-    "slug": "pink-carpet-recipe-1"
+  "pink_carpet_receta_con_black_carpet": {
+    "nombre": "Pink Carpet Recipe (with Black Carpet)",
+    "slug": "pink-carpet-recipe-with-black-carpet"
   },
-  "pink_carpet_receta_2": {
-    "nombre": "Pink Carpet Recipe 2",
-    "slug": "pink-carpet-recipe-2"
+  "pink_carpet_receta_con_pink_wool": {
+    "nombre": "Pink Carpet Recipe (with Pink Wool)",
+    "slug": "pink-carpet-recipe-with-pink-wool"
   },
   "pink_concrete_powder_receta": {
     "nombre": "Pink Concrete Powder Recipe",
     "slug": "pink-concrete-powder-recipe"
   },
-  "pink_dye_receta_1": {
-    "nombre": "Pink Dye Recipe 1",
-    "slug": "pink-dye-recipe-1"
+  "pink_dye_receta_con_peony": {
+    "nombre": "Pink Dye Recipe (with Peony)",
+    "slug": "pink-dye-recipe-with-peony"
   },
-  "pink_dye_receta_2": {
-    "nombre": "Pink Dye Recipe 2",
-    "slug": "pink-dye-recipe-2"
+  "pink_dye_receta_con_pink_petals": {
+    "nombre": "Pink Dye Recipe (with Pink Petals)",
+    "slug": "pink-dye-recipe-with-pink-petals"
   },
-  "pink_dye_receta_3": {
-    "nombre": "Pink Dye Recipe 3",
-    "slug": "pink-dye-recipe-3"
+  "pink_dye_receta_con_red_dye": {
+    "nombre": "Pink Dye Recipe (with Red Dye)",
+    "slug": "pink-dye-recipe-with-red-dye"
   },
-  "pink_stained_glass_pane_receta_1": {
-    "nombre": "Pink Stained Glass Pane Recipe 1",
-    "slug": "pink-stained-glass-pane-recipe-1"
+  "pink_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Pink Stained Glass Pane Recipe (with Glass Pane)",
+    "slug": "pink-stained-glass-pane-recipe-with-glass-pane"
   },
-  "pink_stained_glass_pane_receta_2": {
-    "nombre": "Pink Stained Glass Pane Recipe 2",
-    "slug": "pink-stained-glass-pane-recipe-2"
+  "pink_stained_glass_pane_receta_con_pink_stained_glass": {
+    "nombre": "Pink Stained Glass Pane Recipe (with Pink Stained Glass)",
+    "slug": "pink-stained-glass-pane-recipe-with-pink-stained-glass"
   },
   "pink_stained_glass_receta": {
     "nombre": "Pink Stained Glass Recipe",
@@ -2743,25 +2479,25 @@
     "nombre": "Purple Banner Recipe",
     "slug": "purple-banner-recipe"
   },
-  "purple_bed_receta_1": {
-    "nombre": "Purple Bed Recipe 1",
-    "slug": "purple-bed-recipe-1"
+  "purple_bed_receta_con_black_bed": {
+    "nombre": "Purple Bed Recipe (with Black Bed)",
+    "slug": "purple-bed-recipe-with-black-bed"
   },
-  "purple_bed_receta_2": {
-    "nombre": "Purple Bed Recipe 2",
-    "slug": "purple-bed-recipe-2"
+  "purple_bed_receta_con_purple_wool": {
+    "nombre": "Purple Bed Recipe (with Purple Wool)",
+    "slug": "purple-bed-recipe-with-purple-wool"
   },
   "purple_candle_receta": {
     "nombre": "Purple Candle Recipe",
     "slug": "purple-candle-recipe"
   },
-  "purple_carpet_receta_1": {
-    "nombre": "Purple Carpet Recipe 1",
-    "slug": "purple-carpet-recipe-1"
+  "purple_carpet_receta_con_black_carpet": {
+    "nombre": "Purple Carpet Recipe (with Black Carpet)",
+    "slug": "purple-carpet-recipe-with-black-carpet"
   },
-  "purple_carpet_receta_2": {
-    "nombre": "Purple Carpet Recipe 2",
-    "slug": "purple-carpet-recipe-2"
+  "purple_carpet_receta_con_purple_wool": {
+    "nombre": "Purple Carpet Recipe (with Purple Wool)",
+    "slug": "purple-carpet-recipe-with-purple-wool"
   },
   "purple_concrete_powder_receta": {
     "nombre": "Purple Concrete Powder Recipe",
@@ -2771,13 +2507,13 @@
     "nombre": "Purple Dye Recipe",
     "slug": "purple-dye-recipe"
   },
-  "purple_stained_glass_pane_receta_1": {
-    "nombre": "Purple Stained Glass Pane Recipe 1",
-    "slug": "purple-stained-glass-pane-recipe-1"
+  "purple_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Purple Stained Glass Pane Recipe (with Glass Pane)",
+    "slug": "purple-stained-glass-pane-recipe-with-glass-pane"
   },
-  "purple_stained_glass_pane_receta_2": {
-    "nombre": "Purple Stained Glass Pane Recipe 2",
-    "slug": "purple-stained-glass-pane-recipe-2"
+  "purple_stained_glass_pane_receta_con_purple_stained_glass": {
+    "nombre": "Purple Stained Glass Pane Recipe (with Purple Stained Glass)",
+    "slug": "purple-stained-glass-pane-recipe-with-purple-stained-glass"
   },
   "purple_stained_glass_receta": {
     "nombre": "Purple Stained Glass Recipe",
@@ -2827,13 +2563,9 @@
     "nombre": "Quartz Stairs Recipe",
     "slug": "quartz-stairs-recipe"
   },
-  "rabbit_stew_receta_1": {
-    "nombre": "Rabbit Stew Recipe 1",
-    "slug": "rabbit-stew-recipe-1"
-  },
-  "rabbit_stew_receta_2": {
-    "nombre": "Rabbit Stew Recipe 2",
-    "slug": "rabbit-stew-recipe-2"
+  "rabbit_stew_receta": {
+    "nombre": "Rabbit Stew Recipe",
+    "slug": "rabbit-stew-recipe"
   },
   "rail_receta": {
     "nombre": "Rail Recipe",
@@ -2875,37 +2607,37 @@
     "nombre": "Red Banner Recipe",
     "slug": "red-banner-recipe"
   },
-  "red_bed_receta_1": {
-    "nombre": "Red Bed Recipe 1",
-    "slug": "red-bed-recipe-1"
+  "red_bed_receta_con_black_bed": {
+    "nombre": "Red Bed Recipe (with Black Bed)",
+    "slug": "red-bed-recipe-with-black-bed"
   },
-  "red_bed_receta_2": {
-    "nombre": "Red Bed Recipe 2",
-    "slug": "red-bed-recipe-2"
+  "red_bed_receta_con_red_wool": {
+    "nombre": "Red Bed Recipe (with Red Wool)",
+    "slug": "red-bed-recipe-with-red-wool"
   },
   "red_candle_receta": {
     "nombre": "Red Candle Recipe",
     "slug": "red-candle-recipe"
   },
-  "red_carpet_receta_1": {
-    "nombre": "Red Carpet Recipe 1",
-    "slug": "red-carpet-recipe-1"
+  "red_carpet_receta_con_black_carpet": {
+    "nombre": "Red Carpet Recipe (with Black Carpet)",
+    "slug": "red-carpet-recipe-with-black-carpet"
   },
-  "red_carpet_receta_2": {
-    "nombre": "Red Carpet Recipe 2",
-    "slug": "red-carpet-recipe-2"
+  "red_carpet_receta_con_red_wool": {
+    "nombre": "Red Carpet Recipe (with Red Wool)",
+    "slug": "red-carpet-recipe-with-red-wool"
   },
   "red_concrete_powder_receta": {
     "nombre": "Red Concrete Powder Recipe",
     "slug": "red-concrete-powder-recipe"
   },
-  "red_dye_receta_1": {
-    "nombre": "Red Dye Recipe 1",
-    "slug": "red-dye-recipe-1"
+  "red_dye_receta_con_beetroot": {
+    "nombre": "Red Dye Recipe (with Beetroot)",
+    "slug": "red-dye-recipe-with-beetroot"
   },
-  "red_dye_receta_2": {
-    "nombre": "Red Dye Recipe 2",
-    "slug": "red-dye-recipe-2"
+  "red_dye_receta_con_rose_bush": {
+    "nombre": "Red Dye Recipe (with Rose Bush)",
+    "slug": "red-dye-recipe-with-rose-bush"
   },
   "red_nether_brick_slab_receta": {
     "nombre": "Red Nether Brick Slab Recipe",
@@ -2939,13 +2671,13 @@
     "nombre": "Red Sandstone Wall Recipe",
     "slug": "red-sandstone-wall-recipe"
   },
-  "red_stained_glass_pane_receta_1": {
-    "nombre": "Red Stained Glass Pane Recipe 1",
-    "slug": "red-stained-glass-pane-recipe-1"
+  "red_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Red Stained Glass Pane Recipe (with Glass Pane)",
+    "slug": "red-stained-glass-pane-recipe-with-glass-pane"
   },
-  "red_stained_glass_pane_receta_2": {
-    "nombre": "Red Stained Glass Pane Recipe 2",
-    "slug": "red-stained-glass-pane-recipe-2"
+  "red_stained_glass_pane_receta_con_red_stained_glass": {
+    "nombre": "Red Stained Glass Pane Recipe (with Red Stained Glass)",
+    "slug": "red-stained-glass-pane-recipe-with-red-stained-glass"
   },
   "red_stained_glass_receta": {
     "nombre": "Red Stained Glass Recipe",
@@ -3095,193 +2827,17 @@
     "nombre": "Snow Recipe",
     "slug": "snow-recipe"
   },
-  "soul_campfire_receta_1": {
-    "nombre": "Soul Campfire Recipe 1",
-    "slug": "soul-campfire-recipe-1"
-  },
-  "soul_campfire_receta_10": {
-    "nombre": "Soul Campfire Recipe 10",
-    "slug": "soul-campfire-recipe-10"
-  },
-  "soul_campfire_receta_11": {
-    "nombre": "Soul Campfire Recipe 11",
-    "slug": "soul-campfire-recipe-11"
-  },
-  "soul_campfire_receta_12": {
-    "nombre": "Soul Campfire Recipe 12",
-    "slug": "soul-campfire-recipe-12"
-  },
-  "soul_campfire_receta_13": {
-    "nombre": "Soul Campfire Recipe 13",
-    "slug": "soul-campfire-recipe-13"
-  },
-  "soul_campfire_receta_14": {
-    "nombre": "Soul Campfire Recipe 14",
-    "slug": "soul-campfire-recipe-14"
-  },
-  "soul_campfire_receta_15": {
-    "nombre": "Soul Campfire Recipe 15",
-    "slug": "soul-campfire-recipe-15"
-  },
-  "soul_campfire_receta_16": {
-    "nombre": "Soul Campfire Recipe 16",
-    "slug": "soul-campfire-recipe-16"
-  },
-  "soul_campfire_receta_17": {
-    "nombre": "Soul Campfire Recipe 17",
-    "slug": "soul-campfire-recipe-17"
-  },
-  "soul_campfire_receta_18": {
-    "nombre": "Soul Campfire Recipe 18",
-    "slug": "soul-campfire-recipe-18"
-  },
-  "soul_campfire_receta_19": {
-    "nombre": "Soul Campfire Recipe 19",
-    "slug": "soul-campfire-recipe-19"
-  },
-  "soul_campfire_receta_2": {
-    "nombre": "Soul Campfire Recipe 2",
-    "slug": "soul-campfire-recipe-2"
-  },
-  "soul_campfire_receta_20": {
-    "nombre": "Soul Campfire Recipe 20",
-    "slug": "soul-campfire-recipe-20"
-  },
-  "soul_campfire_receta_21": {
-    "nombre": "Soul Campfire Recipe 21",
-    "slug": "soul-campfire-recipe-21"
-  },
-  "soul_campfire_receta_22": {
-    "nombre": "Soul Campfire Recipe 22",
-    "slug": "soul-campfire-recipe-22"
-  },
-  "soul_campfire_receta_23": {
-    "nombre": "Soul Campfire Recipe 23",
-    "slug": "soul-campfire-recipe-23"
-  },
-  "soul_campfire_receta_24": {
-    "nombre": "Soul Campfire Recipe 24",
-    "slug": "soul-campfire-recipe-24"
-  },
-  "soul_campfire_receta_25": {
-    "nombre": "Soul Campfire Recipe 25",
-    "slug": "soul-campfire-recipe-25"
-  },
-  "soul_campfire_receta_26": {
-    "nombre": "Soul Campfire Recipe 26",
-    "slug": "soul-campfire-recipe-26"
-  },
-  "soul_campfire_receta_27": {
-    "nombre": "Soul Campfire Recipe 27",
-    "slug": "soul-campfire-recipe-27"
-  },
-  "soul_campfire_receta_28": {
-    "nombre": "Soul Campfire Recipe 28",
-    "slug": "soul-campfire-recipe-28"
-  },
-  "soul_campfire_receta_29": {
-    "nombre": "Soul Campfire Recipe 29",
-    "slug": "soul-campfire-recipe-29"
-  },
-  "soul_campfire_receta_3": {
-    "nombre": "Soul Campfire Recipe 3",
-    "slug": "soul-campfire-recipe-3"
-  },
-  "soul_campfire_receta_30": {
-    "nombre": "Soul Campfire Recipe 30",
-    "slug": "soul-campfire-recipe-30"
-  },
-  "soul_campfire_receta_31": {
-    "nombre": "Soul Campfire Recipe 31",
-    "slug": "soul-campfire-recipe-31"
-  },
-  "soul_campfire_receta_32": {
-    "nombre": "Soul Campfire Recipe 32",
-    "slug": "soul-campfire-recipe-32"
-  },
-  "soul_campfire_receta_33": {
-    "nombre": "Soul Campfire Recipe 33",
-    "slug": "soul-campfire-recipe-33"
-  },
-  "soul_campfire_receta_34": {
-    "nombre": "Soul Campfire Recipe 34",
-    "slug": "soul-campfire-recipe-34"
-  },
-  "soul_campfire_receta_35": {
-    "nombre": "Soul Campfire Recipe 35",
-    "slug": "soul-campfire-recipe-35"
-  },
-  "soul_campfire_receta_36": {
-    "nombre": "Soul Campfire Recipe 36",
-    "slug": "soul-campfire-recipe-36"
-  },
-  "soul_campfire_receta_37": {
-    "nombre": "Soul Campfire Recipe 37",
-    "slug": "soul-campfire-recipe-37"
-  },
-  "soul_campfire_receta_38": {
-    "nombre": "Soul Campfire Recipe 38",
-    "slug": "soul-campfire-recipe-38"
-  },
-  "soul_campfire_receta_39": {
-    "nombre": "Soul Campfire Recipe 39",
-    "slug": "soul-campfire-recipe-39"
-  },
-  "soul_campfire_receta_4": {
-    "nombre": "Soul Campfire Recipe 4",
-    "slug": "soul-campfire-recipe-4"
-  },
-  "soul_campfire_receta_40": {
-    "nombre": "Soul Campfire Recipe 40",
-    "slug": "soul-campfire-recipe-40"
-  },
-  "soul_campfire_receta_41": {
-    "nombre": "Soul Campfire Recipe 41",
-    "slug": "soul-campfire-recipe-41"
-  },
-  "soul_campfire_receta_42": {
-    "nombre": "Soul Campfire Recipe 42",
-    "slug": "soul-campfire-recipe-42"
-  },
-  "soul_campfire_receta_43": {
-    "nombre": "Soul Campfire Recipe 43",
-    "slug": "soul-campfire-recipe-43"
-  },
-  "soul_campfire_receta_44": {
-    "nombre": "Soul Campfire Recipe 44",
-    "slug": "soul-campfire-recipe-44"
-  },
-  "soul_campfire_receta_5": {
-    "nombre": "Soul Campfire Recipe 5",
-    "slug": "soul-campfire-recipe-5"
-  },
-  "soul_campfire_receta_6": {
-    "nombre": "Soul Campfire Recipe 6",
-    "slug": "soul-campfire-recipe-6"
-  },
-  "soul_campfire_receta_7": {
-    "nombre": "Soul Campfire Recipe 7",
-    "slug": "soul-campfire-recipe-7"
-  },
-  "soul_campfire_receta_8": {
-    "nombre": "Soul Campfire Recipe 8",
-    "slug": "soul-campfire-recipe-8"
-  },
-  "soul_campfire_receta_9": {
-    "nombre": "Soul Campfire Recipe 9",
-    "slug": "soul-campfire-recipe-9"
+  "soul_campfire_receta": {
+    "nombre": "Soul Campfire Recipe",
+    "slug": "soul-campfire-recipe"
   },
   "soul_lantern_receta": {
     "nombre": "Soul Lantern Recipe",
     "slug": "soul-lantern-recipe"
   },
-  "soul_torch_receta_1": {
-    "nombre": "Soul Torch Recipe 1",
-    "slug": "soul-torch-recipe-1"
-  },
-  "soul_torch_receta_2": {
-    "nombre": "Soul Torch Recipe 2",
-    "slug": "soul-torch-recipe-2"
+  "soul_torch_receta": {
+    "nombre": "Soul Torch Recipe",
+    "slug": "soul-torch-recipe"
   },
   "spectral_arrow_receta": {
     "nombre": "Spectral Arrow Recipe",
@@ -3351,13 +2907,13 @@
     "nombre": "Spyglass Recipe",
     "slug": "spyglass-recipe"
   },
-  "stick_receta_1": {
-    "nombre": "Stick Recipe 1",
-    "slug": "stick-recipe-1"
+  "stick_receta_con_acacia_planks": {
+    "nombre": "Stick Recipe (with Acacia Planks)",
+    "slug": "stick-recipe-with-acacia-planks"
   },
-  "stick_receta_2": {
-    "nombre": "Stick Recipe 2",
-    "slug": "stick-recipe-2"
+  "stick_receta_con_bamboo": {
+    "nombre": "Stick Recipe (with Bamboo)",
+    "slug": "stick-recipe-with-bamboo"
   },
   "sticky_piston_receta": {
     "nombre": "Sticky Piston Recipe",
@@ -3463,69 +3019,17 @@
     "nombre": "Stripped Warped Hyphae Recipe",
     "slug": "stripped-warped-hyphae-recipe"
   },
-  "sugar_receta_1": {
-    "nombre": "Sugar Recipe 1",
-    "slug": "sugar-recipe-1"
+  "sugar_receta_con_honey_bottle": {
+    "nombre": "Sugar Recipe (with Honey Bottle)",
+    "slug": "sugar-recipe-with-honey-bottle"
   },
-  "sugar_receta_2": {
-    "nombre": "Sugar Recipe 2",
-    "slug": "sugar-recipe-2"
+  "sugar_receta_con_sugar_cane": {
+    "nombre": "Sugar Recipe (with Sugar Cane)",
+    "slug": "sugar-recipe-with-sugar-cane"
   },
-  "suspicious_stew_receta_1": {
-    "nombre": "Suspicious Stew Recipe 1",
-    "slug": "suspicious-stew-recipe-1"
-  },
-  "suspicious_stew_receta_10": {
-    "nombre": "Suspicious Stew Recipe 10",
-    "slug": "suspicious-stew-recipe-10"
-  },
-  "suspicious_stew_receta_11": {
-    "nombre": "Suspicious Stew Recipe 11",
-    "slug": "suspicious-stew-recipe-11"
-  },
-  "suspicious_stew_receta_12": {
-    "nombre": "Suspicious Stew Recipe 12",
-    "slug": "suspicious-stew-recipe-12"
-  },
-  "suspicious_stew_receta_13": {
-    "nombre": "Suspicious Stew Recipe 13",
-    "slug": "suspicious-stew-recipe-13"
-  },
-  "suspicious_stew_receta_14": {
-    "nombre": "Suspicious Stew Recipe 14",
-    "slug": "suspicious-stew-recipe-14"
-  },
-  "suspicious_stew_receta_2": {
-    "nombre": "Suspicious Stew Recipe 2",
-    "slug": "suspicious-stew-recipe-2"
-  },
-  "suspicious_stew_receta_3": {
-    "nombre": "Suspicious Stew Recipe 3",
-    "slug": "suspicious-stew-recipe-3"
-  },
-  "suspicious_stew_receta_4": {
-    "nombre": "Suspicious Stew Recipe 4",
-    "slug": "suspicious-stew-recipe-4"
-  },
-  "suspicious_stew_receta_5": {
-    "nombre": "Suspicious Stew Recipe 5",
-    "slug": "suspicious-stew-recipe-5"
-  },
-  "suspicious_stew_receta_6": {
-    "nombre": "Suspicious Stew Recipe 6",
-    "slug": "suspicious-stew-recipe-6"
-  },
-  "suspicious_stew_receta_7": {
-    "nombre": "Suspicious Stew Recipe 7",
-    "slug": "suspicious-stew-recipe-7"
-  },
-  "suspicious_stew_receta_8": {
-    "nombre": "Suspicious Stew Recipe 8",
-    "slug": "suspicious-stew-recipe-8"
-  },
-  "suspicious_stew_receta_9": {
-    "nombre": "Suspicious Stew Recipe 9",
-    "slug": "suspicious-stew-recipe-9"
+  "suspicious_stew_receta": {
+    "nombre": "Suspicious Stew Recipe",
+    "slug": "suspicious-stew-recipe"
   },
   "target_receta": {
     "nombre": "Target Recipe",
@@ -3651,93 +3155,93 @@
     "nombre": "Warped Trapdoor Recipe",
     "slug": "warped-trapdoor-recipe"
   },
-  "waxed_chiseled_copper_receta_1": {
-    "nombre": "Waxed Chiseled Copper Recipe 1",
-    "slug": "waxed-chiseled-copper-recipe-1"
+  "waxed_chiseled_copper_receta_con_chiseled_copper": {
+    "nombre": "Waxed Chiseled Copper Recipe (with Chiseled Copper)",
+    "slug": "waxed-chiseled-copper-recipe-with-chiseled-copper"
   },
-  "waxed_chiseled_copper_receta_2": {
-    "nombre": "Waxed Chiseled Copper Recipe 2",
-    "slug": "waxed-chiseled-copper-recipe-2"
+  "waxed_chiseled_copper_receta_con_waxed_cut_copper_slab": {
+    "nombre": "Waxed Chiseled Copper Recipe (with Waxed Cut Copper Slab)",
+    "slug": "waxed-chiseled-copper-recipe-with-waxed-cut-copper-slab"
   },
   "waxed_copper_block_receta": {
     "nombre": "Waxed Block of Copper Recipe",
     "slug": "waxed-block-of-copper-recipe"
   },
-  "waxed_copper_bulb_receta_1": {
-    "nombre": "Waxed Copper Bulb Recipe 1",
-    "slug": "waxed-copper-bulb-recipe-1"
+  "waxed_copper_bulb_receta_con_copper_bulb": {
+    "nombre": "Waxed Copper Bulb Recipe (with Copper Bulb)",
+    "slug": "waxed-copper-bulb-recipe-with-copper-bulb"
   },
-  "waxed_copper_bulb_receta_2": {
-    "nombre": "Waxed Copper Bulb Recipe 2",
-    "slug": "waxed-copper-bulb-recipe-2"
+  "waxed_copper_bulb_receta_con_waxed_copper_block": {
+    "nombre": "Waxed Copper Bulb Recipe (with Waxed Block of Copper)",
+    "slug": "waxed-copper-bulb-recipe-with-waxed-block-of-copper"
   },
   "waxed_copper_door_receta": {
     "nombre": "Waxed Copper Door Recipe",
     "slug": "waxed-copper-door-recipe"
   },
-  "waxed_copper_grate_receta_1": {
-    "nombre": "Waxed Copper Grate Recipe 1",
-    "slug": "waxed-copper-grate-recipe-1"
+  "waxed_copper_grate_receta_con_copper_grate": {
+    "nombre": "Waxed Copper Grate Recipe (with Copper Grate)",
+    "slug": "waxed-copper-grate-recipe-with-copper-grate"
   },
-  "waxed_copper_grate_receta_2": {
-    "nombre": "Waxed Copper Grate Recipe 2",
-    "slug": "waxed-copper-grate-recipe-2"
+  "waxed_copper_grate_receta_con_waxed_copper_block": {
+    "nombre": "Waxed Copper Grate Recipe (with Waxed Block of Copper)",
+    "slug": "waxed-copper-grate-recipe-with-waxed-block-of-copper"
   },
   "waxed_copper_trapdoor_receta": {
     "nombre": "Waxed Copper Trapdoor Recipe",
     "slug": "waxed-copper-trapdoor-recipe"
   },
-  "waxed_cut_copper_receta_1": {
-    "nombre": "Waxed Cut Copper Recipe 1",
-    "slug": "waxed-cut-copper-recipe-1"
+  "waxed_cut_copper_receta_con_cut_copper": {
+    "nombre": "Waxed Cut Copper Recipe (with Cut Copper)",
+    "slug": "waxed-cut-copper-recipe-with-cut-copper"
   },
-  "waxed_cut_copper_receta_2": {
-    "nombre": "Waxed Cut Copper Recipe 2",
-    "slug": "waxed-cut-copper-recipe-2"
+  "waxed_cut_copper_receta_con_waxed_copper_block": {
+    "nombre": "Waxed Cut Copper Recipe (with Waxed Block of Copper)",
+    "slug": "waxed-cut-copper-recipe-with-waxed-block-of-copper"
   },
-  "waxed_cut_copper_slab_receta_1": {
-    "nombre": "Waxed Cut Copper Slab Recipe 1",
-    "slug": "waxed-cut-copper-slab-recipe-1"
+  "waxed_cut_copper_slab_receta_con_cut_copper_slab": {
+    "nombre": "Waxed Cut Copper Slab Recipe (with Cut Copper Slab)",
+    "slug": "waxed-cut-copper-slab-recipe-with-cut-copper-slab"
   },
-  "waxed_cut_copper_slab_receta_2": {
-    "nombre": "Waxed Cut Copper Slab Recipe 2",
-    "slug": "waxed-cut-copper-slab-recipe-2"
+  "waxed_cut_copper_slab_receta_con_waxed_cut_copper": {
+    "nombre": "Waxed Cut Copper Slab Recipe (with Waxed Cut Copper)",
+    "slug": "waxed-cut-copper-slab-recipe-with-waxed-cut-copper"
   },
-  "waxed_cut_copper_stairs_receta_1": {
-    "nombre": "Waxed Cut Copper Stairs Recipe 1",
-    "slug": "waxed-cut-copper-stairs-recipe-1"
+  "waxed_cut_copper_stairs_receta_con_cut_copper_stairs": {
+    "nombre": "Waxed Cut Copper Stairs Recipe (with Cut Copper Stairs)",
+    "slug": "waxed-cut-copper-stairs-recipe-with-cut-copper-stairs"
   },
-  "waxed_cut_copper_stairs_receta_2": {
-    "nombre": "Waxed Cut Copper Stairs Recipe 2",
-    "slug": "waxed-cut-copper-stairs-recipe-2"
+  "waxed_cut_copper_stairs_receta_con_waxed_cut_copper": {
+    "nombre": "Waxed Cut Copper Stairs Recipe (with Waxed Cut Copper)",
+    "slug": "waxed-cut-copper-stairs-recipe-with-waxed-cut-copper"
   },
-  "waxed_exposed_chiseled_copper_receta_1": {
-    "nombre": "Waxed Exposed Chiseled Copper Recipe 1",
-    "slug": "waxed-exposed-chiseled-copper-recipe-1"
+  "waxed_exposed_chiseled_copper_receta_con_exposed_chiseled_copper": {
+    "nombre": "Waxed Exposed Chiseled Copper Recipe (with Exposed Chiseled Copper)",
+    "slug": "waxed-exposed-chiseled-copper-recipe-with-exposed-chiseled-copper"
   },
-  "waxed_exposed_chiseled_copper_receta_2": {
-    "nombre": "Waxed Exposed Chiseled Copper Recipe 2",
-    "slug": "waxed-exposed-chiseled-copper-recipe-2"
+  "waxed_exposed_chiseled_copper_receta_con_waxed_exposed_cut_copper_slab": {
+    "nombre": "Waxed Exposed Chiseled Copper Recipe (with Waxed Exposed Cut Copper Slab)",
+    "slug": "waxed-exposed-chiseled-copper-recipe-with-waxed-exposed-cut-copper-slab"
   },
-  "waxed_exposed_copper_bulb_receta_1": {
-    "nombre": "Waxed Exposed Copper Bulb Recipe 1",
-    "slug": "waxed-exposed-copper-bulb-recipe-1"
+  "waxed_exposed_copper_bulb_receta_con_exposed_copper_bulb": {
+    "nombre": "Waxed Exposed Copper Bulb Recipe (with Exposed Copper Bulb)",
+    "slug": "waxed-exposed-copper-bulb-recipe-with-exposed-copper-bulb"
   },
-  "waxed_exposed_copper_bulb_receta_2": {
-    "nombre": "Waxed Exposed Copper Bulb Recipe 2",
-    "slug": "waxed-exposed-copper-bulb-recipe-2"
+  "waxed_exposed_copper_bulb_receta_con_waxed_exposed_copper": {
+    "nombre": "Waxed Exposed Copper Bulb Recipe (with Waxed Exposed Copper)",
+    "slug": "waxed-exposed-copper-bulb-recipe-with-waxed-exposed-copper"
   },
   "waxed_exposed_copper_door_receta": {
     "nombre": "Waxed Exposed Copper Door Recipe",
     "slug": "waxed-exposed-copper-door-recipe"
   },
-  "waxed_exposed_copper_grate_receta_1": {
-    "nombre": "Waxed Exposed Copper Grate Recipe 1",
-    "slug": "waxed-exposed-copper-grate-recipe-1"
+  "waxed_exposed_copper_grate_receta_con_exposed_copper_grate": {
+    "nombre": "Waxed Exposed Copper Grate Recipe (with Exposed Copper Grate)",
+    "slug": "waxed-exposed-copper-grate-recipe-with-exposed-copper-grate"
   },
-  "waxed_exposed_copper_grate_receta_2": {
-    "nombre": "Waxed Exposed Copper Grate Recipe 2",
-    "slug": "waxed-exposed-copper-grate-recipe-2"
+  "waxed_exposed_copper_grate_receta_con_waxed_exposed_copper": {
+    "nombre": "Waxed Exposed Copper Grate Recipe (with Waxed Exposed Copper)",
+    "slug": "waxed-exposed-copper-grate-recipe-with-waxed-exposed-copper"
   },
   "waxed_exposed_copper_receta": {
     "nombre": "Waxed Exposed Copper Recipe",
@@ -3747,57 +3251,57 @@
     "nombre": "Waxed Exposed Copper Trapdoor Recipe",
     "slug": "waxed-exposed-copper-trapdoor-recipe"
   },
-  "waxed_exposed_cut_copper_receta_1": {
-    "nombre": "Waxed Exposed Cut Copper Recipe 1",
-    "slug": "waxed-exposed-cut-copper-recipe-1"
+  "waxed_exposed_cut_copper_receta_con_exposed_cut_copper": {
+    "nombre": "Waxed Exposed Cut Copper Recipe (with Exposed Cut Copper)",
+    "slug": "waxed-exposed-cut-copper-recipe-with-exposed-cut-copper"
   },
-  "waxed_exposed_cut_copper_receta_2": {
-    "nombre": "Waxed Exposed Cut Copper Recipe 2",
-    "slug": "waxed-exposed-cut-copper-recipe-2"
+  "waxed_exposed_cut_copper_receta_con_waxed_exposed_copper": {
+    "nombre": "Waxed Exposed Cut Copper Recipe (with Waxed Exposed Copper)",
+    "slug": "waxed-exposed-cut-copper-recipe-with-waxed-exposed-copper"
   },
-  "waxed_exposed_cut_copper_slab_receta_1": {
-    "nombre": "Waxed Exposed Cut Copper Slab Recipe 1",
-    "slug": "waxed-exposed-cut-copper-slab-recipe-1"
+  "waxed_exposed_cut_copper_slab_receta_con_exposed_cut_copper_slab": {
+    "nombre": "Waxed Exposed Cut Copper Slab Recipe (with Exposed Cut Copper Slab)",
+    "slug": "waxed-exposed-cut-copper-slab-recipe-with-exposed-cut-copper-slab"
   },
-  "waxed_exposed_cut_copper_slab_receta_2": {
-    "nombre": "Waxed Exposed Cut Copper Slab Recipe 2",
-    "slug": "waxed-exposed-cut-copper-slab-recipe-2"
+  "waxed_exposed_cut_copper_slab_receta_con_waxed_exposed_cut_copper": {
+    "nombre": "Waxed Exposed Cut Copper Slab Recipe (with Waxed Exposed Cut Copper)",
+    "slug": "waxed-exposed-cut-copper-slab-recipe-with-waxed-exposed-cut-copper"
   },
-  "waxed_exposed_cut_copper_stairs_receta_1": {
-    "nombre": "Waxed Exposed Cut Copper Stairs Recipe 1",
-    "slug": "waxed-exposed-cut-copper-stairs-recipe-1"
+  "waxed_exposed_cut_copper_stairs_receta_con_exposed_cut_copper_stairs": {
+    "nombre": "Waxed Exposed Cut Copper Stairs Recipe (with Exposed Cut Copper Stairs)",
+    "slug": "waxed-exposed-cut-copper-stairs-recipe-with-exposed-cut-copper-stairs"
   },
-  "waxed_exposed_cut_copper_stairs_receta_2": {
-    "nombre": "Waxed Exposed Cut Copper Stairs Recipe 2",
-    "slug": "waxed-exposed-cut-copper-stairs-recipe-2"
+  "waxed_exposed_cut_copper_stairs_receta_con_waxed_exposed_cut_copper": {
+    "nombre": "Waxed Exposed Cut Copper Stairs Recipe (with Waxed Exposed Cut Copper)",
+    "slug": "waxed-exposed-cut-copper-stairs-recipe-with-waxed-exposed-cut-copper"
   },
-  "waxed_oxidized_chiseled_copper_receta_1": {
-    "nombre": "Waxed Oxidized Chiseled Copper Recipe 1",
-    "slug": "waxed-oxidized-chiseled-copper-recipe-1"
+  "waxed_oxidized_chiseled_copper_receta_con_honeycomb": {
+    "nombre": "Waxed Oxidized Chiseled Copper Recipe (with Honeycomb)",
+    "slug": "waxed-oxidized-chiseled-copper-recipe-with-honeycomb"
   },
-  "waxed_oxidized_chiseled_copper_receta_2": {
-    "nombre": "Waxed Oxidized Chiseled Copper Recipe 2",
-    "slug": "waxed-oxidized-chiseled-copper-recipe-2"
+  "waxed_oxidized_chiseled_copper_receta_con_waxed_oxidized_cut_copper_slab": {
+    "nombre": "Waxed Oxidized Chiseled Copper Recipe (with Waxed Oxidized Cut Copper Slab)",
+    "slug": "waxed-oxidized-chiseled-copper-recipe-with-waxed-oxidized-cut-copper-slab"
   },
-  "waxed_oxidized_copper_bulb_receta_1": {
-    "nombre": "Waxed Oxidized Copper Bulb Recipe 1",
-    "slug": "waxed-oxidized-copper-bulb-recipe-1"
+  "waxed_oxidized_copper_bulb_receta_con_honeycomb": {
+    "nombre": "Waxed Oxidized Copper Bulb Recipe (with Honeycomb)",
+    "slug": "waxed-oxidized-copper-bulb-recipe-with-honeycomb"
   },
-  "waxed_oxidized_copper_bulb_receta_2": {
-    "nombre": "Waxed Oxidized Copper Bulb Recipe 2",
-    "slug": "waxed-oxidized-copper-bulb-recipe-2"
+  "waxed_oxidized_copper_bulb_receta_con_waxed_oxidized_copper": {
+    "nombre": "Waxed Oxidized Copper Bulb Recipe (with Waxed Oxidized Copper)",
+    "slug": "waxed-oxidized-copper-bulb-recipe-with-waxed-oxidized-copper"
   },
   "waxed_oxidized_copper_door_receta": {
     "nombre": "Waxed Oxidized Copper Door Recipe",
     "slug": "waxed-oxidized-copper-door-recipe"
   },
-  "waxed_oxidized_copper_grate_receta_1": {
-    "nombre": "Waxed Oxidized Copper Grate Recipe 1",
-    "slug": "waxed-oxidized-copper-grate-recipe-1"
+  "waxed_oxidized_copper_grate_receta_con_honeycomb": {
+    "nombre": "Waxed Oxidized Copper Grate Recipe (with Honeycomb)",
+    "slug": "waxed-oxidized-copper-grate-recipe-with-honeycomb"
   },
-  "waxed_oxidized_copper_grate_receta_2": {
-    "nombre": "Waxed Oxidized Copper Grate Recipe 2",
-    "slug": "waxed-oxidized-copper-grate-recipe-2"
+  "waxed_oxidized_copper_grate_receta_con_waxed_oxidized_copper": {
+    "nombre": "Waxed Oxidized Copper Grate Recipe (with Waxed Oxidized Copper)",
+    "slug": "waxed-oxidized-copper-grate-recipe-with-waxed-oxidized-copper"
   },
   "waxed_oxidized_copper_receta": {
     "nombre": "Waxed Oxidized Copper Recipe",
@@ -3807,57 +3311,57 @@
     "nombre": "Waxed Oxidized Copper Trapdoor Recipe",
     "slug": "waxed-oxidized-copper-trapdoor-recipe"
   },
-  "waxed_oxidized_cut_copper_receta_1": {
-    "nombre": "Waxed Oxidized Cut Copper Recipe 1",
-    "slug": "waxed-oxidized-cut-copper-recipe-1"
+  "waxed_oxidized_cut_copper_receta_con_honeycomb": {
+    "nombre": "Waxed Oxidized Cut Copper Recipe (with Honeycomb)",
+    "slug": "waxed-oxidized-cut-copper-recipe-with-honeycomb"
   },
-  "waxed_oxidized_cut_copper_receta_2": {
-    "nombre": "Waxed Oxidized Cut Copper Recipe 2",
-    "slug": "waxed-oxidized-cut-copper-recipe-2"
+  "waxed_oxidized_cut_copper_receta_con_waxed_oxidized_copper": {
+    "nombre": "Waxed Oxidized Cut Copper Recipe (with Waxed Oxidized Copper)",
+    "slug": "waxed-oxidized-cut-copper-recipe-with-waxed-oxidized-copper"
   },
-  "waxed_oxidized_cut_copper_slab_receta_1": {
-    "nombre": "Waxed Oxidized Cut Copper Slab Recipe 1",
-    "slug": "waxed-oxidized-cut-copper-slab-recipe-1"
+  "waxed_oxidized_cut_copper_slab_receta_con_honeycomb": {
+    "nombre": "Waxed Oxidized Cut Copper Slab Recipe (with Honeycomb)",
+    "slug": "waxed-oxidized-cut-copper-slab-recipe-with-honeycomb"
   },
-  "waxed_oxidized_cut_copper_slab_receta_2": {
-    "nombre": "Waxed Oxidized Cut Copper Slab Recipe 2",
-    "slug": "waxed-oxidized-cut-copper-slab-recipe-2"
+  "waxed_oxidized_cut_copper_slab_receta_con_waxed_oxidized_cut_copper": {
+    "nombre": "Waxed Oxidized Cut Copper Slab Recipe (with Waxed Oxidized Cut Copper)",
+    "slug": "waxed-oxidized-cut-copper-slab-recipe-with-waxed-oxidized-cut-copper"
   },
-  "waxed_oxidized_cut_copper_stairs_receta_1": {
-    "nombre": "Waxed Oxidized Cut Copper Stairs Recipe 1",
-    "slug": "waxed-oxidized-cut-copper-stairs-recipe-1"
+  "waxed_oxidized_cut_copper_stairs_receta_con_honeycomb": {
+    "nombre": "Waxed Oxidized Cut Copper Stairs Recipe (with Honeycomb)",
+    "slug": "waxed-oxidized-cut-copper-stairs-recipe-with-honeycomb"
   },
-  "waxed_oxidized_cut_copper_stairs_receta_2": {
-    "nombre": "Waxed Oxidized Cut Copper Stairs Recipe 2",
-    "slug": "waxed-oxidized-cut-copper-stairs-recipe-2"
+  "waxed_oxidized_cut_copper_stairs_receta_con_waxed_oxidized_cut_copper": {
+    "nombre": "Waxed Oxidized Cut Copper Stairs Recipe (with Waxed Oxidized Cut Copper)",
+    "slug": "waxed-oxidized-cut-copper-stairs-recipe-with-waxed-oxidized-cut-copper"
   },
-  "waxed_weathered_chiseled_copper_receta_1": {
-    "nombre": "Waxed Weathered Chiseled Copper Recipe 1",
-    "slug": "waxed-weathered-chiseled-copper-recipe-1"
+  "waxed_weathered_chiseled_copper_receta_con_honeycomb": {
+    "nombre": "Waxed Weathered Chiseled Copper Recipe (with Honeycomb)",
+    "slug": "waxed-weathered-chiseled-copper-recipe-with-honeycomb"
   },
-  "waxed_weathered_chiseled_copper_receta_2": {
-    "nombre": "Waxed Weathered Chiseled Copper Recipe 2",
-    "slug": "waxed-weathered-chiseled-copper-recipe-2"
+  "waxed_weathered_chiseled_copper_receta_con_waxed_weathered_cut_copper_slab": {
+    "nombre": "Waxed Weathered Chiseled Copper Recipe (with Waxed Weathered Cut Copper Slab)",
+    "slug": "waxed-weathered-chiseled-copper-recipe-with-waxed-weathered-cut-copper-slab"
   },
-  "waxed_weathered_copper_bulb_receta_1": {
-    "nombre": "Waxed Weathered Copper Bulb Recipe 1",
-    "slug": "waxed-weathered-copper-bulb-recipe-1"
+  "waxed_weathered_copper_bulb_receta_con_honeycomb": {
+    "nombre": "Waxed Weathered Copper Bulb Recipe (with Honeycomb)",
+    "slug": "waxed-weathered-copper-bulb-recipe-with-honeycomb"
   },
-  "waxed_weathered_copper_bulb_receta_2": {
-    "nombre": "Waxed Weathered Copper Bulb Recipe 2",
-    "slug": "waxed-weathered-copper-bulb-recipe-2"
+  "waxed_weathered_copper_bulb_receta_con_waxed_weathered_copper": {
+    "nombre": "Waxed Weathered Copper Bulb Recipe (with Waxed Weathered Copper)",
+    "slug": "waxed-weathered-copper-bulb-recipe-with-waxed-weathered-copper"
   },
   "waxed_weathered_copper_door_receta": {
     "nombre": "Waxed Weathered Copper Door Recipe",
     "slug": "waxed-weathered-copper-door-recipe"
   },
-  "waxed_weathered_copper_grate_receta_1": {
-    "nombre": "Waxed Weathered Copper Grate Recipe 1",
-    "slug": "waxed-weathered-copper-grate-recipe-1"
+  "waxed_weathered_copper_grate_receta_con_honeycomb": {
+    "nombre": "Waxed Weathered Copper Grate Recipe (with Honeycomb)",
+    "slug": "waxed-weathered-copper-grate-recipe-with-honeycomb"
   },
-  "waxed_weathered_copper_grate_receta_2": {
-    "nombre": "Waxed Weathered Copper Grate Recipe 2",
-    "slug": "waxed-weathered-copper-grate-recipe-2"
+  "waxed_weathered_copper_grate_receta_con_waxed_weathered_copper": {
+    "nombre": "Waxed Weathered Copper Grate Recipe (with Waxed Weathered Copper)",
+    "slug": "waxed-weathered-copper-grate-recipe-with-waxed-weathered-copper"
   },
   "waxed_weathered_copper_receta": {
     "nombre": "Waxed Weathered Copper Recipe",
@@ -3867,29 +3371,29 @@
     "nombre": "Waxed Weathered Copper Trapdoor Recipe",
     "slug": "waxed-weathered-copper-trapdoor-recipe"
   },
-  "waxed_weathered_cut_copper_receta_1": {
-    "nombre": "Waxed Weathered Cut Copper Recipe 1",
-    "slug": "waxed-weathered-cut-copper-recipe-1"
+  "waxed_weathered_cut_copper_receta_con_honeycomb": {
+    "nombre": "Waxed Weathered Cut Copper Recipe (with Honeycomb)",
+    "slug": "waxed-weathered-cut-copper-recipe-with-honeycomb"
   },
-  "waxed_weathered_cut_copper_receta_2": {
-    "nombre": "Waxed Weathered Cut Copper Recipe 2",
-    "slug": "waxed-weathered-cut-copper-recipe-2"
+  "waxed_weathered_cut_copper_receta_con_waxed_weathered_copper": {
+    "nombre": "Waxed Weathered Cut Copper Recipe (with Waxed Weathered Copper)",
+    "slug": "waxed-weathered-cut-copper-recipe-with-waxed-weathered-copper"
   },
-  "waxed_weathered_cut_copper_slab_receta_1": {
-    "nombre": "Waxed Weathered Cut Copper Slab Recipe 1",
-    "slug": "waxed-weathered-cut-copper-slab-recipe-1"
+  "waxed_weathered_cut_copper_slab_receta_con_honeycomb": {
+    "nombre": "Waxed Weathered Cut Copper Slab Recipe (with Honeycomb)",
+    "slug": "waxed-weathered-cut-copper-slab-recipe-with-honeycomb"
   },
-  "waxed_weathered_cut_copper_slab_receta_2": {
-    "nombre": "Waxed Weathered Cut Copper Slab Recipe 2",
-    "slug": "waxed-weathered-cut-copper-slab-recipe-2"
+  "waxed_weathered_cut_copper_slab_receta_con_waxed_weathered_cut_copper": {
+    "nombre": "Waxed Weathered Cut Copper Slab Recipe (with Waxed Weathered Cut Copper)",
+    "slug": "waxed-weathered-cut-copper-slab-recipe-with-waxed-weathered-cut-copper"
   },
-  "waxed_weathered_cut_copper_stairs_receta_1": {
-    "nombre": "Waxed Weathered Cut Copper Stairs Recipe 1",
-    "slug": "waxed-weathered-cut-copper-stairs-recipe-1"
+  "waxed_weathered_cut_copper_stairs_receta_con_honeycomb": {
+    "nombre": "Waxed Weathered Cut Copper Stairs Recipe (with Honeycomb)",
+    "slug": "waxed-weathered-cut-copper-stairs-recipe-with-honeycomb"
   },
-  "waxed_weathered_cut_copper_stairs_receta_2": {
-    "nombre": "Waxed Weathered Cut Copper Stairs Recipe 2",
-    "slug": "waxed-weathered-cut-copper-stairs-recipe-2"
+  "waxed_weathered_cut_copper_stairs_receta_con_waxed_weathered_cut_copper": {
+    "nombre": "Waxed Weathered Cut Copper Stairs Recipe (with Waxed Weathered Cut Copper)",
+    "slug": "waxed-weathered-cut-copper-stairs-recipe-with-waxed-weathered-cut-copper"
   },
   "wayfinder_armor_trim_smithing_template_receta": {
     "nombre": "Wayfinder Armor Trim Recipe",
@@ -3927,25 +3431,25 @@
     "nombre": "White Banner Recipe",
     "slug": "white-banner-recipe"
   },
-  "white_bed_receta_1": {
-    "nombre": "White Bed Recipe 1",
-    "slug": "white-bed-recipe-1"
+  "white_bed_receta_con_black_bed": {
+    "nombre": "White Bed Recipe (with Black Bed)",
+    "slug": "white-bed-recipe-with-black-bed"
   },
-  "white_bed_receta_2": {
-    "nombre": "White Bed Recipe 2",
-    "slug": "white-bed-recipe-2"
+  "white_bed_receta_con_white_wool": {
+    "nombre": "White Bed Recipe (with White Wool)",
+    "slug": "white-bed-recipe-with-white-wool"
   },
   "white_candle_receta": {
     "nombre": "White Candle Recipe",
     "slug": "white-candle-recipe"
   },
-  "white_carpet_receta_1": {
-    "nombre": "White Carpet Recipe 1",
-    "slug": "white-carpet-recipe-1"
+  "white_carpet_receta_con_black_carpet": {
+    "nombre": "White Carpet Recipe (with Black Carpet)",
+    "slug": "white-carpet-recipe-with-black-carpet"
   },
-  "white_carpet_receta_2": {
-    "nombre": "White Carpet Recipe 2",
-    "slug": "white-carpet-recipe-2"
+  "white_carpet_receta_con_white_wool": {
+    "nombre": "White Carpet Recipe (with White Wool)",
+    "slug": "white-carpet-recipe-with-white-wool"
   },
   "white_concrete_powder_receta": {
     "nombre": "White Concrete Powder Recipe",
@@ -3955,13 +3459,13 @@
     "nombre": "White Dye Recipe",
     "slug": "white-dye-recipe"
   },
-  "white_stained_glass_pane_receta_1": {
-    "nombre": "White Stained Glass Pane Recipe 1",
-    "slug": "white-stained-glass-pane-recipe-1"
+  "white_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "White Stained Glass Pane Recipe (with Glass Pane)",
+    "slug": "white-stained-glass-pane-recipe-with-glass-pane"
   },
-  "white_stained_glass_pane_receta_2": {
-    "nombre": "White Stained Glass Pane Recipe 2",
-    "slug": "white-stained-glass-pane-recipe-2"
+  "white_stained_glass_pane_receta_con_white_stained_glass": {
+    "nombre": "White Stained Glass Pane Recipe (with White Stained Glass)",
+    "slug": "white-stained-glass-pane-recipe-with-white-stained-glass"
   },
   "white_stained_glass_receta": {
     "nombre": "White Stained Glass Recipe",
@@ -3971,13 +3475,13 @@
     "nombre": "White Terracotta Recipe",
     "slug": "white-terracotta-recipe"
   },
-  "white_wool_receta_1": {
-    "nombre": "White Wool Recipe 1",
-    "slug": "white-wool-recipe-1"
+  "white_wool_receta_con_black_wool": {
+    "nombre": "White Wool Recipe (with Black Wool)",
+    "slug": "white-wool-recipe-with-black-wool"
   },
-  "white_wool_receta_2": {
-    "nombre": "White Wool Recipe 2",
-    "slug": "white-wool-recipe-2"
+  "white_wool_receta_con_string": {
+    "nombre": "White Wool Recipe (with String)",
+    "slug": "white-wool-recipe-with-string"
   },
   "wild_armor_trim_smithing_template_receta": {
     "nombre": "Wild Armor Trim Recipe",
@@ -4019,45 +3523,45 @@
     "nombre": "Yellow Banner Recipe",
     "slug": "yellow-banner-recipe"
   },
-  "yellow_bed_receta_1": {
-    "nombre": "Yellow Bed Recipe 1",
-    "slug": "yellow-bed-recipe-1"
+  "yellow_bed_receta_con_black_bed": {
+    "nombre": "Yellow Bed Recipe (with Black Bed)",
+    "slug": "yellow-bed-recipe-with-black-bed"
   },
-  "yellow_bed_receta_2": {
-    "nombre": "Yellow Bed Recipe 2",
-    "slug": "yellow-bed-recipe-2"
+  "yellow_bed_receta_con_yellow_wool": {
+    "nombre": "Yellow Bed Recipe (with Yellow Wool)",
+    "slug": "yellow-bed-recipe-with-yellow-wool"
   },
   "yellow_candle_receta": {
     "nombre": "Yellow Candle Recipe",
     "slug": "yellow-candle-recipe"
   },
-  "yellow_carpet_receta_1": {
-    "nombre": "Yellow Carpet Recipe 1",
-    "slug": "yellow-carpet-recipe-1"
+  "yellow_carpet_receta_con_black_carpet": {
+    "nombre": "Yellow Carpet Recipe (with Black Carpet)",
+    "slug": "yellow-carpet-recipe-with-black-carpet"
   },
-  "yellow_carpet_receta_2": {
-    "nombre": "Yellow Carpet Recipe 2",
-    "slug": "yellow-carpet-recipe-2"
+  "yellow_carpet_receta_con_yellow_wool": {
+    "nombre": "Yellow Carpet Recipe (with Yellow Wool)",
+    "slug": "yellow-carpet-recipe-with-yellow-wool"
   },
   "yellow_concrete_powder_receta": {
     "nombre": "Yellow Concrete Powder Recipe",
     "slug": "yellow-concrete-powder-recipe"
   },
-  "yellow_dye_receta_1": {
-    "nombre": "Yellow Dye Recipe 1",
-    "slug": "yellow-dye-recipe-1"
+  "yellow_dye_receta_con_dandelion": {
+    "nombre": "Yellow Dye Recipe (with Dandelion)",
+    "slug": "yellow-dye-recipe-with-dandelion"
   },
-  "yellow_dye_receta_2": {
-    "nombre": "Yellow Dye Recipe 2",
-    "slug": "yellow-dye-recipe-2"
+  "yellow_dye_receta_con_sunflower": {
+    "nombre": "Yellow Dye Recipe (with Sunflower)",
+    "slug": "yellow-dye-recipe-with-sunflower"
   },
-  "yellow_stained_glass_pane_receta_1": {
-    "nombre": "Yellow Stained Glass Pane Recipe 1",
-    "slug": "yellow-stained-glass-pane-recipe-1"
+  "yellow_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Yellow Stained Glass Pane Recipe (with Glass Pane)",
+    "slug": "yellow-stained-glass-pane-recipe-with-glass-pane"
   },
-  "yellow_stained_glass_pane_receta_2": {
-    "nombre": "Yellow Stained Glass Pane Recipe 2",
-    "slug": "yellow-stained-glass-pane-recipe-2"
+  "yellow_stained_glass_pane_receta_con_yellow_stained_glass": {
+    "nombre": "Yellow Stained Glass Pane Recipe (with Yellow Stained Glass)",
+    "slug": "yellow-stained-glass-pane-recipe-with-yellow-stained-glass"
   },
   "yellow_stained_glass_receta": {
     "nombre": "Yellow Stained Glass Recipe",

@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "purple_stained_glass_pane_receta_con_glass_pane",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "purple_stained_glass_pane",
+    "cantidad": 8
+  },
+  "variantePor": "glass_pane",
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "clave": {
+    "A": [
+      "glass_pane"
+    ],
+    "B": [
+      "purple_dye"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

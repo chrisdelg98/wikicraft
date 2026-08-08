@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "netherite_ingot_receta_con_netherite_block",
+  "tipo": "receta",
+  "etapa": "nether",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "netherite_ingot",
+    "cantidad": 9
+  },
+  "variantePor": "netherite_block",
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "netherite_block"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

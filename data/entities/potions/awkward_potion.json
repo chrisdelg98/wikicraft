@@ -3,12 +3,19 @@
   "id": "awkward_potion",
   "tipo": "pocion",
   "etapa": "nether",
+  "relevancia": "alta",
   "efecto": "ninguno",
   "presentacion": "bebible",
   "variante": "base",
-  "duracionSegundos": 0,
+  "nivel": 1,
+  "utilidad": 5,
+  "beneficiosa": true,
   "derivaDe": "water_bottle",
   "ingrediente": "nether_wart",
-  "beneficiosa": true,
-  "etiquetas": ["pocion rara", "base", "verruga del nether"]
+  "etiquetas": [
+    "poción rara",
+    "ninguno",
+    "pocion",
+    "soporte para pociones"
+  ]
 }

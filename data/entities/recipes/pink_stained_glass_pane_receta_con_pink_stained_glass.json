@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "pink_stained_glass_pane_receta_con_pink_stained_glass",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "pink_stained_glass_pane",
+    "cantidad": 16
+  },
+  "variantePor": "pink_stained_glass",
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "AAA"
+  ],
+  "clave": {
+    "A": [
+      "pink_stained_glass"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

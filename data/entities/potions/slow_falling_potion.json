@@ -1,0 +1,26 @@
+{
+  "$schema": "../../schemas/potion.schema.json",
+  "id": "slow_falling_potion",
+  "tipo": "pocion",
+  "etapa": "nether",
+  "relevancia": "alta",
+  "efecto": "caida_lenta",
+  "presentacion": "bebible",
+  "variante": "normal",
+  "nivel": 1,
+  "utilidad": 3,
+  "beneficiosa": true,
+  "duracionSegundos": 90,
+  "derivaDe": "awkward_potion",
+  "ingrediente": "phantom_membrane",
+  "prolongada": {
+    "ingrediente": "redstone",
+    "duracionSegundos": 240
+  },
+  "etiquetas": [
+    "poción de caída lenta",
+    "caida_lenta",
+    "pocion",
+    "soporte para pociones"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "red_dye_receta_con_rose_bush",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "red_dye",
+    "cantidad": 2
+  },
+  "variantePor": "rose_bush",
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "rose_bush"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

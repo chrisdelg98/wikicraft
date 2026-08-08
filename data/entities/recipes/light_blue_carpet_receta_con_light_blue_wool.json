@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "light_blue_carpet_receta_con_light_blue_wool",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "light_blue_carpet",
+    "cantidad": 3
+  },
+  "variantePor": "light_blue_wool",
+  "conForma": true,
+  "patron": [
+    "AA"
+  ],
+  "clave": {
+    "A": [
+      "light_blue_wool"
+    ]
+  },
+  "estacion": "inventario"
+}

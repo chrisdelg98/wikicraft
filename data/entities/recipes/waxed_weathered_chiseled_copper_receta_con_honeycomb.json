@@ -1,0 +1,28 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "waxed_weathered_chiseled_copper_receta_con_honeycomb",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "waxed_weathered_chiseled_copper",
+    "cantidad": 1
+  },
+  "variantePor": "honeycomb",
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "honeycomb"
+      ],
+      "cantidad": 1
+    },
+    {
+      "opciones": [
+        "weathered_chiseled_copper"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "gold_ingot_receta_con_gold_nugget",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "gold_ingot",
+    "cantidad": 1
+  },
+  "variantePor": "gold_nugget",
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "clave": {
+    "A": [
+      "gold_nugget"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

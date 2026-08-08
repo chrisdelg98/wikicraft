@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "red_carpet_receta_con_red_wool",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "red_carpet",
+    "cantidad": 3
+  },
+  "variantePor": "red_wool",
+  "conForma": true,
+  "patron": [
+    "AA"
+  ],
+  "clave": {
+    "A": [
+      "red_wool"
+    ]
+  },
+  "estacion": "inventario"
+}

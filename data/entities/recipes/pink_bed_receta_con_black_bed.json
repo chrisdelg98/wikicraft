@@ -1,0 +1,28 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "pink_bed_receta_con_black_bed",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "pink_bed",
+    "cantidad": 1
+  },
+  "variantePor": "black_bed",
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "black_bed"
+      ],
+      "cantidad": 1
+    },
+    {
+      "opciones": [
+        "pink_dye"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

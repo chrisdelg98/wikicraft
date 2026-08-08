@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "orange_stained_glass_pane_receta_con_orange_stained_glass",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "orange_stained_glass_pane",
+    "cantidad": 16
+  },
+  "variantePor": "orange_stained_glass",
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "AAA"
+  ],
+  "clave": {
+    "A": [
+      "orange_stained_glass"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

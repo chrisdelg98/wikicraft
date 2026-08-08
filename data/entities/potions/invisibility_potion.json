@@ -1,0 +1,26 @@
+{
+  "$schema": "../../schemas/potion.schema.json",
+  "id": "invisibility_potion",
+  "tipo": "pocion",
+  "etapa": "nether",
+  "relevancia": "alta",
+  "efecto": "invisibilidad",
+  "presentacion": "bebible",
+  "variante": "normal",
+  "nivel": 1,
+  "utilidad": 3,
+  "beneficiosa": true,
+  "duracionSegundos": 180,
+  "derivaDe": "night_vision_potion",
+  "ingrediente": "fermented_spider_eye",
+  "prolongada": {
+    "ingrediente": "redstone",
+    "duracionSegundos": 480
+  },
+  "etiquetas": [
+    "poción de invisibilidad",
+    "invisibilidad",
+    "pocion",
+    "soporte para pociones"
+  ]
+}

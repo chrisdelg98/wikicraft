@@ -1,0 +1,31 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "soul_torch_receta",
+  "tipo": "receta",
+  "etapa": "nether",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "soul_torch",
+    "cantidad": 4
+  },
+  "conForma": true,
+  "patron": [
+    "A",
+    "B",
+    "C"
+  ],
+  "clave": {
+    "A": [
+      "charcoal",
+      "coal"
+    ],
+    "B": [
+      "stick"
+    ],
+    "C": [
+      "soul_sand",
+      "soul_soil"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

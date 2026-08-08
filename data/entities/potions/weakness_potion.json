@@ -1,0 +1,26 @@
+{
+  "$schema": "../../schemas/potion.schema.json",
+  "id": "weakness_potion",
+  "tipo": "pocion",
+  "etapa": "nether",
+  "relevancia": "alta",
+  "efecto": "debilidad",
+  "presentacion": "bebible",
+  "variante": "normal",
+  "nivel": 1,
+  "utilidad": 4,
+  "beneficiosa": false,
+  "duracionSegundos": 90,
+  "derivaDe": "water_bottle",
+  "ingrediente": "fermented_spider_eye",
+  "prolongada": {
+    "ingrediente": "redstone",
+    "duracionSegundos": 240
+  },
+  "etiquetas": [
+    "poción de debilidad",
+    "debilidad",
+    "pocion",
+    "soporte para pociones"
+  ]
+}

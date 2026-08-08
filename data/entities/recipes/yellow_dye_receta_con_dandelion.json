@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "yellow_dye_receta_con_dandelion",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "yellow_dye",
+    "cantidad": 1
+  },
+  "variantePor": "dandelion",
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "dandelion"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

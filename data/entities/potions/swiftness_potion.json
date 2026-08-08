@@ -1,0 +1,30 @@
+{
+  "$schema": "../../schemas/potion.schema.json",
+  "id": "swiftness_potion",
+  "tipo": "pocion",
+  "etapa": "nether",
+  "relevancia": "alta",
+  "efecto": "velocidad",
+  "presentacion": "bebible",
+  "variante": "normal",
+  "nivel": 1,
+  "utilidad": 5,
+  "beneficiosa": true,
+  "duracionSegundos": 180,
+  "derivaDe": "awkward_potion",
+  "ingrediente": "sugar",
+  "prolongada": {
+    "ingrediente": "redstone",
+    "duracionSegundos": 480
+  },
+  "mejorada": {
+    "ingrediente": "glowstone_dust",
+    "duracionSegundos": 90
+  },
+  "etiquetas": [
+    "poción de velocidad",
+    "velocidad",
+    "pocion",
+    "soporte para pociones"
+  ]
+}

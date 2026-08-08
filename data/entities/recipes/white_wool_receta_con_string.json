@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "white_wool_receta_con_string",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "white_wool",
+    "cantidad": 1
+  },
+  "variantePor": "string",
+  "conForma": true,
+  "patron": [
+    "AA",
+    "AA"
+  ],
+  "clave": {
+    "A": [
+      "string"
+    ]
+  },
+  "estacion": "inventario"
+}

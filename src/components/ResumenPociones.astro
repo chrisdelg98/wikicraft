@@ -1,0 +1,140 @@
+---
+import { ui, entidadesDe, rutaDe, t, grafo } from '../lib/datos.js'
+
+/**
+ * Ranking de pociones.
+ *
+ * Un listado alfabetico no responde a la pregunta que trae quien entra aqui,
+ * que es "cual me hago primero". Se ordena por utilidad, que combina lo que
+ * aporta el efecto con lo facil que es conseguir el ingrediente, y se separan
+ * las que perjudican, porque se usan para lo contrario: lanzarlas.
+ */
+
+const { idioma } = Astro.props
+
+const enlace = (otro) =>
+  grafo.has(otro) ? { url: rutaDe(idioma, otro), nombre: t(idioma, otro).nombre } : null
+
+const duracion = (segundos) =>
+  segundos == null
+    ? '—'
+    : segundos === 0
+      ? ui(idioma, 'pocion.instantaneo')
+      : segundos >= 60
+        ? ui(idioma, 'ficha.minutos', { n: Math.round(segundos / 60) })
+        : ui(idioma, 'ficha.segundos', { n: segundos })
+
+const todas = entidadesDe('potions')
+  .map(({ entidad }) => ({ ...entidad, nombre: t(idioma, entidad.id).nombre }))
+  .filter((p) => p.efecto !== 'ninguno')
+  .sort((a, b) => (b.utilidad ?? 0) - (a.utilidad ?? 0) || a.nombre.localeCompare(b.nombre))
+
+const bases = entidadesDe('potions')
+  .map(({ entidad }) => entidad)
+  .filter((p) => p.efecto === 'ninguno')
+
+const tabla = (titulo, lista) => ({ titulo, lista })
+const secciones = [
+  tabla(ui(idioma, 'resumen.pocionesUtiles'), todas.filter((p) => p.beneficiosa !== false)),
+  tabla(ui(idioma, 'resumen.pocionesNegativas'), todas.filter((p) => p.beneficiosa === false))
+]
+---
+
+<section class="mb-10">
+  {
+    bases.length > 0 && (
+      <p class="mb-6 bloque bg-superficie-alta p-3">
+        <strong>{ui(idioma, 'resumen.baseDeTodas')}</strong>{' '}
+        {bases
+          .map((b) => t(idioma, b.id).nombre)
+          .join(' → ')}
+      </p>
+    )
+  }
+
+  {
+    secciones.map(({ titulo, lista }) =>
+      lista.length === 0 ? null : (
+        <div class="mb-8">
+          <h2 class="titulo-seccion">{titulo}</h2>
+          <div class="tabla-envoltorio">
+            <table>
+              <thead>
+                <tr>
+                  <th>{ui(idioma, 'resumen.utilidad')}</th>
+                  <th>{ui(idioma, 'nav.potions')}</th>
+                  <th>{ui(idioma, 'resumen.ingrediente')}</th>
+                  <th>{ui(idioma, 'ficha.duracion')}</th>
+                  <th>{ui(idioma, 'pocion.mejorar')}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {lista.map((p) => (
+                  <tr>
+                    <td aria-label={`${p.utilidad ?? 0} / 5`}>
+                      <span class="text-[var(--pila-16)]" aria-hidden="true">
+                        {'★'.repeat(p.utilidad ?? 0)}
+                      </span>
+                    </td>
+                    <td>
+                      <a href={rutaDe(idioma, p.id)}>{p.nombre}</a>
+                    </td>
+                    <td>
+                      {enlace(p.ingrediente) ? (
+                        <a href={enlace(p.ingrediente).url}>{enlace(p.ingrediente).nombre}</a>
+                      ) : (
+                        '—'
+                      )}
+                    </td>
+                    <td>{duracion(p.duracionSegundos)}</td>
+                    <td class="text-texto-suave">
+                      {[
+                        p.prolongada &&
+                          `${enlace(p.prolongada.ingrediente)?.nombre} = ${duracion(p.prolongada.duracionSegundos)}`,
+                        p.mejorada && `${enlace(p.mejorada.ingrediente)?.nombre} = ${p.nombre} II`
+                      ]
+                        .filter(Boolean)
+                        .join(' · ') || '—'}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )
+    )
+  }
+
+  <div>
+    <h2 class="titulo-seccion">{ui(idioma, 'resumen.convertirCualquiera')}</h2>
+    <div class="tabla-envoltorio">
+      <table>
+        <thead>
+          <tr>
+            <th>{ui(idioma, 'pocion.quieres')}</th>
+            <th>{ui(idioma, 'pocion.anades')}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{ui(idioma, 'pocion.masDuracion')}</td>
+            <td>{enlace('redstone')?.nombre}</td>
+          </tr>
+          <tr>
+            <td>{ui(idioma, 'pocion.masPotencia')}</td>
+            <td>{enlace('glowstone_dust')?.nombre}</td>
+          </tr>
+          <tr>
+            <td>{ui(idioma, 'pocion.arrojadiza')}</td>
+            <td>{enlace('gunpowder')?.nombre}</td>
+          </tr>
+          <tr>
+            <td>{ui(idioma, 'pocion.persistente')}</td>
+            <td>{ui(idioma, 'pocion.persistenteComo', { item: enlace('dragon_breath')?.nombre })}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>

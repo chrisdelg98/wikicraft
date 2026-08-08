@@ -1,0 +1,24 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "waxed_weathered_copper_grate_receta_con_waxed_weathered_copper",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "waxed_weathered_copper_grate",
+    "cantidad": 4
+  },
+  "variantePor": "waxed_weathered_copper",
+  "conForma": true,
+  "patron": [
+    " A",
+    "A A",
+    " A"
+  ],
+  "clave": {
+    "A": [
+      "waxed_weathered_copper"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "yellow_dye_receta_con_sunflower",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "yellow_dye",
+    "cantidad": 2
+  },
+  "variantePor": "sunflower",
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "sunflower"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

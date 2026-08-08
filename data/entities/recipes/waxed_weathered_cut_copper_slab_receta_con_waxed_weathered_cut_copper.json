@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "waxed_weathered_cut_copper_slab_receta_con_waxed_weathered_cut_copper",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "waxed_weathered_cut_copper_slab",
+    "cantidad": 6
+  },
+  "variantePor": "waxed_weathered_cut_copper",
+  "conForma": true,
+  "patron": [
+    "AAA"
+  ],
+  "clave": {
+    "A": [
+      "waxed_weathered_cut_copper"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

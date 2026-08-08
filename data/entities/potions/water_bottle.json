@@ -3,10 +3,17 @@
   "id": "water_bottle",
   "tipo": "pocion",
   "etapa": "inicio",
+  "relevancia": "alta",
   "efecto": "ninguno",
   "presentacion": "bebible",
   "variante": "base",
-  "duracionSegundos": 0,
+  "nivel": 1,
+  "utilidad": 5,
   "beneficiosa": true,
-  "etiquetas": ["botella de agua", "raiz", "empezar a fabricar"]
+  "etiquetas": [
+    "botella de agua",
+    "ninguno",
+    "pocion",
+    "soporte para pociones"
+  ]
 }

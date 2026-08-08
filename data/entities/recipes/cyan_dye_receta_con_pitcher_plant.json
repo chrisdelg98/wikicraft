@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "cyan_dye_receta_con_pitcher_plant",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "cyan_dye",
+    "cantidad": 2
+  },
+  "variantePor": "pitcher_plant",
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "pitcher_plant"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

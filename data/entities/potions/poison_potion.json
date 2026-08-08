@@ -1,0 +1,30 @@
+{
+  "$schema": "../../schemas/potion.schema.json",
+  "id": "poison_potion",
+  "tipo": "pocion",
+  "etapa": "nether",
+  "relevancia": "alta",
+  "efecto": "veneno",
+  "presentacion": "bebible",
+  "variante": "normal",
+  "nivel": 1,
+  "utilidad": 2,
+  "beneficiosa": false,
+  "duracionSegundos": 45,
+  "derivaDe": "awkward_potion",
+  "ingrediente": "spider_eye",
+  "prolongada": {
+    "ingrediente": "redstone",
+    "duracionSegundos": 90
+  },
+  "mejorada": {
+    "ingrediente": "glowstone_dust",
+    "duracionSegundos": 21
+  },
+  "etiquetas": [
+    "poción de veneno",
+    "veneno",
+    "pocion",
+    "soporte para pociones"
+  ]
+}

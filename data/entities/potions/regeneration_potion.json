@@ -1,0 +1,30 @@
+{
+  "$schema": "../../schemas/potion.schema.json",
+  "id": "regeneration_potion",
+  "tipo": "pocion",
+  "etapa": "nether",
+  "relevancia": "alta",
+  "efecto": "regeneracion",
+  "presentacion": "bebible",
+  "variante": "normal",
+  "nivel": 1,
+  "utilidad": 4,
+  "beneficiosa": true,
+  "duracionSegundos": 45,
+  "derivaDe": "awkward_potion",
+  "ingrediente": "ghast_tear",
+  "prolongada": {
+    "ingrediente": "redstone",
+    "duracionSegundos": 90
+  },
+  "mejorada": {
+    "ingrediente": "glowstone_dust",
+    "duracionSegundos": 22
+  },
+  "etiquetas": [
+    "poción de regeneración",
+    "regeneracion",
+    "pocion",
+    "soporte para pociones"
+  ]
+}

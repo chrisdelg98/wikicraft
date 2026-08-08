@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "blue_carpet_receta_con_blue_wool",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "blue_carpet",
+    "cantidad": 3
+  },
+  "variantePor": "blue_wool",
+  "conForma": true,
+  "patron": [
+    "AA"
+  ],
+  "clave": {
+    "A": [
+      "blue_wool"
+    ]
+  },
+  "estacion": "inventario"
+}

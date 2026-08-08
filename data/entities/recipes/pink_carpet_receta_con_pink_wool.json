@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "pink_carpet_receta_con_pink_wool",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "pink_carpet",
+    "cantidad": 3
+  },
+  "variantePor": "pink_wool",
+  "conForma": true,
+  "patron": [
+    "AA"
+  ],
+  "clave": {
+    "A": [
+      "pink_wool"
+    ]
+  },
+  "estacion": "inventario"
+}

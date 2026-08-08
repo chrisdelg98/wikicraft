@@ -1,0 +1,24 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "iron_ingot_receta_con_iron_nugget",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "iron_ingot",
+    "cantidad": 1
+  },
+  "variantePor": "iron_nugget",
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "clave": {
+    "A": [
+      "iron_nugget"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

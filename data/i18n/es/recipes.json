@@ -159,53 +159,9 @@
     "nombre": "Receta de Trampilla de bambú",
     "slug": "receta-trampilla-de-bambu"
   },
-  "barrel_receta_1": {
-    "nombre": "Receta de Barril (1)",
-    "slug": "receta-barril-1"
-  },
-  "barrel_receta_10": {
-    "nombre": "Receta de Barril (10)",
-    "slug": "receta-barril-10"
-  },
-  "barrel_receta_11": {
-    "nombre": "Receta de Barril (11)",
-    "slug": "receta-barril-11"
-  },
-  "barrel_receta_12": {
-    "nombre": "Receta de Barril (12)",
-    "slug": "receta-barril-12"
-  },
-  "barrel_receta_2": {
-    "nombre": "Receta de Barril (2)",
-    "slug": "receta-barril-2"
-  },
-  "barrel_receta_3": {
-    "nombre": "Receta de Barril (3)",
-    "slug": "receta-barril-3"
-  },
-  "barrel_receta_4": {
-    "nombre": "Receta de Barril (4)",
-    "slug": "receta-barril-4"
-  },
-  "barrel_receta_5": {
-    "nombre": "Receta de Barril (5)",
-    "slug": "receta-barril-5"
-  },
-  "barrel_receta_6": {
-    "nombre": "Receta de Barril (6)",
-    "slug": "receta-barril-6"
-  },
-  "barrel_receta_7": {
-    "nombre": "Receta de Barril (7)",
-    "slug": "receta-barril-7"
-  },
-  "barrel_receta_8": {
-    "nombre": "Receta de Barril (8)",
-    "slug": "receta-barril-8"
-  },
-  "barrel_receta_9": {
-    "nombre": "Receta de Barril (9)",
-    "slug": "receta-barril-9"
+  "barrel_receta": {
+    "nombre": "Receta de Barril",
+    "slug": "receta-barril"
   },
   "beacon_receta": {
     "nombre": "Receta de Faro",
@@ -279,25 +235,25 @@
     "nombre": "Receta de Estandarte negro",
     "slug": "receta-estandarte-negro"
   },
-  "black_bed_receta_1": {
-    "nombre": "Receta de Cama negra (1)",
-    "slug": "receta-cama-negra-1"
+  "black_bed_receta_con_black_dye": {
+    "nombre": "Receta de Cama negra (con tinte negro)",
+    "slug": "receta-cama-negra-tinte-negro"
   },
-  "black_bed_receta_2": {
-    "nombre": "Receta de Cama negra (2)",
-    "slug": "receta-cama-negra-2"
+  "black_bed_receta_con_black_wool": {
+    "nombre": "Receta de Cama negra (con lana negra)",
+    "slug": "receta-cama-negra-lana-negra"
   },
   "black_candle_receta": {
     "nombre": "Receta de Vela negra",
     "slug": "receta-vela-negra"
   },
-  "black_carpet_receta_1": {
-    "nombre": "Receta de Alfombra negra (1)",
-    "slug": "receta-alfombra-negra-1"
+  "black_carpet_receta_con_black_dye": {
+    "nombre": "Receta de Alfombra negra (con tinte negro)",
+    "slug": "receta-alfombra-negra-tinte-negro"
   },
-  "black_carpet_receta_2": {
-    "nombre": "Receta de Alfombra negra (2)",
-    "slug": "receta-alfombra-negra-2"
+  "black_carpet_receta_con_black_wool": {
+    "nombre": "Receta de Alfombra negra (con lana negra)",
+    "slug": "receta-alfombra-negra-lana-negra"
   },
   "black_concrete_powder_receta": {
     "nombre": "Receta de Hormigón en polvo negro",
@@ -307,13 +263,13 @@
     "nombre": "Receta de Tinte negro",
     "slug": "receta-tinte-negro"
   },
-  "black_stained_glass_pane_receta_1": {
-    "nombre": "Receta de Panel de vidriera negro (1)",
-    "slug": "receta-panel-de-vidriera-negro-1"
+  "black_stained_glass_pane_receta_con_black_stained_glass": {
+    "nombre": "Receta de Panel de vidriera negro (con vidriera negra)",
+    "slug": "receta-panel-de-vidriera-negro-vidriera-negra"
   },
-  "black_stained_glass_pane_receta_2": {
-    "nombre": "Receta de Panel de vidriera negro (2)",
-    "slug": "receta-panel-de-vidriera-negro-2"
+  "black_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Receta de Panel de vidriera negro (con panel de cristal)",
+    "slug": "receta-panel-de-vidriera-negro-panel-de-cristal"
   },
   "black_stained_glass_receta": {
     "nombre": "Receta de Vidriera negra",
@@ -351,25 +307,25 @@
     "nombre": "Receta de Estandarte azul",
     "slug": "receta-estandarte-azul"
   },
-  "blue_bed_receta_1": {
-    "nombre": "Receta de Cama azul (1)",
-    "slug": "receta-cama-azul-1"
+  "blue_bed_receta_con_black_bed": {
+    "nombre": "Receta de Cama azul (con cama negra)",
+    "slug": "receta-cama-azul-cama-negra"
   },
-  "blue_bed_receta_2": {
-    "nombre": "Receta de Cama azul (2)",
-    "slug": "receta-cama-azul-2"
+  "blue_bed_receta_con_blue_wool": {
+    "nombre": "Receta de Cama azul (con lana azul)",
+    "slug": "receta-cama-azul-lana-azul"
   },
   "blue_candle_receta": {
     "nombre": "Receta de Vela azul",
     "slug": "receta-vela-azul"
   },
-  "blue_carpet_receta_1": {
-    "nombre": "Receta de Alfombra azul (1)",
-    "slug": "receta-alfombra-azul-1"
+  "blue_carpet_receta_con_black_carpet": {
+    "nombre": "Receta de Alfombra azul (con alfombra negra)",
+    "slug": "receta-alfombra-azul-alfombra-negra"
   },
-  "blue_carpet_receta_2": {
-    "nombre": "Receta de Alfombra azul (2)",
-    "slug": "receta-alfombra-azul-2"
+  "blue_carpet_receta_con_blue_wool": {
+    "nombre": "Receta de Alfombra azul (con lana azul)",
+    "slug": "receta-alfombra-azul-lana-azul"
   },
   "blue_concrete_powder_receta": {
     "nombre": "Receta de Hormigón en polvo azul",
@@ -383,13 +339,13 @@
     "nombre": "Receta de Hielo azul",
     "slug": "receta-hielo-azul"
   },
-  "blue_stained_glass_pane_receta_1": {
-    "nombre": "Receta de Panel de vidriera azul (1)",
-    "slug": "receta-panel-de-vidriera-azul-1"
+  "blue_stained_glass_pane_receta_con_blue_stained_glass": {
+    "nombre": "Receta de Panel de vidriera azul (con vidriera azul)",
+    "slug": "receta-panel-de-vidriera-azul-vidriera-azul"
   },
-  "blue_stained_glass_pane_receta_2": {
-    "nombre": "Receta de Panel de vidriera azul (2)",
-    "slug": "receta-panel-de-vidriera-azul-2"
+  "blue_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Receta de Panel de vidriera azul (con panel de cristal)",
+    "slug": "receta-panel-de-vidriera-azul-panel-de-cristal"
   },
   "blue_stained_glass_receta": {
     "nombre": "Receta de Vidriera azul",
@@ -411,13 +367,13 @@
     "nombre": "Receta de Bloque de hueso",
     "slug": "receta-bloque-de-hueso"
   },
-  "bone_meal_receta_1": {
-    "nombre": "Receta de Polvo de hueso (1)",
-    "slug": "receta-polvo-de-hueso-1"
+  "bone_meal_receta_con_bone": {
+    "nombre": "Receta de Polvo de hueso (con hueso)",
+    "slug": "receta-polvo-de-hueso-hueso"
   },
-  "bone_meal_receta_2": {
-    "nombre": "Receta de Polvo de hueso (2)",
-    "slug": "receta-polvo-de-hueso-2"
+  "bone_meal_receta_con_bone_block": {
+    "nombre": "Receta de Polvo de hueso (con bloque de hueso)",
+    "slug": "receta-polvo-de-hueso-bloque-de-hueso"
   },
   "book_receta": {
     "nombre": "Receta de Libro",
@@ -467,25 +423,25 @@
     "nombre": "Receta de Estandarte marrón",
     "slug": "receta-estandarte-marron"
   },
-  "brown_bed_receta_1": {
-    "nombre": "Receta de Cama marrón (1)",
-    "slug": "receta-cama-marron-1"
+  "brown_bed_receta_con_black_bed": {
+    "nombre": "Receta de Cama marrón (con cama negra)",
+    "slug": "receta-cama-marron-cama-negra"
   },
-  "brown_bed_receta_2": {
-    "nombre": "Receta de Cama marrón (2)",
-    "slug": "receta-cama-marron-2"
+  "brown_bed_receta_con_brown_wool": {
+    "nombre": "Receta de Cama marrón (con lana marrón)",
+    "slug": "receta-cama-marron-lana-marron"
   },
   "brown_candle_receta": {
     "nombre": "Receta de Vela marrón",
     "slug": "receta-vela-marron"
   },
-  "brown_carpet_receta_1": {
-    "nombre": "Receta de Alfombra marrón (1)",
-    "slug": "receta-alfombra-marron-1"
+  "brown_carpet_receta_con_black_carpet": {
+    "nombre": "Receta de Alfombra marrón (con alfombra negra)",
+    "slug": "receta-alfombra-marron-alfombra-negra"
   },
-  "brown_carpet_receta_2": {
-    "nombre": "Receta de Alfombra marrón (2)",
-    "slug": "receta-alfombra-marron-2"
+  "brown_carpet_receta_con_brown_wool": {
+    "nombre": "Receta de Alfombra marrón (con lana marrón)",
+    "slug": "receta-alfombra-marron-lana-marron"
   },
   "brown_concrete_powder_receta": {
     "nombre": "Receta de Hormigón en polvo marrón",
@@ -495,13 +451,13 @@
     "nombre": "Receta de Tinte marrón",
     "slug": "receta-tinte-marron"
   },
-  "brown_stained_glass_pane_receta_1": {
-    "nombre": "Receta de Panel de vidriera marrón (1)",
-    "slug": "receta-panel-de-vidriera-marron-1"
+  "brown_stained_glass_pane_receta_con_brown_stained_glass": {
+    "nombre": "Receta de Panel de vidriera marrón (con vidriera marrón)",
+    "slug": "receta-panel-de-vidriera-marron-vidriera-marron"
   },
-  "brown_stained_glass_pane_receta_2": {
-    "nombre": "Receta de Panel de vidriera marrón (2)",
-    "slug": "receta-panel-de-vidriera-marron-2"
+  "brown_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Receta de Panel de vidriera marrón (con panel de cristal)",
+    "slug": "receta-panel-de-vidriera-marron-panel-de-cristal"
   },
   "brown_stained_glass_receta": {
     "nombre": "Receta de Vidriera marrón",
@@ -535,181 +491,9 @@
     "nombre": "Receta de Sensor de sculk calibrado",
     "slug": "receta-sensor-de-sculk-calibrado"
   },
-  "campfire_receta_1": {
-    "nombre": "Receta de Hoguera (1)",
-    "slug": "receta-hoguera-1"
-  },
-  "campfire_receta_10": {
-    "nombre": "Receta de Hoguera (10)",
-    "slug": "receta-hoguera-10"
-  },
-  "campfire_receta_11": {
-    "nombre": "Receta de Hoguera (11)",
-    "slug": "receta-hoguera-11"
-  },
-  "campfire_receta_12": {
-    "nombre": "Receta de Hoguera (12)",
-    "slug": "receta-hoguera-12"
-  },
-  "campfire_receta_13": {
-    "nombre": "Receta de Hoguera (13)",
-    "slug": "receta-hoguera-13"
-  },
-  "campfire_receta_14": {
-    "nombre": "Receta de Hoguera (14)",
-    "slug": "receta-hoguera-14"
-  },
-  "campfire_receta_15": {
-    "nombre": "Receta de Hoguera (15)",
-    "slug": "receta-hoguera-15"
-  },
-  "campfire_receta_16": {
-    "nombre": "Receta de Hoguera (16)",
-    "slug": "receta-hoguera-16"
-  },
-  "campfire_receta_17": {
-    "nombre": "Receta de Hoguera (17)",
-    "slug": "receta-hoguera-17"
-  },
-  "campfire_receta_18": {
-    "nombre": "Receta de Hoguera (18)",
-    "slug": "receta-hoguera-18"
-  },
-  "campfire_receta_19": {
-    "nombre": "Receta de Hoguera (19)",
-    "slug": "receta-hoguera-19"
-  },
-  "campfire_receta_2": {
-    "nombre": "Receta de Hoguera (2)",
-    "slug": "receta-hoguera-2"
-  },
-  "campfire_receta_20": {
-    "nombre": "Receta de Hoguera (20)",
-    "slug": "receta-hoguera-20"
-  },
-  "campfire_receta_21": {
-    "nombre": "Receta de Hoguera (21)",
-    "slug": "receta-hoguera-21"
-  },
-  "campfire_receta_22": {
-    "nombre": "Receta de Hoguera (22)",
-    "slug": "receta-hoguera-22"
-  },
-  "campfire_receta_23": {
-    "nombre": "Receta de Hoguera (23)",
-    "slug": "receta-hoguera-23"
-  },
-  "campfire_receta_24": {
-    "nombre": "Receta de Hoguera (24)",
-    "slug": "receta-hoguera-24"
-  },
-  "campfire_receta_25": {
-    "nombre": "Receta de Hoguera (25)",
-    "slug": "receta-hoguera-25"
-  },
-  "campfire_receta_26": {
-    "nombre": "Receta de Hoguera (26)",
-    "slug": "receta-hoguera-26"
-  },
-  "campfire_receta_27": {
-    "nombre": "Receta de Hoguera (27)",
-    "slug": "receta-hoguera-27"
-  },
-  "campfire_receta_28": {
-    "nombre": "Receta de Hoguera (28)",
-    "slug": "receta-hoguera-28"
-  },
-  "campfire_receta_29": {
-    "nombre": "Receta de Hoguera (29)",
-    "slug": "receta-hoguera-29"
-  },
-  "campfire_receta_3": {
-    "nombre": "Receta de Hoguera (3)",
-    "slug": "receta-hoguera-3"
-  },
-  "campfire_receta_30": {
-    "nombre": "Receta de Hoguera (30)",
-    "slug": "receta-hoguera-30"
-  },
-  "campfire_receta_31": {
-    "nombre": "Receta de Hoguera (31)",
-    "slug": "receta-hoguera-31"
-  },
-  "campfire_receta_32": {
-    "nombre": "Receta de Hoguera (32)",
-    "slug": "receta-hoguera-32"
-  },
-  "campfire_receta_33": {
-    "nombre": "Receta de Hoguera (33)",
-    "slug": "receta-hoguera-33"
-  },
-  "campfire_receta_34": {
-    "nombre": "Receta de Hoguera (34)",
-    "slug": "receta-hoguera-34"
-  },
-  "campfire_receta_35": {
-    "nombre": "Receta de Hoguera (35)",
-    "slug": "receta-hoguera-35"
-  },
-  "campfire_receta_36": {
-    "nombre": "Receta de Hoguera (36)",
-    "slug": "receta-hoguera-36"
-  },
-  "campfire_receta_37": {
-    "nombre": "Receta de Hoguera (37)",
-    "slug": "receta-hoguera-37"
-  },
-  "campfire_receta_38": {
-    "nombre": "Receta de Hoguera (38)",
-    "slug": "receta-hoguera-38"
-  },
-  "campfire_receta_39": {
-    "nombre": "Receta de Hoguera (39)",
-    "slug": "receta-hoguera-39"
-  },
-  "campfire_receta_4": {
-    "nombre": "Receta de Hoguera (4)",
-    "slug": "receta-hoguera-4"
-  },
-  "campfire_receta_40": {
-    "nombre": "Receta de Hoguera (40)",
-    "slug": "receta-hoguera-40"
-  },
-  "campfire_receta_41": {
-    "nombre": "Receta de Hoguera (41)",
-    "slug": "receta-hoguera-41"
-  },
-  "campfire_receta_42": {
-    "nombre": "Receta de Hoguera (42)",
-    "slug": "receta-hoguera-42"
-  },
-  "campfire_receta_43": {
-    "nombre": "Receta de Hoguera (43)",
-    "slug": "receta-hoguera-43"
-  },
-  "campfire_receta_44": {
-    "nombre": "Receta de Hoguera (44)",
-    "slug": "receta-hoguera-44"
-  },
-  "campfire_receta_5": {
-    "nombre": "Receta de Hoguera (5)",
-    "slug": "receta-hoguera-5"
-  },
-  "campfire_receta_6": {
-    "nombre": "Receta de Hoguera (6)",
-    "slug": "receta-hoguera-6"
-  },
-  "campfire_receta_7": {
-    "nombre": "Receta de Hoguera (7)",
-    "slug": "receta-hoguera-7"
-  },
-  "campfire_receta_8": {
-    "nombre": "Receta de Hoguera (8)",
-    "slug": "receta-hoguera-8"
-  },
-  "campfire_receta_9": {
-    "nombre": "Receta de Hoguera (9)",
-    "slug": "receta-hoguera-9"
+  "campfire_receta": {
+    "nombre": "Receta de Hoguera",
+    "slug": "receta-hoguera"
   },
   "candle_receta": {
     "nombre": "Receta de Vela",
@@ -795,53 +579,9 @@
     "nombre": "Receta de Cofre",
     "slug": "receta-cofre"
   },
-  "chiseled_bookshelf_receta_1": {
-    "nombre": "Receta de Estantería cincelada (1)",
-    "slug": "receta-estanteria-cincelada-1"
-  },
-  "chiseled_bookshelf_receta_10": {
-    "nombre": "Receta de Estantería cincelada (10)",
-    "slug": "receta-estanteria-cincelada-10"
-  },
-  "chiseled_bookshelf_receta_11": {
-    "nombre": "Receta de Estantería cincelada (11)",
-    "slug": "receta-estanteria-cincelada-11"
-  },
-  "chiseled_bookshelf_receta_12": {
-    "nombre": "Receta de Estantería cincelada (12)",
-    "slug": "receta-estanteria-cincelada-12"
-  },
-  "chiseled_bookshelf_receta_2": {
-    "nombre": "Receta de Estantería cincelada (2)",
-    "slug": "receta-estanteria-cincelada-2"
-  },
-  "chiseled_bookshelf_receta_3": {
-    "nombre": "Receta de Estantería cincelada (3)",
-    "slug": "receta-estanteria-cincelada-3"
-  },
-  "chiseled_bookshelf_receta_4": {
-    "nombre": "Receta de Estantería cincelada (4)",
-    "slug": "receta-estanteria-cincelada-4"
-  },
-  "chiseled_bookshelf_receta_5": {
-    "nombre": "Receta de Estantería cincelada (5)",
-    "slug": "receta-estanteria-cincelada-5"
-  },
-  "chiseled_bookshelf_receta_6": {
-    "nombre": "Receta de Estantería cincelada (6)",
-    "slug": "receta-estanteria-cincelada-6"
-  },
-  "chiseled_bookshelf_receta_7": {
-    "nombre": "Receta de Estantería cincelada (7)",
-    "slug": "receta-estanteria-cincelada-7"
-  },
-  "chiseled_bookshelf_receta_8": {
-    "nombre": "Receta de Estantería cincelada (8)",
-    "slug": "receta-estanteria-cincelada-8"
-  },
-  "chiseled_bookshelf_receta_9": {
-    "nombre": "Receta de Estantería cincelada (9)",
-    "slug": "receta-estanteria-cincelada-9"
+  "chiseled_bookshelf_receta": {
+    "nombre": "Receta de Estantería cincelada",
+    "slug": "receta-estanteria-cincelada"
   },
   "chiseled_copper_receta": {
     "nombre": "Receta de Cobre cincelado",
@@ -1071,45 +811,45 @@
     "nombre": "Receta de Estandarte cian",
     "slug": "receta-estandarte-cian"
   },
-  "cyan_bed_receta_1": {
-    "nombre": "Receta de Cama cian (1)",
-    "slug": "receta-cama-cian-1"
+  "cyan_bed_receta_con_black_bed": {
+    "nombre": "Receta de Cama cian (con cama negra)",
+    "slug": "receta-cama-cian-cama-negra"
   },
-  "cyan_bed_receta_2": {
-    "nombre": "Receta de Cama cian (2)",
-    "slug": "receta-cama-cian-2"
+  "cyan_bed_receta_con_cyan_wool": {
+    "nombre": "Receta de Cama cian (con lana cian)",
+    "slug": "receta-cama-cian-lana-cian"
   },
   "cyan_candle_receta": {
     "nombre": "Receta de Vela cian",
     "slug": "receta-vela-cian"
   },
-  "cyan_carpet_receta_1": {
-    "nombre": "Receta de Alfombra cian (1)",
-    "slug": "receta-alfombra-cian-1"
+  "cyan_carpet_receta_con_black_carpet": {
+    "nombre": "Receta de Alfombra cian (con alfombra negra)",
+    "slug": "receta-alfombra-cian-alfombra-negra"
   },
-  "cyan_carpet_receta_2": {
-    "nombre": "Receta de Alfombra cian (2)",
-    "slug": "receta-alfombra-cian-2"
+  "cyan_carpet_receta_con_cyan_wool": {
+    "nombre": "Receta de Alfombra cian (con lana cian)",
+    "slug": "receta-alfombra-cian-lana-cian"
   },
   "cyan_concrete_powder_receta": {
     "nombre": "Receta de Hormigón en polvo cian",
     "slug": "receta-hormigon-en-polvo-cian"
   },
-  "cyan_dye_receta_1": {
-    "nombre": "Receta de Tinte cian (1)",
-    "slug": "receta-tinte-cian-1"
+  "cyan_dye_receta_con_blue_dye": {
+    "nombre": "Receta de Tinte cian (con tinte azul)",
+    "slug": "receta-tinte-cian-tinte-azul"
   },
-  "cyan_dye_receta_2": {
-    "nombre": "Receta de Tinte cian (2)",
-    "slug": "receta-tinte-cian-2"
+  "cyan_dye_receta_con_pitcher_plant": {
+    "nombre": "Receta de Tinte cian (con planta jarro)",
+    "slug": "receta-tinte-cian-planta-jarro"
   },
-  "cyan_stained_glass_pane_receta_1": {
-    "nombre": "Receta de Panel de vidriera cian (1)",
-    "slug": "receta-panel-de-vidriera-cian-1"
+  "cyan_stained_glass_pane_receta_con_cyan_stained_glass": {
+    "nombre": "Receta de Panel de vidriera cian (con vidriera cian)",
+    "slug": "receta-panel-de-vidriera-cian-vidriera-cian"
   },
-  "cyan_stained_glass_pane_receta_2": {
-    "nombre": "Receta de Panel de vidriera cian (2)",
-    "slug": "receta-panel-de-vidriera-cian-2"
+  "cyan_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Receta de Panel de vidriera cian (con panel de cristal)",
+    "slug": "receta-panel-de-vidriera-cian-panel-de-cristal"
   },
   "cyan_stained_glass_receta": {
     "nombre": "Receta de Vidriera cian",
@@ -1463,13 +1203,13 @@
     "nombre": "Receta de Bloque de oro",
     "slug": "receta-bloque-de-oro"
   },
-  "gold_ingot_receta_1": {
-    "nombre": "Receta de Lingote de oro (1)",
-    "slug": "receta-lingote-de-oro-1"
+  "gold_ingot_receta_con_gold_block": {
+    "nombre": "Receta de Lingote de oro (con bloque de oro)",
+    "slug": "receta-lingote-de-oro-bloque-de-oro"
   },
-  "gold_ingot_receta_2": {
-    "nombre": "Receta de Lingote de oro (2)",
-    "slug": "receta-lingote-de-oro-2"
+  "gold_ingot_receta_con_gold_nugget": {
+    "nombre": "Receta de Lingote de oro (con pepita de oro)",
+    "slug": "receta-lingote-de-oro-pepita-de-oro"
   },
   "gold_nugget_receta": {
     "nombre": "Receta de Pepita de oro",
@@ -1539,25 +1279,25 @@
     "nombre": "Receta de Estandarte gris",
     "slug": "receta-estandarte-gris"
   },
-  "gray_bed_receta_1": {
-    "nombre": "Receta de Cama gris (1)",
-    "slug": "receta-cama-gris-1"
+  "gray_bed_receta_con_black_bed": {
+    "nombre": "Receta de Cama gris (con cama negra)",
+    "slug": "receta-cama-gris-cama-negra"
   },
-  "gray_bed_receta_2": {
-    "nombre": "Receta de Cama gris (2)",
-    "slug": "receta-cama-gris-2"
+  "gray_bed_receta_con_gray_wool": {
+    "nombre": "Receta de Cama gris (con lana gris)",
+    "slug": "receta-cama-gris-lana-gris"
   },
   "gray_candle_receta": {
     "nombre": "Receta de Vela gris",
     "slug": "receta-vela-gris"
   },
-  "gray_carpet_receta_1": {
-    "nombre": "Receta de Alfombra gris (1)",
-    "slug": "receta-alfombra-gris-1"
+  "gray_carpet_receta_con_black_carpet": {
+    "nombre": "Receta de Alfombra gris (con alfombra negra)",
+    "slug": "receta-alfombra-gris-alfombra-negra"
   },
-  "gray_carpet_receta_2": {
-    "nombre": "Receta de Alfombra gris (2)",
-    "slug": "receta-alfombra-gris-2"
+  "gray_carpet_receta_con_gray_wool": {
+    "nombre": "Receta de Alfombra gris (con lana gris)",
+    "slug": "receta-alfombra-gris-lana-gris"
   },
   "gray_concrete_powder_receta": {
     "nombre": "Receta de Hormigón en polvo gris",
@@ -1567,13 +1307,13 @@
     "nombre": "Receta de Tinte gris",
     "slug": "receta-tinte-gris"
   },
-  "gray_stained_glass_pane_receta_1": {
-    "nombre": "Receta de Panel de vidriera gris (1)",
-    "slug": "receta-panel-de-vidriera-gris-1"
+  "gray_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Receta de Panel de vidriera gris (con panel de cristal)",
+    "slug": "receta-panel-de-vidriera-gris-panel-de-cristal"
   },
-  "gray_stained_glass_pane_receta_2": {
-    "nombre": "Receta de Panel de vidriera gris (2)",
-    "slug": "receta-panel-de-vidriera-gris-2"
+  "gray_stained_glass_pane_receta_con_gray_stained_glass": {
+    "nombre": "Receta de Panel de vidriera gris (con vidriera gris)",
+    "slug": "receta-panel-de-vidriera-gris-vidriera-gris"
   },
   "gray_stained_glass_receta": {
     "nombre": "Receta de Vidriera gris",
@@ -1591,37 +1331,37 @@
     "nombre": "Receta de Estandarte verde",
     "slug": "receta-estandarte-verde"
   },
-  "green_bed_receta_1": {
-    "nombre": "Receta de Cama verde (1)",
-    "slug": "receta-cama-verde-1"
+  "green_bed_receta_con_black_bed": {
+    "nombre": "Receta de Cama verde (con cama negra)",
+    "slug": "receta-cama-verde-cama-negra"
   },
-  "green_bed_receta_2": {
-    "nombre": "Receta de Cama verde (2)",
-    "slug": "receta-cama-verde-2"
+  "green_bed_receta_con_green_wool": {
+    "nombre": "Receta de Cama verde (con lana verde)",
+    "slug": "receta-cama-verde-lana-verde"
   },
   "green_candle_receta": {
     "nombre": "Receta de Vela verde",
     "slug": "receta-vela-verde"
   },
-  "green_carpet_receta_1": {
-    "nombre": "Receta de Alfombra verde (1)",
-    "slug": "receta-alfombra-verde-1"
+  "green_carpet_receta_con_black_carpet": {
+    "nombre": "Receta de Alfombra verde (con alfombra negra)",
+    "slug": "receta-alfombra-verde-alfombra-negra"
   },
-  "green_carpet_receta_2": {
-    "nombre": "Receta de Alfombra verde (2)",
-    "slug": "receta-alfombra-verde-2"
+  "green_carpet_receta_con_green_wool": {
+    "nombre": "Receta de Alfombra verde (con lana verde)",
+    "slug": "receta-alfombra-verde-lana-verde"
   },
   "green_concrete_powder_receta": {
     "nombre": "Receta de Hormigón en polvo verde",
     "slug": "receta-hormigon-en-polvo-verde"
   },
-  "green_stained_glass_pane_receta_1": {
-    "nombre": "Receta de Panel de vidriera verde (1)",
-    "slug": "receta-panel-de-vidriera-verde-1"
+  "green_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Receta de Panel de vidriera verde (con panel de cristal)",
+    "slug": "receta-panel-de-vidriera-verde-panel-de-cristal"
   },
-  "green_stained_glass_pane_receta_2": {
-    "nombre": "Receta de Panel de vidriera verde (2)",
-    "slug": "receta-panel-de-vidriera-verde-2"
+  "green_stained_glass_pane_receta_con_green_stained_glass": {
+    "nombre": "Receta de Panel de vidriera verde (con vidriera verde)",
+    "slug": "receta-panel-de-vidriera-verde-vidriera-verde"
   },
   "green_stained_glass_receta": {
     "nombre": "Receta de Vidriera verde",
@@ -1703,13 +1443,13 @@
     "nombre": "Receta de Azada de hierro",
     "slug": "receta-azada-de-hierro"
   },
-  "iron_ingot_receta_1": {
-    "nombre": "Receta de Lingote de hierro (1)",
-    "slug": "receta-lingote-de-hierro-1"
+  "iron_ingot_receta_con_iron_block": {
+    "nombre": "Receta de Lingote de hierro (con bloque de hierro)",
+    "slug": "receta-lingote-de-hierro-bloque-de-hierro"
   },
-  "iron_ingot_receta_2": {
-    "nombre": "Receta de Lingote de hierro (2)",
-    "slug": "receta-lingote-de-hierro-2"
+  "iron_ingot_receta_con_iron_nugget": {
+    "nombre": "Receta de Lingote de hierro (con pepita de hierro)",
+    "slug": "receta-lingote-de-hierro-pepita-de-hierro"
   },
   "iron_leggings_receta": {
     "nombre": "Receta de Pantalones de hierro",
@@ -1859,45 +1599,45 @@
     "nombre": "Receta de Estandarte azul claro",
     "slug": "receta-estandarte-azul-claro"
   },
-  "light_blue_bed_receta_1": {
-    "nombre": "Receta de Cama azul claro (1)",
-    "slug": "receta-cama-azul-claro-1"
+  "light_blue_bed_receta_con_black_bed": {
+    "nombre": "Receta de Cama azul claro (con cama negra)",
+    "slug": "receta-cama-azul-claro-cama-negra"
   },
-  "light_blue_bed_receta_2": {
-    "nombre": "Receta de Cama azul claro (2)",
-    "slug": "receta-cama-azul-claro-2"
+  "light_blue_bed_receta_con_light_blue_wool": {
+    "nombre": "Receta de Cama azul claro (con lana azul claro)",
+    "slug": "receta-cama-azul-claro-lana-azul-claro"
   },
   "light_blue_candle_receta": {
     "nombre": "Receta de Vela azul claro",
     "slug": "receta-vela-azul-claro"
   },
-  "light_blue_carpet_receta_1": {
-    "nombre": "Receta de Alfombra azul claro (1)",
-    "slug": "receta-alfombra-azul-claro-1"
+  "light_blue_carpet_receta_con_black_carpet": {
+    "nombre": "Receta de Alfombra azul claro (con alfombra negra)",
+    "slug": "receta-alfombra-azul-claro-alfombra-negra"
   },
-  "light_blue_carpet_receta_2": {
-    "nombre": "Receta de Alfombra azul claro (2)",
-    "slug": "receta-alfombra-azul-claro-2"
+  "light_blue_carpet_receta_con_light_blue_wool": {
+    "nombre": "Receta de Alfombra azul claro (con lana azul claro)",
+    "slug": "receta-alfombra-azul-claro-lana-azul-claro"
   },
   "light_blue_concrete_powder_receta": {
     "nombre": "Receta de Hormigón en polvo azul claro",
     "slug": "receta-hormigon-en-polvo-azul-claro"
   },
-  "light_blue_dye_receta_1": {
-    "nombre": "Receta de Tinte azul claro (1)",
-    "slug": "receta-tinte-azul-claro-1"
+  "light_blue_dye_receta_con_blue_dye": {
+    "nombre": "Receta de Tinte azul claro (con tinte azul)",
+    "slug": "receta-tinte-azul-claro-tinte-azul"
   },
-  "light_blue_dye_receta_2": {
-    "nombre": "Receta de Tinte azul claro (2)",
-    "slug": "receta-tinte-azul-claro-2"
+  "light_blue_dye_receta_con_blue_orchid": {
+    "nombre": "Receta de Tinte azul claro (con orquídea azul)",
+    "slug": "receta-tinte-azul-claro-orquidea-azul"
   },
-  "light_blue_stained_glass_pane_receta_1": {
-    "nombre": "Receta de Panel de vidriera azul claro (1)",
-    "slug": "receta-panel-de-vidriera-azul-claro-1"
+  "light_blue_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Receta de Panel de vidriera azul claro (con panel de cristal)",
+    "slug": "receta-panel-de-vidriera-azul-claro-panel-de-cristal"
   },
-  "light_blue_stained_glass_pane_receta_2": {
-    "nombre": "Receta de Panel de vidriera azul claro (2)",
-    "slug": "receta-panel-de-vidriera-azul-claro-2"
+  "light_blue_stained_glass_pane_receta_con_light_blue_stained_glass": {
+    "nombre": "Receta de Panel de vidriera azul claro (con vidriera azul claro)",
+    "slug": "receta-panel-de-vidriera-azul-claro-vidriera-azul-claro"
   },
   "light_blue_stained_glass_receta": {
     "nombre": "Receta de Vidriera azul claro",
@@ -1915,49 +1655,49 @@
     "nombre": "Receta de Estandarte gris claro",
     "slug": "receta-estandarte-gris-claro"
   },
-  "light_gray_bed_receta_1": {
-    "nombre": "Receta de Cama gris claro (1)",
-    "slug": "receta-cama-gris-claro-1"
+  "light_gray_bed_receta_con_black_bed": {
+    "nombre": "Receta de Cama gris claro (con cama negra)",
+    "slug": "receta-cama-gris-claro-cama-negra"
   },
-  "light_gray_bed_receta_2": {
-    "nombre": "Receta de Cama gris claro (2)",
-    "slug": "receta-cama-gris-claro-2"
+  "light_gray_bed_receta_con_light_gray_wool": {
+    "nombre": "Receta de Cama gris claro (con lana gris claro)",
+    "slug": "receta-cama-gris-claro-lana-gris-claro"
   },
   "light_gray_candle_receta": {
     "nombre": "Receta de Vela gris claro",
     "slug": "receta-vela-gris-claro"
   },
-  "light_gray_carpet_receta_1": {
-    "nombre": "Receta de Alfombra gris claro (1)",
-    "slug": "receta-alfombra-gris-claro-1"
+  "light_gray_carpet_receta_con_black_carpet": {
+    "nombre": "Receta de Alfombra gris claro (con alfombra negra)",
+    "slug": "receta-alfombra-gris-claro-alfombra-negra"
   },
-  "light_gray_carpet_receta_2": {
-    "nombre": "Receta de Alfombra gris claro (2)",
-    "slug": "receta-alfombra-gris-claro-2"
+  "light_gray_carpet_receta_con_light_gray_wool": {
+    "nombre": "Receta de Alfombra gris claro (con lana gris claro)",
+    "slug": "receta-alfombra-gris-claro-lana-gris-claro"
   },
   "light_gray_concrete_powder_receta": {
     "nombre": "Receta de Hormigón en polvo gris claro",
     "slug": "receta-hormigon-en-polvo-gris-claro"
   },
-  "light_gray_dye_receta_1": {
-    "nombre": "Receta de Tinte gris claro (1)",
-    "slug": "receta-tinte-gris-claro-1"
+  "light_gray_dye_receta_con_azure_bluet": {
+    "nombre": "Receta de Tinte gris claro (con miosotis)",
+    "slug": "receta-tinte-gris-claro-miosotis"
   },
-  "light_gray_dye_receta_2": {
-    "nombre": "Receta de Tinte gris claro (2)",
-    "slug": "receta-tinte-gris-claro-2"
+  "light_gray_dye_receta_con_black_dye": {
+    "nombre": "Receta de Tinte gris claro (con tinte negro)",
+    "slug": "receta-tinte-gris-claro-tinte-negro"
   },
-  "light_gray_dye_receta_3": {
-    "nombre": "Receta de Tinte gris claro (3)",
-    "slug": "receta-tinte-gris-claro-3"
+  "light_gray_dye_receta_con_gray_dye": {
+    "nombre": "Receta de Tinte gris claro (con tinte gris)",
+    "slug": "receta-tinte-gris-claro-tinte-gris"
   },
-  "light_gray_stained_glass_pane_receta_1": {
-    "nombre": "Receta de Panel de vidriera gris claro (1)",
-    "slug": "receta-panel-de-vidriera-gris-claro-1"
+  "light_gray_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Receta de Panel de vidriera gris claro (con panel de cristal)",
+    "slug": "receta-panel-de-vidriera-gris-claro-panel-de-cristal"
   },
-  "light_gray_stained_glass_pane_receta_2": {
-    "nombre": "Receta de Panel de vidriera gris claro (2)",
-    "slug": "receta-panel-de-vidriera-gris-claro-2"
+  "light_gray_stained_glass_pane_receta_con_light_gray_stained_glass": {
+    "nombre": "Receta de Panel de vidriera gris claro (con vidriera gris claro)",
+    "slug": "receta-panel-de-vidriera-gris-claro-vidriera-gris-claro"
   },
   "light_gray_stained_glass_receta": {
     "nombre": "Receta de Vidriera gris claro",
@@ -1983,25 +1723,25 @@
     "nombre": "Receta de Estandarte lima",
     "slug": "receta-estandarte-lima"
   },
-  "lime_bed_receta_1": {
-    "nombre": "Receta de Cama lima (1)",
-    "slug": "receta-cama-lima-1"
+  "lime_bed_receta_con_black_bed": {
+    "nombre": "Receta de Cama lima (con cama negra)",
+    "slug": "receta-cama-lima-cama-negra"
   },
-  "lime_bed_receta_2": {
-    "nombre": "Receta de Cama lima (2)",
-    "slug": "receta-cama-lima-2"
+  "lime_bed_receta_con_lime_wool": {
+    "nombre": "Receta de Cama lima (con lana lima)",
+    "slug": "receta-cama-lima-lana-lima"
   },
   "lime_candle_receta": {
     "nombre": "Receta de Vela lima",
     "slug": "receta-vela-lima"
   },
-  "lime_carpet_receta_1": {
-    "nombre": "Receta de Alfombra lima (1)",
-    "slug": "receta-alfombra-lima-1"
+  "lime_carpet_receta_con_black_carpet": {
+    "nombre": "Receta de Alfombra lima (con alfombra negra)",
+    "slug": "receta-alfombra-lima-alfombra-negra"
   },
-  "lime_carpet_receta_2": {
-    "nombre": "Receta de Alfombra lima (2)",
-    "slug": "receta-alfombra-lima-2"
+  "lime_carpet_receta_con_lime_wool": {
+    "nombre": "Receta de Alfombra lima (con lana lima)",
+    "slug": "receta-alfombra-lima-lana-lima"
   },
   "lime_concrete_powder_receta": {
     "nombre": "Receta de Hormigón en polvo lima",
@@ -2011,13 +1751,13 @@
     "nombre": "Receta de Tinte lima",
     "slug": "receta-tinte-lima"
   },
-  "lime_stained_glass_pane_receta_1": {
-    "nombre": "Receta de Panel de vidriera lima (1)",
-    "slug": "receta-panel-de-vidriera-lima-1"
+  "lime_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Receta de Panel de vidriera lima (con panel de cristal)",
+    "slug": "receta-panel-de-vidriera-lima-panel-de-cristal"
   },
-  "lime_stained_glass_pane_receta_2": {
-    "nombre": "Receta de Panel de vidriera lima (2)",
-    "slug": "receta-panel-de-vidriera-lima-2"
+  "lime_stained_glass_pane_receta_con_lime_stained_glass": {
+    "nombre": "Receta de Panel de vidriera lima (con vidriera lima)",
+    "slug": "receta-panel-de-vidriera-lima-vidriera-lima"
   },
   "lime_stained_glass_receta": {
     "nombre": "Receta de Vidriera lima",
@@ -2047,57 +1787,57 @@
     "nombre": "Receta de Estandarte magenta",
     "slug": "receta-estandarte-magenta"
   },
-  "magenta_bed_receta_1": {
-    "nombre": "Receta de Cama magenta (1)",
-    "slug": "receta-cama-magenta-1"
+  "magenta_bed_receta_con_black_bed": {
+    "nombre": "Receta de Cama magenta (con cama negra)",
+    "slug": "receta-cama-magenta-cama-negra"
   },
-  "magenta_bed_receta_2": {
-    "nombre": "Receta de Cama magenta (2)",
-    "slug": "receta-cama-magenta-2"
+  "magenta_bed_receta_con_magenta_wool": {
+    "nombre": "Receta de Cama magenta (con lana magenta)",
+    "slug": "receta-cama-magenta-lana-magenta"
   },
   "magenta_candle_receta": {
     "nombre": "Receta de Vela magenta",
     "slug": "receta-vela-magenta"
   },
-  "magenta_carpet_receta_1": {
-    "nombre": "Receta de Alfombra magenta (1)",
-    "slug": "receta-alfombra-magenta-1"
+  "magenta_carpet_receta_con_black_carpet": {
+    "nombre": "Receta de Alfombra magenta (con alfombra negra)",
+    "slug": "receta-alfombra-magenta-alfombra-negra"
   },
-  "magenta_carpet_receta_2": {
-    "nombre": "Receta de Alfombra magenta (2)",
-    "slug": "receta-alfombra-magenta-2"
+  "magenta_carpet_receta_con_magenta_wool": {
+    "nombre": "Receta de Alfombra magenta (con lana magenta)",
+    "slug": "receta-alfombra-magenta-lana-magenta"
   },
   "magenta_concrete_powder_receta": {
     "nombre": "Receta de Hormigón en polvo magenta",
     "slug": "receta-hormigon-en-polvo-magenta"
   },
-  "magenta_dye_receta_1": {
-    "nombre": "Receta de Tinte magenta (1)",
-    "slug": "receta-tinte-magenta-1"
-  },
   "magenta_dye_receta_2": {
     "nombre": "Receta de Tinte magenta (2)",
     "slug": "receta-tinte-magenta-2"
   },
-  "magenta_dye_receta_3": {
-    "nombre": "Receta de Tinte magenta (3)",
-    "slug": "receta-tinte-magenta-3"
+  "magenta_dye_receta_con_allium": {
+    "nombre": "Receta de Tinte magenta (con alium)",
+    "slug": "receta-tinte-magenta-alium"
   },
-  "magenta_dye_receta_4": {
-    "nombre": "Receta de Tinte magenta (4)",
-    "slug": "receta-tinte-magenta-4"
+  "magenta_dye_receta_con_lilac": {
+    "nombre": "Receta de Tinte magenta (con lila)",
+    "slug": "receta-tinte-magenta-lila"
   },
-  "magenta_dye_receta_5": {
-    "nombre": "Receta de Tinte magenta (5)",
-    "slug": "receta-tinte-magenta-5"
+  "magenta_dye_receta_con_purple_dye": {
+    "nombre": "Receta de Tinte magenta (con tinte morado)",
+    "slug": "receta-tinte-magenta-tinte-morado"
   },
-  "magenta_stained_glass_pane_receta_1": {
-    "nombre": "Receta de Panel de vidriera magenta (1)",
-    "slug": "receta-panel-de-vidriera-magenta-1"
+  "magenta_dye_receta_con_white_dye": {
+    "nombre": "Receta de Tinte magenta (con tinte blanco)",
+    "slug": "receta-tinte-magenta-tinte-blanco"
   },
-  "magenta_stained_glass_pane_receta_2": {
-    "nombre": "Receta de Panel de vidriera magenta (2)",
-    "slug": "receta-panel-de-vidriera-magenta-2"
+  "magenta_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Receta de Panel de vidriera magenta (con panel de cristal)",
+    "slug": "receta-panel-de-vidriera-magenta-panel-de-cristal"
+  },
+  "magenta_stained_glass_pane_receta_con_magenta_stained_glass": {
+    "nombre": "Receta de Panel de vidriera magenta (con vidriera magenta)",
+    "slug": "receta-panel-de-vidriera-magenta-vidriera-magenta"
   },
   "magenta_stained_glass_receta": {
     "nombre": "Receta de Vidriera magenta",
@@ -2227,13 +1967,9 @@
     "nombre": "Receta de Muro de ladrillo de piedra musgoso",
     "slug": "receta-muro-de-ladrillo-de-piedra-musgoso"
   },
-  "mossy_stone_bricks_receta_1": {
-    "nombre": "Receta de Ladrillos de piedra musgosos (1)",
-    "slug": "receta-ladrillos-de-piedra-musgosos-1"
-  },
-  "mossy_stone_bricks_receta_2": {
-    "nombre": "Receta de Ladrillos de piedra musgosos (2)",
-    "slug": "receta-ladrillos-de-piedra-musgosos-2"
+  "mossy_stone_bricks_receta": {
+    "nombre": "Receta de Ladrillos de piedra musgosos",
+    "slug": "receta-ladrillos-de-piedra-musgosos"
   },
   "mud_brick_slab_receta": {
     "nombre": "Receta de Losa de ladrillo de barro",
@@ -2291,13 +2027,13 @@
     "nombre": "Receta de Bloque de netherita",
     "slug": "receta-bloque-de-netherita"
   },
-  "netherite_ingot_receta_1": {
-    "nombre": "Receta de Lingote de netherita (1)",
-    "slug": "receta-lingote-de-netherita-1"
+  "netherite_ingot_receta_con_gold_ingot": {
+    "nombre": "Receta de Lingote de netherita (con lingote de oro)",
+    "slug": "receta-lingote-de-netherita-lingote-de-oro"
   },
-  "netherite_ingot_receta_2": {
-    "nombre": "Receta de Lingote de netherita (2)",
-    "slug": "receta-lingote-de-netherita-2"
+  "netherite_ingot_receta_con_netherite_block": {
+    "nombre": "Receta de Lingote de netherita (con bloque de netherita)",
+    "slug": "receta-lingote-de-netherita-bloque-de-netherita"
   },
   "netherite_upgrade_smithing_template_receta": {
     "nombre": "Receta de Plantilla de mejora a netherita",
@@ -2371,45 +2107,45 @@
     "nombre": "Receta de Estandarte naranja",
     "slug": "receta-estandarte-naranja"
   },
-  "orange_bed_receta_1": {
-    "nombre": "Receta de Cama naranja (1)",
-    "slug": "receta-cama-naranja-1"
+  "orange_bed_receta_con_black_bed": {
+    "nombre": "Receta de Cama naranja (con cama negra)",
+    "slug": "receta-cama-naranja-cama-negra"
   },
-  "orange_bed_receta_2": {
-    "nombre": "Receta de Cama naranja (2)",
-    "slug": "receta-cama-naranja-2"
+  "orange_bed_receta_con_orange_wool": {
+    "nombre": "Receta de Cama naranja (con lana naranja)",
+    "slug": "receta-cama-naranja-lana-naranja"
   },
   "orange_candle_receta": {
     "nombre": "Receta de Vela naranja",
     "slug": "receta-vela-naranja"
   },
-  "orange_carpet_receta_1": {
-    "nombre": "Receta de Alfombra naranja (1)",
-    "slug": "receta-alfombra-naranja-1"
+  "orange_carpet_receta_con_black_carpet": {
+    "nombre": "Receta de Alfombra naranja (con alfombra negra)",
+    "slug": "receta-alfombra-naranja-alfombra-negra"
   },
-  "orange_carpet_receta_2": {
-    "nombre": "Receta de Alfombra naranja (2)",
-    "slug": "receta-alfombra-naranja-2"
+  "orange_carpet_receta_con_orange_wool": {
+    "nombre": "Receta de Alfombra naranja (con lana naranja)",
+    "slug": "receta-alfombra-naranja-lana-naranja"
   },
   "orange_concrete_powder_receta": {
     "nombre": "Receta de Hormigón en polvo naranja",
     "slug": "receta-hormigon-en-polvo-naranja"
   },
-  "orange_dye_receta_1": {
-    "nombre": "Receta de Tinte naranja (1)",
-    "slug": "receta-tinte-naranja-1"
+  "orange_dye_receta_con_orange_tulip": {
+    "nombre": "Receta de Tinte naranja (con tulipán naranja)",
+    "slug": "receta-tinte-naranja-tulipan-naranja"
   },
-  "orange_dye_receta_2": {
-    "nombre": "Receta de Tinte naranja (2)",
-    "slug": "receta-tinte-naranja-2"
+  "orange_dye_receta_con_red_dye": {
+    "nombre": "Receta de Tinte naranja (con tinte rojo)",
+    "slug": "receta-tinte-naranja-tinte-rojo"
   },
-  "orange_stained_glass_pane_receta_1": {
-    "nombre": "Receta de Panel de vidriera naranja (1)",
-    "slug": "receta-panel-de-vidriera-naranja-1"
+  "orange_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Receta de Panel de vidriera naranja (con panel de cristal)",
+    "slug": "receta-panel-de-vidriera-naranja-panel-de-cristal"
   },
-  "orange_stained_glass_pane_receta_2": {
-    "nombre": "Receta de Panel de vidriera naranja (2)",
-    "slug": "receta-panel-de-vidriera-naranja-2"
+  "orange_stained_glass_pane_receta_con_orange_stained_glass": {
+    "nombre": "Receta de Panel de vidriera naranja (con vidriera naranja)",
+    "slug": "receta-panel-de-vidriera-naranja-vidriera-naranja"
   },
   "orange_stained_glass_receta": {
     "nombre": "Receta de Vidriera naranja",
@@ -2527,49 +2263,49 @@
     "nombre": "Receta de Estandarte rosa",
     "slug": "receta-estandarte-rosa"
   },
-  "pink_bed_receta_1": {
-    "nombre": "Receta de Cama rosa (1)",
-    "slug": "receta-cama-rosa-1"
+  "pink_bed_receta_con_black_bed": {
+    "nombre": "Receta de Cama rosa (con cama negra)",
+    "slug": "receta-cama-rosa-cama-negra"
   },
-  "pink_bed_receta_2": {
-    "nombre": "Receta de Cama rosa (2)",
-    "slug": "receta-cama-rosa-2"
+  "pink_bed_receta_con_pink_wool": {
+    "nombre": "Receta de Cama rosa (con lana rosa)",
+    "slug": "receta-cama-rosa-lana-rosa"
   },
   "pink_candle_receta": {
     "nombre": "Receta de Vela rosa",
     "slug": "receta-vela-rosa"
   },
-  "pink_carpet_receta_1": {
-    "nombre": "Receta de Alfombra rosa (1)",
-    "slug": "receta-alfombra-rosa-1"
+  "pink_carpet_receta_con_black_carpet": {
+    "nombre": "Receta de Alfombra rosa (con alfombra negra)",
+    "slug": "receta-alfombra-rosa-alfombra-negra"
   },
-  "pink_carpet_receta_2": {
-    "nombre": "Receta de Alfombra rosa (2)",
-    "slug": "receta-alfombra-rosa-2"
+  "pink_carpet_receta_con_pink_wool": {
+    "nombre": "Receta de Alfombra rosa (con lana rosa)",
+    "slug": "receta-alfombra-rosa-lana-rosa"
   },
   "pink_concrete_powder_receta": {
     "nombre": "Receta de Hormigón en polvo rosa",
     "slug": "receta-hormigon-en-polvo-rosa"
   },
-  "pink_dye_receta_1": {
-    "nombre": "Receta de Tinte rosa (1)",
-    "slug": "receta-tinte-rosa-1"
+  "pink_dye_receta_con_peony": {
+    "nombre": "Receta de Tinte rosa (con peonía)",
+    "slug": "receta-tinte-rosa-peonia"
   },
-  "pink_dye_receta_2": {
-    "nombre": "Receta de Tinte rosa (2)",
-    "slug": "receta-tinte-rosa-2"
+  "pink_dye_receta_con_pink_petals": {
+    "nombre": "Receta de Tinte rosa (con pétalos rosas)",
+    "slug": "receta-tinte-rosa-petalos-rosas"
   },
-  "pink_dye_receta_3": {
-    "nombre": "Receta de Tinte rosa (3)",
-    "slug": "receta-tinte-rosa-3"
+  "pink_dye_receta_con_red_dye": {
+    "nombre": "Receta de Tinte rosa (con tinte rojo)",
+    "slug": "receta-tinte-rosa-tinte-rojo"
   },
-  "pink_stained_glass_pane_receta_1": {
-    "nombre": "Receta de Panel de vidriera rosa (1)",
-    "slug": "receta-panel-de-vidriera-rosa-1"
+  "pink_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Receta de Panel de vidriera rosa (con panel de cristal)",
+    "slug": "receta-panel-de-vidriera-rosa-panel-de-cristal"
   },
-  "pink_stained_glass_pane_receta_2": {
-    "nombre": "Receta de Panel de vidriera rosa (2)",
-    "slug": "receta-panel-de-vidriera-rosa-2"
+  "pink_stained_glass_pane_receta_con_pink_stained_glass": {
+    "nombre": "Receta de Panel de vidriera rosa (con vidriera rosa)",
+    "slug": "receta-panel-de-vidriera-rosa-vidriera-rosa"
   },
   "pink_stained_glass_receta": {
     "nombre": "Receta de Vidriera rosa",
@@ -2743,25 +2479,25 @@
     "nombre": "Receta de Estandarte morado",
     "slug": "receta-estandarte-morado"
   },
-  "purple_bed_receta_1": {
-    "nombre": "Receta de Cama morada (1)",
-    "slug": "receta-cama-morada-1"
+  "purple_bed_receta_con_black_bed": {
+    "nombre": "Receta de Cama morada (con cama negra)",
+    "slug": "receta-cama-morada-cama-negra"
   },
-  "purple_bed_receta_2": {
-    "nombre": "Receta de Cama morada (2)",
-    "slug": "receta-cama-morada-2"
+  "purple_bed_receta_con_purple_wool": {
+    "nombre": "Receta de Cama morada (con lana morada)",
+    "slug": "receta-cama-morada-lana-morada"
   },
   "purple_candle_receta": {
     "nombre": "Receta de Vela morada",
     "slug": "receta-vela-morada"
   },
-  "purple_carpet_receta_1": {
-    "nombre": "Receta de Alfombra morada (1)",
-    "slug": "receta-alfombra-morada-1"
+  "purple_carpet_receta_con_black_carpet": {
+    "nombre": "Receta de Alfombra morada (con alfombra negra)",
+    "slug": "receta-alfombra-morada-alfombra-negra"
   },
-  "purple_carpet_receta_2": {
-    "nombre": "Receta de Alfombra morada (2)",
-    "slug": "receta-alfombra-morada-2"
+  "purple_carpet_receta_con_purple_wool": {
+    "nombre": "Receta de Alfombra morada (con lana morada)",
+    "slug": "receta-alfombra-morada-lana-morada"
   },
   "purple_concrete_powder_receta": {
     "nombre": "Receta de Hormigón en polvo morado",
@@ -2771,13 +2507,13 @@
     "nombre": "Receta de Tinte morado",
     "slug": "receta-tinte-morado"
   },
-  "purple_stained_glass_pane_receta_1": {
-    "nombre": "Receta de Panel de vidriera morado (1)",
-    "slug": "receta-panel-de-vidriera-morado-1"
+  "purple_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Receta de Panel de vidriera morado (con panel de cristal)",
+    "slug": "receta-panel-de-vidriera-morado-panel-de-cristal"
   },
-  "purple_stained_glass_pane_receta_2": {
-    "nombre": "Receta de Panel de vidriera morado (2)",
-    "slug": "receta-panel-de-vidriera-morado-2"
+  "purple_stained_glass_pane_receta_con_purple_stained_glass": {
+    "nombre": "Receta de Panel de vidriera morado (con vidriera morada)",
+    "slug": "receta-panel-de-vidriera-morado-vidriera-morada"
   },
   "purple_stained_glass_receta": {
     "nombre": "Receta de Vidriera morada",
@@ -2827,13 +2563,9 @@
     "nombre": "Receta de Escaleras de cuarzo",
     "slug": "receta-escaleras-de-cuarzo"
   },
-  "rabbit_stew_receta_1": {
-    "nombre": "Receta de Estofado de conejo (1)",
-    "slug": "receta-estofado-de-conejo-1"
-  },
-  "rabbit_stew_receta_2": {
-    "nombre": "Receta de Estofado de conejo (2)",
-    "slug": "receta-estofado-de-conejo-2"
+  "rabbit_stew_receta": {
+    "nombre": "Receta de Estofado de conejo",
+    "slug": "receta-estofado-de-conejo"
   },
   "rail_receta": {
     "nombre": "Receta de Raíl",
@@ -2875,37 +2607,37 @@
     "nombre": "Receta de Estandarte rojo",
     "slug": "receta-estandarte-rojo"
   },
-  "red_bed_receta_1": {
-    "nombre": "Receta de Cama roja (1)",
-    "slug": "receta-cama-roja-1"
+  "red_bed_receta_con_black_bed": {
+    "nombre": "Receta de Cama roja (con cama negra)",
+    "slug": "receta-cama-roja-cama-negra"
   },
-  "red_bed_receta_2": {
-    "nombre": "Receta de Cama roja (2)",
-    "slug": "receta-cama-roja-2"
+  "red_bed_receta_con_red_wool": {
+    "nombre": "Receta de Cama roja (con lana roja)",
+    "slug": "receta-cama-roja-lana-roja"
   },
   "red_candle_receta": {
     "nombre": "Receta de Vela roja",
     "slug": "receta-vela-roja"
   },
-  "red_carpet_receta_1": {
-    "nombre": "Receta de Alfombra roja (1)",
-    "slug": "receta-alfombra-roja-1"
+  "red_carpet_receta_con_black_carpet": {
+    "nombre": "Receta de Alfombra roja (con alfombra negra)",
+    "slug": "receta-alfombra-roja-alfombra-negra"
   },
-  "red_carpet_receta_2": {
-    "nombre": "Receta de Alfombra roja (2)",
-    "slug": "receta-alfombra-roja-2"
+  "red_carpet_receta_con_red_wool": {
+    "nombre": "Receta de Alfombra roja (con lana roja)",
+    "slug": "receta-alfombra-roja-lana-roja"
   },
   "red_concrete_powder_receta": {
     "nombre": "Receta de Hormigón en polvo rojo",
     "slug": "receta-hormigon-en-polvo-rojo"
   },
-  "red_dye_receta_1": {
-    "nombre": "Receta de Tinte rojo (1)",
-    "slug": "receta-tinte-rojo-1"
+  "red_dye_receta_con_beetroot": {
+    "nombre": "Receta de Tinte rojo (con remolacha)",
+    "slug": "receta-tinte-rojo-remolacha"
   },
-  "red_dye_receta_2": {
-    "nombre": "Receta de Tinte rojo (2)",
-    "slug": "receta-tinte-rojo-2"
+  "red_dye_receta_con_rose_bush": {
+    "nombre": "Receta de Tinte rojo (con rosal)",
+    "slug": "receta-tinte-rojo-rosal"
   },
   "red_nether_brick_slab_receta": {
     "nombre": "Receta de Losa de ladrillo rojo del Nether",
@@ -2939,13 +2671,13 @@
     "nombre": "Receta de Muro de arenisca roja",
     "slug": "receta-muro-de-arenisca-roja"
   },
-  "red_stained_glass_pane_receta_1": {
-    "nombre": "Receta de Panel de vidriera rojo (1)",
-    "slug": "receta-panel-de-vidriera-rojo-1"
+  "red_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Receta de Panel de vidriera rojo (con panel de cristal)",
+    "slug": "receta-panel-de-vidriera-rojo-panel-de-cristal"
   },
-  "red_stained_glass_pane_receta_2": {
-    "nombre": "Receta de Panel de vidriera rojo (2)",
-    "slug": "receta-panel-de-vidriera-rojo-2"
+  "red_stained_glass_pane_receta_con_red_stained_glass": {
+    "nombre": "Receta de Panel de vidriera rojo (con vidriera roja)",
+    "slug": "receta-panel-de-vidriera-rojo-vidriera-roja"
   },
   "red_stained_glass_receta": {
     "nombre": "Receta de Vidriera roja",
@@ -3095,193 +2827,17 @@
     "nombre": "Receta de Nieve",
     "slug": "receta-nieve"
   },
-  "soul_campfire_receta_1": {
-    "nombre": "Receta de Hoguera de almas (1)",
-    "slug": "receta-hoguera-de-almas-1"
-  },
-  "soul_campfire_receta_10": {
-    "nombre": "Receta de Hoguera de almas (10)",
-    "slug": "receta-hoguera-de-almas-10"
-  },
-  "soul_campfire_receta_11": {
-    "nombre": "Receta de Hoguera de almas (11)",
-    "slug": "receta-hoguera-de-almas-11"
-  },
-  "soul_campfire_receta_12": {
-    "nombre": "Receta de Hoguera de almas (12)",
-    "slug": "receta-hoguera-de-almas-12"
-  },
-  "soul_campfire_receta_13": {
-    "nombre": "Receta de Hoguera de almas (13)",
-    "slug": "receta-hoguera-de-almas-13"
-  },
-  "soul_campfire_receta_14": {
-    "nombre": "Receta de Hoguera de almas (14)",
-    "slug": "receta-hoguera-de-almas-14"
-  },
-  "soul_campfire_receta_15": {
-    "nombre": "Receta de Hoguera de almas (15)",
-    "slug": "receta-hoguera-de-almas-15"
-  },
-  "soul_campfire_receta_16": {
-    "nombre": "Receta de Hoguera de almas (16)",
-    "slug": "receta-hoguera-de-almas-16"
-  },
-  "soul_campfire_receta_17": {
-    "nombre": "Receta de Hoguera de almas (17)",
-    "slug": "receta-hoguera-de-almas-17"
-  },
-  "soul_campfire_receta_18": {
-    "nombre": "Receta de Hoguera de almas (18)",
-    "slug": "receta-hoguera-de-almas-18"
-  },
-  "soul_campfire_receta_19": {
-    "nombre": "Receta de Hoguera de almas (19)",
-    "slug": "receta-hoguera-de-almas-19"
-  },
-  "soul_campfire_receta_2": {
-    "nombre": "Receta de Hoguera de almas (2)",
-    "slug": "receta-hoguera-de-almas-2"
-  },
-  "soul_campfire_receta_20": {
-    "nombre": "Receta de Hoguera de almas (20)",
-    "slug": "receta-hoguera-de-almas-20"
-  },
-  "soul_campfire_receta_21": {
-    "nombre": "Receta de Hoguera de almas (21)",
-    "slug": "receta-hoguera-de-almas-21"
-  },
-  "soul_campfire_receta_22": {
-    "nombre": "Receta de Hoguera de almas (22)",
-    "slug": "receta-hoguera-de-almas-22"
-  },
-  "soul_campfire_receta_23": {
-    "nombre": "Receta de Hoguera de almas (23)",
-    "slug": "receta-hoguera-de-almas-23"
-  },
-  "soul_campfire_receta_24": {
-    "nombre": "Receta de Hoguera de almas (24)",
-    "slug": "receta-hoguera-de-almas-24"
-  },
-  "soul_campfire_receta_25": {
-    "nombre": "Receta de Hoguera de almas (25)",
-    "slug": "receta-hoguera-de-almas-25"
-  },
-  "soul_campfire_receta_26": {
-    "nombre": "Receta de Hoguera de almas (26)",
-    "slug": "receta-hoguera-de-almas-26"
-  },
-  "soul_campfire_receta_27": {
-    "nombre": "Receta de Hoguera de almas (27)",
-    "slug": "receta-hoguera-de-almas-27"
-  },
-  "soul_campfire_receta_28": {
-    "nombre": "Receta de Hoguera de almas (28)",
-    "slug": "receta-hoguera-de-almas-28"
-  },
-  "soul_campfire_receta_29": {
-    "nombre": "Receta de Hoguera de almas (29)",
-    "slug": "receta-hoguera-de-almas-29"
-  },
-  "soul_campfire_receta_3": {
-    "nombre": "Receta de Hoguera de almas (3)",
-    "slug": "receta-hoguera-de-almas-3"
-  },
-  "soul_campfire_receta_30": {
-    "nombre": "Receta de Hoguera de almas (30)",
-    "slug": "receta-hoguera-de-almas-30"
-  },
-  "soul_campfire_receta_31": {
-    "nombre": "Receta de Hoguera de almas (31)",
-    "slug": "receta-hoguera-de-almas-31"
-  },
-  "soul_campfire_receta_32": {
-    "nombre": "Receta de Hoguera de almas (32)",
-    "slug": "receta-hoguera-de-almas-32"
-  },
-  "soul_campfire_receta_33": {
-    "nombre": "Receta de Hoguera de almas (33)",
-    "slug": "receta-hoguera-de-almas-33"
-  },
-  "soul_campfire_receta_34": {
-    "nombre": "Receta de Hoguera de almas (34)",
-    "slug": "receta-hoguera-de-almas-34"
-  },
-  "soul_campfire_receta_35": {
-    "nombre": "Receta de Hoguera de almas (35)",
-    "slug": "receta-hoguera-de-almas-35"
-  },
-  "soul_campfire_receta_36": {
-    "nombre": "Receta de Hoguera de almas (36)",
-    "slug": "receta-hoguera-de-almas-36"
-  },
-  "soul_campfire_receta_37": {
-    "nombre": "Receta de Hoguera de almas (37)",
-    "slug": "receta-hoguera-de-almas-37"
-  },
-  "soul_campfire_receta_38": {
-    "nombre": "Receta de Hoguera de almas (38)",
-    "slug": "receta-hoguera-de-almas-38"
-  },
-  "soul_campfire_receta_39": {
-    "nombre": "Receta de Hoguera de almas (39)",
-    "slug": "receta-hoguera-de-almas-39"
-  },
-  "soul_campfire_receta_4": {
-    "nombre": "Receta de Hoguera de almas (4)",
-    "slug": "receta-hoguera-de-almas-4"
-  },
-  "soul_campfire_receta_40": {
-    "nombre": "Receta de Hoguera de almas (40)",
-    "slug": "receta-hoguera-de-almas-40"
-  },
-  "soul_campfire_receta_41": {
-    "nombre": "Receta de Hoguera de almas (41)",
-    "slug": "receta-hoguera-de-almas-41"
-  },
-  "soul_campfire_receta_42": {
-    "nombre": "Receta de Hoguera de almas (42)",
-    "slug": "receta-hoguera-de-almas-42"
-  },
-  "soul_campfire_receta_43": {
-    "nombre": "Receta de Hoguera de almas (43)",
-    "slug": "receta-hoguera-de-almas-43"
-  },
-  "soul_campfire_receta_44": {
-    "nombre": "Receta de Hoguera de almas (44)",
-    "slug": "receta-hoguera-de-almas-44"
-  },
-  "soul_campfire_receta_5": {
-    "nombre": "Receta de Hoguera de almas (5)",
-    "slug": "receta-hoguera-de-almas-5"
-  },
-  "soul_campfire_receta_6": {
-    "nombre": "Receta de Hoguera de almas (6)",
-    "slug": "receta-hoguera-de-almas-6"
-  },
-  "soul_campfire_receta_7": {
-    "nombre": "Receta de Hoguera de almas (7)",
-    "slug": "receta-hoguera-de-almas-7"
-  },
-  "soul_campfire_receta_8": {
-    "nombre": "Receta de Hoguera de almas (8)",
-    "slug": "receta-hoguera-de-almas-8"
-  },
-  "soul_campfire_receta_9": {
-    "nombre": "Receta de Hoguera de almas (9)",
-    "slug": "receta-hoguera-de-almas-9"
+  "soul_campfire_receta": {
+    "nombre": "Receta de Hoguera de almas",
+    "slug": "receta-hoguera-de-almas"
   },
   "soul_lantern_receta": {
     "nombre": "Receta de Farol de almas",
     "slug": "receta-farol-de-almas"
   },
-  "soul_torch_receta_1": {
-    "nombre": "Receta de Antorcha de almas (1)",
-    "slug": "receta-antorcha-de-almas-1"
-  },
-  "soul_torch_receta_2": {
-    "nombre": "Receta de Antorcha de almas (2)",
-    "slug": "receta-antorcha-de-almas-2"
+  "soul_torch_receta": {
+    "nombre": "Receta de Antorcha de almas",
+    "slug": "receta-antorcha-de-almas"
   },
   "spectral_arrow_receta": {
     "nombre": "Receta de Flecha espectral",
@@ -3351,13 +2907,13 @@
     "nombre": "Receta de Catalejo",
     "slug": "receta-catalejo"
   },
-  "stick_receta_1": {
-    "nombre": "Receta de Palo (1)",
-    "slug": "receta-palo-1"
+  "stick_receta_con_acacia_planks": {
+    "nombre": "Receta de Palo (con tablones de acacia)",
+    "slug": "receta-palo-tablones-de-acacia"
   },
-  "stick_receta_2": {
-    "nombre": "Receta de Palo (2)",
-    "slug": "receta-palo-2"
+  "stick_receta_con_bamboo": {
+    "nombre": "Receta de Palo (con bambú)",
+    "slug": "receta-palo-bambu"
   },
   "sticky_piston_receta": {
     "nombre": "Receta de Pistón pegajoso",
@@ -3463,69 +3019,17 @@
     "nombre": "Receta de Hifas deformadas descortezadas",
     "slug": "receta-hifas-deformadas-descortezadas"
   },
-  "sugar_receta_1": {
-    "nombre": "Receta de Azúcar (1)",
-    "slug": "receta-azucar-1"
+  "sugar_receta_con_honey_bottle": {
+    "nombre": "Receta de Azúcar (con botella de miel)",
+    "slug": "receta-azucar-botella-de-miel"
   },
-  "sugar_receta_2": {
-    "nombre": "Receta de Azúcar (2)",
-    "slug": "receta-azucar-2"
+  "sugar_receta_con_sugar_cane": {
+    "nombre": "Receta de Azúcar (con caña de azúcar)",
+    "slug": "receta-azucar-cana-de-azucar"
   },
-  "suspicious_stew_receta_1": {
-    "nombre": "Receta de Estofado sospechoso (1)",
-    "slug": "receta-estofado-sospechoso-1"
-  },
-  "suspicious_stew_receta_10": {
-    "nombre": "Receta de Estofado sospechoso (10)",
-    "slug": "receta-estofado-sospechoso-10"
-  },
-  "suspicious_stew_receta_11": {
-    "nombre": "Receta de Estofado sospechoso (11)",
-    "slug": "receta-estofado-sospechoso-11"
-  },
-  "suspicious_stew_receta_12": {
-    "nombre": "Receta de Estofado sospechoso (12)",
-    "slug": "receta-estofado-sospechoso-12"
-  },
-  "suspicious_stew_receta_13": {
-    "nombre": "Receta de Estofado sospechoso (13)",
-    "slug": "receta-estofado-sospechoso-13"
-  },
-  "suspicious_stew_receta_14": {
-    "nombre": "Receta de Estofado sospechoso (14)",
-    "slug": "receta-estofado-sospechoso-14"
-  },
-  "suspicious_stew_receta_2": {
-    "nombre": "Receta de Estofado sospechoso (2)",
-    "slug": "receta-estofado-sospechoso-2"
-  },
-  "suspicious_stew_receta_3": {
-    "nombre": "Receta de Estofado sospechoso (3)",
-    "slug": "receta-estofado-sospechoso-3"
-  },
-  "suspicious_stew_receta_4": {
-    "nombre": "Receta de Estofado sospechoso (4)",
-    "slug": "receta-estofado-sospechoso-4"
-  },
-  "suspicious_stew_receta_5": {
-    "nombre": "Receta de Estofado sospechoso (5)",
-    "slug": "receta-estofado-sospechoso-5"
-  },
-  "suspicious_stew_receta_6": {
-    "nombre": "Receta de Estofado sospechoso (6)",
-    "slug": "receta-estofado-sospechoso-6"
-  },
-  "suspicious_stew_receta_7": {
-    "nombre": "Receta de Estofado sospechoso (7)",
-    "slug": "receta-estofado-sospechoso-7"
-  },
-  "suspicious_stew_receta_8": {
-    "nombre": "Receta de Estofado sospechoso (8)",
-    "slug": "receta-estofado-sospechoso-8"
-  },
-  "suspicious_stew_receta_9": {
-    "nombre": "Receta de Estofado sospechoso (9)",
-    "slug": "receta-estofado-sospechoso-9"
+  "suspicious_stew_receta": {
+    "nombre": "Receta de Estofado sospechoso",
+    "slug": "receta-estofado-sospechoso"
   },
   "target_receta": {
     "nombre": "Receta de Diana",
@@ -3651,93 +3155,93 @@
     "nombre": "Receta de Trampilla deformada",
     "slug": "receta-trampilla-deformada"
   },
-  "waxed_chiseled_copper_receta_1": {
-    "nombre": "Receta de Cobre cincelado encerado (1)",
-    "slug": "receta-cobre-cincelado-encerado-1"
+  "waxed_chiseled_copper_receta_con_chiseled_copper": {
+    "nombre": "Receta de Cobre cincelado encerado (con cobre cincelado)",
+    "slug": "receta-cobre-cincelado-encerado-cobre-cincelado"
   },
-  "waxed_chiseled_copper_receta_2": {
-    "nombre": "Receta de Cobre cincelado encerado (2)",
-    "slug": "receta-cobre-cincelado-encerado-2"
+  "waxed_chiseled_copper_receta_con_waxed_cut_copper_slab": {
+    "nombre": "Receta de Cobre cincelado encerado (con losa de cobre cortado encerada)",
+    "slug": "receta-cobre-cincelado-encerado-losa-de-cobre-cortado-encerada"
   },
   "waxed_copper_block_receta": {
     "nombre": "Receta de Bloque de cobre encerado",
     "slug": "receta-bloque-de-cobre-encerado"
   },
-  "waxed_copper_bulb_receta_1": {
-    "nombre": "Receta de Bombilla de cobre encerada (1)",
-    "slug": "receta-bombilla-de-cobre-encerada-1"
+  "waxed_copper_bulb_receta_con_copper_bulb": {
+    "nombre": "Receta de Bombilla de cobre encerada (con bombilla de cobre)",
+    "slug": "receta-bombilla-de-cobre-encerada-bombilla-de-cobre"
   },
-  "waxed_copper_bulb_receta_2": {
-    "nombre": "Receta de Bombilla de cobre encerada (2)",
-    "slug": "receta-bombilla-de-cobre-encerada-2"
+  "waxed_copper_bulb_receta_con_waxed_copper_block": {
+    "nombre": "Receta de Bombilla de cobre encerada (con bloque de cobre encerado)",
+    "slug": "receta-bombilla-de-cobre-encerada-bloque-de-cobre-encerado"
   },
   "waxed_copper_door_receta": {
     "nombre": "Receta de Puerta de cobre encerada",
     "slug": "receta-puerta-de-cobre-encerada"
   },
-  "waxed_copper_grate_receta_1": {
-    "nombre": "Receta de Rejilla de cobre encerada (1)",
-    "slug": "receta-rejilla-de-cobre-encerada-1"
+  "waxed_copper_grate_receta_con_copper_grate": {
+    "nombre": "Receta de Rejilla de cobre encerada (con rejilla de cobre)",
+    "slug": "receta-rejilla-de-cobre-encerada-rejilla-de-cobre"
   },
-  "waxed_copper_grate_receta_2": {
-    "nombre": "Receta de Rejilla de cobre encerada (2)",
-    "slug": "receta-rejilla-de-cobre-encerada-2"
+  "waxed_copper_grate_receta_con_waxed_copper_block": {
+    "nombre": "Receta de Rejilla de cobre encerada (con bloque de cobre encerado)",
+    "slug": "receta-rejilla-de-cobre-encerada-bloque-de-cobre-encerado"
   },
   "waxed_copper_trapdoor_receta": {
     "nombre": "Receta de Trampilla de cobre encerada",
     "slug": "receta-trampilla-de-cobre-encerada"
   },
-  "waxed_cut_copper_receta_1": {
-    "nombre": "Receta de Cobre cortado encerado (1)",
-    "slug": "receta-cobre-cortado-encerado-1"
+  "waxed_cut_copper_receta_con_cut_copper": {
+    "nombre": "Receta de Cobre cortado encerado (con cobre cortado)",
+    "slug": "receta-cobre-cortado-encerado-cobre-cortado"
   },
-  "waxed_cut_copper_receta_2": {
-    "nombre": "Receta de Cobre cortado encerado (2)",
-    "slug": "receta-cobre-cortado-encerado-2"
+  "waxed_cut_copper_receta_con_waxed_copper_block": {
+    "nombre": "Receta de Cobre cortado encerado (con bloque de cobre encerado)",
+    "slug": "receta-cobre-cortado-encerado-bloque-de-cobre-encerado"
   },
-  "waxed_cut_copper_slab_receta_1": {
-    "nombre": "Receta de Losa de cobre cortado encerada (1)",
-    "slug": "receta-losa-de-cobre-cortado-encerada-1"
+  "waxed_cut_copper_slab_receta_con_cut_copper_slab": {
+    "nombre": "Receta de Losa de cobre cortado encerada (con losa de cobre cortado)",
+    "slug": "receta-losa-de-cobre-cortado-encerada-losa-de-cobre-cortado"
   },
-  "waxed_cut_copper_slab_receta_2": {
-    "nombre": "Receta de Losa de cobre cortado encerada (2)",
-    "slug": "receta-losa-de-cobre-cortado-encerada-2"
+  "waxed_cut_copper_slab_receta_con_waxed_cut_copper": {
+    "nombre": "Receta de Losa de cobre cortado encerada (con cobre cortado encerado)",
+    "slug": "receta-losa-de-cobre-cortado-encerada-cobre-cortado-encerado"
   },
-  "waxed_cut_copper_stairs_receta_1": {
-    "nombre": "Receta de Escaleras de cobre cortado enceradas (1)",
-    "slug": "receta-escaleras-de-cobre-cortado-enceradas-1"
+  "waxed_cut_copper_stairs_receta_con_cut_copper_stairs": {
+    "nombre": "Receta de Escaleras de cobre cortado enceradas (con escaleras de cobre cortado)",
+    "slug": "receta-escaleras-de-cobre-cortado-enceradas-escaleras-de-cobre-cortado"
   },
-  "waxed_cut_copper_stairs_receta_2": {
-    "nombre": "Receta de Escaleras de cobre cortado enceradas (2)",
-    "slug": "receta-escaleras-de-cobre-cortado-enceradas-2"
+  "waxed_cut_copper_stairs_receta_con_waxed_cut_copper": {
+    "nombre": "Receta de Escaleras de cobre cortado enceradas (con cobre cortado encerado)",
+    "slug": "receta-escaleras-de-cobre-cortado-enceradas-cobre-cortado-encerado"
   },
-  "waxed_exposed_chiseled_copper_receta_1": {
-    "nombre": "Receta de Cobre cincelado expuesto encerado (1)",
-    "slug": "receta-cobre-cincelado-expuesto-encerado-1"
+  "waxed_exposed_chiseled_copper_receta_con_exposed_chiseled_copper": {
+    "nombre": "Receta de Cobre cincelado expuesto encerado (con cobre cincelado expuesto)",
+    "slug": "receta-cobre-cincelado-expuesto-encerado-cobre-cincelado-expuesto"
   },
-  "waxed_exposed_chiseled_copper_receta_2": {
-    "nombre": "Receta de Cobre cincelado expuesto encerado (2)",
-    "slug": "receta-cobre-cincelado-expuesto-encerado-2"
+  "waxed_exposed_chiseled_copper_receta_con_waxed_exposed_cut_copper_slab": {
+    "nombre": "Receta de Cobre cincelado expuesto encerado (con losa de cobre cortado expuesta encerada)",
+    "slug": "receta-cobre-cincelado-expuesto-encerado-losa-de-cobre-cortado-expuesta-encerada"
   },
-  "waxed_exposed_copper_bulb_receta_1": {
-    "nombre": "Receta de Bombilla de cobre expuesta encerada (1)",
-    "slug": "receta-bombilla-de-cobre-expuesta-encerada-1"
+  "waxed_exposed_copper_bulb_receta_con_exposed_copper_bulb": {
+    "nombre": "Receta de Bombilla de cobre expuesta encerada (con bombilla de cobre expuesta)",
+    "slug": "receta-bombilla-de-cobre-expuesta-encerada-bombilla-de-cobre-expuesta"
   },
-  "waxed_exposed_copper_bulb_receta_2": {
-    "nombre": "Receta de Bombilla de cobre expuesta encerada (2)",
-    "slug": "receta-bombilla-de-cobre-expuesta-encerada-2"
+  "waxed_exposed_copper_bulb_receta_con_waxed_exposed_copper": {
+    "nombre": "Receta de Bombilla de cobre expuesta encerada (con bloque de cobre expuesto encerado)",
+    "slug": "receta-bombilla-de-cobre-expuesta-encerada-bloque-de-cobre-expuesto-encerado"
   },
   "waxed_exposed_copper_door_receta": {
     "nombre": "Receta de Puerta de cobre expuesta encerada",
     "slug": "receta-puerta-de-cobre-expuesta-encerada"
   },
-  "waxed_exposed_copper_grate_receta_1": {
-    "nombre": "Receta de Rejilla de cobre expuesta encerada (1)",
-    "slug": "receta-rejilla-de-cobre-expuesta-encerada-1"
+  "waxed_exposed_copper_grate_receta_con_exposed_copper_grate": {
+    "nombre": "Receta de Rejilla de cobre expuesta encerada (con rejilla de cobre expuesta)",
+    "slug": "receta-rejilla-de-cobre-expuesta-encerada-rejilla-de-cobre-expuesta"
   },
-  "waxed_exposed_copper_grate_receta_2": {
-    "nombre": "Receta de Rejilla de cobre expuesta encerada (2)",
-    "slug": "receta-rejilla-de-cobre-expuesta-encerada-2"
+  "waxed_exposed_copper_grate_receta_con_waxed_exposed_copper": {
+    "nombre": "Receta de Rejilla de cobre expuesta encerada (con bloque de cobre expuesto encerado)",
+    "slug": "receta-rejilla-de-cobre-expuesta-encerada-bloque-de-cobre-expuesto-encerado"
   },
   "waxed_exposed_copper_receta": {
     "nombre": "Receta de Bloque de cobre expuesto encerado",
@@ -3747,57 +3251,57 @@
     "nombre": "Receta de Trampilla de cobre expuesta encerada",
     "slug": "receta-trampilla-de-cobre-expuesta-encerada"
   },
-  "waxed_exposed_cut_copper_receta_1": {
-    "nombre": "Receta de Cobre cortado expuesto encerado (1)",
-    "slug": "receta-cobre-cortado-expuesto-encerado-1"
+  "waxed_exposed_cut_copper_receta_con_exposed_cut_copper": {
+    "nombre": "Receta de Cobre cortado expuesto encerado (con cobre cortado expuesto)",
+    "slug": "receta-cobre-cortado-expuesto-encerado-cobre-cortado-expuesto"
   },
-  "waxed_exposed_cut_copper_receta_2": {
-    "nombre": "Receta de Cobre cortado expuesto encerado (2)",
-    "slug": "receta-cobre-cortado-expuesto-encerado-2"
+  "waxed_exposed_cut_copper_receta_con_waxed_exposed_copper": {
+    "nombre": "Receta de Cobre cortado expuesto encerado (con bloque de cobre expuesto encerado)",
+    "slug": "receta-cobre-cortado-expuesto-encerado-bloque-de-cobre-expuesto-encerado"
   },
-  "waxed_exposed_cut_copper_slab_receta_1": {
-    "nombre": "Receta de Losa de cobre cortado expuesta encerada (1)",
-    "slug": "receta-losa-de-cobre-cortado-expuesta-encerada-1"
+  "waxed_exposed_cut_copper_slab_receta_con_exposed_cut_copper_slab": {
+    "nombre": "Receta de Losa de cobre cortado expuesta encerada (con losa de cobre cortado expuesta)",
+    "slug": "receta-losa-de-cobre-cortado-expuesta-encerada-losa-de-cobre-cortado-expuesta"
   },
-  "waxed_exposed_cut_copper_slab_receta_2": {
-    "nombre": "Receta de Losa de cobre cortado expuesta encerada (2)",
-    "slug": "receta-losa-de-cobre-cortado-expuesta-encerada-2"
+  "waxed_exposed_cut_copper_slab_receta_con_waxed_exposed_cut_copper": {
+    "nombre": "Receta de Losa de cobre cortado expuesta encerada (con cobre cortado expuesto encerado)",
+    "slug": "receta-losa-de-cobre-cortado-expuesta-encerada-cobre-cortado-expuesto-encerado"
   },
-  "waxed_exposed_cut_copper_stairs_receta_1": {
-    "nombre": "Receta de Escaleras de cobre cortado expuestas enceradas (1)",
-    "slug": "receta-escaleras-de-cobre-cortado-expuestas-enceradas-1"
+  "waxed_exposed_cut_copper_stairs_receta_con_exposed_cut_copper_stairs": {
+    "nombre": "Receta de Escaleras de cobre cortado expuestas enceradas (con escaleras de cobre cortado expuestas)",
+    "slug": "receta-escaleras-de-cobre-cortado-expuestas-enceradas-escaleras-de-cobre-cortado-expuestas"
   },
-  "waxed_exposed_cut_copper_stairs_receta_2": {
-    "nombre": "Receta de Escaleras de cobre cortado expuestas enceradas (2)",
-    "slug": "receta-escaleras-de-cobre-cortado-expuestas-enceradas-2"
+  "waxed_exposed_cut_copper_stairs_receta_con_waxed_exposed_cut_copper": {
+    "nombre": "Receta de Escaleras de cobre cortado expuestas enceradas (con cobre cortado expuesto encerado)",
+    "slug": "receta-escaleras-de-cobre-cortado-expuestas-enceradas-cobre-cortado-expuesto-encerado"
   },
-  "waxed_oxidized_chiseled_copper_receta_1": {
-    "nombre": "Receta de Cobre cincelado oxidado encerado (1)",
-    "slug": "receta-cobre-cincelado-oxidado-encerado-1"
+  "waxed_oxidized_chiseled_copper_receta_con_honeycomb": {
+    "nombre": "Receta de Cobre cincelado oxidado encerado (con panal)",
+    "slug": "receta-cobre-cincelado-oxidado-encerado-panal"
   },
-  "waxed_oxidized_chiseled_copper_receta_2": {
-    "nombre": "Receta de Cobre cincelado oxidado encerado (2)",
-    "slug": "receta-cobre-cincelado-oxidado-encerado-2"
+  "waxed_oxidized_chiseled_copper_receta_con_waxed_oxidized_cut_copper_slab": {
+    "nombre": "Receta de Cobre cincelado oxidado encerado (con losa de cobre cortado oxidada encerada)",
+    "slug": "receta-cobre-cincelado-oxidado-encerado-losa-de-cobre-cortado-oxidada-encerada"
   },
-  "waxed_oxidized_copper_bulb_receta_1": {
-    "nombre": "Receta de Bombilla de cobre oxidada encerada (1)",
-    "slug": "receta-bombilla-de-cobre-oxidada-encerada-1"
+  "waxed_oxidized_copper_bulb_receta_con_honeycomb": {
+    "nombre": "Receta de Bombilla de cobre oxidada encerada (con panal)",
+    "slug": "receta-bombilla-de-cobre-oxidada-encerada-panal"
   },
-  "waxed_oxidized_copper_bulb_receta_2": {
-    "nombre": "Receta de Bombilla de cobre oxidada encerada (2)",
-    "slug": "receta-bombilla-de-cobre-oxidada-encerada-2"
+  "waxed_oxidized_copper_bulb_receta_con_waxed_oxidized_copper": {
+    "nombre": "Receta de Bombilla de cobre oxidada encerada (con bloque de cobre oxidado encerado)",
+    "slug": "receta-bombilla-de-cobre-oxidada-encerada-bloque-de-cobre-oxidado-encerado"
   },
   "waxed_oxidized_copper_door_receta": {
     "nombre": "Receta de Puerta de cobre oxidada encerada",
     "slug": "receta-puerta-de-cobre-oxidada-encerada"
   },
-  "waxed_oxidized_copper_grate_receta_1": {
-    "nombre": "Receta de Rejilla de cobre oxidada encerada (1)",
-    "slug": "receta-rejilla-de-cobre-oxidada-encerada-1"
+  "waxed_oxidized_copper_grate_receta_con_honeycomb": {
+    "nombre": "Receta de Rejilla de cobre oxidada encerada (con panal)",
+    "slug": "receta-rejilla-de-cobre-oxidada-encerada-panal"
   },
-  "waxed_oxidized_copper_grate_receta_2": {
-    "nombre": "Receta de Rejilla de cobre oxidada encerada (2)",
-    "slug": "receta-rejilla-de-cobre-oxidada-encerada-2"
+  "waxed_oxidized_copper_grate_receta_con_waxed_oxidized_copper": {
+    "nombre": "Receta de Rejilla de cobre oxidada encerada (con bloque de cobre oxidado encerado)",
+    "slug": "receta-rejilla-de-cobre-oxidada-encerada-bloque-de-cobre-oxidado-encerado"
   },
   "waxed_oxidized_copper_receta": {
     "nombre": "Receta de Bloque de cobre oxidado encerado",
@@ -3807,57 +3311,57 @@
     "nombre": "Receta de Trampilla de cobre oxidada encerada",
     "slug": "receta-trampilla-de-cobre-oxidada-encerada"
   },
-  "waxed_oxidized_cut_copper_receta_1": {
-    "nombre": "Receta de Cobre cortado oxidado encerado (1)",
-    "slug": "receta-cobre-cortado-oxidado-encerado-1"
+  "waxed_oxidized_cut_copper_receta_con_honeycomb": {
+    "nombre": "Receta de Cobre cortado oxidado encerado (con panal)",
+    "slug": "receta-cobre-cortado-oxidado-encerado-panal"
   },
-  "waxed_oxidized_cut_copper_receta_2": {
-    "nombre": "Receta de Cobre cortado oxidado encerado (2)",
-    "slug": "receta-cobre-cortado-oxidado-encerado-2"
+  "waxed_oxidized_cut_copper_receta_con_waxed_oxidized_copper": {
+    "nombre": "Receta de Cobre cortado oxidado encerado (con bloque de cobre oxidado encerado)",
+    "slug": "receta-cobre-cortado-oxidado-encerado-bloque-de-cobre-oxidado-encerado"
   },
-  "waxed_oxidized_cut_copper_slab_receta_1": {
-    "nombre": "Receta de Losa de cobre cortado oxidada encerada (1)",
-    "slug": "receta-losa-de-cobre-cortado-oxidada-encerada-1"
+  "waxed_oxidized_cut_copper_slab_receta_con_honeycomb": {
+    "nombre": "Receta de Losa de cobre cortado oxidada encerada (con panal)",
+    "slug": "receta-losa-de-cobre-cortado-oxidada-encerada-panal"
   },
-  "waxed_oxidized_cut_copper_slab_receta_2": {
-    "nombre": "Receta de Losa de cobre cortado oxidada encerada (2)",
-    "slug": "receta-losa-de-cobre-cortado-oxidada-encerada-2"
+  "waxed_oxidized_cut_copper_slab_receta_con_waxed_oxidized_cut_copper": {
+    "nombre": "Receta de Losa de cobre cortado oxidada encerada (con cobre cortado oxidado encerado)",
+    "slug": "receta-losa-de-cobre-cortado-oxidada-encerada-cobre-cortado-oxidado-encerado"
   },
-  "waxed_oxidized_cut_copper_stairs_receta_1": {
-    "nombre": "Receta de Escaleras de cobre cortado oxidadas enceradas (1)",
-    "slug": "receta-escaleras-de-cobre-cortado-oxidadas-enceradas-1"
+  "waxed_oxidized_cut_copper_stairs_receta_con_honeycomb": {
+    "nombre": "Receta de Escaleras de cobre cortado oxidadas enceradas (con panal)",
+    "slug": "receta-escaleras-de-cobre-cortado-oxidadas-enceradas-panal"
   },
-  "waxed_oxidized_cut_copper_stairs_receta_2": {
-    "nombre": "Receta de Escaleras de cobre cortado oxidadas enceradas (2)",
-    "slug": "receta-escaleras-de-cobre-cortado-oxidadas-enceradas-2"
+  "waxed_oxidized_cut_copper_stairs_receta_con_waxed_oxidized_cut_copper": {
+    "nombre": "Receta de Escaleras de cobre cortado oxidadas enceradas (con cobre cortado oxidado encerado)",
+    "slug": "receta-escaleras-de-cobre-cortado-oxidadas-enceradas-cobre-cortado-oxidado-encerado"
   },
-  "waxed_weathered_chiseled_copper_receta_1": {
-    "nombre": "Receta de Cobre cincelado desgastado encerado (1)",
-    "slug": "receta-cobre-cincelado-desgastado-encerado-1"
+  "waxed_weathered_chiseled_copper_receta_con_honeycomb": {
+    "nombre": "Receta de Cobre cincelado desgastado encerado (con panal)",
+    "slug": "receta-cobre-cincelado-desgastado-encerado-panal"
   },
-  "waxed_weathered_chiseled_copper_receta_2": {
-    "nombre": "Receta de Cobre cincelado desgastado encerado (2)",
-    "slug": "receta-cobre-cincelado-desgastado-encerado-2"
+  "waxed_weathered_chiseled_copper_receta_con_waxed_weathered_cut_copper_slab": {
+    "nombre": "Receta de Cobre cincelado desgastado encerado (con losa de cobre cortado desgastada encerada)",
+    "slug": "receta-cobre-cincelado-desgastado-encerado-losa-de-cobre-cortado-desgastada-encerada"
   },
-  "waxed_weathered_copper_bulb_receta_1": {
-    "nombre": "Receta de Bombilla de cobre desgastada encerada (1)",
-    "slug": "receta-bombilla-de-cobre-desgastada-encerada-1"
+  "waxed_weathered_copper_bulb_receta_con_honeycomb": {
+    "nombre": "Receta de Bombilla de cobre desgastada encerada (con panal)",
+    "slug": "receta-bombilla-de-cobre-desgastada-encerada-panal"
   },
-  "waxed_weathered_copper_bulb_receta_2": {
-    "nombre": "Receta de Bombilla de cobre desgastada encerada (2)",
-    "slug": "receta-bombilla-de-cobre-desgastada-encerada-2"
+  "waxed_weathered_copper_bulb_receta_con_waxed_weathered_copper": {
+    "nombre": "Receta de Bombilla de cobre desgastada encerada (con bloque de cobre desgastado encerado)",
+    "slug": "receta-bombilla-de-cobre-desgastada-encerada-bloque-de-cobre-desgastado-encerado"
   },
   "waxed_weathered_copper_door_receta": {
     "nombre": "Receta de Puerta de cobre desgastada encerada",
     "slug": "receta-puerta-de-cobre-desgastada-encerada"
   },
-  "waxed_weathered_copper_grate_receta_1": {
-    "nombre": "Receta de Rejilla de cobre desgastada encerada (1)",
-    "slug": "receta-rejilla-de-cobre-desgastada-encerada-1"
+  "waxed_weathered_copper_grate_receta_con_honeycomb": {
+    "nombre": "Receta de Rejilla de cobre desgastada encerada (con panal)",
+    "slug": "receta-rejilla-de-cobre-desgastada-encerada-panal"
   },
-  "waxed_weathered_copper_grate_receta_2": {
-    "nombre": "Receta de Rejilla de cobre desgastada encerada (2)",
-    "slug": "receta-rejilla-de-cobre-desgastada-encerada-2"
+  "waxed_weathered_copper_grate_receta_con_waxed_weathered_copper": {
+    "nombre": "Receta de Rejilla de cobre desgastada encerada (con bloque de cobre desgastado encerado)",
+    "slug": "receta-rejilla-de-cobre-desgastada-encerada-bloque-de-cobre-desgastado-encerado"
   },
   "waxed_weathered_copper_receta": {
     "nombre": "Receta de Bloque de cobre desgastado encerado",
@@ -3867,29 +3371,29 @@
     "nombre": "Receta de Trampilla de cobre desgastada encerada",
     "slug": "receta-trampilla-de-cobre-desgastada-encerada"
   },
-  "waxed_weathered_cut_copper_receta_1": {
-    "nombre": "Receta de Cobre cortado desgastado encerado (1)",
-    "slug": "receta-cobre-cortado-desgastado-encerado-1"
+  "waxed_weathered_cut_copper_receta_con_honeycomb": {
+    "nombre": "Receta de Cobre cortado desgastado encerado (con panal)",
+    "slug": "receta-cobre-cortado-desgastado-encerado-panal"
   },
-  "waxed_weathered_cut_copper_receta_2": {
-    "nombre": "Receta de Cobre cortado desgastado encerado (2)",
-    "slug": "receta-cobre-cortado-desgastado-encerado-2"
+  "waxed_weathered_cut_copper_receta_con_waxed_weathered_copper": {
+    "nombre": "Receta de Cobre cortado desgastado encerado (con bloque de cobre desgastado encerado)",
+    "slug": "receta-cobre-cortado-desgastado-encerado-bloque-de-cobre-desgastado-encerado"
   },
-  "waxed_weathered_cut_copper_slab_receta_1": {
-    "nombre": "Receta de Losa de cobre cortado desgastada encerada (1)",
-    "slug": "receta-losa-de-cobre-cortado-desgastada-encerada-1"
+  "waxed_weathered_cut_copper_slab_receta_con_honeycomb": {
+    "nombre": "Receta de Losa de cobre cortado desgastada encerada (con panal)",
+    "slug": "receta-losa-de-cobre-cortado-desgastada-encerada-panal"
   },
-  "waxed_weathered_cut_copper_slab_receta_2": {
-    "nombre": "Receta de Losa de cobre cortado desgastada encerada (2)",
-    "slug": "receta-losa-de-cobre-cortado-desgastada-encerada-2"
+  "waxed_weathered_cut_copper_slab_receta_con_waxed_weathered_cut_copper": {
+    "nombre": "Receta de Losa de cobre cortado desgastada encerada (con cobre cortado desgastado encerado)",
+    "slug": "receta-losa-de-cobre-cortado-desgastada-encerada-cobre-cortado-desgastado-encerado"
   },
-  "waxed_weathered_cut_copper_stairs_receta_1": {
-    "nombre": "Receta de Escaleras de cobre cortado desgastadas enceradas (1)",
-    "slug": "receta-escaleras-de-cobre-cortado-desgastadas-enceradas-1"
+  "waxed_weathered_cut_copper_stairs_receta_con_honeycomb": {
+    "nombre": "Receta de Escaleras de cobre cortado desgastadas enceradas (con panal)",
+    "slug": "receta-escaleras-de-cobre-cortado-desgastadas-enceradas-panal"
   },
-  "waxed_weathered_cut_copper_stairs_receta_2": {
-    "nombre": "Receta de Escaleras de cobre cortado desgastadas enceradas (2)",
-    "slug": "receta-escaleras-de-cobre-cortado-desgastadas-enceradas-2"
+  "waxed_weathered_cut_copper_stairs_receta_con_waxed_weathered_cut_copper": {
+    "nombre": "Receta de Escaleras de cobre cortado desgastadas enceradas (con cobre cortado desgastado encerado)",
+    "slug": "receta-escaleras-de-cobre-cortado-desgastadas-enceradas-cobre-cortado-desgastado-encerado"
   },
   "wayfinder_armor_trim_smithing_template_receta": {
     "nombre": "Receta de Plantilla de adorno del explorador",
@@ -3927,25 +3431,25 @@
     "nombre": "Receta de Estandarte blanco",
     "slug": "receta-estandarte-blanco"
   },
-  "white_bed_receta_1": {
-    "nombre": "Receta de Cama blanca (1)",
-    "slug": "receta-cama-blanca-1"
+  "white_bed_receta_con_black_bed": {
+    "nombre": "Receta de Cama blanca (con cama negra)",
+    "slug": "receta-cama-blanca-cama-negra"
   },
-  "white_bed_receta_2": {
-    "nombre": "Receta de Cama blanca (2)",
-    "slug": "receta-cama-blanca-2"
+  "white_bed_receta_con_white_wool": {
+    "nombre": "Receta de Cama blanca (con lana blanca)",
+    "slug": "receta-cama-blanca-lana-blanca"
   },
   "white_candle_receta": {
     "nombre": "Receta de Vela blanca",
     "slug": "receta-vela-blanca"
   },
-  "white_carpet_receta_1": {
-    "nombre": "Receta de Alfombra blanca (1)",
-    "slug": "receta-alfombra-blanca-1"
+  "white_carpet_receta_con_black_carpet": {
+    "nombre": "Receta de Alfombra blanca (con alfombra negra)",
+    "slug": "receta-alfombra-blanca-alfombra-negra"
   },
-  "white_carpet_receta_2": {
-    "nombre": "Receta de Alfombra blanca (2)",
-    "slug": "receta-alfombra-blanca-2"
+  "white_carpet_receta_con_white_wool": {
+    "nombre": "Receta de Alfombra blanca (con lana blanca)",
+    "slug": "receta-alfombra-blanca-lana-blanca"
   },
   "white_concrete_powder_receta": {
     "nombre": "Receta de Hormigón en polvo blanco",
@@ -3955,13 +3459,13 @@
     "nombre": "Receta de Tinte blanco",
     "slug": "receta-tinte-blanco"
   },
-  "white_stained_glass_pane_receta_1": {
-    "nombre": "Receta de Panel de vidriera blanco (1)",
-    "slug": "receta-panel-de-vidriera-blanco-1"
+  "white_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Receta de Panel de vidriera blanco (con panel de cristal)",
+    "slug": "receta-panel-de-vidriera-blanco-panel-de-cristal"
   },
-  "white_stained_glass_pane_receta_2": {
-    "nombre": "Receta de Panel de vidriera blanco (2)",
-    "slug": "receta-panel-de-vidriera-blanco-2"
+  "white_stained_glass_pane_receta_con_white_stained_glass": {
+    "nombre": "Receta de Panel de vidriera blanco (con vidriera blanca)",
+    "slug": "receta-panel-de-vidriera-blanco-vidriera-blanca"
   },
   "white_stained_glass_receta": {
     "nombre": "Receta de Vidriera blanca",
@@ -3971,13 +3475,13 @@
     "nombre": "Receta de Terracota blanca",
     "slug": "receta-terracota-blanca"
   },
-  "white_wool_receta_1": {
-    "nombre": "Receta de Lana blanca (1)",
-    "slug": "receta-lana-blanca-1"
+  "white_wool_receta_con_black_wool": {
+    "nombre": "Receta de Lana blanca (con lana negra)",
+    "slug": "receta-lana-blanca-lana-negra"
   },
-  "white_wool_receta_2": {
-    "nombre": "Receta de Lana blanca (2)",
-    "slug": "receta-lana-blanca-2"
+  "white_wool_receta_con_string": {
+    "nombre": "Receta de Lana blanca (con cuerda)",
+    "slug": "receta-lana-blanca-cuerda"
   },
   "wild_armor_trim_smithing_template_receta": {
     "nombre": "Receta de Plantilla de adorno de lo salvaje",
@@ -4019,45 +3523,45 @@
     "nombre": "Receta de Estandarte amarillo",
     "slug": "receta-estandarte-amarillo"
   },
-  "yellow_bed_receta_1": {
-    "nombre": "Receta de Cama amarilla (1)",
-    "slug": "receta-cama-amarilla-1"
+  "yellow_bed_receta_con_black_bed": {
+    "nombre": "Receta de Cama amarilla (con cama negra)",
+    "slug": "receta-cama-amarilla-cama-negra"
   },
-  "yellow_bed_receta_2": {
-    "nombre": "Receta de Cama amarilla (2)",
-    "slug": "receta-cama-amarilla-2"
+  "yellow_bed_receta_con_yellow_wool": {
+    "nombre": "Receta de Cama amarilla (con lana amarilla)",
+    "slug": "receta-cama-amarilla-lana-amarilla"
   },
   "yellow_candle_receta": {
     "nombre": "Receta de Vela amarilla",
     "slug": "receta-vela-amarilla"
   },
-  "yellow_carpet_receta_1": {
-    "nombre": "Receta de Alfombra amarilla (1)",
-    "slug": "receta-alfombra-amarilla-1"
+  "yellow_carpet_receta_con_black_carpet": {
+    "nombre": "Receta de Alfombra amarilla (con alfombra negra)",
+    "slug": "receta-alfombra-amarilla-alfombra-negra"
   },
-  "yellow_carpet_receta_2": {
-    "nombre": "Receta de Alfombra amarilla (2)",
-    "slug": "receta-alfombra-amarilla-2"
+  "yellow_carpet_receta_con_yellow_wool": {
+    "nombre": "Receta de Alfombra amarilla (con lana amarilla)",
+    "slug": "receta-alfombra-amarilla-lana-amarilla"
   },
   "yellow_concrete_powder_receta": {
     "nombre": "Receta de Hormigón en polvo amarillo",
     "slug": "receta-hormigon-en-polvo-amarillo"
   },
-  "yellow_dye_receta_1": {
-    "nombre": "Receta de Tinte amarillo (1)",
-    "slug": "receta-tinte-amarillo-1"
+  "yellow_dye_receta_con_dandelion": {
+    "nombre": "Receta de Tinte amarillo (con diente de león)",
+    "slug": "receta-tinte-amarillo-diente-de-leon"
   },
-  "yellow_dye_receta_2": {
-    "nombre": "Receta de Tinte amarillo (2)",
-    "slug": "receta-tinte-amarillo-2"
+  "yellow_dye_receta_con_sunflower": {
+    "nombre": "Receta de Tinte amarillo (con girasol)",
+    "slug": "receta-tinte-amarillo-girasol"
   },
-  "yellow_stained_glass_pane_receta_1": {
-    "nombre": "Receta de Panel de vidriera amarillo (1)",
-    "slug": "receta-panel-de-vidriera-amarillo-1"
+  "yellow_stained_glass_pane_receta_con_glass_pane": {
+    "nombre": "Receta de Panel de vidriera amarillo (con panel de cristal)",
+    "slug": "receta-panel-de-vidriera-amarillo-panel-de-cristal"
   },
-  "yellow_stained_glass_pane_receta_2": {
-    "nombre": "Receta de Panel de vidriera amarillo (2)",
-    "slug": "receta-panel-de-vidriera-amarillo-2"
+  "yellow_stained_glass_pane_receta_con_yellow_stained_glass": {
+    "nombre": "Receta de Panel de vidriera amarillo (con vidriera amarilla)",
+    "slug": "receta-panel-de-vidriera-amarillo-vidriera-amarilla"
   },
   "yellow_stained_glass_receta": {
     "nombre": "Receta de Vidriera amarilla",

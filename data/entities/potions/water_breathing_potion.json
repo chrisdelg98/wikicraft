@@ -1,0 +1,26 @@
+{
+  "$schema": "../../schemas/potion.schema.json",
+  "id": "water_breathing_potion",
+  "tipo": "pocion",
+  "etapa": "nether",
+  "relevancia": "alta",
+  "efecto": "respiracion_acuatica",
+  "presentacion": "bebible",
+  "variante": "normal",
+  "nivel": 1,
+  "utilidad": 4,
+  "beneficiosa": true,
+  "duracionSegundos": 180,
+  "derivaDe": "awkward_potion",
+  "ingrediente": "pufferfish",
+  "prolongada": {
+    "ingrediente": "redstone",
+    "duracionSegundos": 480
+  },
+  "etiquetas": [
+    "poción de respiración acuática",
+    "respiracion_acuatica",
+    "pocion",
+    "soporte para pociones"
+  ]
+}

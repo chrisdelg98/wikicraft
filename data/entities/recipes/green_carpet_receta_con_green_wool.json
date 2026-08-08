@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "green_carpet_receta_con_green_wool",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "green_carpet",
+    "cantidad": 3
+  },
+  "variantePor": "green_wool",
+  "conForma": true,
+  "patron": [
+    "AA"
+  ],
+  "clave": {
+    "A": [
+      "green_wool"
+    ]
+  },
+  "estacion": "inventario"
+}

@@ -1,0 +1,48 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "rabbit_stew_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "rabbit_stew",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "baked_potato"
+      ],
+      "cantidad": 1
+    },
+    {
+      "opciones": [
+        "bowl"
+      ],
+      "cantidad": 1
+    },
+    {
+      "opciones": [
+        "brown_mushroom",
+        "carrot"
+      ],
+      "cantidad": 1
+    },
+    {
+      "opciones": [
+        "carrot",
+        "cooked_rabbit"
+      ],
+      "cantidad": 1
+    },
+    {
+      "opciones": [
+        "cooked_rabbit",
+        "red_mushroom"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "mesa_de_trabajo"
+}

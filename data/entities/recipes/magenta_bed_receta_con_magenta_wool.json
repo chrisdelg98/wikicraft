@@ -1,0 +1,37 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "magenta_bed_receta_con_magenta_wool",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "magenta_bed",
+    "cantidad": 1
+  },
+  "variantePor": "magenta_wool",
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "BBB"
+  ],
+  "clave": {
+    "A": [
+      "magenta_wool"
+    ],
+    "B": [
+      "acacia_planks",
+      "bamboo_planks",
+      "birch_planks",
+      "cherry_planks",
+      "crimson_planks",
+      "dark_oak_planks",
+      "jungle_planks",
+      "mangrove_planks",
+      "oak_planks",
+      "pale_oak_planks",
+      "spruce_planks",
+      "warped_planks"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

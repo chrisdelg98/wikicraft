@@ -1,0 +1,28 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "waxed_oxidized_copper_bulb_receta_con_honeycomb",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "waxed_oxidized_copper_bulb",
+    "cantidad": 1
+  },
+  "variantePor": "honeycomb",
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "honeycomb"
+      ],
+      "cantidad": 1
+    },
+    {
+      "opciones": [
+        "oxidized_copper_bulb"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

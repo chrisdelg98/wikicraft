@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "magenta_dye_receta_con_allium",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "magenta_dye",
+    "cantidad": 1
+  },
+  "variantePor": "allium",
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "allium"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "../../schemas/potion.schema.json",
+  "id": "fire_resistance_potion",
+  "tipo": "pocion",
+  "etapa": "nether",
+  "relevancia": "alta",
+  "efecto": "resistencia_al_fuego",
+  "presentacion": "bebible",
+  "variante": "normal",
+  "nivel": 1,
+  "utilidad": 5,
+  "beneficiosa": true,
+  "duracionSegundos": 180,
+  "derivaDe": "awkward_potion",
+  "ingrediente": "magma_cream",
+  "prolongada": {
+    "ingrediente": "redstone",
+    "duracionSegundos": 480
+  },
+  "etiquetas": [
+    "poción de resistencia al fuego",
+    "resistencia_al_fuego",
+    "pocion",
+    "soporte para pociones"
+  ]
+}

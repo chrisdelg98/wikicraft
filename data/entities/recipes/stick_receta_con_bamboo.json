@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "stick_receta_con_bamboo",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "stick",
+    "cantidad": 1
+  },
+  "variantePor": "bamboo",
+  "conForma": true,
+  "patron": [
+    "A",
+    "A"
+  ],
+  "clave": {
+    "A": [
+      "bamboo"
+    ]
+  },
+  "estacion": "inventario"
+}

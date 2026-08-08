@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "cyan_carpet_receta_con_cyan_wool",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "cyan_carpet",
+    "cantidad": 3
+  },
+  "variantePor": "cyan_wool",
+  "conForma": true,
+  "patron": [
+    "AA"
+  ],
+  "clave": {
+    "A": [
+      "cyan_wool"
+    ]
+  },
+  "estacion": "inventario"
+}

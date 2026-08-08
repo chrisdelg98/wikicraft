@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "pink_dye_receta_con_pink_petals",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "pink_dye",
+    "cantidad": 1
+  },
+  "variantePor": "pink_petals",
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "pink_petals",
+        "pink_tulip"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

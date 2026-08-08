@@ -1,0 +1,28 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "magenta_dye_receta_con_purple_dye",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "magenta_dye",
+    "cantidad": 2
+  },
+  "variantePor": "purple_dye",
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "pink_dye"
+      ],
+      "cantidad": 1
+    },
+    {
+      "opciones": [
+        "purple_dye"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

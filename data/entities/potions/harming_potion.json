@@ -1,0 +1,26 @@
+{
+  "$schema": "../../schemas/potion.schema.json",
+  "id": "harming_potion",
+  "tipo": "pocion",
+  "etapa": "nether",
+  "relevancia": "alta",
+  "efecto": "dano",
+  "presentacion": "bebible",
+  "variante": "normal",
+  "nivel": 1,
+  "utilidad": 3,
+  "beneficiosa": false,
+  "duracionSegundos": 0,
+  "derivaDe": "healing_potion",
+  "ingrediente": "fermented_spider_eye",
+  "mejorada": {
+    "ingrediente": "glowstone_dust",
+    "duracionSegundos": 0
+  },
+  "etiquetas": [
+    "poción de daño",
+    "dano",
+    "pocion",
+    "soporte para pociones"
+  ]
+}

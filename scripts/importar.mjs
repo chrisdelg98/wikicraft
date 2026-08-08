@@ -499,17 +499,15 @@ for (const lista of porFirma.values()) {
   )
   const variables = conjuntos.filter((s) => s.size > 1)
 
-  const huella = (s) => [...s].sort().join(',')
-  const plegable =
-    lista.length === 1 ||
-    variables.length === 0 ||
-    variables.every((s) => huella(s) === huella(variables[0]))
-
-  if (plegable) {
-    plegadas.push({ ...lista[0], opciones: conjuntos.map((s) => [...s].sort()) })
-  } else {
-    for (const c of lista) plegadas.push({ ...c, opciones: c.celdas.map((x) => (x ? [x] : [])) })
-  }
+  // Compartir resultado, cantidad y forma exacta es, en la practica, la firma
+  // de una etiqueta expandida: en el juego no existen dos recetas distintas
+  // que coincidan en las tres cosas. Se pliega siempre.
+  //
+  // Se probo antes exigir que llegara el producto cartesiano completo, y no
+  // sirve: para la hoguera, minecraft-data entrega 44 combinaciones de las 88
+  // posibles entre maderas y carbones, aunque el juego admita las 88. El dato
+  // de origen es una muestra, no la lista entera.
+  plegadas.push({ ...lista[0], opciones: conjuntos.map((s) => [...s].sort()) })
 }
 
 // Los identificadores se numeran solo cuando un mismo objeto conserva varias
@@ -520,8 +518,26 @@ for (const r of plegadas) porResultado.set(r.resultado, [...(porResultado.get(r.
 let recetasEscritas = 0
 
 for (const [resultado, lista] of porResultado) {
+  const usados = new Set()
+
+  // Cuando un objeto conserva varias recetas, cada una se nombra por el
+  // ingrediente que solo aparece en ella. Es lo unico que de verdad las
+  // distingue, y desde luego dice mas que un numero entre parentesis.
+  const items = lista.map((r) => new Set(r.opciones.flat()))
+  for (const [i, receta] of lista.entries()) {
+    const ajenos = new Set(items.filter((_, j) => j !== i).flatMap((s) => [...s]))
+    receta.variantePor = [...items[i]].find((x) => !ajenos.has(x)) ?? null
+  }
+
   for (const [indice, receta] of lista.entries()) {
-    const id = lista.length > 1 ? `${resultado}_receta_${indice + 1}` : `${resultado}_receta`
+    let id = `${resultado}_receta`
+    if (lista.length > 1) {
+      id = receta.variantePor
+        ? `${resultado}_receta_con_${receta.variantePor}`
+        : `${resultado}_receta_${indice + 1}`
+      while (usados.has(id)) id = `${id}_${indice + 1}`
+    }
+    usados.add(id)
 
     let campos
     if (receta.conForma) {
@@ -577,18 +593,25 @@ for (const [resultado, lista] of porResultado) {
       // la barca y su receta como dos resultados distintos.
       relevancia: 'baja',
       resultado: { item: resultado, cantidad: receta.cantidad },
+      ...(lista.length > 1 && receta.variantePor ? { variantePor: receta.variantePor } : {}),
       ...campos
     }
 
     await guardarEntidad('recipes', entidad, [
-      'estacion', 'resultado', 'conForma', 'patron', 'clave', 'ingredientes', 'relevancia'
+      'estacion', 'resultado', 'conForma', 'patron', 'clave', 'ingredientes',
+      'relevancia', 'variantePor'
     ])
 
     const nombreResultado = mc.itemsByName[resultado]?.displayName ?? resultado
+    const variante = receta.variantePor ? mc.itemsByName[receta.variantePor]?.displayName : null
     anotar(
       'recipes',
       id,
-      lista.length > 1 ? `${nombreResultado} Recipe ${indice + 1}` : `${nombreResultado} Recipe`
+      lista.length > 1 && variante
+        ? `${nombreResultado} Recipe (with ${variante})`
+        : lista.length > 1
+          ? `${nombreResultado} Recipe ${indice + 1}`
+          : `${nombreResultado} Recipe`
     )
     recetasEscritas++
   }

@@ -1,0 +1,28 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "white_wool_receta_con_black_wool",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "white_wool",
+    "cantidad": 1
+  },
+  "variantePor": "black_wool",
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "black_wool"
+      ],
+      "cantidad": 1
+    },
+    {
+      "opciones": [
+        "white_dye"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

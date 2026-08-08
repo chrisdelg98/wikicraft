@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "bone_meal_receta_con_bone",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "bone_meal",
+    "cantidad": 3
+  },
+  "variantePor": "bone",
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "bone"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

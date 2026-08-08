@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "magenta_dye_receta_con_lilac",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "magenta_dye",
+    "cantidad": 2
+  },
+  "variantePor": "lilac",
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "lilac"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "orange_dye_receta_con_red_dye",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "orange_dye",
+    "cantidad": 2
+  },
+  "variantePor": "red_dye",
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "red_dye"
+      ],
+      "cantidad": 1
+    },
+    {
+      "opciones": [
+        "yellow_dye"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

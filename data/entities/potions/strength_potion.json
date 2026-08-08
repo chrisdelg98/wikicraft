@@ -3,13 +3,28 @@
   "id": "strength_potion",
   "tipo": "pocion",
   "etapa": "nether",
+  "relevancia": "alta",
   "efecto": "fuerza",
   "presentacion": "bebible",
   "variante": "normal",
   "nivel": 1,
+  "utilidad": 5,
+  "beneficiosa": true,
   "duracionSegundos": 180,
   "derivaDe": "awkward_potion",
   "ingrediente": "blaze_powder",
-  "beneficiosa": true,
-  "etiquetas": ["pocion de fuerza", "dano", "combate"]
+  "prolongada": {
+    "ingrediente": "redstone",
+    "duracionSegundos": 480
+  },
+  "mejorada": {
+    "ingrediente": "glowstone_dust",
+    "duracionSegundos": 90
+  },
+  "etiquetas": [
+    "poción de fuerza",
+    "fuerza",
+    "pocion",
+    "soporte para pociones"
+  ]
 }

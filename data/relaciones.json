@@ -40,7 +40,9 @@
 
   "pocion": [
     { "campo": "derivaDe", "etiqueta": "rel.derivaDe", "inversa": "rel.daLugarA" },
-    { "campo": "ingrediente", "etiqueta": "rel.ingrediente", "inversa": "rel.seUsaEnPociones" }
+    { "campo": "ingrediente", "etiqueta": "rel.ingrediente", "inversa": "rel.seUsaEnPociones" },
+    { "campo": "prolongada.ingrediente", "etiqueta": "rel.ingrediente", "inversa": "rel.seUsaEnPociones" },
+    { "campo": "mejorada.ingrediente", "etiqueta": "rel.ingrediente", "inversa": "rel.seUsaEnPociones" }
   ],
 
   "receta": [

@@ -1,0 +1,28 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "waxed_cut_copper_slab_receta_con_cut_copper_slab",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "waxed_cut_copper_slab",
+    "cantidad": 1
+  },
+  "variantePor": "cut_copper_slab",
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "cut_copper_slab"
+      ],
+      "cantidad": 1
+    },
+    {
+      "opciones": [
+        "honeycomb"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "suspicious_stew_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "suspicious_stew",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "allium",
+        "azure_bluet",
+        "blue_orchid",
+        "bowl"
+      ],
+      "cantidad": 1
+    },
+    {
+      "opciones": [
+        "bowl",
+        "brown_mushroom"
+      ],
+      "cantidad": 1
+    },
+    {
+      "opciones": [
+        "brown_mushroom",
+        "cornflower",
+        "dandelion",
+        "lily_of_the_valley",
+        "orange_tulip",
+        "oxeye_daisy",
+        "pink_tulip",
+        "poppy",
+        "red_mushroom"
+      ],
+      "cantidad": 1
+    },
+    {
+      "opciones": [
+        "red_mushroom",
+        "red_tulip",
+        "torchflower",
+        "white_tulip",
+        "wither_rose"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "pink_dye_receta_con_peony",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "pink_dye",
+    "cantidad": 2
+  },
+  "variantePor": "peony",
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "peony"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "../../schemas/potion.schema.json",
+  "id": "leaping_potion",
+  "tipo": "pocion",
+  "etapa": "nether",
+  "relevancia": "alta",
+  "efecto": "salto",
+  "presentacion": "bebible",
+  "variante": "normal",
+  "nivel": 1,
+  "utilidad": 3,
+  "beneficiosa": true,
+  "duracionSegundos": 180,
+  "derivaDe": "awkward_potion",
+  "ingrediente": "rabbit_foot",
+  "prolongada": {
+    "ingrediente": "redstone",
+    "duracionSegundos": 480
+  },
+  "mejorada": {
+    "ingrediente": "glowstone_dust",
+    "duracionSegundos": 90
+  },
+  "etiquetas": [
+    "poción de salto",
+    "salto",
+    "pocion",
+    "soporte para pociones"
+  ]
+}

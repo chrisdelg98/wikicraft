@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "white_stained_glass_pane_receta_con_white_stained_glass",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "white_stained_glass_pane",
+    "cantidad": 16
+  },
+  "variantePor": "white_stained_glass",
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "AAA"
+  ],
+  "clave": {
+    "A": [
+      "white_stained_glass"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

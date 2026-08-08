@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "sugar_receta_con_sugar_cane",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "sugar",
+    "cantidad": 1
+  },
+  "variantePor": "sugar_cane",
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "sugar_cane"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

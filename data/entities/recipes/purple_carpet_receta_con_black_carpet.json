@@ -1,0 +1,28 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "purple_carpet_receta_con_black_carpet",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "purple_carpet",
+    "cantidad": 1
+  },
+  "variantePor": "black_carpet",
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "black_carpet"
+      ],
+      "cantidad": 1
+    },
+    {
+      "opciones": [
+        "purple_dye"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

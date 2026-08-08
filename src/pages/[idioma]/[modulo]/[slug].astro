@@ -441,6 +441,74 @@ const consejos = [
   }
 
   {
+    entidad.tipo === 'pocion' && entidad.efecto !== 'ninguno' && (
+      <section class="mb-10">
+        <h2 class="titulo-seccion">{ui(idioma, 'pocion.mejorar')}</h2>
+        <div class="tabla-envoltorio">
+          <table>
+            <thead>
+              <tr>
+                <th>{ui(idioma, 'pocion.quieres')}</th>
+                <th>{ui(idioma, 'pocion.anades')}</th>
+                <th>{ui(idioma, 'pocion.resultado')}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {entidad.prolongada && (
+                <tr>
+                  <td>{ui(idioma, 'pocion.masDuracion')}</td>
+                  <td>
+                    <a href={enlace(entidad.prolongada.ingrediente).url}>
+                      {enlace(entidad.prolongada.ingrediente).nombre}
+                    </a>
+                  </td>
+                  <td>
+                    {ui(idioma, 'ficha.minutos', {
+                      n: Math.round(entidad.prolongada.duracionSegundos / 60)
+                    })}
+                  </td>
+                </tr>
+              )}
+              {entidad.mejorada && (
+                <tr>
+                  <td>{ui(idioma, 'pocion.masPotencia')}</td>
+                  <td>
+                    <a href={enlace(entidad.mejorada.ingrediente).url}>
+                      {enlace(entidad.mejorada.ingrediente).nombre}
+                    </a>
+                  </td>
+                  <td>
+                    {texto.nombre} II
+                    {entidad.mejorada.duracionSegundos > 0 &&
+                      ` · ${ui(idioma, 'ficha.minutos', { n: Math.round(entidad.mejorada.duracionSegundos / 60) })}`}
+                  </td>
+                </tr>
+              )}
+              {/* Estas dos valen para CUALQUIER pocion, asi que no se guardan
+                  en los datos: repetirlas dieciseis veces seria mantenerlas
+                  dieciseis veces. */}
+              <tr>
+                <td>{ui(idioma, 'pocion.arrojadiza')}</td>
+                <td>
+                  <a href={enlace('gunpowder').url}>{enlace('gunpowder').nombre}</a>
+                </td>
+                <td>{ui(idioma, 'pocion.arrojadizaResultado')}</td>
+              </tr>
+              <tr>
+                <td>{ui(idioma, 'pocion.persistente')}</td>
+                <td>
+                  <a href={enlace('dragon_breath').url}>{enlace('dragon_breath').nombre}</a>
+                </td>
+                <td>{ui(idioma, 'pocion.persistenteResultado')}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )
+  }
+
+  {
     entidad.debilidades?.length > 0 && (
       <section class="mb-10">
         <h2 class="titulo-seccion">{ui(idioma, 'ficha.leVaMal')}</h2>

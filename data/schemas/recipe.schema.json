@@ -44,6 +44,11 @@
       }
     },
 
+    "variantePor": {
+      "$ref": "_comun.schema.json#/$defs/referencia",
+      "description": "Ingrediente que distingue esta receta de las demas del mismo objeto, cuando no se han podido plegar en una sola. Sirve para nombrarla por lo que cambia en vez de por un numero, que no informa de nada."
+    },
+
     "conForma": {
       "type": "boolean",
       "default": true,

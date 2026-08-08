@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "gold_ingot_receta_con_gold_block",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "gold_ingot",
+    "cantidad": 9
+  },
+  "variantePor": "gold_block",
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "gold_block"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}
