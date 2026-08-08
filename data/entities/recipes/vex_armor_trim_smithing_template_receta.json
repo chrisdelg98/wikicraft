@@ -15,9 +15,15 @@
     "AAA"
   ],
   "clave": {
-    "A": "diamond",
-    "B": "vex_armor_trim_smithing_template",
-    "C": "cobblestone"
+    "A": [
+      "diamond"
+    ],
+    "B": [
+      "vex_armor_trim_smithing_template"
+    ],
+    "C": [
+      "cobblestone"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

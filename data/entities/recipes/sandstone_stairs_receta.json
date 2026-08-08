@@ -1,0 +1,25 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "sandstone_stairs_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "sandstone_stairs",
+    "cantidad": 4
+  },
+  "conForma": true,
+  "patron": [
+    "A",
+    "AA",
+    "AAA"
+  ],
+  "clave": {
+    "A": [
+      "chiseled_sandstone",
+      "cut_sandstone",
+      "sandstone"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

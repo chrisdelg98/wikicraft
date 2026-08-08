@@ -15,7 +15,9 @@
     "AAA"
   ],
   "clave": {
-    "A": "smooth_sandstone"
+    "A": [
+      "smooth_sandstone"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

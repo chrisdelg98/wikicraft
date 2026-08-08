@@ -1,0 +1,28 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "mossy_cobblestone_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "mossy_cobblestone",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "cobblestone"
+      ],
+      "cantidad": 1
+    },
+    {
+      "opciones": [
+        "moss_block",
+        "vine"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

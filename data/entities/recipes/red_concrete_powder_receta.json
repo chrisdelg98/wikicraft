@@ -11,15 +11,21 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "red_dye",
-      "cantidad": 1
-    },
-    {
-      "item": "sand",
+      "opciones": [
+        "gravel"
+      ],
       "cantidad": 4
     },
     {
-      "item": "gravel",
+      "opciones": [
+        "red_dye"
+      ],
+      "cantidad": 1
+    },
+    {
+      "opciones": [
+        "sand"
+      ],
       "cantidad": 4
     }
   ],

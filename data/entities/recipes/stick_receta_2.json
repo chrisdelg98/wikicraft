@@ -6,7 +6,7 @@
   "relevancia": "baja",
   "resultado": {
     "item": "stick",
-    "cantidad": 4
+    "cantidad": 1
   },
   "conForma": true,
   "patron": [
@@ -14,7 +14,9 @@
     "A"
   ],
   "clave": {
-    "A": "cherry_planks"
+    "A": [
+      "bamboo"
+    ]
   },
   "estacion": "inventario"
 }

@@ -14,8 +14,12 @@
     "BA"
   ],
   "clave": {
-    "A": "dirt",
-    "B": "gravel"
+    "A": [
+      "dirt"
+    ],
+    "B": [
+      "gravel"
+    ]
   },
   "estacion": "inventario"
 }

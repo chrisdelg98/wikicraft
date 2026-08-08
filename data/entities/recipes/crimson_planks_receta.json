@@ -11,7 +11,9 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "crimson_stem",
+      "opciones": [
+        "crimson_stem"
+      ],
       "cantidad": 1
     }
   ],

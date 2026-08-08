@@ -109,6 +109,21 @@
   "faceta.dificil": "Hard",
 
   "listado.irA": "Go to page",
+  "grupo.cualquiera": "Any of {n}",
+  "grupo.log": "Any log",
+  "grupo.wood": "Any wood",
+  "grupo.planks": "Any planks",
+  "grupo.wool": "Any wool",
+  "grupo.dye": "Any dye",
+  "grupo.stone": "Any stone",
+  "grupo.ingot": "Any ingot",
+  "grupo.flower": "Any flower",
+  "grupo.sapling": "Any sapling",
+  "grupo.leaves": "Any leaves",
+  "grupo.coral": "Any coral",
+
+  "receta.verAlternativas": "{grupo}: see all {n} options",
+
   "ficha.parecidos": "Others like this",
   "ficha.datos": "At a glance",
   "ficha.consejos": "Worth knowing",

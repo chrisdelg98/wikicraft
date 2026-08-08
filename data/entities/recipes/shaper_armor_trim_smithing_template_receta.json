@@ -15,9 +15,15 @@
     "AAA"
   ],
   "clave": {
-    "A": "diamond",
-    "B": "shaper_armor_trim_smithing_template",
-    "C": "terracotta"
+    "A": [
+      "diamond"
+    ],
+    "B": [
+      "shaper_armor_trim_smithing_template"
+    ],
+    "C": [
+      "terracotta"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

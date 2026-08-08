@@ -15,8 +15,12 @@
     "ABA"
   ],
   "clave": {
-    "A": "stick",
-    "B": "smooth_stone_slab"
+    "A": [
+      "stick"
+    ],
+    "B": [
+      "smooth_stone_slab"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

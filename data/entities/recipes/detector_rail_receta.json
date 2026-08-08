@@ -15,9 +15,15 @@
     "ACA"
   ],
   "clave": {
-    "A": "iron_ingot",
-    "B": "stone_pressure_plate",
-    "C": "redstone"
+    "A": [
+      "iron_ingot"
+    ],
+    "B": [
+      "stone_pressure_plate"
+    ],
+    "C": [
+      "redstone"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

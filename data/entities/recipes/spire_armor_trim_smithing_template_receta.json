@@ -15,9 +15,15 @@
     "AAA"
   ],
   "clave": {
-    "A": "diamond",
-    "B": "spire_armor_trim_smithing_template",
-    "C": "purpur_block"
+    "A": [
+      "diamond"
+    ],
+    "B": [
+      "spire_armor_trim_smithing_template"
+    ],
+    "C": [
+      "purpur_block"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

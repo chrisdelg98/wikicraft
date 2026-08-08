@@ -15,8 +15,12 @@
     "ABA"
   ],
   "clave": {
-    "A": "jungle_planks",
-    "B": "jungle_slab"
+    "A": [
+      "jungle_planks"
+    ],
+    "B": [
+      "jungle_slab"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

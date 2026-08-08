@@ -14,7 +14,9 @@
     "A"
   ],
   "clave": {
-    "A": "waxed_oxidized_cut_copper_slab"
+    "A": [
+      "waxed_oxidized_cut_copper_slab"
+    ]
   },
   "estacion": "inventario"
 }

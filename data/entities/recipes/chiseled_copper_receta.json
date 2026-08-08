@@ -14,7 +14,9 @@
     "A"
   ],
   "clave": {
-    "A": "cut_copper_slab"
+    "A": [
+      "cut_copper_slab"
+    ]
   },
   "estacion": "inventario"
 }

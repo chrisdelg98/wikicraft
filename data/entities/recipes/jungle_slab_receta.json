@@ -13,7 +13,9 @@
     "AAA"
   ],
   "clave": {
-    "A": "jungle_planks"
+    "A": [
+      "jungle_planks"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

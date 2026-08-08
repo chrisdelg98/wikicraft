@@ -15,7 +15,9 @@
     "AA"
   ],
   "clave": {
-    "A": "acacia_planks"
+    "A": [
+      "acacia_planks"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

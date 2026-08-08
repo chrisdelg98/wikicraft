@@ -11,12 +11,16 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "paper",
-      "cantidad": 3
+      "opciones": [
+        "leather"
+      ],
+      "cantidad": 1
     },
     {
-      "item": "leather",
-      "cantidad": 1
+      "opciones": [
+        "paper"
+      ],
+      "cantidad": 3
     }
   ],
   "estacion": "inventario"

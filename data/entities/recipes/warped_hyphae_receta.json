@@ -14,7 +14,9 @@
     "AA"
   ],
   "clave": {
-    "A": "warped_stem"
+    "A": [
+      "warped_stem"
+    ]
   },
   "estacion": "inventario"
 }

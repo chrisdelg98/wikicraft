@@ -11,7 +11,9 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "bamboo_planks",
+      "opciones": [
+        "bamboo_planks"
+      ],
       "cantidad": 1
     }
   ],

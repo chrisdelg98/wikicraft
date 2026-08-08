@@ -14,7 +14,9 @@
     "AAA"
   ],
   "clave": {
-    "A": "polished_blackstone_bricks"
+    "A": [
+      "polished_blackstone_bricks"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

@@ -15,7 +15,9 @@
     "AAA"
   ],
   "clave": {
-    "A": "dark_oak_planks"
+    "A": [
+      "dark_oak_planks"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

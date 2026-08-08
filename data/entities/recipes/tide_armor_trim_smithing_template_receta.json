@@ -15,9 +15,15 @@
     "AAA"
   ],
   "clave": {
-    "A": "diamond",
-    "B": "tide_armor_trim_smithing_template",
-    "C": "prismarine"
+    "A": [
+      "diamond"
+    ],
+    "B": [
+      "tide_armor_trim_smithing_template"
+    ],
+    "C": [
+      "prismarine"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

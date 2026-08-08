@@ -14,8 +14,12 @@
     "ABA"
   ],
   "clave": {
-    "A": "nether_bricks",
-    "B": "nether_brick"
+    "A": [
+      "nether_bricks"
+    ],
+    "B": [
+      "nether_brick"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

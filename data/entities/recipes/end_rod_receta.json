@@ -14,8 +14,12 @@
     "B"
   ],
   "clave": {
-    "A": "blaze_rod",
-    "B": "popped_chorus_fruit"
+    "A": [
+      "blaze_rod"
+    ],
+    "B": [
+      "popped_chorus_fruit"
+    ]
   },
   "estacion": "inventario"
 }

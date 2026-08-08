@@ -15,9 +15,15 @@
     "CCC"
   ],
   "clave": {
-    "A": "book",
-    "B": "diamond",
-    "C": "obsidian"
+    "A": [
+      "book"
+    ],
+    "B": [
+      "diamond"
+    ],
+    "C": [
+      "obsidian"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

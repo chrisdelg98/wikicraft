@@ -15,9 +15,15 @@
     "AAA"
   ],
   "clave": {
-    "A": "diamond",
-    "B": "rib_armor_trim_smithing_template",
-    "C": "netherrack"
+    "A": [
+      "diamond"
+    ],
+    "B": [
+      "rib_armor_trim_smithing_template"
+    ],
+    "C": [
+      "netherrack"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

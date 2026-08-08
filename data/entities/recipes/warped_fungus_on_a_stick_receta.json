@@ -14,8 +14,12 @@
     " B"
   ],
   "clave": {
-    "A": "fishing_rod",
-    "B": "warped_fungus"
+    "A": [
+      "fishing_rod"
+    ],
+    "B": [
+      "warped_fungus"
+    ]
   },
   "estacion": "inventario"
 }

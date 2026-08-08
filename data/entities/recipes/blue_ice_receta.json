@@ -11,7 +11,9 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "packed_ice",
+      "opciones": [
+        "packed_ice"
+      ],
       "cantidad": 9
     }
   ],

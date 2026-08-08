@@ -14,7 +14,9 @@
     "AA"
   ],
   "clave": {
-    "A": "jungle_log"
+    "A": [
+      "jungle_log"
+    ]
   },
   "estacion": "inventario"
 }

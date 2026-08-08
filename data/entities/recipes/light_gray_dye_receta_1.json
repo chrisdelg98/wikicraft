@@ -11,7 +11,11 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "azure_bluet",
+      "opciones": [
+        "azure_bluet",
+        "oxeye_daisy",
+        "white_tulip"
+      ],
       "cantidad": 1
     }
   ],

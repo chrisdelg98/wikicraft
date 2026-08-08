@@ -15,7 +15,9 @@
     "AAA"
   ],
   "clave": {
-    "A": "deepslate_tiles"
+    "A": [
+      "deepslate_tiles"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

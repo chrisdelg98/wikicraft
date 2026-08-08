@@ -14,8 +14,12 @@
     "B"
   ],
   "clave": {
-    "A": "redstone",
-    "B": "stick"
+    "A": [
+      "redstone"
+    ],
+    "B": [
+      "stick"
+    ]
   },
   "estacion": "inventario"
 }

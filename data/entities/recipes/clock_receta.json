@@ -15,8 +15,12 @@
     " A"
   ],
   "clave": {
-    "A": "gold_ingot",
-    "B": "redstone"
+    "A": [
+      "gold_ingot"
+    ],
+    "B": [
+      "redstone"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

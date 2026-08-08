@@ -1,0 +1,33 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "bowl_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "bowl",
+    "cantidad": 4
+  },
+  "conForma": true,
+  "patron": [
+    "A A",
+    " A"
+  ],
+  "clave": {
+    "A": [
+      "acacia_planks",
+      "bamboo_planks",
+      "birch_planks",
+      "cherry_planks",
+      "crimson_planks",
+      "dark_oak_planks",
+      "jungle_planks",
+      "mangrove_planks",
+      "oak_planks",
+      "pale_oak_planks",
+      "spruce_planks",
+      "warped_planks"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

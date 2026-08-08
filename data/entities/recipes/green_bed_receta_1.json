@@ -14,8 +14,23 @@
     "BBB"
   ],
   "clave": {
-    "A": "green_wool",
-    "B": "pale_oak_planks"
+    "A": [
+      "green_wool"
+    ],
+    "B": [
+      "acacia_planks",
+      "bamboo_planks",
+      "birch_planks",
+      "cherry_planks",
+      "crimson_planks",
+      "dark_oak_planks",
+      "jungle_planks",
+      "mangrove_planks",
+      "oak_planks",
+      "pale_oak_planks",
+      "spruce_planks",
+      "warped_planks"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

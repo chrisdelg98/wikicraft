@@ -15,8 +15,12 @@
     "A"
   ],
   "clave": {
-    "A": "shulker_shell",
-    "B": "chest"
+    "A": [
+      "shulker_shell"
+    ],
+    "B": [
+      "chest"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

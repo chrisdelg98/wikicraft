@@ -396,52 +396,151 @@ for (const b of mc.biomesArray) {
 
 // --- Recetas ---------------------------------------------------------------
 
+/**
+ * Recetas.
+ *
+ * minecraft-data expande las etiquetas del juego: donde la receta real dice
+ * "cualquier tronco", el paquete entrega diecinueve recetas identicas que solo
+ * se diferencian en la madera. Presentarlas asi es inutil, asi que aqui se
+ * vuelven a plegar en una sola con alternativas por casilla.
+ *
+ * El plegado solo se aplica cuando TODAS las casillas que varian ofrecen
+ * exactamente el mismo juego de alternativas, que es la huella que deja una
+ * etiqueta. Si dos recetas comparten forma y resultado por casualidad pero no
+ * cumplen eso, se dejan separadas: es preferible mostrar de mas que inventarse
+ * una combinacion que el juego no acepta.
+ */
+
 const nombrePorId = new Map(mc.itemsArray.map((i) => [i.id, i.name]))
 const LETRAS = 'ABCDEFGHI'
 
-let recetasEscritas = 0
+const candidatas = []
 
 for (const [idResultado, recetas] of Object.entries(mc.recipes)) {
   const resultado = nombrePorId.get(Number(idResultado))
   if (!resultado || !importados.has(resultado)) continue
 
-  for (const [indice, receta] of recetas.entries()) {
+  for (const receta of recetas) {
     const cantidad = receta.result?.count ?? 0
     if (cantidad < 1) continue
 
-    const id = recetas.length > 1 ? `${resultado}_receta_${indice + 1}` : `${resultado}_receta`
+    if (receta.inShape) {
+      const filas = receta.inShape.map((f) =>
+        f.map((c) => (c == null ? null : (nombrePorId.get(c) ?? null)))
+      )
+      const alto = filas.length
+      const ancho = Math.max(...filas.map((f) => f.length))
+      const celdas = []
+      for (let y = 0; y < alto; y++) {
+        for (let x = 0; x < ancho; x++) celdas.push(filas[y]?.[x] ?? null)
+      }
+      const usados = celdas.filter(Boolean)
+      if (usados.length === 0 || usados.some((u) => !importados.has(u))) continue
+
+      candidatas.push({
+        resultado,
+        cantidad,
+        conForma: true,
+        alto,
+        ancho,
+        celdas,
+        firma: `${resultado}|${cantidad}|f|${alto}x${ancho}|${celdas.map((c) => (c ? 'X' : '.')).join('')}`
+      })
+    } else if (receta.ingredients) {
+      const usados = receta.ingredients.map((c) => nombrePorId.get(c)).filter(Boolean).sort()
+      if (usados.length === 0 || usados.some((u) => !importados.has(u))) continue
+
+      candidatas.push({
+        resultado,
+        cantidad,
+        conForma: false,
+        celdas: usados,
+        firma: `${resultado}|${cantidad}|s|${usados.length}`
+      })
+    }
+  }
+}
+
+const porFirma = new Map()
+for (const c of candidatas) porFirma.set(c.firma, [...(porFirma.get(c.firma) ?? []), c])
+
+const plegadas = []
+let recetasOriginales = candidatas.length
+
+for (const lista of porFirma.values()) {
+  const n = lista[0].celdas.length
+  const conjuntos = Array.from(
+    { length: n },
+    (_, i) => new Set(lista.map((c) => c.celdas[i]).filter(Boolean))
+  )
+  const variables = conjuntos.filter((s) => s.size > 1)
+
+  const huella = (s) => [...s].sort().join(',')
+  const plegable =
+    lista.length === 1 ||
+    variables.length === 0 ||
+    variables.every((s) => huella(s) === huella(variables[0]))
+
+  if (plegable) {
+    plegadas.push({ ...lista[0], opciones: conjuntos.map((s) => [...s].sort()) })
+  } else {
+    for (const c of lista) plegadas.push({ ...c, opciones: c.celdas.map((x) => (x ? [x] : [])) })
+  }
+}
+
+// Los identificadores se numeran solo cuando un mismo objeto conserva varias
+// recetas realmente distintas.
+const porResultado = new Map()
+for (const r of plegadas) porResultado.set(r.resultado, [...(porResultado.get(r.resultado) ?? []), r])
+
+let recetasEscritas = 0
+
+for (const [resultado, lista] of porResultado) {
+  for (const [indice, receta] of lista.entries()) {
+    const id = lista.length > 1 ? `${resultado}_receta_${indice + 1}` : `${resultado}_receta`
 
     let campos
-    if (receta.inShape) {
-      // Se recortan las filas y columnas vacias que trae el formato original.
-      const filas = receta.inShape.map((f) => f.map((c) => (c == null ? null : nombrePorId.get(c) ?? null)))
-      const usados = [...new Set(filas.flat().filter(Boolean))]
-      if (usados.some((u) => !importados.has(u))) continue
-      if (usados.length === 0 || usados.length > LETRAS.length) continue
+    if (receta.conForma) {
+      // Cada juego distinto de alternativas recibe su propia letra.
+      const claves = new Map()
+      for (const opciones of receta.opciones) {
+        if (opciones.length === 0) continue
+        const huella = opciones.join(',')
+        if (!claves.has(huella)) claves.set(huella, { letra: LETRAS[claves.size], opciones })
+      }
+      if (claves.size === 0 || claves.size > LETRAS.length) continue
 
-      const letraDe = new Map(usados.map((u, i) => [u, LETRAS[i]]))
-      const patron = filas.map((f) => f.map((c) => (c ? letraDe.get(c) : ' ')).join('').replace(/\s+$/, ''))
+      const patron = []
+      for (let y = 0; y < receta.alto; y++) {
+        let fila = ''
+        for (let x = 0; x < receta.ancho; x++) {
+          const opciones = receta.opciones[y * receta.ancho + x]
+          fila += opciones.length ? claves.get(opciones.join(',')).letra : ' '
+        }
+        patron.push(fila.replace(/\s+$/, ''))
+      }
 
       campos = {
         conForma: true,
-        patron: patron.length > 0 ? patron : [' '],
-        clave: Object.fromEntries(usados.map((u) => [letraDe.get(u), u])),
-        estacion: filas.length > 2 || filas.some((f) => f.length > 2) ? 'mesa_de_trabajo' : 'inventario'
-      }
-    } else if (receta.ingredients) {
-      const usados = receta.ingredients.map((c) => nombrePorId.get(c)).filter(Boolean)
-      if (usados.length === 0 || usados.some((u) => !importados.has(u))) continue
-
-      const cuenta = new Map()
-      for (const u of usados) cuenta.set(u, (cuenta.get(u) ?? 0) + 1)
-
-      campos = {
-        conForma: false,
-        ingredientes: [...cuenta].map(([item, c]) => ({ item, cantidad: c })),
-        estacion: usados.length > 4 ? 'mesa_de_trabajo' : 'inventario'
+        patron: patron.some((f) => f.length > 0) ? patron : [' '],
+        clave: Object.fromEntries([...claves.values()].map((c) => [c.letra, c.opciones])),
+        estacion: receta.alto > 2 || receta.ancho > 2 ? 'mesa_de_trabajo' : 'inventario'
       }
     } else {
-      continue
+      const cuenta = new Map()
+      for (const opciones of receta.opciones) {
+        if (opciones.length === 0) continue
+        const huella = opciones.join(',')
+        cuenta.set(huella, (cuenta.get(huella) ?? 0) + 1)
+      }
+      campos = {
+        conForma: false,
+        ingredientes: [...cuenta].map(([huella, cantidad]) => ({
+          opciones: huella.split(','),
+          cantidad
+        })),
+        estacion: receta.celdas.length > 4 ? 'mesa_de_trabajo' : 'inventario'
+      }
     }
 
     const entidad = {
@@ -453,20 +552,19 @@ for (const [idResultado, recetas] of Object.entries(mc.recipes)) {
       // la ficha del objeto que producen, y buscar "barca" no deberia devolver
       // la barca y su receta como dos resultados distintos.
       relevancia: 'baja',
-      resultado: { item: resultado, cantidad },
+      resultado: { item: resultado, cantidad: receta.cantidad },
       ...campos
     }
 
     await guardarEntidad('recipes', entidad, [
       'estacion', 'resultado', 'conForma', 'patron', 'clave', 'ingredientes', 'relevancia'
     ])
-    // El nombre sale del objeto que produce, no del identificador: "Acacia
-    // Fence Receta" mezclaba los dos idiomas y quedaba fatal.
+
     const nombreResultado = mc.itemsByName[resultado]?.displayName ?? resultado
     anotar(
       'recipes',
       id,
-      recetas.length > 1 ? `${nombreResultado} Recipe ${indice + 1}` : `${nombreResultado} Recipe`
+      lista.length > 1 ? `${nombreResultado} Recipe ${indice + 1}` : `${nombreResultado} Recipe`
     )
     recetasEscritas++
   }
@@ -512,7 +610,7 @@ console.log(`\n${linea}\n  Importacion desde minecraft-data ${VERSION}\n${linea}
 console.log(`  Entidades creadas       ${conteo.creadas}`)
 console.log(`  Entidades actualizadas  ${conteo.actualizadas}`)
 console.log(`  Sin cambios             ${conteo.saltadas}`)
-console.log(`  Recetas procesadas      ${recetasEscritas}`)
+console.log(`  Recetas procesadas      ${recetasEscritas} (de ${recetasOriginales} sin plegar)`)
 console.log(`  Textos en ingles nuevos ${textosCreados}`)
 console.log(`\n  El espanol se traduce a mano. Mientras tanto las fichas caen`)
 console.log(`  al ingles y lo avisan. Ejecuta "npm run validar" para ver la`)

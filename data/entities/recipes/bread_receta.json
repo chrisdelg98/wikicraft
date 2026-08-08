@@ -13,7 +13,9 @@
     "AAA"
   ],
   "clave": {
-    "A": "wheat"
+    "A": [
+      "wheat"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

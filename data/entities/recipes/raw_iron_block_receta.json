@@ -15,7 +15,9 @@
     "AAA"
   ],
   "clave": {
-    "A": "raw_iron"
+    "A": [
+      "raw_iron"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

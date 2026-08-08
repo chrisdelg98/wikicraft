@@ -15,7 +15,9 @@
     "AAA"
   ],
   "clave": {
-    "A": "bamboo_mosaic"
+    "A": [
+      "bamboo_mosaic"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

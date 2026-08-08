@@ -11,7 +11,9 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "dried_kelp_block",
+      "opciones": [
+        "dried_kelp_block"
+      ],
       "cantidad": 1
     }
   ],

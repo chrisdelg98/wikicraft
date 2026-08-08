@@ -278,6 +278,42 @@ export const familiaDe = (id, limite = 8) => {
   return []
 }
 
+/**
+ * Nombre corto para un conjunto de alternativas de una receta.
+ *
+ * Si las diecinueve opciones de una casilla terminan todas en "_log", esa
+ * casilla admite "cualquier tronco". Devuelve el sufijo comun para que la
+ * interfaz busque su etiqueta; null si no comparten ninguno.
+ */
+
+/**
+ * Conjuntos de finales que en realidad son una sola cosa. Un tronco, una madera
+ * y un tallo del Nether no comparten sufijo, pero para una receta son lo mismo.
+ */
+const FAMILIAS_SUFIJO = {
+  madera: ['log', 'wood', 'stem', 'hyphae'],
+  piedra: ['stone', 'cobblestone', 'andesite', 'diorite', 'granite', 'deepslate', 'tuff'],
+  flor: ['flower', 'tulip', 'orchid', 'allium', 'poppy', 'dandelion', 'bluet', 'daisy', 'cornflower'],
+  carbon: ['coal', 'charcoal']
+}
+
+export const grupoDe = (ids) => {
+  if (!ids || ids.length <= 1) return null
+
+  const partes = ids[0].split('_')
+  for (let n = Math.min(3, partes.length); n >= 1; n--) {
+    const sufijo = partes.slice(-n).join('_')
+    if (ids.every((id) => id === sufijo || id.endsWith(`_${sufijo}`))) return sufijo
+  }
+
+  for (const [familia, sufijos] of Object.entries(FAMILIAS_SUFIJO)) {
+    const cubre = (id) => sufijos.some((s) => id === s || id.endsWith(`_${s}`))
+    if (ids.every(cubre)) return familia
+  }
+
+  return null
+}
+
 // ---------------------------------------------------------------------------
 // Buscador
 // ---------------------------------------------------------------------------

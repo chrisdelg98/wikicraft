@@ -1,0 +1,25 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "quartz_stairs_receta",
+  "tipo": "receta",
+  "etapa": "nether",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "quartz_stairs",
+    "cantidad": 4
+  },
+  "conForma": true,
+  "patron": [
+    "A",
+    "AA",
+    "AAA"
+  ],
+  "clave": {
+    "A": [
+      "chiseled_quartz_block",
+      "quartz_block",
+      "quartz_pillar"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

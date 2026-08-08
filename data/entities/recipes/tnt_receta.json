@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "tnt_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "tnt",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "ABA",
+    "BAB",
+    "ABA"
+  ],
+  "clave": {
+    "A": [
+      "gunpowder"
+    ],
+    "B": [
+      "red_sand",
+      "sand"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

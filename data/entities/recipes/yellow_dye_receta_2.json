@@ -11,7 +11,9 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "sunflower",
+      "opciones": [
+        "sunflower"
+      ],
       "cantidad": 1
     }
   ],

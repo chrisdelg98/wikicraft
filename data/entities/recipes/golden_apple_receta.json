@@ -15,8 +15,12 @@
     "AAA"
   ],
   "clave": {
-    "A": "gold_ingot",
-    "B": "apple"
+    "A": [
+      "gold_ingot"
+    ],
+    "B": [
+      "apple"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

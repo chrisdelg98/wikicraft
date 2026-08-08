@@ -15,9 +15,15 @@
     "ABA"
   ],
   "clave": {
-    "A": "iron_ingot",
-    "B": "stick",
-    "C": "redstone_torch"
+    "A": [
+      "iron_ingot"
+    ],
+    "B": [
+      "stick"
+    ],
+    "C": [
+      "redstone_torch"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

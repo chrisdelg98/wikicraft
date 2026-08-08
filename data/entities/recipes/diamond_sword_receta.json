@@ -15,8 +15,12 @@
     "B"
   ],
   "clave": {
-    "A": "diamond",
-    "B": "stick"
+    "A": [
+      "diamond"
+    ],
+    "B": [
+      "stick"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

@@ -14,8 +14,12 @@
     "ABA"
   ],
   "clave": {
-    "A": "amethyst_shard",
-    "B": "sculk_sensor"
+    "A": [
+      "amethyst_shard"
+    ],
+    "B": [
+      "sculk_sensor"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

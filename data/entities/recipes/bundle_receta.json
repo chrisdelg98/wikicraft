@@ -14,8 +14,12 @@
     "B"
   ],
   "clave": {
-    "A": "string",
-    "B": "leather"
+    "A": [
+      "string"
+    ],
+    "B": [
+      "leather"
+    ]
   },
   "estacion": "inventario"
 }

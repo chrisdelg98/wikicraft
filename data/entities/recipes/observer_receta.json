@@ -15,9 +15,15 @@
     "AAA"
   ],
   "clave": {
-    "A": "cobblestone",
-    "B": "redstone",
-    "C": "quartz"
+    "A": [
+      "cobblestone"
+    ],
+    "B": [
+      "redstone"
+    ],
+    "C": [
+      "quartz"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

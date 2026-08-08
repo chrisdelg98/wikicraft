@@ -15,10 +15,18 @@
     "DDD"
   ],
   "clave": {
-    "A": "milk_bucket",
-    "B": "sugar",
-    "C": "egg",
-    "D": "wheat"
+    "A": [
+      "milk_bucket"
+    ],
+    "B": [
+      "sugar"
+    ],
+    "C": [
+      "egg"
+    ],
+    "D": [
+      "wheat"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

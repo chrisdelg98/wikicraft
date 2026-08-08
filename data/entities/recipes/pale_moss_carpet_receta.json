@@ -13,7 +13,9 @@
     "AA"
   ],
   "clave": {
-    "A": "pale_moss_block"
+    "A": [
+      "pale_moss_block"
+    ]
   },
   "estacion": "inventario"
 }

@@ -14,7 +14,9 @@
     "AAA"
   ],
   "clave": {
-    "A": "mud_bricks"
+    "A": [
+      "mud_bricks"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

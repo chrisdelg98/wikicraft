@@ -11,7 +11,9 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "sugar_cane",
+      "opciones": [
+        "sugar_cane"
+      ],
       "cantidad": 1
     }
   ],

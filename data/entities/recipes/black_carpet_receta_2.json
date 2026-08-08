@@ -11,11 +11,15 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "black_dye",
+      "opciones": [
+        "black_dye"
+      ],
       "cantidad": 1
     },
     {
-      "item": "blue_carpet",
+      "opciones": [
+        "blue_carpet"
+      ],
       "cantidad": 1
     }
   ],

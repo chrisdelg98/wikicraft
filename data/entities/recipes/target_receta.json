@@ -15,8 +15,12 @@
     " A"
   ],
   "clave": {
-    "A": "redstone",
-    "B": "hay_block"
+    "A": [
+      "redstone"
+    ],
+    "B": [
+      "hay_block"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

@@ -15,8 +15,12 @@
     "ABA"
   ],
   "clave": {
-    "A": "prismarine_shard",
-    "B": "prismarine_crystals"
+    "A": [
+      "prismarine_shard"
+    ],
+    "B": [
+      "prismarine_crystals"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

@@ -15,7 +15,9 @@
     "AAA"
   ],
   "clave": {
-    "A": "polished_granite"
+    "A": [
+      "polished_granite"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

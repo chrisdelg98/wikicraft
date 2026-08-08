@@ -15,7 +15,9 @@
     "AAA"
   ],
   "clave": {
-    "A": "end_stone_bricks"
+    "A": [
+      "end_stone_bricks"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

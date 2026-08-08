@@ -11,11 +11,15 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "candle",
+      "opciones": [
+        "brown_dye"
+      ],
       "cantidad": 1
     },
     {
-      "item": "brown_dye",
+      "opciones": [
+        "candle"
+      ],
       "cantidad": 1
     }
   ],

@@ -11,7 +11,9 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "iron_ingot",
+      "opciones": [
+        "iron_ingot"
+      ],
       "cantidad": 1
     }
   ],

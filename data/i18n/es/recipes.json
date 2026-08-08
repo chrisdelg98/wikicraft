@@ -211,53 +211,9 @@
     "nombre": "Receta de Faro",
     "slug": "receta-faro"
   },
-  "beehive_receta_1": {
-    "nombre": "Receta de Colmena (1)",
-    "slug": "receta-colmena-1"
-  },
-  "beehive_receta_10": {
-    "nombre": "Receta de Colmena (10)",
-    "slug": "receta-colmena-10"
-  },
-  "beehive_receta_11": {
-    "nombre": "Receta de Colmena (11)",
-    "slug": "receta-colmena-11"
-  },
-  "beehive_receta_12": {
-    "nombre": "Receta de Colmena (12)",
-    "slug": "receta-colmena-12"
-  },
-  "beehive_receta_2": {
-    "nombre": "Receta de Colmena (2)",
-    "slug": "receta-colmena-2"
-  },
-  "beehive_receta_3": {
-    "nombre": "Receta de Colmena (3)",
-    "slug": "receta-colmena-3"
-  },
-  "beehive_receta_4": {
-    "nombre": "Receta de Colmena (4)",
-    "slug": "receta-colmena-4"
-  },
-  "beehive_receta_5": {
-    "nombre": "Receta de Colmena (5)",
-    "slug": "receta-colmena-5"
-  },
-  "beehive_receta_6": {
-    "nombre": "Receta de Colmena (6)",
-    "slug": "receta-colmena-6"
-  },
-  "beehive_receta_7": {
-    "nombre": "Receta de Colmena (7)",
-    "slug": "receta-colmena-7"
-  },
-  "beehive_receta_8": {
-    "nombre": "Receta de Colmena (8)",
-    "slug": "receta-colmena-8"
-  },
-  "beehive_receta_9": {
-    "nombre": "Receta de Colmena (9)",
-    "slug": "receta-colmena-9"
+  "beehive_receta": {
+    "nombre": "Receta de Colmena",
+    "slug": "receta-colmena"
   },
   "beetroot_soup_receta": {
     "nombre": "Receta de Sopa de remolacha",
@@ -327,53 +283,9 @@
     "nombre": "Receta de Cama negra (1)",
     "slug": "receta-cama-negra-1"
   },
-  "black_bed_receta_10": {
-    "nombre": "Receta de Cama negra (10)",
-    "slug": "receta-cama-negra-10"
-  },
-  "black_bed_receta_11": {
-    "nombre": "Receta de Cama negra (11)",
-    "slug": "receta-cama-negra-11"
-  },
-  "black_bed_receta_12": {
-    "nombre": "Receta de Cama negra (12)",
-    "slug": "receta-cama-negra-12"
-  },
-  "black_bed_receta_13": {
-    "nombre": "Receta de Cama negra (13)",
-    "slug": "receta-cama-negra-13"
-  },
   "black_bed_receta_2": {
     "nombre": "Receta de Cama negra (2)",
     "slug": "receta-cama-negra-2"
-  },
-  "black_bed_receta_3": {
-    "nombre": "Receta de Cama negra (3)",
-    "slug": "receta-cama-negra-3"
-  },
-  "black_bed_receta_4": {
-    "nombre": "Receta de Cama negra (4)",
-    "slug": "receta-cama-negra-4"
-  },
-  "black_bed_receta_5": {
-    "nombre": "Receta de Cama negra (5)",
-    "slug": "receta-cama-negra-5"
-  },
-  "black_bed_receta_6": {
-    "nombre": "Receta de Cama negra (6)",
-    "slug": "receta-cama-negra-6"
-  },
-  "black_bed_receta_7": {
-    "nombre": "Receta de Cama negra (7)",
-    "slug": "receta-cama-negra-7"
-  },
-  "black_bed_receta_8": {
-    "nombre": "Receta de Cama negra (8)",
-    "slug": "receta-cama-negra-8"
-  },
-  "black_bed_receta_9": {
-    "nombre": "Receta de Cama negra (9)",
-    "slug": "receta-cama-negra-9"
   },
   "black_candle_receta": {
     "nombre": "Receta de Vela negra",
@@ -391,13 +303,9 @@
     "nombre": "Receta de Hormigón en polvo negro",
     "slug": "receta-hormigon-en-polvo-negro"
   },
-  "black_dye_receta_1": {
-    "nombre": "Receta de Tinte negro (1)",
-    "slug": "receta-tinte-negro-1"
-  },
-  "black_dye_receta_2": {
-    "nombre": "Receta de Tinte negro (2)",
-    "slug": "receta-tinte-negro-2"
+  "black_dye_receta": {
+    "nombre": "Receta de Tinte negro",
+    "slug": "receta-tinte-negro"
   },
   "black_stained_glass_pane_receta_1": {
     "nombre": "Receta de Panel de vidriera negro (1)",
@@ -436,9 +344,8 @@
     "slug": "receta-alto-horno"
   },
   "blaze_powder_receta": {
-    "nombre": "Polvo de blaze",
-    "slug": "receta-polvo-de-blaze",
-    "descripcion": "Pon una vara de blaze en cualquier hueco y obtendrás dos polvos. No hace falta mesa de trabajo: puedes hacerlo desde tu propio inventario."
+    "nombre": "Receta de Polvo de blaze",
+    "slug": "receta-polvo-de-blaze"
   },
   "blue_banner_receta": {
     "nombre": "Receta de Estandarte azul",
@@ -448,53 +355,9 @@
     "nombre": "Receta de Cama azul (1)",
     "slug": "receta-cama-azul-1"
   },
-  "blue_bed_receta_10": {
-    "nombre": "Receta de Cama azul (10)",
-    "slug": "receta-cama-azul-10"
-  },
-  "blue_bed_receta_11": {
-    "nombre": "Receta de Cama azul (11)",
-    "slug": "receta-cama-azul-11"
-  },
-  "blue_bed_receta_12": {
-    "nombre": "Receta de Cama azul (12)",
-    "slug": "receta-cama-azul-12"
-  },
-  "blue_bed_receta_13": {
-    "nombre": "Receta de Cama azul (13)",
-    "slug": "receta-cama-azul-13"
-  },
   "blue_bed_receta_2": {
     "nombre": "Receta de Cama azul (2)",
     "slug": "receta-cama-azul-2"
-  },
-  "blue_bed_receta_3": {
-    "nombre": "Receta de Cama azul (3)",
-    "slug": "receta-cama-azul-3"
-  },
-  "blue_bed_receta_4": {
-    "nombre": "Receta de Cama azul (4)",
-    "slug": "receta-cama-azul-4"
-  },
-  "blue_bed_receta_5": {
-    "nombre": "Receta de Cama azul (5)",
-    "slug": "receta-cama-azul-5"
-  },
-  "blue_bed_receta_6": {
-    "nombre": "Receta de Cama azul (6)",
-    "slug": "receta-cama-azul-6"
-  },
-  "blue_bed_receta_7": {
-    "nombre": "Receta de Cama azul (7)",
-    "slug": "receta-cama-azul-7"
-  },
-  "blue_bed_receta_8": {
-    "nombre": "Receta de Cama azul (8)",
-    "slug": "receta-cama-azul-8"
-  },
-  "blue_bed_receta_9": {
-    "nombre": "Receta de Cama azul (9)",
-    "slug": "receta-cama-azul-9"
   },
   "blue_candle_receta": {
     "nombre": "Receta de Vela azul",
@@ -512,13 +375,9 @@
     "nombre": "Receta de Hormigón en polvo azul",
     "slug": "receta-hormigon-en-polvo-azul"
   },
-  "blue_dye_receta_1": {
-    "nombre": "Receta de Tinte azul (1)",
-    "slug": "receta-tinte-azul-1"
-  },
-  "blue_dye_receta_2": {
-    "nombre": "Receta de Tinte azul (2)",
-    "slug": "receta-tinte-azul-2"
+  "blue_dye_receta": {
+    "nombre": "Receta de Tinte azul",
+    "slug": "receta-tinte-azul"
   },
   "blue_ice_receta": {
     "nombre": "Receta de Hielo azul",
@@ -544,13 +403,9 @@
     "nombre": "Receta de Lana azul",
     "slug": "receta-lana-azul"
   },
-  "bolt_armor_trim_smithing_template_receta_1": {
-    "nombre": "Receta de Plantilla de adorno del rayo (1)",
-    "slug": "receta-plantilla-de-adorno-del-rayo-1"
-  },
-  "bolt_armor_trim_smithing_template_receta_2": {
-    "nombre": "Receta de Plantilla de adorno del rayo (2)",
-    "slug": "receta-plantilla-de-adorno-del-rayo-2"
+  "bolt_armor_trim_smithing_template_receta": {
+    "nombre": "Receta de Plantilla de adorno del rayo",
+    "slug": "receta-plantilla-de-adorno-del-rayo"
   },
   "bone_block_receta": {
     "nombre": "Receta de Bloque de hueso",
@@ -568,53 +423,9 @@
     "nombre": "Receta de Libro",
     "slug": "receta-libro"
   },
-  "bookshelf_receta_1": {
-    "nombre": "Receta de Estantería (1)",
-    "slug": "receta-estanteria-1"
-  },
-  "bookshelf_receta_10": {
-    "nombre": "Receta de Estantería (10)",
-    "slug": "receta-estanteria-10"
-  },
-  "bookshelf_receta_11": {
-    "nombre": "Receta de Estantería (11)",
-    "slug": "receta-estanteria-11"
-  },
-  "bookshelf_receta_12": {
-    "nombre": "Receta de Estantería (12)",
-    "slug": "receta-estanteria-12"
-  },
-  "bookshelf_receta_2": {
-    "nombre": "Receta de Estantería (2)",
-    "slug": "receta-estanteria-2"
-  },
-  "bookshelf_receta_3": {
-    "nombre": "Receta de Estantería (3)",
-    "slug": "receta-estanteria-3"
-  },
-  "bookshelf_receta_4": {
-    "nombre": "Receta de Estantería (4)",
-    "slug": "receta-estanteria-4"
-  },
-  "bookshelf_receta_5": {
-    "nombre": "Receta de Estantería (5)",
-    "slug": "receta-estanteria-5"
-  },
-  "bookshelf_receta_6": {
-    "nombre": "Receta de Estantería (6)",
-    "slug": "receta-estanteria-6"
-  },
-  "bookshelf_receta_7": {
-    "nombre": "Receta de Estantería (7)",
-    "slug": "receta-estanteria-7"
-  },
-  "bookshelf_receta_8": {
-    "nombre": "Receta de Estantería (8)",
-    "slug": "receta-estanteria-8"
-  },
-  "bookshelf_receta_9": {
-    "nombre": "Receta de Estantería (9)",
-    "slug": "receta-estanteria-9"
+  "bookshelf_receta": {
+    "nombre": "Receta de Estantería",
+    "slug": "receta-estanteria"
   },
   "bordure_indented_banner_pattern_receta": {
     "nombre": "Receta de Patrón de estandarte de borde dentado",
@@ -624,69 +435,17 @@
     "nombre": "Receta de Arco",
     "slug": "receta-arco"
   },
-  "bowl_receta_1": {
-    "nombre": "Receta de Cuenco (1)",
-    "slug": "receta-cuenco-1"
-  },
-  "bowl_receta_10": {
-    "nombre": "Receta de Cuenco (10)",
-    "slug": "receta-cuenco-10"
-  },
-  "bowl_receta_11": {
-    "nombre": "Receta de Cuenco (11)",
-    "slug": "receta-cuenco-11"
-  },
-  "bowl_receta_12": {
-    "nombre": "Receta de Cuenco (12)",
-    "slug": "receta-cuenco-12"
-  },
-  "bowl_receta_2": {
-    "nombre": "Receta de Cuenco (2)",
-    "slug": "receta-cuenco-2"
-  },
-  "bowl_receta_3": {
-    "nombre": "Receta de Cuenco (3)",
-    "slug": "receta-cuenco-3"
-  },
-  "bowl_receta_4": {
-    "nombre": "Receta de Cuenco (4)",
-    "slug": "receta-cuenco-4"
-  },
-  "bowl_receta_5": {
-    "nombre": "Receta de Cuenco (5)",
-    "slug": "receta-cuenco-5"
-  },
-  "bowl_receta_6": {
-    "nombre": "Receta de Cuenco (6)",
-    "slug": "receta-cuenco-6"
-  },
-  "bowl_receta_7": {
-    "nombre": "Receta de Cuenco (7)",
-    "slug": "receta-cuenco-7"
-  },
-  "bowl_receta_8": {
-    "nombre": "Receta de Cuenco (8)",
-    "slug": "receta-cuenco-8"
-  },
-  "bowl_receta_9": {
-    "nombre": "Receta de Cuenco (9)",
-    "slug": "receta-cuenco-9"
+  "bowl_receta": {
+    "nombre": "Receta de Cuenco",
+    "slug": "receta-cuenco"
   },
   "bread_receta": {
     "nombre": "Receta de Pan",
     "slug": "receta-pan"
   },
-  "brewing_stand_receta_1": {
-    "nombre": "Receta de Soporte para pociones (1)",
-    "slug": "receta-soporte-para-pociones-1"
-  },
-  "brewing_stand_receta_2": {
-    "nombre": "Receta de Soporte para pociones (2)",
-    "slug": "receta-soporte-para-pociones-2"
-  },
-  "brewing_stand_receta_3": {
-    "nombre": "Receta de Soporte para pociones (3)",
-    "slug": "receta-soporte-para-pociones-3"
+  "brewing_stand_receta": {
+    "nombre": "Receta de Soporte para pociones",
+    "slug": "receta-soporte-para-pociones"
   },
   "brick_slab_receta": {
     "nombre": "Receta de Losa de ladrillo",
@@ -712,53 +471,9 @@
     "nombre": "Receta de Cama marrón (1)",
     "slug": "receta-cama-marron-1"
   },
-  "brown_bed_receta_10": {
-    "nombre": "Receta de Cama marrón (10)",
-    "slug": "receta-cama-marron-10"
-  },
-  "brown_bed_receta_11": {
-    "nombre": "Receta de Cama marrón (11)",
-    "slug": "receta-cama-marron-11"
-  },
-  "brown_bed_receta_12": {
-    "nombre": "Receta de Cama marrón (12)",
-    "slug": "receta-cama-marron-12"
-  },
-  "brown_bed_receta_13": {
-    "nombre": "Receta de Cama marrón (13)",
-    "slug": "receta-cama-marron-13"
-  },
   "brown_bed_receta_2": {
     "nombre": "Receta de Cama marrón (2)",
     "slug": "receta-cama-marron-2"
-  },
-  "brown_bed_receta_3": {
-    "nombre": "Receta de Cama marrón (3)",
-    "slug": "receta-cama-marron-3"
-  },
-  "brown_bed_receta_4": {
-    "nombre": "Receta de Cama marrón (4)",
-    "slug": "receta-cama-marron-4"
-  },
-  "brown_bed_receta_5": {
-    "nombre": "Receta de Cama marrón (5)",
-    "slug": "receta-cama-marron-5"
-  },
-  "brown_bed_receta_6": {
-    "nombre": "Receta de Cama marrón (6)",
-    "slug": "receta-cama-marron-6"
-  },
-  "brown_bed_receta_7": {
-    "nombre": "Receta de Cama marrón (7)",
-    "slug": "receta-cama-marron-7"
-  },
-  "brown_bed_receta_8": {
-    "nombre": "Receta de Cama marrón (8)",
-    "slug": "receta-cama-marron-8"
-  },
-  "brown_bed_receta_9": {
-    "nombre": "Receta de Cama marrón (9)",
-    "slug": "receta-cama-marron-9"
   },
   "brown_candle_receta": {
     "nombre": "Receta de Vela marrón",
@@ -1004,53 +719,9 @@
     "nombre": "Receta de Zanahoria en una caña",
     "slug": "receta-zanahoria-en-una-cana"
   },
-  "cartography_table_receta_1": {
-    "nombre": "Receta de Mesa de cartografía (1)",
-    "slug": "receta-mesa-de-cartografia-1"
-  },
-  "cartography_table_receta_10": {
-    "nombre": "Receta de Mesa de cartografía (10)",
-    "slug": "receta-mesa-de-cartografia-10"
-  },
-  "cartography_table_receta_11": {
-    "nombre": "Receta de Mesa de cartografía (11)",
-    "slug": "receta-mesa-de-cartografia-11"
-  },
-  "cartography_table_receta_12": {
-    "nombre": "Receta de Mesa de cartografía (12)",
-    "slug": "receta-mesa-de-cartografia-12"
-  },
-  "cartography_table_receta_2": {
-    "nombre": "Receta de Mesa de cartografía (2)",
-    "slug": "receta-mesa-de-cartografia-2"
-  },
-  "cartography_table_receta_3": {
-    "nombre": "Receta de Mesa de cartografía (3)",
-    "slug": "receta-mesa-de-cartografia-3"
-  },
-  "cartography_table_receta_4": {
-    "nombre": "Receta de Mesa de cartografía (4)",
-    "slug": "receta-mesa-de-cartografia-4"
-  },
-  "cartography_table_receta_5": {
-    "nombre": "Receta de Mesa de cartografía (5)",
-    "slug": "receta-mesa-de-cartografia-5"
-  },
-  "cartography_table_receta_6": {
-    "nombre": "Receta de Mesa de cartografía (6)",
-    "slug": "receta-mesa-de-cartografia-6"
-  },
-  "cartography_table_receta_7": {
-    "nombre": "Receta de Mesa de cartografía (7)",
-    "slug": "receta-mesa-de-cartografia-7"
-  },
-  "cartography_table_receta_8": {
-    "nombre": "Receta de Mesa de cartografía (8)",
-    "slug": "receta-mesa-de-cartografia-8"
-  },
-  "cartography_table_receta_9": {
-    "nombre": "Receta de Mesa de cartografía (9)",
-    "slug": "receta-mesa-de-cartografia-9"
+  "cartography_table_receta": {
+    "nombre": "Receta de Mesa de cartografía",
+    "slug": "receta-mesa-de-cartografia"
   },
   "cauldron_receta": {
     "nombre": "Receta de Caldero",
@@ -1120,53 +791,9 @@
     "nombre": "Receta de Vagoneta con cofre",
     "slug": "receta-vagoneta-con-cofre"
   },
-  "chest_receta_1": {
-    "nombre": "Receta de Cofre (1)",
-    "slug": "receta-cofre-1"
-  },
-  "chest_receta_10": {
-    "nombre": "Receta de Cofre (10)",
-    "slug": "receta-cofre-10"
-  },
-  "chest_receta_11": {
-    "nombre": "Receta de Cofre (11)",
-    "slug": "receta-cofre-11"
-  },
-  "chest_receta_12": {
-    "nombre": "Receta de Cofre (12)",
-    "slug": "receta-cofre-12"
-  },
-  "chest_receta_2": {
-    "nombre": "Receta de Cofre (2)",
-    "slug": "receta-cofre-2"
-  },
-  "chest_receta_3": {
-    "nombre": "Receta de Cofre (3)",
-    "slug": "receta-cofre-3"
-  },
-  "chest_receta_4": {
-    "nombre": "Receta de Cofre (4)",
-    "slug": "receta-cofre-4"
-  },
-  "chest_receta_5": {
-    "nombre": "Receta de Cofre (5)",
-    "slug": "receta-cofre-5"
-  },
-  "chest_receta_6": {
-    "nombre": "Receta de Cofre (6)",
-    "slug": "receta-cofre-6"
-  },
-  "chest_receta_7": {
-    "nombre": "Receta de Cofre (7)",
-    "slug": "receta-cofre-7"
-  },
-  "chest_receta_8": {
-    "nombre": "Receta de Cofre (8)",
-    "slug": "receta-cofre-8"
-  },
-  "chest_receta_9": {
-    "nombre": "Receta de Cofre (9)",
-    "slug": "receta-cofre-9"
+  "chest_receta": {
+    "nombre": "Receta de Cofre",
+    "slug": "receta-cofre"
   },
   "chiseled_bookshelf_receta_1": {
     "nombre": "Receta de Estantería cincelada (1)",
@@ -1312,53 +939,9 @@
     "nombre": "Receta de Brújula",
     "slug": "receta-brujula"
   },
-  "composter_receta_1": {
-    "nombre": "Receta de Compostador (1)",
-    "slug": "receta-compostador-1"
-  },
-  "composter_receta_10": {
-    "nombre": "Receta de Compostador (10)",
-    "slug": "receta-compostador-10"
-  },
-  "composter_receta_11": {
-    "nombre": "Receta de Compostador (11)",
-    "slug": "receta-compostador-11"
-  },
-  "composter_receta_12": {
-    "nombre": "Receta de Compostador (12)",
-    "slug": "receta-compostador-12"
-  },
-  "composter_receta_2": {
-    "nombre": "Receta de Compostador (2)",
-    "slug": "receta-compostador-2"
-  },
-  "composter_receta_3": {
-    "nombre": "Receta de Compostador (3)",
-    "slug": "receta-compostador-3"
-  },
-  "composter_receta_4": {
-    "nombre": "Receta de Compostador (4)",
-    "slug": "receta-compostador-4"
-  },
-  "composter_receta_5": {
-    "nombre": "Receta de Compostador (5)",
-    "slug": "receta-compostador-5"
-  },
-  "composter_receta_6": {
-    "nombre": "Receta de Compostador (6)",
-    "slug": "receta-compostador-6"
-  },
-  "composter_receta_7": {
-    "nombre": "Receta de Compostador (7)",
-    "slug": "receta-compostador-7"
-  },
-  "composter_receta_8": {
-    "nombre": "Receta de Compostador (8)",
-    "slug": "receta-compostador-8"
-  },
-  "composter_receta_9": {
-    "nombre": "Receta de Compostador (9)",
-    "slug": "receta-compostador-9"
+  "composter_receta": {
+    "nombre": "Receta de Compostador",
+    "slug": "receta-compostador"
   },
   "conduit_receta": {
     "nombre": "Receta de Conducto",
@@ -1384,13 +967,9 @@
     "nombre": "Receta de Rejilla de cobre",
     "slug": "receta-rejilla-de-cobre"
   },
-  "copper_ingot_receta_1": {
-    "nombre": "Receta de Lingote de cobre (1)",
-    "slug": "receta-lingote-de-cobre-1"
-  },
-  "copper_ingot_receta_2": {
-    "nombre": "Receta de Lingote de cobre (2)",
-    "slug": "receta-lingote-de-cobre-2"
+  "copper_ingot_receta": {
+    "nombre": "Receta de Lingote de cobre",
+    "slug": "receta-lingote-de-cobre"
   },
   "copper_trapdoor_receta": {
     "nombre": "Receta de Trampilla de cobre",
@@ -1400,53 +979,9 @@
     "nombre": "Receta de Fabricador",
     "slug": "receta-fabricador"
   },
-  "crafting_table_receta_1": {
-    "nombre": "Receta de Mesa de trabajo (1)",
-    "slug": "receta-mesa-de-trabajo-1"
-  },
-  "crafting_table_receta_10": {
-    "nombre": "Receta de Mesa de trabajo (10)",
-    "slug": "receta-mesa-de-trabajo-10"
-  },
-  "crafting_table_receta_11": {
-    "nombre": "Receta de Mesa de trabajo (11)",
-    "slug": "receta-mesa-de-trabajo-11"
-  },
-  "crafting_table_receta_12": {
-    "nombre": "Receta de Mesa de trabajo (12)",
-    "slug": "receta-mesa-de-trabajo-12"
-  },
-  "crafting_table_receta_2": {
-    "nombre": "Receta de Mesa de trabajo (2)",
-    "slug": "receta-mesa-de-trabajo-2"
-  },
-  "crafting_table_receta_3": {
-    "nombre": "Receta de Mesa de trabajo (3)",
-    "slug": "receta-mesa-de-trabajo-3"
-  },
-  "crafting_table_receta_4": {
-    "nombre": "Receta de Mesa de trabajo (4)",
-    "slug": "receta-mesa-de-trabajo-4"
-  },
-  "crafting_table_receta_5": {
-    "nombre": "Receta de Mesa de trabajo (5)",
-    "slug": "receta-mesa-de-trabajo-5"
-  },
-  "crafting_table_receta_6": {
-    "nombre": "Receta de Mesa de trabajo (6)",
-    "slug": "receta-mesa-de-trabajo-6"
-  },
-  "crafting_table_receta_7": {
-    "nombre": "Receta de Mesa de trabajo (7)",
-    "slug": "receta-mesa-de-trabajo-7"
-  },
-  "crafting_table_receta_8": {
-    "nombre": "Receta de Mesa de trabajo (8)",
-    "slug": "receta-mesa-de-trabajo-8"
-  },
-  "crafting_table_receta_9": {
-    "nombre": "Receta de Mesa de trabajo (9)",
-    "slug": "receta-mesa-de-trabajo-9"
+  "crafting_table_receta": {
+    "nombre": "Receta de Mesa de trabajo",
+    "slug": "receta-mesa-de-trabajo"
   },
   "creeper_banner_pattern_receta": {
     "nombre": "Receta de Patrón de estandarte de creeper",
@@ -1540,53 +1075,9 @@
     "nombre": "Receta de Cama cian (1)",
     "slug": "receta-cama-cian-1"
   },
-  "cyan_bed_receta_10": {
-    "nombre": "Receta de Cama cian (10)",
-    "slug": "receta-cama-cian-10"
-  },
-  "cyan_bed_receta_11": {
-    "nombre": "Receta de Cama cian (11)",
-    "slug": "receta-cama-cian-11"
-  },
-  "cyan_bed_receta_12": {
-    "nombre": "Receta de Cama cian (12)",
-    "slug": "receta-cama-cian-12"
-  },
-  "cyan_bed_receta_13": {
-    "nombre": "Receta de Cama cian (13)",
-    "slug": "receta-cama-cian-13"
-  },
   "cyan_bed_receta_2": {
     "nombre": "Receta de Cama cian (2)",
     "slug": "receta-cama-cian-2"
-  },
-  "cyan_bed_receta_3": {
-    "nombre": "Receta de Cama cian (3)",
-    "slug": "receta-cama-cian-3"
-  },
-  "cyan_bed_receta_4": {
-    "nombre": "Receta de Cama cian (4)",
-    "slug": "receta-cama-cian-4"
-  },
-  "cyan_bed_receta_5": {
-    "nombre": "Receta de Cama cian (5)",
-    "slug": "receta-cama-cian-5"
-  },
-  "cyan_bed_receta_6": {
-    "nombre": "Receta de Cama cian (6)",
-    "slug": "receta-cama-cian-6"
-  },
-  "cyan_bed_receta_7": {
-    "nombre": "Receta de Cama cian (7)",
-    "slug": "receta-cama-cian-7"
-  },
-  "cyan_bed_receta_8": {
-    "nombre": "Receta de Cama cian (8)",
-    "slug": "receta-cama-cian-8"
-  },
-  "cyan_bed_receta_9": {
-    "nombre": "Receta de Cama cian (9)",
-    "slug": "receta-cama-cian-9"
   },
   "cyan_candle_receta": {
     "nombre": "Receta de Vela cian",
@@ -1700,53 +1191,9 @@
     "nombre": "Receta de Escaleras de prismarina oscura",
     "slug": "receta-escaleras-de-prismarina-oscura"
   },
-  "daylight_detector_receta_1": {
-    "nombre": "Receta de Sensor de luz solar (1)",
-    "slug": "receta-sensor-de-luz-solar-1"
-  },
-  "daylight_detector_receta_10": {
-    "nombre": "Receta de Sensor de luz solar (10)",
-    "slug": "receta-sensor-de-luz-solar-10"
-  },
-  "daylight_detector_receta_11": {
-    "nombre": "Receta de Sensor de luz solar (11)",
-    "slug": "receta-sensor-de-luz-solar-11"
-  },
-  "daylight_detector_receta_12": {
-    "nombre": "Receta de Sensor de luz solar (12)",
-    "slug": "receta-sensor-de-luz-solar-12"
-  },
-  "daylight_detector_receta_2": {
-    "nombre": "Receta de Sensor de luz solar (2)",
-    "slug": "receta-sensor-de-luz-solar-2"
-  },
-  "daylight_detector_receta_3": {
-    "nombre": "Receta de Sensor de luz solar (3)",
-    "slug": "receta-sensor-de-luz-solar-3"
-  },
-  "daylight_detector_receta_4": {
-    "nombre": "Receta de Sensor de luz solar (4)",
-    "slug": "receta-sensor-de-luz-solar-4"
-  },
-  "daylight_detector_receta_5": {
-    "nombre": "Receta de Sensor de luz solar (5)",
-    "slug": "receta-sensor-de-luz-solar-5"
-  },
-  "daylight_detector_receta_6": {
-    "nombre": "Receta de Sensor de luz solar (6)",
-    "slug": "receta-sensor-de-luz-solar-6"
-  },
-  "daylight_detector_receta_7": {
-    "nombre": "Receta de Sensor de luz solar (7)",
-    "slug": "receta-sensor-de-luz-solar-7"
-  },
-  "daylight_detector_receta_8": {
-    "nombre": "Receta de Sensor de luz solar (8)",
-    "slug": "receta-sensor-de-luz-solar-8"
-  },
-  "daylight_detector_receta_9": {
-    "nombre": "Receta de Sensor de luz solar (9)",
-    "slug": "receta-sensor-de-luz-solar-9"
+  "daylight_detector_receta": {
+    "nombre": "Receta de Sensor de luz solar",
+    "slug": "receta-sensor-de-luz-solar"
   },
   "decorated_pot_receta": {
     "nombre": "Receta de Vasija decorada",
@@ -1829,9 +1276,8 @@
     "slug": "receta-pala-de-diamante"
   },
   "diamond_sword_receta": {
-    "nombre": "Espada de diamante",
-    "slug": "receta-espada-de-diamante",
-    "descripcion": "Dos diamantes uno encima del otro, y un palo debajo. Necesitas mesa de trabajo, porque el inventario solo tiene espacio para dos por dos."
+    "nombre": "Receta de Espada de Diamante",
+    "slug": "receta-espada-de-diamante"
   },
   "diorite_receta": {
     "nombre": "Receta de Diorita",
@@ -1965,53 +1411,9 @@
     "nombre": "Receta de Caña de pescar",
     "slug": "receta-cana-de-pescar"
   },
-  "fletching_table_receta_1": {
-    "nombre": "Receta de Mesa de flechero (1)",
-    "slug": "receta-mesa-de-flechero-1"
-  },
-  "fletching_table_receta_10": {
-    "nombre": "Receta de Mesa de flechero (10)",
-    "slug": "receta-mesa-de-flechero-10"
-  },
-  "fletching_table_receta_11": {
-    "nombre": "Receta de Mesa de flechero (11)",
-    "slug": "receta-mesa-de-flechero-11"
-  },
-  "fletching_table_receta_12": {
-    "nombre": "Receta de Mesa de flechero (12)",
-    "slug": "receta-mesa-de-flechero-12"
-  },
-  "fletching_table_receta_2": {
-    "nombre": "Receta de Mesa de flechero (2)",
-    "slug": "receta-mesa-de-flechero-2"
-  },
-  "fletching_table_receta_3": {
-    "nombre": "Receta de Mesa de flechero (3)",
-    "slug": "receta-mesa-de-flechero-3"
-  },
-  "fletching_table_receta_4": {
-    "nombre": "Receta de Mesa de flechero (4)",
-    "slug": "receta-mesa-de-flechero-4"
-  },
-  "fletching_table_receta_5": {
-    "nombre": "Receta de Mesa de flechero (5)",
-    "slug": "receta-mesa-de-flechero-5"
-  },
-  "fletching_table_receta_6": {
-    "nombre": "Receta de Mesa de flechero (6)",
-    "slug": "receta-mesa-de-flechero-6"
-  },
-  "fletching_table_receta_7": {
-    "nombre": "Receta de Mesa de flechero (7)",
-    "slug": "receta-mesa-de-flechero-7"
-  },
-  "fletching_table_receta_8": {
-    "nombre": "Receta de Mesa de flechero (8)",
-    "slug": "receta-mesa-de-flechero-8"
-  },
-  "fletching_table_receta_9": {
-    "nombre": "Receta de Mesa de flechero (9)",
-    "slug": "receta-mesa-de-flechero-9"
+  "fletching_table_receta": {
+    "nombre": "Receta de Mesa de flechero",
+    "slug": "receta-mesa-de-flechero"
   },
   "flint_and_steel_receta": {
     "nombre": "Receta de Mechero",
@@ -2033,17 +1435,9 @@
     "nombre": "Receta de Vagoneta con horno",
     "slug": "receta-vagoneta-con-horno"
   },
-  "furnace_receta_1": {
-    "nombre": "Receta de Horno (1)",
-    "slug": "receta-horno-1"
-  },
-  "furnace_receta_2": {
-    "nombre": "Receta de Horno (2)",
-    "slug": "receta-horno-2"
-  },
-  "furnace_receta_3": {
-    "nombre": "Receta de Horno (3)",
-    "slug": "receta-horno-3"
+  "furnace_receta": {
+    "nombre": "Receta de Horno",
+    "slug": "receta-horno"
   },
   "glass_bottle_receta": {
     "nombre": "Receta de Botella de cristal",
@@ -2149,53 +1543,9 @@
     "nombre": "Receta de Cama gris (1)",
     "slug": "receta-cama-gris-1"
   },
-  "gray_bed_receta_10": {
-    "nombre": "Receta de Cama gris (10)",
-    "slug": "receta-cama-gris-10"
-  },
-  "gray_bed_receta_11": {
-    "nombre": "Receta de Cama gris (11)",
-    "slug": "receta-cama-gris-11"
-  },
-  "gray_bed_receta_12": {
-    "nombre": "Receta de Cama gris (12)",
-    "slug": "receta-cama-gris-12"
-  },
-  "gray_bed_receta_13": {
-    "nombre": "Receta de Cama gris (13)",
-    "slug": "receta-cama-gris-13"
-  },
   "gray_bed_receta_2": {
     "nombre": "Receta de Cama gris (2)",
     "slug": "receta-cama-gris-2"
-  },
-  "gray_bed_receta_3": {
-    "nombre": "Receta de Cama gris (3)",
-    "slug": "receta-cama-gris-3"
-  },
-  "gray_bed_receta_4": {
-    "nombre": "Receta de Cama gris (4)",
-    "slug": "receta-cama-gris-4"
-  },
-  "gray_bed_receta_5": {
-    "nombre": "Receta de Cama gris (5)",
-    "slug": "receta-cama-gris-5"
-  },
-  "gray_bed_receta_6": {
-    "nombre": "Receta de Cama gris (6)",
-    "slug": "receta-cama-gris-6"
-  },
-  "gray_bed_receta_7": {
-    "nombre": "Receta de Cama gris (7)",
-    "slug": "receta-cama-gris-7"
-  },
-  "gray_bed_receta_8": {
-    "nombre": "Receta de Cama gris (8)",
-    "slug": "receta-cama-gris-8"
-  },
-  "gray_bed_receta_9": {
-    "nombre": "Receta de Cama gris (9)",
-    "slug": "receta-cama-gris-9"
   },
   "gray_candle_receta": {
     "nombre": "Receta de Vela gris",
@@ -2245,53 +1595,9 @@
     "nombre": "Receta de Cama verde (1)",
     "slug": "receta-cama-verde-1"
   },
-  "green_bed_receta_10": {
-    "nombre": "Receta de Cama verde (10)",
-    "slug": "receta-cama-verde-10"
-  },
-  "green_bed_receta_11": {
-    "nombre": "Receta de Cama verde (11)",
-    "slug": "receta-cama-verde-11"
-  },
-  "green_bed_receta_12": {
-    "nombre": "Receta de Cama verde (12)",
-    "slug": "receta-cama-verde-12"
-  },
-  "green_bed_receta_13": {
-    "nombre": "Receta de Cama verde (13)",
-    "slug": "receta-cama-verde-13"
-  },
   "green_bed_receta_2": {
     "nombre": "Receta de Cama verde (2)",
     "slug": "receta-cama-verde-2"
-  },
-  "green_bed_receta_3": {
-    "nombre": "Receta de Cama verde (3)",
-    "slug": "receta-cama-verde-3"
-  },
-  "green_bed_receta_4": {
-    "nombre": "Receta de Cama verde (4)",
-    "slug": "receta-cama-verde-4"
-  },
-  "green_bed_receta_5": {
-    "nombre": "Receta de Cama verde (5)",
-    "slug": "receta-cama-verde-5"
-  },
-  "green_bed_receta_6": {
-    "nombre": "Receta de Cama verde (6)",
-    "slug": "receta-cama-verde-6"
-  },
-  "green_bed_receta_7": {
-    "nombre": "Receta de Cama verde (7)",
-    "slug": "receta-cama-verde-7"
-  },
-  "green_bed_receta_8": {
-    "nombre": "Receta de Cama verde (8)",
-    "slug": "receta-cama-verde-8"
-  },
-  "green_bed_receta_9": {
-    "nombre": "Receta de Cama verde (9)",
-    "slug": "receta-cama-verde-9"
   },
   "green_candle_receta": {
     "nombre": "Receta de Vela verde",
@@ -2329,53 +1635,9 @@
     "nombre": "Receta de Lana verde",
     "slug": "receta-lana-verde"
   },
-  "grindstone_receta_1": {
-    "nombre": "Receta de Piedra de afilar (1)",
-    "slug": "receta-piedra-de-afilar-1"
-  },
-  "grindstone_receta_10": {
-    "nombre": "Receta de Piedra de afilar (10)",
-    "slug": "receta-piedra-de-afilar-10"
-  },
-  "grindstone_receta_11": {
-    "nombre": "Receta de Piedra de afilar (11)",
-    "slug": "receta-piedra-de-afilar-11"
-  },
-  "grindstone_receta_12": {
-    "nombre": "Receta de Piedra de afilar (12)",
-    "slug": "receta-piedra-de-afilar-12"
-  },
-  "grindstone_receta_2": {
-    "nombre": "Receta de Piedra de afilar (2)",
-    "slug": "receta-piedra-de-afilar-2"
-  },
-  "grindstone_receta_3": {
-    "nombre": "Receta de Piedra de afilar (3)",
-    "slug": "receta-piedra-de-afilar-3"
-  },
-  "grindstone_receta_4": {
-    "nombre": "Receta de Piedra de afilar (4)",
-    "slug": "receta-piedra-de-afilar-4"
-  },
-  "grindstone_receta_5": {
-    "nombre": "Receta de Piedra de afilar (5)",
-    "slug": "receta-piedra-de-afilar-5"
-  },
-  "grindstone_receta_6": {
-    "nombre": "Receta de Piedra de afilar (6)",
-    "slug": "receta-piedra-de-afilar-6"
-  },
-  "grindstone_receta_7": {
-    "nombre": "Receta de Piedra de afilar (7)",
-    "slug": "receta-piedra-de-afilar-7"
-  },
-  "grindstone_receta_8": {
-    "nombre": "Receta de Piedra de afilar (8)",
-    "slug": "receta-piedra-de-afilar-8"
-  },
-  "grindstone_receta_9": {
-    "nombre": "Receta de Piedra de afilar (9)",
-    "slug": "receta-piedra-de-afilar-9"
+  "grindstone_receta": {
+    "nombre": "Receta de Piedra de afilar",
+    "slug": "receta-piedra-de-afilar"
   },
   "hay_block_receta": {
     "nombre": "Receta de Bloque de heno",
@@ -2481,53 +1743,9 @@
     "nombre": "Receta de Calabaza iluminada",
     "slug": "receta-calabaza-iluminada"
   },
-  "jukebox_receta_1": {
-    "nombre": "Receta de Tocadiscos (1)",
-    "slug": "receta-tocadiscos-1"
-  },
-  "jukebox_receta_10": {
-    "nombre": "Receta de Tocadiscos (10)",
-    "slug": "receta-tocadiscos-10"
-  },
-  "jukebox_receta_11": {
-    "nombre": "Receta de Tocadiscos (11)",
-    "slug": "receta-tocadiscos-11"
-  },
-  "jukebox_receta_12": {
-    "nombre": "Receta de Tocadiscos (12)",
-    "slug": "receta-tocadiscos-12"
-  },
-  "jukebox_receta_2": {
-    "nombre": "Receta de Tocadiscos (2)",
-    "slug": "receta-tocadiscos-2"
-  },
-  "jukebox_receta_3": {
-    "nombre": "Receta de Tocadiscos (3)",
-    "slug": "receta-tocadiscos-3"
-  },
-  "jukebox_receta_4": {
-    "nombre": "Receta de Tocadiscos (4)",
-    "slug": "receta-tocadiscos-4"
-  },
-  "jukebox_receta_5": {
-    "nombre": "Receta de Tocadiscos (5)",
-    "slug": "receta-tocadiscos-5"
-  },
-  "jukebox_receta_6": {
-    "nombre": "Receta de Tocadiscos (6)",
-    "slug": "receta-tocadiscos-6"
-  },
-  "jukebox_receta_7": {
-    "nombre": "Receta de Tocadiscos (7)",
-    "slug": "receta-tocadiscos-7"
-  },
-  "jukebox_receta_8": {
-    "nombre": "Receta de Tocadiscos (8)",
-    "slug": "receta-tocadiscos-8"
-  },
-  "jukebox_receta_9": {
-    "nombre": "Receta de Tocadiscos (9)",
-    "slug": "receta-tocadiscos-9"
+  "jukebox_receta": {
+    "nombre": "Receta de Tocadiscos",
+    "slug": "receta-tocadiscos"
   },
   "jungle_boat_receta": {
     "nombre": "Receta de Barca de jungla",
@@ -2629,53 +1847,9 @@
     "nombre": "Receta de Cuero",
     "slug": "receta-cuero"
   },
-  "lectern_receta_1": {
-    "nombre": "Receta de Atril (1)",
-    "slug": "receta-atril-1"
-  },
-  "lectern_receta_10": {
-    "nombre": "Receta de Atril (10)",
-    "slug": "receta-atril-10"
-  },
-  "lectern_receta_11": {
-    "nombre": "Receta de Atril (11)",
-    "slug": "receta-atril-11"
-  },
-  "lectern_receta_12": {
-    "nombre": "Receta de Atril (12)",
-    "slug": "receta-atril-12"
-  },
-  "lectern_receta_2": {
-    "nombre": "Receta de Atril (2)",
-    "slug": "receta-atril-2"
-  },
-  "lectern_receta_3": {
-    "nombre": "Receta de Atril (3)",
-    "slug": "receta-atril-3"
-  },
-  "lectern_receta_4": {
-    "nombre": "Receta de Atril (4)",
-    "slug": "receta-atril-4"
-  },
-  "lectern_receta_5": {
-    "nombre": "Receta de Atril (5)",
-    "slug": "receta-atril-5"
-  },
-  "lectern_receta_6": {
-    "nombre": "Receta de Atril (6)",
-    "slug": "receta-atril-6"
-  },
-  "lectern_receta_7": {
-    "nombre": "Receta de Atril (7)",
-    "slug": "receta-atril-7"
-  },
-  "lectern_receta_8": {
-    "nombre": "Receta de Atril (8)",
-    "slug": "receta-atril-8"
-  },
-  "lectern_receta_9": {
-    "nombre": "Receta de Atril (9)",
-    "slug": "receta-atril-9"
+  "lectern_receta": {
+    "nombre": "Receta de Atril",
+    "slug": "receta-atril"
   },
   "lever_receta": {
     "nombre": "Receta de Palanca",
@@ -2689,53 +1863,9 @@
     "nombre": "Receta de Cama azul claro (1)",
     "slug": "receta-cama-azul-claro-1"
   },
-  "light_blue_bed_receta_10": {
-    "nombre": "Receta de Cama azul claro (10)",
-    "slug": "receta-cama-azul-claro-10"
-  },
-  "light_blue_bed_receta_11": {
-    "nombre": "Receta de Cama azul claro (11)",
-    "slug": "receta-cama-azul-claro-11"
-  },
-  "light_blue_bed_receta_12": {
-    "nombre": "Receta de Cama azul claro (12)",
-    "slug": "receta-cama-azul-claro-12"
-  },
-  "light_blue_bed_receta_13": {
-    "nombre": "Receta de Cama azul claro (13)",
-    "slug": "receta-cama-azul-claro-13"
-  },
   "light_blue_bed_receta_2": {
     "nombre": "Receta de Cama azul claro (2)",
     "slug": "receta-cama-azul-claro-2"
-  },
-  "light_blue_bed_receta_3": {
-    "nombre": "Receta de Cama azul claro (3)",
-    "slug": "receta-cama-azul-claro-3"
-  },
-  "light_blue_bed_receta_4": {
-    "nombre": "Receta de Cama azul claro (4)",
-    "slug": "receta-cama-azul-claro-4"
-  },
-  "light_blue_bed_receta_5": {
-    "nombre": "Receta de Cama azul claro (5)",
-    "slug": "receta-cama-azul-claro-5"
-  },
-  "light_blue_bed_receta_6": {
-    "nombre": "Receta de Cama azul claro (6)",
-    "slug": "receta-cama-azul-claro-6"
-  },
-  "light_blue_bed_receta_7": {
-    "nombre": "Receta de Cama azul claro (7)",
-    "slug": "receta-cama-azul-claro-7"
-  },
-  "light_blue_bed_receta_8": {
-    "nombre": "Receta de Cama azul claro (8)",
-    "slug": "receta-cama-azul-claro-8"
-  },
-  "light_blue_bed_receta_9": {
-    "nombre": "Receta de Cama azul claro (9)",
-    "slug": "receta-cama-azul-claro-9"
   },
   "light_blue_candle_receta": {
     "nombre": "Receta de Vela azul claro",
@@ -2789,53 +1919,9 @@
     "nombre": "Receta de Cama gris claro (1)",
     "slug": "receta-cama-gris-claro-1"
   },
-  "light_gray_bed_receta_10": {
-    "nombre": "Receta de Cama gris claro (10)",
-    "slug": "receta-cama-gris-claro-10"
-  },
-  "light_gray_bed_receta_11": {
-    "nombre": "Receta de Cama gris claro (11)",
-    "slug": "receta-cama-gris-claro-11"
-  },
-  "light_gray_bed_receta_12": {
-    "nombre": "Receta de Cama gris claro (12)",
-    "slug": "receta-cama-gris-claro-12"
-  },
-  "light_gray_bed_receta_13": {
-    "nombre": "Receta de Cama gris claro (13)",
-    "slug": "receta-cama-gris-claro-13"
-  },
   "light_gray_bed_receta_2": {
     "nombre": "Receta de Cama gris claro (2)",
     "slug": "receta-cama-gris-claro-2"
-  },
-  "light_gray_bed_receta_3": {
-    "nombre": "Receta de Cama gris claro (3)",
-    "slug": "receta-cama-gris-claro-3"
-  },
-  "light_gray_bed_receta_4": {
-    "nombre": "Receta de Cama gris claro (4)",
-    "slug": "receta-cama-gris-claro-4"
-  },
-  "light_gray_bed_receta_5": {
-    "nombre": "Receta de Cama gris claro (5)",
-    "slug": "receta-cama-gris-claro-5"
-  },
-  "light_gray_bed_receta_6": {
-    "nombre": "Receta de Cama gris claro (6)",
-    "slug": "receta-cama-gris-claro-6"
-  },
-  "light_gray_bed_receta_7": {
-    "nombre": "Receta de Cama gris claro (7)",
-    "slug": "receta-cama-gris-claro-7"
-  },
-  "light_gray_bed_receta_8": {
-    "nombre": "Receta de Cama gris claro (8)",
-    "slug": "receta-cama-gris-claro-8"
-  },
-  "light_gray_bed_receta_9": {
-    "nombre": "Receta de Cama gris claro (9)",
-    "slug": "receta-cama-gris-claro-9"
   },
   "light_gray_candle_receta": {
     "nombre": "Receta de Vela gris claro",
@@ -2864,14 +1950,6 @@
   "light_gray_dye_receta_3": {
     "nombre": "Receta de Tinte gris claro (3)",
     "slug": "receta-tinte-gris-claro-3"
-  },
-  "light_gray_dye_receta_4": {
-    "nombre": "Receta de Tinte gris claro (4)",
-    "slug": "receta-tinte-gris-claro-4"
-  },
-  "light_gray_dye_receta_5": {
-    "nombre": "Receta de Tinte gris claro (5)",
-    "slug": "receta-tinte-gris-claro-5"
   },
   "light_gray_stained_glass_pane_receta_1": {
     "nombre": "Receta de Panel de vidriera gris claro (1)",
@@ -2909,53 +1987,9 @@
     "nombre": "Receta de Cama lima (1)",
     "slug": "receta-cama-lima-1"
   },
-  "lime_bed_receta_10": {
-    "nombre": "Receta de Cama lima (10)",
-    "slug": "receta-cama-lima-10"
-  },
-  "lime_bed_receta_11": {
-    "nombre": "Receta de Cama lima (11)",
-    "slug": "receta-cama-lima-11"
-  },
-  "lime_bed_receta_12": {
-    "nombre": "Receta de Cama lima (12)",
-    "slug": "receta-cama-lima-12"
-  },
-  "lime_bed_receta_13": {
-    "nombre": "Receta de Cama lima (13)",
-    "slug": "receta-cama-lima-13"
-  },
   "lime_bed_receta_2": {
     "nombre": "Receta de Cama lima (2)",
     "slug": "receta-cama-lima-2"
-  },
-  "lime_bed_receta_3": {
-    "nombre": "Receta de Cama lima (3)",
-    "slug": "receta-cama-lima-3"
-  },
-  "lime_bed_receta_4": {
-    "nombre": "Receta de Cama lima (4)",
-    "slug": "receta-cama-lima-4"
-  },
-  "lime_bed_receta_5": {
-    "nombre": "Receta de Cama lima (5)",
-    "slug": "receta-cama-lima-5"
-  },
-  "lime_bed_receta_6": {
-    "nombre": "Receta de Cama lima (6)",
-    "slug": "receta-cama-lima-6"
-  },
-  "lime_bed_receta_7": {
-    "nombre": "Receta de Cama lima (7)",
-    "slug": "receta-cama-lima-7"
-  },
-  "lime_bed_receta_8": {
-    "nombre": "Receta de Cama lima (8)",
-    "slug": "receta-cama-lima-8"
-  },
-  "lime_bed_receta_9": {
-    "nombre": "Receta de Cama lima (9)",
-    "slug": "receta-cama-lima-9"
   },
   "lime_candle_receta": {
     "nombre": "Receta de Vela lima",
@@ -3001,53 +2035,9 @@
     "nombre": "Receta de Piedra imán",
     "slug": "receta-piedra-iman"
   },
-  "loom_receta_1": {
-    "nombre": "Receta de Telar (1)",
-    "slug": "receta-telar-1"
-  },
-  "loom_receta_10": {
-    "nombre": "Receta de Telar (10)",
-    "slug": "receta-telar-10"
-  },
-  "loom_receta_11": {
-    "nombre": "Receta de Telar (11)",
-    "slug": "receta-telar-11"
-  },
-  "loom_receta_12": {
-    "nombre": "Receta de Telar (12)",
-    "slug": "receta-telar-12"
-  },
-  "loom_receta_2": {
-    "nombre": "Receta de Telar (2)",
-    "slug": "receta-telar-2"
-  },
-  "loom_receta_3": {
-    "nombre": "Receta de Telar (3)",
-    "slug": "receta-telar-3"
-  },
-  "loom_receta_4": {
-    "nombre": "Receta de Telar (4)",
-    "slug": "receta-telar-4"
-  },
-  "loom_receta_5": {
-    "nombre": "Receta de Telar (5)",
-    "slug": "receta-telar-5"
-  },
-  "loom_receta_6": {
-    "nombre": "Receta de Telar (6)",
-    "slug": "receta-telar-6"
-  },
-  "loom_receta_7": {
-    "nombre": "Receta de Telar (7)",
-    "slug": "receta-telar-7"
-  },
-  "loom_receta_8": {
-    "nombre": "Receta de Telar (8)",
-    "slug": "receta-telar-8"
-  },
-  "loom_receta_9": {
-    "nombre": "Receta de Telar (9)",
-    "slug": "receta-telar-9"
+  "loom_receta": {
+    "nombre": "Receta de Telar",
+    "slug": "receta-telar"
   },
   "mace_receta": {
     "nombre": "Receta de Maza",
@@ -3061,53 +2051,9 @@
     "nombre": "Receta de Cama magenta (1)",
     "slug": "receta-cama-magenta-1"
   },
-  "magenta_bed_receta_10": {
-    "nombre": "Receta de Cama magenta (10)",
-    "slug": "receta-cama-magenta-10"
-  },
-  "magenta_bed_receta_11": {
-    "nombre": "Receta de Cama magenta (11)",
-    "slug": "receta-cama-magenta-11"
-  },
-  "magenta_bed_receta_12": {
-    "nombre": "Receta de Cama magenta (12)",
-    "slug": "receta-cama-magenta-12"
-  },
-  "magenta_bed_receta_13": {
-    "nombre": "Receta de Cama magenta (13)",
-    "slug": "receta-cama-magenta-13"
-  },
   "magenta_bed_receta_2": {
     "nombre": "Receta de Cama magenta (2)",
     "slug": "receta-cama-magenta-2"
-  },
-  "magenta_bed_receta_3": {
-    "nombre": "Receta de Cama magenta (3)",
-    "slug": "receta-cama-magenta-3"
-  },
-  "magenta_bed_receta_4": {
-    "nombre": "Receta de Cama magenta (4)",
-    "slug": "receta-cama-magenta-4"
-  },
-  "magenta_bed_receta_5": {
-    "nombre": "Receta de Cama magenta (5)",
-    "slug": "receta-cama-magenta-5"
-  },
-  "magenta_bed_receta_6": {
-    "nombre": "Receta de Cama magenta (6)",
-    "slug": "receta-cama-magenta-6"
-  },
-  "magenta_bed_receta_7": {
-    "nombre": "Receta de Cama magenta (7)",
-    "slug": "receta-cama-magenta-7"
-  },
-  "magenta_bed_receta_8": {
-    "nombre": "Receta de Cama magenta (8)",
-    "slug": "receta-cama-magenta-8"
-  },
-  "magenta_bed_receta_9": {
-    "nombre": "Receta de Cama magenta (9)",
-    "slug": "receta-cama-magenta-9"
   },
   "magenta_candle_receta": {
     "nombre": "Receta de Vela magenta",
@@ -3253,13 +2199,9 @@
     "nombre": "Receta de Alfombra de musgo",
     "slug": "receta-alfombra-de-musgo"
   },
-  "mossy_cobblestone_receta_1": {
-    "nombre": "Receta de Roca musgosa (1)",
-    "slug": "receta-roca-musgosa-1"
-  },
-  "mossy_cobblestone_receta_2": {
-    "nombre": "Receta de Roca musgosa (2)",
-    "slug": "receta-roca-musgosa-2"
+  "mossy_cobblestone_receta": {
+    "nombre": "Receta de Roca musgosa",
+    "slug": "receta-roca-musgosa"
   },
   "mossy_cobblestone_slab_receta": {
     "nombre": "Receta de Losa de roca musgosa",
@@ -3361,53 +2303,9 @@
     "nombre": "Receta de Plantilla de mejora a netherita",
     "slug": "receta-plantilla-de-mejora-a-netherita"
   },
-  "note_block_receta_1": {
-    "nombre": "Receta de Bloque musical (1)",
-    "slug": "receta-bloque-musical-1"
-  },
-  "note_block_receta_10": {
-    "nombre": "Receta de Bloque musical (10)",
-    "slug": "receta-bloque-musical-10"
-  },
-  "note_block_receta_11": {
-    "nombre": "Receta de Bloque musical (11)",
-    "slug": "receta-bloque-musical-11"
-  },
-  "note_block_receta_12": {
-    "nombre": "Receta de Bloque musical (12)",
-    "slug": "receta-bloque-musical-12"
-  },
-  "note_block_receta_2": {
-    "nombre": "Receta de Bloque musical (2)",
-    "slug": "receta-bloque-musical-2"
-  },
-  "note_block_receta_3": {
-    "nombre": "Receta de Bloque musical (3)",
-    "slug": "receta-bloque-musical-3"
-  },
-  "note_block_receta_4": {
-    "nombre": "Receta de Bloque musical (4)",
-    "slug": "receta-bloque-musical-4"
-  },
-  "note_block_receta_5": {
-    "nombre": "Receta de Bloque musical (5)",
-    "slug": "receta-bloque-musical-5"
-  },
-  "note_block_receta_6": {
-    "nombre": "Receta de Bloque musical (6)",
-    "slug": "receta-bloque-musical-6"
-  },
-  "note_block_receta_7": {
-    "nombre": "Receta de Bloque musical (7)",
-    "slug": "receta-bloque-musical-7"
-  },
-  "note_block_receta_8": {
-    "nombre": "Receta de Bloque musical (8)",
-    "slug": "receta-bloque-musical-8"
-  },
-  "note_block_receta_9": {
-    "nombre": "Receta de Bloque musical (9)",
-    "slug": "receta-bloque-musical-9"
+  "note_block_receta": {
+    "nombre": "Receta de Bloque musical",
+    "slug": "receta-bloque-musical"
   },
   "oak_boat_receta": {
     "nombre": "Receta de Barca de roble",
@@ -3477,53 +2375,9 @@
     "nombre": "Receta de Cama naranja (1)",
     "slug": "receta-cama-naranja-1"
   },
-  "orange_bed_receta_10": {
-    "nombre": "Receta de Cama naranja (10)",
-    "slug": "receta-cama-naranja-10"
-  },
-  "orange_bed_receta_11": {
-    "nombre": "Receta de Cama naranja (11)",
-    "slug": "receta-cama-naranja-11"
-  },
-  "orange_bed_receta_12": {
-    "nombre": "Receta de Cama naranja (12)",
-    "slug": "receta-cama-naranja-12"
-  },
-  "orange_bed_receta_13": {
-    "nombre": "Receta de Cama naranja (13)",
-    "slug": "receta-cama-naranja-13"
-  },
   "orange_bed_receta_2": {
     "nombre": "Receta de Cama naranja (2)",
     "slug": "receta-cama-naranja-2"
-  },
-  "orange_bed_receta_3": {
-    "nombre": "Receta de Cama naranja (3)",
-    "slug": "receta-cama-naranja-3"
-  },
-  "orange_bed_receta_4": {
-    "nombre": "Receta de Cama naranja (4)",
-    "slug": "receta-cama-naranja-4"
-  },
-  "orange_bed_receta_5": {
-    "nombre": "Receta de Cama naranja (5)",
-    "slug": "receta-cama-naranja-5"
-  },
-  "orange_bed_receta_6": {
-    "nombre": "Receta de Cama naranja (6)",
-    "slug": "receta-cama-naranja-6"
-  },
-  "orange_bed_receta_7": {
-    "nombre": "Receta de Cama naranja (7)",
-    "slug": "receta-cama-naranja-7"
-  },
-  "orange_bed_receta_8": {
-    "nombre": "Receta de Cama naranja (8)",
-    "slug": "receta-cama-naranja-8"
-  },
-  "orange_bed_receta_9": {
-    "nombre": "Receta de Cama naranja (9)",
-    "slug": "receta-cama-naranja-9"
   },
   "orange_candle_receta": {
     "nombre": "Receta de Vela naranja",
@@ -3548,10 +2402,6 @@
   "orange_dye_receta_2": {
     "nombre": "Receta de Tinte naranja (2)",
     "slug": "receta-tinte-naranja-2"
-  },
-  "orange_dye_receta_3": {
-    "nombre": "Receta de Tinte naranja (3)",
-    "slug": "receta-tinte-naranja-3"
   },
   "orange_stained_glass_pane_receta_1": {
     "nombre": "Receta de Panel de vidriera naranja (1)",
@@ -3605,69 +2455,9 @@
     "nombre": "Receta de Barro compacto",
     "slug": "receta-barro-compacto"
   },
-  "painting_receta_1": {
-    "nombre": "Receta de Cuadro (1)",
-    "slug": "receta-cuadro-1"
-  },
-  "painting_receta_10": {
-    "nombre": "Receta de Cuadro (10)",
-    "slug": "receta-cuadro-10"
-  },
-  "painting_receta_11": {
-    "nombre": "Receta de Cuadro (11)",
-    "slug": "receta-cuadro-11"
-  },
-  "painting_receta_12": {
-    "nombre": "Receta de Cuadro (12)",
-    "slug": "receta-cuadro-12"
-  },
-  "painting_receta_13": {
-    "nombre": "Receta de Cuadro (13)",
-    "slug": "receta-cuadro-13"
-  },
-  "painting_receta_14": {
-    "nombre": "Receta de Cuadro (14)",
-    "slug": "receta-cuadro-14"
-  },
-  "painting_receta_15": {
-    "nombre": "Receta de Cuadro (15)",
-    "slug": "receta-cuadro-15"
-  },
-  "painting_receta_16": {
-    "nombre": "Receta de Cuadro (16)",
-    "slug": "receta-cuadro-16"
-  },
-  "painting_receta_2": {
-    "nombre": "Receta de Cuadro (2)",
-    "slug": "receta-cuadro-2"
-  },
-  "painting_receta_3": {
-    "nombre": "Receta de Cuadro (3)",
-    "slug": "receta-cuadro-3"
-  },
-  "painting_receta_4": {
-    "nombre": "Receta de Cuadro (4)",
-    "slug": "receta-cuadro-4"
-  },
-  "painting_receta_5": {
-    "nombre": "Receta de Cuadro (5)",
-    "slug": "receta-cuadro-5"
-  },
-  "painting_receta_6": {
-    "nombre": "Receta de Cuadro (6)",
-    "slug": "receta-cuadro-6"
-  },
-  "painting_receta_7": {
-    "nombre": "Receta de Cuadro (7)",
-    "slug": "receta-cuadro-7"
-  },
-  "painting_receta_8": {
-    "nombre": "Receta de Cuadro (8)",
-    "slug": "receta-cuadro-8"
-  },
-  "painting_receta_9": {
-    "nombre": "Receta de Cuadro (9)",
-    "slug": "receta-cuadro-9"
+  "painting_receta": {
+    "nombre": "Receta de Cuadro",
+    "slug": "receta-cuadro"
   },
   "pale_moss_carpet_receta": {
     "nombre": "Receta de Alfombra de musgo pálido",
@@ -3741,53 +2531,9 @@
     "nombre": "Receta de Cama rosa (1)",
     "slug": "receta-cama-rosa-1"
   },
-  "pink_bed_receta_10": {
-    "nombre": "Receta de Cama rosa (10)",
-    "slug": "receta-cama-rosa-10"
-  },
-  "pink_bed_receta_11": {
-    "nombre": "Receta de Cama rosa (11)",
-    "slug": "receta-cama-rosa-11"
-  },
-  "pink_bed_receta_12": {
-    "nombre": "Receta de Cama rosa (12)",
-    "slug": "receta-cama-rosa-12"
-  },
-  "pink_bed_receta_13": {
-    "nombre": "Receta de Cama rosa (13)",
-    "slug": "receta-cama-rosa-13"
-  },
   "pink_bed_receta_2": {
     "nombre": "Receta de Cama rosa (2)",
     "slug": "receta-cama-rosa-2"
-  },
-  "pink_bed_receta_3": {
-    "nombre": "Receta de Cama rosa (3)",
-    "slug": "receta-cama-rosa-3"
-  },
-  "pink_bed_receta_4": {
-    "nombre": "Receta de Cama rosa (4)",
-    "slug": "receta-cama-rosa-4"
-  },
-  "pink_bed_receta_5": {
-    "nombre": "Receta de Cama rosa (5)",
-    "slug": "receta-cama-rosa-5"
-  },
-  "pink_bed_receta_6": {
-    "nombre": "Receta de Cama rosa (6)",
-    "slug": "receta-cama-rosa-6"
-  },
-  "pink_bed_receta_7": {
-    "nombre": "Receta de Cama rosa (7)",
-    "slug": "receta-cama-rosa-7"
-  },
-  "pink_bed_receta_8": {
-    "nombre": "Receta de Cama rosa (8)",
-    "slug": "receta-cama-rosa-8"
-  },
-  "pink_bed_receta_9": {
-    "nombre": "Receta de Cama rosa (9)",
-    "slug": "receta-cama-rosa-9"
   },
   "pink_candle_receta": {
     "nombre": "Receta de Vela rosa",
@@ -3817,10 +2563,6 @@
     "nombre": "Receta de Tinte rosa (3)",
     "slug": "receta-tinte-rosa-3"
   },
-  "pink_dye_receta_4": {
-    "nombre": "Receta de Tinte rosa (4)",
-    "slug": "receta-tinte-rosa-4"
-  },
   "pink_stained_glass_pane_receta_1": {
     "nombre": "Receta de Panel de vidriera rosa (1)",
     "slug": "receta-panel-de-vidriera-rosa-1"
@@ -3841,53 +2583,9 @@
     "nombre": "Receta de Lana rosa",
     "slug": "receta-lana-rosa"
   },
-  "piston_receta_1": {
-    "nombre": "Receta de Pistón (1)",
-    "slug": "receta-piston-1"
-  },
-  "piston_receta_10": {
-    "nombre": "Receta de Pistón (10)",
-    "slug": "receta-piston-10"
-  },
-  "piston_receta_11": {
-    "nombre": "Receta de Pistón (11)",
-    "slug": "receta-piston-11"
-  },
-  "piston_receta_12": {
-    "nombre": "Receta de Pistón (12)",
-    "slug": "receta-piston-12"
-  },
-  "piston_receta_2": {
-    "nombre": "Receta de Pistón (2)",
-    "slug": "receta-piston-2"
-  },
-  "piston_receta_3": {
-    "nombre": "Receta de Pistón (3)",
-    "slug": "receta-piston-3"
-  },
-  "piston_receta_4": {
-    "nombre": "Receta de Pistón (4)",
-    "slug": "receta-piston-4"
-  },
-  "piston_receta_5": {
-    "nombre": "Receta de Pistón (5)",
-    "slug": "receta-piston-5"
-  },
-  "piston_receta_6": {
-    "nombre": "Receta de Pistón (6)",
-    "slug": "receta-piston-6"
-  },
-  "piston_receta_7": {
-    "nombre": "Receta de Pistón (7)",
-    "slug": "receta-piston-7"
-  },
-  "piston_receta_8": {
-    "nombre": "Receta de Pistón (8)",
-    "slug": "receta-piston-8"
-  },
-  "piston_receta_9": {
-    "nombre": "Receta de Pistón (9)",
-    "slug": "receta-piston-9"
+  "piston_receta": {
+    "nombre": "Receta de Pistón",
+    "slug": "receta-piston"
   },
   "polished_andesite_receta": {
     "nombre": "Receta de Andesita pulida",
@@ -4049,53 +2747,9 @@
     "nombre": "Receta de Cama morada (1)",
     "slug": "receta-cama-morada-1"
   },
-  "purple_bed_receta_10": {
-    "nombre": "Receta de Cama morada (10)",
-    "slug": "receta-cama-morada-10"
-  },
-  "purple_bed_receta_11": {
-    "nombre": "Receta de Cama morada (11)",
-    "slug": "receta-cama-morada-11"
-  },
-  "purple_bed_receta_12": {
-    "nombre": "Receta de Cama morada (12)",
-    "slug": "receta-cama-morada-12"
-  },
-  "purple_bed_receta_13": {
-    "nombre": "Receta de Cama morada (13)",
-    "slug": "receta-cama-morada-13"
-  },
   "purple_bed_receta_2": {
     "nombre": "Receta de Cama morada (2)",
     "slug": "receta-cama-morada-2"
-  },
-  "purple_bed_receta_3": {
-    "nombre": "Receta de Cama morada (3)",
-    "slug": "receta-cama-morada-3"
-  },
-  "purple_bed_receta_4": {
-    "nombre": "Receta de Cama morada (4)",
-    "slug": "receta-cama-morada-4"
-  },
-  "purple_bed_receta_5": {
-    "nombre": "Receta de Cama morada (5)",
-    "slug": "receta-cama-morada-5"
-  },
-  "purple_bed_receta_6": {
-    "nombre": "Receta de Cama morada (6)",
-    "slug": "receta-cama-morada-6"
-  },
-  "purple_bed_receta_7": {
-    "nombre": "Receta de Cama morada (7)",
-    "slug": "receta-cama-morada-7"
-  },
-  "purple_bed_receta_8": {
-    "nombre": "Receta de Cama morada (8)",
-    "slug": "receta-cama-morada-8"
-  },
-  "purple_bed_receta_9": {
-    "nombre": "Receta de Cama morada (9)",
-    "slug": "receta-cama-morada-9"
   },
   "purple_candle_receta": {
     "nombre": "Receta de Vela morada",
@@ -4145,21 +2799,13 @@
     "nombre": "Receta de Purpur con pilar",
     "slug": "receta-purpur-con-pilar"
   },
-  "purpur_slab_receta_1": {
-    "nombre": "Receta de Losa de purpur (1)",
-    "slug": "receta-losa-de-purpur-1"
+  "purpur_slab_receta": {
+    "nombre": "Receta de Losa de purpur",
+    "slug": "receta-losa-de-purpur"
   },
-  "purpur_slab_receta_2": {
-    "nombre": "Receta de Losa de purpur (2)",
-    "slug": "receta-losa-de-purpur-2"
-  },
-  "purpur_stairs_receta_1": {
-    "nombre": "Receta de Escaleras de purpur (1)",
-    "slug": "receta-escaleras-de-purpur-1"
-  },
-  "purpur_stairs_receta_2": {
-    "nombre": "Receta de Escaleras de purpur (2)",
-    "slug": "receta-escaleras-de-purpur-2"
+  "purpur_stairs_receta": {
+    "nombre": "Receta de Escaleras de purpur",
+    "slug": "receta-escaleras-de-purpur"
   },
   "quartz_block_receta": {
     "nombre": "Receta de Bloque de cuarzo",
@@ -4173,29 +2819,13 @@
     "nombre": "Receta de Cuarzo con pilar",
     "slug": "receta-cuarzo-con-pilar"
   },
-  "quartz_slab_receta_1": {
-    "nombre": "Receta de Losa de cuarzo (1)",
-    "slug": "receta-losa-de-cuarzo-1"
+  "quartz_slab_receta": {
+    "nombre": "Receta de Losa de cuarzo",
+    "slug": "receta-losa-de-cuarzo"
   },
-  "quartz_slab_receta_2": {
-    "nombre": "Receta de Losa de cuarzo (2)",
-    "slug": "receta-losa-de-cuarzo-2"
-  },
-  "quartz_slab_receta_3": {
-    "nombre": "Receta de Losa de cuarzo (3)",
-    "slug": "receta-losa-de-cuarzo-3"
-  },
-  "quartz_stairs_receta_1": {
-    "nombre": "Receta de Escaleras de cuarzo (1)",
-    "slug": "receta-escaleras-de-cuarzo-1"
-  },
-  "quartz_stairs_receta_2": {
-    "nombre": "Receta de Escaleras de cuarzo (2)",
-    "slug": "receta-escaleras-de-cuarzo-2"
-  },
-  "quartz_stairs_receta_3": {
-    "nombre": "Receta de Escaleras de cuarzo (3)",
-    "slug": "receta-escaleras-de-cuarzo-3"
+  "quartz_stairs_receta": {
+    "nombre": "Receta de Escaleras de cuarzo",
+    "slug": "receta-escaleras-de-cuarzo"
   },
   "rabbit_stew_receta_1": {
     "nombre": "Receta de Estofado de conejo (1)",
@@ -4249,53 +2879,9 @@
     "nombre": "Receta de Cama roja (1)",
     "slug": "receta-cama-roja-1"
   },
-  "red_bed_receta_10": {
-    "nombre": "Receta de Cama roja (10)",
-    "slug": "receta-cama-roja-10"
-  },
-  "red_bed_receta_11": {
-    "nombre": "Receta de Cama roja (11)",
-    "slug": "receta-cama-roja-11"
-  },
-  "red_bed_receta_12": {
-    "nombre": "Receta de Cama roja (12)",
-    "slug": "receta-cama-roja-12"
-  },
-  "red_bed_receta_13": {
-    "nombre": "Receta de Cama roja (13)",
-    "slug": "receta-cama-roja-13"
-  },
   "red_bed_receta_2": {
     "nombre": "Receta de Cama roja (2)",
     "slug": "receta-cama-roja-2"
-  },
-  "red_bed_receta_3": {
-    "nombre": "Receta de Cama roja (3)",
-    "slug": "receta-cama-roja-3"
-  },
-  "red_bed_receta_4": {
-    "nombre": "Receta de Cama roja (4)",
-    "slug": "receta-cama-roja-4"
-  },
-  "red_bed_receta_5": {
-    "nombre": "Receta de Cama roja (5)",
-    "slug": "receta-cama-roja-5"
-  },
-  "red_bed_receta_6": {
-    "nombre": "Receta de Cama roja (6)",
-    "slug": "receta-cama-roja-6"
-  },
-  "red_bed_receta_7": {
-    "nombre": "Receta de Cama roja (7)",
-    "slug": "receta-cama-roja-7"
-  },
-  "red_bed_receta_8": {
-    "nombre": "Receta de Cama roja (8)",
-    "slug": "receta-cama-roja-8"
-  },
-  "red_bed_receta_9": {
-    "nombre": "Receta de Cama roja (9)",
-    "slug": "receta-cama-roja-9"
   },
   "red_candle_receta": {
     "nombre": "Receta de Vela roja",
@@ -4321,14 +2907,6 @@
     "nombre": "Receta de Tinte rojo (2)",
     "slug": "receta-tinte-rojo-2"
   },
-  "red_dye_receta_3": {
-    "nombre": "Receta de Tinte rojo (3)",
-    "slug": "receta-tinte-rojo-3"
-  },
-  "red_dye_receta_4": {
-    "nombre": "Receta de Tinte rojo (4)",
-    "slug": "receta-tinte-rojo-4"
-  },
   "red_nether_brick_slab_receta": {
     "nombre": "Receta de Losa de ladrillo rojo del Nether",
     "slug": "receta-losa-de-ladrillo-rojo-del-nether"
@@ -4349,25 +2927,13 @@
     "nombre": "Receta de Arenisca roja",
     "slug": "receta-arenisca-roja"
   },
-  "red_sandstone_slab_receta_1": {
-    "nombre": "Receta de Losa de arenisca roja (1)",
-    "slug": "receta-losa-de-arenisca-roja-1"
+  "red_sandstone_slab_receta": {
+    "nombre": "Receta de Losa de arenisca roja",
+    "slug": "receta-losa-de-arenisca-roja"
   },
-  "red_sandstone_slab_receta_2": {
-    "nombre": "Receta de Losa de arenisca roja (2)",
-    "slug": "receta-losa-de-arenisca-roja-2"
-  },
-  "red_sandstone_stairs_receta_1": {
-    "nombre": "Receta de Escaleras de arenisca roja (1)",
-    "slug": "receta-escaleras-de-arenisca-roja-1"
-  },
-  "red_sandstone_stairs_receta_2": {
-    "nombre": "Receta de Escaleras de arenisca roja (2)",
-    "slug": "receta-escaleras-de-arenisca-roja-2"
-  },
-  "red_sandstone_stairs_receta_3": {
-    "nombre": "Receta de Escaleras de arenisca roja (3)",
-    "slug": "receta-escaleras-de-arenisca-roja-3"
+  "red_sandstone_stairs_receta": {
+    "nombre": "Receta de Escaleras de arenisca roja",
+    "slug": "receta-escaleras-de-arenisca-roja"
   },
   "red_sandstone_wall_receta": {
     "nombre": "Receta de Muro de arenisca roja",
@@ -4425,25 +2991,13 @@
     "nombre": "Receta de Arenisca",
     "slug": "receta-arenisca"
   },
-  "sandstone_slab_receta_1": {
-    "nombre": "Receta de Losa de arenisca (1)",
-    "slug": "receta-losa-de-arenisca-1"
+  "sandstone_slab_receta": {
+    "nombre": "Receta de Losa de arenisca",
+    "slug": "receta-losa-de-arenisca"
   },
-  "sandstone_slab_receta_2": {
-    "nombre": "Receta de Losa de arenisca (2)",
-    "slug": "receta-losa-de-arenisca-2"
-  },
-  "sandstone_stairs_receta_1": {
-    "nombre": "Receta de Escaleras de arenisca (1)",
-    "slug": "receta-escaleras-de-arenisca-1"
-  },
-  "sandstone_stairs_receta_2": {
-    "nombre": "Receta de Escaleras de arenisca (2)",
-    "slug": "receta-escaleras-de-arenisca-2"
-  },
-  "sandstone_stairs_receta_3": {
-    "nombre": "Receta de Escaleras de arenisca (3)",
-    "slug": "receta-escaleras-de-arenisca-3"
+  "sandstone_stairs_receta": {
+    "nombre": "Receta de Escaleras de arenisca",
+    "slug": "receta-escaleras-de-arenisca"
   },
   "sandstone_wall_receta": {
     "nombre": "Receta de Muro de arenisca",
@@ -4469,53 +3023,9 @@
     "nombre": "Receta de Tijeras",
     "slug": "receta-tijeras"
   },
-  "shield_receta_1": {
-    "nombre": "Receta de Escudo (1)",
-    "slug": "receta-escudo-1"
-  },
-  "shield_receta_10": {
-    "nombre": "Receta de Escudo (10)",
-    "slug": "receta-escudo-10"
-  },
-  "shield_receta_11": {
-    "nombre": "Receta de Escudo (11)",
-    "slug": "receta-escudo-11"
-  },
-  "shield_receta_12": {
-    "nombre": "Receta de Escudo (12)",
-    "slug": "receta-escudo-12"
-  },
-  "shield_receta_2": {
-    "nombre": "Receta de Escudo (2)",
-    "slug": "receta-escudo-2"
-  },
-  "shield_receta_3": {
-    "nombre": "Receta de Escudo (3)",
-    "slug": "receta-escudo-3"
-  },
-  "shield_receta_4": {
-    "nombre": "Receta de Escudo (4)",
-    "slug": "receta-escudo-4"
-  },
-  "shield_receta_5": {
-    "nombre": "Receta de Escudo (5)",
-    "slug": "receta-escudo-5"
-  },
-  "shield_receta_6": {
-    "nombre": "Receta de Escudo (6)",
-    "slug": "receta-escudo-6"
-  },
-  "shield_receta_7": {
-    "nombre": "Receta de Escudo (7)",
-    "slug": "receta-escudo-7"
-  },
-  "shield_receta_8": {
-    "nombre": "Receta de Escudo (8)",
-    "slug": "receta-escudo-8"
-  },
-  "shield_receta_9": {
-    "nombre": "Receta de Escudo (9)",
-    "slug": "receta-escudo-9"
+  "shield_receta": {
+    "nombre": "Receta de Escudo",
+    "slug": "receta-escudo"
   },
   "shulker_box_receta": {
     "nombre": "Receta de Caja de shulker",
@@ -4537,229 +3047,13 @@
     "nombre": "Receta de Bloque de slime",
     "slug": "receta-bloque-de-slime"
   },
-  "smithing_table_receta_1": {
-    "nombre": "Receta de Mesa de herrería (1)",
-    "slug": "receta-mesa-de-herreria-1"
+  "smithing_table_receta": {
+    "nombre": "Receta de Mesa de herrería",
+    "slug": "receta-mesa-de-herreria"
   },
-  "smithing_table_receta_10": {
-    "nombre": "Receta de Mesa de herrería (10)",
-    "slug": "receta-mesa-de-herreria-10"
-  },
-  "smithing_table_receta_11": {
-    "nombre": "Receta de Mesa de herrería (11)",
-    "slug": "receta-mesa-de-herreria-11"
-  },
-  "smithing_table_receta_12": {
-    "nombre": "Receta de Mesa de herrería (12)",
-    "slug": "receta-mesa-de-herreria-12"
-  },
-  "smithing_table_receta_2": {
-    "nombre": "Receta de Mesa de herrería (2)",
-    "slug": "receta-mesa-de-herreria-2"
-  },
-  "smithing_table_receta_3": {
-    "nombre": "Receta de Mesa de herrería (3)",
-    "slug": "receta-mesa-de-herreria-3"
-  },
-  "smithing_table_receta_4": {
-    "nombre": "Receta de Mesa de herrería (4)",
-    "slug": "receta-mesa-de-herreria-4"
-  },
-  "smithing_table_receta_5": {
-    "nombre": "Receta de Mesa de herrería (5)",
-    "slug": "receta-mesa-de-herreria-5"
-  },
-  "smithing_table_receta_6": {
-    "nombre": "Receta de Mesa de herrería (6)",
-    "slug": "receta-mesa-de-herreria-6"
-  },
-  "smithing_table_receta_7": {
-    "nombre": "Receta de Mesa de herrería (7)",
-    "slug": "receta-mesa-de-herreria-7"
-  },
-  "smithing_table_receta_8": {
-    "nombre": "Receta de Mesa de herrería (8)",
-    "slug": "receta-mesa-de-herreria-8"
-  },
-  "smithing_table_receta_9": {
-    "nombre": "Receta de Mesa de herrería (9)",
-    "slug": "receta-mesa-de-herreria-9"
-  },
-  "smoker_receta_1": {
-    "nombre": "Receta de Ahumador (1)",
-    "slug": "receta-ahumador-1"
-  },
-  "smoker_receta_10": {
-    "nombre": "Receta de Ahumador (10)",
-    "slug": "receta-ahumador-10"
-  },
-  "smoker_receta_11": {
-    "nombre": "Receta de Ahumador (11)",
-    "slug": "receta-ahumador-11"
-  },
-  "smoker_receta_12": {
-    "nombre": "Receta de Ahumador (12)",
-    "slug": "receta-ahumador-12"
-  },
-  "smoker_receta_13": {
-    "nombre": "Receta de Ahumador (13)",
-    "slug": "receta-ahumador-13"
-  },
-  "smoker_receta_14": {
-    "nombre": "Receta de Ahumador (14)",
-    "slug": "receta-ahumador-14"
-  },
-  "smoker_receta_15": {
-    "nombre": "Receta de Ahumador (15)",
-    "slug": "receta-ahumador-15"
-  },
-  "smoker_receta_16": {
-    "nombre": "Receta de Ahumador (16)",
-    "slug": "receta-ahumador-16"
-  },
-  "smoker_receta_17": {
-    "nombre": "Receta de Ahumador (17)",
-    "slug": "receta-ahumador-17"
-  },
-  "smoker_receta_18": {
-    "nombre": "Receta de Ahumador (18)",
-    "slug": "receta-ahumador-18"
-  },
-  "smoker_receta_19": {
-    "nombre": "Receta de Ahumador (19)",
-    "slug": "receta-ahumador-19"
-  },
-  "smoker_receta_2": {
-    "nombre": "Receta de Ahumador (2)",
-    "slug": "receta-ahumador-2"
-  },
-  "smoker_receta_20": {
-    "nombre": "Receta de Ahumador (20)",
-    "slug": "receta-ahumador-20"
-  },
-  "smoker_receta_21": {
-    "nombre": "Receta de Ahumador (21)",
-    "slug": "receta-ahumador-21"
-  },
-  "smoker_receta_22": {
-    "nombre": "Receta de Ahumador (22)",
-    "slug": "receta-ahumador-22"
-  },
-  "smoker_receta_23": {
-    "nombre": "Receta de Ahumador (23)",
-    "slug": "receta-ahumador-23"
-  },
-  "smoker_receta_24": {
-    "nombre": "Receta de Ahumador (24)",
-    "slug": "receta-ahumador-24"
-  },
-  "smoker_receta_25": {
-    "nombre": "Receta de Ahumador (25)",
-    "slug": "receta-ahumador-25"
-  },
-  "smoker_receta_26": {
-    "nombre": "Receta de Ahumador (26)",
-    "slug": "receta-ahumador-26"
-  },
-  "smoker_receta_27": {
-    "nombre": "Receta de Ahumador (27)",
-    "slug": "receta-ahumador-27"
-  },
-  "smoker_receta_28": {
-    "nombre": "Receta de Ahumador (28)",
-    "slug": "receta-ahumador-28"
-  },
-  "smoker_receta_29": {
-    "nombre": "Receta de Ahumador (29)",
-    "slug": "receta-ahumador-29"
-  },
-  "smoker_receta_3": {
-    "nombre": "Receta de Ahumador (3)",
-    "slug": "receta-ahumador-3"
-  },
-  "smoker_receta_30": {
-    "nombre": "Receta de Ahumador (30)",
-    "slug": "receta-ahumador-30"
-  },
-  "smoker_receta_31": {
-    "nombre": "Receta de Ahumador (31)",
-    "slug": "receta-ahumador-31"
-  },
-  "smoker_receta_32": {
-    "nombre": "Receta de Ahumador (32)",
-    "slug": "receta-ahumador-32"
-  },
-  "smoker_receta_33": {
-    "nombre": "Receta de Ahumador (33)",
-    "slug": "receta-ahumador-33"
-  },
-  "smoker_receta_34": {
-    "nombre": "Receta de Ahumador (34)",
-    "slug": "receta-ahumador-34"
-  },
-  "smoker_receta_35": {
-    "nombre": "Receta de Ahumador (35)",
-    "slug": "receta-ahumador-35"
-  },
-  "smoker_receta_36": {
-    "nombre": "Receta de Ahumador (36)",
-    "slug": "receta-ahumador-36"
-  },
-  "smoker_receta_37": {
-    "nombre": "Receta de Ahumador (37)",
-    "slug": "receta-ahumador-37"
-  },
-  "smoker_receta_38": {
-    "nombre": "Receta de Ahumador (38)",
-    "slug": "receta-ahumador-38"
-  },
-  "smoker_receta_39": {
-    "nombre": "Receta de Ahumador (39)",
-    "slug": "receta-ahumador-39"
-  },
-  "smoker_receta_4": {
-    "nombre": "Receta de Ahumador (4)",
-    "slug": "receta-ahumador-4"
-  },
-  "smoker_receta_40": {
-    "nombre": "Receta de Ahumador (40)",
-    "slug": "receta-ahumador-40"
-  },
-  "smoker_receta_41": {
-    "nombre": "Receta de Ahumador (41)",
-    "slug": "receta-ahumador-41"
-  },
-  "smoker_receta_42": {
-    "nombre": "Receta de Ahumador (42)",
-    "slug": "receta-ahumador-42"
-  },
-  "smoker_receta_43": {
-    "nombre": "Receta de Ahumador (43)",
-    "slug": "receta-ahumador-43"
-  },
-  "smoker_receta_44": {
-    "nombre": "Receta de Ahumador (44)",
-    "slug": "receta-ahumador-44"
-  },
-  "smoker_receta_5": {
-    "nombre": "Receta de Ahumador (5)",
-    "slug": "receta-ahumador-5"
-  },
-  "smoker_receta_6": {
-    "nombre": "Receta de Ahumador (6)",
-    "slug": "receta-ahumador-6"
-  },
-  "smoker_receta_7": {
-    "nombre": "Receta de Ahumador (7)",
-    "slug": "receta-ahumador-7"
-  },
-  "smoker_receta_8": {
-    "nombre": "Receta de Ahumador (8)",
-    "slug": "receta-ahumador-8"
-  },
-  "smoker_receta_9": {
-    "nombre": "Receta de Ahumador (9)",
-    "slug": "receta-ahumador-9"
+  "smoker_receta": {
+    "nombre": "Receta de Ahumador",
+    "slug": "receta-ahumador"
   },
   "smooth_quartz_slab_receta": {
     "nombre": "Receta de Losa de cuarzo liso",
@@ -5061,69 +3355,17 @@
     "nombre": "Receta de Palo (1)",
     "slug": "receta-palo-1"
   },
-  "stick_receta_10": {
-    "nombre": "Receta de Palo (10)",
-    "slug": "receta-palo-10"
-  },
-  "stick_receta_11": {
-    "nombre": "Receta de Palo (11)",
-    "slug": "receta-palo-11"
-  },
-  "stick_receta_12": {
-    "nombre": "Receta de Palo (12)",
-    "slug": "receta-palo-12"
-  },
-  "stick_receta_13": {
-    "nombre": "Receta de Palo (13)",
-    "slug": "receta-palo-13"
-  },
   "stick_receta_2": {
     "nombre": "Receta de Palo (2)",
     "slug": "receta-palo-2"
-  },
-  "stick_receta_3": {
-    "nombre": "Receta de Palo (3)",
-    "slug": "receta-palo-3"
-  },
-  "stick_receta_4": {
-    "nombre": "Receta de Palo (4)",
-    "slug": "receta-palo-4"
-  },
-  "stick_receta_5": {
-    "nombre": "Receta de Palo (5)",
-    "slug": "receta-palo-5"
-  },
-  "stick_receta_6": {
-    "nombre": "Receta de Palo (6)",
-    "slug": "receta-palo-6"
-  },
-  "stick_receta_7": {
-    "nombre": "Receta de Palo (7)",
-    "slug": "receta-palo-7"
-  },
-  "stick_receta_8": {
-    "nombre": "Receta de Palo (8)",
-    "slug": "receta-palo-8"
-  },
-  "stick_receta_9": {
-    "nombre": "Receta de Palo (9)",
-    "slug": "receta-palo-9"
   },
   "sticky_piston_receta": {
     "nombre": "Receta de Pistón pegajoso",
     "slug": "receta-piston-pegajoso"
   },
-  "stone_axe_receta_1": {
-    "nombre": "Receta de Hacha de piedra (1)",
-    "slug": "receta-hacha-de-piedra-1"
-  },
-  "stone_axe_receta_2": {
-    "nombre": "Receta de Hacha de piedra (2)",
-    "slug": "receta-hacha-de-piedra-2"
-  },
-  "stone_axe_receta_3": {
-    "nombre": "Receta de Hacha de piedra (3)",
-    "slug": "receta-hacha-de-piedra-3"
+  "stone_axe_receta": {
+    "nombre": "Receta de Hacha de piedra",
+    "slug": "receta-hacha-de-piedra"
   },
   "stone_brick_slab_receta": {
     "nombre": "Receta de Losa de ladrillo de piedra",
@@ -5145,45 +3387,21 @@
     "nombre": "Receta de Botón de piedra",
     "slug": "receta-boton-de-piedra"
   },
-  "stone_hoe_receta_1": {
-    "nombre": "Receta de Azada de piedra (1)",
-    "slug": "receta-azada-de-piedra-1"
+  "stone_hoe_receta": {
+    "nombre": "Receta de Azada de piedra",
+    "slug": "receta-azada-de-piedra"
   },
-  "stone_hoe_receta_2": {
-    "nombre": "Receta de Azada de piedra (2)",
-    "slug": "receta-azada-de-piedra-2"
-  },
-  "stone_hoe_receta_3": {
-    "nombre": "Receta de Azada de piedra (3)",
-    "slug": "receta-azada-de-piedra-3"
-  },
-  "stone_pickaxe_receta_1": {
-    "nombre": "Receta de Pico de piedra (1)",
-    "slug": "receta-pico-de-piedra-1"
-  },
-  "stone_pickaxe_receta_2": {
-    "nombre": "Receta de Pico de piedra (2)",
-    "slug": "receta-pico-de-piedra-2"
-  },
-  "stone_pickaxe_receta_3": {
-    "nombre": "Receta de Pico de piedra (3)",
-    "slug": "receta-pico-de-piedra-3"
+  "stone_pickaxe_receta": {
+    "nombre": "Receta de Pico de piedra",
+    "slug": "receta-pico-de-piedra"
   },
   "stone_pressure_plate_receta": {
     "nombre": "Receta de Placa de presión de piedra",
     "slug": "receta-placa-de-presion-de-piedra"
   },
-  "stone_shovel_receta_1": {
-    "nombre": "Receta de Pala de piedra (1)",
-    "slug": "receta-pala-de-piedra-1"
-  },
-  "stone_shovel_receta_2": {
-    "nombre": "Receta de Pala de piedra (2)",
-    "slug": "receta-pala-de-piedra-2"
-  },
-  "stone_shovel_receta_3": {
-    "nombre": "Receta de Pala de piedra (3)",
-    "slug": "receta-pala-de-piedra-3"
+  "stone_shovel_receta": {
+    "nombre": "Receta de Pala de piedra",
+    "slug": "receta-pala-de-piedra"
   },
   "stone_slab_receta": {
     "nombre": "Receta de Losa de piedra",
@@ -5193,17 +3411,9 @@
     "nombre": "Receta de Escaleras de piedra",
     "slug": "receta-escaleras-de-piedra"
   },
-  "stone_sword_receta_1": {
-    "nombre": "Receta de Espada de piedra (1)",
-    "slug": "receta-espada-de-piedra-1"
-  },
-  "stone_sword_receta_2": {
-    "nombre": "Receta de Espada de piedra (2)",
-    "slug": "receta-espada-de-piedra-2"
-  },
-  "stone_sword_receta_3": {
-    "nombre": "Receta de Espada de piedra (3)",
-    "slug": "receta-espada-de-piedra-3"
+  "stone_sword_receta": {
+    "nombre": "Receta de Espada de piedra",
+    "slug": "receta-espada-de-piedra"
   },
   "stonecutter_receta": {
     "nombre": "Receta de Cortador de piedra",
@@ -5333,73 +3543,21 @@
     "nombre": "Receta de Vagoneta con dinamita",
     "slug": "receta-vagoneta-con-dinamita"
   },
-  "tnt_receta_1": {
-    "nombre": "Receta de Dinamita (1)",
-    "slug": "receta-dinamita-1"
+  "tnt_receta": {
+    "nombre": "Receta de Dinamita",
+    "slug": "receta-dinamita"
   },
-  "tnt_receta_2": {
-    "nombre": "Receta de Dinamita (2)",
-    "slug": "receta-dinamita-2"
-  },
-  "torch_receta_1": {
-    "nombre": "Receta de Antorcha (1)",
-    "slug": "receta-antorcha-1"
-  },
-  "torch_receta_2": {
-    "nombre": "Receta de Antorcha (2)",
-    "slug": "receta-antorcha-2"
+  "torch_receta": {
+    "nombre": "Receta de Antorcha",
+    "slug": "receta-antorcha"
   },
   "trapped_chest_receta": {
     "nombre": "Receta de Cofre trampa",
     "slug": "receta-cofre-trampa"
   },
-  "tripwire_hook_receta_1": {
-    "nombre": "Receta de Gancho de cable trampa (1)",
-    "slug": "receta-gancho-de-cable-trampa-1"
-  },
-  "tripwire_hook_receta_10": {
-    "nombre": "Receta de Gancho de cable trampa (10)",
-    "slug": "receta-gancho-de-cable-trampa-10"
-  },
-  "tripwire_hook_receta_11": {
-    "nombre": "Receta de Gancho de cable trampa (11)",
-    "slug": "receta-gancho-de-cable-trampa-11"
-  },
-  "tripwire_hook_receta_12": {
-    "nombre": "Receta de Gancho de cable trampa (12)",
-    "slug": "receta-gancho-de-cable-trampa-12"
-  },
-  "tripwire_hook_receta_2": {
-    "nombre": "Receta de Gancho de cable trampa (2)",
-    "slug": "receta-gancho-de-cable-trampa-2"
-  },
-  "tripwire_hook_receta_3": {
-    "nombre": "Receta de Gancho de cable trampa (3)",
-    "slug": "receta-gancho-de-cable-trampa-3"
-  },
-  "tripwire_hook_receta_4": {
-    "nombre": "Receta de Gancho de cable trampa (4)",
-    "slug": "receta-gancho-de-cable-trampa-4"
-  },
-  "tripwire_hook_receta_5": {
-    "nombre": "Receta de Gancho de cable trampa (5)",
-    "slug": "receta-gancho-de-cable-trampa-5"
-  },
-  "tripwire_hook_receta_6": {
-    "nombre": "Receta de Gancho de cable trampa (6)",
-    "slug": "receta-gancho-de-cable-trampa-6"
-  },
-  "tripwire_hook_receta_7": {
-    "nombre": "Receta de Gancho de cable trampa (7)",
-    "slug": "receta-gancho-de-cable-trampa-7"
-  },
-  "tripwire_hook_receta_8": {
-    "nombre": "Receta de Gancho de cable trampa (8)",
-    "slug": "receta-gancho-de-cable-trampa-8"
-  },
-  "tripwire_hook_receta_9": {
-    "nombre": "Receta de Gancho de cable trampa (9)",
-    "slug": "receta-gancho-de-cable-trampa-9"
+  "tripwire_hook_receta": {
+    "nombre": "Receta de Gancho de cable trampa",
+    "slug": "receta-gancho-de-cable-trampa"
   },
   "tuff_brick_slab_receta": {
     "nombre": "Receta de Losa de ladrillo de toba",
@@ -5773,53 +3931,9 @@
     "nombre": "Receta de Cama blanca (1)",
     "slug": "receta-cama-blanca-1"
   },
-  "white_bed_receta_10": {
-    "nombre": "Receta de Cama blanca (10)",
-    "slug": "receta-cama-blanca-10"
-  },
-  "white_bed_receta_11": {
-    "nombre": "Receta de Cama blanca (11)",
-    "slug": "receta-cama-blanca-11"
-  },
-  "white_bed_receta_12": {
-    "nombre": "Receta de Cama blanca (12)",
-    "slug": "receta-cama-blanca-12"
-  },
-  "white_bed_receta_13": {
-    "nombre": "Receta de Cama blanca (13)",
-    "slug": "receta-cama-blanca-13"
-  },
   "white_bed_receta_2": {
     "nombre": "Receta de Cama blanca (2)",
     "slug": "receta-cama-blanca-2"
-  },
-  "white_bed_receta_3": {
-    "nombre": "Receta de Cama blanca (3)",
-    "slug": "receta-cama-blanca-3"
-  },
-  "white_bed_receta_4": {
-    "nombre": "Receta de Cama blanca (4)",
-    "slug": "receta-cama-blanca-4"
-  },
-  "white_bed_receta_5": {
-    "nombre": "Receta de Cama blanca (5)",
-    "slug": "receta-cama-blanca-5"
-  },
-  "white_bed_receta_6": {
-    "nombre": "Receta de Cama blanca (6)",
-    "slug": "receta-cama-blanca-6"
-  },
-  "white_bed_receta_7": {
-    "nombre": "Receta de Cama blanca (7)",
-    "slug": "receta-cama-blanca-7"
-  },
-  "white_bed_receta_8": {
-    "nombre": "Receta de Cama blanca (8)",
-    "slug": "receta-cama-blanca-8"
-  },
-  "white_bed_receta_9": {
-    "nombre": "Receta de Cama blanca (9)",
-    "slug": "receta-cama-blanca-9"
   },
   "white_candle_receta": {
     "nombre": "Receta de Vela blanca",
@@ -5837,13 +3951,9 @@
     "nombre": "Receta de Hormigón en polvo blanco",
     "slug": "receta-hormigon-en-polvo-blanco"
   },
-  "white_dye_receta_1": {
-    "nombre": "Receta de Tinte blanco (1)",
-    "slug": "receta-tinte-blanco-1"
-  },
-  "white_dye_receta_2": {
-    "nombre": "Receta de Tinte blanco (2)",
-    "slug": "receta-tinte-blanco-2"
+  "white_dye_receta": {
+    "nombre": "Receta de Tinte blanco",
+    "slug": "receta-tinte-blanco"
   },
   "white_stained_glass_pane_receta_1": {
     "nombre": "Receta de Panel de vidriera blanco (1)",
@@ -5881,245 +3991,25 @@
     "nombre": "Receta de Armadura para lobo",
     "slug": "receta-armadura-para-lobo"
   },
-  "wooden_axe_receta_1": {
-    "nombre": "Receta de Hacha de madera (1)",
-    "slug": "receta-hacha-de-madera-1"
+  "wooden_axe_receta": {
+    "nombre": "Receta de Hacha de madera",
+    "slug": "receta-hacha-de-madera"
   },
-  "wooden_axe_receta_10": {
-    "nombre": "Receta de Hacha de madera (10)",
-    "slug": "receta-hacha-de-madera-10"
+  "wooden_hoe_receta": {
+    "nombre": "Receta de Azada de madera",
+    "slug": "receta-azada-de-madera"
   },
-  "wooden_axe_receta_11": {
-    "nombre": "Receta de Hacha de madera (11)",
-    "slug": "receta-hacha-de-madera-11"
+  "wooden_pickaxe_receta": {
+    "nombre": "Receta de Pico de madera",
+    "slug": "receta-pico-de-madera"
   },
-  "wooden_axe_receta_12": {
-    "nombre": "Receta de Hacha de madera (12)",
-    "slug": "receta-hacha-de-madera-12"
+  "wooden_shovel_receta": {
+    "nombre": "Receta de Pala de madera",
+    "slug": "receta-pala-de-madera"
   },
-  "wooden_axe_receta_2": {
-    "nombre": "Receta de Hacha de madera (2)",
-    "slug": "receta-hacha-de-madera-2"
-  },
-  "wooden_axe_receta_3": {
-    "nombre": "Receta de Hacha de madera (3)",
-    "slug": "receta-hacha-de-madera-3"
-  },
-  "wooden_axe_receta_4": {
-    "nombre": "Receta de Hacha de madera (4)",
-    "slug": "receta-hacha-de-madera-4"
-  },
-  "wooden_axe_receta_5": {
-    "nombre": "Receta de Hacha de madera (5)",
-    "slug": "receta-hacha-de-madera-5"
-  },
-  "wooden_axe_receta_6": {
-    "nombre": "Receta de Hacha de madera (6)",
-    "slug": "receta-hacha-de-madera-6"
-  },
-  "wooden_axe_receta_7": {
-    "nombre": "Receta de Hacha de madera (7)",
-    "slug": "receta-hacha-de-madera-7"
-  },
-  "wooden_axe_receta_8": {
-    "nombre": "Receta de Hacha de madera (8)",
-    "slug": "receta-hacha-de-madera-8"
-  },
-  "wooden_axe_receta_9": {
-    "nombre": "Receta de Hacha de madera (9)",
-    "slug": "receta-hacha-de-madera-9"
-  },
-  "wooden_hoe_receta_1": {
-    "nombre": "Receta de Azada de madera (1)",
-    "slug": "receta-azada-de-madera-1"
-  },
-  "wooden_hoe_receta_10": {
-    "nombre": "Receta de Azada de madera (10)",
-    "slug": "receta-azada-de-madera-10"
-  },
-  "wooden_hoe_receta_11": {
-    "nombre": "Receta de Azada de madera (11)",
-    "slug": "receta-azada-de-madera-11"
-  },
-  "wooden_hoe_receta_12": {
-    "nombre": "Receta de Azada de madera (12)",
-    "slug": "receta-azada-de-madera-12"
-  },
-  "wooden_hoe_receta_2": {
-    "nombre": "Receta de Azada de madera (2)",
-    "slug": "receta-azada-de-madera-2"
-  },
-  "wooden_hoe_receta_3": {
-    "nombre": "Receta de Azada de madera (3)",
-    "slug": "receta-azada-de-madera-3"
-  },
-  "wooden_hoe_receta_4": {
-    "nombre": "Receta de Azada de madera (4)",
-    "slug": "receta-azada-de-madera-4"
-  },
-  "wooden_hoe_receta_5": {
-    "nombre": "Receta de Azada de madera (5)",
-    "slug": "receta-azada-de-madera-5"
-  },
-  "wooden_hoe_receta_6": {
-    "nombre": "Receta de Azada de madera (6)",
-    "slug": "receta-azada-de-madera-6"
-  },
-  "wooden_hoe_receta_7": {
-    "nombre": "Receta de Azada de madera (7)",
-    "slug": "receta-azada-de-madera-7"
-  },
-  "wooden_hoe_receta_8": {
-    "nombre": "Receta de Azada de madera (8)",
-    "slug": "receta-azada-de-madera-8"
-  },
-  "wooden_hoe_receta_9": {
-    "nombre": "Receta de Azada de madera (9)",
-    "slug": "receta-azada-de-madera-9"
-  },
-  "wooden_pickaxe_receta_1": {
-    "nombre": "Receta de Pico de madera (1)",
-    "slug": "receta-pico-de-madera-1"
-  },
-  "wooden_pickaxe_receta_10": {
-    "nombre": "Receta de Pico de madera (10)",
-    "slug": "receta-pico-de-madera-10"
-  },
-  "wooden_pickaxe_receta_11": {
-    "nombre": "Receta de Pico de madera (11)",
-    "slug": "receta-pico-de-madera-11"
-  },
-  "wooden_pickaxe_receta_12": {
-    "nombre": "Receta de Pico de madera (12)",
-    "slug": "receta-pico-de-madera-12"
-  },
-  "wooden_pickaxe_receta_2": {
-    "nombre": "Receta de Pico de madera (2)",
-    "slug": "receta-pico-de-madera-2"
-  },
-  "wooden_pickaxe_receta_3": {
-    "nombre": "Receta de Pico de madera (3)",
-    "slug": "receta-pico-de-madera-3"
-  },
-  "wooden_pickaxe_receta_4": {
-    "nombre": "Receta de Pico de madera (4)",
-    "slug": "receta-pico-de-madera-4"
-  },
-  "wooden_pickaxe_receta_5": {
-    "nombre": "Receta de Pico de madera (5)",
-    "slug": "receta-pico-de-madera-5"
-  },
-  "wooden_pickaxe_receta_6": {
-    "nombre": "Receta de Pico de madera (6)",
-    "slug": "receta-pico-de-madera-6"
-  },
-  "wooden_pickaxe_receta_7": {
-    "nombre": "Receta de Pico de madera (7)",
-    "slug": "receta-pico-de-madera-7"
-  },
-  "wooden_pickaxe_receta_8": {
-    "nombre": "Receta de Pico de madera (8)",
-    "slug": "receta-pico-de-madera-8"
-  },
-  "wooden_pickaxe_receta_9": {
-    "nombre": "Receta de Pico de madera (9)",
-    "slug": "receta-pico-de-madera-9"
-  },
-  "wooden_shovel_receta_1": {
-    "nombre": "Receta de Pala de madera (1)",
-    "slug": "receta-pala-de-madera-1"
-  },
-  "wooden_shovel_receta_10": {
-    "nombre": "Receta de Pala de madera (10)",
-    "slug": "receta-pala-de-madera-10"
-  },
-  "wooden_shovel_receta_11": {
-    "nombre": "Receta de Pala de madera (11)",
-    "slug": "receta-pala-de-madera-11"
-  },
-  "wooden_shovel_receta_12": {
-    "nombre": "Receta de Pala de madera (12)",
-    "slug": "receta-pala-de-madera-12"
-  },
-  "wooden_shovel_receta_2": {
-    "nombre": "Receta de Pala de madera (2)",
-    "slug": "receta-pala-de-madera-2"
-  },
-  "wooden_shovel_receta_3": {
-    "nombre": "Receta de Pala de madera (3)",
-    "slug": "receta-pala-de-madera-3"
-  },
-  "wooden_shovel_receta_4": {
-    "nombre": "Receta de Pala de madera (4)",
-    "slug": "receta-pala-de-madera-4"
-  },
-  "wooden_shovel_receta_5": {
-    "nombre": "Receta de Pala de madera (5)",
-    "slug": "receta-pala-de-madera-5"
-  },
-  "wooden_shovel_receta_6": {
-    "nombre": "Receta de Pala de madera (6)",
-    "slug": "receta-pala-de-madera-6"
-  },
-  "wooden_shovel_receta_7": {
-    "nombre": "Receta de Pala de madera (7)",
-    "slug": "receta-pala-de-madera-7"
-  },
-  "wooden_shovel_receta_8": {
-    "nombre": "Receta de Pala de madera (8)",
-    "slug": "receta-pala-de-madera-8"
-  },
-  "wooden_shovel_receta_9": {
-    "nombre": "Receta de Pala de madera (9)",
-    "slug": "receta-pala-de-madera-9"
-  },
-  "wooden_sword_receta_1": {
-    "nombre": "Receta de Espada de madera (1)",
-    "slug": "receta-espada-de-madera-1"
-  },
-  "wooden_sword_receta_10": {
-    "nombre": "Receta de Espada de madera (10)",
-    "slug": "receta-espada-de-madera-10"
-  },
-  "wooden_sword_receta_11": {
-    "nombre": "Receta de Espada de madera (11)",
-    "slug": "receta-espada-de-madera-11"
-  },
-  "wooden_sword_receta_12": {
-    "nombre": "Receta de Espada de madera (12)",
-    "slug": "receta-espada-de-madera-12"
-  },
-  "wooden_sword_receta_2": {
-    "nombre": "Receta de Espada de madera (2)",
-    "slug": "receta-espada-de-madera-2"
-  },
-  "wooden_sword_receta_3": {
-    "nombre": "Receta de Espada de madera (3)",
-    "slug": "receta-espada-de-madera-3"
-  },
-  "wooden_sword_receta_4": {
-    "nombre": "Receta de Espada de madera (4)",
-    "slug": "receta-espada-de-madera-4"
-  },
-  "wooden_sword_receta_5": {
-    "nombre": "Receta de Espada de madera (5)",
-    "slug": "receta-espada-de-madera-5"
-  },
-  "wooden_sword_receta_6": {
-    "nombre": "Receta de Espada de madera (6)",
-    "slug": "receta-espada-de-madera-6"
-  },
-  "wooden_sword_receta_7": {
-    "nombre": "Receta de Espada de madera (7)",
-    "slug": "receta-espada-de-madera-7"
-  },
-  "wooden_sword_receta_8": {
-    "nombre": "Receta de Espada de madera (8)",
-    "slug": "receta-espada-de-madera-8"
-  },
-  "wooden_sword_receta_9": {
-    "nombre": "Receta de Espada de madera (9)",
-    "slug": "receta-espada-de-madera-9"
+  "wooden_sword_receta": {
+    "nombre": "Receta de Espada de madera",
+    "slug": "receta-espada-de-madera"
   },
   "writable_book_receta": {
     "nombre": "Receta de Libro y pluma",
@@ -6133,53 +4023,9 @@
     "nombre": "Receta de Cama amarilla (1)",
     "slug": "receta-cama-amarilla-1"
   },
-  "yellow_bed_receta_10": {
-    "nombre": "Receta de Cama amarilla (10)",
-    "slug": "receta-cama-amarilla-10"
-  },
-  "yellow_bed_receta_11": {
-    "nombre": "Receta de Cama amarilla (11)",
-    "slug": "receta-cama-amarilla-11"
-  },
-  "yellow_bed_receta_12": {
-    "nombre": "Receta de Cama amarilla (12)",
-    "slug": "receta-cama-amarilla-12"
-  },
-  "yellow_bed_receta_13": {
-    "nombre": "Receta de Cama amarilla (13)",
-    "slug": "receta-cama-amarilla-13"
-  },
   "yellow_bed_receta_2": {
     "nombre": "Receta de Cama amarilla (2)",
     "slug": "receta-cama-amarilla-2"
-  },
-  "yellow_bed_receta_3": {
-    "nombre": "Receta de Cama amarilla (3)",
-    "slug": "receta-cama-amarilla-3"
-  },
-  "yellow_bed_receta_4": {
-    "nombre": "Receta de Cama amarilla (4)",
-    "slug": "receta-cama-amarilla-4"
-  },
-  "yellow_bed_receta_5": {
-    "nombre": "Receta de Cama amarilla (5)",
-    "slug": "receta-cama-amarilla-5"
-  },
-  "yellow_bed_receta_6": {
-    "nombre": "Receta de Cama amarilla (6)",
-    "slug": "receta-cama-amarilla-6"
-  },
-  "yellow_bed_receta_7": {
-    "nombre": "Receta de Cama amarilla (7)",
-    "slug": "receta-cama-amarilla-7"
-  },
-  "yellow_bed_receta_8": {
-    "nombre": "Receta de Cama amarilla (8)",
-    "slug": "receta-cama-amarilla-8"
-  },
-  "yellow_bed_receta_9": {
-    "nombre": "Receta de Cama amarilla (9)",
-    "slug": "receta-cama-amarilla-9"
   },
   "yellow_candle_receta": {
     "nombre": "Receta de Vela amarilla",

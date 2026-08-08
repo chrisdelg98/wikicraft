@@ -15,8 +15,12 @@
     "AAA"
   ],
   "clave": {
-    "A": "terracotta",
-    "B": "brown_dye"
+    "A": [
+      "terracotta"
+    ],
+    "B": [
+      "brown_dye"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

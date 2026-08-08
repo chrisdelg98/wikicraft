@@ -15,7 +15,9 @@
     "A A"
   ],
   "clave": {
-    "A": "leather"
+    "A": [
+      "leather"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

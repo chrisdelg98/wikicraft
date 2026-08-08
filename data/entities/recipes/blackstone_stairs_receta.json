@@ -15,7 +15,9 @@
     "AAA"
   ],
   "clave": {
-    "A": "blackstone"
+    "A": [
+      "blackstone"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

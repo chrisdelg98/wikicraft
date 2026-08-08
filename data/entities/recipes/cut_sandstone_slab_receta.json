@@ -13,7 +13,9 @@
     "AAA"
   ],
   "clave": {
-    "A": "cut_sandstone"
+    "A": [
+      "cut_sandstone"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

@@ -15,7 +15,9 @@
     "AAA"
   ],
   "clave": {
-    "A": "emerald"
+    "A": [
+      "emerald"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

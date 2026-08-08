@@ -14,8 +14,12 @@
     "B"
   ],
   "clave": {
-    "A": "carved_pumpkin",
-    "B": "torch"
+    "A": [
+      "carved_pumpkin"
+    ],
+    "B": [
+      "torch"
+    ]
   },
   "estacion": "inventario"
 }

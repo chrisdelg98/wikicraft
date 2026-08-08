@@ -14,7 +14,9 @@
     " A"
   ],
   "clave": {
-    "A": "glass"
+    "A": [
+      "glass"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

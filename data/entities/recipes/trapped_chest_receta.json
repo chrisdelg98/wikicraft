@@ -11,11 +11,15 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "chest",
+      "opciones": [
+        "chest"
+      ],
       "cantidad": 1
     },
     {
-      "item": "tripwire_hook",
+      "opciones": [
+        "tripwire_hook"
+      ],
       "cantidad": 1
     }
   ],

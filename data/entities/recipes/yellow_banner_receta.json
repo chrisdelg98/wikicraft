@@ -15,8 +15,12 @@
     " B"
   ],
   "clave": {
-    "A": "yellow_wool",
-    "B": "stick"
+    "A": [
+      "yellow_wool"
+    ],
+    "B": [
+      "stick"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

@@ -15,7 +15,9 @@
     "AAA"
   ],
   "clave": {
-    "A": "netherite_ingot"
+    "A": [
+      "netherite_ingot"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

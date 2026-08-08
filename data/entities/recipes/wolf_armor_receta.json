@@ -15,7 +15,9 @@
     "A A"
   ],
   "clave": {
-    "A": "armadillo_scute"
+    "A": [
+      "armadillo_scute"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

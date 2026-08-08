@@ -15,9 +15,15 @@
     "CCC"
   ],
   "clave": {
-    "A": "glass",
-    "B": "nether_star",
-    "C": "obsidian"
+    "A": [
+      "glass"
+    ],
+    "B": [
+      "nether_star"
+    ],
+    "C": [
+      "obsidian"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

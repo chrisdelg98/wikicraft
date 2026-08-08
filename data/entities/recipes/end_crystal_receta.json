@@ -15,9 +15,15 @@
     "ACA"
   ],
   "clave": {
-    "A": "glass",
-    "B": "ender_eye",
-    "C": "ghast_tear"
+    "A": [
+      "glass"
+    ],
+    "B": [
+      "ender_eye"
+    ],
+    "C": [
+      "ghast_tear"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

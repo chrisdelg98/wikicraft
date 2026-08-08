@@ -15,7 +15,9 @@
     "AAA"
   ],
   "clave": {
-    "A": "raw_gold"
+    "A": [
+      "raw_gold"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

@@ -14,7 +14,9 @@
     "AA"
   ],
   "clave": {
-    "A": "copper_block"
+    "A": [
+      "copper_block"
+    ]
   },
   "estacion": "inventario"
 }

@@ -14,7 +14,9 @@
     "AAA"
   ],
   "clave": {
-    "A": "cobbled_deepslate"
+    "A": [
+      "cobbled_deepslate"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

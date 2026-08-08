@@ -15,7 +15,9 @@
     "AAA"
   ],
   "clave": {
-    "A": "dried_kelp"
+    "A": [
+      "dried_kelp"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

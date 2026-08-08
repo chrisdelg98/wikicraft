@@ -11,23 +11,33 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "baked_potato",
+      "opciones": [
+        "baked_potato"
+      ],
       "cantidad": 1
     },
     {
-      "item": "cooked_rabbit",
+      "opciones": [
+        "bowl"
+      ],
       "cantidad": 1
     },
     {
-      "item": "bowl",
+      "opciones": [
+        "carrot"
+      ],
       "cantidad": 1
     },
     {
-      "item": "carrot",
+      "opciones": [
+        "cooked_rabbit"
+      ],
       "cantidad": 1
     },
     {
-      "item": "red_mushroom",
+      "opciones": [
+        "red_mushroom"
+      ],
       "cantidad": 1
     }
   ],

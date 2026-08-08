@@ -15,8 +15,12 @@
     " A"
   ],
   "clave": {
-    "A": "amethyst_shard",
-    "B": "glass"
+    "A": [
+      "amethyst_shard"
+    ],
+    "B": [
+      "glass"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

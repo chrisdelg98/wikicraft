@@ -14,7 +14,9 @@
     "AA"
   ],
   "clave": {
-    "A": "oak_log"
+    "A": [
+      "oak_log"
+    ]
   },
   "estacion": "inventario"
 }

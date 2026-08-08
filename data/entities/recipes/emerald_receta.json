@@ -11,7 +11,9 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "emerald_block",
+      "opciones": [
+        "emerald_block"
+      ],
       "cantidad": 1
     }
   ],

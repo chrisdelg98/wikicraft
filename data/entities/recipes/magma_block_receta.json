@@ -14,7 +14,9 @@
     "AA"
   ],
   "clave": {
-    "A": "magma_cream"
+    "A": [
+      "magma_cream"
+    ]
   },
   "estacion": "inventario"
 }

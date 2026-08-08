@@ -15,9 +15,15 @@
     "AAA"
   ],
   "clave": {
-    "A": "diamond",
-    "B": "flow_armor_trim_smithing_template",
-    "C": "breeze_rod"
+    "A": [
+      "diamond"
+    ],
+    "B": [
+      "flow_armor_trim_smithing_template"
+    ],
+    "C": [
+      "breeze_rod"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

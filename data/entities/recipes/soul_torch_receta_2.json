@@ -15,9 +15,15 @@
     "C"
   ],
   "clave": {
-    "A": "coal",
-    "B": "stick",
-    "C": "soul_sand"
+    "A": [
+      "coal"
+    ],
+    "B": [
+      "stick"
+    ],
+    "C": [
+      "soul_sand"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

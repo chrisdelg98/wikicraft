@@ -14,7 +14,9 @@
     "AA"
   ],
   "clave": {
-    "A": "prismarine_shard"
+    "A": [
+      "prismarine_shard"
+    ]
   },
   "estacion": "inventario"
 }

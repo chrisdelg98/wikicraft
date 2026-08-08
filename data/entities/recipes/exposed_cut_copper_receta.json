@@ -14,7 +14,9 @@
     "AA"
   ],
   "clave": {
-    "A": "exposed_copper"
+    "A": [
+      "exposed_copper"
+    ]
   },
   "estacion": "inventario"
 }

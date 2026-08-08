@@ -1,0 +1,36 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "loom_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "loom",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AA",
+    "BB"
+  ],
+  "clave": {
+    "A": [
+      "string"
+    ],
+    "B": [
+      "acacia_planks",
+      "bamboo_planks",
+      "birch_planks",
+      "cherry_planks",
+      "crimson_planks",
+      "dark_oak_planks",
+      "jungle_planks",
+      "mangrove_planks",
+      "oak_planks",
+      "pale_oak_planks",
+      "spruce_planks",
+      "warped_planks"
+    ]
+  },
+  "estacion": "inventario"
+}

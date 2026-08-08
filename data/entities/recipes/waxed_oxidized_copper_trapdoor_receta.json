@@ -11,11 +11,15 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "oxidized_copper_trapdoor",
+      "opciones": [
+        "honeycomb"
+      ],
       "cantidad": 1
     },
     {
-      "item": "honeycomb",
+      "opciones": [
+        "oxidized_copper_trapdoor"
+      ],
       "cantidad": 1
     }
   ],

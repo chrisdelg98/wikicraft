@@ -15,8 +15,12 @@
     "ABA"
   ],
   "clave": {
-    "A": "birch_planks",
-    "B": "birch_slab"
+    "A": [
+      "birch_planks"
+    ],
+    "B": [
+      "birch_slab"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

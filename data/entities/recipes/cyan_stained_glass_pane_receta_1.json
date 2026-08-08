@@ -14,7 +14,9 @@
     "AAA"
   ],
   "clave": {
-    "A": "cyan_stained_glass"
+    "A": [
+      "cyan_stained_glass"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

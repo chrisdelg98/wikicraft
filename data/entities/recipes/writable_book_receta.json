@@ -11,15 +11,21 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "book",
+      "opciones": [
+        "book"
+      ],
       "cantidad": 1
     },
     {
-      "item": "ink_sac",
+      "opciones": [
+        "feather"
+      ],
       "cantidad": 1
     },
     {
-      "item": "feather",
+      "opciones": [
+        "ink_sac"
+      ],
       "cantidad": 1
     }
   ],

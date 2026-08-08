@@ -15,7 +15,9 @@
     "AAA"
   ],
   "clave": {
-    "A": "slime_ball"
+    "A": [
+      "slime_ball"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

@@ -15,8 +15,12 @@
     "AAA"
   ],
   "clave": {
-    "A": "warped_planks",
-    "B": "warped_slab"
+    "A": [
+      "warped_planks"
+    ],
+    "B": [
+      "warped_slab"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

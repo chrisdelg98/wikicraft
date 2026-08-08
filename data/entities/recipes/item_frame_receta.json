@@ -15,8 +15,12 @@
     "AAA"
   ],
   "clave": {
-    "A": "stick",
-    "B": "leather"
+    "A": [
+      "stick"
+    ],
+    "B": [
+      "leather"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

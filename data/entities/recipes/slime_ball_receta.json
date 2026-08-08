@@ -11,7 +11,9 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "slime_block",
+      "opciones": [
+        "slime_block"
+      ],
       "cantidad": 1
     }
   ],

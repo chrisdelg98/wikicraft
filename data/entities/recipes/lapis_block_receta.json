@@ -15,7 +15,9 @@
     "AAA"
   ],
   "clave": {
-    "A": "lapis_lazuli"
+    "A": [
+      "lapis_lazuli"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

@@ -1,0 +1,25 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "furnace_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "furnace",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "A A",
+    "AAA"
+  ],
+  "clave": {
+    "A": [
+      "blackstone",
+      "cobbled_deepslate",
+      "cobblestone"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

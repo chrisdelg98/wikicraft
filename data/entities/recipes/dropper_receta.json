@@ -15,8 +15,12 @@
     "ABA"
   ],
   "clave": {
-    "A": "cobblestone",
-    "B": "redstone"
+    "A": [
+      "cobblestone"
+    ],
+    "B": [
+      "redstone"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

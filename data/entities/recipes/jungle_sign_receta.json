@@ -15,8 +15,12 @@
     " B"
   ],
   "clave": {
-    "A": "jungle_planks",
-    "B": "stick"
+    "A": [
+      "jungle_planks"
+    ],
+    "B": [
+      "stick"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

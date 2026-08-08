@@ -15,8 +15,12 @@
     "AAA"
   ],
   "clave": {
-    "A": "echo_shard",
-    "B": "compass"
+    "A": [
+      "echo_shard"
+    ],
+    "B": [
+      "compass"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

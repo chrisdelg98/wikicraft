@@ -15,7 +15,9 @@
     "AAA"
   ],
   "clave": {
-    "A": "polished_diorite"
+    "A": [
+      "polished_diorite"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

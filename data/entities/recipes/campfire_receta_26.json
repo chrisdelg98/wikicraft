@@ -15,9 +15,15 @@
     "CCC"
   ],
   "clave": {
-    "A": "stick",
-    "B": "coal",
-    "C": "stripped_jungle_log"
+    "A": [
+      "stick"
+    ],
+    "B": [
+      "coal"
+    ],
+    "C": [
+      "stripped_jungle_log"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

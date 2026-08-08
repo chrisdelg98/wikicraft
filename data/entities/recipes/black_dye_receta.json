@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "black_dye_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "black_dye",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "ink_sac",
+        "wither_rose"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

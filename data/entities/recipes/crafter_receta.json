@@ -15,10 +15,18 @@
     "CDC"
   ],
   "clave": {
-    "A": "iron_ingot",
-    "B": "crafting_table",
-    "C": "redstone",
-    "D": "dropper"
+    "A": [
+      "iron_ingot"
+    ],
+    "B": [
+      "crafting_table"
+    ],
+    "C": [
+      "redstone"
+    ],
+    "D": [
+      "dropper"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

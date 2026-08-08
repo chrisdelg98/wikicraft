@@ -11,16 +11,22 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "white_dye",
+      "opciones": [
+        "gravel"
+      ],
+      "cantidad": 4
+    },
+    {
+      "opciones": [
+        "sand"
+      ],
+      "cantidad": 4
+    },
+    {
+      "opciones": [
+        "white_dye"
+      ],
       "cantidad": 1
-    },
-    {
-      "item": "sand",
-      "cantidad": 4
-    },
-    {
-      "item": "gravel",
-      "cantidad": 4
     }
   ],
   "estacion": "mesa_de_trabajo"

@@ -14,7 +14,9 @@
     "A"
   ],
   "clave": {
-    "A": "cobbled_deepslate_slab"
+    "A": [
+      "cobbled_deepslate_slab"
+    ]
   },
   "estacion": "inventario"
 }

@@ -15,9 +15,15 @@
     "AAA"
   ],
   "clave": {
-    "A": "diamond",
-    "B": "silence_armor_trim_smithing_template",
-    "C": "cobbled_deepslate"
+    "A": [
+      "diamond"
+    ],
+    "B": [
+      "silence_armor_trim_smithing_template"
+    ],
+    "C": [
+      "cobbled_deepslate"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

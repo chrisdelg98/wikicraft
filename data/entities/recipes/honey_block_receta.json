@@ -14,7 +14,9 @@
     "AA"
   ],
   "clave": {
-    "A": "honey_bottle"
+    "A": [
+      "honey_bottle"
+    ]
   },
   "estacion": "inventario"
 }

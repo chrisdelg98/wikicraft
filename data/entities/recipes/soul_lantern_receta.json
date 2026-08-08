@@ -15,8 +15,12 @@
     "AAA"
   ],
   "clave": {
-    "A": "iron_nugget",
-    "B": "soul_torch"
+    "A": [
+      "iron_nugget"
+    ],
+    "B": [
+      "soul_torch"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

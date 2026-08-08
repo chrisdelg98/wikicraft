@@ -15,7 +15,9 @@
     "AAA"
   ],
   "clave": {
-    "A": "bone_meal"
+    "A": [
+      "bone_meal"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

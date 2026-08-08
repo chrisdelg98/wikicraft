@@ -14,8 +14,12 @@
     "B"
   ],
   "clave": {
-    "A": "slime_ball",
-    "B": "piston"
+    "A": [
+      "slime_ball"
+    ],
+    "B": [
+      "piston"
+    ]
   },
   "estacion": "inventario"
 }

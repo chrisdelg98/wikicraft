@@ -13,7 +13,9 @@
     "AA"
   ],
   "clave": {
-    "A": "oak_planks"
+    "A": [
+      "oak_planks"
+    ]
   },
   "estacion": "inventario"
 }

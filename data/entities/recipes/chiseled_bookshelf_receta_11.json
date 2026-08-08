@@ -15,8 +15,12 @@
     "AAA"
   ],
   "clave": {
-    "A": "spruce_planks",
-    "B": "spruce_slab"
+    "A": [
+      "spruce_planks"
+    ],
+    "B": [
+      "spruce_slab"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

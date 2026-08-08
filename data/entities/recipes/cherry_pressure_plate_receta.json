@@ -13,7 +13,9 @@
     "AA"
   ],
   "clave": {
-    "A": "cherry_planks"
+    "A": [
+      "cherry_planks"
+    ]
   },
   "estacion": "inventario"
 }

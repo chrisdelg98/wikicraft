@@ -11,7 +11,9 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "cherry_log",
+      "opciones": [
+        "cherry_log"
+      ],
       "cantidad": 1
     }
   ],

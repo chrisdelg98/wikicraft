@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "brewing_stand_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "brewing_stand",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    " A",
+    "BBB"
+  ],
+  "clave": {
+    "A": [
+      "blaze_rod"
+    ],
+    "B": [
+      "blackstone",
+      "cobbled_deepslate",
+      "cobblestone"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

@@ -15,7 +15,9 @@
     "AAA"
   ],
   "clave": {
-    "A": "dark_prismarine"
+    "A": [
+      "dark_prismarine"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

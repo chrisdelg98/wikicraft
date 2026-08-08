@@ -15,8 +15,12 @@
     "AAA"
   ],
   "clave": {
-    "A": "glass",
-    "B": "lime_dye"
+    "A": [
+      "glass"
+    ],
+    "B": [
+      "lime_dye"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

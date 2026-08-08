@@ -13,7 +13,9 @@
     "AA"
   ],
   "clave": {
-    "A": "gold_ingot"
+    "A": [
+      "gold_ingot"
+    ]
   },
   "estacion": "inventario"
 }

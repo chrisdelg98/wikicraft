@@ -14,7 +14,9 @@
     "AA"
   ],
   "clave": {
-    "A": "stripped_dark_oak_log"
+    "A": [
+      "stripped_dark_oak_log"
+    ]
   },
   "estacion": "inventario"
 }

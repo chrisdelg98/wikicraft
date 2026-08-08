@@ -15,9 +15,15 @@
     "AAA"
   ],
   "clave": {
-    "A": "diamond",
-    "B": "eye_armor_trim_smithing_template",
-    "C": "end_stone"
+    "A": [
+      "diamond"
+    ],
+    "B": [
+      "eye_armor_trim_smithing_template"
+    ],
+    "C": [
+      "end_stone"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

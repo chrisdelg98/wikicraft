@@ -13,7 +13,9 @@
     "AAA"
   ],
   "clave": {
-    "A": "tuff"
+    "A": [
+      "tuff"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

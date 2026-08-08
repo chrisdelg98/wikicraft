@@ -11,7 +11,9 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "bamboo_block",
+      "opciones": [
+        "bamboo_block"
+      ],
       "cantidad": 1
     }
   ],

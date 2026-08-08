@@ -11,7 +11,9 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "raw_copper_block",
+      "opciones": [
+        "raw_copper_block"
+      ],
       "cantidad": 1
     }
   ],

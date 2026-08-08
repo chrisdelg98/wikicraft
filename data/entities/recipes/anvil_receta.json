@@ -15,8 +15,12 @@
     "BBB"
   ],
   "clave": {
-    "A": "iron_block",
-    "B": "iron_ingot"
+    "A": [
+      "iron_block"
+    ],
+    "B": [
+      "iron_ingot"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

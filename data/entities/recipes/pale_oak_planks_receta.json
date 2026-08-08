@@ -11,7 +11,9 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "pale_oak_log",
+      "opciones": [
+        "pale_oak_log"
+      ],
       "cantidad": 1
     }
   ],

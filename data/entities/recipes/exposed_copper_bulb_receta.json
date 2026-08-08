@@ -15,9 +15,15 @@
     " C"
   ],
   "clave": {
-    "A": "exposed_copper",
-    "B": "blaze_rod",
-    "C": "redstone"
+    "A": [
+      "exposed_copper"
+    ],
+    "B": [
+      "blaze_rod"
+    ],
+    "C": [
+      "redstone"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

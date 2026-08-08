@@ -14,8 +14,12 @@
     "ABA"
   ],
   "clave": {
-    "A": "stick",
-    "B": "oak_planks"
+    "A": [
+      "stick"
+    ],
+    "B": [
+      "oak_planks"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

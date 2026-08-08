@@ -13,7 +13,9 @@
     "AA"
   ],
   "clave": {
-    "A": "black_wool"
+    "A": [
+      "black_wool"
+    ]
   },
   "estacion": "inventario"
 }

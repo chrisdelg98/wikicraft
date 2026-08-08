@@ -14,7 +14,9 @@
     "AA"
   ],
   "clave": {
-    "A": "nether_brick"
+    "A": [
+      "nether_brick"
+    ]
   },
   "estacion": "inventario"
 }

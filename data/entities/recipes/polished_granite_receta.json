@@ -14,7 +14,9 @@
     "AA"
   ],
   "clave": {
-    "A": "granite"
+    "A": [
+      "granite"
+    ]
   },
   "estacion": "inventario"
 }

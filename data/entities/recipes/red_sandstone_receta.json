@@ -14,7 +14,9 @@
     "AA"
   ],
   "clave": {
-    "A": "red_sand"
+    "A": [
+      "red_sand"
+    ]
   },
   "estacion": "inventario"
 }

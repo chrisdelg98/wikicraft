@@ -14,7 +14,9 @@
     "A"
   ],
   "clave": {
-    "A": "quartz_slab"
+    "A": [
+      "quartz_slab"
+    ]
   },
   "estacion": "inventario"
 }

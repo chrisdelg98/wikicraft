@@ -14,7 +14,9 @@
     "AA"
   ],
   "clave": {
-    "A": "basalt"
+    "A": [
+      "basalt"
+    ]
   },
   "estacion": "inventario"
 }

@@ -14,7 +14,9 @@
     "AA"
   ],
   "clave": {
-    "A": "dark_oak_log"
+    "A": [
+      "dark_oak_log"
+    ]
   },
   "estacion": "inventario"
 }

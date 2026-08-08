@@ -11,11 +11,15 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "stone_bricks",
+      "opciones": [
+        "stone_bricks"
+      ],
       "cantidad": 1
     },
     {
-      "item": "vine",
+      "opciones": [
+        "vine"
+      ],
       "cantidad": 1
     }
   ],

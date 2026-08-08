@@ -15,9 +15,15 @@
     "CCC"
   ],
   "clave": {
-    "A": "iron_ingot",
-    "B": "furnace",
-    "C": "smooth_stone"
+    "A": [
+      "iron_ingot"
+    ],
+    "B": [
+      "furnace"
+    ],
+    "C": [
+      "smooth_stone"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

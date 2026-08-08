@@ -15,8 +15,12 @@
     "BBB"
   ],
   "clave": {
-    "A": "chain",
-    "B": "stripped_crimson_stem"
+    "A": [
+      "chain"
+    ],
+    "B": [
+      "stripped_crimson_stem"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

@@ -14,7 +14,9 @@
     "A"
   ],
   "clave": {
-    "A": "tuff_brick_slab"
+    "A": [
+      "tuff_brick_slab"
+    ]
   },
   "estacion": "inventario"
 }

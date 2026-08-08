@@ -13,7 +13,9 @@
     "AAA"
   ],
   "clave": {
-    "A": "polished_andesite"
+    "A": [
+      "polished_andesite"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

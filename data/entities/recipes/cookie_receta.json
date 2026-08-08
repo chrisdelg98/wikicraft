@@ -13,8 +13,12 @@
     "ABA"
   ],
   "clave": {
-    "A": "wheat",
-    "B": "cocoa_beans"
+    "A": [
+      "wheat"
+    ],
+    "B": [
+      "cocoa_beans"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

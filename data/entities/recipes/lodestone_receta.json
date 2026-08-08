@@ -15,8 +15,12 @@
     "AAA"
   ],
   "clave": {
-    "A": "chiseled_stone_bricks",
-    "B": "netherite_ingot"
+    "A": [
+      "chiseled_stone_bricks"
+    ],
+    "B": [
+      "netherite_ingot"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

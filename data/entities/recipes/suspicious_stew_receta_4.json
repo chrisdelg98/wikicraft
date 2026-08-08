@@ -11,19 +11,27 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "bowl",
+      "opciones": [
+        "bowl"
+      ],
       "cantidad": 1
     },
     {
-      "item": "brown_mushroom",
+      "opciones": [
+        "brown_mushroom"
+      ],
       "cantidad": 1
     },
     {
-      "item": "red_mushroom",
+      "opciones": [
+        "cornflower"
+      ],
       "cantidad": 1
     },
     {
-      "item": "cornflower",
+      "opciones": [
+        "red_mushroom"
+      ],
       "cantidad": 1
     }
   ],

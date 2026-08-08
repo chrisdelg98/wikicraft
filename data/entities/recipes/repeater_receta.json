@@ -14,9 +14,15 @@
     "CCC"
   ],
   "clave": {
-    "A": "redstone_torch",
-    "B": "redstone",
-    "C": "stone"
+    "A": [
+      "redstone_torch"
+    ],
+    "B": [
+      "redstone"
+    ],
+    "C": [
+      "stone"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

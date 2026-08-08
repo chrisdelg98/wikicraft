@@ -15,8 +15,12 @@
     "AAA"
   ],
   "clave": {
-    "A": "crying_obsidian",
-    "B": "glowstone"
+    "A": [
+      "crying_obsidian"
+    ],
+    "B": [
+      "glowstone"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

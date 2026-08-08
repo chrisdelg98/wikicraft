@@ -15,9 +15,15 @@
     "C"
   ],
   "clave": {
-    "A": "feather",
-    "B": "copper_ingot",
-    "C": "stick"
+    "A": [
+      "feather"
+    ],
+    "B": [
+      "copper_ingot"
+    ],
+    "C": [
+      "stick"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

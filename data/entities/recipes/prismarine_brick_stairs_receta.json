@@ -15,7 +15,9 @@
     "AAA"
   ],
   "clave": {
-    "A": "prismarine_bricks"
+    "A": [
+      "prismarine_bricks"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

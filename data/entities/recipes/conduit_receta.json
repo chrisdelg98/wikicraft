@@ -15,8 +15,12 @@
     "AAA"
   ],
   "clave": {
-    "A": "nautilus_shell",
-    "B": "heart_of_the_sea"
+    "A": [
+      "nautilus_shell"
+    ],
+    "B": [
+      "heart_of_the_sea"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

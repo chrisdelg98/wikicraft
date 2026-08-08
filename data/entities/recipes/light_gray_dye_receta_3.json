@@ -11,11 +11,15 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "gray_dye",
+      "opciones": [
+        "gray_dye"
+      ],
       "cantidad": 1
     },
     {
-      "item": "white_dye",
+      "opciones": [
+        "white_dye"
+      ],
       "cantidad": 1
     }
   ],

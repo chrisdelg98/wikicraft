@@ -11,12 +11,16 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "honey_block",
-      "cantidad": 1
+      "opciones": [
+        "glass_bottle"
+      ],
+      "cantidad": 4
     },
     {
-      "item": "glass_bottle",
-      "cantidad": 4
+      "opciones": [
+        "honey_block"
+      ],
+      "cantidad": 1
     }
   ],
   "estacion": "mesa_de_trabajo"

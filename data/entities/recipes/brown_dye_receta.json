@@ -11,7 +11,9 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "cocoa_beans",
+      "opciones": [
+        "cocoa_beans"
+      ],
       "cantidad": 1
     }
   ],

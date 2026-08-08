@@ -15,9 +15,15 @@
     "CCC"
   ],
   "clave": {
-    "A": "stick",
-    "B": "soul_sand",
-    "C": "stripped_warped_hyphae"
+    "A": [
+      "stick"
+    ],
+    "B": [
+      "soul_sand"
+    ],
+    "C": [
+      "stripped_warped_hyphae"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

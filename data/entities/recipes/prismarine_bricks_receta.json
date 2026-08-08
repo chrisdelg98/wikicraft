@@ -11,7 +11,9 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "prismarine_shard",
+      "opciones": [
+        "prismarine_shard"
+      ],
       "cantidad": 9
     }
   ],

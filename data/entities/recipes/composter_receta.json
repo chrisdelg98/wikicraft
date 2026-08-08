@@ -1,0 +1,34 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "composter_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "composter",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "A A",
+    "A A",
+    "AAA"
+  ],
+  "clave": {
+    "A": [
+      "acacia_slab",
+      "bamboo_slab",
+      "birch_slab",
+      "cherry_slab",
+      "crimson_slab",
+      "dark_oak_slab",
+      "jungle_slab",
+      "mangrove_slab",
+      "oak_slab",
+      "pale_oak_slab",
+      "spruce_slab",
+      "warped_slab"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

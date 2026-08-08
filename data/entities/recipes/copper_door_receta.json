@@ -15,7 +15,9 @@
     "AA"
   ],
   "clave": {
-    "A": "copper_ingot"
+    "A": [
+      "copper_ingot"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

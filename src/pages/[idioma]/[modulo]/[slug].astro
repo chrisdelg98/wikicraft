@@ -14,7 +14,8 @@ import {
   rutaDe,
   relacionesDe,
   facetasDe,
-  familiaDe
+  familiaDe,
+  grupoDe
 } from '../../../lib/datos.js'
 
 export function getStaticPaths() {
@@ -96,8 +97,12 @@ if (entidad.produccionPorHora) {
 
 // --- Receta ----------------------------------------------------------------
 
-// Se descartan las filas totalmente vacias que arrastra el formato original:
-// una fila de tres huecos en blanco solo confunde a quien mira la cuadricula.
+/**
+ * Cada casilla de la cuadricula guarda la LISTA de lo que admite, porque el
+ * juego acepta etiquetas: "cualquier tronco" son diecinueve alternativas para
+ * una sola casilla. Se descartan las filas totalmente vacias que arrastra el
+ * formato original.
+ */
 const filasReceta =
   entidad.tipo === 'receta' && entidad.patron
     ? entidad.patron
@@ -110,19 +115,23 @@ const filasReceta =
         .filter((fila) => fila.some(Boolean))
     : null
 
+/** Etiqueta de una casilla: el nombre si es uno solo, el grupo si son varios. */
+const etiquetaOpciones = (opciones) => {
+  if (!opciones?.length) return null
+  if (opciones.length === 1) return enlace(opciones[0]).nombre
+  const grupo = grupoDe(opciones)
+  return grupo
+    ? ui(idioma, `grupo.${grupo}`, { n: opciones.length })
+    : ui(idioma, 'grupo.cualquiera', { n: opciones.length })
+}
+
 const ingredientes =
   entidad.tipo === 'receta'
-    ? entidad.ingredientes ??
-      Object.values(entidad.clave ?? {}).reduce((acc, item) => {
-        const cuenta = (entidad.patron ?? [])
-          .join('')
-          .split('')
-          .filter((l) => entidad.clave?.[l] === item).length
-        const existente = acc.find((x) => x.item === item)
-        if (existente) existente.cantidad += cuenta
-        else acc.push({ item, cantidad: cuenta })
-        return acc
-      }, [])
+    ? (entidad.ingredientes ??
+      Object.entries(entidad.clave ?? {}).map(([letra, opciones]) => ({
+        opciones,
+        cantidad: (entidad.patron ?? []).join('').split('').filter((l) => l === letra).length
+      })))
     : null
 
 // --- Relaciones ------------------------------------------------------------
@@ -225,15 +234,15 @@ const consejos = [
         <h2 class="titulo-seccion">{ui(idioma, 'ficha.receta')}</h2>
         <div class="flex flex-wrap items-center gap-5">
           <div class="inline-grid gap-1 bloque bg-fondo p-2" style="grid-template-columns:repeat(3,1fr)">
-            {filasReceta.flat().map((itemId) => (
+            {filasReceta.flat().map((opciones) => (
               <span
                 class:list={[
                   'grid h-16 w-16 place-items-center p-1 text-center text-[10px] font-semibold leading-tight',
-                  itemId ? 'bloque bg-superficie-alta' : 'border-2 border-dashed border-borde'
+                  opciones ? 'bloque bg-superficie-alta' : 'border-2 border-dashed border-borde'
                 ]}
-                title={itemId ? enlace(itemId).nombre : undefined}
+                title={opciones?.length > 1 ? opciones.map((o) => enlace(o).nombre).join(', ') : undefined}
               >
-                {itemId ? enlace(itemId).nombre : ''}
+                {etiquetaOpciones(opciones) ?? ''}
               </span>
             ))}
           </div>
@@ -268,17 +277,48 @@ const consejos = [
               {ingredientes.map((ing) => (
                 <tr>
                   <td>
-                    <a href={enlace(ing.item).url}>{enlace(ing.item).nombre}</a>
+                    {ing.opciones.length === 1 ? (
+                      <a href={enlace(ing.opciones[0]).url}>{enlace(ing.opciones[0]).nombre}</a>
+                    ) : (
+                      <span class="font-semibold">{etiquetaOpciones(ing.opciones)}</span>
+                    )}
                   </td>
                   <td>{ing.cantidad}</td>
                   <td>
-                    <Etapa idioma={idioma} etapa={grafo.get(ing.item).entidad.etapa} />
+                    <Etapa idioma={idioma} etapa={grafo.get(ing.opciones[0]).entidad.etapa} />
                   </td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
+
+        {/* Las alternativas van plegadas: quien mira una receta quiere saber
+            que necesita, no leer diecinueve maderas antes de llegar a ello. */}
+        {ingredientes
+          .filter((ing) => ing.opciones.length > 1)
+          .map((ing) => (
+            <details class="mt-3 bloque p-3">
+              <summary class="cursor-pointer font-semibold">
+                {ui(idioma, 'receta.verAlternativas', {
+                  grupo: etiquetaOpciones(ing.opciones),
+                  n: ing.opciones.length
+                })}
+              </summary>
+              <ul class="mt-3 flex flex-wrap gap-2">
+                {ing.opciones.map((o) => (
+                  <li>
+                    <a
+                      href={enlace(o).url}
+                      class="block bloque bloque-pulsable px-2.5 py-1 text-sm font-semibold"
+                    >
+                      {enlace(o).nombre}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          ))}
       </section>
     )
   }

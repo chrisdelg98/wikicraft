@@ -11,7 +11,9 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "pitcher_plant",
+      "opciones": [
+        "pitcher_plant"
+      ],
       "cantidad": 1
     }
   ],

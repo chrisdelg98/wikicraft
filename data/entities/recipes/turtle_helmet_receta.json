@@ -14,7 +14,9 @@
     "A A"
   ],
   "clave": {
-    "A": "turtle_scute"
+    "A": [
+      "turtle_scute"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

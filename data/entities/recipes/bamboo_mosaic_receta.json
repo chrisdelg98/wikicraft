@@ -14,7 +14,9 @@
     "A"
   ],
   "clave": {
-    "A": "bamboo_slab"
+    "A": [
+      "bamboo_slab"
+    ]
   },
   "estacion": "inventario"
 }

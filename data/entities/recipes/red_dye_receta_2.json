@@ -6,12 +6,14 @@
   "relevancia": "baja",
   "resultado": {
     "item": "red_dye",
-    "cantidad": 1
+    "cantidad": 2
   },
   "conForma": false,
   "ingredientes": [
     {
-      "item": "poppy",
+      "opciones": [
+        "rose_bush"
+      ],
       "cantidad": 1
     }
   ],

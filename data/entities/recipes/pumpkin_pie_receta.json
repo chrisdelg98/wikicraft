@@ -11,15 +11,21 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "pumpkin",
+      "opciones": [
+        "egg"
+      ],
       "cantidad": 1
     },
     {
-      "item": "sugar",
+      "opciones": [
+        "pumpkin"
+      ],
       "cantidad": 1
     },
     {
-      "item": "egg",
+      "opciones": [
+        "sugar"
+      ],
       "cantidad": 1
     }
   ],

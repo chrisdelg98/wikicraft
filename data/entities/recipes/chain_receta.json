@@ -15,8 +15,12 @@
     "A"
   ],
   "clave": {
-    "A": "iron_nugget",
-    "B": "iron_ingot"
+    "A": [
+      "iron_nugget"
+    ],
+    "B": [
+      "iron_ingot"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

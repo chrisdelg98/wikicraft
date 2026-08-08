@@ -15,9 +15,15 @@
     "ACA"
   ],
   "clave": {
-    "A": "gold_ingot",
-    "B": "stick",
-    "C": "redstone"
+    "A": [
+      "gold_ingot"
+    ],
+    "B": [
+      "stick"
+    ],
+    "C": [
+      "redstone"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

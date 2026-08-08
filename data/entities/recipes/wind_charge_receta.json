@@ -11,7 +11,9 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "breeze_rod",
+      "opciones": [
+        "breeze_rod"
+      ],
       "cantidad": 1
     }
   ],

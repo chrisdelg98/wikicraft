@@ -11,7 +11,9 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "redstone_block",
+      "opciones": [
+        "redstone_block"
+      ],
       "cantidad": 1
     }
   ],

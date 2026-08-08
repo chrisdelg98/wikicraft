@@ -11,11 +11,15 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "ender_pearl",
+      "opciones": [
+        "blaze_powder"
+      ],
       "cantidad": 1
     },
     {
-      "item": "blaze_powder",
+      "opciones": [
+        "ender_pearl"
+      ],
       "cantidad": 1
     }
   ],

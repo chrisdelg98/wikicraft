@@ -15,7 +15,9 @@
     "AAA"
   ],
   "clave": {
-    "A": "exposed_cut_copper"
+    "A": [
+      "exposed_cut_copper"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

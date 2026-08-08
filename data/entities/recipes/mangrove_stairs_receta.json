@@ -15,7 +15,9 @@
     "AAA"
   ],
   "clave": {
-    "A": "mangrove_planks"
+    "A": [
+      "mangrove_planks"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

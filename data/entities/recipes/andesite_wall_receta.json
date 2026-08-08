@@ -14,7 +14,9 @@
     "AAA"
   ],
   "clave": {
-    "A": "andesite"
+    "A": [
+      "andesite"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

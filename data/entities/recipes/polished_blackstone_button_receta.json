@@ -11,7 +11,9 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "polished_blackstone",
+      "opciones": [
+        "polished_blackstone"
+      ],
       "cantidad": 1
     }
   ],

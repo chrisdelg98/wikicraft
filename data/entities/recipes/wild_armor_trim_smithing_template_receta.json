@@ -15,9 +15,15 @@
     "AAA"
   ],
   "clave": {
-    "A": "diamond",
-    "B": "wild_armor_trim_smithing_template",
-    "C": "mossy_cobblestone"
+    "A": [
+      "diamond"
+    ],
+    "B": [
+      "wild_armor_trim_smithing_template"
+    ],
+    "C": [
+      "mossy_cobblestone"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

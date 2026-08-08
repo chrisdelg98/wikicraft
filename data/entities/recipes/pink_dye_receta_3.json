@@ -6,12 +6,20 @@
   "relevancia": "baja",
   "resultado": {
     "item": "pink_dye",
-    "cantidad": 1
+    "cantidad": 2
   },
   "conForma": false,
   "ingredientes": [
     {
-      "item": "pink_tulip",
+      "opciones": [
+        "red_dye"
+      ],
+      "cantidad": 1
+    },
+    {
+      "opciones": [
+        "white_dye"
+      ],
       "cantidad": 1
     }
   ],

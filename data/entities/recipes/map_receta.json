@@ -15,8 +15,12 @@
     "AAA"
   ],
   "clave": {
-    "A": "paper",
-    "B": "compass"
+    "A": [
+      "paper"
+    ],
+    "B": [
+      "compass"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

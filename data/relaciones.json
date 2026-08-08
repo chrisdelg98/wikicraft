@@ -44,8 +44,8 @@
 
   "receta": [
     { "campo": "resultado.item", "etiqueta": "rel.resultado", "inversa": "rel.comoSeHace" },
-    { "campo": "ingredientes[].item", "etiqueta": "rel.materiales", "inversa": "rel.sirveParaFabricar" },
-    { "campo": "clave{}", "etiqueta": "rel.materiales", "inversa": "rel.sirveParaFabricar" }
+    { "campo": "ingredientes[].opciones[]", "etiqueta": "rel.materiales", "inversa": "rel.sirveParaFabricar" },
+    { "campo": "clave{}[]", "etiqueta": "rel.materiales", "inversa": "rel.sirveParaFabricar" }
   ],
 
   "bioma": [

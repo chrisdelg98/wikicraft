@@ -14,7 +14,9 @@
     "AA"
   ],
   "clave": {
-    "A": "stripped_cherry_log"
+    "A": [
+      "stripped_cherry_log"
+    ]
   },
   "estacion": "inventario"
 }

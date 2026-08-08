@@ -15,10 +15,18 @@
     " A"
   ],
   "clave": {
-    "A": "stick",
-    "B": "iron_ingot",
-    "C": "string",
-    "D": "tripwire_hook"
+    "A": [
+      "stick"
+    ],
+    "B": [
+      "iron_ingot"
+    ],
+    "C": [
+      "string"
+    ],
+    "D": [
+      "tripwire_hook"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

@@ -14,8 +14,12 @@
     "B"
   ],
   "clave": {
-    "A": "heavy_core",
-    "B": "breeze_rod"
+    "A": [
+      "heavy_core"
+    ],
+    "B": [
+      "breeze_rod"
+    ]
   },
   "estacion": "inventario"
 }

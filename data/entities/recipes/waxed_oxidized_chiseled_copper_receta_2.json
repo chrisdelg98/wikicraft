@@ -11,11 +11,15 @@
   "conForma": false,
   "ingredientes": [
     {
-      "item": "oxidized_chiseled_copper",
+      "opciones": [
+        "honeycomb"
+      ],
       "cantidad": 1
     },
     {
-      "item": "honeycomb",
+      "opciones": [
+        "oxidized_chiseled_copper"
+      ],
       "cantidad": 1
     }
   ],

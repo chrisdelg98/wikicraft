@@ -64,9 +64,14 @@
 
     "clave": {
       "type": "object",
-      "description": "Correspondencia entre cada caracter del patron y el item que representa.",
+      "description": "Que puede ir en cada caracter del patron. Siempre es una LISTA porque el juego admite etiquetas: una casilla que acepta 'cualquier tronco' tiene diecinueve alternativas y no una sola.",
       "patternProperties": {
-        "^[A-Z]$": { "$ref": "_comun.schema.json#/$defs/referencia" }
+        "^[A-Z]$": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "_comun.schema.json#/$defs/referencia" }
+        }
       },
       "additionalProperties": false
     },
@@ -74,8 +79,21 @@
     "ingredientes": {
       "type": "array",
       "minItems": 1,
-      "items": { "$ref": "_comun.schema.json#/$defs/ingrediente" },
-      "description": "Lista plana de materiales. Obligatoria en recetas sin forma; en las que tienen forma se deriva del patron."
+      "description": "Lista plana de materiales. Obligatoria en recetas sin forma; en las que tienen forma se deriva del patron.",
+      "items": {
+        "type": "object",
+        "required": ["opciones", "cantidad"],
+        "additionalProperties": false,
+        "properties": {
+          "opciones": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": { "$ref": "_comun.schema.json#/$defs/referencia" }
+          },
+          "cantidad": { "$ref": "_comun.schema.json#/$defs/cantidad" }
+        }
+      }
     },
 
     "segundos": {

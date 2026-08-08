@@ -15,9 +15,15 @@
     "C"
   ],
   "clave": {
-    "A": "charcoal",
-    "B": "stick",
-    "C": "soul_soil"
+    "A": [
+      "charcoal"
+    ],
+    "B": [
+      "stick"
+    ],
+    "C": [
+      "soul_soil"
+    ]
   },
   "estacion": "mesa_de_trabajo"
 }

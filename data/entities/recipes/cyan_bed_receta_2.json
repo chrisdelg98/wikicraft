@@ -8,14 +8,20 @@
     "item": "cyan_bed",
     "cantidad": 1
   },
-  "conForma": true,
-  "patron": [
-    "AAA",
-    "BBB"
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "black_bed"
+      ],
+      "cantidad": 1
+    },
+    {
+      "opciones": [
+        "cyan_dye"
+      ],
+      "cantidad": 1
+    }
   ],
-  "clave": {
-    "A": "cyan_wool",
-    "B": "cherry_planks"
-  },
-  "estacion": "mesa_de_trabajo"
+  "estacion": "inventario"
 }

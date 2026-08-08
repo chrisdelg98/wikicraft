@@ -211,53 +211,9 @@
     "nombre": "Beacon Recipe",
     "slug": "beacon-recipe"
   },
-  "beehive_receta_1": {
-    "nombre": "Beehive Recipe 1",
-    "slug": "beehive-recipe-1"
-  },
-  "beehive_receta_10": {
-    "nombre": "Beehive Recipe 10",
-    "slug": "beehive-recipe-10"
-  },
-  "beehive_receta_11": {
-    "nombre": "Beehive Recipe 11",
-    "slug": "beehive-recipe-11"
-  },
-  "beehive_receta_12": {
-    "nombre": "Beehive Recipe 12",
-    "slug": "beehive-recipe-12"
-  },
-  "beehive_receta_2": {
-    "nombre": "Beehive Recipe 2",
-    "slug": "beehive-recipe-2"
-  },
-  "beehive_receta_3": {
-    "nombre": "Beehive Recipe 3",
-    "slug": "beehive-recipe-3"
-  },
-  "beehive_receta_4": {
-    "nombre": "Beehive Recipe 4",
-    "slug": "beehive-recipe-4"
-  },
-  "beehive_receta_5": {
-    "nombre": "Beehive Recipe 5",
-    "slug": "beehive-recipe-5"
-  },
-  "beehive_receta_6": {
-    "nombre": "Beehive Recipe 6",
-    "slug": "beehive-recipe-6"
-  },
-  "beehive_receta_7": {
-    "nombre": "Beehive Recipe 7",
-    "slug": "beehive-recipe-7"
-  },
-  "beehive_receta_8": {
-    "nombre": "Beehive Recipe 8",
-    "slug": "beehive-recipe-8"
-  },
-  "beehive_receta_9": {
-    "nombre": "Beehive Recipe 9",
-    "slug": "beehive-recipe-9"
+  "beehive_receta": {
+    "nombre": "Beehive Recipe",
+    "slug": "beehive-recipe"
   },
   "beetroot_soup_receta": {
     "nombre": "Beetroot Soup Recipe",
@@ -327,53 +283,9 @@
     "nombre": "Black Bed Recipe 1",
     "slug": "black-bed-recipe-1"
   },
-  "black_bed_receta_10": {
-    "nombre": "Black Bed Recipe 10",
-    "slug": "black-bed-recipe-10"
-  },
-  "black_bed_receta_11": {
-    "nombre": "Black Bed Recipe 11",
-    "slug": "black-bed-recipe-11"
-  },
-  "black_bed_receta_12": {
-    "nombre": "Black Bed Recipe 12",
-    "slug": "black-bed-recipe-12"
-  },
-  "black_bed_receta_13": {
-    "nombre": "Black Bed Recipe 13",
-    "slug": "black-bed-recipe-13"
-  },
   "black_bed_receta_2": {
     "nombre": "Black Bed Recipe 2",
     "slug": "black-bed-recipe-2"
-  },
-  "black_bed_receta_3": {
-    "nombre": "Black Bed Recipe 3",
-    "slug": "black-bed-recipe-3"
-  },
-  "black_bed_receta_4": {
-    "nombre": "Black Bed Recipe 4",
-    "slug": "black-bed-recipe-4"
-  },
-  "black_bed_receta_5": {
-    "nombre": "Black Bed Recipe 5",
-    "slug": "black-bed-recipe-5"
-  },
-  "black_bed_receta_6": {
-    "nombre": "Black Bed Recipe 6",
-    "slug": "black-bed-recipe-6"
-  },
-  "black_bed_receta_7": {
-    "nombre": "Black Bed Recipe 7",
-    "slug": "black-bed-recipe-7"
-  },
-  "black_bed_receta_8": {
-    "nombre": "Black Bed Recipe 8",
-    "slug": "black-bed-recipe-8"
-  },
-  "black_bed_receta_9": {
-    "nombre": "Black Bed Recipe 9",
-    "slug": "black-bed-recipe-9"
   },
   "black_candle_receta": {
     "nombre": "Black Candle Recipe",
@@ -391,13 +303,9 @@
     "nombre": "Black Concrete Powder Recipe",
     "slug": "black-concrete-powder-recipe"
   },
-  "black_dye_receta_1": {
-    "nombre": "Black Dye Recipe 1",
-    "slug": "black-dye-recipe-1"
-  },
-  "black_dye_receta_2": {
-    "nombre": "Black Dye Recipe 2",
-    "slug": "black-dye-recipe-2"
+  "black_dye_receta": {
+    "nombre": "Black Dye Recipe",
+    "slug": "black-dye-recipe"
   },
   "black_stained_glass_pane_receta_1": {
     "nombre": "Black Stained Glass Pane Recipe 1",
@@ -447,53 +355,9 @@
     "nombre": "Blue Bed Recipe 1",
     "slug": "blue-bed-recipe-1"
   },
-  "blue_bed_receta_10": {
-    "nombre": "Blue Bed Recipe 10",
-    "slug": "blue-bed-recipe-10"
-  },
-  "blue_bed_receta_11": {
-    "nombre": "Blue Bed Recipe 11",
-    "slug": "blue-bed-recipe-11"
-  },
-  "blue_bed_receta_12": {
-    "nombre": "Blue Bed Recipe 12",
-    "slug": "blue-bed-recipe-12"
-  },
-  "blue_bed_receta_13": {
-    "nombre": "Blue Bed Recipe 13",
-    "slug": "blue-bed-recipe-13"
-  },
   "blue_bed_receta_2": {
     "nombre": "Blue Bed Recipe 2",
     "slug": "blue-bed-recipe-2"
-  },
-  "blue_bed_receta_3": {
-    "nombre": "Blue Bed Recipe 3",
-    "slug": "blue-bed-recipe-3"
-  },
-  "blue_bed_receta_4": {
-    "nombre": "Blue Bed Recipe 4",
-    "slug": "blue-bed-recipe-4"
-  },
-  "blue_bed_receta_5": {
-    "nombre": "Blue Bed Recipe 5",
-    "slug": "blue-bed-recipe-5"
-  },
-  "blue_bed_receta_6": {
-    "nombre": "Blue Bed Recipe 6",
-    "slug": "blue-bed-recipe-6"
-  },
-  "blue_bed_receta_7": {
-    "nombre": "Blue Bed Recipe 7",
-    "slug": "blue-bed-recipe-7"
-  },
-  "blue_bed_receta_8": {
-    "nombre": "Blue Bed Recipe 8",
-    "slug": "blue-bed-recipe-8"
-  },
-  "blue_bed_receta_9": {
-    "nombre": "Blue Bed Recipe 9",
-    "slug": "blue-bed-recipe-9"
   },
   "blue_candle_receta": {
     "nombre": "Blue Candle Recipe",
@@ -511,13 +375,9 @@
     "nombre": "Blue Concrete Powder Recipe",
     "slug": "blue-concrete-powder-recipe"
   },
-  "blue_dye_receta_1": {
-    "nombre": "Blue Dye Recipe 1",
-    "slug": "blue-dye-recipe-1"
-  },
-  "blue_dye_receta_2": {
-    "nombre": "Blue Dye Recipe 2",
-    "slug": "blue-dye-recipe-2"
+  "blue_dye_receta": {
+    "nombre": "Blue Dye Recipe",
+    "slug": "blue-dye-recipe"
   },
   "blue_ice_receta": {
     "nombre": "Blue Ice Recipe",
@@ -543,13 +403,9 @@
     "nombre": "Blue Wool Recipe",
     "slug": "blue-wool-recipe"
   },
-  "bolt_armor_trim_smithing_template_receta_1": {
-    "nombre": "Bolt Armor Trim Recipe 1",
-    "slug": "bolt-armor-trim-recipe-1"
-  },
-  "bolt_armor_trim_smithing_template_receta_2": {
-    "nombre": "Bolt Armor Trim Recipe 2",
-    "slug": "bolt-armor-trim-recipe-2"
+  "bolt_armor_trim_smithing_template_receta": {
+    "nombre": "Bolt Armor Trim Recipe",
+    "slug": "bolt-armor-trim-recipe"
   },
   "bone_block_receta": {
     "nombre": "Bone Block Recipe",
@@ -567,53 +423,9 @@
     "nombre": "Book Recipe",
     "slug": "book-recipe"
   },
-  "bookshelf_receta_1": {
-    "nombre": "Bookshelf Recipe 1",
-    "slug": "bookshelf-recipe-1"
-  },
-  "bookshelf_receta_10": {
-    "nombre": "Bookshelf Recipe 10",
-    "slug": "bookshelf-recipe-10"
-  },
-  "bookshelf_receta_11": {
-    "nombre": "Bookshelf Recipe 11",
-    "slug": "bookshelf-recipe-11"
-  },
-  "bookshelf_receta_12": {
-    "nombre": "Bookshelf Recipe 12",
-    "slug": "bookshelf-recipe-12"
-  },
-  "bookshelf_receta_2": {
-    "nombre": "Bookshelf Recipe 2",
-    "slug": "bookshelf-recipe-2"
-  },
-  "bookshelf_receta_3": {
-    "nombre": "Bookshelf Recipe 3",
-    "slug": "bookshelf-recipe-3"
-  },
-  "bookshelf_receta_4": {
-    "nombre": "Bookshelf Recipe 4",
-    "slug": "bookshelf-recipe-4"
-  },
-  "bookshelf_receta_5": {
-    "nombre": "Bookshelf Recipe 5",
-    "slug": "bookshelf-recipe-5"
-  },
-  "bookshelf_receta_6": {
-    "nombre": "Bookshelf Recipe 6",
-    "slug": "bookshelf-recipe-6"
-  },
-  "bookshelf_receta_7": {
-    "nombre": "Bookshelf Recipe 7",
-    "slug": "bookshelf-recipe-7"
-  },
-  "bookshelf_receta_8": {
-    "nombre": "Bookshelf Recipe 8",
-    "slug": "bookshelf-recipe-8"
-  },
-  "bookshelf_receta_9": {
-    "nombre": "Bookshelf Recipe 9",
-    "slug": "bookshelf-recipe-9"
+  "bookshelf_receta": {
+    "nombre": "Bookshelf Recipe",
+    "slug": "bookshelf-recipe"
   },
   "bordure_indented_banner_pattern_receta": {
     "nombre": "Bordure Indented Banner Pattern Recipe",
@@ -623,69 +435,17 @@
     "nombre": "Bow Recipe",
     "slug": "bow-recipe"
   },
-  "bowl_receta_1": {
-    "nombre": "Bowl Recipe 1",
-    "slug": "bowl-recipe-1"
-  },
-  "bowl_receta_10": {
-    "nombre": "Bowl Recipe 10",
-    "slug": "bowl-recipe-10"
-  },
-  "bowl_receta_11": {
-    "nombre": "Bowl Recipe 11",
-    "slug": "bowl-recipe-11"
-  },
-  "bowl_receta_12": {
-    "nombre": "Bowl Recipe 12",
-    "slug": "bowl-recipe-12"
-  },
-  "bowl_receta_2": {
-    "nombre": "Bowl Recipe 2",
-    "slug": "bowl-recipe-2"
-  },
-  "bowl_receta_3": {
-    "nombre": "Bowl Recipe 3",
-    "slug": "bowl-recipe-3"
-  },
-  "bowl_receta_4": {
-    "nombre": "Bowl Recipe 4",
-    "slug": "bowl-recipe-4"
-  },
-  "bowl_receta_5": {
-    "nombre": "Bowl Recipe 5",
-    "slug": "bowl-recipe-5"
-  },
-  "bowl_receta_6": {
-    "nombre": "Bowl Recipe 6",
-    "slug": "bowl-recipe-6"
-  },
-  "bowl_receta_7": {
-    "nombre": "Bowl Recipe 7",
-    "slug": "bowl-recipe-7"
-  },
-  "bowl_receta_8": {
-    "nombre": "Bowl Recipe 8",
-    "slug": "bowl-recipe-8"
-  },
-  "bowl_receta_9": {
-    "nombre": "Bowl Recipe 9",
-    "slug": "bowl-recipe-9"
+  "bowl_receta": {
+    "nombre": "Bowl Recipe",
+    "slug": "bowl-recipe"
   },
   "bread_receta": {
     "nombre": "Bread Recipe",
     "slug": "bread-recipe"
   },
-  "brewing_stand_receta_1": {
-    "nombre": "Brewing Stand Recipe 1",
-    "slug": "brewing-stand-recipe-1"
-  },
-  "brewing_stand_receta_2": {
-    "nombre": "Brewing Stand Recipe 2",
-    "slug": "brewing-stand-recipe-2"
-  },
-  "brewing_stand_receta_3": {
-    "nombre": "Brewing Stand Recipe 3",
-    "slug": "brewing-stand-recipe-3"
+  "brewing_stand_receta": {
+    "nombre": "Brewing Stand Recipe",
+    "slug": "brewing-stand-recipe"
   },
   "brick_slab_receta": {
     "nombre": "Brick Slab Recipe",
@@ -711,53 +471,9 @@
     "nombre": "Brown Bed Recipe 1",
     "slug": "brown-bed-recipe-1"
   },
-  "brown_bed_receta_10": {
-    "nombre": "Brown Bed Recipe 10",
-    "slug": "brown-bed-recipe-10"
-  },
-  "brown_bed_receta_11": {
-    "nombre": "Brown Bed Recipe 11",
-    "slug": "brown-bed-recipe-11"
-  },
-  "brown_bed_receta_12": {
-    "nombre": "Brown Bed Recipe 12",
-    "slug": "brown-bed-recipe-12"
-  },
-  "brown_bed_receta_13": {
-    "nombre": "Brown Bed Recipe 13",
-    "slug": "brown-bed-recipe-13"
-  },
   "brown_bed_receta_2": {
     "nombre": "Brown Bed Recipe 2",
     "slug": "brown-bed-recipe-2"
-  },
-  "brown_bed_receta_3": {
-    "nombre": "Brown Bed Recipe 3",
-    "slug": "brown-bed-recipe-3"
-  },
-  "brown_bed_receta_4": {
-    "nombre": "Brown Bed Recipe 4",
-    "slug": "brown-bed-recipe-4"
-  },
-  "brown_bed_receta_5": {
-    "nombre": "Brown Bed Recipe 5",
-    "slug": "brown-bed-recipe-5"
-  },
-  "brown_bed_receta_6": {
-    "nombre": "Brown Bed Recipe 6",
-    "slug": "brown-bed-recipe-6"
-  },
-  "brown_bed_receta_7": {
-    "nombre": "Brown Bed Recipe 7",
-    "slug": "brown-bed-recipe-7"
-  },
-  "brown_bed_receta_8": {
-    "nombre": "Brown Bed Recipe 8",
-    "slug": "brown-bed-recipe-8"
-  },
-  "brown_bed_receta_9": {
-    "nombre": "Brown Bed Recipe 9",
-    "slug": "brown-bed-recipe-9"
   },
   "brown_candle_receta": {
     "nombre": "Brown Candle Recipe",
@@ -1003,53 +719,9 @@
     "nombre": "Carrot on a Stick Recipe",
     "slug": "carrot-on-a-stick-recipe"
   },
-  "cartography_table_receta_1": {
-    "nombre": "Cartography Table Recipe 1",
-    "slug": "cartography-table-recipe-1"
-  },
-  "cartography_table_receta_10": {
-    "nombre": "Cartography Table Recipe 10",
-    "slug": "cartography-table-recipe-10"
-  },
-  "cartography_table_receta_11": {
-    "nombre": "Cartography Table Recipe 11",
-    "slug": "cartography-table-recipe-11"
-  },
-  "cartography_table_receta_12": {
-    "nombre": "Cartography Table Recipe 12",
-    "slug": "cartography-table-recipe-12"
-  },
-  "cartography_table_receta_2": {
-    "nombre": "Cartography Table Recipe 2",
-    "slug": "cartography-table-recipe-2"
-  },
-  "cartography_table_receta_3": {
-    "nombre": "Cartography Table Recipe 3",
-    "slug": "cartography-table-recipe-3"
-  },
-  "cartography_table_receta_4": {
-    "nombre": "Cartography Table Recipe 4",
-    "slug": "cartography-table-recipe-4"
-  },
-  "cartography_table_receta_5": {
-    "nombre": "Cartography Table Recipe 5",
-    "slug": "cartography-table-recipe-5"
-  },
-  "cartography_table_receta_6": {
-    "nombre": "Cartography Table Recipe 6",
-    "slug": "cartography-table-recipe-6"
-  },
-  "cartography_table_receta_7": {
-    "nombre": "Cartography Table Recipe 7",
-    "slug": "cartography-table-recipe-7"
-  },
-  "cartography_table_receta_8": {
-    "nombre": "Cartography Table Recipe 8",
-    "slug": "cartography-table-recipe-8"
-  },
-  "cartography_table_receta_9": {
-    "nombre": "Cartography Table Recipe 9",
-    "slug": "cartography-table-recipe-9"
+  "cartography_table_receta": {
+    "nombre": "Cartography Table Recipe",
+    "slug": "cartography-table-recipe"
   },
   "cauldron_receta": {
     "nombre": "Cauldron Recipe",
@@ -1119,53 +791,9 @@
     "nombre": "Minecart with Chest Recipe",
     "slug": "minecart-with-chest-recipe"
   },
-  "chest_receta_1": {
-    "nombre": "Chest Recipe 1",
-    "slug": "chest-recipe-1"
-  },
-  "chest_receta_10": {
-    "nombre": "Chest Recipe 10",
-    "slug": "chest-recipe-10"
-  },
-  "chest_receta_11": {
-    "nombre": "Chest Recipe 11",
-    "slug": "chest-recipe-11"
-  },
-  "chest_receta_12": {
-    "nombre": "Chest Recipe 12",
-    "slug": "chest-recipe-12"
-  },
-  "chest_receta_2": {
-    "nombre": "Chest Recipe 2",
-    "slug": "chest-recipe-2"
-  },
-  "chest_receta_3": {
-    "nombre": "Chest Recipe 3",
-    "slug": "chest-recipe-3"
-  },
-  "chest_receta_4": {
-    "nombre": "Chest Recipe 4",
-    "slug": "chest-recipe-4"
-  },
-  "chest_receta_5": {
-    "nombre": "Chest Recipe 5",
-    "slug": "chest-recipe-5"
-  },
-  "chest_receta_6": {
-    "nombre": "Chest Recipe 6",
-    "slug": "chest-recipe-6"
-  },
-  "chest_receta_7": {
-    "nombre": "Chest Recipe 7",
-    "slug": "chest-recipe-7"
-  },
-  "chest_receta_8": {
-    "nombre": "Chest Recipe 8",
-    "slug": "chest-recipe-8"
-  },
-  "chest_receta_9": {
-    "nombre": "Chest Recipe 9",
-    "slug": "chest-recipe-9"
+  "chest_receta": {
+    "nombre": "Chest Recipe",
+    "slug": "chest-recipe"
   },
   "chiseled_bookshelf_receta_1": {
     "nombre": "Chiseled Bookshelf Recipe 1",
@@ -1311,53 +939,9 @@
     "nombre": "Compass Recipe",
     "slug": "compass-recipe"
   },
-  "composter_receta_1": {
-    "nombre": "Composter Recipe 1",
-    "slug": "composter-recipe-1"
-  },
-  "composter_receta_10": {
-    "nombre": "Composter Recipe 10",
-    "slug": "composter-recipe-10"
-  },
-  "composter_receta_11": {
-    "nombre": "Composter Recipe 11",
-    "slug": "composter-recipe-11"
-  },
-  "composter_receta_12": {
-    "nombre": "Composter Recipe 12",
-    "slug": "composter-recipe-12"
-  },
-  "composter_receta_2": {
-    "nombre": "Composter Recipe 2",
-    "slug": "composter-recipe-2"
-  },
-  "composter_receta_3": {
-    "nombre": "Composter Recipe 3",
-    "slug": "composter-recipe-3"
-  },
-  "composter_receta_4": {
-    "nombre": "Composter Recipe 4",
-    "slug": "composter-recipe-4"
-  },
-  "composter_receta_5": {
-    "nombre": "Composter Recipe 5",
-    "slug": "composter-recipe-5"
-  },
-  "composter_receta_6": {
-    "nombre": "Composter Recipe 6",
-    "slug": "composter-recipe-6"
-  },
-  "composter_receta_7": {
-    "nombre": "Composter Recipe 7",
-    "slug": "composter-recipe-7"
-  },
-  "composter_receta_8": {
-    "nombre": "Composter Recipe 8",
-    "slug": "composter-recipe-8"
-  },
-  "composter_receta_9": {
-    "nombre": "Composter Recipe 9",
-    "slug": "composter-recipe-9"
+  "composter_receta": {
+    "nombre": "Composter Recipe",
+    "slug": "composter-recipe"
   },
   "conduit_receta": {
     "nombre": "Conduit Recipe",
@@ -1383,13 +967,9 @@
     "nombre": "Copper Grate Recipe",
     "slug": "copper-grate-recipe"
   },
-  "copper_ingot_receta_1": {
-    "nombre": "Copper Ingot Recipe 1",
-    "slug": "copper-ingot-recipe-1"
-  },
-  "copper_ingot_receta_2": {
-    "nombre": "Copper Ingot Recipe 2",
-    "slug": "copper-ingot-recipe-2"
+  "copper_ingot_receta": {
+    "nombre": "Copper Ingot Recipe",
+    "slug": "copper-ingot-recipe"
   },
   "copper_trapdoor_receta": {
     "nombre": "Copper Trapdoor Recipe",
@@ -1399,53 +979,9 @@
     "nombre": "Crafter Recipe",
     "slug": "crafter-recipe"
   },
-  "crafting_table_receta_1": {
-    "nombre": "Crafting Table Recipe 1",
-    "slug": "crafting-table-recipe-1"
-  },
-  "crafting_table_receta_10": {
-    "nombre": "Crafting Table Recipe 10",
-    "slug": "crafting-table-recipe-10"
-  },
-  "crafting_table_receta_11": {
-    "nombre": "Crafting Table Recipe 11",
-    "slug": "crafting-table-recipe-11"
-  },
-  "crafting_table_receta_12": {
-    "nombre": "Crafting Table Recipe 12",
-    "slug": "crafting-table-recipe-12"
-  },
-  "crafting_table_receta_2": {
-    "nombre": "Crafting Table Recipe 2",
-    "slug": "crafting-table-recipe-2"
-  },
-  "crafting_table_receta_3": {
-    "nombre": "Crafting Table Recipe 3",
-    "slug": "crafting-table-recipe-3"
-  },
-  "crafting_table_receta_4": {
-    "nombre": "Crafting Table Recipe 4",
-    "slug": "crafting-table-recipe-4"
-  },
-  "crafting_table_receta_5": {
-    "nombre": "Crafting Table Recipe 5",
-    "slug": "crafting-table-recipe-5"
-  },
-  "crafting_table_receta_6": {
-    "nombre": "Crafting Table Recipe 6",
-    "slug": "crafting-table-recipe-6"
-  },
-  "crafting_table_receta_7": {
-    "nombre": "Crafting Table Recipe 7",
-    "slug": "crafting-table-recipe-7"
-  },
-  "crafting_table_receta_8": {
-    "nombre": "Crafting Table Recipe 8",
-    "slug": "crafting-table-recipe-8"
-  },
-  "crafting_table_receta_9": {
-    "nombre": "Crafting Table Recipe 9",
-    "slug": "crafting-table-recipe-9"
+  "crafting_table_receta": {
+    "nombre": "Crafting Table Recipe",
+    "slug": "crafting-table-recipe"
   },
   "creeper_banner_pattern_receta": {
     "nombre": "Creeper Charge Banner Pattern Recipe",
@@ -1539,53 +1075,9 @@
     "nombre": "Cyan Bed Recipe 1",
     "slug": "cyan-bed-recipe-1"
   },
-  "cyan_bed_receta_10": {
-    "nombre": "Cyan Bed Recipe 10",
-    "slug": "cyan-bed-recipe-10"
-  },
-  "cyan_bed_receta_11": {
-    "nombre": "Cyan Bed Recipe 11",
-    "slug": "cyan-bed-recipe-11"
-  },
-  "cyan_bed_receta_12": {
-    "nombre": "Cyan Bed Recipe 12",
-    "slug": "cyan-bed-recipe-12"
-  },
-  "cyan_bed_receta_13": {
-    "nombre": "Cyan Bed Recipe 13",
-    "slug": "cyan-bed-recipe-13"
-  },
   "cyan_bed_receta_2": {
     "nombre": "Cyan Bed Recipe 2",
     "slug": "cyan-bed-recipe-2"
-  },
-  "cyan_bed_receta_3": {
-    "nombre": "Cyan Bed Recipe 3",
-    "slug": "cyan-bed-recipe-3"
-  },
-  "cyan_bed_receta_4": {
-    "nombre": "Cyan Bed Recipe 4",
-    "slug": "cyan-bed-recipe-4"
-  },
-  "cyan_bed_receta_5": {
-    "nombre": "Cyan Bed Recipe 5",
-    "slug": "cyan-bed-recipe-5"
-  },
-  "cyan_bed_receta_6": {
-    "nombre": "Cyan Bed Recipe 6",
-    "slug": "cyan-bed-recipe-6"
-  },
-  "cyan_bed_receta_7": {
-    "nombre": "Cyan Bed Recipe 7",
-    "slug": "cyan-bed-recipe-7"
-  },
-  "cyan_bed_receta_8": {
-    "nombre": "Cyan Bed Recipe 8",
-    "slug": "cyan-bed-recipe-8"
-  },
-  "cyan_bed_receta_9": {
-    "nombre": "Cyan Bed Recipe 9",
-    "slug": "cyan-bed-recipe-9"
   },
   "cyan_candle_receta": {
     "nombre": "Cyan Candle Recipe",
@@ -1699,53 +1191,9 @@
     "nombre": "Dark Prismarine Stairs Recipe",
     "slug": "dark-prismarine-stairs-recipe"
   },
-  "daylight_detector_receta_1": {
-    "nombre": "Daylight Detector Recipe 1",
-    "slug": "daylight-detector-recipe-1"
-  },
-  "daylight_detector_receta_10": {
-    "nombre": "Daylight Detector Recipe 10",
-    "slug": "daylight-detector-recipe-10"
-  },
-  "daylight_detector_receta_11": {
-    "nombre": "Daylight Detector Recipe 11",
-    "slug": "daylight-detector-recipe-11"
-  },
-  "daylight_detector_receta_12": {
-    "nombre": "Daylight Detector Recipe 12",
-    "slug": "daylight-detector-recipe-12"
-  },
-  "daylight_detector_receta_2": {
-    "nombre": "Daylight Detector Recipe 2",
-    "slug": "daylight-detector-recipe-2"
-  },
-  "daylight_detector_receta_3": {
-    "nombre": "Daylight Detector Recipe 3",
-    "slug": "daylight-detector-recipe-3"
-  },
-  "daylight_detector_receta_4": {
-    "nombre": "Daylight Detector Recipe 4",
-    "slug": "daylight-detector-recipe-4"
-  },
-  "daylight_detector_receta_5": {
-    "nombre": "Daylight Detector Recipe 5",
-    "slug": "daylight-detector-recipe-5"
-  },
-  "daylight_detector_receta_6": {
-    "nombre": "Daylight Detector Recipe 6",
-    "slug": "daylight-detector-recipe-6"
-  },
-  "daylight_detector_receta_7": {
-    "nombre": "Daylight Detector Recipe 7",
-    "slug": "daylight-detector-recipe-7"
-  },
-  "daylight_detector_receta_8": {
-    "nombre": "Daylight Detector Recipe 8",
-    "slug": "daylight-detector-recipe-8"
-  },
-  "daylight_detector_receta_9": {
-    "nombre": "Daylight Detector Recipe 9",
-    "slug": "daylight-detector-recipe-9"
+  "daylight_detector_receta": {
+    "nombre": "Daylight Detector Recipe",
+    "slug": "daylight-detector-recipe"
   },
   "decorated_pot_receta": {
     "nombre": "Decorated Pot Recipe",
@@ -1963,53 +1411,9 @@
     "nombre": "Fishing Rod Recipe",
     "slug": "fishing-rod-recipe"
   },
-  "fletching_table_receta_1": {
-    "nombre": "Fletching Table Recipe 1",
-    "slug": "fletching-table-recipe-1"
-  },
-  "fletching_table_receta_10": {
-    "nombre": "Fletching Table Recipe 10",
-    "slug": "fletching-table-recipe-10"
-  },
-  "fletching_table_receta_11": {
-    "nombre": "Fletching Table Recipe 11",
-    "slug": "fletching-table-recipe-11"
-  },
-  "fletching_table_receta_12": {
-    "nombre": "Fletching Table Recipe 12",
-    "slug": "fletching-table-recipe-12"
-  },
-  "fletching_table_receta_2": {
-    "nombre": "Fletching Table Recipe 2",
-    "slug": "fletching-table-recipe-2"
-  },
-  "fletching_table_receta_3": {
-    "nombre": "Fletching Table Recipe 3",
-    "slug": "fletching-table-recipe-3"
-  },
-  "fletching_table_receta_4": {
-    "nombre": "Fletching Table Recipe 4",
-    "slug": "fletching-table-recipe-4"
-  },
-  "fletching_table_receta_5": {
-    "nombre": "Fletching Table Recipe 5",
-    "slug": "fletching-table-recipe-5"
-  },
-  "fletching_table_receta_6": {
-    "nombre": "Fletching Table Recipe 6",
-    "slug": "fletching-table-recipe-6"
-  },
-  "fletching_table_receta_7": {
-    "nombre": "Fletching Table Recipe 7",
-    "slug": "fletching-table-recipe-7"
-  },
-  "fletching_table_receta_8": {
-    "nombre": "Fletching Table Recipe 8",
-    "slug": "fletching-table-recipe-8"
-  },
-  "fletching_table_receta_9": {
-    "nombre": "Fletching Table Recipe 9",
-    "slug": "fletching-table-recipe-9"
+  "fletching_table_receta": {
+    "nombre": "Fletching Table Recipe",
+    "slug": "fletching-table-recipe"
   },
   "flint_and_steel_receta": {
     "nombre": "Flint and Steel Recipe",
@@ -2031,17 +1435,9 @@
     "nombre": "Minecart with Furnace Recipe",
     "slug": "minecart-with-furnace-recipe"
   },
-  "furnace_receta_1": {
-    "nombre": "Furnace Recipe 1",
-    "slug": "furnace-recipe-1"
-  },
-  "furnace_receta_2": {
-    "nombre": "Furnace Recipe 2",
-    "slug": "furnace-recipe-2"
-  },
-  "furnace_receta_3": {
-    "nombre": "Furnace Recipe 3",
-    "slug": "furnace-recipe-3"
+  "furnace_receta": {
+    "nombre": "Furnace Recipe",
+    "slug": "furnace-recipe"
   },
   "glass_bottle_receta": {
     "nombre": "Glass Bottle Recipe",
@@ -2147,53 +1543,9 @@
     "nombre": "Gray Bed Recipe 1",
     "slug": "gray-bed-recipe-1"
   },
-  "gray_bed_receta_10": {
-    "nombre": "Gray Bed Recipe 10",
-    "slug": "gray-bed-recipe-10"
-  },
-  "gray_bed_receta_11": {
-    "nombre": "Gray Bed Recipe 11",
-    "slug": "gray-bed-recipe-11"
-  },
-  "gray_bed_receta_12": {
-    "nombre": "Gray Bed Recipe 12",
-    "slug": "gray-bed-recipe-12"
-  },
-  "gray_bed_receta_13": {
-    "nombre": "Gray Bed Recipe 13",
-    "slug": "gray-bed-recipe-13"
-  },
   "gray_bed_receta_2": {
     "nombre": "Gray Bed Recipe 2",
     "slug": "gray-bed-recipe-2"
-  },
-  "gray_bed_receta_3": {
-    "nombre": "Gray Bed Recipe 3",
-    "slug": "gray-bed-recipe-3"
-  },
-  "gray_bed_receta_4": {
-    "nombre": "Gray Bed Recipe 4",
-    "slug": "gray-bed-recipe-4"
-  },
-  "gray_bed_receta_5": {
-    "nombre": "Gray Bed Recipe 5",
-    "slug": "gray-bed-recipe-5"
-  },
-  "gray_bed_receta_6": {
-    "nombre": "Gray Bed Recipe 6",
-    "slug": "gray-bed-recipe-6"
-  },
-  "gray_bed_receta_7": {
-    "nombre": "Gray Bed Recipe 7",
-    "slug": "gray-bed-recipe-7"
-  },
-  "gray_bed_receta_8": {
-    "nombre": "Gray Bed Recipe 8",
-    "slug": "gray-bed-recipe-8"
-  },
-  "gray_bed_receta_9": {
-    "nombre": "Gray Bed Recipe 9",
-    "slug": "gray-bed-recipe-9"
   },
   "gray_candle_receta": {
     "nombre": "Gray Candle Recipe",
@@ -2243,53 +1595,9 @@
     "nombre": "Green Bed Recipe 1",
     "slug": "green-bed-recipe-1"
   },
-  "green_bed_receta_10": {
-    "nombre": "Green Bed Recipe 10",
-    "slug": "green-bed-recipe-10"
-  },
-  "green_bed_receta_11": {
-    "nombre": "Green Bed Recipe 11",
-    "slug": "green-bed-recipe-11"
-  },
-  "green_bed_receta_12": {
-    "nombre": "Green Bed Recipe 12",
-    "slug": "green-bed-recipe-12"
-  },
-  "green_bed_receta_13": {
-    "nombre": "Green Bed Recipe 13",
-    "slug": "green-bed-recipe-13"
-  },
   "green_bed_receta_2": {
     "nombre": "Green Bed Recipe 2",
     "slug": "green-bed-recipe-2"
-  },
-  "green_bed_receta_3": {
-    "nombre": "Green Bed Recipe 3",
-    "slug": "green-bed-recipe-3"
-  },
-  "green_bed_receta_4": {
-    "nombre": "Green Bed Recipe 4",
-    "slug": "green-bed-recipe-4"
-  },
-  "green_bed_receta_5": {
-    "nombre": "Green Bed Recipe 5",
-    "slug": "green-bed-recipe-5"
-  },
-  "green_bed_receta_6": {
-    "nombre": "Green Bed Recipe 6",
-    "slug": "green-bed-recipe-6"
-  },
-  "green_bed_receta_7": {
-    "nombre": "Green Bed Recipe 7",
-    "slug": "green-bed-recipe-7"
-  },
-  "green_bed_receta_8": {
-    "nombre": "Green Bed Recipe 8",
-    "slug": "green-bed-recipe-8"
-  },
-  "green_bed_receta_9": {
-    "nombre": "Green Bed Recipe 9",
-    "slug": "green-bed-recipe-9"
   },
   "green_candle_receta": {
     "nombre": "Green Candle Recipe",
@@ -2327,53 +1635,9 @@
     "nombre": "Green Wool Recipe",
     "slug": "green-wool-recipe"
   },
-  "grindstone_receta_1": {
-    "nombre": "Grindstone Recipe 1",
-    "slug": "grindstone-recipe-1"
-  },
-  "grindstone_receta_10": {
-    "nombre": "Grindstone Recipe 10",
-    "slug": "grindstone-recipe-10"
-  },
-  "grindstone_receta_11": {
-    "nombre": "Grindstone Recipe 11",
-    "slug": "grindstone-recipe-11"
-  },
-  "grindstone_receta_12": {
-    "nombre": "Grindstone Recipe 12",
-    "slug": "grindstone-recipe-12"
-  },
-  "grindstone_receta_2": {
-    "nombre": "Grindstone Recipe 2",
-    "slug": "grindstone-recipe-2"
-  },
-  "grindstone_receta_3": {
-    "nombre": "Grindstone Recipe 3",
-    "slug": "grindstone-recipe-3"
-  },
-  "grindstone_receta_4": {
-    "nombre": "Grindstone Recipe 4",
-    "slug": "grindstone-recipe-4"
-  },
-  "grindstone_receta_5": {
-    "nombre": "Grindstone Recipe 5",
-    "slug": "grindstone-recipe-5"
-  },
-  "grindstone_receta_6": {
-    "nombre": "Grindstone Recipe 6",
-    "slug": "grindstone-recipe-6"
-  },
-  "grindstone_receta_7": {
-    "nombre": "Grindstone Recipe 7",
-    "slug": "grindstone-recipe-7"
-  },
-  "grindstone_receta_8": {
-    "nombre": "Grindstone Recipe 8",
-    "slug": "grindstone-recipe-8"
-  },
-  "grindstone_receta_9": {
-    "nombre": "Grindstone Recipe 9",
-    "slug": "grindstone-recipe-9"
+  "grindstone_receta": {
+    "nombre": "Grindstone Recipe",
+    "slug": "grindstone-recipe"
   },
   "hay_block_receta": {
     "nombre": "Hay Bale Recipe",
@@ -2479,53 +1743,9 @@
     "nombre": "Jack o'Lantern Recipe",
     "slug": "jack-o-lantern-recipe"
   },
-  "jukebox_receta_1": {
-    "nombre": "Jukebox Recipe 1",
-    "slug": "jukebox-recipe-1"
-  },
-  "jukebox_receta_10": {
-    "nombre": "Jukebox Recipe 10",
-    "slug": "jukebox-recipe-10"
-  },
-  "jukebox_receta_11": {
-    "nombre": "Jukebox Recipe 11",
-    "slug": "jukebox-recipe-11"
-  },
-  "jukebox_receta_12": {
-    "nombre": "Jukebox Recipe 12",
-    "slug": "jukebox-recipe-12"
-  },
-  "jukebox_receta_2": {
-    "nombre": "Jukebox Recipe 2",
-    "slug": "jukebox-recipe-2"
-  },
-  "jukebox_receta_3": {
-    "nombre": "Jukebox Recipe 3",
-    "slug": "jukebox-recipe-3"
-  },
-  "jukebox_receta_4": {
-    "nombre": "Jukebox Recipe 4",
-    "slug": "jukebox-recipe-4"
-  },
-  "jukebox_receta_5": {
-    "nombre": "Jukebox Recipe 5",
-    "slug": "jukebox-recipe-5"
-  },
-  "jukebox_receta_6": {
-    "nombre": "Jukebox Recipe 6",
-    "slug": "jukebox-recipe-6"
-  },
-  "jukebox_receta_7": {
-    "nombre": "Jukebox Recipe 7",
-    "slug": "jukebox-recipe-7"
-  },
-  "jukebox_receta_8": {
-    "nombre": "Jukebox Recipe 8",
-    "slug": "jukebox-recipe-8"
-  },
-  "jukebox_receta_9": {
-    "nombre": "Jukebox Recipe 9",
-    "slug": "jukebox-recipe-9"
+  "jukebox_receta": {
+    "nombre": "Jukebox Recipe",
+    "slug": "jukebox-recipe"
   },
   "jungle_boat_receta": {
     "nombre": "Jungle Boat Recipe",
@@ -2627,53 +1847,9 @@
     "nombre": "Leather Recipe",
     "slug": "leather-recipe"
   },
-  "lectern_receta_1": {
-    "nombre": "Lectern Recipe 1",
-    "slug": "lectern-recipe-1"
-  },
-  "lectern_receta_10": {
-    "nombre": "Lectern Recipe 10",
-    "slug": "lectern-recipe-10"
-  },
-  "lectern_receta_11": {
-    "nombre": "Lectern Recipe 11",
-    "slug": "lectern-recipe-11"
-  },
-  "lectern_receta_12": {
-    "nombre": "Lectern Recipe 12",
-    "slug": "lectern-recipe-12"
-  },
-  "lectern_receta_2": {
-    "nombre": "Lectern Recipe 2",
-    "slug": "lectern-recipe-2"
-  },
-  "lectern_receta_3": {
-    "nombre": "Lectern Recipe 3",
-    "slug": "lectern-recipe-3"
-  },
-  "lectern_receta_4": {
-    "nombre": "Lectern Recipe 4",
-    "slug": "lectern-recipe-4"
-  },
-  "lectern_receta_5": {
-    "nombre": "Lectern Recipe 5",
-    "slug": "lectern-recipe-5"
-  },
-  "lectern_receta_6": {
-    "nombre": "Lectern Recipe 6",
-    "slug": "lectern-recipe-6"
-  },
-  "lectern_receta_7": {
-    "nombre": "Lectern Recipe 7",
-    "slug": "lectern-recipe-7"
-  },
-  "lectern_receta_8": {
-    "nombre": "Lectern Recipe 8",
-    "slug": "lectern-recipe-8"
-  },
-  "lectern_receta_9": {
-    "nombre": "Lectern Recipe 9",
-    "slug": "lectern-recipe-9"
+  "lectern_receta": {
+    "nombre": "Lectern Recipe",
+    "slug": "lectern-recipe"
   },
   "lever_receta": {
     "nombre": "Lever Recipe",
@@ -2687,53 +1863,9 @@
     "nombre": "Light Blue Bed Recipe 1",
     "slug": "light-blue-bed-recipe-1"
   },
-  "light_blue_bed_receta_10": {
-    "nombre": "Light Blue Bed Recipe 10",
-    "slug": "light-blue-bed-recipe-10"
-  },
-  "light_blue_bed_receta_11": {
-    "nombre": "Light Blue Bed Recipe 11",
-    "slug": "light-blue-bed-recipe-11"
-  },
-  "light_blue_bed_receta_12": {
-    "nombre": "Light Blue Bed Recipe 12",
-    "slug": "light-blue-bed-recipe-12"
-  },
-  "light_blue_bed_receta_13": {
-    "nombre": "Light Blue Bed Recipe 13",
-    "slug": "light-blue-bed-recipe-13"
-  },
   "light_blue_bed_receta_2": {
     "nombre": "Light Blue Bed Recipe 2",
     "slug": "light-blue-bed-recipe-2"
-  },
-  "light_blue_bed_receta_3": {
-    "nombre": "Light Blue Bed Recipe 3",
-    "slug": "light-blue-bed-recipe-3"
-  },
-  "light_blue_bed_receta_4": {
-    "nombre": "Light Blue Bed Recipe 4",
-    "slug": "light-blue-bed-recipe-4"
-  },
-  "light_blue_bed_receta_5": {
-    "nombre": "Light Blue Bed Recipe 5",
-    "slug": "light-blue-bed-recipe-5"
-  },
-  "light_blue_bed_receta_6": {
-    "nombre": "Light Blue Bed Recipe 6",
-    "slug": "light-blue-bed-recipe-6"
-  },
-  "light_blue_bed_receta_7": {
-    "nombre": "Light Blue Bed Recipe 7",
-    "slug": "light-blue-bed-recipe-7"
-  },
-  "light_blue_bed_receta_8": {
-    "nombre": "Light Blue Bed Recipe 8",
-    "slug": "light-blue-bed-recipe-8"
-  },
-  "light_blue_bed_receta_9": {
-    "nombre": "Light Blue Bed Recipe 9",
-    "slug": "light-blue-bed-recipe-9"
   },
   "light_blue_candle_receta": {
     "nombre": "Light Blue Candle Recipe",
@@ -2787,53 +1919,9 @@
     "nombre": "Light Gray Bed Recipe 1",
     "slug": "light-gray-bed-recipe-1"
   },
-  "light_gray_bed_receta_10": {
-    "nombre": "Light Gray Bed Recipe 10",
-    "slug": "light-gray-bed-recipe-10"
-  },
-  "light_gray_bed_receta_11": {
-    "nombre": "Light Gray Bed Recipe 11",
-    "slug": "light-gray-bed-recipe-11"
-  },
-  "light_gray_bed_receta_12": {
-    "nombre": "Light Gray Bed Recipe 12",
-    "slug": "light-gray-bed-recipe-12"
-  },
-  "light_gray_bed_receta_13": {
-    "nombre": "Light Gray Bed Recipe 13",
-    "slug": "light-gray-bed-recipe-13"
-  },
   "light_gray_bed_receta_2": {
     "nombre": "Light Gray Bed Recipe 2",
     "slug": "light-gray-bed-recipe-2"
-  },
-  "light_gray_bed_receta_3": {
-    "nombre": "Light Gray Bed Recipe 3",
-    "slug": "light-gray-bed-recipe-3"
-  },
-  "light_gray_bed_receta_4": {
-    "nombre": "Light Gray Bed Recipe 4",
-    "slug": "light-gray-bed-recipe-4"
-  },
-  "light_gray_bed_receta_5": {
-    "nombre": "Light Gray Bed Recipe 5",
-    "slug": "light-gray-bed-recipe-5"
-  },
-  "light_gray_bed_receta_6": {
-    "nombre": "Light Gray Bed Recipe 6",
-    "slug": "light-gray-bed-recipe-6"
-  },
-  "light_gray_bed_receta_7": {
-    "nombre": "Light Gray Bed Recipe 7",
-    "slug": "light-gray-bed-recipe-7"
-  },
-  "light_gray_bed_receta_8": {
-    "nombre": "Light Gray Bed Recipe 8",
-    "slug": "light-gray-bed-recipe-8"
-  },
-  "light_gray_bed_receta_9": {
-    "nombre": "Light Gray Bed Recipe 9",
-    "slug": "light-gray-bed-recipe-9"
   },
   "light_gray_candle_receta": {
     "nombre": "Light Gray Candle Recipe",
@@ -2862,14 +1950,6 @@
   "light_gray_dye_receta_3": {
     "nombre": "Light Gray Dye Recipe 3",
     "slug": "light-gray-dye-recipe-3"
-  },
-  "light_gray_dye_receta_4": {
-    "nombre": "Light Gray Dye Recipe 4",
-    "slug": "light-gray-dye-recipe-4"
-  },
-  "light_gray_dye_receta_5": {
-    "nombre": "Light Gray Dye Recipe 5",
-    "slug": "light-gray-dye-recipe-5"
   },
   "light_gray_stained_glass_pane_receta_1": {
     "nombre": "Light Gray Stained Glass Pane Recipe 1",
@@ -2907,53 +1987,9 @@
     "nombre": "Lime Bed Recipe 1",
     "slug": "lime-bed-recipe-1"
   },
-  "lime_bed_receta_10": {
-    "nombre": "Lime Bed Recipe 10",
-    "slug": "lime-bed-recipe-10"
-  },
-  "lime_bed_receta_11": {
-    "nombre": "Lime Bed Recipe 11",
-    "slug": "lime-bed-recipe-11"
-  },
-  "lime_bed_receta_12": {
-    "nombre": "Lime Bed Recipe 12",
-    "slug": "lime-bed-recipe-12"
-  },
-  "lime_bed_receta_13": {
-    "nombre": "Lime Bed Recipe 13",
-    "slug": "lime-bed-recipe-13"
-  },
   "lime_bed_receta_2": {
     "nombre": "Lime Bed Recipe 2",
     "slug": "lime-bed-recipe-2"
-  },
-  "lime_bed_receta_3": {
-    "nombre": "Lime Bed Recipe 3",
-    "slug": "lime-bed-recipe-3"
-  },
-  "lime_bed_receta_4": {
-    "nombre": "Lime Bed Recipe 4",
-    "slug": "lime-bed-recipe-4"
-  },
-  "lime_bed_receta_5": {
-    "nombre": "Lime Bed Recipe 5",
-    "slug": "lime-bed-recipe-5"
-  },
-  "lime_bed_receta_6": {
-    "nombre": "Lime Bed Recipe 6",
-    "slug": "lime-bed-recipe-6"
-  },
-  "lime_bed_receta_7": {
-    "nombre": "Lime Bed Recipe 7",
-    "slug": "lime-bed-recipe-7"
-  },
-  "lime_bed_receta_8": {
-    "nombre": "Lime Bed Recipe 8",
-    "slug": "lime-bed-recipe-8"
-  },
-  "lime_bed_receta_9": {
-    "nombre": "Lime Bed Recipe 9",
-    "slug": "lime-bed-recipe-9"
   },
   "lime_candle_receta": {
     "nombre": "Lime Candle Recipe",
@@ -2999,53 +2035,9 @@
     "nombre": "Lodestone Recipe",
     "slug": "lodestone-recipe"
   },
-  "loom_receta_1": {
-    "nombre": "Loom Recipe 1",
-    "slug": "loom-recipe-1"
-  },
-  "loom_receta_10": {
-    "nombre": "Loom Recipe 10",
-    "slug": "loom-recipe-10"
-  },
-  "loom_receta_11": {
-    "nombre": "Loom Recipe 11",
-    "slug": "loom-recipe-11"
-  },
-  "loom_receta_12": {
-    "nombre": "Loom Recipe 12",
-    "slug": "loom-recipe-12"
-  },
-  "loom_receta_2": {
-    "nombre": "Loom Recipe 2",
-    "slug": "loom-recipe-2"
-  },
-  "loom_receta_3": {
-    "nombre": "Loom Recipe 3",
-    "slug": "loom-recipe-3"
-  },
-  "loom_receta_4": {
-    "nombre": "Loom Recipe 4",
-    "slug": "loom-recipe-4"
-  },
-  "loom_receta_5": {
-    "nombre": "Loom Recipe 5",
-    "slug": "loom-recipe-5"
-  },
-  "loom_receta_6": {
-    "nombre": "Loom Recipe 6",
-    "slug": "loom-recipe-6"
-  },
-  "loom_receta_7": {
-    "nombre": "Loom Recipe 7",
-    "slug": "loom-recipe-7"
-  },
-  "loom_receta_8": {
-    "nombre": "Loom Recipe 8",
-    "slug": "loom-recipe-8"
-  },
-  "loom_receta_9": {
-    "nombre": "Loom Recipe 9",
-    "slug": "loom-recipe-9"
+  "loom_receta": {
+    "nombre": "Loom Recipe",
+    "slug": "loom-recipe"
   },
   "mace_receta": {
     "nombre": "Mace Recipe",
@@ -3059,53 +2051,9 @@
     "nombre": "Magenta Bed Recipe 1",
     "slug": "magenta-bed-recipe-1"
   },
-  "magenta_bed_receta_10": {
-    "nombre": "Magenta Bed Recipe 10",
-    "slug": "magenta-bed-recipe-10"
-  },
-  "magenta_bed_receta_11": {
-    "nombre": "Magenta Bed Recipe 11",
-    "slug": "magenta-bed-recipe-11"
-  },
-  "magenta_bed_receta_12": {
-    "nombre": "Magenta Bed Recipe 12",
-    "slug": "magenta-bed-recipe-12"
-  },
-  "magenta_bed_receta_13": {
-    "nombre": "Magenta Bed Recipe 13",
-    "slug": "magenta-bed-recipe-13"
-  },
   "magenta_bed_receta_2": {
     "nombre": "Magenta Bed Recipe 2",
     "slug": "magenta-bed-recipe-2"
-  },
-  "magenta_bed_receta_3": {
-    "nombre": "Magenta Bed Recipe 3",
-    "slug": "magenta-bed-recipe-3"
-  },
-  "magenta_bed_receta_4": {
-    "nombre": "Magenta Bed Recipe 4",
-    "slug": "magenta-bed-recipe-4"
-  },
-  "magenta_bed_receta_5": {
-    "nombre": "Magenta Bed Recipe 5",
-    "slug": "magenta-bed-recipe-5"
-  },
-  "magenta_bed_receta_6": {
-    "nombre": "Magenta Bed Recipe 6",
-    "slug": "magenta-bed-recipe-6"
-  },
-  "magenta_bed_receta_7": {
-    "nombre": "Magenta Bed Recipe 7",
-    "slug": "magenta-bed-recipe-7"
-  },
-  "magenta_bed_receta_8": {
-    "nombre": "Magenta Bed Recipe 8",
-    "slug": "magenta-bed-recipe-8"
-  },
-  "magenta_bed_receta_9": {
-    "nombre": "Magenta Bed Recipe 9",
-    "slug": "magenta-bed-recipe-9"
   },
   "magenta_candle_receta": {
     "nombre": "Magenta Candle Recipe",
@@ -3251,13 +2199,9 @@
     "nombre": "Moss Carpet Recipe",
     "slug": "moss-carpet-recipe"
   },
-  "mossy_cobblestone_receta_1": {
-    "nombre": "Mossy Cobblestone Recipe 1",
-    "slug": "mossy-cobblestone-recipe-1"
-  },
-  "mossy_cobblestone_receta_2": {
-    "nombre": "Mossy Cobblestone Recipe 2",
-    "slug": "mossy-cobblestone-recipe-2"
+  "mossy_cobblestone_receta": {
+    "nombre": "Mossy Cobblestone Recipe",
+    "slug": "mossy-cobblestone-recipe"
   },
   "mossy_cobblestone_slab_receta": {
     "nombre": "Mossy Cobblestone Slab Recipe",
@@ -3359,53 +2303,9 @@
     "nombre": "Netherite Upgrade Recipe",
     "slug": "netherite-upgrade-recipe"
   },
-  "note_block_receta_1": {
-    "nombre": "Note Block Recipe 1",
-    "slug": "note-block-recipe-1"
-  },
-  "note_block_receta_10": {
-    "nombre": "Note Block Recipe 10",
-    "slug": "note-block-recipe-10"
-  },
-  "note_block_receta_11": {
-    "nombre": "Note Block Recipe 11",
-    "slug": "note-block-recipe-11"
-  },
-  "note_block_receta_12": {
-    "nombre": "Note Block Recipe 12",
-    "slug": "note-block-recipe-12"
-  },
-  "note_block_receta_2": {
-    "nombre": "Note Block Recipe 2",
-    "slug": "note-block-recipe-2"
-  },
-  "note_block_receta_3": {
-    "nombre": "Note Block Recipe 3",
-    "slug": "note-block-recipe-3"
-  },
-  "note_block_receta_4": {
-    "nombre": "Note Block Recipe 4",
-    "slug": "note-block-recipe-4"
-  },
-  "note_block_receta_5": {
-    "nombre": "Note Block Recipe 5",
-    "slug": "note-block-recipe-5"
-  },
-  "note_block_receta_6": {
-    "nombre": "Note Block Recipe 6",
-    "slug": "note-block-recipe-6"
-  },
-  "note_block_receta_7": {
-    "nombre": "Note Block Recipe 7",
-    "slug": "note-block-recipe-7"
-  },
-  "note_block_receta_8": {
-    "nombre": "Note Block Recipe 8",
-    "slug": "note-block-recipe-8"
-  },
-  "note_block_receta_9": {
-    "nombre": "Note Block Recipe 9",
-    "slug": "note-block-recipe-9"
+  "note_block_receta": {
+    "nombre": "Note Block Recipe",
+    "slug": "note-block-recipe"
   },
   "oak_boat_receta": {
     "nombre": "Oak Boat Recipe",
@@ -3475,53 +2375,9 @@
     "nombre": "Orange Bed Recipe 1",
     "slug": "orange-bed-recipe-1"
   },
-  "orange_bed_receta_10": {
-    "nombre": "Orange Bed Recipe 10",
-    "slug": "orange-bed-recipe-10"
-  },
-  "orange_bed_receta_11": {
-    "nombre": "Orange Bed Recipe 11",
-    "slug": "orange-bed-recipe-11"
-  },
-  "orange_bed_receta_12": {
-    "nombre": "Orange Bed Recipe 12",
-    "slug": "orange-bed-recipe-12"
-  },
-  "orange_bed_receta_13": {
-    "nombre": "Orange Bed Recipe 13",
-    "slug": "orange-bed-recipe-13"
-  },
   "orange_bed_receta_2": {
     "nombre": "Orange Bed Recipe 2",
     "slug": "orange-bed-recipe-2"
-  },
-  "orange_bed_receta_3": {
-    "nombre": "Orange Bed Recipe 3",
-    "slug": "orange-bed-recipe-3"
-  },
-  "orange_bed_receta_4": {
-    "nombre": "Orange Bed Recipe 4",
-    "slug": "orange-bed-recipe-4"
-  },
-  "orange_bed_receta_5": {
-    "nombre": "Orange Bed Recipe 5",
-    "slug": "orange-bed-recipe-5"
-  },
-  "orange_bed_receta_6": {
-    "nombre": "Orange Bed Recipe 6",
-    "slug": "orange-bed-recipe-6"
-  },
-  "orange_bed_receta_7": {
-    "nombre": "Orange Bed Recipe 7",
-    "slug": "orange-bed-recipe-7"
-  },
-  "orange_bed_receta_8": {
-    "nombre": "Orange Bed Recipe 8",
-    "slug": "orange-bed-recipe-8"
-  },
-  "orange_bed_receta_9": {
-    "nombre": "Orange Bed Recipe 9",
-    "slug": "orange-bed-recipe-9"
   },
   "orange_candle_receta": {
     "nombre": "Orange Candle Recipe",
@@ -3546,10 +2402,6 @@
   "orange_dye_receta_2": {
     "nombre": "Orange Dye Recipe 2",
     "slug": "orange-dye-recipe-2"
-  },
-  "orange_dye_receta_3": {
-    "nombre": "Orange Dye Recipe 3",
-    "slug": "orange-dye-recipe-3"
   },
   "orange_stained_glass_pane_receta_1": {
     "nombre": "Orange Stained Glass Pane Recipe 1",
@@ -3603,69 +2455,9 @@
     "nombre": "Packed Mud Recipe",
     "slug": "packed-mud-recipe"
   },
-  "painting_receta_1": {
-    "nombre": "Painting Recipe 1",
-    "slug": "painting-recipe-1"
-  },
-  "painting_receta_10": {
-    "nombre": "Painting Recipe 10",
-    "slug": "painting-recipe-10"
-  },
-  "painting_receta_11": {
-    "nombre": "Painting Recipe 11",
-    "slug": "painting-recipe-11"
-  },
-  "painting_receta_12": {
-    "nombre": "Painting Recipe 12",
-    "slug": "painting-recipe-12"
-  },
-  "painting_receta_13": {
-    "nombre": "Painting Recipe 13",
-    "slug": "painting-recipe-13"
-  },
-  "painting_receta_14": {
-    "nombre": "Painting Recipe 14",
-    "slug": "painting-recipe-14"
-  },
-  "painting_receta_15": {
-    "nombre": "Painting Recipe 15",
-    "slug": "painting-recipe-15"
-  },
-  "painting_receta_16": {
-    "nombre": "Painting Recipe 16",
-    "slug": "painting-recipe-16"
-  },
-  "painting_receta_2": {
-    "nombre": "Painting Recipe 2",
-    "slug": "painting-recipe-2"
-  },
-  "painting_receta_3": {
-    "nombre": "Painting Recipe 3",
-    "slug": "painting-recipe-3"
-  },
-  "painting_receta_4": {
-    "nombre": "Painting Recipe 4",
-    "slug": "painting-recipe-4"
-  },
-  "painting_receta_5": {
-    "nombre": "Painting Recipe 5",
-    "slug": "painting-recipe-5"
-  },
-  "painting_receta_6": {
-    "nombre": "Painting Recipe 6",
-    "slug": "painting-recipe-6"
-  },
-  "painting_receta_7": {
-    "nombre": "Painting Recipe 7",
-    "slug": "painting-recipe-7"
-  },
-  "painting_receta_8": {
-    "nombre": "Painting Recipe 8",
-    "slug": "painting-recipe-8"
-  },
-  "painting_receta_9": {
-    "nombre": "Painting Recipe 9",
-    "slug": "painting-recipe-9"
+  "painting_receta": {
+    "nombre": "Painting Recipe",
+    "slug": "painting-recipe"
   },
   "pale_moss_carpet_receta": {
     "nombre": "Pale Moss Carpet Recipe",
@@ -3739,53 +2531,9 @@
     "nombre": "Pink Bed Recipe 1",
     "slug": "pink-bed-recipe-1"
   },
-  "pink_bed_receta_10": {
-    "nombre": "Pink Bed Recipe 10",
-    "slug": "pink-bed-recipe-10"
-  },
-  "pink_bed_receta_11": {
-    "nombre": "Pink Bed Recipe 11",
-    "slug": "pink-bed-recipe-11"
-  },
-  "pink_bed_receta_12": {
-    "nombre": "Pink Bed Recipe 12",
-    "slug": "pink-bed-recipe-12"
-  },
-  "pink_bed_receta_13": {
-    "nombre": "Pink Bed Recipe 13",
-    "slug": "pink-bed-recipe-13"
-  },
   "pink_bed_receta_2": {
     "nombre": "Pink Bed Recipe 2",
     "slug": "pink-bed-recipe-2"
-  },
-  "pink_bed_receta_3": {
-    "nombre": "Pink Bed Recipe 3",
-    "slug": "pink-bed-recipe-3"
-  },
-  "pink_bed_receta_4": {
-    "nombre": "Pink Bed Recipe 4",
-    "slug": "pink-bed-recipe-4"
-  },
-  "pink_bed_receta_5": {
-    "nombre": "Pink Bed Recipe 5",
-    "slug": "pink-bed-recipe-5"
-  },
-  "pink_bed_receta_6": {
-    "nombre": "Pink Bed Recipe 6",
-    "slug": "pink-bed-recipe-6"
-  },
-  "pink_bed_receta_7": {
-    "nombre": "Pink Bed Recipe 7",
-    "slug": "pink-bed-recipe-7"
-  },
-  "pink_bed_receta_8": {
-    "nombre": "Pink Bed Recipe 8",
-    "slug": "pink-bed-recipe-8"
-  },
-  "pink_bed_receta_9": {
-    "nombre": "Pink Bed Recipe 9",
-    "slug": "pink-bed-recipe-9"
   },
   "pink_candle_receta": {
     "nombre": "Pink Candle Recipe",
@@ -3815,10 +2563,6 @@
     "nombre": "Pink Dye Recipe 3",
     "slug": "pink-dye-recipe-3"
   },
-  "pink_dye_receta_4": {
-    "nombre": "Pink Dye Recipe 4",
-    "slug": "pink-dye-recipe-4"
-  },
   "pink_stained_glass_pane_receta_1": {
     "nombre": "Pink Stained Glass Pane Recipe 1",
     "slug": "pink-stained-glass-pane-recipe-1"
@@ -3839,53 +2583,9 @@
     "nombre": "Pink Wool Recipe",
     "slug": "pink-wool-recipe"
   },
-  "piston_receta_1": {
-    "nombre": "Piston Recipe 1",
-    "slug": "piston-recipe-1"
-  },
-  "piston_receta_10": {
-    "nombre": "Piston Recipe 10",
-    "slug": "piston-recipe-10"
-  },
-  "piston_receta_11": {
-    "nombre": "Piston Recipe 11",
-    "slug": "piston-recipe-11"
-  },
-  "piston_receta_12": {
-    "nombre": "Piston Recipe 12",
-    "slug": "piston-recipe-12"
-  },
-  "piston_receta_2": {
-    "nombre": "Piston Recipe 2",
-    "slug": "piston-recipe-2"
-  },
-  "piston_receta_3": {
-    "nombre": "Piston Recipe 3",
-    "slug": "piston-recipe-3"
-  },
-  "piston_receta_4": {
-    "nombre": "Piston Recipe 4",
-    "slug": "piston-recipe-4"
-  },
-  "piston_receta_5": {
-    "nombre": "Piston Recipe 5",
-    "slug": "piston-recipe-5"
-  },
-  "piston_receta_6": {
-    "nombre": "Piston Recipe 6",
-    "slug": "piston-recipe-6"
-  },
-  "piston_receta_7": {
-    "nombre": "Piston Recipe 7",
-    "slug": "piston-recipe-7"
-  },
-  "piston_receta_8": {
-    "nombre": "Piston Recipe 8",
-    "slug": "piston-recipe-8"
-  },
-  "piston_receta_9": {
-    "nombre": "Piston Recipe 9",
-    "slug": "piston-recipe-9"
+  "piston_receta": {
+    "nombre": "Piston Recipe",
+    "slug": "piston-recipe"
   },
   "polished_andesite_receta": {
     "nombre": "Polished Andesite Recipe",
@@ -4047,53 +2747,9 @@
     "nombre": "Purple Bed Recipe 1",
     "slug": "purple-bed-recipe-1"
   },
-  "purple_bed_receta_10": {
-    "nombre": "Purple Bed Recipe 10",
-    "slug": "purple-bed-recipe-10"
-  },
-  "purple_bed_receta_11": {
-    "nombre": "Purple Bed Recipe 11",
-    "slug": "purple-bed-recipe-11"
-  },
-  "purple_bed_receta_12": {
-    "nombre": "Purple Bed Recipe 12",
-    "slug": "purple-bed-recipe-12"
-  },
-  "purple_bed_receta_13": {
-    "nombre": "Purple Bed Recipe 13",
-    "slug": "purple-bed-recipe-13"
-  },
   "purple_bed_receta_2": {
     "nombre": "Purple Bed Recipe 2",
     "slug": "purple-bed-recipe-2"
-  },
-  "purple_bed_receta_3": {
-    "nombre": "Purple Bed Recipe 3",
-    "slug": "purple-bed-recipe-3"
-  },
-  "purple_bed_receta_4": {
-    "nombre": "Purple Bed Recipe 4",
-    "slug": "purple-bed-recipe-4"
-  },
-  "purple_bed_receta_5": {
-    "nombre": "Purple Bed Recipe 5",
-    "slug": "purple-bed-recipe-5"
-  },
-  "purple_bed_receta_6": {
-    "nombre": "Purple Bed Recipe 6",
-    "slug": "purple-bed-recipe-6"
-  },
-  "purple_bed_receta_7": {
-    "nombre": "Purple Bed Recipe 7",
-    "slug": "purple-bed-recipe-7"
-  },
-  "purple_bed_receta_8": {
-    "nombre": "Purple Bed Recipe 8",
-    "slug": "purple-bed-recipe-8"
-  },
-  "purple_bed_receta_9": {
-    "nombre": "Purple Bed Recipe 9",
-    "slug": "purple-bed-recipe-9"
   },
   "purple_candle_receta": {
     "nombre": "Purple Candle Recipe",
@@ -4143,21 +2799,13 @@
     "nombre": "Purpur Pillar Recipe",
     "slug": "purpur-pillar-recipe"
   },
-  "purpur_slab_receta_1": {
-    "nombre": "Purpur Slab Recipe 1",
-    "slug": "purpur-slab-recipe-1"
+  "purpur_slab_receta": {
+    "nombre": "Purpur Slab Recipe",
+    "slug": "purpur-slab-recipe"
   },
-  "purpur_slab_receta_2": {
-    "nombre": "Purpur Slab Recipe 2",
-    "slug": "purpur-slab-recipe-2"
-  },
-  "purpur_stairs_receta_1": {
-    "nombre": "Purpur Stairs Recipe 1",
-    "slug": "purpur-stairs-recipe-1"
-  },
-  "purpur_stairs_receta_2": {
-    "nombre": "Purpur Stairs Recipe 2",
-    "slug": "purpur-stairs-recipe-2"
+  "purpur_stairs_receta": {
+    "nombre": "Purpur Stairs Recipe",
+    "slug": "purpur-stairs-recipe"
   },
   "quartz_block_receta": {
     "nombre": "Block of Quartz Recipe",
@@ -4171,29 +2819,13 @@
     "nombre": "Quartz Pillar Recipe",
     "slug": "quartz-pillar-recipe"
   },
-  "quartz_slab_receta_1": {
-    "nombre": "Quartz Slab Recipe 1",
-    "slug": "quartz-slab-recipe-1"
+  "quartz_slab_receta": {
+    "nombre": "Quartz Slab Recipe",
+    "slug": "quartz-slab-recipe"
   },
-  "quartz_slab_receta_2": {
-    "nombre": "Quartz Slab Recipe 2",
-    "slug": "quartz-slab-recipe-2"
-  },
-  "quartz_slab_receta_3": {
-    "nombre": "Quartz Slab Recipe 3",
-    "slug": "quartz-slab-recipe-3"
-  },
-  "quartz_stairs_receta_1": {
-    "nombre": "Quartz Stairs Recipe 1",
-    "slug": "quartz-stairs-recipe-1"
-  },
-  "quartz_stairs_receta_2": {
-    "nombre": "Quartz Stairs Recipe 2",
-    "slug": "quartz-stairs-recipe-2"
-  },
-  "quartz_stairs_receta_3": {
-    "nombre": "Quartz Stairs Recipe 3",
-    "slug": "quartz-stairs-recipe-3"
+  "quartz_stairs_receta": {
+    "nombre": "Quartz Stairs Recipe",
+    "slug": "quartz-stairs-recipe"
   },
   "rabbit_stew_receta_1": {
     "nombre": "Rabbit Stew Recipe 1",
@@ -4247,53 +2879,9 @@
     "nombre": "Red Bed Recipe 1",
     "slug": "red-bed-recipe-1"
   },
-  "red_bed_receta_10": {
-    "nombre": "Red Bed Recipe 10",
-    "slug": "red-bed-recipe-10"
-  },
-  "red_bed_receta_11": {
-    "nombre": "Red Bed Recipe 11",
-    "slug": "red-bed-recipe-11"
-  },
-  "red_bed_receta_12": {
-    "nombre": "Red Bed Recipe 12",
-    "slug": "red-bed-recipe-12"
-  },
-  "red_bed_receta_13": {
-    "nombre": "Red Bed Recipe 13",
-    "slug": "red-bed-recipe-13"
-  },
   "red_bed_receta_2": {
     "nombre": "Red Bed Recipe 2",
     "slug": "red-bed-recipe-2"
-  },
-  "red_bed_receta_3": {
-    "nombre": "Red Bed Recipe 3",
-    "slug": "red-bed-recipe-3"
-  },
-  "red_bed_receta_4": {
-    "nombre": "Red Bed Recipe 4",
-    "slug": "red-bed-recipe-4"
-  },
-  "red_bed_receta_5": {
-    "nombre": "Red Bed Recipe 5",
-    "slug": "red-bed-recipe-5"
-  },
-  "red_bed_receta_6": {
-    "nombre": "Red Bed Recipe 6",
-    "slug": "red-bed-recipe-6"
-  },
-  "red_bed_receta_7": {
-    "nombre": "Red Bed Recipe 7",
-    "slug": "red-bed-recipe-7"
-  },
-  "red_bed_receta_8": {
-    "nombre": "Red Bed Recipe 8",
-    "slug": "red-bed-recipe-8"
-  },
-  "red_bed_receta_9": {
-    "nombre": "Red Bed Recipe 9",
-    "slug": "red-bed-recipe-9"
   },
   "red_candle_receta": {
     "nombre": "Red Candle Recipe",
@@ -4319,14 +2907,6 @@
     "nombre": "Red Dye Recipe 2",
     "slug": "red-dye-recipe-2"
   },
-  "red_dye_receta_3": {
-    "nombre": "Red Dye Recipe 3",
-    "slug": "red-dye-recipe-3"
-  },
-  "red_dye_receta_4": {
-    "nombre": "Red Dye Recipe 4",
-    "slug": "red-dye-recipe-4"
-  },
   "red_nether_brick_slab_receta": {
     "nombre": "Red Nether Brick Slab Recipe",
     "slug": "red-nether-brick-slab-recipe"
@@ -4347,25 +2927,13 @@
     "nombre": "Red Sandstone Recipe",
     "slug": "red-sandstone-recipe"
   },
-  "red_sandstone_slab_receta_1": {
-    "nombre": "Red Sandstone Slab Recipe 1",
-    "slug": "red-sandstone-slab-recipe-1"
+  "red_sandstone_slab_receta": {
+    "nombre": "Red Sandstone Slab Recipe",
+    "slug": "red-sandstone-slab-recipe"
   },
-  "red_sandstone_slab_receta_2": {
-    "nombre": "Red Sandstone Slab Recipe 2",
-    "slug": "red-sandstone-slab-recipe-2"
-  },
-  "red_sandstone_stairs_receta_1": {
-    "nombre": "Red Sandstone Stairs Recipe 1",
-    "slug": "red-sandstone-stairs-recipe-1"
-  },
-  "red_sandstone_stairs_receta_2": {
-    "nombre": "Red Sandstone Stairs Recipe 2",
-    "slug": "red-sandstone-stairs-recipe-2"
-  },
-  "red_sandstone_stairs_receta_3": {
-    "nombre": "Red Sandstone Stairs Recipe 3",
-    "slug": "red-sandstone-stairs-recipe-3"
+  "red_sandstone_stairs_receta": {
+    "nombre": "Red Sandstone Stairs Recipe",
+    "slug": "red-sandstone-stairs-recipe"
   },
   "red_sandstone_wall_receta": {
     "nombre": "Red Sandstone Wall Recipe",
@@ -4423,25 +2991,13 @@
     "nombre": "Sandstone Recipe",
     "slug": "sandstone-recipe"
   },
-  "sandstone_slab_receta_1": {
-    "nombre": "Sandstone Slab Recipe 1",
-    "slug": "sandstone-slab-recipe-1"
+  "sandstone_slab_receta": {
+    "nombre": "Sandstone Slab Recipe",
+    "slug": "sandstone-slab-recipe"
   },
-  "sandstone_slab_receta_2": {
-    "nombre": "Sandstone Slab Recipe 2",
-    "slug": "sandstone-slab-recipe-2"
-  },
-  "sandstone_stairs_receta_1": {
-    "nombre": "Sandstone Stairs Recipe 1",
-    "slug": "sandstone-stairs-recipe-1"
-  },
-  "sandstone_stairs_receta_2": {
-    "nombre": "Sandstone Stairs Recipe 2",
-    "slug": "sandstone-stairs-recipe-2"
-  },
-  "sandstone_stairs_receta_3": {
-    "nombre": "Sandstone Stairs Recipe 3",
-    "slug": "sandstone-stairs-recipe-3"
+  "sandstone_stairs_receta": {
+    "nombre": "Sandstone Stairs Recipe",
+    "slug": "sandstone-stairs-recipe"
   },
   "sandstone_wall_receta": {
     "nombre": "Sandstone Wall Recipe",
@@ -4467,53 +3023,9 @@
     "nombre": "Shears Recipe",
     "slug": "shears-recipe"
   },
-  "shield_receta_1": {
-    "nombre": "Shield Recipe 1",
-    "slug": "shield-recipe-1"
-  },
-  "shield_receta_10": {
-    "nombre": "Shield Recipe 10",
-    "slug": "shield-recipe-10"
-  },
-  "shield_receta_11": {
-    "nombre": "Shield Recipe 11",
-    "slug": "shield-recipe-11"
-  },
-  "shield_receta_12": {
-    "nombre": "Shield Recipe 12",
-    "slug": "shield-recipe-12"
-  },
-  "shield_receta_2": {
-    "nombre": "Shield Recipe 2",
-    "slug": "shield-recipe-2"
-  },
-  "shield_receta_3": {
-    "nombre": "Shield Recipe 3",
-    "slug": "shield-recipe-3"
-  },
-  "shield_receta_4": {
-    "nombre": "Shield Recipe 4",
-    "slug": "shield-recipe-4"
-  },
-  "shield_receta_5": {
-    "nombre": "Shield Recipe 5",
-    "slug": "shield-recipe-5"
-  },
-  "shield_receta_6": {
-    "nombre": "Shield Recipe 6",
-    "slug": "shield-recipe-6"
-  },
-  "shield_receta_7": {
-    "nombre": "Shield Recipe 7",
-    "slug": "shield-recipe-7"
-  },
-  "shield_receta_8": {
-    "nombre": "Shield Recipe 8",
-    "slug": "shield-recipe-8"
-  },
-  "shield_receta_9": {
-    "nombre": "Shield Recipe 9",
-    "slug": "shield-recipe-9"
+  "shield_receta": {
+    "nombre": "Shield Recipe",
+    "slug": "shield-recipe"
   },
   "shulker_box_receta": {
     "nombre": "Shulker Box Recipe",
@@ -4535,229 +3047,13 @@
     "nombre": "Slime Block Recipe",
     "slug": "slime-block-recipe"
   },
-  "smithing_table_receta_1": {
-    "nombre": "Smithing Table Recipe 1",
-    "slug": "smithing-table-recipe-1"
+  "smithing_table_receta": {
+    "nombre": "Smithing Table Recipe",
+    "slug": "smithing-table-recipe"
   },
-  "smithing_table_receta_10": {
-    "nombre": "Smithing Table Recipe 10",
-    "slug": "smithing-table-recipe-10"
-  },
-  "smithing_table_receta_11": {
-    "nombre": "Smithing Table Recipe 11",
-    "slug": "smithing-table-recipe-11"
-  },
-  "smithing_table_receta_12": {
-    "nombre": "Smithing Table Recipe 12",
-    "slug": "smithing-table-recipe-12"
-  },
-  "smithing_table_receta_2": {
-    "nombre": "Smithing Table Recipe 2",
-    "slug": "smithing-table-recipe-2"
-  },
-  "smithing_table_receta_3": {
-    "nombre": "Smithing Table Recipe 3",
-    "slug": "smithing-table-recipe-3"
-  },
-  "smithing_table_receta_4": {
-    "nombre": "Smithing Table Recipe 4",
-    "slug": "smithing-table-recipe-4"
-  },
-  "smithing_table_receta_5": {
-    "nombre": "Smithing Table Recipe 5",
-    "slug": "smithing-table-recipe-5"
-  },
-  "smithing_table_receta_6": {
-    "nombre": "Smithing Table Recipe 6",
-    "slug": "smithing-table-recipe-6"
-  },
-  "smithing_table_receta_7": {
-    "nombre": "Smithing Table Recipe 7",
-    "slug": "smithing-table-recipe-7"
-  },
-  "smithing_table_receta_8": {
-    "nombre": "Smithing Table Recipe 8",
-    "slug": "smithing-table-recipe-8"
-  },
-  "smithing_table_receta_9": {
-    "nombre": "Smithing Table Recipe 9",
-    "slug": "smithing-table-recipe-9"
-  },
-  "smoker_receta_1": {
-    "nombre": "Smoker Recipe 1",
-    "slug": "smoker-recipe-1"
-  },
-  "smoker_receta_10": {
-    "nombre": "Smoker Recipe 10",
-    "slug": "smoker-recipe-10"
-  },
-  "smoker_receta_11": {
-    "nombre": "Smoker Recipe 11",
-    "slug": "smoker-recipe-11"
-  },
-  "smoker_receta_12": {
-    "nombre": "Smoker Recipe 12",
-    "slug": "smoker-recipe-12"
-  },
-  "smoker_receta_13": {
-    "nombre": "Smoker Recipe 13",
-    "slug": "smoker-recipe-13"
-  },
-  "smoker_receta_14": {
-    "nombre": "Smoker Recipe 14",
-    "slug": "smoker-recipe-14"
-  },
-  "smoker_receta_15": {
-    "nombre": "Smoker Recipe 15",
-    "slug": "smoker-recipe-15"
-  },
-  "smoker_receta_16": {
-    "nombre": "Smoker Recipe 16",
-    "slug": "smoker-recipe-16"
-  },
-  "smoker_receta_17": {
-    "nombre": "Smoker Recipe 17",
-    "slug": "smoker-recipe-17"
-  },
-  "smoker_receta_18": {
-    "nombre": "Smoker Recipe 18",
-    "slug": "smoker-recipe-18"
-  },
-  "smoker_receta_19": {
-    "nombre": "Smoker Recipe 19",
-    "slug": "smoker-recipe-19"
-  },
-  "smoker_receta_2": {
-    "nombre": "Smoker Recipe 2",
-    "slug": "smoker-recipe-2"
-  },
-  "smoker_receta_20": {
-    "nombre": "Smoker Recipe 20",
-    "slug": "smoker-recipe-20"
-  },
-  "smoker_receta_21": {
-    "nombre": "Smoker Recipe 21",
-    "slug": "smoker-recipe-21"
-  },
-  "smoker_receta_22": {
-    "nombre": "Smoker Recipe 22",
-    "slug": "smoker-recipe-22"
-  },
-  "smoker_receta_23": {
-    "nombre": "Smoker Recipe 23",
-    "slug": "smoker-recipe-23"
-  },
-  "smoker_receta_24": {
-    "nombre": "Smoker Recipe 24",
-    "slug": "smoker-recipe-24"
-  },
-  "smoker_receta_25": {
-    "nombre": "Smoker Recipe 25",
-    "slug": "smoker-recipe-25"
-  },
-  "smoker_receta_26": {
-    "nombre": "Smoker Recipe 26",
-    "slug": "smoker-recipe-26"
-  },
-  "smoker_receta_27": {
-    "nombre": "Smoker Recipe 27",
-    "slug": "smoker-recipe-27"
-  },
-  "smoker_receta_28": {
-    "nombre": "Smoker Recipe 28",
-    "slug": "smoker-recipe-28"
-  },
-  "smoker_receta_29": {
-    "nombre": "Smoker Recipe 29",
-    "slug": "smoker-recipe-29"
-  },
-  "smoker_receta_3": {
-    "nombre": "Smoker Recipe 3",
-    "slug": "smoker-recipe-3"
-  },
-  "smoker_receta_30": {
-    "nombre": "Smoker Recipe 30",
-    "slug": "smoker-recipe-30"
-  },
-  "smoker_receta_31": {
-    "nombre": "Smoker Recipe 31",
-    "slug": "smoker-recipe-31"
-  },
-  "smoker_receta_32": {
-    "nombre": "Smoker Recipe 32",
-    "slug": "smoker-recipe-32"
-  },
-  "smoker_receta_33": {
-    "nombre": "Smoker Recipe 33",
-    "slug": "smoker-recipe-33"
-  },
-  "smoker_receta_34": {
-    "nombre": "Smoker Recipe 34",
-    "slug": "smoker-recipe-34"
-  },
-  "smoker_receta_35": {
-    "nombre": "Smoker Recipe 35",
-    "slug": "smoker-recipe-35"
-  },
-  "smoker_receta_36": {
-    "nombre": "Smoker Recipe 36",
-    "slug": "smoker-recipe-36"
-  },
-  "smoker_receta_37": {
-    "nombre": "Smoker Recipe 37",
-    "slug": "smoker-recipe-37"
-  },
-  "smoker_receta_38": {
-    "nombre": "Smoker Recipe 38",
-    "slug": "smoker-recipe-38"
-  },
-  "smoker_receta_39": {
-    "nombre": "Smoker Recipe 39",
-    "slug": "smoker-recipe-39"
-  },
-  "smoker_receta_4": {
-    "nombre": "Smoker Recipe 4",
-    "slug": "smoker-recipe-4"
-  },
-  "smoker_receta_40": {
-    "nombre": "Smoker Recipe 40",
-    "slug": "smoker-recipe-40"
-  },
-  "smoker_receta_41": {
-    "nombre": "Smoker Recipe 41",
-    "slug": "smoker-recipe-41"
-  },
-  "smoker_receta_42": {
-    "nombre": "Smoker Recipe 42",
-    "slug": "smoker-recipe-42"
-  },
-  "smoker_receta_43": {
-    "nombre": "Smoker Recipe 43",
-    "slug": "smoker-recipe-43"
-  },
-  "smoker_receta_44": {
-    "nombre": "Smoker Recipe 44",
-    "slug": "smoker-recipe-44"
-  },
-  "smoker_receta_5": {
-    "nombre": "Smoker Recipe 5",
-    "slug": "smoker-recipe-5"
-  },
-  "smoker_receta_6": {
-    "nombre": "Smoker Recipe 6",
-    "slug": "smoker-recipe-6"
-  },
-  "smoker_receta_7": {
-    "nombre": "Smoker Recipe 7",
-    "slug": "smoker-recipe-7"
-  },
-  "smoker_receta_8": {
-    "nombre": "Smoker Recipe 8",
-    "slug": "smoker-recipe-8"
-  },
-  "smoker_receta_9": {
-    "nombre": "Smoker Recipe 9",
-    "slug": "smoker-recipe-9"
+  "smoker_receta": {
+    "nombre": "Smoker Recipe",
+    "slug": "smoker-recipe"
   },
   "smooth_quartz_slab_receta": {
     "nombre": "Smooth Quartz Slab Recipe",
@@ -5059,69 +3355,17 @@
     "nombre": "Stick Recipe 1",
     "slug": "stick-recipe-1"
   },
-  "stick_receta_10": {
-    "nombre": "Stick Recipe 10",
-    "slug": "stick-recipe-10"
-  },
-  "stick_receta_11": {
-    "nombre": "Stick Recipe 11",
-    "slug": "stick-recipe-11"
-  },
-  "stick_receta_12": {
-    "nombre": "Stick Recipe 12",
-    "slug": "stick-recipe-12"
-  },
-  "stick_receta_13": {
-    "nombre": "Stick Recipe 13",
-    "slug": "stick-recipe-13"
-  },
   "stick_receta_2": {
     "nombre": "Stick Recipe 2",
     "slug": "stick-recipe-2"
-  },
-  "stick_receta_3": {
-    "nombre": "Stick Recipe 3",
-    "slug": "stick-recipe-3"
-  },
-  "stick_receta_4": {
-    "nombre": "Stick Recipe 4",
-    "slug": "stick-recipe-4"
-  },
-  "stick_receta_5": {
-    "nombre": "Stick Recipe 5",
-    "slug": "stick-recipe-5"
-  },
-  "stick_receta_6": {
-    "nombre": "Stick Recipe 6",
-    "slug": "stick-recipe-6"
-  },
-  "stick_receta_7": {
-    "nombre": "Stick Recipe 7",
-    "slug": "stick-recipe-7"
-  },
-  "stick_receta_8": {
-    "nombre": "Stick Recipe 8",
-    "slug": "stick-recipe-8"
-  },
-  "stick_receta_9": {
-    "nombre": "Stick Recipe 9",
-    "slug": "stick-recipe-9"
   },
   "sticky_piston_receta": {
     "nombre": "Sticky Piston Recipe",
     "slug": "sticky-piston-recipe"
   },
-  "stone_axe_receta_1": {
-    "nombre": "Stone Axe Recipe 1",
-    "slug": "stone-axe-recipe-1"
-  },
-  "stone_axe_receta_2": {
-    "nombre": "Stone Axe Recipe 2",
-    "slug": "stone-axe-recipe-2"
-  },
-  "stone_axe_receta_3": {
-    "nombre": "Stone Axe Recipe 3",
-    "slug": "stone-axe-recipe-3"
+  "stone_axe_receta": {
+    "nombre": "Stone Axe Recipe",
+    "slug": "stone-axe-recipe"
   },
   "stone_brick_slab_receta": {
     "nombre": "Stone Brick Slab Recipe",
@@ -5143,45 +3387,21 @@
     "nombre": "Stone Button Recipe",
     "slug": "stone-button-recipe"
   },
-  "stone_hoe_receta_1": {
-    "nombre": "Stone Hoe Recipe 1",
-    "slug": "stone-hoe-recipe-1"
+  "stone_hoe_receta": {
+    "nombre": "Stone Hoe Recipe",
+    "slug": "stone-hoe-recipe"
   },
-  "stone_hoe_receta_2": {
-    "nombre": "Stone Hoe Recipe 2",
-    "slug": "stone-hoe-recipe-2"
-  },
-  "stone_hoe_receta_3": {
-    "nombre": "Stone Hoe Recipe 3",
-    "slug": "stone-hoe-recipe-3"
-  },
-  "stone_pickaxe_receta_1": {
-    "nombre": "Stone Pickaxe Recipe 1",
-    "slug": "stone-pickaxe-recipe-1"
-  },
-  "stone_pickaxe_receta_2": {
-    "nombre": "Stone Pickaxe Recipe 2",
-    "slug": "stone-pickaxe-recipe-2"
-  },
-  "stone_pickaxe_receta_3": {
-    "nombre": "Stone Pickaxe Recipe 3",
-    "slug": "stone-pickaxe-recipe-3"
+  "stone_pickaxe_receta": {
+    "nombre": "Stone Pickaxe Recipe",
+    "slug": "stone-pickaxe-recipe"
   },
   "stone_pressure_plate_receta": {
     "nombre": "Stone Pressure Plate Recipe",
     "slug": "stone-pressure-plate-recipe"
   },
-  "stone_shovel_receta_1": {
-    "nombre": "Stone Shovel Recipe 1",
-    "slug": "stone-shovel-recipe-1"
-  },
-  "stone_shovel_receta_2": {
-    "nombre": "Stone Shovel Recipe 2",
-    "slug": "stone-shovel-recipe-2"
-  },
-  "stone_shovel_receta_3": {
-    "nombre": "Stone Shovel Recipe 3",
-    "slug": "stone-shovel-recipe-3"
+  "stone_shovel_receta": {
+    "nombre": "Stone Shovel Recipe",
+    "slug": "stone-shovel-recipe"
   },
   "stone_slab_receta": {
     "nombre": "Stone Slab Recipe",
@@ -5191,17 +3411,9 @@
     "nombre": "Stone Stairs Recipe",
     "slug": "stone-stairs-recipe"
   },
-  "stone_sword_receta_1": {
-    "nombre": "Stone Sword Recipe 1",
-    "slug": "stone-sword-recipe-1"
-  },
-  "stone_sword_receta_2": {
-    "nombre": "Stone Sword Recipe 2",
-    "slug": "stone-sword-recipe-2"
-  },
-  "stone_sword_receta_3": {
-    "nombre": "Stone Sword Recipe 3",
-    "slug": "stone-sword-recipe-3"
+  "stone_sword_receta": {
+    "nombre": "Stone Sword Recipe",
+    "slug": "stone-sword-recipe"
   },
   "stonecutter_receta": {
     "nombre": "Stonecutter Recipe",
@@ -5331,73 +3543,21 @@
     "nombre": "Minecart with TNT Recipe",
     "slug": "minecart-with-tnt-recipe"
   },
-  "tnt_receta_1": {
-    "nombre": "TNT Recipe 1",
-    "slug": "tnt-recipe-1"
+  "tnt_receta": {
+    "nombre": "TNT Recipe",
+    "slug": "tnt-recipe"
   },
-  "tnt_receta_2": {
-    "nombre": "TNT Recipe 2",
-    "slug": "tnt-recipe-2"
-  },
-  "torch_receta_1": {
-    "nombre": "Torch Recipe 1",
-    "slug": "torch-recipe-1"
-  },
-  "torch_receta_2": {
-    "nombre": "Torch Recipe 2",
-    "slug": "torch-recipe-2"
+  "torch_receta": {
+    "nombre": "Torch Recipe",
+    "slug": "torch-recipe"
   },
   "trapped_chest_receta": {
     "nombre": "Trapped Chest Recipe",
     "slug": "trapped-chest-recipe"
   },
-  "tripwire_hook_receta_1": {
-    "nombre": "Tripwire Hook Recipe 1",
-    "slug": "tripwire-hook-recipe-1"
-  },
-  "tripwire_hook_receta_10": {
-    "nombre": "Tripwire Hook Recipe 10",
-    "slug": "tripwire-hook-recipe-10"
-  },
-  "tripwire_hook_receta_11": {
-    "nombre": "Tripwire Hook Recipe 11",
-    "slug": "tripwire-hook-recipe-11"
-  },
-  "tripwire_hook_receta_12": {
-    "nombre": "Tripwire Hook Recipe 12",
-    "slug": "tripwire-hook-recipe-12"
-  },
-  "tripwire_hook_receta_2": {
-    "nombre": "Tripwire Hook Recipe 2",
-    "slug": "tripwire-hook-recipe-2"
-  },
-  "tripwire_hook_receta_3": {
-    "nombre": "Tripwire Hook Recipe 3",
-    "slug": "tripwire-hook-recipe-3"
-  },
-  "tripwire_hook_receta_4": {
-    "nombre": "Tripwire Hook Recipe 4",
-    "slug": "tripwire-hook-recipe-4"
-  },
-  "tripwire_hook_receta_5": {
-    "nombre": "Tripwire Hook Recipe 5",
-    "slug": "tripwire-hook-recipe-5"
-  },
-  "tripwire_hook_receta_6": {
-    "nombre": "Tripwire Hook Recipe 6",
-    "slug": "tripwire-hook-recipe-6"
-  },
-  "tripwire_hook_receta_7": {
-    "nombre": "Tripwire Hook Recipe 7",
-    "slug": "tripwire-hook-recipe-7"
-  },
-  "tripwire_hook_receta_8": {
-    "nombre": "Tripwire Hook Recipe 8",
-    "slug": "tripwire-hook-recipe-8"
-  },
-  "tripwire_hook_receta_9": {
-    "nombre": "Tripwire Hook Recipe 9",
-    "slug": "tripwire-hook-recipe-9"
+  "tripwire_hook_receta": {
+    "nombre": "Tripwire Hook Recipe",
+    "slug": "tripwire-hook-recipe"
   },
   "tuff_brick_slab_receta": {
     "nombre": "Tuff Brick Slab Recipe",
@@ -5771,53 +3931,9 @@
     "nombre": "White Bed Recipe 1",
     "slug": "white-bed-recipe-1"
   },
-  "white_bed_receta_10": {
-    "nombre": "White Bed Recipe 10",
-    "slug": "white-bed-recipe-10"
-  },
-  "white_bed_receta_11": {
-    "nombre": "White Bed Recipe 11",
-    "slug": "white-bed-recipe-11"
-  },
-  "white_bed_receta_12": {
-    "nombre": "White Bed Recipe 12",
-    "slug": "white-bed-recipe-12"
-  },
-  "white_bed_receta_13": {
-    "nombre": "White Bed Recipe 13",
-    "slug": "white-bed-recipe-13"
-  },
   "white_bed_receta_2": {
     "nombre": "White Bed Recipe 2",
     "slug": "white-bed-recipe-2"
-  },
-  "white_bed_receta_3": {
-    "nombre": "White Bed Recipe 3",
-    "slug": "white-bed-recipe-3"
-  },
-  "white_bed_receta_4": {
-    "nombre": "White Bed Recipe 4",
-    "slug": "white-bed-recipe-4"
-  },
-  "white_bed_receta_5": {
-    "nombre": "White Bed Recipe 5",
-    "slug": "white-bed-recipe-5"
-  },
-  "white_bed_receta_6": {
-    "nombre": "White Bed Recipe 6",
-    "slug": "white-bed-recipe-6"
-  },
-  "white_bed_receta_7": {
-    "nombre": "White Bed Recipe 7",
-    "slug": "white-bed-recipe-7"
-  },
-  "white_bed_receta_8": {
-    "nombre": "White Bed Recipe 8",
-    "slug": "white-bed-recipe-8"
-  },
-  "white_bed_receta_9": {
-    "nombre": "White Bed Recipe 9",
-    "slug": "white-bed-recipe-9"
   },
   "white_candle_receta": {
     "nombre": "White Candle Recipe",
@@ -5835,13 +3951,9 @@
     "nombre": "White Concrete Powder Recipe",
     "slug": "white-concrete-powder-recipe"
   },
-  "white_dye_receta_1": {
-    "nombre": "White Dye Recipe 1",
-    "slug": "white-dye-recipe-1"
-  },
-  "white_dye_receta_2": {
-    "nombre": "White Dye Recipe 2",
-    "slug": "white-dye-recipe-2"
+  "white_dye_receta": {
+    "nombre": "White Dye Recipe",
+    "slug": "white-dye-recipe"
   },
   "white_stained_glass_pane_receta_1": {
     "nombre": "White Stained Glass Pane Recipe 1",
@@ -5879,245 +3991,25 @@
     "nombre": "Wolf Armor Recipe",
     "slug": "wolf-armor-recipe"
   },
-  "wooden_axe_receta_1": {
-    "nombre": "Wooden Axe Recipe 1",
-    "slug": "wooden-axe-recipe-1"
+  "wooden_axe_receta": {
+    "nombre": "Wooden Axe Recipe",
+    "slug": "wooden-axe-recipe"
   },
-  "wooden_axe_receta_10": {
-    "nombre": "Wooden Axe Recipe 10",
-    "slug": "wooden-axe-recipe-10"
+  "wooden_hoe_receta": {
+    "nombre": "Wooden Hoe Recipe",
+    "slug": "wooden-hoe-recipe"
   },
-  "wooden_axe_receta_11": {
-    "nombre": "Wooden Axe Recipe 11",
-    "slug": "wooden-axe-recipe-11"
+  "wooden_pickaxe_receta": {
+    "nombre": "Wooden Pickaxe Recipe",
+    "slug": "wooden-pickaxe-recipe"
   },
-  "wooden_axe_receta_12": {
-    "nombre": "Wooden Axe Recipe 12",
-    "slug": "wooden-axe-recipe-12"
+  "wooden_shovel_receta": {
+    "nombre": "Wooden Shovel Recipe",
+    "slug": "wooden-shovel-recipe"
   },
-  "wooden_axe_receta_2": {
-    "nombre": "Wooden Axe Recipe 2",
-    "slug": "wooden-axe-recipe-2"
-  },
-  "wooden_axe_receta_3": {
-    "nombre": "Wooden Axe Recipe 3",
-    "slug": "wooden-axe-recipe-3"
-  },
-  "wooden_axe_receta_4": {
-    "nombre": "Wooden Axe Recipe 4",
-    "slug": "wooden-axe-recipe-4"
-  },
-  "wooden_axe_receta_5": {
-    "nombre": "Wooden Axe Recipe 5",
-    "slug": "wooden-axe-recipe-5"
-  },
-  "wooden_axe_receta_6": {
-    "nombre": "Wooden Axe Recipe 6",
-    "slug": "wooden-axe-recipe-6"
-  },
-  "wooden_axe_receta_7": {
-    "nombre": "Wooden Axe Recipe 7",
-    "slug": "wooden-axe-recipe-7"
-  },
-  "wooden_axe_receta_8": {
-    "nombre": "Wooden Axe Recipe 8",
-    "slug": "wooden-axe-recipe-8"
-  },
-  "wooden_axe_receta_9": {
-    "nombre": "Wooden Axe Recipe 9",
-    "slug": "wooden-axe-recipe-9"
-  },
-  "wooden_hoe_receta_1": {
-    "nombre": "Wooden Hoe Recipe 1",
-    "slug": "wooden-hoe-recipe-1"
-  },
-  "wooden_hoe_receta_10": {
-    "nombre": "Wooden Hoe Recipe 10",
-    "slug": "wooden-hoe-recipe-10"
-  },
-  "wooden_hoe_receta_11": {
-    "nombre": "Wooden Hoe Recipe 11",
-    "slug": "wooden-hoe-recipe-11"
-  },
-  "wooden_hoe_receta_12": {
-    "nombre": "Wooden Hoe Recipe 12",
-    "slug": "wooden-hoe-recipe-12"
-  },
-  "wooden_hoe_receta_2": {
-    "nombre": "Wooden Hoe Recipe 2",
-    "slug": "wooden-hoe-recipe-2"
-  },
-  "wooden_hoe_receta_3": {
-    "nombre": "Wooden Hoe Recipe 3",
-    "slug": "wooden-hoe-recipe-3"
-  },
-  "wooden_hoe_receta_4": {
-    "nombre": "Wooden Hoe Recipe 4",
-    "slug": "wooden-hoe-recipe-4"
-  },
-  "wooden_hoe_receta_5": {
-    "nombre": "Wooden Hoe Recipe 5",
-    "slug": "wooden-hoe-recipe-5"
-  },
-  "wooden_hoe_receta_6": {
-    "nombre": "Wooden Hoe Recipe 6",
-    "slug": "wooden-hoe-recipe-6"
-  },
-  "wooden_hoe_receta_7": {
-    "nombre": "Wooden Hoe Recipe 7",
-    "slug": "wooden-hoe-recipe-7"
-  },
-  "wooden_hoe_receta_8": {
-    "nombre": "Wooden Hoe Recipe 8",
-    "slug": "wooden-hoe-recipe-8"
-  },
-  "wooden_hoe_receta_9": {
-    "nombre": "Wooden Hoe Recipe 9",
-    "slug": "wooden-hoe-recipe-9"
-  },
-  "wooden_pickaxe_receta_1": {
-    "nombre": "Wooden Pickaxe Recipe 1",
-    "slug": "wooden-pickaxe-recipe-1"
-  },
-  "wooden_pickaxe_receta_10": {
-    "nombre": "Wooden Pickaxe Recipe 10",
-    "slug": "wooden-pickaxe-recipe-10"
-  },
-  "wooden_pickaxe_receta_11": {
-    "nombre": "Wooden Pickaxe Recipe 11",
-    "slug": "wooden-pickaxe-recipe-11"
-  },
-  "wooden_pickaxe_receta_12": {
-    "nombre": "Wooden Pickaxe Recipe 12",
-    "slug": "wooden-pickaxe-recipe-12"
-  },
-  "wooden_pickaxe_receta_2": {
-    "nombre": "Wooden Pickaxe Recipe 2",
-    "slug": "wooden-pickaxe-recipe-2"
-  },
-  "wooden_pickaxe_receta_3": {
-    "nombre": "Wooden Pickaxe Recipe 3",
-    "slug": "wooden-pickaxe-recipe-3"
-  },
-  "wooden_pickaxe_receta_4": {
-    "nombre": "Wooden Pickaxe Recipe 4",
-    "slug": "wooden-pickaxe-recipe-4"
-  },
-  "wooden_pickaxe_receta_5": {
-    "nombre": "Wooden Pickaxe Recipe 5",
-    "slug": "wooden-pickaxe-recipe-5"
-  },
-  "wooden_pickaxe_receta_6": {
-    "nombre": "Wooden Pickaxe Recipe 6",
-    "slug": "wooden-pickaxe-recipe-6"
-  },
-  "wooden_pickaxe_receta_7": {
-    "nombre": "Wooden Pickaxe Recipe 7",
-    "slug": "wooden-pickaxe-recipe-7"
-  },
-  "wooden_pickaxe_receta_8": {
-    "nombre": "Wooden Pickaxe Recipe 8",
-    "slug": "wooden-pickaxe-recipe-8"
-  },
-  "wooden_pickaxe_receta_9": {
-    "nombre": "Wooden Pickaxe Recipe 9",
-    "slug": "wooden-pickaxe-recipe-9"
-  },
-  "wooden_shovel_receta_1": {
-    "nombre": "Wooden Shovel Recipe 1",
-    "slug": "wooden-shovel-recipe-1"
-  },
-  "wooden_shovel_receta_10": {
-    "nombre": "Wooden Shovel Recipe 10",
-    "slug": "wooden-shovel-recipe-10"
-  },
-  "wooden_shovel_receta_11": {
-    "nombre": "Wooden Shovel Recipe 11",
-    "slug": "wooden-shovel-recipe-11"
-  },
-  "wooden_shovel_receta_12": {
-    "nombre": "Wooden Shovel Recipe 12",
-    "slug": "wooden-shovel-recipe-12"
-  },
-  "wooden_shovel_receta_2": {
-    "nombre": "Wooden Shovel Recipe 2",
-    "slug": "wooden-shovel-recipe-2"
-  },
-  "wooden_shovel_receta_3": {
-    "nombre": "Wooden Shovel Recipe 3",
-    "slug": "wooden-shovel-recipe-3"
-  },
-  "wooden_shovel_receta_4": {
-    "nombre": "Wooden Shovel Recipe 4",
-    "slug": "wooden-shovel-recipe-4"
-  },
-  "wooden_shovel_receta_5": {
-    "nombre": "Wooden Shovel Recipe 5",
-    "slug": "wooden-shovel-recipe-5"
-  },
-  "wooden_shovel_receta_6": {
-    "nombre": "Wooden Shovel Recipe 6",
-    "slug": "wooden-shovel-recipe-6"
-  },
-  "wooden_shovel_receta_7": {
-    "nombre": "Wooden Shovel Recipe 7",
-    "slug": "wooden-shovel-recipe-7"
-  },
-  "wooden_shovel_receta_8": {
-    "nombre": "Wooden Shovel Recipe 8",
-    "slug": "wooden-shovel-recipe-8"
-  },
-  "wooden_shovel_receta_9": {
-    "nombre": "Wooden Shovel Recipe 9",
-    "slug": "wooden-shovel-recipe-9"
-  },
-  "wooden_sword_receta_1": {
-    "nombre": "Wooden Sword Recipe 1",
-    "slug": "wooden-sword-recipe-1"
-  },
-  "wooden_sword_receta_10": {
-    "nombre": "Wooden Sword Recipe 10",
-    "slug": "wooden-sword-recipe-10"
-  },
-  "wooden_sword_receta_11": {
-    "nombre": "Wooden Sword Recipe 11",
-    "slug": "wooden-sword-recipe-11"
-  },
-  "wooden_sword_receta_12": {
-    "nombre": "Wooden Sword Recipe 12",
-    "slug": "wooden-sword-recipe-12"
-  },
-  "wooden_sword_receta_2": {
-    "nombre": "Wooden Sword Recipe 2",
-    "slug": "wooden-sword-recipe-2"
-  },
-  "wooden_sword_receta_3": {
-    "nombre": "Wooden Sword Recipe 3",
-    "slug": "wooden-sword-recipe-3"
-  },
-  "wooden_sword_receta_4": {
-    "nombre": "Wooden Sword Recipe 4",
-    "slug": "wooden-sword-recipe-4"
-  },
-  "wooden_sword_receta_5": {
-    "nombre": "Wooden Sword Recipe 5",
-    "slug": "wooden-sword-recipe-5"
-  },
-  "wooden_sword_receta_6": {
-    "nombre": "Wooden Sword Recipe 6",
-    "slug": "wooden-sword-recipe-6"
-  },
-  "wooden_sword_receta_7": {
-    "nombre": "Wooden Sword Recipe 7",
-    "slug": "wooden-sword-recipe-7"
-  },
-  "wooden_sword_receta_8": {
-    "nombre": "Wooden Sword Recipe 8",
-    "slug": "wooden-sword-recipe-8"
-  },
-  "wooden_sword_receta_9": {
-    "nombre": "Wooden Sword Recipe 9",
-    "slug": "wooden-sword-recipe-9"
+  "wooden_sword_receta": {
+    "nombre": "Wooden Sword Recipe",
+    "slug": "wooden-sword-recipe"
   },
   "writable_book_receta": {
     "nombre": "Book and Quill Recipe",
@@ -6131,53 +4023,9 @@
     "nombre": "Yellow Bed Recipe 1",
     "slug": "yellow-bed-recipe-1"
   },
-  "yellow_bed_receta_10": {
-    "nombre": "Yellow Bed Recipe 10",
-    "slug": "yellow-bed-recipe-10"
-  },
-  "yellow_bed_receta_11": {
-    "nombre": "Yellow Bed Recipe 11",
-    "slug": "yellow-bed-recipe-11"
-  },
-  "yellow_bed_receta_12": {
-    "nombre": "Yellow Bed Recipe 12",
-    "slug": "yellow-bed-recipe-12"
-  },
-  "yellow_bed_receta_13": {
-    "nombre": "Yellow Bed Recipe 13",
-    "slug": "yellow-bed-recipe-13"
-  },
   "yellow_bed_receta_2": {
     "nombre": "Yellow Bed Recipe 2",
     "slug": "yellow-bed-recipe-2"
-  },
-  "yellow_bed_receta_3": {
-    "nombre": "Yellow Bed Recipe 3",
-    "slug": "yellow-bed-recipe-3"
-  },
-  "yellow_bed_receta_4": {
-    "nombre": "Yellow Bed Recipe 4",
-    "slug": "yellow-bed-recipe-4"
-  },
-  "yellow_bed_receta_5": {
-    "nombre": "Yellow Bed Recipe 5",
-    "slug": "yellow-bed-recipe-5"
-  },
-  "yellow_bed_receta_6": {
-    "nombre": "Yellow Bed Recipe 6",
-    "slug": "yellow-bed-recipe-6"
-  },
-  "yellow_bed_receta_7": {
-    "nombre": "Yellow Bed Recipe 7",
-    "slug": "yellow-bed-recipe-7"
-  },
-  "yellow_bed_receta_8": {
-    "nombre": "Yellow Bed Recipe 8",
-    "slug": "yellow-bed-recipe-8"
-  },
-  "yellow_bed_receta_9": {
-    "nombre": "Yellow Bed Recipe 9",
-    "slug": "yellow-bed-recipe-9"
   },
   "yellow_candle_receta": {
     "nombre": "Yellow Candle Recipe",
