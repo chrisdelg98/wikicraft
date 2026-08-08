@@ -141,11 +141,12 @@ const otrosIdiomas = idiomas
                     aria-current={modulo === moduloActivo ? 'page' : undefined}
                     class:list={[
                       'flex items-center gap-2 bloque bloque-pulsable px-3 py-1.5 text-sm whitespace-nowrap',
-                      // La barra inferior es lo que de verdad se ve. Oscurecer
-                      // el verde un paso no lo notaba nadie; una franja clara
-                      // cruzando el pie del boton se reconoce sin mirar.
+                      // Exactamente el mismo relleno y el mismo texto que el
+                      // boton de guia. Tuvo un verde propio, medio tono mas
+                      // oscuro, y lo unico que consiguio fue que los dos no
+                      // acabaran de casar estando uno debajo del otro.
                       modulo === moduloActivo
-                        ? 'bg-acento-activo font-extrabold text-acento-activo-texto shadow-[inset_0_-4px_0_0_var(--acento-claro)]'
+                        ? 'bg-acento font-bold text-acento-contraste'
                         : 'font-semibold text-texto'
                     ]}
                   >
