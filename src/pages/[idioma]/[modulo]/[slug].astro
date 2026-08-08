@@ -135,13 +135,38 @@ const ingredientes =
       })))
     : null
 
+/**
+ * Cadena de fabricacion de una pocion, desde la botella de agua hasta esta.
+ *
+ * Estaba repartida en dos relaciones sueltas al final de la ficha, "se hace a
+ * partir de" y "se le anade", y ademas solo contaba el ultimo paso. Quien
+ * entra a una pocion viene justo a esto, asi que va arriba y entero: con la
+ * cadena completa no hace falta ir saltando de ficha en ficha para reunirla.
+ */
+const cadenaPocion = []
+if (entidad.tipo === 'pocion') {
+  let actual = entidad
+  const vistas = new Set([entidad.id])
+  while (actual?.derivaDe && grafo.has(actual.derivaDe)) {
+    cadenaPocion.unshift({
+      desde: actual.derivaDe,
+      ingrediente: actual.ingrediente,
+      hasta: actual.id
+    })
+    if (vistas.has(actual.derivaDe)) break
+    vistas.add(actual.derivaDe)
+    actual = grafo.get(actual.derivaDe).entidad
+  }
+}
+
 // --- Relaciones ------------------------------------------------------------
 
 // Lo que ya se muestra como tabla no se repite abajo como tarjetas.
 const YA_EN_TABLA = {
   aldeano: ['rel.vende', 'rel.vendeEncantamiento', 'rel.aceptaComoPago'],
   mob: ['rel.suelta'],
-  receta: ['rel.materiales']
+  receta: ['rel.materiales'],
+  pocion: ['rel.derivaDe', 'rel.ingrediente']
 }
 
 const grupos = relacionesDe(id).filter(
@@ -235,6 +260,39 @@ const consejos = [texto.notas, texto.consejo].filter(Boolean)
         ) : (
           <p class="text-texto-suave">{ui(idioma, 'obtencion.desconocido')}</p>
         )}
+      </section>
+    )
+  }
+
+  {
+    cadenaPocion.length > 0 && (
+      <section class="mb-10">
+        <h2 class="titulo-seccion">{ui(idioma, 'pocion.comoSeHace')}</h2>
+        <ol class="max-w-4xl space-y-2">
+          {cadenaPocion.map((paso, i) => (
+            <li class="flex flex-wrap items-center gap-x-2 gap-y-1 bloque p-3">
+              <span class="grid h-6 w-6 shrink-0 place-items-center bg-acento text-xs font-extrabold text-acento-contraste">
+                {i + 1}
+              </span>
+              <a href={enlace(paso.desde).url} class="font-semibold">
+                {enlace(paso.desde).nombre}
+              </a>
+              <span class="text-texto-suave">+</span>
+              {paso.ingrediente ? (
+                <a href={enlace(paso.ingrediente).url} class="font-semibold">
+                  {enlace(paso.ingrediente).nombre}
+                </a>
+              ) : (
+                <span class="text-texto-suave">—</span>
+              )}
+              <span class="text-texto-suave" aria-hidden="true">
+                →
+              </span>
+              <span class="font-bold">{enlace(paso.hasta).nombre}</span>
+            </li>
+          ))}
+        </ol>
+        <p class="mt-2 text-sm text-texto-suave">{ui(idioma, 'pocion.enElSoporte')}</p>
       </section>
     )
   }
