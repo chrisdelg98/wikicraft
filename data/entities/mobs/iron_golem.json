@@ -21,5 +21,9 @@
       "maximo": 1,
       "probabilidad": 1
     }
+  ],
+  "apareceEn": [
+    "pillager_outpost",
+    "village"
   ]
 }

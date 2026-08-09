@@ -1,0 +1,36 @@
+{
+  "$schema": "../../schemas/structure.schema.json",
+  "id": "stronghold",
+  "tipo": "estructura",
+  "etapa": "diamante",
+  "dimension": [
+    "superficie"
+  ],
+  "peligro": "media",
+  "comoSeEncuentra": "ojo_de_ender",
+  "relevancia": "alta",
+  "mobs": [
+    "silverfish"
+  ],
+  "botin": [
+    "enchanted_book",
+    "diamond",
+    "iron_ingot",
+    "gold_ingot",
+    "redstone",
+    "book",
+    "ender_pearl",
+    "golden_apple",
+    "saddle",
+    "iron_horse_armor",
+    "apple",
+    "bread"
+  ],
+  "etiquetas": [
+    "fortaleza",
+    "portal del end",
+    "biblioteca",
+    "ojo de ender",
+    "lepisma"
+  ]
+}

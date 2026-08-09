@@ -1,0 +1,47 @@
+{
+  "$schema": "../../schemas/structure.schema.json",
+  "id": "bastion_remnant",
+  "tipo": "estructura",
+  "etapa": "nether",
+  "dimension": [
+    "nether"
+  ],
+  "peligro": "dificil",
+  "comoSeEncuentra": "explorando",
+  "relevancia": "alta",
+  "apareceEn": [
+    "nether_wastes",
+    "soul_sand_valley",
+    "crimson_forest",
+    "warped_forest"
+  ],
+  "mobs": [
+    "piglin",
+    "piglin_brute",
+    "hoglin",
+    "magma_cube"
+  ],
+  "exclusivo": [
+    "netherite_upgrade_smithing_template"
+  ],
+  "botin": [
+    "ancient_debris",
+    "netherite_scrap",
+    "gold_ingot",
+    "gilded_blackstone",
+    "crying_obsidian",
+    "diamond",
+    "iron_ingot",
+    "enchanted_golden_apple",
+    "golden_apple",
+    "lodestone",
+    "spectral_arrow"
+  ],
+  "etiquetas": [
+    "resto de bastion",
+    "bastion",
+    "piglin",
+    "escombros antiguos",
+    "netherita"
+  ]
+}

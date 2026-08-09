@@ -1,0 +1,36 @@
+{
+  "$schema": "../../schemas/structure.schema.json",
+  "id": "mineshaft",
+  "tipo": "estructura",
+  "etapa": "inicio",
+  "dimension": [
+    "superficie"
+  ],
+  "peligro": "media",
+  "comoSeEncuentra": "bajo_tierra",
+  "tieneGenerador": true,
+  "mobs": [
+    "cave_spider"
+  ],
+  "botin": [
+    "iron_ingot",
+    "gold_ingot",
+    "diamond",
+    "redstone",
+    "lapis_lazuli",
+    "rail",
+    "powered_rail",
+    "detector_rail",
+    "minecart",
+    "bread",
+    "name_tag",
+    "golden_apple"
+  ],
+  "etiquetas": [
+    "mina abandonada",
+    "mina",
+    "rail",
+    "telarana",
+    "arana de cueva"
+  ]
+}

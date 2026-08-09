@@ -22,5 +22,8 @@
       "probabilidad": 0.11,
       "soloAlMorirPorJugador": true
     }
+  ],
+  "apareceEn": [
+    "ocean_ruins"
   ]
 }

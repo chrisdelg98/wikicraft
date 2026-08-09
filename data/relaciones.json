@@ -62,7 +62,6 @@
   "estructura": [
     { "campo": "apareceEn[]", "etiqueta": "rel.apareceEn", "inversa": "rel.contiene" },
     { "campo": "mobs[]", "etiqueta": "rel.mobs", "inversa": "rel.apareceEn" },
-    { "campo": "recursos[]", "etiqueta": "rel.recursos", "inversa": "rel.aquiConsigues" },
     { "campo": "botin[]", "etiqueta": "rel.botin", "inversa": "rel.aquiConsigues" },
     { "campo": "exclusivo[]", "etiqueta": "rel.exclusivo", "inversa": "rel.soloAqui" }
   ],

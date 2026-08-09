@@ -10,6 +10,7 @@
   "ruta.mobs": "mobs",
   "ruta.potions": "pociones",
   "ruta.recipes": "crafteos",
+  "ruta.structures": "lugares",
   "ruta.biomes": "biomas",
   "ruta.farms": "granjas",
 
@@ -22,6 +23,7 @@
   "nav.mobs": "Mobs",
   "nav.potions": "Pociones",
   "nav.recipes": "Crafteos",
+  "nav.structures": "Lugares",
   "nav.biomes": "Biomas",
   "nav.farms": "Granjas",
 
@@ -104,6 +106,13 @@
 
   "faceta.grupo.general": "Tipo",
   "faceta.grupo.dimension": "En qué mundo",
+  "faceta.grupo.busqueda": "Cómo se encuentra",
+  "faceta.explorando": "Explorando",
+  "faceta.bajo_tierra": "Bajo tierra",
+  "faceta.bajo_el_agua": "Bajo el agua",
+  "faceta.mapa_de_aldeano": "Con un mapa de aldeano",
+  "faceta.brujula": "Con una brújula del tesoro",
+  "faceta.ojo_de_ender": "Con ojos de ender",
   "faceta.bloque": "Bloque",
   "faceta.material": "Material",
   "faceta.mineral": "Mineral",
@@ -247,6 +256,14 @@
   "encantador.incompatibleCon": "No combina con {lista}",
   "encantador.sinEncantamientos": "Esta pieza no admite encantamientos.",
   "encantador.comoLeer": "Cada paso es una operación en el yunque. La penalización crece con cada una, y por eso el orden importa tanto como los encantamientos.",
+
+  "estructura.peligro": "Peligro",
+  "estructura.porQueIr": "Por qué ir",
+  "estructura.soloAqui": "Esto no lo consigues en ningún otro sitio:",
+  "estructura.nadaExclusivo": "Aquí no hay nada que no puedas conseguir por otro lado. Se viene por el botín de los cofres, que sale gratis, no porque haga falta.",
+  "estructura.donde": "Cómo la encuentras",
+  "estructura.generador": "Generador de monstruos",
+  "estructura.generadorSi": "Sí, hay al menos uno",
 
   "obtencion.titulo": "Cómo se consigue",
   "obtencion.fabricar": "Fabricándolo",

@@ -1,0 +1,26 @@
+{
+  "$schema": "../../schemas/structure.schema.json",
+  "id": "ruined_portal",
+  "tipo": "estructura",
+  "etapa": "inicio",
+  "dimension": [
+    "superficie",
+    "nether"
+  ],
+  "peligro": "facil",
+  "comoSeEncuentra": "explorando",
+  "botin": [
+    "obsidian",
+    "flint_and_steel",
+    "gold_ingot",
+    "golden_apple",
+    "iron_nugget",
+    "fire_charge"
+  ],
+  "etiquetas": [
+    "portal en ruinas",
+    "portal roto",
+    "obsidiana",
+    "oro"
+  ]
+}

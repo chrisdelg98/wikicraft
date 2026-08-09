@@ -22,5 +22,8 @@
       "probabilidad": 1,
       "soloAlMorirPorJugador": true
     }
+  ],
+  "apareceEn": [
+    "mineshaft"
   ]
 }

@@ -22,5 +22,9 @@
       "maximo": 1,
       "probabilidad": 1
     }
+  ],
+  "apareceEn": [
+    "dungeon",
+    "trial_chambers"
   ]
 }

@@ -36,5 +36,8 @@
       "probabilidad": 0.008333333333333333,
       "soloAlMorirPorJugador": true
     }
+  ],
+  "apareceEn": [
+    "igloo"
   ]
 }

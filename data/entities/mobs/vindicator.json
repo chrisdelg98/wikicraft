@@ -16,5 +16,8 @@
       "probabilidad": 1,
       "soloAlMorirPorJugador": true
     }
+  ],
+  "apareceEn": [
+    "woodland_mansion"
   ]
 }

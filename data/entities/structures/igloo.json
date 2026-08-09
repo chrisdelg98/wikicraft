@@ -1,0 +1,35 @@
+{
+  "$schema": "../../schemas/structure.schema.json",
+  "id": "igloo",
+  "tipo": "estructura",
+  "etapa": "inicio",
+  "dimension": [
+    "superficie"
+  ],
+  "peligro": "facil",
+  "comoSeEncuentra": "explorando",
+  "relevancia": "baja",
+  "apareceEn": [
+    "snowy_plains",
+    "snowy_taiga"
+  ],
+  "mobs": [
+    "villager",
+    "zombie_villager"
+  ],
+  "botin": [
+    "apple",
+    "coal",
+    "wheat",
+    "golden_apple",
+    "emerald",
+    "stone_axe"
+  ],
+  "etiquetas": [
+    "iglu",
+    "nieve",
+    "sotano",
+    "aldeano zombi",
+    "curar"
+  ]
+}

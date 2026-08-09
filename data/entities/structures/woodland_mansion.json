@@ -1,0 +1,41 @@
+{
+  "$schema": "../../schemas/structure.schema.json",
+  "id": "woodland_mansion",
+  "tipo": "estructura",
+  "etapa": "diamante",
+  "dimension": [
+    "superficie"
+  ],
+  "peligro": "dificil",
+  "comoSeEncuentra": "mapa_de_aldeano",
+  "relevancia": "alta",
+  "apareceEn": [
+    "dark_forest"
+  ],
+  "mobs": [
+    "evoker",
+    "vindicator",
+    "vex"
+  ],
+  "exclusivo": [
+    "totem_of_undying"
+  ],
+  "botin": [
+    "diamond",
+    "emerald",
+    "enchanted_golden_apple",
+    "golden_apple",
+    "iron_ingot",
+    "gold_ingot",
+    "book",
+    "saddle",
+    "diamond_horse_armor"
+  ],
+  "etiquetas": [
+    "mansion del bosque",
+    "mansion",
+    "evoker",
+    "totem",
+    "vindicador"
+  ]
+}

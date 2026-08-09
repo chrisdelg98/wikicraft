@@ -40,5 +40,8 @@
       "maximo": 1,
       "probabilidad": 1
     }
+  ],
+  "apareceEn": [
+    "ocean_monument"
   ]
 }

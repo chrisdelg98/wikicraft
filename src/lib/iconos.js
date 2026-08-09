@@ -116,6 +116,23 @@ export const MAPAS = {
     '............'
   ],
 
+  // Una torre con almenas y una puerta: es la silueta que casi todo el mundo
+  // dibuja cuando piensa en "sitio al que ir a saquear".
+  structures: [
+    '............',
+    '..#.##.##.#.',
+    '..########..',
+    '..########..',
+    '..#.####.#..',
+    '..########..',
+    '..###..###..',
+    '..##.++.##..',
+    '..##.++.##..',
+    '..##.++.##..',
+    '############',
+    '............'
+  ],
+
   biomes: [
     '............',
     '.........++.',

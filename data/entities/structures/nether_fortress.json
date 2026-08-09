@@ -1,0 +1,41 @@
+{
+  "$schema": "../../schemas/structure.schema.json",
+  "id": "nether_fortress",
+  "tipo": "estructura",
+  "etapa": "nether",
+  "dimension": [
+    "nether"
+  ],
+  "peligro": "dificil",
+  "comoSeEncuentra": "explorando",
+  "relevancia": "alta",
+  "apareceEn": [
+    "nether_wastes",
+    "soul_sand_valley",
+    "crimson_forest",
+    "warped_forest"
+  ],
+  "mobs": [
+    "blaze",
+    "wither_skeleton",
+    "magma_cube"
+  ],
+  "exclusivo": [
+    "blaze_rod",
+    "nether_wart"
+  ],
+  "botin": [
+    "obsidian",
+    "diamond",
+    "gold_ingot",
+    "iron_ingot",
+    "saddle",
+    "golden_horse_armor"
+  ],
+  "etiquetas": [
+    "fortaleza del nether",
+    "blaze",
+    "verruga",
+    "ladrillo del nether"
+  ]
+}

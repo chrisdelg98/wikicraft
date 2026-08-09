@@ -1,0 +1,37 @@
+{
+  "$schema": "../../schemas/structure.schema.json",
+  "id": "ocean_monument",
+  "tipo": "estructura",
+  "etapa": "diamante",
+  "dimension": [
+    "superficie"
+  ],
+  "peligro": "dificil",
+  "comoSeEncuentra": "bajo_el_agua",
+  "relevancia": "alta",
+  "apareceEn": [
+    "deep_ocean",
+    "deep_cold_ocean",
+    "deep_lukewarm_ocean",
+    "deep_frozen_ocean"
+  ],
+  "mobs": [
+    "guardian",
+    "elder_guardian"
+  ],
+  "exclusivo": [
+    "wet_sponge"
+  ],
+  "botin": [
+    "gold_block",
+    "prismarine_shard",
+    "prismarine_crystals"
+  ],
+  "etiquetas": [
+    "monumento oceanico",
+    "templo del oceano",
+    "guardian",
+    "prismarina",
+    "esponja"
+  ]
+}

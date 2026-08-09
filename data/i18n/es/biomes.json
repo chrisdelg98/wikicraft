@@ -169,12 +169,6 @@
     "slug": "campos-de-setas",
     "descripcion": "Una isla rarísima donde no aparece ningún mob hostil. Es el sitio más seguro de todo el juego."
   },
-  "nether_fortress": {
-    "nombre": "Fortaleza del Nether",
-    "slug": "fortaleza-del-nether",
-    "descripcion": "Un castillo enorme de ladrillo oscuro que cruza el Nether. Es el único sitio donde encontrarás blazes y verruga del Nether, y por eso tarde o temprano tienes que venir.",
-    "notas": "Los pasillos son estrechos y hay lava debajo. Ve despacio, coloca bloques para taparte y no corras: la mayoría de las muertes aquí son por caídas, no por pelear."
-  },
   "nether_wastes": {
     "nombre": "Páramos del Nether",
     "slug": "paramos-del-nether",

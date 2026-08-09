@@ -15,5 +15,8 @@
       "maximo": 1,
       "probabilidad": 0.5
     }
+  ],
+  "apareceEn": [
+    "end_city"
   ]
 }

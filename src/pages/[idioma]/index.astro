@@ -6,7 +6,7 @@ import Icono from '../../components/Icono.astro'
 import {
   codigosIdioma,
   ui,
-  modulos,
+  modulosVisibles,
   entidadesDe,
   rutaModulo,
   grafo,
@@ -84,7 +84,7 @@ const primerosPasos = PRIMEROS_PASOS.filter((id) => grafo.has(id))
     <h2 class="mb-4 text-xl font-bold">{ui(idioma, 'portada.explora')}</h2>
     <ul class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
       {
-        modulos.map((modulo) => (
+        modulosVisibles.map((modulo) => (
           <li>
             <a
               href={`/${idioma}/${rutaModulo(idioma, modulo)}/`}

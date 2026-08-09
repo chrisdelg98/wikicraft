@@ -12,7 +12,9 @@
   "experiencia": 5,
   "noMuerto": true,
   "apareceEn": [
-    "plains"
+    "dungeon",
+    "plains",
+    "trial_chambers"
   ],
   "botin": [
     {

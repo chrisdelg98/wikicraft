@@ -1,0 +1,37 @@
+{
+  "$schema": "../../schemas/structure.schema.json",
+  "id": "pillager_outpost",
+  "tipo": "estructura",
+  "etapa": "inicio",
+  "dimension": [
+    "superficie"
+  ],
+  "peligro": "media",
+  "comoSeEncuentra": "explorando",
+  "apareceEn": [
+    "plains",
+    "desert",
+    "savanna",
+    "taiga",
+    "snowy_plains"
+  ],
+  "mobs": [
+    "pillager",
+    "iron_golem"
+  ],
+  "botin": [
+    "crossbow",
+    "iron_ingot",
+    "tripwire_hook",
+    "wheat",
+    "potato",
+    "carrot"
+  ],
+  "etiquetas": [
+    "puesto de saqueadores",
+    "torre",
+    "pillager",
+    "ballesta",
+    "mal presagio"
+  ]
+}

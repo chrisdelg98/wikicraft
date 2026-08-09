@@ -1,0 +1,35 @@
+{
+  "$schema": "../../schemas/structure.schema.json",
+  "id": "ocean_ruins",
+  "tipo": "estructura",
+  "etapa": "inicio",
+  "dimension": [
+    "superficie"
+  ],
+  "peligro": "facil",
+  "comoSeEncuentra": "bajo_el_agua",
+  "relevancia": "baja",
+  "apareceEn": [
+    "ocean",
+    "deep_ocean",
+    "cold_ocean",
+    "lukewarm_ocean",
+    "warm_ocean"
+  ],
+  "mobs": [
+    "drowned"
+  ],
+  "botin": [
+    "gold_ingot",
+    "emerald",
+    "wheat",
+    "coal",
+    "map"
+  ],
+  "etiquetas": [
+    "ruinas oceanicas",
+    "ruinas",
+    "ahogado",
+    "mapa del tesoro"
+  ]
+}

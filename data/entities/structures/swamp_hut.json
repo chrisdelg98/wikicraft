@@ -1,0 +1,26 @@
+{
+  "$schema": "../../schemas/structure.schema.json",
+  "id": "swamp_hut",
+  "tipo": "estructura",
+  "etapa": "inicio",
+  "dimension": [
+    "superficie"
+  ],
+  "peligro": "media",
+  "comoSeEncuentra": "explorando",
+  "relevancia": "baja",
+  "apareceEn": [
+    "swamp",
+    "mangrove_swamp"
+  ],
+  "mobs": [
+    "witch",
+    "cat"
+  ],
+  "etiquetas": [
+    "cabana de la bruja",
+    "choza",
+    "pantano",
+    "bruja"
+  ]
+}

@@ -33,5 +33,9 @@
       "maximo": 1,
       "probabilidad": 0.25
     }
+  ],
+  "apareceEn": [
+    "bastion_remnant",
+    "nether_fortress"
   ]
 }

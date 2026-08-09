@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wikicraft/schemas/structure.schema.json",
+  "title": "Estructura",
+  "description": "Un sitio generado por el juego al que se va a por algo: una mansion, un monumento, una mazmorra. Se separa de los biomas porque la pregunta es distinta. De un bioma quieres saber que hay; de una estructura quieres saber si merece la pena el viaje, que te vas a encontrar dentro y con que vuelves.",
+
+  "allOf": [{ "$ref": "_comun.schema.json#/$defs/entidad" }],
+
+  "type": "object",
+  "required": ["id", "tipo", "dimension", "peligro", "etapa"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "id": { "$ref": "_comun.schema.json#/$defs/id" },
+    "tipo": { "const": "estructura" },
+    "desdeVersion": { "$ref": "_comun.schema.json#/$defs/version" },
+    "hastaVersion": { "$ref": "_comun.schema.json#/$defs/version" },
+    "etapa": { "$ref": "_comun.schema.json#/$defs/etapa" },
+    "relevancia": { "$ref": "_comun.schema.json#/$defs/relevancia" },
+    "etiquetas": { "type": "array", "items": { "type": "string" } },
+
+    "dimension": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "_comun.schema.json#/$defs/dimension" },
+      "description": "Mundos donde se genera. Es lista por el portal en ruinas, que sale en dos."
+    },
+
+    "peligro": {
+      "$ref": "_comun.schema.json#/$defs/dificultad",
+      "description": "Lo dificil que es salir vivo, no lo dificil que es encontrarla. Obligatorio: es lo primero que necesita saber quien se plantea ir."
+    },
+
+    "comoSeEncuentra": {
+      "type": "string",
+      "enum": [
+        "explorando",
+        "mapa_de_aldeano",
+        "brujula",
+        "ojo_de_ender",
+        "bajo_tierra",
+        "bajo_el_agua"
+      ],
+      "description": "Valor cerrado y no una frase, para que el buscador pueda responder a 'donde encuentro una mansion' sin que nadie haya escrito esa frase exacta."
+    },
+
+    "apareceEn": {
+      "$ref": "_comun.schema.json#/$defs/referencias",
+      "description": "Biomas donde se genera."
+    },
+
+    "mobs": {
+      "$ref": "_comun.schema.json#/$defs/referencias",
+      "description": "Lo que te vas a encontrar dentro. Es la mitad de la respuesta a si merece la pena ir."
+    },
+
+    "botin": {
+      "$ref": "_comun.schema.json#/$defs/referencias",
+      "description": "Lo que puedes sacar de sus cofres o de sus bloques. La otra mitad de la respuesta."
+    },
+
+    "exclusivo": {
+      "$ref": "_comun.schema.json#/$defs/referencias",
+      "description": "Lo que SOLO se consigue aqui. Separado del botin porque convierte un viaje opcional en uno obligatorio, y esa diferencia merece verse aparte."
+    },
+
+    "tieneGenerador": {
+      "type": "boolean",
+      "default": false,
+      "description": "Si trae generador de monstruos. Cambia por completo como se entra: con generador se va tapando la luz, no peleando."
+    }
+  },
+  "additionalProperties": false
+}

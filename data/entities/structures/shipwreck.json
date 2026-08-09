@@ -1,0 +1,34 @@
+{
+  "$schema": "../../schemas/structure.schema.json",
+  "id": "shipwreck",
+  "tipo": "estructura",
+  "etapa": "inicio",
+  "dimension": [
+    "superficie"
+  ],
+  "peligro": "facil",
+  "comoSeEncuentra": "bajo_el_agua",
+  "apareceEn": [
+    "ocean",
+    "beach",
+    "deep_ocean",
+    "cold_ocean",
+    "lukewarm_ocean"
+  ],
+  "botin": [
+    "emerald",
+    "iron_ingot",
+    "gold_ingot",
+    "map",
+    "paper",
+    "wheat",
+    "tnt",
+    "bucket"
+  ],
+  "etiquetas": [
+    "naufragio",
+    "barco hundido",
+    "mapa del tesoro",
+    "pecio"
+  ]
+}

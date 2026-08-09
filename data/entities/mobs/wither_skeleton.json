@@ -28,5 +28,8 @@
       "probabilidad": 0.025,
       "soloAlMorirPorJugador": true
     }
+  ],
+  "apareceEn": [
+    "nether_fortress"
   ]
 }

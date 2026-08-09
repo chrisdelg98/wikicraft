@@ -22,5 +22,9 @@
       "probabilidad": 1,
       "soloAlMorirPorJugador": true
     }
+  ],
+  "apareceEn": [
+    "dungeon",
+    "trial_chambers"
   ]
 }

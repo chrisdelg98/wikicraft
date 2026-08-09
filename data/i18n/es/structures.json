@@ -1,0 +1,169 @@
+{
+  "village": {
+    "nombre": "Aldea",
+    "slug": "aldea",
+    "descripcion": "Un pueblo de aldeanos con casas, huertos y camas. Es el mejor sitio para instalarte al principio: hay comida plantada, camas gratis y gente con la que comerciar.",
+    "notas": "Pon antorchas por toda la aldea el primer día. Si los aldeanos mueren de noche te quedas sin comercio, y repoblarla cuesta mucho más que iluminarla.",
+    "consejo": "Duerme la primera noche aquí aunque no la hayas hecho tuya: dormir fija tu punto de reaparición y evita los phantoms."
+  },
+
+  "desert_pyramid": {
+    "nombre": "Templo del desierto",
+    "slug": "templo-del-desierto",
+    "descripcion": "Una pirámide de arenisca con cuatro cofres escondidos en un sótano. Es de los primeros sitios donde puedes encontrar diamantes sin picar.",
+    "notas": "Hay una placa de presión azul en el suelo del sótano, con nueve bloques de TNT debajo. Rómpela desde el borde o baja por un lateral: es la trampa que más partidas ha terminado de golpe.",
+    "consejo": "Los cofres están en las cuatro esquinas del sótano, no en la superficie. Pica hacia abajo por el suelo del centro de la pirámide."
+  },
+
+  "jungle_pyramid": {
+    "nombre": "Templo de la jungla",
+    "slug": "templo-de-la-jungla",
+    "descripcion": "Un templo de piedra musgosa escondido entre la vegetación, con dos cofres y un pequeño rompecabezas de palancas.",
+    "notas": "Tiene dos trampas de flechas con hilo tenso. Corta los hilos con tijeras o rómpelos desde lejos antes de entrar en los pasillos.",
+    "consejo": "El puzle de las tres palancas abre el cofre de abajo, pero puedes saltártelo: pica la pared de al lado y entra directo."
+  },
+
+  "swamp_hut": {
+    "nombre": "Cabaña de la bruja",
+    "slug": "cabana-de-la-bruja",
+    "descripcion": "Una choza sobre pilotes en el pantano, con una bruja dentro. No tiene cofres, así que se viene aquí por la bruja, no por el botín.",
+    "notas": "Aquí las brujas aparecen una y otra vez pase lo que pase, así que sirve de granja de polvo de piedra luminosa, pólvora y botellas.",
+    "consejo": "Las brujas beben pociones para curarse. Pégales rápido y sin pausas, o no bajarán de vida nunca."
+  },
+
+  "pillager_outpost": {
+    "nombre": "Puesto de saqueadores",
+    "slug": "puesto-de-saqueadores",
+    "descripcion": "Una torre de madera oscura llena de saqueadores con ballesta, y a veces un gólem de hierro enjaulado. Arriba del todo hay un cofre.",
+    "notas": "Si matas al capitán, el que lleva el estandarte, te llevas el Mal Presagio y la siguiente aldea que pises sufrirá una incursión. A veces interesa y a veces no: decide antes de disparar.",
+    "consejo": "Los saqueadores disparan lejos y en grupo. Acércate por detrás o rodeando, nunca de frente por el campo abierto."
+  },
+
+  "woodland_mansion": {
+    "nombre": "Mansión del bosque",
+    "slug": "mansion-del-bosque",
+    "descripcion": "Un caserón enorme de tres plantas perdido en el bosque oscuro, lleno de habitaciones secretas y de illagers. Es el único sitio del juego donde consigues el tótem de la inmortalidad.",
+    "notas": "Los evokers invocan vexes, que atraviesan las paredes y son lo que más mata aquí. Pelea en pasillos estrechos y no en las salas grandes.",
+    "consejo": "Está lejísimos. Cómprale un mapa de bosque a un cartógrafo antes de salir, o te pasarás horas buscándola."
+  },
+
+  "ocean_monument": {
+    "nombre": "Monumento oceánico",
+    "slug": "monumento-oceanico",
+    "descripcion": "Un templo gigante de prismarina en el fondo del mar, guardado por guardianes. Dentro hay bloques de oro y es el único sitio donde se consiguen esponjas.",
+    "notas": "Los guardianes ancianos te lanzan Fatiga Minera, que te deja picando a cámara lenta. Bébete una leche para quitártela, o tendrás que matar a los tres antes de poder romper nada.",
+    "consejo": "Ve con Respiración Acuática y Afinidad Acuática, o con una poción de respiración. Sin eso te pasarás el rato subiendo a por aire."
+  },
+
+  "ocean_ruins": {
+    "nombre": "Ruinas oceánicas",
+    "slug": "ruinas-oceanicas",
+    "descripcion": "Restos de casas de piedra hundidas, con ahogados rondando y algún cofre. Poca cosa, salvo por una: aquí salen mapas del tesoro.",
+    "notas": "Los ahogados que llevan tridente hacen mucho daño a distancia. Si ves uno con tridente, sal del agua antes de pelear.",
+    "consejo": "Hay ruinas de piedra en los mares fríos y de arenisca en los cálidos. El botín es el mismo."
+  },
+
+  "shipwreck": {
+    "nombre": "Naufragio",
+    "slug": "naufragio",
+    "descripcion": "Un barco hundido, entero o partido, con hasta tres cofres. Uno de ellos suele llevar el mapa que apunta a un tesoro enterrado.",
+    "notas": "Los tres cofres están en sitios distintos: la bodega, el cuarto del capitán y la proa. Merece la pena romper el barco entero antes de irse.",
+    "consejo": "Algunos naufragios están en la playa y ni siquiera hay que bucear."
+  },
+
+  "buried_treasure": {
+    "nombre": "Tesoro enterrado",
+    "slug": "tesoro-enterrado",
+    "descripcion": "Un único cofre escondido bajo la arena de una playa. Es la única forma de conseguir el corazón del mar, que hace falta para el faro conductor.",
+    "notas": "Se encuentra con el mapa del tesoro que sale de naufragios y ruinas. Cuando el punto blanco del mapa se pone justo encima de la cruz, estás encima: pica hacia abajo.",
+    "consejo": "Puede estar bastante hondo, hasta la roca madre. Si no aparece a los pocos bloques, sigue bajando."
+  },
+
+  "stronghold": {
+    "nombre": "Fortaleza",
+    "slug": "fortaleza",
+    "descripcion": "Un laberinto de pasillos de piedra bajo tierra. Aquí está el portal al End, y por eso pasar por una es obligatorio para terminarse el juego.",
+    "notas": "La biblioteca es lo mejor de la fortaleza: sus cofres son de los pocos sitios donde salen libros encantados sin gastar niveles.",
+    "consejo": "Los ojos de ender te llevan hasta la vertical de la fortaleza, no hasta la puerta. Cuando el ojo baje en vez de avanzar, es que estás encima y toca picar."
+  },
+
+  "mineshaft": {
+    "nombre": "Mina abandonada",
+    "slug": "mina-abandonada",
+    "descripcion": "Kilómetros de túneles con vías, cofres en vagonetas y telarañas. Es de los sitios más rentables del principio, y de los más fáciles de perderse.",
+    "notas": "Las telarañas avisan de un nido de arañas de cueva: hay un generador cerca. Las arañas de cueva envenenan y caben por huecos de un bloque.",
+    "consejo": "Recoge las telarañas con tijeras. Dan hilo, y el hilo es lo que se convierte en arcos y cañas de pescar."
+  },
+
+  "dungeon": {
+    "nombre": "Mazmorra",
+    "slug": "mazmorra",
+    "descripcion": "Una salita de piedra musgosa con un generador de monstruos en medio y uno o dos cofres. Es la forma más sencilla de tener una granja de experiencia.",
+    "notas": "El generador solo funciona si hay poca luz. Ponle antorchas encima y alrededor y deja de sacar mobs al instante, sin romper nada.",
+    "consejo": "No rompas el generador. Vale mucho más como granja de experiencia y de pólvora que los dos cofres juntos."
+  },
+
+  "igloo": {
+    "nombre": "Iglú",
+    "slug": "iglu",
+    "descripcion": "Una casita de nieve con una cama. La mitad de ellos esconde un sótano con un aldeano zombi encerrado y todo lo que hace falta para curarlo.",
+    "notas": "El sótano tiene la poción de debilidad y la manzana dorada listas en los cofres. Curar a ese aldeano te deja precios ridículos para siempre.",
+    "consejo": "Levanta la alfombra del suelo: la trampilla al sótano está debajo."
+  },
+
+  "ruined_portal": {
+    "nombre": "Portal en ruinas",
+    "slug": "portal-en-ruinas",
+    "descripcion": "Un portal al Nether a medio hacer, con un cofre al lado. Sirve para dos cosas: llevarte obsidiana gratis y cruzar al Nether sin tener que fabricar nada.",
+    "notas": "El cofre casi siempre trae mechero, y a veces manzanas doradas. Es la forma más barata de abrir tu primer portal.",
+    "consejo": "Si le faltan bloques al marco, complétalo con obsidiana normal. No hace falta que el portal sea bonito, solo que esté cerrado."
+  },
+
+  "trail_ruins": {
+    "nombre": "Ruinas del sendero",
+    "slug": "ruinas-del-sendero",
+    "descripcion": "Restos de un pueblo enterrado que se excavan con pincel en vez de con pico. No tiene cofres: lo que hay sale de la grava y la arena sospechosas.",
+    "notas": "Se excava con pincel, despacio y sin moverte. Si te alejas o te dan un golpe, la excavación se cancela y hay que empezar de nuevo.",
+    "consejo": "Es de donde salen los fragmentos de cerámica y algunas plantillas de adorno. Vienes por decoración, no por materiales."
+  },
+
+  "trial_chambers": {
+    "nombre": "Cámaras de desafío",
+    "slug": "camaras-de-desafio",
+    "descripcion": "Un complejo de salas bajo tierra con generadores que sueltan oleadas de mobs y, al terminarlas, cofres con llave. Es el sitio nuevo de la 1.21 y el único donde conseguir la maza.",
+    "notas": "Los generadores de desafío se apagan solos al vaciar la oleada y dan su recompensa. No hace falta romper nada ni taparlos con antorchas.",
+    "consejo": "Guarda las llaves de desafío para los cofres de recompensa, que son los que llevan lo bueno. Los cofres normales del pasillo son relleno."
+  },
+
+  "nether_fortress": {
+    "nombre": "Fortaleza del Nether",
+    "slug": "fortaleza-del-nether",
+    "descripcion": "Un castillo enorme de ladrillo oscuro que cruza el Nether. Es el único sitio donde encontrarás blazes y verruga del Nether, y por eso tarde o temprano tienes que venir.",
+    "notas": "Los pasillos son estrechos y hay lava debajo. Ve despacio, coloca bloques para taparte y no corras: la mayoría de las muertes aquí son por caídas, no por pelear.",
+    "consejo": "Sin varas de blaze no hay polvo de blaze, y sin polvo de blaze no hay soporte para pociones. Todo el sistema de pociones empieza en este edificio."
+  },
+
+  "bastion_remnant": {
+    "nombre": "Resto de bastión",
+    "slug": "resto-de-bastion",
+    "descripcion": "Una fortaleza en ruinas de piedra negra tomada por los piglins. Es el mejor sitio del juego para conseguir escombros antiguos, que es lo que lleva a la netherita.",
+    "notas": "Ponte algo de oro antes de entrar o todos los piglins te atacarán a la vez. Y no abras un cofre delante de ellos ni con oro puesto: eso los enfada igualmente.",
+    "consejo": "Los cofres de la sala del tesoro están vigilados por brutos, y a esos el oro les da igual. Ve preparado para pelear en esa parte."
+  },
+
+  "end_city": {
+    "nombre": "Ciudad del End",
+    "slug": "ciudad-del-end",
+    "descripcion": "Torres de bloques de purpura en las islas exteriores del End, con shulkers dentro. Es el único sitio donde se consiguen los élitros, que es como se vuela en este juego.",
+    "notas": "Los élitros están en el barco flotante que hay junto a algunas ciudades, no en las torres. Si la ciudad no tiene barco, no hay élitros: busca otra.",
+    "consejo": "Los shulkers te lanzan un proyectil que te hace flotar y luego caer. Trae una poción de caída lenta o cubos de leche."
+  },
+
+  "ancient_city": {
+    "nombre": "Ciudad antigua",
+    "slug": "ciudad-antigua",
+    "descripcion": "Una ciudad enorme de piedra oscura enterrada en la oscuridad profunda, con los mejores cofres del juego. También es donde vive el warden.",
+    "notas": "No hay que pelear aquí: hay que no hacer ruido. Ve agachado siempre, no rompas bloques cerca de un sensor y tapa los chillones antes de moverte.",
+    "consejo": "Al warden no se le mata, se le evita. Si empieza a rugir, lanza una bola de nieve lejos para que vaya hacia allí y sal de la zona."
+  }
+}

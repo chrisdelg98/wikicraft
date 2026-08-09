@@ -3,7 +3,7 @@ import '../styles/global.css'
 import Buscador from '../components/Buscador.astro'
 import SpriteIconos from '../components/SpriteIconos.astro'
 import Icono from '../components/Icono.astro'
-import { ui, idiomas, modulos, rutaModulo, rutaDe, grafo } from '../lib/datos.js'
+import { ui, idiomas, modulos, modulosVisibles, rutaModulo, rutaDe, grafo } from '../lib/datos.js'
 
 const {
   idioma,
@@ -149,7 +149,7 @@ const otrosIdiomas = idiomas
 
             <ul class="absolute inset-x-0 top-full z-50 mt-1 grid grid-cols-2 gap-1 bloque bg-superficie-alta p-2 shadow-lg sm:grid-cols-3">
               {
-                modulos.map((modulo) => (
+                modulosVisibles.map((modulo) => (
                   <li>
                     <a
                       href={`/${idioma}/${rutaModulo(idioma, modulo)}/`}
@@ -172,7 +172,7 @@ const otrosIdiomas = idiomas
 
           <ul class="hidden gap-1 xl:flex">
             {
-              modulos.map((modulo) => (
+              modulosVisibles.map((modulo) => (
                 <li>
                   <a
                     href={`/${idioma}/${rutaModulo(idioma, modulo)}/`}

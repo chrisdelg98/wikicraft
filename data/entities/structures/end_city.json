@@ -1,0 +1,43 @@
+{
+  "$schema": "../../schemas/structure.schema.json",
+  "id": "end_city",
+  "tipo": "estructura",
+  "etapa": "end",
+  "dimension": [
+    "end"
+  ],
+  "peligro": "dificil",
+  "comoSeEncuentra": "explorando",
+  "relevancia": "alta",
+  "apareceEn": [
+    "end_highlands",
+    "end_midlands"
+  ],
+  "mobs": [
+    "shulker"
+  ],
+  "exclusivo": [
+    "elytra",
+    "shulker_shell"
+  ],
+  "botin": [
+    "diamond",
+    "emerald",
+    "iron_ingot",
+    "gold_ingot",
+    "enchanted_book",
+    "purpur_block",
+    "saddle",
+    "diamond_horse_armor",
+    "iron_pickaxe",
+    "beetroot_seeds",
+    "magma_cream"
+  ],
+  "etiquetas": [
+    "ciudad del end",
+    "barco del end",
+    "shulker",
+    "elitros",
+    "purpura"
+  ]
+}

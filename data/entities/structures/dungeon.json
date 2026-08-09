@@ -1,0 +1,39 @@
+{
+  "$schema": "../../schemas/structure.schema.json",
+  "id": "dungeon",
+  "tipo": "estructura",
+  "etapa": "inicio",
+  "dimension": [
+    "superficie"
+  ],
+  "peligro": "media",
+  "comoSeEncuentra": "bajo_tierra",
+  "relevancia": "alta",
+  "tieneGenerador": true,
+  "mobs": [
+    "zombie",
+    "skeleton",
+    "spider"
+  ],
+  "botin": [
+    "saddle",
+    "iron_ingot",
+    "bread",
+    "wheat",
+    "gunpowder",
+    "string",
+    "redstone",
+    "name_tag",
+    "golden_apple",
+    "enchanted_book",
+    "music_disc_13",
+    "music_disc_cat"
+  ],
+  "etiquetas": [
+    "mazmorra",
+    "generador",
+    "spawner",
+    "musgo",
+    "cofre"
+  ]
+}

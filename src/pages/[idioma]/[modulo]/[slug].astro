@@ -149,7 +149,8 @@ const YA_EN_TABLA = {
   aldeano: ['rel.vende', 'rel.vendeEncantamiento', 'rel.aceptaComoPago'],
   mob: ['rel.suelta'],
   receta: ['rel.materiales'],
-  pocion: ['rel.derivaDe', 'rel.ingrediente']
+  pocion: ['rel.derivaDe', 'rel.ingrediente'],
+  estructura: ['rel.exclusivo']
 }
 
 /**
@@ -163,6 +164,16 @@ const YA_EN_TABLA = {
  * y entonces la cuadricula deja de ser una respuesta y pasa a ser una lista;
  * el resto siguen abajo como tarjetas.
  */
+/**
+ * "Por que ir" de una estructura.
+ *
+ * Lo exclusivo va arriba y solo, no mezclado con el botin de los cofres. Un
+ * monumento oceanico tiene oro, prismarina y esponjas, pero solo la esponja es
+ * un motivo para hacer el viaje: lo demas lo consigues sin salir de casa. Esa
+ * es la diferencia entre "aqui hay cosas" y "tienes que venir aqui".
+ */
+const exclusivo = entidad.tipo === 'estructura' ? (entidad.exclusivo ?? []) : []
+
 const MAXIMO_CUADRICULAS = 3
 
 const relaciones = relacionesDe(id)
@@ -239,6 +250,13 @@ const consejos = [texto.notas, texto.consejo].filter(Boolean)
           </span>
         )
       }
+      {
+        entidad.peligro && (
+          <span class="text-sm font-semibold">
+            {ui(idioma, 'estructura.peligro')}: {ui(idioma, `dificultad.${entidad.peligro}`)}
+          </span>
+        )
+      }
       {entidad.pila && <Apilamiento idioma={idioma} pila={entidad.pila} />}
     </div>
 
@@ -294,6 +312,48 @@ const consejos = [texto.notas, texto.consejo].filter(Boolean)
         ) : (
           <p class="text-texto-suave">{ui(idioma, 'obtencion.desconocido')}</p>
         )}
+      </section>
+    )
+  }
+
+  {
+    entidad.tipo === 'estructura' && (
+      <section class="mb-10">
+        <h2 class="titulo-seccion">{ui(idioma, 'estructura.porQueIr')}</h2>
+
+        {exclusivo.length > 0 ? (
+          <div class="bloque bg-superficie-alta p-4">
+            <p class="mb-3 font-semibold">{ui(idioma, 'estructura.soloAqui')}</p>
+            <ul class="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
+              {exclusivo.map((otro) => (
+                <li>
+                  <TarjetaEntidad idioma={idioma} id={otro} compacto />
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : (
+          <p class="max-w-4xl text-texto-suave">{ui(idioma, 'estructura.nadaExclusivo')}</p>
+        )}
+
+        <ul class="mt-4 grid gap-2 sm:grid-cols-2">
+          {entidad.comoSeEncuentra && (
+            <li class="bloque p-3">
+              <span class="block text-sm text-texto-suave">
+                {ui(idioma, 'estructura.donde')}
+              </span>
+              <span class="font-bold">{ui(idioma, `faceta.${entidad.comoSeEncuentra}`)}</span>
+            </li>
+          )}
+          {entidad.tieneGenerador && (
+            <li class="bloque p-3">
+              <span class="block text-sm text-texto-suave">
+                {ui(idioma, 'estructura.generador')}
+              </span>
+              <span class="font-bold">{ui(idioma, 'estructura.generadorSi')}</span>
+            </li>
+          )}
+        </ul>
       </section>
     )
   }

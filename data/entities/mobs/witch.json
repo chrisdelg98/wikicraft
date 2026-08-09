@@ -51,5 +51,8 @@
       "maximo": 1,
       "probabilidad": 0.25
     }
+  ],
+  "apareceEn": [
+    "swamp_hut"
   ]
 }

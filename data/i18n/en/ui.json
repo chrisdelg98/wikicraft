@@ -10,6 +10,7 @@
   "ruta.mobs": "mobs",
   "ruta.potions": "potions",
   "ruta.recipes": "recipes",
+  "ruta.structures": "places",
   "ruta.biomes": "biomes",
   "ruta.farms": "farms",
 
@@ -22,6 +23,7 @@
   "nav.mobs": "Mobs",
   "nav.potions": "Potions",
   "nav.recipes": "Crafting",
+  "nav.structures": "Places",
   "nav.biomes": "Biomes",
   "nav.farms": "Farms",
 
@@ -51,6 +53,13 @@
 
   "faceta.grupo.general": "Type",
   "faceta.grupo.dimension": "Which world",
+  "faceta.grupo.busqueda": "How you find it",
+  "faceta.explorando": "By exploring",
+  "faceta.bajo_tierra": "Underground",
+  "faceta.bajo_el_agua": "Underwater",
+  "faceta.mapa_de_aldeano": "With a villager map",
+  "faceta.brujula": "With a treasure compass",
+  "faceta.ojo_de_ender": "With eyes of ender",
   "faceta.bloque": "Block",
   "faceta.material": "Material",
   "faceta.mineral": "Ore",
@@ -117,6 +126,14 @@
   "resumen.aldeanos": "All professions at a glance",
   "resumen.primerTrato": "Their first trade (novice)",
   "resumen.aldeanosNota": "Amounts are indicative: the game rolls each trade price within a range, and it drops permanently if you cure the villager from being a zombie. Open a profession to see all of its trades.",
+
+  "estructura.peligro": "Danger",
+  "estructura.porQueIr": "Why go",
+  "estructura.soloAqui": "You cannot get this anywhere else:",
+  "estructura.nadaExclusivo": "There is nothing here you cannot get elsewhere. You come for the chest loot, which is free, not because you have to.",
+  "estructura.donde": "How you find it",
+  "estructura.generador": "Monster spawner",
+  "estructura.generadorSi": "Yes, at least one",
 
   "obtencion.titulo": "How to get it",
   "obtencion.fabricar": "By crafting it",

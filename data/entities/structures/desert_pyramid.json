@@ -1,0 +1,35 @@
+{
+  "$schema": "../../schemas/structure.schema.json",
+  "id": "desert_pyramid",
+  "tipo": "estructura",
+  "etapa": "inicio",
+  "dimension": [
+    "superficie"
+  ],
+  "peligro": "media",
+  "comoSeEncuentra": "explorando",
+  "relevancia": "alta",
+  "apareceEn": [
+    "desert"
+  ],
+  "botin": [
+    "diamond",
+    "gold_ingot",
+    "emerald",
+    "enchanted_golden_apple",
+    "iron_horse_armor",
+    "golden_horse_armor",
+    "saddle",
+    "gunpowder",
+    "bone",
+    "rotten_flesh",
+    "tnt"
+  ],
+  "etiquetas": [
+    "templo del desierto",
+    "piramide",
+    "trampa",
+    "tnt",
+    "arenisca"
+  ]
+}

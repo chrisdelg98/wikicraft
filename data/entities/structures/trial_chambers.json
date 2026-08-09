@@ -1,0 +1,44 @@
+{
+  "$schema": "../../schemas/structure.schema.json",
+  "id": "trial_chambers",
+  "tipo": "estructura",
+  "etapa": "hierro",
+  "dimension": [
+    "superficie"
+  ],
+  "peligro": "media",
+  "comoSeEncuentra": "bajo_tierra",
+  "relevancia": "alta",
+  "tieneGenerador": true,
+  "mobs": [
+    "breeze",
+    "zombie",
+    "skeleton",
+    "spider",
+    "husk",
+    "bogged"
+  ],
+  "exclusivo": [
+    "heavy_core",
+    "breeze_rod",
+    "trial_key",
+    "ominous_trial_key",
+    "wind_charge"
+  ],
+  "botin": [
+    "emerald",
+    "diamond",
+    "iron_ingot",
+    "golden_apple",
+    "enchanted_book",
+    "arrow",
+    "bucket"
+  ],
+  "etiquetas": [
+    "camaras de desafio",
+    "trial chamber",
+    "breeze",
+    "maza",
+    "llave de desafio"
+  ]
+}

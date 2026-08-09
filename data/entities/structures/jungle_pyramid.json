@@ -1,0 +1,33 @@
+{
+  "$schema": "../../schemas/structure.schema.json",
+  "id": "jungle_pyramid",
+  "tipo": "estructura",
+  "etapa": "inicio",
+  "dimension": [
+    "superficie"
+  ],
+  "peligro": "media",
+  "comoSeEncuentra": "explorando",
+  "apareceEn": [
+    "jungle",
+    "bamboo_jungle"
+  ],
+  "botin": [
+    "diamond",
+    "emerald",
+    "gold_ingot",
+    "iron_ingot",
+    "saddle",
+    "bone",
+    "rotten_flesh",
+    "gunpowder",
+    "diamond_horse_armor"
+  ],
+  "etiquetas": [
+    "templo de la jungla",
+    "piramide",
+    "trampa",
+    "flecha",
+    "palanca"
+  ]
+}

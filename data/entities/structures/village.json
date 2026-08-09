@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schemas/structure.schema.json",
+  "id": "village",
+  "tipo": "estructura",
+  "etapa": "inicio",
+  "dimension": [
+    "superficie"
+  ],
+  "peligro": "facil",
+  "comoSeEncuentra": "explorando",
+  "relevancia": "alta",
+  "apareceEn": [
+    "plains",
+    "desert",
+    "savanna",
+    "taiga",
+    "snowy_plains"
+  ],
+  "mobs": [
+    "villager",
+    "iron_golem",
+    "cat"
+  ],
+  "botin": [
+    "bread",
+    "wheat",
+    "emerald",
+    "iron_ingot",
+    "saddle",
+    "book",
+    "paper"
+  ],
+  "etiquetas": [
+    "aldea",
+    "aldeanos",
+    "comercio",
+    "cama",
+    "pueblo"
+  ]
+}

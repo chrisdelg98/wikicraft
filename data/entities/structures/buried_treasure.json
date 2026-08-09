@@ -1,0 +1,33 @@
+{
+  "$schema": "../../schemas/structure.schema.json",
+  "id": "buried_treasure",
+  "tipo": "estructura",
+  "etapa": "inicio",
+  "dimension": [
+    "superficie"
+  ],
+  "peligro": "facil",
+  "comoSeEncuentra": "brujula",
+  "relevancia": "alta",
+  "apareceEn": [
+    "beach",
+    "ocean"
+  ],
+  "exclusivo": [
+    "heart_of_the_sea"
+  ],
+  "botin": [
+    "diamond",
+    "gold_ingot",
+    "iron_ingot",
+    "emerald",
+    "tnt",
+    "cooked_cod"
+  ],
+  "etiquetas": [
+    "tesoro enterrado",
+    "cofre del tesoro",
+    "mapa",
+    "corazon del mar"
+  ]
+}

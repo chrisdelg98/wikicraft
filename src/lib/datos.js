@@ -33,6 +33,18 @@ export const idiomas = locales.idiomas
 export const codigosIdioma = locales.idiomas.map((i) => i.codigo)
 export const modulos = locales.modulos
 
+/**
+ * Los que salen en el menu y en la portada.
+ *
+ * Un modulo oculto sigue existiendo entero: se generan sus paginas, se indexa
+ * en el buscador y se llega a el desde cualquier ficha que lo mencione. Lo
+ * unico que pierde es el sitio en el menu, que es un recurso escaso y no se le
+ * regala a un modulo con una sola entidad dentro.
+ */
+export const modulosVisibles = modulos.filter(
+  (m) => !(locales.modulosOcultos ?? []).includes(m)
+)
+
 const respaldoDe = Object.fromEntries(locales.idiomas.map((i) => [i.codigo, i.respaldo]))
 
 /** Cadena de idiomas a probar, del preferido al ultimo recurso. */
@@ -251,6 +263,7 @@ const FACETAS_POR_MODULO = {
   tools: (e) => [e.categoria, e.material],
   enchantments: (e) => [e.categoria],
   mobs: (e) => [e.categoria, ...(e.dimension ?? [])],
+  structures: (e) => [...(e.dimension ?? []), e.comoSeEncuentra],
   biomes: (e) => [e.dimension, e.tipo === 'estructura' ? 'estructura' : null],
   potions: (e) => [e.presentacion, e.efecto !== 'ninguno' ? e.efecto : null],
   recipes: (e) => [e.estacion],
@@ -274,7 +287,15 @@ export const facetasDe = ({ entidad, modulo }) =>
  * que anadir una familia no obliga a repasar los nueve modulos.
  */
 const FAMILIAS_FACETA = {
-  dimension: ['superficie', 'nether', 'end']
+  dimension: ['superficie', 'nether', 'end'],
+  busqueda: [
+    'explorando',
+    'bajo_tierra',
+    'bajo_el_agua',
+    'mapa_de_aldeano',
+    'brujula',
+    'ojo_de_ender'
+  ]
 }
 
 export const familiaFaceta = (clave) =>
