@@ -4,5 +4,8 @@
   "tipo": "mob",
   "etapa": "nether",
   "relevancia": "alta",
-  "categoria": "hostil"
+  "categoria": "hostil",
+  "dimension": [
+    "nether"
+  ]
 }

@@ -52,6 +52,12 @@
       "description": "Cuanto cuesta conseguirlo o construirlo para alguien que empieza."
     },
 
+    "dimension": {
+      "type": "string",
+      "enum": ["superficie", "nether", "end"],
+      "description": "Uno de los tres mundos. Vive aqui y no en cada esquema porque un mob de nether y un bioma de nether tienen que decir nether con la misma palabra: si no, el filtro de la lista de mobs y el de la de biomas dejan de ser el mismo filtro."
+    },
+
     "relevancia": {
       "type": "string",
       "enum": ["alta", "normal", "baja"],

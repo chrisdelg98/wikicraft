@@ -4,5 +4,10 @@
   "tipo": "mob",
   "etapa": "nether",
   "relevancia": "alta",
-  "categoria": "jefe"
+  "categoria": "jefe",
+  "dimension": [
+    "superficie",
+    "nether",
+    "end"
+  ]
 }

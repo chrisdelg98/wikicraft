@@ -5,6 +5,10 @@
   "etapa": "inicio",
   "relevancia": "alta",
   "categoria": "hostil",
+  "dimension": [
+    "superficie",
+    "nether"
+  ],
   "botin": [
     {
       "item": "arrow",

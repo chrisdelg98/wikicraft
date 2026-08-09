@@ -5,6 +5,9 @@
   "etapa": "inicio",
   "relevancia": "normal",
   "categoria": "pasivo",
+  "dimension": [
+    "superficie"
+  ],
   "botin": [
     {
       "item": "rabbit_hide",

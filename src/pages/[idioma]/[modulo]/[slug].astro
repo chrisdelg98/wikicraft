@@ -187,7 +187,23 @@ const grupos = relaciones
 /** "15" si la cantidad es fija, "15–16" si el juego la sortea. */
 const rango = ({ minimo, maximo }) => (minimo === maximo ? `${minimo}` : `${minimo}–${maximo}`)
 
-const facetas = facetasDe(grafo.get(id))
+/**
+ * Las etiquetas de la cabecera. La del mundo va primero y con su color, porque
+ * responde a "donde me encuentro esto", que se pregunta antes que "que es".
+ *
+ * Los colores no son nuevos: son los de las etapas, donde el nether ya es rojo
+ * y el end morado. Reutilizarlos ademas de ahorrar variables significa que el
+ * mismo rojo quiere decir nether en toda la wiki.
+ */
+const COLOR_DIMENSION = {
+  superficie: 'inicio',
+  nether: 'nether',
+  end: 'end'
+}
+
+const facetas = facetasDe(grafo.get(id)).sort(
+  (a, b) => (COLOR_DIMENSION[b] ? 1 : 0) - (COLOR_DIMENSION[a] ? 1 : 0)
+)
 
 // "De donde saco esto" es la pregunta que mas se hace quien juega, asi que va
 // arriba del todo y no enterrada entre las relaciones.
@@ -230,7 +246,14 @@ const consejos = [texto.notas, texto.consejo].filter(Boolean)
       facetas.length > 0 && (
         <ul class="mt-3 flex flex-wrap gap-1.5">
           {facetas.map((f) => (
-            <li class="bloque bg-superficie-alta px-2.5 py-1 text-sm font-semibold">
+            <li class="flex items-center gap-1.5 bloque bg-superficie-alta px-2.5 py-1 text-sm font-semibold">
+              {COLOR_DIMENSION[f] && (
+                <span
+                  class="h-2.5 w-2.5 shrink-0"
+                  style={`background:var(--etapa-${COLOR_DIMENSION[f]})`}
+                  aria-hidden="true"
+                />
+              )}
               {ui(idioma, `faceta.${f}`)}
             </li>
           ))}

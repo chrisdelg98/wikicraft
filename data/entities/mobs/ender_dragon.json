@@ -4,5 +4,8 @@
   "tipo": "mob",
   "etapa": "end",
   "relevancia": "normal",
-  "categoria": "jefe"
+  "categoria": "jefe",
+  "dimension": [
+    "end"
+  ]
 }

@@ -4,5 +4,10 @@
   "tipo": "mob",
   "etapa": "end",
   "relevancia": "alta",
-  "categoria": "hostil"
+  "categoria": "hostil",
+  "dimension": [
+    "superficie",
+    "nether",
+    "end"
+  ]
 }

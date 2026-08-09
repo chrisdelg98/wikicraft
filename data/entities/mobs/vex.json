@@ -4,5 +4,8 @@
   "tipo": "mob",
   "etapa": "inicio",
   "relevancia": "alta",
-  "categoria": "hostil"
+  "categoria": "hostil",
+  "dimension": [
+    "superficie"
+  ]
 }

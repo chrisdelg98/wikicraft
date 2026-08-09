@@ -21,10 +21,7 @@
     "relevancia": { "$ref": "_comun.schema.json#/$defs/relevancia" },
     "etiquetas": { "type": "array", "items": { "type": "string" } },
 
-    "dimension": {
-      "type": "string",
-      "enum": ["superficie", "nether", "end"]
-    },
+    "dimension": { "$ref": "_comun.schema.json#/$defs/dimension" },
 
     "peligro": { "$ref": "_comun.schema.json#/$defs/dificultad" },
 

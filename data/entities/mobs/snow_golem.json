@@ -5,6 +5,9 @@
   "etapa": "inicio",
   "relevancia": "normal",
   "categoria": "neutral",
+  "dimension": [
+    "superficie"
+  ],
   "botin": [
     {
       "item": "snowball",

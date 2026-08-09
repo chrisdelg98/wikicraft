@@ -5,6 +5,11 @@
   "etapa": "inicio",
   "relevancia": "alta",
   "categoria": "hostil",
+  "dimension": [
+    "superficie",
+    "nether",
+    "end"
+  ],
   "botin": [
     {
       "item": "ender_pearl",

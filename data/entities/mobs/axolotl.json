@@ -4,5 +4,8 @@
   "tipo": "mob",
   "etapa": "inicio",
   "relevancia": "normal",
-  "categoria": "pasivo"
+  "categoria": "pasivo",
+  "dimension": [
+    "superficie"
+  ]
 }

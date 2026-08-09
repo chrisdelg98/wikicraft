@@ -10,12 +10,25 @@ import {
   t,
   normalizar,
   facetasDe,
+  gruposFaceta,
   RUTA_ENCANTADOR
 } from '../lib/datos.js'
 
 const { idioma, modulo, pagina = 1 } = Astro.props
 
-export const POR_PAGINA = 60
+/**
+ * Cuantas fichas por pagina.
+ *
+ * Estaba en 60 y partia los mobs en dos paginas de 60 y 23. Como los filtros
+ * solo afinan lo que hay en pantalla, pedir "los del Nether" daba dos en la
+ * primera pagina y once en la segunda, que no es una respuesta.
+ *
+ * Con 100 caben enteros los siete modulos que se pueden abarcar de una vez
+ * (mobs, encantamientos, herramientas, biomas, pociones, aldeanos, granjas) y
+ * siguen paginados los dos que motivaron la paginacion: objetos y crafteos. El
+ * peso apenas cambia, porque una tarjeta son unos 700 bytes.
+ */
+export const POR_PAGINA = 100
 
 // Primero lo que sirve desde el principio, que es por donde deberia empezar
 // quien no sabe todavia que busca. Dentro de cada etapa, alfabetico.
@@ -44,9 +57,14 @@ const facetasPresentes = [...new Set(visibles.flatMap((x) => x.facetas))]
   .map((f) => ({ clave: f, cuantas: visibles.filter((x) => x.facetas.includes(f)).length }))
   .filter(({ cuantas }) => cuantas < visibles.length)
   .sort((a, b) => b.cuantas - a.cuantas)
-  .slice(0, 12)
+  .slice(0, 14)
 
-const hayFiltros = etapasPresentes.length > 1 || facetasPresentes.length > 1
+// Cada familia va en su propia fila y se pueden cruzar entre si. Antes iban
+// todas seguidas y solo dejaba elegir una, asi que "que me ataca en el Nether"
+// no se podia preguntar.
+const grupos = gruposFaceta(facetasPresentes)
+
+const hayFiltros = etapasPresentes.length > 1 || grupos.length > 0
 
 /** Modulos con tabla comparativa propia. Solo tiene sentido en la pagina 1. */
 const hayGuia = actual === 1 && ['villagers', 'potions'].includes(modulo)
@@ -238,24 +256,26 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
           </div>
         )}
 
-        {facetasPresentes.length > 1 && (
+        {grupos.map(({ familia, facetas }) => (
           <div>
             <h3 class="mb-2 text-sm font-bold uppercase tracking-wide text-texto-suave">
-              {ui(idioma, 'faceta.etiqueta')}
+              {ui(idioma, `faceta.grupo.${familia}`)}
             </h3>
             <div class="flex flex-wrap gap-2">
               <button
                 type="button"
                 data-filtro-faceta=""
+                data-grupo-faceta={familia}
                 aria-pressed="true"
                 class="bloque bloque-pulsable px-3 py-1.5 text-sm font-semibold aria-pressed:border-b-acento aria-pressed:bg-superficie-alta"
               >
                 {ui(idioma, 'filtro.todas')}
               </button>
-              {facetasPresentes.map(({ clave, cuantas }) => (
+              {facetas.map(({ clave, cuantas }) => (
                 <button
                   type="button"
                   data-filtro-faceta={clave}
+                  data-grupo-faceta={familia}
                   aria-pressed="false"
                   class="bloque bloque-pulsable px-3 py-1.5 text-sm font-semibold aria-pressed:border-b-acento aria-pressed:bg-superficie-alta"
                 >
@@ -265,7 +285,7 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
               ))}
             </div>
           </div>
-        )}
+        ))}
 
         <p class="text-sm text-texto-suave">{ui(idioma, 'filtro.ambito')}</p>
       </div>
@@ -376,17 +396,22 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
     const resumen = document.querySelector('[data-resumen-filtro]')
 
     let etapa = ''
-    let faceta = ''
     let texto = ''
+    // Una eleccion por familia, y se exigen todas a la vez: "te ataca" mas
+    // "Nether" deja los que te atacan en el Nether, no la suma de ambos.
+    const facetas = new Map()
 
     const normalizar = (t) => t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+
+    const elegidas = () => [...facetas.values()].filter(Boolean)
 
     const aplicar = () => {
       let visibles = 0
       for (const li of elementos) {
+        const suyas = (li.dataset.facetas ?? '').split(' ')
         const coincide =
           (!etapa || li.dataset.etapa === etapa) &&
-          (!faceta || (li.dataset.facetas ?? '').split(' ').includes(faceta)) &&
+          elegidas().every((f) => suyas.includes(f)) &&
           (!texto || li.dataset.nombre.includes(texto))
         li.hidden = !coincide
         if (coincide) visibles++
@@ -395,7 +420,7 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
 
       // El boton lleva cuantos filtros hay puestos, porque una vez cerrado el
       // panel no hay otra forma de saber que la lista esta recortada.
-      const activos = [etapa, faceta].filter(Boolean).length
+      const activos = [etapa, ...elegidas()].filter(Boolean).length
       if (contador) {
         contador.hidden = activos === 0
         contador.textContent = String(activos)
@@ -409,8 +434,8 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
     }
 
     /** Deja pulsado solo el boton elegido dentro de su grupo. */
-    const marcar = (grupo, elegido) => {
-      for (const otro of document.querySelectorAll(`[${grupo}]`)) {
+    const marcar = (selector, elegido) => {
+      for (const otro of document.querySelectorAll(selector)) {
         otro.setAttribute('aria-pressed', String(otro === elegido))
       }
     }
@@ -423,15 +448,16 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
     for (const boton of document.querySelectorAll('[data-filtro-etapa]')) {
       boton.addEventListener('click', () => {
         etapa = boton.dataset.filtroEtapa
-        marcar('data-filtro-etapa', boton)
+        marcar('[data-filtro-etapa]', boton)
         aplicar()
       })
     }
 
     for (const boton of document.querySelectorAll('[data-filtro-faceta]')) {
       boton.addEventListener('click', () => {
-        faceta = boton.dataset.filtroFaceta
-        marcar('data-filtro-faceta', boton)
+        const grupo = boton.dataset.grupoFaceta
+        facetas.set(grupo, boton.dataset.filtroFaceta)
+        marcar(`[data-grupo-faceta="${grupo}"]`, boton)
         aplicar()
       })
     }
@@ -455,9 +481,11 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
     }
     document.querySelector('[data-limpiar-filtros]')?.addEventListener('click', () => {
       etapa = ''
-      faceta = ''
-      marcar('data-filtro-etapa', document.querySelector('[data-filtro-etapa=""]'))
-      marcar('data-filtro-faceta', document.querySelector('[data-filtro-faceta=""]'))
+      facetas.clear()
+      marcar('[data-filtro-etapa]', document.querySelector('[data-filtro-etapa=""]'))
+      for (const todas of document.querySelectorAll('[data-filtro-faceta=""]')) {
+        marcar(`[data-grupo-faceta="${todas.dataset.grupoFaceta}"]`, todas)
+      }
       aplicar()
     })
     // Un clic en el fondo tambien cierra, que es lo que espera todo el mundo.

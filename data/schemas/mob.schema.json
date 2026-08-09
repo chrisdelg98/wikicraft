@@ -7,7 +7,7 @@
   "allOf": [{ "$ref": "_comun.schema.json#/$defs/entidad" }],
 
   "type": "object",
-  "required": ["id", "tipo", "categoria", "etapa"],
+  "required": ["id", "tipo", "categoria", "dimension", "etapa"],
   "properties": {
     "$schema": { "type": "string" },
     "id": { "$ref": "_comun.schema.json#/$defs/id" },
@@ -21,6 +21,14 @@
     "categoria": {
       "type": "string",
       "enum": ["pasivo", "neutral", "hostil", "jefe"]
+    },
+
+    "dimension": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "_comun.schema.json#/$defs/dimension" },
+      "description": "Mundos donde aparece de forma natural. Es lista y no un solo valor porque el enderman sale en los tres y el esqueleto en dos. Obligatorio: es la primera pregunta de quien mira un mob que no conoce, y un campo opcional acaba sin rellenar."
     },
 
     "vida": {

@@ -5,6 +5,9 @@
   "etapa": "nether",
   "relevancia": "normal",
   "categoria": "neutral",
+  "dimension": [
+    "nether"
+  ],
   "botin": [
     {
       "item": "ghast_tear",

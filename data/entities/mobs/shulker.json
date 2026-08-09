@@ -5,6 +5,9 @@
   "etapa": "end",
   "relevancia": "normal",
   "categoria": "neutral",
+  "dimension": [
+    "end"
+  ],
   "botin": [
     {
       "item": "shulker_shell",

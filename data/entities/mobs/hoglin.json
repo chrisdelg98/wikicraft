@@ -5,6 +5,9 @@
   "etapa": "nether",
   "relevancia": "normal",
   "categoria": "pasivo",
+  "dimension": [
+    "nether"
+  ],
   "botin": [
     {
       "item": "porkchop",

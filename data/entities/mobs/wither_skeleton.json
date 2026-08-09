@@ -5,6 +5,9 @@
   "etapa": "nether",
   "relevancia": "alta",
   "categoria": "hostil",
+  "dimension": [
+    "nether"
+  ],
   "botin": [
     {
       "item": "coal",

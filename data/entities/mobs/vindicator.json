@@ -5,6 +5,9 @@
   "etapa": "inicio",
   "relevancia": "alta",
   "categoria": "hostil",
+  "dimension": [
+    "superficie"
+  ],
   "botin": [
     {
       "item": "emerald",

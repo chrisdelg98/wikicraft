@@ -4,6 +4,9 @@
   "tipo": "mob",
   "etapa": "nether",
   "categoria": "hostil",
+  "dimension": [
+    "nether"
+  ],
   "vida": 20,
   "dano": 6,
   "experiencia": 10,

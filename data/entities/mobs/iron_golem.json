@@ -5,6 +5,9 @@
   "etapa": "hierro",
   "relevancia": "normal",
   "categoria": "neutral",
+  "dimension": [
+    "superficie"
+  ],
   "botin": [
     {
       "item": "poppy",

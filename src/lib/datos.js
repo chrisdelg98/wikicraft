@@ -250,7 +250,7 @@ const FACETAS_POR_MODULO = {
   items: (e) => e.categorias ?? [],
   tools: (e) => [e.categoria, e.material],
   enchantments: (e) => [e.categoria],
-  mobs: (e) => [e.categoria],
+  mobs: (e) => [e.categoria, ...(e.dimension ?? [])],
   biomes: (e) => [e.dimension, e.tipo === 'estructura' ? 'estructura' : null],
   potions: (e) => [e.presentacion, e.efecto !== 'ninguno' ? e.efecto : null],
   recipes: (e) => [e.estacion],
@@ -260,6 +260,37 @@ const FACETAS_POR_MODULO = {
 
 export const facetasDe = ({ entidad, modulo }) =>
   (FACETAS_POR_MODULO[modulo]?.(entidad) ?? []).filter(Boolean)
+
+/**
+ * Familias de faceta que merecen su propio filtro en vez de ir todas revueltas
+ * en una fila.
+ *
+ * Sin esto, la lista de mobs ofrecia "No te ataca | Te ataca | Solo si lo
+ * molestas | Superficie | Nether | End" seguidas, como si fueran alternativas
+ * entre si, y ademas solo dejaba elegir una. Separadas se pueden cruzar, que es
+ * donde esta la pregunta de verdad: que me ataca en el Nether.
+ *
+ * Lo que no pertenece a ninguna familia se queda en el grupo por defecto, asi
+ * que anadir una familia no obliga a repasar los nueve modulos.
+ */
+const FAMILIAS_FACETA = {
+  dimension: ['superficie', 'nether', 'end']
+}
+
+export const familiaFaceta = (clave) =>
+  Object.keys(FAMILIAS_FACETA).find((familia) => FAMILIAS_FACETA[familia].includes(clave)) ??
+  'general'
+
+/** Ordena las facetas de una pagina en grupos listos para pintar. */
+export const gruposFaceta = (facetas) => {
+  const orden = [...Object.keys(FAMILIAS_FACETA), 'general']
+  return orden
+    .map((familia) => ({
+      familia,
+      facetas: facetas.filter(({ clave }) => familiaFaceta(clave) === familia)
+    }))
+    .filter((g) => g.facetas.length > 1)
+}
 
 /**
  * Entidades hermanas: las que comparten el final de su identificador. Un

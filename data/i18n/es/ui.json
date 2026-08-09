@@ -102,7 +102,8 @@
   "pila.1": "No se apila: ocupa un hueco entero",
   "pila.etiqueta": "En el inventario",
 
-  "faceta.etiqueta": "Tipo",
+  "faceta.grupo.general": "Tipo",
+  "faceta.grupo.dimension": "En qué mundo",
   "faceta.bloque": "Bloque",
   "faceta.material": "Material",
   "faceta.mineral": "Mineral",
@@ -119,7 +120,7 @@
   "faceta.pasivo": "No te ataca",
   "faceta.neutral": "Solo si lo molestas",
   "faceta.jefe": "Jefe",
-  "faceta.superficie": "Superficie",
+  "faceta.superficie": "Overworld",
   "faceta.nether": "Nether",
   "faceta.end": "End",
   "faceta.estructura": "Estructura",

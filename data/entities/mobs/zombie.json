@@ -4,6 +4,9 @@
   "tipo": "mob",
   "etapa": "inicio",
   "categoria": "hostil",
+  "dimension": [
+    "superficie"
+  ],
   "vida": 20,
   "dano": 3,
   "experiencia": 5,
