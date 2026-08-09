@@ -31,7 +31,8 @@
       "objeto": { "ench": {}, "trabajos": 0 },
       "libros": [{ "protection": 4 }, { "unbreaking": 3 }, { "mending": 1 }],
       "costeEsperado": 13,
-      "comprueba": "Caso resuelto por una herramienta ajena, asi que valida el motor contra algo que no hemos calculado nosotros. Con tres libros baratos no compensa combinarlos: sale mejor pegarlos al peto uno tras otro."
+      "picoEsperado": 5,
+      "comprueba": "Caso resuelto por una herramienta ajena, asi que valida el motor contra algo que no hemos calculado nosotros. Con tres libros baratos no compensa combinarlos: sale mejor pegarlos al peto uno tras otro, 4 + 4 + 5. Hay otra ruta que tambien suma trece combinando dos libros primero, pero deja un paso de ocho niveles, y ocho de golpe no siempre los tienes. El pico se comprueba aqui porque el motor llego a dar justamente esa: el total cuadraba y la prueba pasaba tan contenta."
     },
 
     {

@@ -95,9 +95,16 @@ for (const c of casos) {
     !c.resultadoEsperado ||
     JSON.stringify(Object.entries(r.resultado.ench).sort()) ===
       JSON.stringify(Object.entries(c.resultadoEsperado).sort())
+  // El total por si solo no basta: dos rutas de trece niveles pueden pedir una
+  // ocho de golpe y la otra cinco, y en supervivencia eso decide si la puedes
+  // hacer o no. Comprobar solo el total dejo pasar exactamente ese fallo.
+  const bienPico = c.picoEsperado == null || r.pico === c.picoEsperado
 
-  console.log(`  ${bienCoste && bienResultado ? 'OK  ' : 'MAL '} ${c.nombre}`)
-  console.log(`       coste ${r.coste} en ${r.pasos.length} operaciones (esperado ${c.costeEsperado})`)
+  console.log(`  ${bienCoste && bienResultado && bienPico ? 'OK  ' : 'MAL '} ${c.nombre}`)
+  console.log(
+    `       coste ${r.coste} en ${r.pasos.length} operaciones (esperado ${c.costeEsperado})` +
+      (c.picoEsperado == null ? '' : `, paso mas caro ${r.pico} (esperado ${c.picoEsperado})`)
+  )
 
   // La ruta se imprime siempre: un total sin el camino no se puede revisar.
   const nombresDe = (mascara) =>
@@ -116,6 +123,7 @@ for (const c of casos) {
 
   if (!bienCoste) fallos.push(`${c.id}: coste ${r.coste}, se esperaba ${c.costeEsperado}`)
   if (!bienResultado) fallos.push(`${c.id}: el resultado no coincide`)
+  if (!bienPico) fallos.push(`${c.id}: paso mas caro ${r.pico}, se esperaba ${c.picoEsperado}`)
 }
 
 // --- Informe ---------------------------------------------------------------

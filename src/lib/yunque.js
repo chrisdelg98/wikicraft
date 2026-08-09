@@ -73,18 +73,26 @@ export const unir = (destino, sacrificio, tabla, limite = DEMASIADO_CARO) => {
 }
 
 /**
- * Frente de Pareto: se guarda una opcion solo si ninguna otra es a la vez igual
- * o mas barata Y con igual o menos trabajo previo. La mas barata de ahora puede
- * salir cara despues si arrastra mas penalizacion, asi que no basta con guardar
- * el minimo coste.
+ * Frente de Pareto: se guarda una opcion solo si ninguna otra la gana en las
+ * tres cosas a la vez. La mas barata de ahora puede salir cara despues si
+ * arrastra mas penalizacion, asi que no basta con guardar el minimo coste.
+ *
+ * Las tres son:
+ *
+ * - `coste`, el total.
+ * - `trabajos`, la penalizacion que arrastra y que encarece todo lo que venga.
+ * - `pico`, el paso mas caro de la ruta.
+ *
+ * El tercero no es una preferencia estetica. En supervivencia no pagas el total
+ * sino cada paso por separado, y para hacer un paso de ocho niveles tienes que
+ * tener ocho niveles ahorrados en ese momento. Dos rutas de trece pueden pedir
+ * una ocho de golpe y la otra cinco: cuestan lo mismo y no son lo mismo.
  */
+const domina = (a, b) => a.coste <= b.coste && a.estado.trabajos <= b.estado.trabajos && a.pico <= b.pico
+
 const añadir = (lista, candidato) => {
-  for (const otro of lista) {
-    if (otro.coste <= candidato.coste && otro.estado.trabajos <= candidato.estado.trabajos) return
-  }
-  const filtrada = lista.filter(
-    (otro) => !(candidato.coste <= otro.coste && candidato.estado.trabajos <= otro.estado.trabajos)
-  )
+  for (const otro of lista) if (domina(otro, candidato)) return
+  const filtrada = lista.filter((otro) => !domina(candidato, otro))
   filtrada.push(candidato)
   lista.length = 0
   lista.push(...filtrada)
@@ -119,6 +127,7 @@ export const optimizar = (objeto, libros, tabla, limite = DEMASIADO_CARO) => {
   for (let i = 0; i < n; i++) {
     comoLibro[1 << i].push({
       coste: 0,
+      pico: 0,
       estado: { ench: { ...libros[i].ench }, trabajos: 0 },
       pasos: []
     })
@@ -136,6 +145,7 @@ export const optimizar = (objeto, libros, tabla, limite = DEMASIADO_CARO) => {
             if (!r) continue
             añadir(comoLibro[mascara], {
               coste: a.coste + b.coste + r.coste,
+              pico: Math.max(a.pico, b.pico, r.coste),
               estado: r.resultado,
               pasos: [...a.pasos, ...b.pasos, { tipo: 'libros', de: A, con: B, coste: r.coste }]
             })
@@ -147,7 +157,7 @@ export const optimizar = (objeto, libros, tabla, limite = DEMASIADO_CARO) => {
 
   // Y ahora el objeto recibiendo grupos de libros, uno tras otro.
   const enObjeto = Array.from({ length: total }, () => [])
-  enObjeto[0].push({ coste: 0, estado: objeto, pasos: [] })
+  enObjeto[0].push({ coste: 0, pico: 0, estado: objeto, pasos: [] })
 
   for (let mascara = 1; mascara < total; mascara++) {
     for (let sub = mascara; sub > 0; sub = (sub - 1) & mascara) {
@@ -158,6 +168,7 @@ export const optimizar = (objeto, libros, tabla, limite = DEMASIADO_CARO) => {
           if (!r) continue
           añadir(enObjeto[mascara], {
             coste: p.coste + l.coste + r.coste,
+            pico: Math.max(p.pico, l.pico, r.coste),
             estado: r.resultado,
             pasos: [...p.pasos, ...l.pasos, { tipo: 'objeto', con: sub, coste: r.coste }]
           })
@@ -169,6 +180,12 @@ export const optimizar = (objeto, libros, tabla, limite = DEMASIADO_CARO) => {
   const finales = enObjeto[total - 1]
   if (finales.length === 0) return { imposible: 'demasiadoCaro' }
 
-  const mejor = finales.reduce((a, b) => (b.coste < a.coste ? b : a))
-  return { coste: mejor.coste, pasos: mejor.pasos, resultado: mejor.estado }
+  // Primero lo barato, y entre las que cuestan lo mismo, la que nunca te pide
+  // tanto de golpe. Sin el desempate salia la que encontrase antes, que ademas
+  // dependia del orden en que se hubieran marcado los libros: la misma pregunta
+  // daba respuestas distintas.
+  const mejor = finales.reduce((a, b) =>
+    b.coste < a.coste || (b.coste === a.coste && b.pico < a.pico) ? b : a
+  )
+  return { coste: mejor.coste, pico: mejor.pico, pasos: mejor.pasos, resultado: mejor.estado }
 }

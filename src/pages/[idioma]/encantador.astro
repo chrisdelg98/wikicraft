@@ -185,6 +185,7 @@ if (sueltas.length > 0) {
       niveles: ui(idioma, 'encantador.niveles', { n: '§' }),
       operaciones: ui(idioma, 'encantador.operaciones', { n: '§' }),
       experiencia: ui(idioma, 'encantador.experiencia', { n: '§' }),
+      pico: ui(idioma, 'encantador.pico', { n: '§' }),
       pasoObjeto: ui(idioma, 'encantador.pasoObjeto', { objeto: '§O', libro: '§L' }),
       pasoLibros: ui(idioma, 'encantador.pasoLibros', { a: '§A', b: '§B' }),
       libroCon: ui(idioma, 'encantador.libroCon', { lista: '§' }),
@@ -359,10 +360,11 @@ if (sueltas.length > 0) {
           <h2 class="titulo-seccion">${T.resultado}</h2>
           <p class="text-sm font-semibold text-texto-suave">${T.coste}</p>
           <p class="mb-1 text-3xl font-extrabold">${rellenar(T.niveles, { '§': r.coste })}</p>
-          <p class="mb-5 text-sm text-texto-suave">
+          <p class="text-sm text-texto-suave">
             ${rellenar(T.operaciones, { '§': r.pasos.length })} ·
             ${rellenar(T.experiencia, { '§': xp })}
           </p>
+          <p class="mb-5 text-sm font-semibold">${rellenar(T.pico, { '§': r.pico })}</p>
           <ol class="space-y-2">${pasos}</ol>
           <p class="mt-4 text-sm text-texto-suave">${T.comoLeer}</p>
         </section>`
