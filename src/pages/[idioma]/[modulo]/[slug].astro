@@ -282,7 +282,7 @@ const consejos = [texto.notas, texto.consejo].filter(Boolean)
         <div class="space-y-4">
           {cuadriculas.map((receta) => (
             <div class="bloque bg-superficie-alta p-4">
-              <Cuadricula idioma={idioma} receta={receta} compacta />
+              <Cuadricula idioma={idioma} receta={receta} />
               <a
                 href={rutaDe(idioma, receta.id)}
                 class="mt-2 inline-block text-sm font-semibold hover:text-acento"

@@ -14,7 +14,7 @@
  */
 import { t, ui, rutaDe, grafo, grupoDe } from '../lib/datos.js'
 
-const { idioma, receta, compacta = false } = Astro.props
+const { idioma, receta } = Astro.props
 
 const enlace = (otro) =>
   grafo.has(otro)
@@ -60,7 +60,22 @@ const casillas = conForma
       return sueltos[i] ?? null
     })
 
-const medida = compacta ? 'h-14 w-14 text-[9px]' : 'h-[4.5rem] w-[4.5rem] text-[10px]'
+/**
+ * Los huecos son grandes porque dentro va texto y no una textura. A 10px el
+ * nombre cabia, pero "Losa de cobre cortado desgastada encerada" no se leia:
+ * cabia como cabe la letra pequena de un contrato. Con 12px y hueco de 6rem
+ * entra la palabra mas larga del catalogo ("descortezado") sin partirse, y lo
+ * que no entra se parte por silabas en vez de desbordarse.
+ *
+ * En movil el hueco baja: tres de 6rem mas la bandeja se salen de una pantalla
+ * de 320px, y esta wiki no se mueve en horizontal.
+ *
+ * Hubo un rato una version reducida para la ficha del objeto, para que la
+ * receta no le robara protagonismo al resto. Duro poco: si este tamano es el
+ * que se lee, el otro no se leia, y ahi es justo donde mas gente la mira.
+ */
+const medida = 'h-20 w-20 text-[11px] sm:h-24 sm:w-24 sm:text-xs'
+const medidaResultado = 'h-24 w-24 text-xs sm:h-28 sm:w-28 sm:text-sm'
 ---
 
 <div class="flex flex-wrap items-center gap-x-4 gap-y-3">
@@ -70,7 +85,7 @@ const medida = compacta ? 'h-14 w-14 text-[9px]' : 'h-[4.5rem] w-[4.5rem] text-[
         casillas.map((opciones) => (
           <span
             class:list={[
-              'grid place-items-center p-1 text-center font-semibold leading-tight hueco',
+              'grid place-items-center hyphens-auto px-1 text-center leading-[1.25] font-semibold break-words hueco',
               medida,
               !opciones && 'hueco-vacio'
             ]}
@@ -87,7 +102,7 @@ const medida = compacta ? 'h-14 w-14 text-[9px]' : 'h-[4.5rem] w-[4.5rem] text-[
       tipografica al lado de una cuadricula de pixeles canta muchisimo. */}
   <svg
     viewBox="0 0 14 10"
-    class:list={['shrink-0 text-borde-fuerte', compacta ? 'h-6 w-9' : 'h-8 w-12']}
+    class="h-6 w-9 shrink-0 text-borde-fuerte sm:h-8 sm:w-12"
     fill="currentColor"
     shape-rendering="crispEdges"
     aria-hidden="true"
@@ -103,8 +118,8 @@ const medida = compacta ? 'h-14 w-14 text-[9px]' : 'h-[4.5rem] w-[4.5rem] text-[
   <div class="inline-block bandeja">
     <span
       class:list={[
-        'grid place-items-center bg-acento p-1 text-center font-bold text-acento-contraste hueco',
-        compacta ? 'h-16 min-w-16 text-[10px]' : 'h-20 min-w-20 text-[11px]'
+        'grid place-items-center hyphens-auto px-2 text-center leading-[1.25] font-bold break-words bg-acento text-acento-contraste hueco',
+        medidaResultado
       ]}
     >
       {receta.resultado.cantidad} × {enlace(receta.resultado.item).nombre}
