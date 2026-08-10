@@ -108,7 +108,7 @@ const otrosIdiomas = idiomas
             </span>
             {/* El nombre del sitio es un logotipo, asi que lleva la fuente de
                 los titulos aunque no sea un encabezado. */}
-            <span class="hidden font-titulo text-2xl font-normal sm:inline">
+            <span class="titulo hidden text-3xl sm:inline">
               {ui(idioma, 'sitio.nombre')}
             </span>
           </a>
@@ -155,7 +155,7 @@ const otrosIdiomas = idiomas
             que el navegador ya sabe hacer. */}
         <nav class="mt-3" aria-label={ui(idioma, 'nav.secciones')}>
           <details class="relative xl:hidden" data-menu-secciones>
-            <summary class="flex w-full cursor-pointer list-none items-center gap-2 bloque bloque-pulsable px-4 py-2.5 font-semibold [&::-webkit-details-marker]:hidden">
+            <summary class="titulo flex w-full cursor-pointer list-none items-center gap-2 bloque bloque-pulsable px-4 py-2.5 text-base [&::-webkit-details-marker]:hidden">
               <Icono modulo={moduloActivo ?? 'items'} clase="h-4 w-4 text-acento" />
               <span>{moduloActivo ? ui(idioma, `nav.${moduloActivo}`) : ui(idioma, 'nav.secciones')}</span>
               <svg viewBox="0 0 16 16" class="ml-auto h-4 w-4" fill="currentColor" aria-hidden="true">
@@ -171,10 +171,10 @@ const otrosIdiomas = idiomas
                       href={`/${idioma}/${rutaModulo(idioma, modulo)}/`}
                       aria-current={modulo === moduloActivo ? 'page' : undefined}
                       class:list={[
-                        'flex items-center gap-2 bloque bloque-pulsable px-3 py-2 text-sm whitespace-nowrap',
+                        'flex items-center gap-2 bloque bloque-pulsable px-3 py-2 titulo text-base whitespace-nowrap',
                         modulo === moduloActivo
-                          ? 'font-bold text-acento shadow-[inset_0_-4px_0_0_var(--acento)]'
-                          : 'font-semibold text-texto'
+                          ? 'text-acento shadow-[inset_0_-4px_0_0_var(--acento)]'
+                          : 'text-texto'
                       ]}
                     >
                       <Icono modulo={modulo} clase="h-4 w-4 text-acento" />
@@ -194,13 +194,14 @@ const otrosIdiomas = idiomas
                     href={`/${idioma}/${rutaModulo(idioma, modulo)}/`}
                     aria-current={modulo === moduloActivo ? 'page' : undefined}
                     class:list={[
-                      'flex items-center gap-2 bloque bloque-pulsable px-3 py-2 text-sm whitespace-nowrap',
+                      'flex items-center gap-2 bloque bloque-pulsable px-3 py-2 titulo text-base whitespace-nowrap',
                       // La activa no se rellena: se subraya. Asi no compite con
                       // el boton de guia, que si es una accion, y se distingue
-                      // igual por texto en verde, negrita y la barra del pie.
+                      // igual por el verde y la barra del pie. Sin negrita: la
+                      // fuente de titulos solo tiene un peso.
                       modulo === moduloActivo
-                        ? 'font-bold text-acento shadow-[inset_0_-4px_0_0_var(--acento)]'
-                        : 'font-semibold text-texto'
+                        ? 'text-acento shadow-[inset_0_-4px_0_0_var(--acento)]'
+                        : 'text-texto'
                     ]}
                   >
                     <Icono modulo={modulo} clase="h-4 w-4 text-acento" />

@@ -28,7 +28,9 @@ const facetas = facetasDe(nodo).slice(0, compacto ? 1 : 2)
       href={rutaDe(idioma, id)}
       class="flex h-full flex-col gap-1 bloque bloque-pulsable px-3 py-2"
     >
-      <span class="titulo text-base">{texto.nombre}</span>
+      {/* Jersey 10 es estrecha: a 16px se quedaba diminuta en las listas de
+          relaciones, que es donde mas nombres hay juntos. */}
+      <span class="titulo text-lg">{texto.nombre}</span>
       {facetas.length > 0 && (
         <span class="text-xs text-texto-suave">{ui(idioma, `faceta.${facetas[0]}`)}</span>
       )}
