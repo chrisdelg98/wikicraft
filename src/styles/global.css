@@ -30,10 +30,28 @@
   --acento-claro: #57a03a;
   --acento-contraste: #ffffff;
 
+  /* ---------------------------------------------------------------------------
+     El verde de los botones es OTRO token, y no por capricho.
+
+     --acento hace dos trabajos que tiran en direcciones contrarias: pinta texto
+     e iconos, donde en tema oscuro tiene que ser claro para leerse sobre el
+     fondo, y rellena botones, donde tiene que ser oscuro para que el texto de
+     encima se lea. Con un solo token gana uno de los dos, y lo que pasaba era
+     que en oscuro los botones salian verde brillante con letras casi negras,
+     mientras que en claro eran verde oscuro con letras blancas. El mismo boton
+     con dos aspectos distintos segun el tema.
+
+     --acento-fondo es el mismo verde en los dos temas y siempre lleva blanco
+     encima: 4,9:1 contra el blanco y 3,1:1 contra el fondo oscuro, que es lo
+     que pide un elemento de interfaz. Un boton verde se ve igual en todas
+     partes, que es lo unico que hace que se reconozca como boton.
+     --------------------------------------------------------------------------- */
+  --acento-fondo: #3f7f2b;
+
   /* No hay un color aparte para el estado activo. Lo hubo, medio tono distinto
      del acento, y solo sirvio para que la pestana del menu y el boton de guia
      no acabaran de casar estando uno al lado del otro. Todo lo que se rellena
-     de verde usa --acento con --acento-contraste encima. */
+     de verde usa --acento-fondo con --acento-contraste encima. */
   --sombra: rgba(22, 19, 14, 0.16);
 
   --etapa-inicio: #57a03a;
@@ -72,7 +90,9 @@
      oscuro: 8,9:1 contra el fondo y 8,7:1 contra el texto que lleva encima. */
   --o-acento: #79c855;
   --o-acento-claro: #96da77;
-  --o-acento-contraste: #0f2007;
+  /* Blanco, como en claro: el relleno de los botones ya no sale de --acento
+     sino de --acento-fondo, que es oscuro en los dos temas. */
+  --o-acento-contraste: #ffffff;
   --o-sombra: rgba(0, 0, 0, 0.55);
 
   --o-etapa-inicio: #79c855;
@@ -149,6 +169,7 @@
   --color-texto-suave: var(--texto-suave);
   --color-acento: var(--acento);
   --color-acento-claro: var(--acento-claro);
+  --color-acento-fondo: var(--acento-fondo);
   --color-acento-contraste: var(--acento-contraste);
 
   --font-sans:
@@ -162,28 +183,34 @@
    Base
    --------------------------------------------------------------------------- */
 
-html {
-  scroll-behavior: smooth;
-  background: var(--fondo);
-}
+/* Todo lo que pinta un elemento por su nombre va en @layer base. Suelto le
+   ganaria a las utilidades de Tailwind, que viven en la capa "utilities": un
+   "font-weight: 800" aqui deja sin efecto un "font-bold" puesto en un h2, y no
+   hay manera de verlo salvo mirando el navegador. Lo comprueba el build. */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background: var(--fondo);
+  }
 
-body {
-  background: var(--fondo);
-  color: var(--texto);
-  font-family: var(--font-sans);
-  /* Cuerpo generoso: buena parte del publico son ninos. */
-  font-size: 1.0625rem;
-  line-height: 1.65;
-  -webkit-text-size-adjust: 100%;
-}
+  body {
+    background: var(--fondo);
+    color: var(--texto);
+    font-family: var(--font-sans);
+    /* Cuerpo generoso: buena parte del publico son ninos. */
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    -webkit-text-size-adjust: 100%;
+  }
 
-h1,
-h2,
-h3 {
-  line-height: 1.15;
-  font-weight: 800;
-  letter-spacing: -0.015em;
-  text-wrap: balance;
+  h1,
+  h2,
+  h3 {
+    line-height: 1.15;
+    font-weight: 800;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
 }
 
 /* ---------------------------------------------------------------------------
@@ -291,8 +318,21 @@ h3 {
   color: var(--acento);
 }
 
-a {
-  color: inherit;
+/* Dentro de @layer base y no suelto, que es donde estaba y donde hacia dano.
+   En CSS lo que va fuera de capa gana a lo que va dentro, por mucha
+   especificidad que tenga lo de dentro, y las utilidades de Tailwind viven en
+   la capa "utilities". Suelto, este "color: inherit" le ganaba a
+   .text-acento-contraste en cualquier <a>.
+
+   Se noto en los botones verdes: el de la portada es un <span> y salia con el
+   texto blanco, y las pastillas de categoria son <a> y salian con el color del
+   texto normal. En tema oscuro ese color es casi blanco y no se notaba; en
+   claro es oscuro, y de ahi el verde con letras negras que llevabamos cuatro
+   intentos persiguiendo por la paleta, donde no estaba. */
+@layer base {
+  a {
+    color: inherit;
+  }
 }
 
 :focus-visible {
@@ -404,22 +444,24 @@ a {
    Escape sin JavaScript propio. Solo hay que vestirlo.
    --------------------------------------------------------------------------- */
 
-dialog {
-  margin: auto;
-  width: 100%;
-  max-width: min(42rem, calc(100vw - 2rem));
-  max-height: calc(100vh - 4rem);
-  padding: 0;
-  overflow: auto;
-  color: var(--texto);
-  background: var(--superficie);
-  border: 2px solid var(--borde);
-  border-top-color: var(--superficie-alta);
-  border-left-color: var(--superficie-alta);
-  border-bottom-color: var(--borde-fuerte);
-  border-right-color: var(--borde-fuerte);
-  border-radius: var(--radius-bloque);
-  box-shadow: 0 12px 32px var(--sombra);
+@layer base {
+  dialog {
+    margin: auto;
+    width: 100%;
+    max-width: min(42rem, calc(100vw - 2rem));
+    max-height: calc(100vh - 4rem);
+    padding: 0;
+    overflow: auto;
+    color: var(--texto);
+    background: var(--superficie);
+    border: 2px solid var(--borde);
+    border-top-color: var(--superficie-alta);
+    border-left-color: var(--superficie-alta);
+    border-bottom-color: var(--borde-fuerte);
+    border-right-color: var(--borde-fuerte);
+    border-radius: var(--radius-bloque);
+    box-shadow: 0 12px 32px var(--sombra);
+  }
 }
 
 /* Las guias llevan tablas y necesitan mas ancho que un panel de filtros. */

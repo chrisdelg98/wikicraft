@@ -124,7 +124,7 @@ if (sueltas.length > 0) {
                       type="button"
                       data-nivel={n}
                       aria-pressed="false"
-                      class="grid h-9 w-9 place-items-center bloque bloque-pulsable text-sm font-bold aria-pressed:bg-acento aria-pressed:text-acento-contraste disabled:opacity-40"
+                      class="grid h-9 w-9 place-items-center bloque bloque-pulsable text-sm font-bold aria-pressed:bg-acento-fondo aria-pressed:text-acento-contraste disabled:opacity-40"
                     >
                       {n}
                     </button>
@@ -157,7 +157,7 @@ if (sueltas.length > 0) {
         <button
           type="button"
           data-calcular
-          class="flex h-12 items-center bloque bloque-pulsable bg-acento px-4 font-bold text-acento-contraste"
+          class="flex h-12 items-center bloque bloque-pulsable bg-acento-fondo px-4 font-bold text-acento-contraste"
         >
           {ui(idioma, 'encantador.calcular')}
         </button>
@@ -344,7 +344,7 @@ if (sueltas.length > 0) {
                 })
           return `
             <li class="flex gap-3 bloque p-3">
-              <span class="grid h-7 w-7 shrink-0 place-items-center bg-acento text-sm font-extrabold text-acento-contraste">${i + 1}</span>
+              <span class="grid h-7 w-7 shrink-0 place-items-center bg-acento-fondo text-sm font-extrabold text-acento-contraste">${i + 1}</span>
               <span class="min-w-0">
                 <span class="block">${texto}</span>
                 <span class="mt-1 block text-sm text-texto-suave">

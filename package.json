@@ -10,10 +10,11 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "npm run validar && npm run probar && astro build",
+    "build": "npm run validar && npm run probar && astro build && npm run comprobar-css",
     "probar": "node scripts/probar-yunque.mjs",
     "preview": "astro preview",
-    "validar": "node scripts/validar.mjs"
+    "validar": "node scripts/validar.mjs",
+    "comprobar-css": "node scripts/comprobar-css.mjs"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",

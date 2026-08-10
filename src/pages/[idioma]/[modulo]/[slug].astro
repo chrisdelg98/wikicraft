@@ -386,7 +386,7 @@ const consejos = [texto.notas, texto.consejo].filter(Boolean)
         <ol class="max-w-4xl space-y-2">
           {cadenaPocion.map((paso, i) => (
             <li class="flex flex-wrap items-center gap-x-2 gap-y-1 bloque p-3">
-              <span class="grid h-6 w-6 shrink-0 place-items-center bg-acento text-xs font-extrabold text-acento-contraste">
+              <span class="grid h-6 w-6 shrink-0 place-items-center bg-acento-fondo text-xs font-extrabold text-acento-contraste">
                 {i + 1}
               </span>
               <a href={enlace(paso.desde).url} class="font-semibold">
@@ -707,7 +707,7 @@ const consejos = [texto.notas, texto.consejo].filter(Boolean)
         <ol class="max-w-4xl space-y-2">
           {texto.pasos.map((paso, i) => (
             <li class="flex gap-3 bloque p-3">
-              <span class="grid h-7 w-7 shrink-0 place-items-center bg-acento text-sm font-extrabold text-acento-contraste">
+              <span class="grid h-7 w-7 shrink-0 place-items-center bg-acento-fondo text-sm font-extrabold text-acento-contraste">
                 {i + 1}
               </span>
               <span>{paso}</span>

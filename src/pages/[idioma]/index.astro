@@ -74,7 +74,7 @@ const primerosPasos = PRIMEROS_PASOS.filter((id) => grafo.has(id))
         <span class="block text-xl font-extrabold">{ui(idioma, 'encantador.titulo')}</span>
         <span class="mt-1 block text-texto-suave">{ui(idioma, 'encantador.subtitulo')}</span>
       </span>
-      <span class="shrink-0 bloque bg-acento px-4 py-2 font-bold text-acento-contraste">
+      <span class="shrink-0 bloque bg-acento-fondo px-4 py-2 font-bold text-acento-contraste">
         {ui(idioma, 'encantador.abrir')}
       </span>
     </a>
@@ -96,7 +96,7 @@ const primerosPasos = PRIMEROS_PASOS.filter((id) => grafo.has(id))
             >
               {/* El icono en su propio hueco, que se enciende al pasar por
                   encima: es de las pocas cosas de la portada que se mueven. */}
-              <span class="grid h-12 w-12 shrink-0 place-items-center bloque bg-superficie-alta text-acento transition-colors group-hover:bg-acento group-hover:text-acento-contraste">
+              <span class="grid h-12 w-12 shrink-0 place-items-center bloque bg-superficie-alta text-acento transition-colors group-hover:bg-acento-fondo group-hover:text-acento-contraste">
                 <Icono modulo={modulo} clase="h-7 w-7" />
               </span>
 

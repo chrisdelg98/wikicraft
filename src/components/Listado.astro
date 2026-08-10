@@ -96,9 +96,9 @@ const urlPagina = (n) => (n === 1 ? `${base}/` : `${base}/pagina/${n}/`)
  * diferencia de dos pixeles de alto basta para que se lean como dos cosas
  * distintas. Aqui se escriben una vez para que no vuelvan a separarse.
  */
-const PASTILLA = 'bloque px-3 py-1.5 text-sm font-semibold'
-const PASTILLA_INACTIVA = `${PASTILLA} bloque-pulsable`
-const PASTILLA_ACTIVA = `${PASTILLA} bg-acento font-bold text-acento-contraste`
+const PASTILLA = 'bloque px-3 py-1.5 text-sm'
+const PASTILLA_INACTIVA = `${PASTILLA} bloque-pulsable font-semibold`
+const PASTILLA_ACTIVA = `${PASTILLA} bg-acento-fondo font-bold text-acento-contraste`
 
 // Ventana de paginas alrededor de la actual, para no pintar veintitantos
 // numeros seguidos en pantallas pequenas.
@@ -122,37 +122,47 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
 {/* Las categorias a la vista y no detras de un boton. Es lo primero que se
     quiere hacer al llegar a una lista de mil objetos, y esconderlo en un panel
     convertia un clic en tres. Son enlaces, no botones: llevan a una pagina de
-    verdad, se pueden compartir y el navegador sabe volver. */}
+    verdad, se pueden compartir y el navegador sabe volver.
+
+    Van sobre la misma superficie clara que el resto de tarjetas, y no sueltos
+    sobre el fondo de la pagina. El motivo es el color: el boton verde es el
+    mismo en los dos sitios, pero sobre el beige del fondo se apagaba y sobre el
+    blanco de una tarjeta se ve vivo. Mismo verde, distinto vecino. Ahora todos
+    los botones verdes del sitio tienen el mismo vecino. */}
 {
-  grupos.map(({ familia, facetas }) => (
-    <nav class="mb-3 flex flex-wrap items-center gap-2" aria-label={ui(idioma, `faceta.grupo.${familia}`)}>
-      <span class="text-sm font-bold text-texto-suave">{ui(idioma, `faceta.grupo.${familia}`)}</span>
-      <a
-        href={urlCategoria(null)}
-        aria-current={faceta ? undefined : 'page'}
-        class={faceta ? PASTILLA_INACTIVA : PASTILLA_ACTIVA}
-      >
-        {ui(idioma, 'filtro.todas')}
-      </a>
-      {facetas.map(({ clave, cuantas }) => (
-        <a
-          href={urlCategoria(clave)}
-          aria-current={clave === faceta ? 'page' : undefined}
-          class={clave === faceta ? PASTILLA_ACTIVA : PASTILLA_INACTIVA}
-        >
-          {ui(idioma, `faceta.${clave}`)}
-          <span
-            class:list={[
-              'ml-1.5',
-              clave === faceta ? 'text-acento-contraste/70' : 'text-texto-suave'
-            ]}
+  grupos.length > 0 && (
+    <div class="mb-6 space-y-2 bloque bg-superficie-alta p-3">
+      {grupos.map(({ familia, facetas }) => (
+        <nav class="flex flex-wrap items-center gap-2" aria-label={ui(idioma, `faceta.grupo.${familia}`)}>
+          <span class="text-sm font-bold text-texto-suave">{ui(idioma, `faceta.grupo.${familia}`)}</span>
+          <a
+            href={urlCategoria(null)}
+            aria-current={faceta ? undefined : 'page'}
+            class={faceta ? PASTILLA_INACTIVA : PASTILLA_ACTIVA}
           >
-            {cuantas}
-          </span>
-        </a>
+            {ui(idioma, 'filtro.todas')}
+          </a>
+          {facetas.map(({ clave, cuantas }) => (
+            <a
+              href={urlCategoria(clave)}
+              aria-current={clave === faceta ? 'page' : undefined}
+              class={clave === faceta ? PASTILLA_ACTIVA : PASTILLA_INACTIVA}
+            >
+              {ui(idioma, `faceta.${clave}`)}
+              {/* La cuenta hereda el color de la pastilla y solo se apaga un
+                  poco. Llevaba "text-acento-contraste/70", que Tailwind no
+                  compila cuando el color viene de una variable: la clase salia
+                  en el HTML, no existia en el CSS, y el numero se quedaba con
+                  el color que le tocara. Con "opacity" no hay que compilar. */}
+              <span class:list={['ml-1.5', clave === faceta ? 'opacity-75' : 'text-texto-suave']}>
+                {cuantas}
+              </span>
+            </a>
+          ))}
+        </nav>
       ))}
-    </nav>
-  ))
+    </div>
+  )
 }
 
 {
@@ -167,7 +177,7 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
           {ui(idioma, 'encantador.subtitulo')}
         </span>
       </span>
-      <span class="shrink-0 bloque bg-acento px-3 py-1.5 text-sm font-bold text-acento-contraste">
+      <span class="shrink-0 bloque bg-acento-fondo px-3 py-1.5 text-sm font-bold text-acento-contraste">
         {ui(idioma, 'encantador.abrir')}
       </span>
     </a>
@@ -253,7 +263,7 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
           <button
             type="button"
             data-abrir-guia
-            class="flex h-12 shrink-0 items-center gap-2 bloque bloque-pulsable bg-acento px-4 font-bold text-acento-contraste"
+            class="flex h-12 shrink-0 items-center gap-2 bloque bloque-pulsable bg-acento-fondo px-4 font-bold text-acento-contraste"
           >
             <svg viewBox="0 0 16 16" class="h-4 w-4" fill="currentColor" aria-hidden="true">
               <path d="M2 2h5v12H2zM9 2h5v12H9zM3 4h3v1H3zM10 4h3v1h-3zM3 6h3v1H3zM10 6h3v1h-3z" />
@@ -275,7 +285,7 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
             <span
               data-cuenta-filtros
               hidden
-              class="grid h-5 min-w-5 place-items-center bg-acento px-1 text-xs font-bold text-acento-contraste"
+              class="grid h-5 min-w-5 place-items-center bg-acento-fondo px-1 text-xs font-bold text-acento-contraste"
             />
           </button>
         )}
@@ -345,7 +355,7 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
         <button
           type="button"
           data-cerrar-filtros
-          class="bloque bloque-pulsable bg-acento px-4 py-2 text-sm font-bold text-acento-contraste"
+          class="bloque bloque-pulsable bg-acento-fondo px-4 py-2 text-sm font-bold text-acento-contraste"
         >
           {ui(idioma, 'filtro.aplicar')}
         </button>
@@ -374,7 +384,7 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
     type="button"
     data-buscar-en-todo
     data-plantilla={ui(idioma, 'filtro.buscarEnTodo', { consulta: '§' })}
-    class="mt-3 bloque bloque-pulsable bg-acento px-4 py-2 text-sm font-bold text-acento-contraste"
+    class="mt-3 bloque bloque-pulsable bg-acento-fondo px-4 py-2 text-sm font-bold text-acento-contraste"
   ></button>
 </div>
 
