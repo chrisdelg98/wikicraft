@@ -82,17 +82,35 @@ const primerosPasos = PRIMEROS_PASOS.filter((id) => grafo.has(id))
 
   <section class="mb-12">
     <h2 class="mb-4 text-xl font-bold">{ui(idioma, 'portada.explora')}</h2>
-    <ul class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+    {/* Antes eran tres lineas sueltas: icono, nombre y un numero a secas. El
+        numero no dice que hay dentro, y el nombre de un modulo tampoco se lo
+        dice a quien no conoce todavia la wiki. La linea de debajo si, y es lo
+        que convierte la cuadricula en algo que se lee en vez de contarse. */}
+    <ul class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
       {
         modulosVisibles.map((modulo) => (
           <li>
             <a
               href={`/${idioma}/${rutaModulo(idioma, modulo)}/`}
-              class="flex h-full flex-col gap-2 bloque bloque-pulsable p-3"
+              class="group flex h-full gap-3 bloque bloque-pulsable p-3"
             >
-              <Icono modulo={modulo} clase="h-8 w-8 text-acento" />
-              <span class="font-bold">{ui(idioma, `nav.${modulo}`)}</span>
-              <span class="mt-auto text-sm text-texto-suave">{entidadesDe(modulo).length}</span>
+              {/* El icono en su propio hueco, que se enciende al pasar por
+                  encima: es de las pocas cosas de la portada que se mueven. */}
+              <span class="grid h-12 w-12 shrink-0 place-items-center bloque bg-superficie-alta text-acento transition-colors group-hover:bg-acento group-hover:text-acento-contraste">
+                <Icono modulo={modulo} clase="h-7 w-7" />
+              </span>
+
+              <span class="min-w-0 flex-1">
+                <span class="flex items-baseline justify-between gap-2">
+                  <span class="font-extrabold">{ui(idioma, `nav.${modulo}`)}</span>
+                  <span class="shrink-0 text-sm font-bold text-texto-suave tabular-nums">
+                    {entidadesDe(modulo).length}
+                  </span>
+                </span>
+                <span class="mt-0.5 block text-sm leading-snug text-texto-suave">
+                  {ui(idioma, `modulo.${modulo}`)}
+                </span>
+              </span>
             </a>
           </li>
         ))

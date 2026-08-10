@@ -25,6 +25,17 @@
   "nav.recipes": "Crafting",
   "nav.structures": "Places",
   "nav.biomes": "Biomes",
+
+  "modulo.items": "Everything that fits in your inventory",
+  "modulo.enchantments": "What each one does and what it goes on",
+  "modulo.tools": "Pickaxes, swords and armour, by material",
+  "modulo.villagers": "What each profession sells you",
+  "modulo.mobs": "What attacks you and how to kill it",
+  "modulo.potions": "What each one does and how to brew it",
+  "modulo.recipes": "How everything is made",
+  "modulo.structures": "Where to go and what you bring back",
+  "modulo.biomes": "Where everything is in the world",
+  "modulo.farms": "What to build so you never look for it again",
   "nav.farms": "Farms",
 
   "buscador.etiqueta": "Search",

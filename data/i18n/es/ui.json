@@ -25,6 +25,17 @@
   "nav.recipes": "Crafteos",
   "nav.structures": "Lugares",
   "nav.biomes": "Biomas",
+
+  "modulo.items": "Todo lo que cabe en tu inventario",
+  "modulo.enchantments": "Qué hace cada uno y en qué se pone",
+  "modulo.tools": "Picos, espadas y armaduras, por material",
+  "modulo.villagers": "Qué te vende cada profesión",
+  "modulo.mobs": "Qué te ataca y cómo se le mata",
+  "modulo.potions": "Qué hace cada una y cómo se prepara",
+  "modulo.recipes": "Cómo se hace cada cosa",
+  "modulo.structures": "Adónde ir y qué te traes de allí",
+  "modulo.biomes": "Dónde está cada cosa en el mundo",
+  "modulo.farms": "Qué construir para no volver a buscarlo",
   "nav.farms": "Granjas",
 
   "buscador.etiqueta": "Buscar",
