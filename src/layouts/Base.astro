@@ -155,7 +155,10 @@ const otrosIdiomas = idiomas
             que el navegador ya sabe hacer. */}
         <nav class="mt-3" aria-label={ui(idioma, 'nav.secciones')}>
           <details class="relative xl:hidden" data-menu-secciones>
-            <summary class="titulo flex w-full cursor-pointer list-none items-center gap-2 bloque bloque-pulsable px-4 py-2.5 text-base [&::-webkit-details-marker]:hidden">
+            {/* El mismo tamano que las secciones de dentro: es el mismo menu,
+                solo que plegado, y verlo mas pequeno que lo que despliega hace
+                que no parezca la misma cosa. */}
+            <summary class="titulo flex w-full cursor-pointer list-none items-center gap-2 bloque bloque-pulsable px-2.5 py-2 text-xl [&::-webkit-details-marker]:hidden">
               <Icono modulo={moduloActivo ?? 'items'} clase="h-4 w-4 text-acento" />
               <span>{moduloActivo ? ui(idioma, `nav.${moduloActivo}`) : ui(idioma, 'nav.secciones')}</span>
               <svg viewBox="0 0 16 16" class="ml-auto h-4 w-4" fill="currentColor" aria-hidden="true">
