@@ -40,48 +40,11 @@ const paraEsmeraldas = aldeanos
   .sort((a, b) => a.pide.minimo - b.pide.minimo || a.nivel - b.nivel)
 ---
 
+{/* Primero el mapa de las trece profesiones y despues la tabla larga de que
+    aceptan por esmeraldas. Al reves, la guia abria con una lista de sesenta y
+    tantas filas y habia que bajar del todo para llegar a lo unico que responde
+    a "y este a que se dedica", que es por donde empieza cualquiera. */}
 <section class="mb-10">
-  <h2 class="titulo-seccion">{ui(idioma, 'resumen.esmeraldas')}</h2>
-  <p class="mb-3 text-sm text-texto-suave">{ui(idioma, 'resumen.esmeraldasNota')}</p>
-
-  <div class="tabla-envoltorio">
-    <table>
-      <thead>
-        <tr>
-          <th class="envuelve">{ui(idioma, 'resumen.leDasEsto')}</th>
-          <th>{ui(idioma, 'tabla.cantidad')}</th>
-          <th>{ui(idioma, 'nav.villagers')}</th>
-          <th>{ui(idioma, 'tabla.nivel')}</th>
-        </tr>
-      </thead>
-      <tbody>
-        {
-          paraEsmeraldas.map(({ aldeano, nivel, pide }) => (
-            <tr>
-              <td class="envuelve">
-                {enlace(pide.item) ? (
-                  <a href={enlace(pide.item).url}>{enlace(pide.item).nombre}</a>
-                ) : (
-                  pide.item
-                )}
-                {pide.variasOpciones && (
-                  <span class="text-texto-suave"> {ui(idioma, 'tabla.oSimilares')}</span>
-                )}
-              </td>
-              <td class="font-semibold">{rango(pide)}</td>
-              <td>
-                <a href={rutaDe(idioma, aldeano.id)}>{aldeano.nombre}</a>
-              </td>
-              <td class="text-texto-suave">{ui(idioma, `aldeano.nivel.${nivel}`)}</td>
-            </tr>
-          ))
-        }
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<section class="mb-8">
   <h2 class="titulo-seccion">{ui(idioma, 'resumen.aldeanos')}</h2>
 
   <div class="tabla-envoltorio">
@@ -138,4 +101,45 @@ const paraEsmeraldas = aldeanos
   </div>
 
   <p class="mt-2 text-sm text-texto-suave">{ui(idioma, 'resumen.aldeanosNota')}</p>
+</section>
+
+<section class="mb-8">
+  <h2 class="titulo-seccion">{ui(idioma, 'resumen.esmeraldas')}</h2>
+  <p class="mb-3 text-sm text-texto-suave">{ui(idioma, 'resumen.esmeraldasNota')}</p>
+
+  <div class="tabla-envoltorio">
+    <table>
+      <thead>
+        <tr>
+          <th class="envuelve">{ui(idioma, 'resumen.leDasEsto')}</th>
+          <th>{ui(idioma, 'tabla.cantidad')}</th>
+          <th>{ui(idioma, 'nav.villagers')}</th>
+          <th>{ui(idioma, 'tabla.nivel')}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          paraEsmeraldas.map(({ aldeano, nivel, pide }) => (
+            <tr>
+              <td class="envuelve">
+                {enlace(pide.item) ? (
+                  <a href={enlace(pide.item).url}>{enlace(pide.item).nombre}</a>
+                ) : (
+                  pide.item
+                )}
+                {pide.variasOpciones && (
+                  <span class="text-texto-suave"> {ui(idioma, 'tabla.oSimilares')}</span>
+                )}
+              </td>
+              <td class="font-semibold">{rango(pide)}</td>
+              <td>
+                <a href={rutaDe(idioma, aldeano.id)}>{aldeano.nombre}</a>
+              </td>
+              <td class="text-texto-suave">{ui(idioma, `aldeano.nivel.${nivel}`)}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
 </section>
