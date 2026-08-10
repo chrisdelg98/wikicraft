@@ -175,8 +175,36 @@
   --font-sans:
     'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
 
+  /* Solo para titulos. El cuerpo se queda en la fuente del sistema: una
+     tipografia de pixeles a 17px y en parrafos largos se lee peor, y aqui hay
+     ninos leyendo en el movil. Arriba da caracter, abajo estorba. */
+  --font-titulo: 'Jersey 10', var(--font-sans);
+
   /* Esquinas apenas redondeadas: recuerdan al pixel sin ser cuadradas del todo. */
   --radius-bloque: 4px;
+}
+
+/* ---------------------------------------------------------------------------
+   La tipografia de los titulos
+   Jersey 10, alojada aqui y no pedida a Google: ni una peticion a un tercero.
+   Del .ttf de 75 KB a 20 KB en woff2, que es lo que se manda.
+
+   "swap" para que el titulo se lea desde el primer momento con la fuente del
+   sistema y cambie cuando llegue la otra. Un titulo invisible durante medio
+   segundo es peor que un titulo que cambia de forma.
+
+   Para anadir otra: el archivo va en public/fuentes, en woff2 y no en ttf (la
+   diferencia fueron 75 KB contra 20), con el subconjunto latino y solo los
+   pesos que se usen de verdad. Y se anade al precache del service worker, o
+   sin conexion los titulos cambian de forma al cargar.
+   --------------------------------------------------------------------------- */
+
+@font-face {
+  font-family: 'Jersey 10';
+  src: url('/fuentes/jersey10-400.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* ---------------------------------------------------------------------------
@@ -206,10 +234,20 @@
   h1,
   h2,
   h3 {
+    font-family: var(--font-titulo);
     line-height: 1.15;
-    font-weight: 800;
-    letter-spacing: -0.015em;
     text-wrap: balance;
+
+    /* Jersey 10 solo trae un peso. Pidiendole negrita, el navegador se la
+       inventa engordando los trazos, y en una fuente de pixeles eso emborrona
+       justo lo que la hace reconocible. Peso normal y prohibido inventarse
+       nada; el tamano ya distingue un titulo de un parrafo. */
+    font-weight: 400;
+    font-synthesis-weight: none;
+
+    /* Sin el apretado de antes: era para una tipografia normal. Los pixeles
+       necesitan su hueco o las letras se tocan. */
+    letter-spacing: 0.01em;
   }
 }
 
@@ -224,8 +262,12 @@
   display: flex;
   align-items: center;
   gap: 0.625rem;
-  font-size: 1.25rem;
-  font-weight: 800;
+  /* Un poco mas grande que antes: Jersey 10 es estrecha y alta, y al mismo
+     tamano en pixeles se lee mas pequena que la del sistema. */
+  font-size: 1.4rem;
+  /* No 800: la fuente de titulos solo trae un peso y el navegador se
+     inventaria la negrita emborronando los pixeles. */
+  font-weight: 400;
   margin-bottom: 0.875rem;
 }
 

@@ -7,11 +7,19 @@
  * anteriores de golpe, en vez de intentar invalidar entrada por entrada.
  */
 
-const VERSION = 'v1'
+const VERSION = 'v2'
 const CACHE = `wikicraft-${VERSION}`
 
 /** Lo minimo para que la aplicacion arranque sin conexion. */
-const ESENCIALES = ['/es/', '/es/indice.json', '/favicon.svg', '/manifest.webmanifest']
+const ESENCIALES = [
+  '/es/',
+  '/es/indice.json',
+  '/favicon.svg',
+  '/manifest.webmanifest',
+  // La fuente de los titulos. Sin ella, sin conexion los titulos cambian de
+  // forma al cargar y la pagina parece rota.
+  '/fuentes/jersey10-400.woff2'
+]
 
 self.addEventListener('install', (evento) => {
   evento.waitUntil(
