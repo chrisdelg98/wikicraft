@@ -1,0 +1,52 @@
+---
+/**
+ * Una categoria como pagina propia: /es/objetos/tipo/comida/.
+ *
+ * Antes la categoria era un boton que tachaba de la pagina lo que no encajaba,
+ * y con catorce paginas de objetos eso no filtraba nada: pedir la comida
+ * dejaba los tres que hubiera en la pagina 1 y escondia los otros treinta y
+ * ocho. Como pagina si es la lista entera, y ademas se puede compartir, se
+ * puede volver con el boton de atras y sale en los buscadores.
+ */
+import Base from '../../../../../layouts/Base.astro'
+import Listado from '../../../../../components/Listado.astro'
+import {
+  codigosIdioma,
+  modulos,
+  ui,
+  rutaModulo,
+  entidadesDe,
+  facetasDe
+} from '../../../../../lib/datos.js'
+
+/** Las categorias de un modulo, sin las que lo cubren entero. */
+export const categoriasDe = (modulo) => {
+  const todas = entidadesDe(modulo)
+  const cuenta = new Map()
+  for (const e of todas) {
+    for (const f of facetasDe(e)) cuenta.set(f, (cuenta.get(f) ?? 0) + 1)
+  }
+  return [...cuenta].filter(([, n]) => n < todas.length).map(([clave]) => clave)
+}
+
+export function getStaticPaths() {
+  return codigosIdioma.flatMap((idioma) =>
+    modulos.flatMap((modulo) =>
+      categoriasDe(modulo).map((faceta) => ({
+        params: { idioma, modulo: rutaModulo(idioma, modulo), faceta },
+        props: { modulo, faceta }
+      }))
+    )
+  )
+}
+
+const { idioma } = Astro.params
+const { modulo, faceta } = Astro.props
+---
+
+<Base
+  idioma={idioma}
+  titulo={`${ui(idioma, `faceta.${faceta}`)} · ${ui(idioma, `nav.${modulo}`)}`}
+>
+  <Listado idioma={idioma} modulo={modulo} faceta={faceta} />
+</Base>

@@ -14,7 +14,7 @@ import {
   RUTA_ENCANTADOR
 } from '../lib/datos.js'
 
-const { idioma, modulo, pagina = 1 } = Astro.props
+const { idioma, modulo, pagina = 1, faceta = null } = Astro.props
 
 /**
  * Cuantas fichas por pagina.
@@ -34,7 +34,7 @@ export const POR_PAGINA = 100
 // quien no sabe todavia que busca. Dentro de cada etapa, alfabetico.
 const ORDEN = ['inicio', 'hierro', 'diamante', 'nether', 'end']
 
-const todas = entidadesDe(modulo)
+const delModulo = entidadesDe(modulo)
   .map((e) => ({
     id: e.entidad.id,
     etapa: e.entidad.etapa,
@@ -45,26 +45,33 @@ const todas = entidadesDe(modulo)
     (a, b) => ORDEN.indexOf(a.etapa) - ORDEN.indexOf(b.etapa) || a.nombre.localeCompare(b.nombre)
   )
 
+const todas = faceta ? delModulo.filter((x) => x.facetas.includes(faceta)) : delModulo
+
 const totalPaginas = Math.max(1, Math.ceil(todas.length / POR_PAGINA))
 const actual = Math.min(Math.max(1, pagina), totalPaginas)
 const visibles = todas.slice((actual - 1) * POR_PAGINA, actual * POR_PAGINA)
 
 const etapasPresentes = ORDEN.filter((e) => visibles.some((x) => x.etapa === e))
 
-// Categorias presentes en esta pagina. Se descartan las que cubren TODO lo
-// visible: un filtro que no descarta nada solo ocupa sitio.
-const facetasPresentes = [...new Set(visibles.flatMap((x) => x.facetas))]
-  .map((f) => ({ clave: f, cuantas: visibles.filter((x) => x.facetas.includes(f)).length }))
-  .filter(({ cuantas }) => cuantas < visibles.length)
+/**
+ * Las categorias se cuentan sobre el MODULO ENTERO, no sobre la pagina.
+ *
+ * Contadas por pagina, "Comida 3" en la pagina 1 de catorce era una respuesta
+ * falsa: hay 41. Y como ademas el filtro solo tachaba lo que ya estaba en
+ * pantalla, pedir la comida daba tres objetos y dejaba fuera treinta y ocho.
+ *
+ * Ahora cada categoria es una pagina de verdad y el chip es un enlace. Deja de
+ * ser un filtro que afina lo que ves y pasa a ser una forma de llegar, que es
+ * lo que hace falta cuando el modulo no cabe de una vez.
+ */
+const facetasDelModulo = [...new Set(delModulo.flatMap((x) => x.facetas))]
+  .map((f) => ({ clave: f, cuantas: delModulo.filter((x) => x.facetas.includes(f)).length }))
+  .filter(({ cuantas }) => cuantas < delModulo.length)
   .sort((a, b) => b.cuantas - a.cuantas)
-  .slice(0, 14)
 
-// Cada familia va en su propia fila y se pueden cruzar entre si. Antes iban
-// todas seguidas y solo dejaba elegir una, asi que "que me ataca en el Nether"
-// no se podia preguntar.
-const grupos = gruposFaceta(facetasPresentes)
+const grupos = gruposFaceta(facetasDelModulo)
 
-const hayFiltros = etapasPresentes.length > 1 || grupos.length > 0
+const hayFiltros = etapasPresentes.length > 1
 
 /** Modulos con tabla comparativa propia. Solo tiene sentido en la pagina 1. */
 const hayGuia = actual === 1 && ['villagers', 'potions'].includes(modulo)
@@ -74,7 +81,13 @@ const hayGuia = actual === 1 && ['villagers', 'potions'].includes(modulo)
 // asi que el enlace va aqui y no escondido en el menu.
 const hayEncantador = actual === 1 && modulo === 'enchantments'
 const titulo = ui(idioma, `nav.${modulo}`)
-const base = `/${idioma}/${rutaModulo(idioma, modulo)}`
+const raiz = `/${idioma}/${rutaModulo(idioma, modulo)}`
+
+/** Cada categoria es una URL propia, asi que se puede compartir y volver. */
+export const RUTA_CATEGORIA = 'tipo'
+const urlCategoria = (clave) => (clave ? `${raiz}/${RUTA_CATEGORIA}/${clave}/` : `${raiz}/`)
+
+const base = faceta ? `${raiz}/${RUTA_CATEGORIA}/${faceta}` : raiz
 const urlPagina = (n) => (n === 1 ? `${base}/` : `${base}/pagina/${n}/`)
 
 // Ventana de paginas alrededor de la actual, para no pintar veintitantos
@@ -86,12 +99,57 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
 <div class="mb-6 flex items-center gap-3">
   <Icono modulo={modulo} clase="h-10 w-10 shrink-0 text-acento" />
   <div>
-    <h1 class="text-3xl font-extrabold">{titulo}</h1>
+    <h1 class="text-3xl font-extrabold">
+      {titulo}
+      {faceta && <span class="text-texto-suave"> · {ui(idioma, `faceta.${faceta}`)}</span>}
+    </h1>
     <p class="text-texto-suave">
       {ui(idioma, 'listado.resumen', { n: todas.length, pagina: actual, total: totalPaginas })}
     </p>
   </div>
 </div>
+
+{/* Las categorias a la vista y no detras de un boton. Es lo primero que se
+    quiere hacer al llegar a una lista de mil objetos, y esconderlo en un panel
+    convertia un clic en tres. Son enlaces, no botones: llevan a una pagina de
+    verdad, se pueden compartir y el navegador sabe volver. */}
+{
+  grupos.map(({ familia, facetas }) => (
+    <nav class="mb-3 flex flex-wrap items-center gap-2" aria-label={ui(idioma, `faceta.grupo.${familia}`)}>
+      <span class="text-sm font-bold text-texto-suave">{ui(idioma, `faceta.grupo.${familia}`)}</span>
+      <a
+        href={urlCategoria(null)}
+        aria-current={faceta ? undefined : 'page'}
+        class:list={[
+          'bloque bloque-pulsable px-3 py-1.5 text-sm font-semibold',
+          faceta ? 'bg-superficie' : 'bg-acento text-acento-contraste'
+        ]}
+      >
+        {ui(idioma, 'filtro.todas')}
+      </a>
+      {facetas.map(({ clave, cuantas }) => (
+        <a
+          href={urlCategoria(clave)}
+          aria-current={clave === faceta ? 'page' : undefined}
+          class:list={[
+            'bloque bloque-pulsable px-3 py-1.5 text-sm font-semibold',
+            clave === faceta ? 'bg-acento text-acento-contraste' : 'bg-superficie'
+          ]}
+        >
+          {ui(idioma, `faceta.${clave}`)}
+          <span
+            class:list={[
+              'ml-1.5',
+              clave === faceta ? 'text-acento-contraste/70' : 'text-texto-suave'
+            ]}
+          >
+            {cuantas}
+          </span>
+        </a>
+      ))}
+    </nav>
+  ))
+}
 
 {
   hayEncantador && (
@@ -109,6 +167,23 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
         {ui(idioma, 'encantador.abrir')}
       </span>
     </a>
+  )
+}
+
+{/* La clave del filo de color, una vez y no en cada tarjeta. Es exactamente el
+    espacio que se ha ahorrado: cinco palabras arriba en lugar de cien lineas
+    repetidas mas abajo. */}
+{
+  etapasPresentes.length > 1 && (
+    <p class="mb-5 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-texto-suave">
+      <span class="font-bold">{ui(idioma, 'etapa.explicacion')}</span>
+      {etapasPresentes.map((etapa) => (
+        <span class="flex items-center gap-1.5">
+          <span class="h-2.5 w-2.5 shrink-0" style={`background:var(--etapa-${etapa})`} aria-hidden="true" />
+          {ui(idioma, `etapa.${etapa}`)}
+        </span>
+      ))}
+    </p>
   )
 }
 
@@ -256,37 +331,6 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
           </div>
         )}
 
-        {grupos.map(({ familia, facetas }) => (
-          <div>
-            <h3 class="mb-2 text-sm font-bold uppercase tracking-wide text-texto-suave">
-              {ui(idioma, `faceta.grupo.${familia}`)}
-            </h3>
-            <div class="flex flex-wrap gap-2">
-              <button
-                type="button"
-                data-filtro-faceta=""
-                data-grupo-faceta={familia}
-                aria-pressed="true"
-                class="bloque bloque-pulsable px-3 py-1.5 text-sm font-semibold aria-pressed:border-b-acento aria-pressed:bg-superficie-alta"
-              >
-                {ui(idioma, 'filtro.todas')}
-              </button>
-              {facetas.map(({ clave, cuantas }) => (
-                <button
-                  type="button"
-                  data-filtro-faceta={clave}
-                  data-grupo-faceta={familia}
-                  aria-pressed="false"
-                  class="bloque bloque-pulsable px-3 py-1.5 text-sm font-semibold aria-pressed:border-b-acento aria-pressed:bg-superficie-alta"
-                >
-                  {ui(idioma, `faceta.${clave}`)}
-                  <span class="ml-1.5 text-texto-suave">{cuantas}</span>
-                </button>
-              ))}
-            </div>
-          </div>
-        ))}
-
         <p class="text-sm text-texto-suave">{ui(idioma, 'filtro.ambito')}</p>
       </div>
 
@@ -395,24 +439,18 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
     const contador = document.querySelector('[data-cuenta-filtros]')
     const resumen = document.querySelector('[data-resumen-filtro]')
 
+    // Las categorias ya no se filtran aqui: cada una es su propia pagina. Lo
+    // que queda es afinar lo que ya tienes delante, por etapa y por nombre.
     let etapa = ''
     let texto = ''
-    // Una eleccion por familia, y se exigen todas a la vez: "te ataca" mas
-    // "Nether" deja los que te atacan en el Nether, no la suma de ambos.
-    const facetas = new Map()
 
     const normalizar = (t) => t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
-
-    const elegidas = () => [...facetas.values()].filter(Boolean)
 
     const aplicar = () => {
       let visibles = 0
       for (const li of elementos) {
-        const suyas = (li.dataset.facetas ?? '').split(' ')
         const coincide =
-          (!etapa || li.dataset.etapa === etapa) &&
-          elegidas().every((f) => suyas.includes(f)) &&
-          (!texto || li.dataset.nombre.includes(texto))
+          (!etapa || li.dataset.etapa === etapa) && (!texto || li.dataset.nombre.includes(texto))
         li.hidden = !coincide
         if (coincide) visibles++
       }
@@ -420,7 +458,7 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
 
       // El boton lleva cuantos filtros hay puestos, porque una vez cerrado el
       // panel no hay otra forma de saber que la lista esta recortada.
-      const activos = [etapa, ...elegidas()].filter(Boolean).length
+      const activos = [etapa].filter(Boolean).length
       if (contador) {
         contador.hidden = activos === 0
         contador.textContent = String(activos)
@@ -453,15 +491,6 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
       })
     }
 
-    for (const boton of document.querySelectorAll('[data-filtro-faceta]')) {
-      boton.addEventListener('click', () => {
-        const grupo = boton.dataset.grupoFaceta
-        facetas.set(grupo, boton.dataset.filtroFaceta)
-        marcar(`[data-grupo-faceta="${grupo}"]`, boton)
-        aplicar()
-      })
-    }
-
     // Paneles. Se usa <dialog> nativo: trae el fondo, el foco atrapado y el
     // cierre con Escape sin una linea de JavaScript propia.
     const guia = document.querySelector('[data-panel-guia]')
@@ -481,11 +510,7 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
     }
     document.querySelector('[data-limpiar-filtros]')?.addEventListener('click', () => {
       etapa = ''
-      facetas.clear()
       marcar('[data-filtro-etapa]', document.querySelector('[data-filtro-etapa=""]'))
-      for (const todas of document.querySelectorAll('[data-filtro-faceta=""]')) {
-        marcar(`[data-grupo-faceta="${todas.dataset.grupoFaceta}"]`, todas)
-      }
       aplicar()
     })
     // Un clic en el fondo tambien cierra, que es lo que espera todo el mundo.
