@@ -8,6 +8,25 @@
   "dimension": [
     "superficie"
   ],
+  "vida": 100,
+  "dano": 21,
+  "experiencia": 0,
+  "invocacion": {
+    "patron": [
+      " C ",
+      "HHH",
+      " H "
+    ],
+    "clave": {
+      "C": "carved_pumpkin",
+      "H": "iron_block"
+    },
+    "ultimoBloque": "carved_pumpkin"
+  },
+  "apareceEn": [
+    "pillager_outpost",
+    "village"
+  ],
   "botin": [
     {
       "item": "poppy",
@@ -22,8 +41,14 @@
       "probabilidad": 1
     }
   ],
-  "apareceEn": [
-    "pillager_outpost",
-    "village"
+  "debilidades": [
+    "cuerpo_a_cuerpo"
+  ],
+  "etiquetas": [
+    "golem de hierro",
+    "guardian",
+    "aldea",
+    "invocar",
+    "calabaza"
   ]
 }

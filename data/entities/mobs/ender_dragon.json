@@ -7,5 +7,19 @@
   "categoria": "jefe",
   "dimension": [
     "end"
+  ],
+  "vida": 200,
+  "dano": 10,
+  "experiencia": 12000,
+  "debilidades": [
+    "distancia",
+    "cuerpo_a_cuerpo"
+  ],
+  "etiquetas": [
+    "dragon del end",
+    "jefe",
+    "cristal de end",
+    "portal",
+    "huevo de dragon"
   ]
 }

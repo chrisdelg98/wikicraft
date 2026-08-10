@@ -9,5 +9,41 @@
     "superficie",
     "nether",
     "end"
+  ],
+  "vida": 300,
+  "dano": 8,
+  "experiencia": 50,
+  "noMuerto": true,
+  "invocacion": {
+    "patron": [
+      "CCC",
+      "AAA",
+      " A "
+    ],
+    "clave": {
+      "C": "wither_skeleton_skull",
+      "A": "soul_sand"
+    },
+    "ultimoBloque": "wither_skeleton_skull"
+  },
+  "botin": [
+    {
+      "item": "nether_star",
+      "minimo": 1,
+      "maximo": 1,
+      "probabilidad": 1
+    }
+  ],
+  "debilidades": [
+    "cuerpo_a_cuerpo",
+    "distancia"
+  ],
+  "etiquetas": [
+    "wither",
+    "jefe",
+    "estrella del nether",
+    "faro",
+    "invocar",
+    "arena de almas"
   ]
 }

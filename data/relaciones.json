@@ -35,7 +35,8 @@
 
   "mob": [
     { "campo": "apareceEn[]", "etiqueta": "rel.apareceEn", "inversa": "rel.mobs" },
-    { "campo": "botin[].item", "etiqueta": "rel.suelta", "inversa": "rel.loSueltan" }
+    { "campo": "botin[].item", "etiqueta": "rel.suelta", "inversa": "rel.loSueltan" },
+    { "campo": "invocacion.clave{}", "etiqueta": "rel.seInvocaCon", "inversa": "rel.invoca" }
   ],
 
   "pocion": [

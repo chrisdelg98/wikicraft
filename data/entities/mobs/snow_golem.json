@@ -8,6 +8,21 @@
   "dimension": [
     "superficie"
   ],
+  "vida": 4,
+  "dano": 0,
+  "experiencia": 0,
+  "invocacion": {
+    "patron": [
+      " C ",
+      " N ",
+      " N "
+    ],
+    "clave": {
+      "C": "carved_pumpkin",
+      "N": "snow_block"
+    },
+    "ultimoBloque": "carved_pumpkin"
+  },
   "botin": [
     {
       "item": "snowball",
@@ -15,5 +30,16 @@
       "maximo": 1,
       "probabilidad": 1
     }
+  ],
+  "debilidades": [
+    "agua",
+    "fuego"
+  ],
+  "etiquetas": [
+    "golem de nieve",
+    "muneco de nieve",
+    "bola de nieve",
+    "invocar",
+    "calabaza"
   ]
 }

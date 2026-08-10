@@ -138,6 +138,11 @@
   "resumen.primerTrato": "Their first trade (novice)",
   "resumen.aldeanosNota": "Amounts are indicative: the game rolls each trade price within a range, and it drops permanently if you cure the villager from being a zombie. Open a profession to see all of its trades.",
 
+  "mob.comoSeInvoca": "How you build it",
+  "mob.ultimoBloque": "Place {bloque} last. It does not come alive until that piece is on, and the moment it is, everything starts: step back.",
+  "rel.seInvocaCon": "Built with",
+  "rel.invoca": "Used to build",
+
   "estructura.peligro": "Danger",
   "estructura.porQueIr": "Why go",
   "estructura.soloAqui": "You cannot get this anywhere else:",

@@ -5,6 +5,7 @@ import TarjetaEntidad from '../../../components/TarjetaEntidad.astro'
 import Icono from '../../../components/Icono.astro'
 import Apilamiento from '../../../components/Apilamiento.astro'
 import Cuadricula from '../../../components/Cuadricula.astro'
+import Construccion from '../../../components/Construccion.astro'
 import {
   codigosIdioma,
   entidades,
@@ -147,7 +148,8 @@ if (entidad.tipo === 'pocion') {
 // Lo que ya se muestra como tabla no se repite abajo como tarjetas.
 const YA_EN_TABLA = {
   aldeano: ['rel.vende', 'rel.vendeEncantamiento', 'rel.aceptaComoPago'],
-  mob: ['rel.suelta'],
+  // "Se construye con" ya sale dibujado arriba, con las cantidades.
+  mob: ['rel.suelta', 'rel.seInvocaCon'],
   receta: ['rel.materiales'],
   pocion: ['rel.derivaDe', 'rel.ingrediente'],
   estructura: ['rel.exclusivo']
@@ -312,6 +314,17 @@ const consejos = [texto.notas, texto.consejo].filter(Boolean)
         ) : (
           <p class="text-texto-suave">{ui(idioma, 'obtencion.desconocido')}</p>
         )}
+      </section>
+    )
+  }
+
+  {/* Antes de nada: si esto no aparece solo sino que lo construyes tu, eso es
+      lo primero que hay que saber, y va antes que la vida y el dano. */}
+  {
+    entidad.invocacion && (
+      <section class="mb-10">
+        <h2 class="titulo-seccion">{ui(idioma, 'mob.comoSeInvoca')}</h2>
+        <Construccion idioma={idioma} invocacion={entidad.invocacion} />
       </section>
     )
   }

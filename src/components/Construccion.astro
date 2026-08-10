@@ -1,0 +1,80 @@
+---
+/**
+ * Como se construye un mob que no aparece solo: el wither, los dos golems.
+ *
+ * Se dibuja en vez de contarse, por el mismo motivo que la cuadricula de
+ * crafteo. "Tres cabezas encima de una T de arena de almas" hay que leerlo dos
+ * veces; el dibujo se entiende de un vistazo y ademas deja claro cual es el
+ * hueco vacio, que es donde se equivoca todo el mundo.
+ *
+ * Ojo, no es una cuadricula de crafteo: esto se levanta en el mundo, bloque a
+ * bloque, y se mira de frente. De ahi que el ultimo bloque vaya senalado.
+ */
+import { t, ui, rutaDe, grafo } from '../lib/datos.js'
+
+const { idioma, invocacion } = Astro.props
+
+const enlace = (otro) =>
+  grafo.has(otro)
+    ? { url: rutaDe(idioma, otro), nombre: t(idioma, otro).nombre }
+    : { url: null, nombre: String(otro) }
+
+const ancho = Math.max(...invocacion.patron.map((f) => f.length))
+
+const casillas = invocacion.patron.flatMap((fila) =>
+  Array.from({ length: ancho }, (_, col) => {
+    const letra = fila[col] ?? ' '
+    return letra === ' ' ? null : (invocacion.clave?.[letra] ?? null)
+  })
+)
+
+/** Cuantos bloques de cada cosa hacen falta, que es lo que hay que ir a buscar. */
+const materiales = Object.entries(
+  casillas.filter(Boolean).reduce((cuenta, id) => ({ ...cuenta, [id]: (cuenta[id] ?? 0) + 1 }), {})
+).sort((a, b) => b[1] - a[1])
+
+const ultimo = invocacion.ultimoBloque
+---
+
+<div class="flex flex-wrap items-start gap-x-6 gap-y-4">
+  <div class="inline-block bandeja">
+    <div class="grid gap-1" style={`grid-template-columns:repeat(${ancho},minmax(0,1fr))`}>
+      {
+        casillas.map((id) => (
+          <span
+            class:list={[
+              'grid h-20 w-20 place-items-center hyphens-auto px-1 text-center text-[11px] leading-[1.25] font-semibold break-words hueco sm:h-24 sm:w-24 sm:text-xs',
+              !id && 'hueco-vacio',
+              id && id === ultimo && 'ring-2 ring-acento ring-inset'
+            ]}
+          >
+            {id ? enlace(id).nombre : ''}
+          </span>
+        ))
+      }
+    </div>
+  </div>
+
+  <div class="min-w-0 flex-1">
+    <ul class="space-y-1">
+      {
+        materiales.map(([id, cuantos]) => (
+          <li class="flex items-baseline gap-2">
+            <span class="font-extrabold tabular-nums">{cuantos}×</span>
+            <a href={enlace(id).url} class="font-semibold hover:text-acento">
+              {enlace(id).nombre}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+
+    {
+      ultimo && (
+        <p class="mt-3 max-w-prose text-sm text-texto-suave">
+          {ui(idioma, 'mob.ultimoBloque', { bloque: enlace(ultimo).nombre })}
+        </p>
+      )
+    }
+  </div>
+</div>

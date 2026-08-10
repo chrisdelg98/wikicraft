@@ -27,19 +27,23 @@
   "blaze": {
     "nombre": "Blaze",
     "slug": "blaze",
-    "descripcion": "Una criatura de fuego que flota dentro de las fortalezas del Nether. Dispara tres bolas de fuego seguidas desde lejos, así que es peligroso si te quedas quieto a campo abierto.",
-    "notas": "Le hace daño el agua y las bolas de nieve, pero no puedes llevar agua al Nether porque se evapora. Lo más práctico es pelear en un pasillo estrecho, donde no pueda rodearte, o dispararle con arco desde detrás de un bloque.",
-    "consejo": "Necesitas sus varas para las pociones y para llegar al End. Ve preparado con armadura y algo de comida antes de buscar una fortaleza."
+    "descripcion": "Una criatura de fuego que flota dentro de las fortalezas del Nether. Es fea de pelear y aun así hay que hacerlo: sus varas son lo único de lo que sale el polvo de blaze, y sin polvo de blaze no hay soporte para pociones.",
+    "notas": "Dispara tres bolas de fuego seguidas desde lejos y también puede volar por encima de ti. Cuando se pone a arder de verdad es cuando va a disparar, así que ese brillo es el aviso.",
+    "consejo": "Pelea en un pasillo y no a campo abierto, para que no te rodeen. Las bolas de nieve le hacen daño, y con una poción de resistencia al fuego dejas de preocuparte por lo que te lance."
   },
   "bogged": {
     "nombre": "Esqueleto cenagoso",
     "slug": "esqueleto-cenagoso",
-    "descripcion": "Un esqueleto de los pantanos que dispara flechas venenosas. Es más lento que el normal pero mucho más molesto."
+    "descripcion": "Un esqueleto cubierto de musgo y setas que sale en los pantanos y en las cámaras de desafío. Dispara flechas de veneno.",
+    "notas": "Aguanta menos golpes que un esqueleto normal, pero el veneno de sus flechas se suma al daño de todo lo demás que tengas encima.",
+    "consejo": "Escudo y de cerca. Llévate leche si vas a estar mucho rato en un pantano de noche."
   },
   "breeze": {
     "nombre": "Brisa",
     "slug": "brisa",
-    "descripcion": "Salta sin parar y te lanza ráfagas de viento que te empujan. Aparece en las cámaras de desafío."
+    "descripcion": "Una criatura de viento de las cámaras de desafío. Salta sin parar y te lanza cargas de viento que empujan más que dañan, así que el peligro es acabar donde no querías.",
+    "notas": "Sus disparos activan botones y placas de presión, cosa que forma parte de los puzles de las cámaras. Sus varas son lo que hace falta para las cargas de viento.",
+    "consejo": "Pelea en un sitio cerrado y sin agujeros, que lo que mata es la caída y no el golpe. Cuerpo a cuerpo se le hace mucho más daño que con arco."
   },
   "camel": {
     "nombre": "Camello",
@@ -54,7 +58,9 @@
   "cave_spider": {
     "nombre": "Araña de cueva",
     "slug": "arana-de-cueva",
-    "descripcion": "Más pequeña que la araña normal y venenosa. Cabe por huecos de medio bloque, así que es difícil encerrarla."
+    "descripcion": "Más pequeña que la normal y venenosa. Solo aparece en los generadores de las minas abandonadas, y cabe por huecos de medio bloque, así que se cuela por donde tú no.",
+    "notas": "Su veneno no puede matarte del todo, te deja a medio corazón, pero sí te deja vendido para lo siguiente que venga.",
+    "consejo": "Apaga el generador con antorchas antes de pelear, y llévate leche para el veneno. En un pasillo de un bloque de alto tú no cabes y ellas sí: no las persigas ahí."
   },
   "chicken_mob": {
     "nombre": "Pollo",
@@ -74,12 +80,16 @@
   "creaking": {
     "nombre": "Acechador",
     "slug": "acechador",
-    "descripcion": "Vive en el jardín pálido y solo se mueve cuando no lo estás mirando. No se puede matar a golpes: hay que destruir el corazón de acechador del que sale."
+    "descripcion": "Una figura de madera que solo existe en el bosque de robles pálidos. No se le puede matar: cada golpe que le das lo recibe en realidad el corazón que lo mantiene vivo, escondido en un tronco.",
+    "notas": "Solo se mueve cuando no le estás mirando, y solo aparece de noche. De día vuelve al corazón por su cuenta.",
+    "consejo": "No pierdas el tiempo pegándole: busca el corazón de creaking en los troncos de alrededor y rómpelo. Se apaga solo."
   },
   "creeper": {
     "nombre": "Creeper",
     "slug": "creeper",
-    "descripcion": "Se acerca en silencio y explota. Es la causa número uno de que la gente pierda sus cosas en Minecraft."
+    "descripcion": "Verde, silencioso y con cara de pena. Se acerca sin hacer ruido, silba un segundo y explota. Es la causa número uno de que la gente pierda sus cosas, y también la única forma de conseguir pólvora.",
+    "notas": "Si le cae un rayo se vuelve azul y su explosión es muchísimo más grande. Y si matas a uno con una espada mientras un esqueleto le dispara, suelta un disco de música.",
+    "consejo": "No corras hacia él: pégale y retrocede, o dispárale de lejos. Un gato o un ocelote cerca de tu base los espanta, porque les tienen pánico."
   },
   "dolphin": {
     "nombre": "Delfín",
@@ -94,32 +104,44 @@
   "drowned": {
     "nombre": "Ahogado",
     "slug": "ahogado",
-    "descripcion": "Un zombi que vive bajo el agua. Algunos llevan tridente, y esa es la única forma de conseguir uno."
+    "descripcion": "Un zombi que se ahogó y ahora vive en el agua. Los hay en todos los mares y ríos, y algunos llevan tridente, que es la única forma de conseguir uno.",
+    "notas": "El que lleva tridente lo lanza y hace muchísimo daño a distancia, incluso fuera del agua. Los que llevan la caracola pueden llamar a más.",
+    "consejo": "Si ves uno con tridente, sal del agua antes de pelear: en tierra te mueves mejor que él. Y no bucees de noche cerca de la orilla, que es cuando salen a por ti."
   },
   "elder_guardian": {
     "nombre": "Guardián anciano",
     "slug": "guardian-anciano",
-    "descripcion": "El jefe de los monumentos oceánicos. Te lanza una maldición que te impide picar rápido durante varios minutos."
+    "descripcion": "La versión grande del guardián, y solo hay tres por monumento. Es lo que convierte un monumento oceánico en una expedición y no en un paseo.",
+    "notas": "Te lanza Fatiga Minera, que te deja picando a cámara lenta durante cinco minutos. Es el motivo de que mucha gente no pueda vaciar un monumento: no es que no puedan matarlos, es que no pueden romper nada.",
+    "consejo": "Llévate cubos de leche: quitan la Fatiga Minera al instante. O mátalos a los tres primero y luego ya saqueas tranquilo."
   },
   "ender_dragon": {
     "nombre": "Dragón del End",
     "slug": "dragon-del-end",
-    "descripcion": "El jefe final del juego. Vive en el End y hay que destruir los cristales de las torres antes de poder matarlo."
+    "descripcion": "El jefe final. Vive en la isla principal del End y sobrevuela el portal de salida. Matarlo es lo que se considera \"terminarse\" Minecraft, y al morir abre el portal a las islas exteriores, que es donde están los élitros.",
+    "notas": "Las torres de obsidiana llevan cristales que lo curan a distancia. Mientras quede uno, por mucho que le pegues volverá a llenar su vida. Hay que romperlos todos antes de empezar la pelea de verdad.",
+    "consejo": "Ve con cama y arco. Los cristales de las torres bajas se rompen de un flechazo; para los enjaulados, sube y rómpelos a mano. Y cuando el dragón se pose en el portal, ahí es cuando se le hace daño cuerpo a cuerpo."
   },
   "enderman": {
     "nombre": "Enderman",
     "slug": "enderman",
-    "descripcion": "Alto, negro y teletransportador. No te ataca salvo que le mires a los ojos, y el agua le hace daño."
+    "descripcion": "Alto, negro y con los ojos morados. Va a lo suyo cogiendo bloques del suelo y no te ataca... hasta que le miras a la cara. Sale en los tres mundos y es de donde salen las perlas de ender, que llevan al portal del End.",
+    "notas": "Se teletransporta constantemente y el agua le hace daño, así que basta con meterse en un charco o que llueva para que se vaya. Mirarle a las piernas no le molesta: lo que le enfada es el cruce de miradas.",
+    "consejo": "Ponte una calabaza tallada en la cabeza y podrás mirarlo todo lo que quieras sin que reaccione. Se ve peor, pero es la forma más cómoda de cazarlos."
   },
   "endermite": {
     "nombre": "Endermita",
     "slug": "endermita",
-    "descripcion": "Un bicho diminuto que a veces aparece al usar una perla de ender. Atrae a los endermen, cosa que rara vez te interesa."
+    "descripcion": "Un bicho morado muy pequeño que aparece a veces donde cae una perla de ender lanzada. No aparece solo: sale por algo que has hecho tú.",
+    "notas": "Se desvanece solo al cabo de un par de minutos. A los endermen les cae fatal y van a por él, cosa que se usa en las granjas de endermen.",
+    "consejo": "Si te sale uno, mátalo o espera: no hace daño casi. Y si vas a hacer una granja de endermen, este bicho es la pieza clave."
   },
   "evoker": {
     "nombre": "Invocador",
     "slug": "invocador",
-    "descripcion": "Un aldeano gris de las mansiones que invoca colmillos del suelo y ovejas azules. Suelta la totem de la inmortalidad."
+    "descripcion": "Un illager gris con túnica que vive en las mansiones del bosque y aparece en las incursiones. No pega con las manos: invoca colmillos que salen del suelo y ovejas azules que van a por ti.",
+    "notas": "Es el único mob que suelta el tótem de la inmortalidad, que te salva de morir una vez. Sus colmillos atraviesan la armadura y salen en línea recta desde donde él esté.",
+    "consejo": "No te quedes quieto de frente: los colmillos salen en fila y se esquivan moviéndote de lado. Lo mejor es llegar hasta él y no darle tiempo a invocar."
   },
   "fox": {
     "nombre": "Zorro",
@@ -139,7 +161,9 @@
   "giant": {
     "nombre": "Gigante",
     "slug": "gigante",
-    "descripcion": "Un zombi enorme que ya no aparece de forma natural. Solo se ve con comandos."
+    "descripcion": "Un zombi gigantesco que quedó a medio hacer en el código del juego y nunca llegó a salir de forma natural. Solo existe si lo invocas con comandos.",
+    "notas": "No tiene inteligencia propia: se queda quieto salvo que le empujes. Es más una curiosidad que un mob.",
+    "consejo": "No te lo vas a encontrar jugando normal. Está aquí porque mucha gente pregunta por él."
   },
   "glow_squid": {
     "nombre": "Calamar luminoso",
@@ -154,7 +178,9 @@
   "guardian": {
     "nombre": "Guardián",
     "slug": "guardian",
-    "descripcion": "Pez espinoso de los monumentos oceánicos que te dispara un rayo láser. Suelta prismarina y esponjas."
+    "descripcion": "Un pez con un ojo enorme que vive en los monumentos oceánicos. Te dispara un rayo que tarda unos segundos en cargar y hace daño aunque estés lejos.",
+    "notas": "Tiene pinchos: si le pegas cuerpo a cuerpo mientras los tiene fuera, te devuelve parte del daño. El rayo no se puede parar con el escudo.",
+    "consejo": "Escóndete detrás de un bloque mientras carga el rayo y sal a pegarle cuando falle. Con Impulso Acuático en el tridente se pelea mucho mejor."
   },
   "hoglin": {
     "nombre": "Hoglin",
@@ -169,17 +195,23 @@
   "husk": {
     "nombre": "Husk",
     "slug": "husk",
-    "descripcion": "Un zombi del desierto que no se quema con el sol y te da hambre al golpearte."
+    "descripcion": "El zombi del desierto. Es igual que uno normal salvo por dos cosas: no se quema con el sol, así que los verás a plena luz del día, y su golpe te da hambre.",
+    "notas": "El hambre que te deja te vacía la barra de comida mucho más rápido de lo normal, así que una pelea larga contra varios te puede dejar sin poder correr.",
+    "consejo": "Llévate comida de sobra al desierto. Si cae al agua se convierte en un zombi normal, que ya sí se quema al amanecer."
   },
   "illusioner": {
     "nombre": "Ilusionista",
     "slug": "ilusionista",
-    "descripcion": "Un mago que crea copias falsas de sí mismo y te ciega. No aparece de forma natural."
+    "descripcion": "Un illager que no aparece de forma natural en ninguna partida: solo existe si lo invocas con comandos. Se hace copias de sí mismo y te ciega.",
+    "notas": "Está terminado y funciona, pero Mojang nunca lo puso en el juego normal. Por eso no lo verás nunca explorando.",
+    "consejo": "Si te lo encuentras en un servidor con comandos, pégale al que no se mueve: las copias no hacen daño."
   },
   "iron_golem": {
     "nombre": "Gólem de hierro",
     "slug": "golem-de-hierro",
-    "descripcion": "El guardaespaldas de las aldeas. Puedes fabricarte uno con cuatro bloques de hierro y una calabaza tallada."
+    "descripcion": "El guardaespaldas de las aldeas. Es enorme, lento y pega como un camión: de un golpe manda por los aires a casi cualquier cosa. Los aldeanos generan uno solo si son suficientes y tienen camas, pero puedes construirte el tuyo donde quieras.",
+    "notas": "Si le pegas tú, se vuelve contra ti y no perdona. Y ojo con los que ya hay en una aldea: matarlos enfada a los aldeanos y te suben los precios.",
+    "consejo": "Pon dos o tres en las puertas de tu base y se acabaron los zombis por la noche. Se curan tirándoles lingotes de hierro con el clic derecho."
   },
   "llama": {
     "nombre": "Llama",
@@ -229,17 +261,23 @@
   "piglin": {
     "nombre": "Piglin",
     "slug": "piglin",
-    "descripcion": "Habitante del Nether. Si llevas algo de oro puesto no te ataca, y si le tiras un lingote te da algo a cambio."
+    "descripcion": "El habitante del Nether que comercia. Si le tiras un lingote de oro te devuelve algo al azar, y a veces es muy bueno: perlas de ender, obsidiana llorosa o botas con Caminante de Almas.",
+    "notas": "Te atacan en cuanto te vean si no llevas ninguna pieza de oro puesta. Y aunque la lleves, se enfadan igual si abres un cofre o rompes oro delante de ellos.",
+    "consejo": "Ponte unas botas de oro antes de cruzar el portal, aunque sea solo eso. Y para comerciar, tírales el lingote al suelo con la tecla de soltar."
   },
   "piglin_brute": {
     "nombre": "Piglin bruto",
     "slug": "piglin-bruto",
-    "descripcion": "Guarda los bastiones y te ataca aunque lleves oro. No hay forma de negociar con él."
+    "descripcion": "El piglin grande del hacha, que vigila las salas del tesoro de los bastiones. Es la excepción a todo lo demás: a este el oro le da igual.",
+    "notas": "Te ataca lleves lo que lleves, no comercia y pega mucho más fuerte que un piglin normal. No hay forma de hacerse amigo suyo.",
+    "consejo": "No entres en la sala del tesoro sin armadura decente. Si son varios, sal al pasillo y que vengan de uno en uno."
   },
   "pillager": {
     "nombre": "Saqueador",
     "slug": "saqueador",
-    "descripcion": "Va armado con ballesta y ataca aldeas en grupo. Matar a su capitán te deja la maldición del saqueo."
+    "descripcion": "Un saqueador con ballesta. Vive en los puestos de saqueadores y llega en grupo a las incursiones. Dispara desde lejos y casi nunca va solo.",
+    "notas": "Si matas al capitán, el que lleva el estandarte en la cabeza, te llevas el Mal Presagio y la siguiente aldea a la que entres sufrirá una incursión. A veces interesa y a veces no.",
+    "consejo": "El escudo para sus flechas es casi perfecto. Acércate protegido y pelea de cerca, que la ballesta tarda en recargar."
   },
   "polar_bear": {
     "nombre": "Oso polar",
@@ -259,7 +297,9 @@
   "ravager": {
     "nombre": "Devastador",
     "slug": "devastador",
-    "descripcion": "Una bestia enorme que aparece en las incursiones, derriba cultivos y pega durísimo."
+    "descripcion": "Una bestia enorme con cuernos que aparece en las incursiones de las aldeas. Embiste, destroza los cultivos a su paso y de un golpe te manda lejos aunque lleves escudo.",
+    "notas": "Su golpe te rompe la guardia del escudo durante unos segundos, así que taparse no basta. Puede llevar un saqueador montado encima que dispara mientras la bestia embiste.",
+    "consejo": "Pelea desde arriba, en un muro o un tejado, que no puede subir. Y no lo pelees en medio del pueblo: se lleva por delante las camas y los cultivos."
   },
   "salmon_mob": {
     "nombre": "Salmón",
@@ -279,12 +319,16 @@
   "silverfish": {
     "nombre": "Lepisma",
     "slug": "lepisma",
-    "descripcion": "Se esconde dentro de los bloques de piedra de los templos. Si golpeas uno, salen todos los de alrededor."
+    "descripcion": "Un bicho diminuto que se esconde dentro de bloques de piedra en las fortalezas y en las montañas. Al romper el bloque equivocado sale, y al hacerle daño llama a todos los que tenga cerca.",
+    "notas": "Los bloques donde se esconden son idénticos a la piedra normal, pero tardan más en romperse. Esa diferencia es la única pista.",
+    "consejo": "Mátalos de un golpe si puedes, para que no llamen a los demás. Si aparecen muchos, aléjate unos bloques y vuelven a esconderse."
   },
   "skeleton": {
     "nombre": "Esqueleto",
     "slug": "esqueleto",
-    "descripcion": "Te dispara flechas desde lejos y se quema con el sol. Suelta huesos, que sirven de abono."
+    "descripcion": "El arquero de siempre. Sale de noche, en las cuevas y también en el valle de arena de almas del Nether, cosa que sorprende a mucha gente. Es de donde salen los huesos, y por tanto la harina de hueso.",
+    "notas": "Se aparta mientras dispara, así que perseguirlo a campo abierto es perder vida. Se quema con el sol, pero no si está bajo un árbol o con un casco puesto.",
+    "consejo": "El escudo para sus flechas y a por él. Y si matas a uno mientras le explota un creeper al lado, sale un disco de música."
   },
   "skeleton_horse": {
     "nombre": "Caballo esqueleto",
@@ -304,12 +348,16 @@
   "snow_golem": {
     "nombre": "Gólem de nieve",
     "slug": "golem-de-nieve",
-    "descripcion": "Se fabrica con dos bloques de nieve y una calabaza. Lanza bolas de nieve y deja un rastro helado."
+    "descripcion": "Un muñeco de nieve que lanza bolas a todo lo que se acerque. Las bolas casi no hacen daño, pero empujan y marcan al enemigo, así que sirve de señuelo y de sistema de alarma barato.",
+    "notas": "Se derrite en los biomas cálidos y en el Nether, y el agua o la lluvia lo matan. Va dejando un rastro de nieve por donde pasa, que se puede recoger con una pala.",
+    "consejo": "Encerrado en una casilla con un embudo debajo es la granja de bolas de nieve más barata que existe. Si vives en el desierto, ponle un casco para que no se derrita."
   },
   "spider": {
     "nombre": "Araña",
     "slug": "arana",
-    "descripcion": "Trepa por las paredes. De día no te ataca salvo que la molestes, y suelta cuerda para arcos y cañas."
+    "descripcion": "Trepa por las paredes y salta. De día es inofensiva si no la molestas; de noche te ataca sola. Suelta el hilo, que es lo que hace falta para arcos y cañas de pescar.",
+    "notas": "Al amanecer no se quema: se vuelve neutral y se queda por ahí. Trepa cualquier muro vertical, así que amurallar no sirve contra ellas.",
+    "consejo": "Un saliente de un bloque en lo alto del muro y ya no pueden subir. Pelea con espada, que son bajitas y el arco falla mucho."
   },
   "squid": {
     "nombre": "Calamar",
@@ -319,7 +367,9 @@
   "stray": {
     "nombre": "Esqueleto glacial",
     "slug": "esqueleto-glacial",
-    "descripcion": "El esqueleto de las zonas heladas. Sus flechas te congelan y te dejan casi sin poder moverte."
+    "descripcion": "El esqueleto de los biomas nevados. Dispara flechas de lentitud, que te dejan casi parado mientras el resto de mobs te alcanzan.",
+    "notas": "Sus flechas se pueden recoger del suelo y usarlas tú: son flechas de lentitud de verdad, gratis.",
+    "consejo": "Cúbrete con el escudo y acércate: de cerca son tan flojos como cualquier esqueleto. Y recoge sus flechas antes de irte."
   },
   "strider": {
     "nombre": "Lava Strider",
@@ -349,7 +399,9 @@
   "vex": {
     "nombre": "Vex",
     "slug": "vex",
-    "descripcion": "Un espíritu pequeño que atraviesa paredes. Lo invoca el invocador y es muy difícil de esquivar."
+    "descripcion": "Un bicho pequeño y volador que invoca el evoker. Atraviesa las paredes, así que taparte no sirve de nada, y es lo que más gente mata en una mansión del bosque.",
+    "notas": "Se desvanece solo al cabo de un rato, así que aguantar también es una estrategia. Es pequeño y rápido, y por eso cuesta acertarle.",
+    "consejo": "Métete en un pasillo estrecho y pégales cuando se acerquen, o corta por lo sano y mata al evoker: sin él dejan de aparecer."
   },
   "villager": {
     "nombre": "Aldeano",
@@ -359,7 +411,9 @@
   "vindicator": {
     "nombre": "Vindicador",
     "slug": "vindicador",
-    "descripcion": "Un aldeano gris con un hacha que aparece en mansiones e incursiones. Pega muchísimo de cerca."
+    "descripcion": "El illager del hacha. Vive en las mansiones y aparece en las incursiones. No tiene truco ninguno: corre hacia ti y pega muy fuerte y muy rápido.",
+    "notas": "En dificultad normal te quita media vida de dos golpes aunque lleves hierro. En las mansiones suelen estar dos o tres en la misma habitación.",
+    "consejo": "Pelea en la puerta de la habitación, para que te lleguen de uno en uno. El escudo funciona bien contra ellos, al contrario que con la bestia."
   },
   "wandering_trader": {
     "nombre": "Mercader errante",
@@ -369,22 +423,30 @@
   "warden": {
     "nombre": "Warden",
     "slug": "warden",
-    "descripcion": "Es ciego pero te oye. Vive en las ciudades antiguas y es el mob más fuerte del juego: no se pelea, se esquiva."
+    "descripcion": "El mob más fuerte del juego, y no está pensado para pelear con él. Es ciego: te localiza por el ruido que haces. Vive en la oscuridad profunda y aparece cuando los sensores de sculk te oyen tres veces.",
+    "notas": "Pega tan fuerte que atraviesa una armadura de netherita entera, y tiene un grito a distancia que ignora los bloques que pongas en medio. No se le puede huir corriendo en línea recta: es más rápido que tú.",
+    "consejo": "Ve siempre agachado, que no hace ruido, y tapa los chillones antes de moverte. Si aparece, tira una bola de nieve o una flecha lejos: irá hacia el ruido y tú te vas por el otro lado."
   },
   "witch": {
     "nombre": "Bruja",
     "slug": "bruja",
-    "descripcion": "Te lanza pociones dañinas y se cura con las suyas. Suelta ingredientes de fabricación al morir."
+    "descripcion": "Una aldeana de sombrero puntiagudo que pelea a base de pociones. Te tira frascos de veneno, lentitud y debilidad, y se cura a sí misma mientras la atacas.",
+    "notas": "Bebe pociones para curarse, así que si le pegas despacio no bajará nunca de vida. Ella misma es inmune a casi todo lo que lanza.",
+    "consejo": "Pégale rápido y sin pausas, o dispárale de lejos. Suelta muchos ingredientes de pociones, así que una cabaña de bruja es una buena fuente de material."
   },
   "wither": {
     "nombre": "Wither",
     "slug": "wither",
-    "descripcion": "Un jefe que se invoca con cabezas de esqueleto wither y arena de almas. Al morir suelta la estrella del Nether."
+    "descripcion": "Un jefe de tres cabezas que no aparece en ninguna parte: lo construyes tú. Es la pelea más dura del juego después del dragón, y la única forma de conseguir la estrella del Nether, que es lo que hace falta para el faro.",
+    "notas": "Al nacer suelta una explosión enorme que rompe casi todo lo que tenga cerca. Nunca lo construyas dentro de tu base ni al lado de tus cofres. Además dispara calaveras que atraviesan bloques y te dejan Deterioro, un veneno negro que sí puede matarte del todo.",
+    "consejo": "La forma más fácil es encerrarlo: constrúyelo en un hueco de obsidiana o de roca base, o llévatelo al End, donde las columnas de obsidiana aguantan sus explosiones. Y bebe leche en cuanto te salga el Deterioro."
   },
   "wither_skeleton": {
     "nombre": "Esqueleto wither",
     "slug": "esqueleto-wither",
-    "descripcion": "El esqueleto negro de las fortalezas del Nether. Su golpe te deja el efecto wither y a veces suelta su cabeza."
+    "descripcion": "El esqueleto negro y alto de las fortalezas del Nether. Su espada te deja Deterioro, un veneno que sí puede matarte del todo. Su calavera es lo que hace falta para construir el wither.",
+    "notas": "La calavera cae muy pocas veces, así que si vas a por el wither necesitarás matar unos cuantos. El encantamiento Botín sube bastante esa probabilidad.",
+    "consejo": "Pelea en un pasillo de dos bloques de alto: ellos miden tres y no pueden entrar. Y bebe leche en cuanto veas el Deterioro."
   },
   "wolf": {
     "nombre": "Lobo",
@@ -394,14 +456,16 @@
   "zoglin": {
     "nombre": "Zoglin",
     "slug": "zoglin",
-    "descripcion": "En lo que se convierte un hoglin si lo sacas del Nether. Ataca absolutamente a todo, incluso a otros mobs."
+    "descripcion": "Un hoglin que ha cruzado al Overworld y se ha vuelto loco. Ataca a todo lo que se mueva, incluidos otros mobs, y no se le puede calmar de ninguna manera.",
+    "notas": "No se puede criar, ni domesticar, ni ahuyentar con hongos deformados como al hoglin. La transformación es para siempre.",
+    "consejo": "No lo traigas al Overworld si no quieres uno. Y si te lo encuentras, súbete a algo: no salta."
   },
   "zombie": {
     "nombre": "Zombi",
     "slug": "zombi",
-    "descripcion": "El enemigo más común de las primeras noches. Es lento y solo ataca de cerca, así que basta con mantener la distancia o encerrarte hasta que amanezca.",
-    "notas": "Se quema con el sol, de modo que muchos desaparecen solos por la mañana. Como es un no muerto, el encantamiento Castigo le hace mucho más daño que Filo.",
-    "consejo": "Si es tu primera noche, no salgas a pelear. Cava un agujero, tápalo y espera."
+    "descripcion": "El mob más común del juego. Sale de noche y en cualquier sitio oscuro, aporrea puertas de madera y llama a más zombis cuando le pegas.",
+    "notas": "Cuando atacas a uno, los que estén cerca vienen todos. Y los que matan a un aldeano pueden convertirlo en aldeano zombi en vez de matarlo, que luego se puede curar.",
+    "consejo": "Puerta de hierro o valla en la entrada de tu base: la de madera te la abren. Ilumina bien alrededor y dejarán de aparecer."
   },
   "zombie_horse": {
     "nombre": "Caballo zombi",
@@ -411,11 +475,15 @@
   "zombie_villager": {
     "nombre": "Aldeano zombi",
     "slug": "aldeano-zombi",
-    "descripcion": "Un aldeano infectado. Se puede curar con una poción de debilidad y una manzana dorada, y luego te hace descuentos enormes."
+    "descripcion": "Un aldeano al que ha mordido un zombi. Se puede curar, y hacerlo es de las mejores cosas que puedes hacer en una partida: el aldeano curado te deja precios ridículos para siempre.",
+    "notas": "Curarlo lleva unos minutos, durante los cuales tiembla. Tienes que tenerlo encerrado o se irá, y si le da el sol se quema como cualquier zombi.",
+    "consejo": "Enciérralo, tírale una poción de debilidad y luego dale una manzana dorada con el clic derecho. Repítelo con varios y montas la mejor tienda de tu mundo."
   },
   "zombified_piglin": {
     "nombre": "Piglin zombificado",
     "slug": "piglin-zombificado",
-    "descripcion": "Vaga por el Nether sin hacerte nada, pero si golpeas a uno se te echan encima todos los que haya cerca."
+    "descripcion": "Un piglin que se quedó en el Nether demasiado tiempo. Va con espada de oro y no te molesta si tú no le molestas, pero como le pegues a uno vienen todos los de alrededor a la vez.",
+    "notas": "Enfadar a uno enfada al grupo entero, y en el Nether puede haber decenas cerca. Es de las formas más rápidas de morir en una partida.",
+    "consejo": "No les pegues. Si se te escapa un golpe, corre y aléjate lo suficiente: al rato se calman. Aparecen también sobre los portales del Overworld si están mal iluminados."
   }
 }

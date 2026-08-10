@@ -56,6 +56,31 @@
       "description": "Biomas y estructuras donde aparece."
     },
 
+    "invocacion": {
+      "type": "object",
+      "required": ["patron", "clave"],
+      "additionalProperties": false,
+      "description": "Los que no aparecen solos sino que los construye el jugador: el wither, el golem de hierro y el de nieve. Sin esto, la ficha del wither decia que se invoca y no decia con que ni como, que es justo lo que se viene a buscar. Se escribe igual que una receta, con patron y clave, para poder dibujarlo en vez de describirlo.",
+      "properties": {
+        "patron": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 3,
+          "items": { "type": "string", "maxLength": 3 },
+          "description": "De arriba abajo, como se ve de frente. El espacio es hueco."
+        },
+        "clave": {
+          "type": "object",
+          "additionalProperties": { "$ref": "_comun.schema.json#/$defs/referencia" },
+          "description": "Que bloque es cada letra del patron."
+        },
+        "ultimoBloque": {
+          "$ref": "_comun.schema.json#/$defs/referencia",
+          "description": "El que hay que colocar el ultimo para que la cosa cobre vida. Importa: si lo pones antes, no pasa nada, y mucha gente cree que la construccion esta mal."
+        }
+      }
+    },
+
     "botin": {
       "type": "array",
       "items": {

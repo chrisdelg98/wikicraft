@@ -268,6 +268,11 @@
   "encantador.sinEncantamientos": "Esta pieza no admite encantamientos.",
   "encantador.comoLeer": "Cada paso es una operación en el yunque. La penalización crece con cada una, y por eso el orden importa tanto como los encantamientos.",
 
+  "mob.comoSeInvoca": "Cómo se construye",
+  "mob.ultimoBloque": "Coloca {bloque} en el último lugar. Hasta que no pongas esa pieza no cobra vida, y en cuanto la pongas empieza todo: apártate.",
+  "rel.seInvocaCon": "Se construye con",
+  "rel.invoca": "Sirve para construir",
+
   "estructura.peligro": "Peligro",
   "estructura.porQueIr": "Por qué ir",
   "estructura.soloAqui": "Esto no lo consigues en ningún otro sitio:",
