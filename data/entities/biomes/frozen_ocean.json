@@ -7,7 +7,8 @@
   "mobs": [
     "drowned",
     "polar_bear",
-    "salmon_mob"
+    "salmon_mob",
+    "squid"
   ],
   "recursos": [
     "ice",

@@ -6,13 +6,15 @@
   "dimension": "superficie",
   "mobs": [
     "cod_mob",
+    "dolphin",
     "drowned",
     "glow_squid",
     "squid"
   ],
   "recursos": [
     "kelp",
-    "prismarine_shard"
+    "prismarine_shard",
+    "seagrass"
   ],
   "relevancia": "normal"
 }

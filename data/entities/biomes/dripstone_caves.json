@@ -5,6 +5,7 @@
   "etapa": "inicio",
   "dimension": "superficie",
   "mobs": [
+    "bat",
     "skeleton",
     "zombie"
   ],

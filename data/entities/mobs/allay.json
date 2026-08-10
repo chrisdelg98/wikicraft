@@ -7,5 +7,9 @@
   "categoria": "neutral",
   "dimension": [
     "superficie"
+  ],
+  "apareceEn": [
+    "pillager_outpost",
+    "woodland_mansion"
   ]
 }

@@ -5,11 +5,14 @@
   "etapa": "inicio",
   "dimension": "superficie",
   "mobs": [
-    "rabbit_mob"
+    "polar_bear",
+    "rabbit_mob",
+    "stray"
   ],
   "recursos": [
     "ice",
-    "sand"
+    "sand",
+    "snowball"
   ],
   "relevancia": "normal"
 }

@@ -6,6 +6,7 @@
   "dimension": "superficie",
   "mobs": [
     "fox",
+    "rabbit_mob",
     "stray",
     "wolf"
   ],

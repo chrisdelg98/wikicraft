@@ -5,12 +5,14 @@
   "etapa": "inicio",
   "dimension": "superficie",
   "mobs": [
+    "cod_mob",
     "drowned",
     "salmon_mob",
     "squid"
   ],
   "recursos": [
-    "kelp"
+    "kelp",
+    "seagrass"
   ],
   "relevancia": "normal"
 }

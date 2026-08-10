@@ -6,7 +6,11 @@
   "dimension": "superficie",
   "recursos": [
     "emerald_ore",
+    "snowball",
     "stone"
   ],
-  "relevancia": "normal"
+  "relevancia": "normal",
+  "mobs": [
+    "goat"
+  ]
 }

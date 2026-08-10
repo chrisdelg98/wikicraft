@@ -5,9 +5,11 @@
   "etapa": "inicio",
   "dimension": "superficie",
   "mobs": [
+    "goat",
     "llama"
   ],
   "recursos": [
+    "coal_ore",
     "emerald_ore",
     "gravel"
   ],

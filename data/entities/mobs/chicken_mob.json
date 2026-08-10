@@ -23,7 +23,15 @@
     }
   ],
   "apareceEn": [
+    "bamboo_jungle",
+    "flower_forest",
     "forest",
-    "plains"
+    "jungle",
+    "old_growth_pine_taiga",
+    "old_growth_spruce_taiga",
+    "plains",
+    "sparse_jungle",
+    "sunflower_plains",
+    "taiga"
   ]
 }

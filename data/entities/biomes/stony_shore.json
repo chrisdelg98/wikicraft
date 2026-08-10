@@ -6,6 +6,7 @@
   "dimension": "superficie",
   "recursos": [
     "coal_ore",
+    "gravel",
     "stone"
   ],
   "relevancia": "normal"

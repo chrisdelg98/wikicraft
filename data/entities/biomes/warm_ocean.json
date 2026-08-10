@@ -7,12 +7,14 @@
   "mobs": [
     "dolphin",
     "pufferfish_mob",
+    "squid",
     "tropical_fish_mob",
     "turtle"
   ],
   "recursos": [
     "brain_coral",
     "sand",
+    "seagrass",
     "tube_coral"
   ],
   "relevancia": "normal"

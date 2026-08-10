@@ -23,6 +23,8 @@
     }
   ],
   "apareceEn": [
+    "cold_ocean",
+    "deep_cold_ocean",
     "deep_ocean",
     "ocean"
   ]

@@ -12,6 +12,9 @@
     "frozen_peaks",
     "jagged_peaks",
     "snowy_slopes",
+    "stony_peaks",
+    "windswept_forest",
+    "windswept_gravelly_hills",
     "windswept_hills"
   ]
 }

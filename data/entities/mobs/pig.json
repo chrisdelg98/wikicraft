@@ -19,7 +19,13 @@
   "apareceEn": [
     "birch_forest",
     "cherry_grove",
+    "flower_forest",
     "forest",
-    "plains"
+    "old_growth_birch_forest",
+    "old_growth_pine_taiga",
+    "old_growth_spruce_taiga",
+    "plains",
+    "sunflower_plains",
+    "taiga"
   ]
 }

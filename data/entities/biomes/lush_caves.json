@@ -6,6 +6,7 @@
   "dimension": "superficie",
   "mobs": [
     "axolotl",
+    "bat",
     "glow_squid"
   ],
   "recursos": [

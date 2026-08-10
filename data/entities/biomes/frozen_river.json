@@ -5,10 +5,14 @@
   "etapa": "inicio",
   "dimension": "superficie",
   "mobs": [
-    "salmon_mob"
+    "drowned",
+    "salmon_mob",
+    "squid"
   ],
   "recursos": [
-    "ice"
+    "clay_ball",
+    "ice",
+    "sugar_cane"
   ],
   "relevancia": "normal"
 }

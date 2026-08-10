@@ -16,8 +16,9 @@
     "snowy_plains"
   ],
   "mobs": [
-    "pillager",
-    "iron_golem"
+    "allay",
+    "iron_golem",
+    "pillager"
   ],
   "botin": [
     "crossbow",

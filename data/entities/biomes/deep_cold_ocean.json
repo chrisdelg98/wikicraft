@@ -5,13 +5,16 @@
   "etapa": "inicio",
   "dimension": "superficie",
   "mobs": [
+    "cod_mob",
     "drowned",
     "glow_squid",
-    "salmon_mob"
+    "salmon_mob",
+    "squid"
   ],
   "recursos": [
     "kelp",
-    "prismarine_shard"
+    "prismarine_shard",
+    "seagrass"
   ],
   "relevancia": "normal"
 }

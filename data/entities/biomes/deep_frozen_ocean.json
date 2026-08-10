@@ -7,9 +7,12 @@
   "mobs": [
     "drowned",
     "glow_squid",
-    "polar_bear"
+    "polar_bear",
+    "salmon_mob",
+    "squid"
   ],
   "recursos": [
+    "ice",
     "packed_ice",
     "prismarine_shard"
   ],

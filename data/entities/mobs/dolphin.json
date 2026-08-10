@@ -17,6 +17,8 @@
     }
   ],
   "apareceEn": [
+    "deep_lukewarm_ocean",
+    "deep_ocean",
     "lukewarm_ocean",
     "ocean",
     "warm_ocean"

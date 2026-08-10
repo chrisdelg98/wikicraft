@@ -17,9 +17,11 @@
     "snowy_plains"
   ],
   "mobs": [
-    "villager",
+    "camel",
+    "cat",
     "iron_golem",
-    "cat"
+    "ravager",
+    "villager"
   ],
   "botin": [
     "bread",

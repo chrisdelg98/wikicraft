@@ -6,11 +6,18 @@
   "dimension": "superficie",
   "mobs": [
     "bee",
-    "rabbit_mob"
+    "chicken_mob",
+    "pig",
+    "rabbit_mob",
+    "sheep",
+    "wolf"
   ],
   "recursos": [
     "allium",
+    "apple",
+    "birch_log",
     "honey_bottle",
+    "oak_log",
     "poppy"
   ],
   "relevancia": "normal"

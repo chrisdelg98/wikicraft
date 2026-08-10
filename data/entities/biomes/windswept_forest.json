@@ -5,10 +5,14 @@
   "etapa": "inicio",
   "dimension": "superficie",
   "mobs": [
+    "goat",
+    "llama",
     "wolf"
   ],
   "recursos": [
+    "coal_ore",
     "emerald_ore",
+    "gravel",
     "oak_log"
   ],
   "relevancia": "normal"

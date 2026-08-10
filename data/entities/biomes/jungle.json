@@ -5,6 +5,7 @@
   "etapa": "inicio",
   "dimension": "superficie",
   "mobs": [
+    "chicken_mob",
     "ocelot",
     "panda",
     "parrot"

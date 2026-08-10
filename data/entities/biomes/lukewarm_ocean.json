@@ -6,13 +6,15 @@
   "dimension": "superficie",
   "mobs": [
     "dolphin",
+    "drowned",
     "pufferfish_mob",
     "squid",
     "tropical_fish_mob"
   ],
   "recursos": [
     "kelp",
-    "sand"
+    "sand",
+    "seagrass"
   ],
   "relevancia": "normal"
 }

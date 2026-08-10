@@ -27,5 +27,8 @@
     "arqueologia",
     "pincel",
     "grava sospechosa"
+  ],
+  "mobs": [
+    "sniffer"
   ]
 }

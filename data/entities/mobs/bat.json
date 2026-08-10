@@ -7,5 +7,9 @@
   "categoria": "pasivo",
   "dimension": [
     "superficie"
+  ],
+  "apareceEn": [
+    "dripstone_caves",
+    "lush_caves"
   ]
 }

@@ -25,6 +25,8 @@
   "apareceEn": [
     "plains",
     "savanna",
-    "sunflower_plains"
+    "savanna_plateau",
+    "sunflower_plains",
+    "windswept_savanna"
   ]
 }

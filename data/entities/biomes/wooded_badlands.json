@@ -5,9 +5,14 @@
   "etapa": "inicio",
   "dimension": "superficie",
   "recursos": [
+    "dead_bush",
     "gold_ore",
     "oak_log",
+    "red_sand",
     "terracotta"
   ],
-  "relevancia": "normal"
+  "relevancia": "normal",
+  "mobs": [
+    "armadillo"
+  ]
 }

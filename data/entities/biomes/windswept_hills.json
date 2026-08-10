@@ -10,7 +10,8 @@
   ],
   "recursos": [
     "coal_ore",
-    "emerald_ore"
+    "emerald_ore",
+    "gravel"
   ],
   "relevancia": "normal"
 }

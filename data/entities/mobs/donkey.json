@@ -18,6 +18,10 @@
   ],
   "apareceEn": [
     "meadow",
-    "plains"
+    "plains",
+    "savanna",
+    "savanna_plateau",
+    "sunflower_plains",
+    "windswept_savanna"
   ]
 }

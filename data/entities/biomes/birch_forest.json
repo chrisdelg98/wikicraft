@@ -6,9 +6,11 @@
   "dimension": "superficie",
   "mobs": [
     "bee",
-    "pig"
+    "pig",
+    "sheep"
   ],
   "recursos": [
+    "apple",
     "birch_log"
   ],
   "relevancia": "normal"

@@ -33,12 +33,16 @@
     "cherry_grove",
     "desert",
     "flower_forest",
+    "forest",
     "grove",
     "ice_spikes",
     "meadow",
+    "old_growth_pine_taiga",
+    "old_growth_spruce_taiga",
     "snowy_beach",
     "snowy_plains",
     "snowy_slopes",
+    "snowy_taiga",
     "taiga"
   ]
 }

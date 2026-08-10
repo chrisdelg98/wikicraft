@@ -17,8 +17,15 @@
     }
   ],
   "apareceEn": [
+    "birch_forest",
+    "flower_forest",
     "forest",
+    "meadow",
+    "old_growth_birch_forest",
     "plains",
-    "sunflower_plains"
+    "savanna",
+    "savanna_plateau",
+    "sunflower_plains",
+    "windswept_savanna"
   ]
 }

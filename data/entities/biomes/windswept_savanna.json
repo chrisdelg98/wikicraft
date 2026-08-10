@@ -5,10 +5,16 @@
   "etapa": "inicio",
   "dimension": "superficie",
   "mobs": [
-    "llama"
+    "armadillo",
+    "cow",
+    "donkey",
+    "horse",
+    "llama",
+    "sheep"
   ],
   "recursos": [
-    "acacia_log"
+    "acacia_log",
+    "wheat_seeds"
   ],
   "relevancia": "normal"
 }

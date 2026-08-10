@@ -5,12 +5,16 @@
   "etapa": "inicio",
   "dimension": "superficie",
   "mobs": [
+    "chicken_mob",
     "fox",
+    "pig",
+    "rabbit_mob",
     "wolf"
   ],
   "recursos": [
     "podzol",
-    "spruce_log"
+    "spruce_log",
+    "sweet_berries"
   ],
   "relevancia": "normal"
 }

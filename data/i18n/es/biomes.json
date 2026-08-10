@@ -44,7 +44,9 @@
   "cold_ocean": {
     "nombre": "Océano frío",
     "slug": "oceano-frio",
-    "descripcion": "Mar de aguas frías con salmones y algas. Bajo el agua puede haber naufragios y ruinas."
+    "descripcion": "Mar de aguas frías con salmones y algas, y el fondo de arena y grava. Es de los océanos más tranquilos y de los mejores para pescar salmón.",
+    "notas": "Aquí no hay delfines: el agua está demasiado fría para ellos. Sí hay ahogados y naufragios.",
+    "consejo": "El salmón crudo ya alimenta bastante y cocinado más: es de las comidas más fáciles de conseguir en cantidad."
   },
   "crimson_forest": {
     "nombre": "Bosque carmesí",
@@ -63,7 +65,9 @@
   "deep_cold_ocean": {
     "nombre": "Océano frío profundo",
     "slug": "oceano-frio-profundo",
-    "descripcion": "Versión honda del océano frío. En el fondo pueden aparecer monumentos oceánicos."
+    "descripcion": "La versión honda del océano frío. Mismo salmón y mismas algas arriba, y monumentos oceánicos abajo.",
+    "notas": "El frío y la profundidad se juntan: se ve poco y se pierde el aire rápido.",
+    "consejo": "Ve con Afinidad Acuática en el casco, que es lo que te deja picar bajo el agua a velocidad normal."
   },
   "deep_dark": {
     "nombre": "Oscuridad profunda",
@@ -75,17 +79,23 @@
   "deep_frozen_ocean": {
     "nombre": "Océano helado profundo",
     "slug": "oceano-helado-profundo",
-    "descripcion": "Mar helado y hondo, con icebergs arriba y osos polares en la superficie."
+    "descripcion": "Mar helado y hondo, con icebergs arriba y osos polares en la superficie. Es el océano más hostil del juego: frío, oscuro y profundo a la vez.",
+    "notas": "Se junta todo lo malo: te congelas en el agua, no ves nada por la profundidad y arriba hay osos. Aun así, abajo puede haber monumentos.",
+    "consejo": "Armadura de cuero para la congelación y poción de visión nocturna para el fondo. Sin las dos cosas, este bioma no se explora."
   },
   "deep_lukewarm_ocean": {
     "nombre": "Océano templado profundo",
     "slug": "oceano-templado-profundo",
-    "descripcion": "Aguas cálidas y hondas donde suele haber monumentos y mucho pez tropical."
+    "descripcion": "El océano templado en su versión honda. Buena visibilidad, mucho pez tropical y monumentos oceánicos en el fondo.",
+    "notas": "Es de los mejores sitios para conseguir peces tropicales de todos los colores, que sirven para el acuario y para criar ajolotes.",
+    "consejo": "Coge peces con cubo y no con caña: así se conservan vivos y con su color."
   },
   "deep_ocean": {
     "nombre": "Océano profundo",
     "slug": "oceano-profundo",
-    "descripcion": "Mar hondo de aguas normales. Es donde con más frecuencia aparecen los monumentos oceánicos."
+    "descripcion": "Mar hondo de aguas normales. Es donde con más frecuencia se generan los monumentos oceánicos, así que es el sitio al que ir cuando quieras esponjas.",
+    "notas": "La profundidad hace que se pierda el aire antes de llegar al fondo. Sin Respiración Acuática o una poción, no es un bioma explorable.",
+    "consejo": "Antes de bajar, coloca una puerta o un cartel bajo el agua: dejan una bolsa de aire donde respirar."
   },
   "desert": {
     "nombre": "Desierto",
@@ -104,7 +114,9 @@
   "end_barrens": {
     "nombre": "Yermo del End",
     "slug": "yermo-del-end",
-    "descripcion": "El borde vacío de las islas del End. No hay prácticamente nada."
+    "descripcion": "El borde exterior de las islas del End, donde el terreno se acaba y empieza el vacío. No hay prácticamente nada salvo piedra del End y endermen.",
+    "notas": "No se generan ciudades aquí, así que es zona de tránsito y no de saqueo.",
+    "consejo": "Es el sitio donde más gente se cae al vacío. Ve agachado cerca de los bordes y no corras."
   },
   "end_highlands": {
     "nombre": "Tierras altas del End",
@@ -116,12 +128,16 @@
   "end_midlands": {
     "nombre": "Tierras medias del End",
     "slug": "tierras-medias-del-end",
-    "descripcion": "La zona intermedia de las islas exteriores del End. También pueden aparecer ciudades."
+    "descripcion": "La zona intermedia de las islas exteriores del End, entre el borde y las tierras altas. Es terreno de paso, con árboles de coro sueltos y alguna ciudad.",
+    "notas": "Aquí también se generan ciudades del End, aunque menos que en las tierras altas.",
+    "consejo": "Si vas cruzando de una isla a otra, mira hacia arriba: las torres moradas de las ciudades se ven desde lejos por el color."
   },
   "eroded_badlands": {
     "nombre": "Tierras áridas erosionadas",
     "slug": "tierras-aridas-erosionadas",
-    "descripcion": "Tierras áridas con agujas de piedra altísimas. Espectacular de ver y muy fácil de caerse."
+    "descripcion": "Tierras áridas comidas por la erosión, con agujas de terracota altísimas y cañones estrechos. Es el paisaje más espectacular de la familia y también el más fácil de caerse.",
+    "notas": "Las agujas son huecas por dentro con frecuencia y esconden minas abandonadas a la vista, sin necesidad de excavar.",
+    "consejo": "Recorre los cañones por abajo buscando entradas de mina. Aquí el oro y las minas están al alcance sin picar un solo túnel."
   },
   "flower_forest": {
     "nombre": "Bosque florido",
@@ -154,12 +170,16 @@
   "frozen_river": {
     "nombre": "Río helado",
     "slug": "rio-helado",
-    "descripcion": "Un río congelado que cruza los biomas nevados. Se puede caminar por encima."
+    "descripcion": "Un río congelado que atraviesa las zonas nevadas. Se puede caminar por encima, cosa que lo convierte en el camino más rápido de las regiones frías.",
+    "notas": "Bajo el hielo sigue habiendo agua y peces; romper el hielo abre un agujero por el que se cae fácil.",
+    "consejo": "Es una pista natural: con botas encantadas con Paso Helado puedes cruzar hasta el agua sin hielo, congelándola al pisar."
   },
   "grove": {
     "nombre": "Arboleda nevada",
     "slug": "arboleda-nevada",
-    "descripcion": "Bosque de abetos cubierto de nieve, en la falda de las montañas. Aquí aparecen lobos y zorros blancos."
+    "descripcion": "Bosque de abetos nevados en la falda de las montañas, con lobos y zorros blancos. Es la frontera entre el bosque normal y la alta montaña, y suele esconder nieve polvo.",
+    "notas": "La nieve polvo parece nieve normal y se hunde: si caes dentro te congelas y no puedes salir sin saltar. Se distingue porque no deja rastro de pisadas.",
+    "consejo": "Cruza con botas de cuero, que son las únicas que evitan la congelación, o llévate botas de piel de tortuga y ve mirando el suelo."
   },
   "ice_spikes": {
     "nombre": "Picos de hielo",
@@ -185,7 +205,9 @@
   "lukewarm_ocean": {
     "nombre": "Océano templado",
     "slug": "oceano-templado",
-    "descripcion": "Aguas cálidas con peces tropicales. Bonito de explorar y con buena visibilidad."
+    "descripcion": "Aguas templadas con peces tropicales, delfines y buena visibilidad. Es el océano más agradable de explorar y donde más fácil es ver el fondo desde la superficie.",
+    "notas": "Los delfines te dan Gracia del Delfín si nadas a su lado, que te hace nadar muchísimo más rápido durante unos segundos.",
+    "consejo": "Sigue a un delfín: además de acelerarte, te lleva hasta el naufragio o la ruina más cercana."
   },
   "lush_caves": {
     "nombre": "Cuevas exuberantes",
@@ -232,17 +254,23 @@
   "old_growth_birch_forest": {
     "nombre": "Bosque de abedules antiguo",
     "slug": "bosque-de-abedules-antiguo",
-    "descripcion": "Como el bosque de abedules pero con árboles mucho más altos."
+    "descripcion": "Un bosque de abedules mucho más viejos y altos que los normales, con el suelo lleno de helechos. Da mucha más madera por árbol y tiene un aire de bosque antiguo que se nota nada más entrar.",
+    "notas": "Los abedules aquí llegan al doble de altura, así que talarlos entero requiere subir o traer andamios.",
+    "consejo": "Si construyes con madera clara, sale mucho más a cuenta talar aquí que en un bosque de abedules normal."
   },
   "old_growth_pine_taiga": {
     "nombre": "Taiga de pinos antigua",
     "slug": "taiga-de-pinos-antigua",
-    "descripcion": "Abetos gigantes con troncos de dos por dos. Aquí crecen las setas más grandes."
+    "descripcion": "Taiga de pinos enormes con troncos de dos por dos y grandes zonas de podzol en el suelo. Es de los bosques más productivos del juego: un solo árbol da varias pilas de madera.",
+    "notas": "El podzol no se puede fabricar y solo sale aquí y en la taiga de abetos: es el único bloque donde crecen setas a plena luz.",
+    "consejo": "Llévate podzol con Toque de Seda y monta una granja de setas en la superficie, sin tener que bajar a una cueva."
   },
   "old_growth_spruce_taiga": {
     "nombre": "Taiga de abetos antigua",
     "slug": "taiga-de-abetos-antigua",
-    "descripcion": "Bosque de abetos enormes y suelo cubierto de musgo y helechos."
+    "descripcion": "La hermana de la taiga de pinos: abetos gigantes muy juntos, helechos altos y podzol por todas partes. Es más cerrada y más oscura, y da la misma cantidad enorme de madera.",
+    "notas": "Al estar tan cerrada, entre los árboles hay zonas sin luz donde aparecen monstruos incluso de día.",
+    "consejo": "Tala desde el borde y no desde dentro. Y aprovecha el viaje para llenar un cofre de podzol, que no se fabrica."
   },
   "pale_garden": {
     "nombre": "Jardín pálido",
@@ -261,7 +289,9 @@
   "river": {
     "nombre": "Río",
     "slug": "rio",
-    "descripcion": "Corriente de agua que cruza los biomas. Da arcilla, caña de azúcar y una forma cómoda de orientarse."
+    "descripcion": "Las corrientes de agua que cruzan el mundo y unen unos biomas con otros. Sirven de carretera en barco, de sitio para pescar y de fuente fácil de arcilla y caña de azúcar.",
+    "notas": "De noche salen ahogados del agua, incluso en ríos poco profundos y pegados a tu casa.",
+    "consejo": "Sigue un río en barco cuando explores: es más rápido que andar, no te pierdes y siempre acabas llegando a un océano."
   },
   "savanna": {
     "nombre": "Sabana",
@@ -273,17 +303,23 @@
   "savanna_plateau": {
     "nombre": "Meseta de sabana",
     "slug": "meseta-de-sabana",
-    "descripcion": "La parte alta de la sabana, plana y elevada. También aparecen aldeas aquí."
+    "descripcion": "Una sabana levantada sobre mesetas y acantilados, con la misma hierba amarilla y las mismas acacias que la de abajo. Aquí viven caballos, llamas y armadillos, y también salen aldeas, pero encaramadas.",
+    "notas": "Es donde con más facilidad se encuentran llamas salvajes, que se pueden domar y cargar con cofres. Aquí tampoco llueve nunca.",
+    "consejo": "Las vistas y los acantilados hacen que sea de los mejores sitios para una base en altura: lo que suba a por ti tiene que dar la vuelta entera."
   },
   "small_end_islands": {
     "nombre": "Islas pequeñas del End",
     "slug": "islas-pequenas-del-end",
-    "descripcion": "Islotes sueltos flotando en el vacío entre la isla principal y las exteriores."
+    "descripcion": "Islas pequeñas de piedra del End flotando separadas por enormes huecos de vacío. Rodean las regiones grandes y hay que cruzarlas para llegar a las ciudades.",
+    "notas": "En muchas crecen árboles de coro, que sirven de puente improvisado: al romper la base, todo el árbol se cae.",
+    "consejo": "Cruza con élitros si ya los tienes, o con perlas de ender y bloques de sobra. Y nunca sin un plan para volver."
   },
   "snowy_beach": {
     "nombre": "Playa nevada",
     "slug": "playa-nevada",
-    "descripcion": "Orilla helada donde el mar se junta con la tierra nevada."
+    "descripcion": "La orilla de las regiones nevadas: arena, hielo y algún conejo blanco. Es donde el mar helado se encuentra con la tierra y donde suelen aparecer los naufragios del norte.",
+    "notas": "La arena está ahí igual que en cualquier playa, así que sirve para cristal aunque esté todo nevado.",
+    "consejo": "Es buen sitio para desembarcar viniendo de un mar helado: hay suelo firme y salir del agua evita la congelación."
   },
   "snowy_plains": {
     "nombre": "Llanura nevada",
@@ -295,7 +331,9 @@
   "snowy_slopes": {
     "nombre": "Laderas nevadas",
     "slug": "laderas-nevadas",
-    "descripcion": "La subida a las montañas, con nieve polvo en la que te hundes si no llevas raquetas."
+    "descripcion": "Las laderas nevadas que conectan los valles con los picos. Están llenas de cabras y de nieve polvo, y son el camino obligado para subir a las montañas más altas.",
+    "notas": "Aquí es donde más nieve polvo hay del juego. Las cabras, además, embisten y pueden tirarte ladera abajo.",
+    "consejo": "Recoge nieve polvo con un cubo: sirve de trampa y también para bajar sin hacerte daño desde cualquier altura."
   },
   "snowy_taiga": {
     "nombre": "Taiga nevada",
@@ -314,17 +352,23 @@
   "sparse_jungle": {
     "nombre": "Jungla dispersa",
     "slug": "jungla-dispersa",
-    "descripcion": "El borde de la jungla, con menos árboles y más fácil de cruzar."
+    "descripcion": "Una jungla a medio hacer: mismos árboles y mismos animales, pero separados y con espacio entre ellos. Tiene lo bueno de la jungla sin lo malo, que es no poder andar.",
+    "notas": "Aquí también hay cacao, bambú, loros y ocelotes, solo que en menor cantidad. Los templos de jungla, en cambio, no salen.",
+    "consejo": "Si quieres cacao o un loro sin pelearte con la maleza, ven aquí en vez de a la jungla cerrada."
   },
   "stony_peaks": {
     "nombre": "Picos rocosos",
     "slug": "picos-rocosos",
-    "descripcion": "Montañas altas sin nieve, de piedra desnuda, en las zonas cálidas."
+    "descripcion": "Montañas altas sin nieve, con la piedra al aire y algo de calcita y grava. Son las cumbres de las zonas cálidas y las más fáciles de escalar de todas las montañas.",
+    "notas": "Al no tener nieve ni hielo no se resbala, así que es la forma más cómoda de llegar arriba. Y la esmeralda sale aquí igual que en los demás picos.",
+    "consejo": "Si necesitas esmeraldas y no quieres pelearte con el hielo, busca un pico pedregoso antes que uno helado."
   },
   "stony_shore": {
     "nombre": "Orilla rocosa",
     "slug": "orilla-rocosa",
-    "descripcion": "Costa de piedra en vez de arena, normalmente al pie de unas colinas."
+    "descripcion": "Costa de piedra en vez de arena, con acantilados que caen a plomo sobre el mar. Aparece donde una montaña llega hasta la orilla.",
+    "notas": "No hay arena, así que no cuentes con hacer cristal aquí. Lo que sí hay es piedra y carbón a la vista.",
+    "consejo": "Los acantilados hacen de muro natural: una base aquí solo tiene un lado por el que la puedan alcanzar."
   },
   "sunflower_plains": {
     "nombre": "Llanura de girasoles",
@@ -357,7 +401,9 @@
   "the_void": {
     "nombre": "El vacío",
     "slug": "el-vacio",
-    "descripcion": "La nada que hay debajo del mundo. Si caes ahí no hay vuelta atrás."
+    "descripcion": "No es un sitio al que ir: es lo que hay debajo del mundo y alrededor de las islas del End. Caer en el vacío no se puede parar de ninguna manera.",
+    "notas": "Ni las pociones, ni los élitros, ni la caída lenta te salvan si caes por debajo del mundo. Es la única muerte del juego que no tiene remedio.",
+    "consejo": "En el End, construye siempre con un borde. Y si te caes desde una isla, tira una perla de ender hacia arriba mientras aún ves suelo."
   },
   "warm_ocean": {
     "nombre": "Océano cálido",
@@ -376,12 +422,16 @@
   "windswept_forest": {
     "nombre": "Bosque azotado por el viento",
     "slug": "bosque-azotado-por-el-viento",
-    "descripcion": "Colinas empinadas con árboles agarrados a la ladera."
+    "descripcion": "Colinas peladas con árboles agarrados como pueden a los desniveles. Junta la madera de un bosque con la piedra a la vista de las colinas, así que se saca de todo sin cambiar de sitio.",
+    "notas": "Las cuevas se abren en las paredes de los barrancos, a la vista, y con ellas el carbón y la esmeralda.",
+    "consejo": "Es minería sin picar: recorre las paredes buscando vetas expuestas en vez de cavar túneles."
   },
   "windswept_gravelly_hills": {
     "nombre": "Colinas de grava azotadas",
     "slug": "colinas-de-grava-azotadas",
-    "descripcion": "Colinas escarpadas cubiertas de grava, donde encontrar pedernal es facilísimo."
+    "descripcion": "Colinas empinadas con enormes cantidades de grava a la vista. Es feo y es utilísimo: la grava es de donde sale el pedernal, y aquí no hay que buscarla.",
+    "notas": "La grava cae si le quitas lo que tiene debajo y te puede enterrar. Si te sepulta, te ahogas.",
+    "consejo": "Pica la grava desde abajo con una antorcha puesta debajo y cae rota sola. El pedernal es lo que necesitas para mecheros y flechas."
   },
   "windswept_hills": {
     "nombre": "Colinas azotadas por el viento",
@@ -393,11 +443,15 @@
   "windswept_savanna": {
     "nombre": "Sabana azotada por el viento",
     "slug": "sabana-azotada-por-el-viento",
-    "descripcion": "Sabana con relieve extremo y picos muy pronunciados."
+    "descripcion": "Sabana retorcida por el viento, con acantilados enormes, columnas de tierra y desniveles imposibles. Es uno de los paisajes más espectaculares del juego y de los más raros de encontrar.",
+    "notas": "El terreno es tan irregular que las caídas son el peligro real, no los mobs. Tiene la misma fauna que el resto de sabanas: caballos, llamas y armadillos.",
+    "consejo": "Trae agua o andamios para bajar de las columnas. Y si buscas un sitio con carácter para construir, este es el bioma."
   },
   "wooded_badlands": {
     "nombre": "Tierras áridas boscosas",
     "slug": "tierras-aridas-boscosas",
-    "descripcion": "Tierras áridas con una meseta arriba cubierta de árboles y hierba."
+    "descripcion": "Tierras áridas con bosque encima: las capas de terracota de colores siguen ahí, pero las mesetas altas están cubiertas de hierba y robles. Junta lo mejor de dos sitios, madera y oro a la vista.",
+    "notas": "El oro aparece mucho más arriba que en cualquier otro bioma, casi en la superficie, y aquí además hay árboles para no tener que traerse la madera.",
+    "consejo": "Es la mejor variante de las tierras áridas para instalarse: tienes oro, terracota de dieciséis colores y madera sin salir del bioma."
   }
 }

@@ -15,5 +15,8 @@
       "maximo": 1,
       "probabilidad": 1
     }
+  ],
+  "apareceEn": [
+    "village"
   ]
 }

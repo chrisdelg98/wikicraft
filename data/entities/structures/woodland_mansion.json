@@ -13,9 +13,10 @@
     "dark_forest"
   ],
   "mobs": [
+    "allay",
     "evoker",
-    "vindicator",
-    "vex"
+    "vex",
+    "vindicator"
   ],
   "exclusivo": [
     "totem_of_undying"

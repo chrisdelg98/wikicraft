@@ -5,12 +5,17 @@
   "etapa": "inicio",
   "dimension": "superficie",
   "mobs": [
+    "chicken_mob",
     "cow",
+    "donkey",
     "horse",
+    "pig",
     "sheep"
   ],
   "recursos": [
-    "sunflower"
+    "oak_log",
+    "sunflower",
+    "wheat_seeds"
   ],
   "relevancia": "normal"
 }

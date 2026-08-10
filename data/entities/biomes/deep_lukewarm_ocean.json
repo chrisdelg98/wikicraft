@@ -5,12 +5,18 @@
   "etapa": "inicio",
   "dimension": "superficie",
   "mobs": [
+    "dolphin",
+    "drowned",
     "glow_squid",
+    "pufferfish_mob",
     "squid",
     "tropical_fish_mob"
   ],
   "recursos": [
-    "prismarine_shard"
+    "kelp",
+    "prismarine_shard",
+    "sand",
+    "seagrass"
   ],
   "relevancia": "normal"
 }

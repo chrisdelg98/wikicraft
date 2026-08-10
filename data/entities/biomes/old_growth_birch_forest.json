@@ -5,9 +5,12 @@
   "etapa": "inicio",
   "dimension": "superficie",
   "mobs": [
-    "bee"
+    "bee",
+    "pig",
+    "sheep"
   ],
   "recursos": [
+    "apple",
     "birch_log"
   ],
   "relevancia": "normal"
