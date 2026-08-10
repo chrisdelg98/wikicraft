@@ -5,7 +5,8 @@
   "etapa": "hierro",
   "relevancia": "normal",
   "categorias": [
-    "material"
+    "material",
+    "combustible"
   ],
   "pila": 1
 }

@@ -5,7 +5,8 @@
   "etapa": "inicio",
   "relevancia": "normal",
   "categorias": [
-    "mineral"
+    "mineral",
+    "combustible"
   ],
   "pila": 64,
   "seObtieneRompiendo": [

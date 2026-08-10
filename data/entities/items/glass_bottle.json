@@ -3,9 +3,7 @@
   "id": "glass_bottle",
   "tipo": "item",
   "etapa": "inicio",
-  "categorias": [
-    "utilidad"
-  ],
+  "categorias": [],
   "pila": 64,
   "renovable": true,
   "etiquetas": [

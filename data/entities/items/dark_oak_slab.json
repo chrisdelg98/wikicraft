@@ -5,7 +5,8 @@
   "etapa": "inicio",
   "relevancia": "baja",
   "categorias": [
-    "bloque"
+    "bloque",
+    "combustible"
   ],
   "pila": 64,
   "varianteDe": "oak_slab"

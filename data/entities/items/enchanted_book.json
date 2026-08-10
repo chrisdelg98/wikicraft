@@ -3,9 +3,7 @@
   "id": "enchanted_book",
   "tipo": "item",
   "etapa": "hierro",
-  "categorias": [
-    "utilidad"
-  ],
+  "categorias": [],
   "pila": 1,
   "renovable": true,
   "obtenidoDe": [

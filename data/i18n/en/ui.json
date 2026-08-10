@@ -220,6 +220,8 @@
   "filtro.todas": "All",
   "filtro.ambito": "These filters narrow down what you see on this page. To search the whole wiki, use the box above.",
   "filtro.nadaCoincide": "Nothing matches that filter. Try removing one.",
+  "filtro.soloEstaPagina": "Nothing here by that name. Careful: this only looks at the page in front of you.",
+  "filtro.buscarEnTodo": "Search “{consulta}” across the whole wiki",
 
   "listado.resumen": "{n} in total · page {pagina} of {total}",
   "listado.anterior": "← Previous",

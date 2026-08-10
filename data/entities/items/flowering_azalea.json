@@ -6,7 +6,8 @@
   "relevancia": "normal",
   "categorias": [
     "bloque",
-    "vegetal"
+    "vegetal",
+    "combustible"
   ],
   "pila": 64,
   "seObtieneRompiendo": [

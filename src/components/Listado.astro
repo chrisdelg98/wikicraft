@@ -90,6 +90,16 @@ const urlCategoria = (clave) => (clave ? `${raiz}/${RUTA_CATEGORIA}/${clave}/` :
 const base = faceta ? `${raiz}/${RUTA_CATEGORIA}/${faceta}` : raiz
 const urlPagina = (n) => (n === 1 ? `${base}/` : `${base}/pagina/${n}/`)
 
+/**
+ * Los chips de categoria y los numeros de pagina son el mismo boton: se elige
+ * algo y se va a otra pagina. Iban con clases parecidas pero no iguales, y una
+ * diferencia de dos pixeles de alto basta para que se lean como dos cosas
+ * distintas. Aqui se escriben una vez para que no vuelvan a separarse.
+ */
+const PASTILLA = 'bloque px-3 py-1.5 text-sm font-semibold'
+const PASTILLA_INACTIVA = `${PASTILLA} bloque-pulsable`
+const PASTILLA_ACTIVA = `${PASTILLA} bg-acento font-bold text-acento-contraste`
+
 // Ventana de paginas alrededor de la actual, para no pintar veintitantos
 // numeros seguidos en pantallas pequenas.
 const ventana = []
@@ -120,10 +130,7 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
       <a
         href={urlCategoria(null)}
         aria-current={faceta ? undefined : 'page'}
-        class:list={[
-          'bloque bloque-pulsable px-3 py-1.5 text-sm font-semibold',
-          faceta ? 'bg-superficie' : 'bg-acento text-acento-contraste'
-        ]}
+        class={faceta ? PASTILLA_INACTIVA : PASTILLA_ACTIVA}
       >
         {ui(idioma, 'filtro.todas')}
       </a>
@@ -131,10 +138,7 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
         <a
           href={urlCategoria(clave)}
           aria-current={clave === faceta ? 'page' : undefined}
-          class:list={[
-            'bloque bloque-pulsable px-3 py-1.5 text-sm font-semibold',
-            clave === faceta ? 'bg-acento text-acento-contraste' : 'bg-superficie'
-          ]}
+          class={clave === faceta ? PASTILLA_ACTIVA : PASTILLA_INACTIVA}
         >
           {ui(idioma, `faceta.${clave}`)}
           <span
@@ -360,44 +364,54 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
   }
 </ul>
 
-<p data-vacio hidden class="mt-8 text-center text-texto-suave">
-  {ui(idioma, 'filtro.nadaCoincide')}
-</p>
+{/* El estado vacio decia "nada coincide" y era mentira: el filtro solo mira la
+    pagina que tienes delante, asi que buscar "madera" en la 1 de 14 daba cero
+    con dieciocho objetos esperando en otras paginas. Ahora lo dice y ofrece la
+    salida, que es el buscador de arriba: ese si mira toda la wiki. */}
+<div data-vacio hidden class="mt-8 text-center">
+  <p class="text-texto-suave">{ui(idioma, 'filtro.soloEstaPagina')}</p>
+  <button
+    type="button"
+    data-buscar-en-todo
+    data-plantilla={ui(idioma, 'filtro.buscarEnTodo', { consulta: '§' })}
+    class="mt-3 bloque bloque-pulsable bg-acento px-4 py-2 text-sm font-bold text-acento-contraste"
+  ></button>
+</div>
 
+{/* Se esconde mientras filtras por nombre: la paginacion es de la lista
+    completa, no de lo que el filtro deja a la vista, y dejarla debajo de "no
+    hay nada" invitaba a pensar que la pagina 2 traeria mas de lo mismo. */}
 {
   totalPaginas > 1 && (
-    <nav class="mt-8 flex flex-wrap items-center justify-center gap-2" aria-label="paginas">
+    <nav data-paginacion class="mt-8 flex flex-wrap items-center justify-center gap-2" aria-label="paginas">
       {actual > 1 && (
-        <a href={urlPagina(actual - 1)} class="bloque bloque-pulsable px-3 py-2 text-sm font-semibold">
+        <a href={urlPagina(actual - 1)} class={PASTILLA_INACTIVA}>
           {ui(idioma, 'listado.anterior')}
         </a>
       )}
       {!ventana.includes(1) && (
-        <a href={urlPagina(1)} class="bloque bloque-pulsable px-3 py-2 text-sm font-semibold">
+        <a href={urlPagina(1)} class={PASTILLA_INACTIVA}>
           1
         </a>
       )}
       {ventana.map((n) =>
         n === actual ? (
-          <span
-            aria-current="page"
-            class="bloque bg-acento px-3 py-2 text-sm font-bold text-acento-contraste"
-          >
+          <span aria-current="page" class={PASTILLA_ACTIVA}>
             {n}
           </span>
         ) : (
-          <a href={urlPagina(n)} class="bloque bloque-pulsable px-3 py-2 text-sm font-semibold">
+          <a href={urlPagina(n)} class={PASTILLA_INACTIVA}>
             {n}
           </a>
         )
       )}
       {!ventana.includes(totalPaginas) && (
-        <a href={urlPagina(totalPaginas)} class="bloque bloque-pulsable px-3 py-2 text-sm font-semibold">
+        <a href={urlPagina(totalPaginas)} class={PASTILLA_INACTIVA}>
           {totalPaginas}
         </a>
       )}
       {actual < totalPaginas && (
-        <a href={urlPagina(actual + 1)} class="bloque bloque-pulsable px-3 py-2 text-sm font-semibold">
+        <a href={urlPagina(actual + 1)} class={PASTILLA_INACTIVA}>
           {ui(idioma, 'listado.siguiente')}
         </a>
       )}
@@ -407,7 +421,7 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
           {ui(idioma, 'listado.irA')}
           <select
             data-salto-pagina
-            class="bloque bg-superficie-alta px-2 py-2 text-sm font-semibold text-texto"
+            class="bloque bg-superficie-alta px-2 py-1.5 text-sm font-semibold text-texto"
           >
             {Array.from({ length: totalPaginas }, (_, i) => i + 1).map((n) => (
               <option value={urlPagina(n)} selected={n === actual}>
@@ -438,11 +452,14 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
     const panel = document.querySelector('[data-panel-filtros]')
     const contador = document.querySelector('[data-cuenta-filtros]')
     const resumen = document.querySelector('[data-resumen-filtro]')
+    const paginacion = document.querySelector('[data-paginacion]')
 
     // Las categorias ya no se filtran aqui: cada una es su propia pagina. Lo
     // que queda es afinar lo que ya tienes delante, por etapa y por nombre.
     let etapa = ''
     let texto = ''
+    // Lo que se escribio tal cual, para poder repetirlo en el buscador global.
+    let crudo = ''
 
     const normalizar = (t) => t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
 
@@ -454,7 +471,13 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
         li.hidden = !coincide
         if (coincide) visibles++
       }
-      if (vacio) vacio.hidden = visibles > 0
+      if (vacio) {
+        vacio.hidden = visibles > 0
+        if (visibles === 0 && texto) {
+          const boton = vacio.querySelector('[data-buscar-en-todo]')
+          boton.textContent = boton.dataset.plantilla.replace('§', crudo)
+        }
+      }
 
       // El boton lleva cuantos filtros hay puestos, porque una vez cerrado el
       // panel no hay otra forma de saber que la lista esta recortada.
@@ -463,6 +486,7 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
         contador.hidden = activos === 0
         contador.textContent = String(activos)
       }
+      if (paginacion) paginacion.hidden = Boolean(texto)
       if (resumen) {
         const filtrando = activos > 0 || texto
         resumen.textContent = filtrando
@@ -479,8 +503,21 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
     }
 
     document.querySelector('[data-filtro-texto]')?.addEventListener('input', (e) => {
-      texto = normalizar(e.target.value.trim())
+      crudo = e.target.value.trim()
+      texto = normalizar(crudo)
       aplicar()
+    })
+
+    // Pasarle la palabra al buscador de la cabecera, que esta en todas las
+    // paginas y si tiene el indice entero. Es el unico sitio del que puede
+    // salir una respuesta completa.
+    document.querySelector('[data-buscar-en-todo]')?.addEventListener('click', () => {
+      const global = document.querySelector('[data-buscador] input')
+      if (!global) return
+      global.value = crudo
+      global.dispatchEvent(new Event('input', { bubbles: true }))
+      global.focus()
+      global.scrollIntoView({ block: 'center', behavior: 'smooth' })
     })
 
     for (const boton of document.querySelectorAll('[data-filtro-etapa]')) {

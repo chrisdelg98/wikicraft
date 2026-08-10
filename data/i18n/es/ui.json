@@ -406,6 +406,8 @@
   "filtro.todas": "Todas",
   "filtro.ambito": "Estos filtros afinan lo que ves en esta página. Para buscar en toda la wiki, usa el buscador de arriba.",
   "filtro.nadaCoincide": "Nada coincide con ese filtro. Prueba a quitar alguno.",
+  "filtro.soloEstaPagina": "Aquí no hay nada con ese nombre. Ojo: esto solo mira la página que tienes delante.",
+  "filtro.buscarEnTodo": "Buscar «{consulta}» en toda la wiki",
 
   "listado.resumen": "{n} en total · página {pagina} de {total}",
   "listado.anterior": "← Anterior",

@@ -4,8 +4,7 @@
   "tipo": "item",
   "etapa": "inicio",
   "categorias": [
-    "material",
-    "utilidad"
+    "material"
   ],
   "pila": 64,
   "renovable": true,

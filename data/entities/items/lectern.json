@@ -5,7 +5,7 @@
   "etapa": "inicio",
   "categorias": [
     "bloque",
-    "utilidad"
+    "combustible"
   ],
   "pila": 64,
   "renovable": true,

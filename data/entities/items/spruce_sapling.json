@@ -6,7 +6,8 @@
   "relevancia": "baja",
   "categorias": [
     "bloque",
-    "vegetal"
+    "vegetal",
+    "combustible"
   ],
   "pila": 64,
   "varianteDe": "oak_sapling",
