@@ -235,7 +235,10 @@
   h2,
   h3 {
     font-family: var(--font-titulo);
-    line-height: 1.15;
+    /* Igual que en la utilidad "titulo": la variable ademas del valor, porque
+       las clases de tamano de Tailwind leen de ella y si no ganan ellas. */
+    --tw-leading: 1.1;
+    line-height: 1.1;
     text-wrap: balance;
 
     /* Jersey 10 solo trae un peso. Pidiendole negrita, el navegador se la
@@ -273,11 +276,18 @@
   font-synthesis-weight: none;
   letter-spacing: 0.01em;
 
-  /* El mismo interlineado apretado que los encabezados. Sin esto heredaba el
-     1,65 del cuerpo, que esta pensado para parrafos, y un nombre de tres
-     lineas como "Receta de Cama negra (con lana negra)" quedaba con mas hueco
-     entre lineas que letra. */
-  line-height: 1.15;
+  /* Interlineado apretado, que es lo que pide una fuente de pixeles: un nombre
+     de tres lineas como "Receta de Cama negra (con lana negra)" con el 1,65 del
+     cuerpo queda con mas hueco entre lineas que letra.
+
+     Se fija ademas "--tw-leading" y no solo "line-height". Las clases de tamano
+     de Tailwind traen el suyo propio, escrito como
+     line-height: var(--tw-leading, <el de esa medida>), asi que un "text-xl" al
+     lado ganaba y el 1,15 no llegaba a aplicarse nunca. Poniendo la variable se
+     lo damos por el camino que ellas mismas consultan, y da igual cual de las
+     dos reglas acabe ganando. */
+  --tw-leading: 1.05;
+  line-height: 1.05;
 }
 
 @utility titulo-seccion {

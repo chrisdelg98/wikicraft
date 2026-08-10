@@ -171,7 +171,7 @@ const otrosIdiomas = idiomas
                       href={`/${idioma}/${rutaModulo(idioma, modulo)}/`}
                       aria-current={modulo === moduloActivo ? 'page' : undefined}
                       class:list={[
-                        'flex items-center gap-2 bloque bloque-pulsable px-2.5 py-2 titulo text-lg whitespace-nowrap',
+                        'flex items-center gap-2 bloque bloque-pulsable px-2.5 py-2 titulo text-xl whitespace-nowrap',
                         modulo === moduloActivo
                           ? 'text-acento shadow-[inset_0_-4px_0_0_var(--acento)]'
                           : 'text-texto'
@@ -194,7 +194,7 @@ const otrosIdiomas = idiomas
                     href={`/${idioma}/${rutaModulo(idioma, modulo)}/`}
                     aria-current={modulo === moduloActivo ? 'page' : undefined}
                     class:list={[
-                      'flex items-center gap-2 bloque bloque-pulsable px-2.5 py-2 titulo text-lg whitespace-nowrap',
+                      'flex items-center gap-2 bloque bloque-pulsable px-2.5 py-2 titulo text-xl whitespace-nowrap',
                       // La activa no se rellena: se subraya. Asi no compite con
                       // el boton de guia, que si es una accion, y se distingue
                       // igual por el verde y la barra del pie. Sin negrita: la
