@@ -109,7 +109,7 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
 <div class="mb-6 flex items-center gap-3">
   <Icono modulo={modulo} clase="h-10 w-10 shrink-0 text-acento" />
   <div>
-    <h1 class="text-3xl font-extrabold">
+    <h1 class="text-4xl">
       {titulo}
       {faceta && <span class="text-texto-suave"> · {ui(idioma, `faceta.${faceta}`)}</span>}
     </h1>
@@ -172,7 +172,7 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
       class="mb-6 flex flex-wrap items-center gap-x-4 gap-y-2 bloque bloque-pulsable bg-superficie-alta p-4"
     >
       <span class="min-w-0 flex-1">
-        <span class="block font-extrabold">{ui(idioma, 'encantador.titulo')}</span>
+        <span class="titulo block text-xl">{ui(idioma, 'encantador.titulo')}</span>
         <span class="mt-0.5 block text-sm text-texto-suave">
           {ui(idioma, 'encantador.subtitulo')}
         </span>
@@ -207,7 +207,7 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
   hayGuia && (
     <dialog data-panel-guia class="ancho" aria-label={ui(idioma, 'guia.abrir')}>
       <div class="sticky top-0 flex items-center justify-between gap-4 border-b-2 border-borde bg-superficie px-4 py-3">
-        <h2 class="text-lg font-extrabold">{ui(idioma, `guia.titulo.${modulo}`)}</h2>
+        <h2 class="text-xl">{ui(idioma, `guia.titulo.${modulo}`)}</h2>
         <button
           type="button"
           data-cerrar-guia
@@ -304,7 +304,7 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
   hayFiltros && (
     <dialog data-panel-filtros aria-label={ui(idioma, 'filtro.abrir')}>
       <div class="flex items-center justify-between gap-4 border-b-2 border-borde px-4 py-3">
-        <h2 class="text-lg font-extrabold">{ui(idioma, 'filtro.abrir')}</h2>
+        <h2 class="text-xl">{ui(idioma, 'filtro.abrir')}</h2>
         <button
           type="button"
           data-cerrar-filtros

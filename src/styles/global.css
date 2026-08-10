@@ -258,6 +258,22 @@
    pagina se leia como una lista interminable sin principio ni final.
    --------------------------------------------------------------------------- */
 
+/**
+ * La fuente de titulos para lo que no es un encabezado: nombres de tarjeta,
+ * logotipos, cosas que se leen como titulo sin serlo.
+ *
+ * Existe para no repetir la parte delicada. Jersey 10 tiene un solo peso, asi
+ * que basta con que a alguien se le escape un "font-bold" al lado para que el
+ * navegador se invente la negrita y emborrone los pixeles. Aqui va prohibido
+ * de una vez y no hay que acordarse cada vez.
+ */
+@utility titulo {
+  font-family: var(--font-titulo);
+  font-weight: 400;
+  font-synthesis-weight: none;
+  letter-spacing: 0.01em;
+}
+
 @utility titulo-seccion {
   display: flex;
   align-items: center;

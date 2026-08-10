@@ -46,7 +46,7 @@ const primerosPasos = PRIMEROS_PASOS.filter((id) => grafo.has(id))
     <div class="trama pointer-events-none absolute inset-0" aria-hidden="true"></div>
 
     <div class="relative">
-      <h1 class="mx-auto max-w-2xl text-3xl font-extrabold sm:text-4xl">
+      <h1 class="mx-auto max-w-2xl text-4xl sm:text-5xl">
         {ui(idioma, 'portada.titulo')}
       </h1>
       <p class="mx-auto mt-3 max-w-xl text-texto-suave">
@@ -71,7 +71,7 @@ const primerosPasos = PRIMEROS_PASOS.filter((id) => grafo.has(id))
     >
       <Icono modulo="enchantments" clase="h-10 w-10 shrink-0 text-acento" />
       <span class="min-w-0 flex-1">
-        <span class="block text-xl font-extrabold">{ui(idioma, 'encantador.titulo')}</span>
+        <span class="titulo block text-2xl">{ui(idioma, 'encantador.titulo')}</span>
         <span class="mt-1 block text-texto-suave">{ui(idioma, 'encantador.subtitulo')}</span>
       </span>
       <span class="shrink-0 bloque bg-acento-fondo px-4 py-2 font-bold text-acento-contraste">
@@ -81,7 +81,7 @@ const primerosPasos = PRIMEROS_PASOS.filter((id) => grafo.has(id))
   </section>
 
   <section class="mb-12">
-    <h2 class="mb-4 text-xl font-bold">{ui(idioma, 'portada.explora')}</h2>
+    <h2 class="titulo-seccion">{ui(idioma, 'portada.explora')}</h2>
     {/* Antes eran tres lineas sueltas: icono, nombre y un numero a secas. El
         numero no dice que hay dentro, y el nombre de un modulo tampoco se lo
         dice a quien no conoce todavia la wiki. La linea de debajo si, y es lo
@@ -102,7 +102,7 @@ const primerosPasos = PRIMEROS_PASOS.filter((id) => grafo.has(id))
 
               <span class="min-w-0 flex-1">
                 <span class="flex items-baseline justify-between gap-2">
-                  <span class="font-extrabold">{ui(idioma, `nav.${modulo}`)}</span>
+                  <span class="titulo text-xl">{ui(idioma, `nav.${modulo}`)}</span>
                   <span class="shrink-0 text-sm font-bold text-texto-suave tabular-nums">
                     {entidadesDe(modulo).length}
                   </span>
@@ -121,7 +121,7 @@ const primerosPasos = PRIMEROS_PASOS.filter((id) => grafo.has(id))
   {
     primerosPasos.length > 0 && (
       <section>
-        <h2 class="mb-4 text-xl font-bold">{ui(idioma, 'portada.primerosPasos')}</h2>
+        <h2 class="titulo-seccion">{ui(idioma, 'portada.primerosPasos')}</h2>
         <ul class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {primerosPasos.map((id) => (
             <li>
