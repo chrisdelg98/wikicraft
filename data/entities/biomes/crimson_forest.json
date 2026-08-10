@@ -3,6 +3,16 @@
   "id": "crimson_forest",
   "tipo": "bioma",
   "etapa": "nether",
-  "relevancia": "normal",
-  "dimension": "nether"
+  "dimension": "nether",
+  "mobs": [
+    "hoglin",
+    "piglin",
+    "zombified_piglin"
+  ],
+  "recursos": [
+    "crimson_stem",
+    "shroomlight",
+    "weeping_vines"
+  ],
+  "relevancia": "normal"
 }

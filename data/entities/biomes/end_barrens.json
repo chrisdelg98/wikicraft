@@ -3,6 +3,12 @@
   "id": "end_barrens",
   "tipo": "bioma",
   "etapa": "end",
-  "relevancia": "normal",
-  "dimension": "end"
+  "dimension": "end",
+  "mobs": [
+    "enderman"
+  ],
+  "recursos": [
+    "end_stone"
+  ],
+  "relevancia": "normal"
 }

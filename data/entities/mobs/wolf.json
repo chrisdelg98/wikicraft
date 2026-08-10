@@ -7,5 +7,14 @@
   "categoria": "pasivo",
   "dimension": [
     "superficie"
+  ],
+  "apareceEn": [
+    "forest",
+    "grove",
+    "old_growth_pine_taiga",
+    "old_growth_spruce_taiga",
+    "snowy_taiga",
+    "taiga",
+    "windswept_forest"
   ]
 }

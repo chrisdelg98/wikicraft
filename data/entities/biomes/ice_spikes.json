@@ -3,6 +3,14 @@
   "id": "ice_spikes",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "rabbit_mob",
+    "stray"
+  ],
+  "recursos": [
+    "blue_ice",
+    "packed_ice"
+  ],
+  "relevancia": "normal"
 }

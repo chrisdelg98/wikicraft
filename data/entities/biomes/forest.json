@@ -3,6 +3,17 @@
   "id": "forest",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "chicken_mob",
+    "pig",
+    "sheep",
+    "wolf"
+  ],
+  "recursos": [
+    "apple",
+    "birch_log",
+    "oak_log"
+  ],
+  "relevancia": "normal"
 }

@@ -3,6 +3,14 @@
   "id": "savanna",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "cow",
+    "horse",
+    "llama"
+  ],
+  "recursos": [
+    "acacia_log"
+  ],
+  "relevancia": "normal"
 }

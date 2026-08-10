@@ -7,5 +7,12 @@
   "categoria": "pasivo",
   "dimension": [
     "superficie"
+  ],
+  "apareceEn": [
+    "birch_forest",
+    "cherry_grove",
+    "flower_forest",
+    "meadow",
+    "old_growth_birch_forest"
   ]
 }

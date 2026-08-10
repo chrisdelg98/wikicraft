@@ -3,6 +3,16 @@
   "id": "lush_caves",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "axolotl",
+    "glow_squid"
+  ],
+  "recursos": [
+    "azalea",
+    "clay_ball",
+    "glow_berries",
+    "moss_block"
+  ],
+  "relevancia": "normal"
 }

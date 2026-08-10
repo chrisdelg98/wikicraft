@@ -3,6 +3,10 @@
   "id": "stony_peaks",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "recursos": [
+    "emerald_ore",
+    "stone"
+  ],
+  "relevancia": "normal"
 }

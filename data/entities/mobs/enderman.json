@@ -17,5 +17,14 @@
       "maximo": 1,
       "probabilidad": 1
     }
+  ],
+  "apareceEn": [
+    "end_barrens",
+    "end_highlands",
+    "end_midlands",
+    "small_end_islands",
+    "soul_sand_valley",
+    "the_end",
+    "warped_forest"
   ]
 }

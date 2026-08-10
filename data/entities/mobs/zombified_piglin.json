@@ -28,5 +28,9 @@
       "probabilidad": 0.025,
       "soloAlMorirPorJugador": true
     }
+  ],
+  "apareceEn": [
+    "crimson_forest",
+    "nether_wastes"
   ]
 }

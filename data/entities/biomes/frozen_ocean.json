@@ -3,6 +3,15 @@
   "id": "frozen_ocean",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "drowned",
+    "polar_bear",
+    "salmon_mob"
+  ],
+  "recursos": [
+    "ice",
+    "packed_ice"
+  ],
+  "relevancia": "normal"
 }

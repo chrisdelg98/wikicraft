@@ -3,6 +3,12 @@
   "id": "old_growth_birch_forest",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "bee"
+  ],
+  "recursos": [
+    "birch_log"
+  ],
+  "relevancia": "normal"
 }

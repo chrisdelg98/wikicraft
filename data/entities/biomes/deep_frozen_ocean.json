@@ -3,6 +3,15 @@
   "id": "deep_frozen_ocean",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "drowned",
+    "glow_squid",
+    "polar_bear"
+  ],
+  "recursos": [
+    "packed_ice",
+    "prismarine_shard"
+  ],
+  "relevancia": "normal"
 }

@@ -3,6 +3,15 @@
   "id": "taiga",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "fox",
+    "rabbit_mob",
+    "wolf"
+  ],
+  "recursos": [
+    "spruce_log",
+    "sweet_berries"
+  ],
+  "relevancia": "normal"
 }

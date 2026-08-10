@@ -3,6 +3,17 @@
   "id": "warm_ocean",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "dolphin",
+    "pufferfish_mob",
+    "tropical_fish_mob",
+    "turtle"
+  ],
+  "recursos": [
+    "brain_coral",
+    "sand",
+    "tube_coral"
+  ],
+  "relevancia": "normal"
 }

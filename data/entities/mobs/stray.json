@@ -28,5 +28,10 @@
       "probabilidad": 1,
       "soloAlMorirPorJugador": true
     }
+  ],
+  "apareceEn": [
+    "ice_spikes",
+    "snowy_plains",
+    "snowy_taiga"
   ]
 }

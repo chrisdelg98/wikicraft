@@ -3,6 +3,13 @@
   "id": "snowy_beach",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "rabbit_mob"
+  ],
+  "recursos": [
+    "ice",
+    "sand"
+  ],
+  "relevancia": "normal"
 }

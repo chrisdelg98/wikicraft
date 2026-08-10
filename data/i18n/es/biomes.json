@@ -2,32 +2,44 @@
   "badlands": {
     "nombre": "Tierras áridas",
     "slug": "tierras-aridas",
-    "descripcion": "Un cañón de terracota de colores. Aquí el oro aparece mucho más arriba de lo normal, así que es el mejor sitio para buscarlo."
+    "descripcion": "Un cañón de terracota de colores, con mesetas y arena roja. Es el mejor sitio del juego para buscar oro: aquí aparece mucho más arriba de lo normal y a la vista.",
+    "notas": "El oro sale hasta cerca de la superficie, cosa que no pasa en ningún otro bioma. Las minas abandonadas de aquí están a la vista, sin excavar.",
+    "consejo": "Ven con picos de sobra y vacía las minas abandonadas del cañón. La terracota de colores, además, es de los mejores materiales de construcción que hay."
   },
   "bamboo_jungle": {
     "nombre": "Jungla de bambú",
     "slug": "jungla-de-bambu",
-    "descripcion": "Jungla llena de bambú y pandas. El bambú crece rapidísimo y sirve de combustible casi infinito."
+    "descripcion": "Jungla tomada por el bambú, con pandas. El bambú crece rapidísimo y es el combustible más barato y más renovable del juego.",
+    "notas": "Una sola planta de bambú alimenta un horno para siempre si le pones una granja automática al lado: crece solo, sin necesidad de replantar.",
+    "consejo": "Llévate unos cuantos brotes. Con bambú y un pistón montas la granja de combustible más sencilla que existe."
   },
   "basalt_deltas": {
     "nombre": "Deltas de basalto",
     "slug": "deltas-de-basalto",
-    "descripcion": "La zona más peligrosa del Nether: suelo irregular, lava por todas partes y ceniza que no te deja ver."
+    "descripcion": "La zona más peligrosa del Nether: suelo irregular de basalto, lava por todas partes y ceniza que no te deja ver a dos bloques.",
+    "notas": "El terreno es tan irregular que se cae en lava sin darse cuenta, y los cubos de magma aparecen por todas partes.",
+    "consejo": "Evítala si puedes rodearla. Si tienes que cruzarla, hazlo con resistencia al fuego puesta y poniendo bloques por delante."
   },
   "beach": {
     "nombre": "Playa",
     "slug": "playa",
-    "descripcion": "La orilla entre el mar y la tierra. Aquí las tortugas ponen sus huevos y hay arena de sobra para hacer cristal."
+    "descripcion": "La orilla entre el mar y la tierra. Aquí ponen huevos las tortugas, hay arena de sobra para cristal y es donde se entierran los tesoros.",
+    "notas": "Los huevos de tortuga se rompen si los pisas, incluso sin querer. Y los zombis van a por ellos de noche.",
+    "consejo": "Si tienes un mapa del tesoro, es aquí donde apunta. Y protege los huevos con una valla si quieres caparazones."
   },
   "birch_forest": {
     "nombre": "Bosque de abedules",
     "slug": "bosque-de-abedules",
-    "descripcion": "Bosque claro de troncos blancos. Es tranquilo y da mucha madera de un color muy usado para construir."
+    "descripcion": "Bosque de troncos blancos y copas altas. Es claro, tranquilo y da una madera muy usada para construir por su color pálido.",
+    "notas": "Casi no tiene animales ni flores; es un bioma de madera y poco más.",
+    "consejo": "Si construyes en blanco y madera clara, este es tu almacén. En la variante de bosque viejo los abedules son mucho más altos y rinden más por árbol."
   },
   "cherry_grove": {
     "nombre": "Arboleda de cerezos",
     "slug": "arboleda-de-cerezos",
-    "descripcion": "Colinas con cerezos en flor y pétalos cayendo. Es de los biomas más bonitos y da madera rosa."
+    "descripcion": "Colinas con cerezos en flor y pétalos cayendo todo el rato. Es de los sitios más bonitos del juego y da madera rosa, que no se consigue en ningún otro lado.",
+    "notas": "Es un bioma poco común y suele estar en zonas de montaña, pegado a praderas.",
+    "consejo": "Llévate esquejes además de troncos: plantar tus propios cerezos en casa sale mucho mejor que volver cada vez."
   },
   "cold_ocean": {
     "nombre": "Océano frío",
@@ -37,12 +49,16 @@
   "crimson_forest": {
     "nombre": "Bosque carmesí",
     "slug": "bosque-carmesi",
-    "descripcion": "Bosque rojo del Nether lleno de hongos gigantes, piglins y hoglins. Da madera que no arde."
+    "descripcion": "Bosque rojo del Nether lleno de hongos gigantes, piglins y hoglins. Da madera que no arde, que en el Nether es más útil de lo que parece.",
+    "notas": "Los hoglins te embisten y te tiran lejos, cosa peligrosa con lava alrededor. Les dan miedo los hongos deformados.",
+    "consejo": "Planta hongos deformados alrededor de donde te pares y los hoglins no se acercan. Y ponte algo de oro por los piglins."
   },
   "dark_forest": {
     "nombre": "Bosque oscuro",
     "slug": "bosque-oscuro",
-    "descripcion": "Los árboles tapan tanto la luz que aparecen mobs de día. Aquí es donde se generan las mansiones."
+    "descripcion": "Los robles oscuros tapan tanto la luz que aparecen monstruos a plena luz del día. Es incómodo de atravesar y aun así hay que venir: es el único sitio donde se generan las mansiones del bosque.",
+    "notas": "Las copas forman techo, así que el suelo cuenta como oscuro para el juego. Estar aquí de día no es más seguro que de noche.",
+    "consejo": "Ve por encima de las copas si solo estás de paso. Si vas a la mansión, cómprale antes el mapa a un cartógrafo."
   },
   "deep_cold_ocean": {
     "nombre": "Océano frío profundo",
@@ -52,7 +68,9 @@
   "deep_dark": {
     "nombre": "Oscuridad profunda",
     "slug": "oscuridad-profunda",
-    "descripcion": "La zona más peligrosa del subsuelo. Los sensores detectan tus pasos y despiertan al warden."
+    "descripcion": "La zona más peligrosa del subsuelo. No hay mobs salvo uno, y con ese basta: los sensores de sculk oyen tus pasos y despiertan al warden. Aquí están las ciudades antiguas.",
+    "notas": "No es que sea difícil de pelear: es que no se pelea. El warden atraviesa una armadura de netherita y te oye aunque no te vea.",
+    "consejo": "Ve siempre agachado, que no hace ruido, y tapa los chillones antes de moverte. Trae bolas de nieve para distraer al warden y salir."
   },
   "deep_frozen_ocean": {
     "nombre": "Océano helado profundo",
@@ -72,12 +90,16 @@
   "desert": {
     "nombre": "Desierto",
     "slug": "desierto",
-    "descripcion": "Arena, cactus y ni una gota de agua. Aquí están los templos del desierto y las aldeas de arenisca."
+    "descripcion": "Arena, cactus y ni una gota de agua. Es duro para vivir y aun así compensa visitarlo: aquí están los templos del desierto y las aldeas de arenisca.",
+    "notas": "Aquí los zombis son husks, que no se queman con el sol y te dan hambre al pegarte. De día tampoco estás a salvo.",
+    "consejo": "No te instales sin una fuente de agua cerca: sin agua no hay cultivos. Y en el templo, cuidado con la placa de presión del sótano."
   },
   "dripstone_caves": {
     "nombre": "Cuevas de goteo",
     "slug": "cuevas-de-goteo",
-    "descripcion": "Cuevas llenas de estalactitas puntiagudas. Caen si rompes lo que las sujeta, así que mira hacia arriba."
+    "descripcion": "Cuevas llenas de estalactitas y estalagmitas de piedra. Es de los mejores sitios para cobre, y también de los más fáciles de morir por despiste.",
+    "notas": "Las estalactitas caen si rompes lo que las sujeta y hacen mucho daño; las del suelo te empalan si caes encima. Mira hacia arriba y hacia abajo.",
+    "consejo": "Una estalactita con un caldero debajo genera agua o lava infinitas según lo que tenga encima. Es la granja de lava más barata que hay."
   },
   "end_barrens": {
     "nombre": "Yermo del End",
@@ -87,7 +109,9 @@
   "end_highlands": {
     "nombre": "Tierras altas del End",
     "slug": "tierras-altas-del-end",
-    "descripcion": "Las islas exteriores del End, donde crecen los árboles de coro y se generan las ciudades."
+    "descripcion": "Las islas exteriores del End, con árboles de coro y ciudades. Solo se llega tras matar al dragón, cruzando el portal que deja al morir.",
+    "notas": "Las ciudades del End están aquí, y las que tienen barco al lado son las que llevan élitros.",
+    "consejo": "Trae bloques de sobra para cruzar el vacío entre islas, y una poción de caída lenta por si un shulker te lanza al aire."
   },
   "end_midlands": {
     "nombre": "Tierras medias del End",
@@ -102,22 +126,30 @@
   "flower_forest": {
     "nombre": "Bosque florido",
     "slug": "bosque-florido",
-    "descripcion": "Bosque cubierto de flores de todos los colores. Es el mejor sitio para conseguir tintes y para tener abejas."
+    "descripcion": "Un bosque alfombrado de flores de todos los colores, con abejas y conejos. Es el sitio del juego para conseguir tintes sin cultivar nada.",
+    "notas": "Aquí están casi todas las flores del juego, incluidas las que solo salen en este bioma. Para dos flores del mismo tipo, usa harina de hueso encima de una.",
+    "consejo": "Trae tijeras y un par de pilas de espacio. Y si quieres miel, es de los mejores sitios para empezar un colmenar."
   },
   "forest": {
     "nombre": "Bosque",
     "slug": "bosque",
-    "descripcion": "Robles y abedules por todas partes. Es el bioma más equilibrado para empezar una partida."
+    "descripcion": "Robles y abedules muy juntos, con lobos y algún claro. Es el bioma más equilibrado para empezar: madera de sobra, manzanas y animales, aunque la maleza no te deja ver lo que viene.",
+    "notas": "De noche los árboles hacen sombra y aparecen mobs incluso de día debajo de las copas más cerradas.",
+    "consejo": "Tala en claro, no en medio del bosque, y pon antorchas mientras avanzas: aquí es facilísimo perderse y volver a casa a oscuras."
   },
   "frozen_ocean": {
     "nombre": "Océano helado",
     "slug": "oceano-helado",
-    "descripcion": "Mar cubierto de hielo y con icebergs. Hace tanto frío que te congelas si te metes en el agua."
+    "descripcion": "Mar cubierto de hielo y con icebergs, con osos polares encima. Hace tanto frío que el agua te congela si te quedas dentro.",
+    "notas": "Congelarse hace daño poco a poco, y la armadura de cuero es lo único que lo evita. No es una recomendación de moda: es la única que sirve.",
+    "consejo": "Ponte cuero antes de meterte, aunque lleves diamante debajo. Y no molestes a los osos si llevan cría al lado."
   },
   "frozen_peaks": {
     "nombre": "Picos helados",
     "slug": "picos-helados",
-    "descripcion": "Montañas cubiertas de hielo puro. Muy difíciles de escalar y muy fáciles de morir en ellas."
+    "descripcion": "Montañas cubiertas de hielo puro y nieve. Muy difíciles de escalar, muy resbaladizas y con esmeraldas dentro.",
+    "notas": "Sobre el hielo se resbala, así que un paso en falso aquí arriba es una caída de cien bloques.",
+    "consejo": "Camina agachado por el hielo: agachado no te caes por los bordes."
   },
   "frozen_river": {
     "nombre": "Río helado",
@@ -132,17 +164,23 @@
   "ice_spikes": {
     "nombre": "Picos de hielo",
     "slug": "picos-de-hielo",
-    "descripcion": "Un bioma raro lleno de agujas gigantes de hielo compacto. Es la forma más fácil de conseguir hielo azul."
+    "descripcion": "Un bioma raro y espectacular, lleno de agujas gigantes de hielo compacto sobre nieve. Es la forma más fácil de conseguir hielo compacto en cantidad.",
+    "notas": "El hielo compacto no se derrite cerca de antorchas, al contrario que el normal, así que sirve para construir.",
+    "consejo": "Trae un pico con Toque de Seda o solo te llevarás agua. Con hielo azul se hacen las carreteras más rápidas del juego."
   },
   "jagged_peaks": {
     "nombre": "Picos escarpados",
     "slug": "picos-escarpados",
-    "descripcion": "Las montañas más altas del juego, con puntas afiladas de piedra y nieve."
+    "descripcion": "Las montañas más altas del juego, con puntas afiladas de piedra y nieve. Se ve medio mundo desde arriba y se muere muy fácil bajando.",
+    "notas": "Aquí salen cabras, que embisten y te tiran al vacío. Y la esmeralda solo aparece en biomas de montaña como este.",
+    "consejo": "Sube con bloques y no a saltos, y trae una poción de caída lenta. La cabra, si te embiste, te suelta un cuerno."
   },
   "jungle": {
     "nombre": "Jungla",
     "slug": "jungla",
-    "descripcion": "Vegetación densa, lianas y ocelotes. Aquí están los templos de la jungla y el cacao."
+    "descripcion": "Vegetación tan densa que cuesta andar, con lianas, ocelotes y pandas. Es el único sitio del cacao, del bambú y de los templos de la jungla.",
+    "notas": "Los árboles son gigantescos y talarlos entero lleva un rato; las lianas permiten trepar y también bajar sin hacerte daño.",
+    "consejo": "Trae un hacha buena y tijeras para las hojas. Y no talles el árbol desde arriba: aquí las caídas matan más que los mobs."
   },
   "lukewarm_ocean": {
     "nombre": "Océano templado",
@@ -152,33 +190,44 @@
   "lush_caves": {
     "nombre": "Cuevas exuberantes",
     "slug": "cuevas-exuberantes",
-    "descripcion": "Cuevas verdes con lagos, enredaderas y ajolotes. Se reconocen desde arriba por las azaleas."
+    "descripcion": "Cuevas verdes con lagos, enredaderas luminosas y ajolotes. Son de las pocas cuevas bonitas del juego y las únicas donde hay bayas luminosas y musgo.",
+    "notas": "Se reconocen desde la superficie por las azaleas: si ves un arbusto de azalea en el suelo, debajo hay una cueva exuberante.",
+    "consejo": "Los ajolotes se cogen con cubo y ayudan a pelear bajo el agua. Y las bayas luminosas iluminan sin necesidad de antorchas."
   },
   "mangrove_swamp": {
     "nombre": "Pantano de mangle",
     "slug": "pantano-de-mangle",
-    "descripcion": "Pantano de raíces enredadas y barro. Aquí viven las ranas y hay mucho barro para construir."
+    "descripcion": "Un pantano de raíces enredadas y barro, con ranas de tres colores. El barro es un material de construcción propio y las ranas dan luces de rana, que solo salen de aquí.",
+    "notas": "Los mangles crecen desde un esqueje que se planta hasta en el agua, y sus raíces dejan pasar el agua sin ahogarte.",
+    "consejo": "Llévate esquejes y barro. Y si quieres luces de rana, tendrás que llevar una rana hasta un cubo de magma pequeño: no salen de otra forma."
   },
   "meadow": {
     "nombre": "Pradera",
     "slug": "pradera",
-    "descripcion": "Prado alto de flores con algún árbol suelto. Suele haber una cabaña de apicultor."
+    "descripcion": "Un prado alto de hierba y flores en la falda de las montañas, con abejas y algún burro. Suele tener una cabaña de apicultor con su colmena.",
+    "notas": "Es de los pocos sitios donde encuentras colmenas ya hechas, con abejas dentro.",
+    "consejo": "Recoge la colmena con Toque de Seda y de noche, cuando las abejas están dentro: te llevas la colonia entera a casa."
   },
   "mushroom_fields": {
     "nombre": "Campos de setas",
     "slug": "campos-de-setas",
-    "descripcion": "Una isla rarísima donde no aparece ningún mob hostil. Es el sitio más seguro de todo el juego."
+    "descripcion": "Una isla rarísima cubierta de micelio y setas gigantes, con vacas seta. Es el único bioma donde no aparece ningún mob hostil, nunca, ni siquiera de noche.",
+    "notas": "Ni oscureciendo el suelo aparecen monstruos: el micelio lo impide. Es literalmente el sitio más seguro del juego.",
+    "consejo": "Si te la encuentras, plantéate mudarte. Y las vacas seta dan estofado infinito con un cuenco: comida gratis para siempre."
   },
   "nether_wastes": {
     "nombre": "Páramos del Nether",
     "slug": "paramos-del-nether",
     "descripcion": "La zona más común del Nether: cuevas enormes de piedra roja, lagos de lava y ni una gota de agua. Es donde apareces al cruzar el portal.",
-    "notas": "No lleves cama: explota si intentas dormir. Tampoco sirve el agua para apagar fuegos, porque se evapora al instante."
+    "notas": "El agua se evapora al instante en el Nether, así que no cuentes con apagar fuegos ni con hacerte una caída de agua. Y las camas explotan.",
+    "consejo": "Anota las coordenadas del portal en cuanto llegues. Perder el portal aquí es perder la partida entera."
   },
   "ocean": {
     "nombre": "Océano",
     "slug": "oceano",
-    "descripcion": "Mar abierto de aguas normales. Debajo hay naufragios, ruinas y a veces monumentos."
+    "descripcion": "Mar abierto con calamares, peces y algún ahogado. Debajo hay naufragios, ruinas y, en las zonas profundas, monumentos.",
+    "notas": "Los ahogados con tridente hacen mucho daño a distancia, incluso disparando desde el agua a alguien en tierra.",
+    "consejo": "No cruces el mar a nado de noche. Un barco es rapidísimo y encima te saca de la línea de tiro de los ahogados."
   },
   "old_growth_birch_forest": {
     "nombre": "Bosque de abedules antiguo",
@@ -198,13 +247,16 @@
   "pale_garden": {
     "nombre": "Jardín pálido",
     "slug": "jardin-palido",
-    "descripcion": "Un bosque gris y silencioso donde acecha el acechador. No hay ningún otro mob."
+    "descripcion": "Una versión descolorida del bosque oscuro, con musgo gris y ojos colgando de los árboles. Aquí vive el creaking, que solo se mueve cuando no le miras.",
+    "notas": "Al creaking no se le puede matar a golpes: hay que buscar el corazón que lo mantiene vivo, escondido en un tronco de la zona.",
+    "consejo": "De día no aparece nada; el creaking es cosa de la noche. Si vienes a por madera pálida, ven de día y vete antes de que anochezca."
   },
   "plains": {
     "nombre": "Llanura",
     "slug": "llanura",
-    "descripcion": "Terreno plano y despejado, con hierba y algún árbol suelto. Es el mejor sitio para empezar una partida: se ve venir a los enemigos y es fácil construir.",
-    "notas": "Aquí aparecen muchas aldeas, así que es un buen lugar para conseguir tu primer bibliotecario."
+    "descripcion": "Hierba llana hasta donde alcanza la vista, con caballos y algún árbol suelto. Es donde más aldeas salen y donde más fácil es ver lo que se te acerca, así que es el mejor sitio para tu primera base.",
+    "notas": "Al ser tan abierto no hay cuevas a mano ni piedra a la vista: para minerales tendrás que cavar tú o irte a unas colinas.",
+    "consejo": "Si te aparece aquí, quédate. Comida, madera cerca, aldeas y visibilidad: no vas a encontrar un principio más cómodo."
   },
   "river": {
     "nombre": "Río",
@@ -214,7 +266,9 @@
   "savanna": {
     "nombre": "Sabana",
     "slug": "sabana",
-    "descripcion": "Hierba seca y acacias. Nunca llueve, hay aldeas y caballos en manada."
+    "descripcion": "Llanura seca de hierba amarilla con acacias planas, caballos y llamas. No llueve nunca, cosa que va bien si te molesta que se te apaguen las hogueras.",
+    "notas": "La madera de acacia es naranja y no se consigue en ningún otro bioma. Aquí también salen aldeas.",
+    "consejo": "Es buen sitio para una base: hay caballos para moverte, llamas para cargar y visibilidad de sobra."
   },
   "savanna_plateau": {
     "nombre": "Meseta de sabana",
@@ -234,7 +288,9 @@
   "snowy_plains": {
     "nombre": "Llanura nevada",
     "slug": "llanura-nevada",
-    "descripcion": "Llanura cubierta de nieve. Hay aldeas de iglú y osos polares cerca del agua."
+    "descripcion": "Llanura cubierta de nieve, con esqueletos glaciales, conejos blancos y algún oso polar. Aquí salen los iglús, que a veces esconden un sótano con un aldeano zombi.",
+    "notas": "La nieve se acumula si nieva y se repone sola, así que es una fuente infinita de bolas de nieve.",
+    "consejo": "Busca iglú: el del sótano trae la poción de debilidad y la manzana dorada listas para curar al aldeano, que es de lo más rentable del juego."
   },
   "snowy_slopes": {
     "nombre": "Laderas nevadas",
@@ -244,12 +300,16 @@
   "snowy_taiga": {
     "nombre": "Taiga nevada",
     "slug": "taiga-nevada",
-    "descripcion": "Bosque de abetos con nieve. Aquí aparecen lobos y esqueletos glaciales."
+    "descripcion": "La taiga cubierta de nieve. Lo mismo que la normal pero con hielo, esqueletos glaciales y zorros blancos.",
+    "notas": "Los esqueletos de aquí disparan flechas de lentitud, que se pueden recoger del suelo y usar tú.",
+    "consejo": "Aprovecha para hacer acopio de nieve con una pala encantada con Toque de Seda: sirve para golems y para conservar comida en cofres helados."
   },
   "soul_sand_valley": {
     "nombre": "Valle de arena de almas",
     "slug": "valle-de-arena-de-almas",
-    "descripcion": "Valle del Nether de arena de almas y esqueletos gigantes. Aquí aparecen muchísimos ghasts."
+    "descripcion": "Un valle de arena de almas y huesos gigantes, con fuego azul y muchísimos ghasts y esqueletos. Es de donde sale la arena de almas para construir el wither.",
+    "notas": "La arena de almas te frena muchísimo al andar por encima, justo cuando más falta hace correr. Aquí también aparecen esqueletos normales, cosa que sorprende a mucha gente.",
+    "consejo": "Ponte Caminante de Almas en las botas si vas a pasar por aquí a menudo: es el único encantamiento que arregla lo de la arena."
   },
   "sparse_jungle": {
     "nombre": "Jungla dispersa",
@@ -269,22 +329,30 @@
   "sunflower_plains": {
     "nombre": "Llanura de girasoles",
     "slug": "llanura-de-girasoles",
-    "descripcion": "Una llanura cubierta de girasoles, que además siempre apuntan al este y sirven de brújula."
+    "descripcion": "Una llanura cubierta de girasoles. Aparte de lo bonito, los girasoles siempre miran al este, así que funcionan de brújula si te has perdido sin brújula.",
+    "notas": "Es una variante poco común de la llanura, con los mismos animales y las mismas aldeas.",
+    "consejo": "Recoge unos cuantos girasoles: son el tinte amarillo más fácil de conseguir y sirven de cartel de \"por aquí es el este\"."
   },
   "swamp": {
     "nombre": "Pantano",
     "slug": "pantano",
-    "descripcion": "Agua turbia, lianas y nenúfares. Aquí hay slimes de noche, arcilla y cabañas de bruja."
+    "descripcion": "Agua turbia, nenúfares y árboles con lianas. Es feo de vivir y muy útil de visitar: aquí están las cabañas de bruja, las ranas y casi toda la arcilla del juego.",
+    "notas": "Los slimes aparecen aquí de noche en las zonas bajas, y es la forma más fácil de conseguir bolas de slime sin buscar chunks especiales.",
+    "consejo": "Ven de noche y con luna llena si buscas slimes. Para arcilla, mira el fondo de las charcas: sale a paladas."
   },
   "taiga": {
     "nombre": "Taiga",
     "slug": "taiga",
-    "descripcion": "Bosque de abetos con helechos y bayas dulces. Hay lobos y aldeas de madera."
+    "descripcion": "Bosque de abetos con lobos, zorros y arbustos de bayas. Es de los mejores biomas para empezar: la madera es buena, hay comida en los arbustos y los lobos se domestican con huesos.",
+    "notas": "Las bayas dulces se pueden comer directamente del arbusto, pero recogerlas a lo bruto te hace daño, como los cactus.",
+    "consejo": "Doma un par de lobos el primer día: pelean por ti y te avisan de lo que se acerca. Y planta bayas cerca de casa, que crecen solas."
   },
   "the_end": {
     "nombre": "El End",
     "slug": "el-end",
-    "descripcion": "La isla central de la última dimensión, donde te espera el dragón. Todo es piedra del End y vacío."
+    "descripcion": "La isla central del End, con las columnas de obsidiana y el dragón dando vueltas. Es adonde llevan los ojos de ender y donde acaba la partida.",
+    "notas": "Los endermans son casi lo único que hay, y son muchos. Mirar a uno mientras peleas con el dragón es de las peores cosas que te pueden pasar.",
+    "consejo": "Ponte una calabaza tallada nada más llegar. Se ve peor, pero es lo que convierte esta pelea en algo manejable."
   },
   "the_void": {
     "nombre": "El vacío",
@@ -294,12 +362,16 @@
   "warm_ocean": {
     "nombre": "Océano cálido",
     "slug": "oceano-calido",
-    "descripcion": "Mar tropical con arrecifes de coral y muchísimos peces. Es el único sitio donde hay coral vivo."
+    "descripcion": "Aguas turquesas con arrecifes de coral, peces tropicales y tortugas. Es el único sitio con corales vivos, que solo se conservan si los sacas con Toque de Seda.",
+    "notas": "El coral sacado sin Toque de Seda sale muerto y gris. Y fuera del agua, el coral vivo también se muere.",
+    "consejo": "Ven con Toque de Seda y con Respiración Acuática. Aquí no hay monumentos: los oceánicos están en los mares profundos."
   },
   "warped_forest": {
     "nombre": "Bosque deformado",
     "slug": "bosque-deformado",
-    "descripcion": "Bosque azul del Nether. Es la zona más segura del infierno: casi no aparecen mobs hostiles."
+    "descripcion": "Bosque azul del Nether, silencioso y sin hoglins. Es la zona más segura de todo el Nether, aunque los endermans están por todas partes.",
+    "notas": "Aquí casi no aparece nada hostil salvo endermans, así que es buen sitio para hacer base en el Nether.",
+    "consejo": "Ponte una calabaza tallada y podrás mirar donde quieras sin que los endermans reaccionen. Es también el mejor sitio para cazarlos."
   },
   "windswept_forest": {
     "nombre": "Bosque azotado por el viento",
@@ -314,7 +386,9 @@
   "windswept_hills": {
     "nombre": "Colinas azotadas por el viento",
     "slug": "colinas-azotadas-por-el-viento",
-    "descripcion": "Montañas de piedra con cuevas a la vista. Aquí es donde la esmeralda aparece en la roca."
+    "descripcion": "Colinas peladas de piedra y grava con salientes y cuevas a la vista. Es de los mejores sitios para minar sin cavar: la piedra ya está expuesta.",
+    "notas": "La esmeralda y el carbón salen aquí a la vista, sin necesidad de bajar a la roca base.",
+    "consejo": "Recorre las paredes de los barrancos buscando vetas. Es minería sin picar túneles, que es la parte aburrida."
   },
   "windswept_savanna": {
     "nombre": "Sabana azotada por el viento",

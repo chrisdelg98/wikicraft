@@ -3,6 +3,14 @@
   "id": "deep_dark",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "warden"
+  ],
+  "recursos": [
+    "echo_shard",
+    "sculk",
+    "sculk_sensor"
+  ],
+  "relevancia": "normal"
 }

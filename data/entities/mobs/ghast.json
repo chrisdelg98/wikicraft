@@ -21,5 +21,10 @@
       "maximo": 1,
       "probabilidad": 1
     }
+  ],
+  "apareceEn": [
+    "basalt_deltas",
+    "nether_wastes",
+    "soul_sand_valley"
   ]
 }

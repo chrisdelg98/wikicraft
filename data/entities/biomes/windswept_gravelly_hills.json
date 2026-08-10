@@ -3,6 +3,13 @@
   "id": "windswept_gravelly_hills",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "llama"
+  ],
+  "recursos": [
+    "emerald_ore",
+    "gravel"
+  ],
+  "relevancia": "normal"
 }

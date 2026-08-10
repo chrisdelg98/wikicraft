@@ -3,6 +3,15 @@
   "id": "basalt_deltas",
   "tipo": "bioma",
   "etapa": "nether",
-  "relevancia": "normal",
-  "dimension": "nether"
+  "dimension": "nether",
+  "mobs": [
+    "ghast",
+    "magma_cube"
+  ],
+  "recursos": [
+    "basalt",
+    "blackstone",
+    "magma_block"
+  ],
+  "relevancia": "normal"
 }

@@ -3,6 +3,15 @@
   "id": "flower_forest",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "bee",
+    "rabbit_mob"
+  ],
+  "recursos": [
+    "allium",
+    "honey_bottle",
+    "poppy"
+  ],
+  "relevancia": "normal"
 }

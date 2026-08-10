@@ -3,6 +3,15 @@
   "id": "grove",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "fox",
+    "rabbit_mob",
+    "wolf"
+  ],
+  "recursos": [
+    "powder_snow_bucket",
+    "spruce_log"
+  ],
+  "relevancia": "normal"
 }

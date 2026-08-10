@@ -3,6 +3,14 @@
   "id": "old_growth_pine_taiga",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "fox",
+    "wolf"
+  ],
+  "recursos": [
+    "spruce_log",
+    "sweet_berries"
+  ],
+  "relevancia": "normal"
 }

@@ -3,6 +3,10 @@
   "id": "eroded_badlands",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "recursos": [
+    "gold_ore",
+    "terracotta"
+  ],
+  "relevancia": "normal"
 }

@@ -35,7 +35,9 @@
     }
   ],
   "apareceEn": [
+    "basalt_deltas",
     "bastion_remnant",
-    "nether_fortress"
+    "nether_fortress",
+    "nether_wastes"
   ]
 }

@@ -3,6 +3,13 @@
   "id": "birch_forest",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "bee",
+    "pig"
+  ],
+  "recursos": [
+    "birch_log"
+  ],
+  "relevancia": "normal"
 }

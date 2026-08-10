@@ -3,6 +3,10 @@
   "id": "stony_shore",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "recursos": [
+    "coal_ore",
+    "stone"
+  ],
+  "relevancia": "normal"
 }

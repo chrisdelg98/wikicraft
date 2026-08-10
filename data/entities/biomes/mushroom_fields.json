@@ -3,6 +3,14 @@
   "id": "mushroom_fields",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "mooshroom"
+  ],
+  "recursos": [
+    "brown_mushroom",
+    "mycelium",
+    "red_mushroom"
+  ],
+  "relevancia": "normal"
 }

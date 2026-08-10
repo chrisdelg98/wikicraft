@@ -3,6 +3,15 @@
   "id": "dark_forest",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "creeper",
+    "zombie"
+  ],
+  "recursos": [
+    "brown_mushroom",
+    "dark_oak_log",
+    "red_mushroom"
+  ],
+  "relevancia": "normal"
 }

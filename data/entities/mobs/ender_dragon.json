@@ -21,5 +21,8 @@
     "cristal de end",
     "portal",
     "huevo de dragon"
+  ],
+  "apareceEn": [
+    "the_end"
   ]
 }

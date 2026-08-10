@@ -15,5 +15,11 @@
       "maximo": 1,
       "probabilidad": 1
     }
+  ],
+  "apareceEn": [
+    "plains",
+    "savanna",
+    "savanna_plateau",
+    "sunflower_plains"
   ]
 }

@@ -3,6 +3,14 @@
   "id": "old_growth_spruce_taiga",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "fox",
+    "wolf"
+  ],
+  "recursos": [
+    "podzol",
+    "spruce_log"
+  ],
+  "relevancia": "normal"
 }

@@ -8,8 +8,15 @@
   "contiene": [
     "nether_fortress"
   ],
+  "mobs": [
+    "ghast",
+    "magma_cube",
+    "piglin",
+    "zombified_piglin"
+  ],
   "recursos": [
-    "glowstone_dust"
+    "glowstone_dust",
+    "netherrack"
   ],
   "etiquetas": [
     "nether",

@@ -3,6 +3,14 @@
   "id": "sparse_jungle",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "ocelot",
+    "parrot"
+  ],
+  "recursos": [
+    "bamboo",
+    "jungle_log"
+  ],
+  "relevancia": "normal"
 }

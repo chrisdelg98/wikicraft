@@ -3,6 +3,14 @@
   "id": "deep_lukewarm_ocean",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "glow_squid",
+    "squid",
+    "tropical_fish_mob"
+  ],
+  "recursos": [
+    "prismarine_shard"
+  ],
+  "relevancia": "normal"
 }

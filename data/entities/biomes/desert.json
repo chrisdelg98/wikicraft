@@ -3,6 +3,15 @@
   "id": "desert",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "husk",
+    "rabbit_mob"
+  ],
+  "recursos": [
+    "cactus",
+    "dead_bush",
+    "sand"
+  ],
+  "relevancia": "normal"
 }

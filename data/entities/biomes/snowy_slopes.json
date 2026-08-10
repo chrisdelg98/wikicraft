@@ -3,6 +3,14 @@
   "id": "snowy_slopes",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "goat",
+    "rabbit_mob"
+  ],
+  "recursos": [
+    "powder_snow_bucket",
+    "snowball"
+  ],
+  "relevancia": "normal"
 }

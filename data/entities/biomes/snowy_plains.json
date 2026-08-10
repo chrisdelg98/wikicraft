@@ -3,6 +3,15 @@
   "id": "snowy_plains",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "polar_bear",
+    "rabbit_mob",
+    "stray"
+  ],
+  "recursos": [
+    "ice",
+    "snowball"
+  ],
+  "relevancia": "normal"
 }

@@ -3,6 +3,12 @@
   "id": "pale_garden",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "creaking"
+  ],
+  "recursos": [
+    "pale_oak_log"
+  ],
+  "relevancia": "normal"
 }

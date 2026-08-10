@@ -3,6 +3,13 @@
   "id": "frozen_peaks",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "goat"
+  ],
+  "recursos": [
+    "emerald_ore",
+    "packed_ice"
+  ],
+  "relevancia": "normal"
 }

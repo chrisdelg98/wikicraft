@@ -3,6 +3,17 @@
   "id": "jungle",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "ocelot",
+    "panda",
+    "parrot"
+  ],
+  "recursos": [
+    "bamboo",
+    "cocoa_beans",
+    "jungle_log",
+    "melon"
+  ],
+  "relevancia": "normal"
 }

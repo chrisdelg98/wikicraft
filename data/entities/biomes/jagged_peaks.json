@@ -3,6 +3,13 @@
   "id": "jagged_peaks",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "goat"
+  ],
+  "recursos": [
+    "emerald_ore",
+    "snowball"
+  ],
+  "relevancia": "normal"
 }

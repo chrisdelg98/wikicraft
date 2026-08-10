@@ -3,6 +3,14 @@
   "id": "cold_ocean",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "drowned",
+    "salmon_mob",
+    "squid"
+  ],
+  "recursos": [
+    "kelp"
+  ],
+  "relevancia": "normal"
 }

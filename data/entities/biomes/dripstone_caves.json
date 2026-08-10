@@ -3,6 +3,15 @@
   "id": "dripstone_caves",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "skeleton",
+    "zombie"
+  ],
+  "recursos": [
+    "copper_ore",
+    "dripstone_block",
+    "pointed_dripstone"
+  ],
+  "relevancia": "normal"
 }

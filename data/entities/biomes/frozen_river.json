@@ -3,6 +3,12 @@
   "id": "frozen_river",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "salmon_mob"
+  ],
+  "recursos": [
+    "ice"
+  ],
+  "relevancia": "normal"
 }

@@ -3,6 +3,13 @@
   "id": "windswept_forest",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "wolf"
+  ],
+  "recursos": [
+    "emerald_ore",
+    "oak_log"
+  ],
+  "relevancia": "normal"
 }

@@ -3,6 +3,15 @@
   "id": "deep_cold_ocean",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "drowned",
+    "glow_squid",
+    "salmon_mob"
+  ],
+  "recursos": [
+    "kelp",
+    "prismarine_shard"
+  ],
+  "relevancia": "normal"
 }

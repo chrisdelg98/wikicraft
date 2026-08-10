@@ -3,6 +3,16 @@
   "id": "soul_sand_valley",
   "tipo": "bioma",
   "etapa": "nether",
-  "relevancia": "normal",
-  "dimension": "nether"
+  "dimension": "nether",
+  "mobs": [
+    "enderman",
+    "ghast",
+    "skeleton"
+  ],
+  "recursos": [
+    "bone_block",
+    "soul_sand",
+    "soul_soil"
+  ],
+  "relevancia": "normal"
 }

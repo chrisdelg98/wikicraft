@@ -12,6 +12,8 @@
   "experiencia": 5,
   "noMuerto": true,
   "apareceEn": [
+    "dark_forest",
+    "dripstone_caves",
     "dungeon",
     "plains",
     "trial_chambers"

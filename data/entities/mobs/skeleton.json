@@ -24,7 +24,9 @@
     }
   ],
   "apareceEn": [
+    "dripstone_caves",
     "dungeon",
+    "soul_sand_valley",
     "trial_chambers"
   ]
 }

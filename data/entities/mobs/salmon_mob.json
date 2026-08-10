@@ -21,5 +21,12 @@
       "maximo": 1,
       "probabilidad": 0.05
     }
+  ],
+  "apareceEn": [
+    "cold_ocean",
+    "deep_cold_ocean",
+    "frozen_ocean",
+    "frozen_river",
+    "river"
   ]
 }

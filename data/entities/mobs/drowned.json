@@ -24,6 +24,13 @@
     }
   ],
   "apareceEn": [
-    "ocean_ruins"
+    "cold_ocean",
+    "deep_cold_ocean",
+    "deep_frozen_ocean",
+    "deep_ocean",
+    "frozen_ocean",
+    "ocean",
+    "ocean_ruins",
+    "river"
   ]
 }

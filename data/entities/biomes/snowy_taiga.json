@@ -3,6 +3,14 @@
   "id": "snowy_taiga",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "fox",
+    "stray",
+    "wolf"
+  ],
+  "recursos": [
+    "spruce_log"
+  ],
+  "relevancia": "normal"
 }

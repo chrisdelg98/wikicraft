@@ -3,6 +3,16 @@
   "id": "ocean",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "cod_mob",
+    "dolphin",
+    "drowned",
+    "squid"
+  ],
+  "recursos": [
+    "kelp",
+    "seagrass"
+  ],
+  "relevancia": "normal"
 }

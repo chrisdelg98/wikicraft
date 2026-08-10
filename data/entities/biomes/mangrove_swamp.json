@@ -3,6 +3,16 @@
   "id": "mangrove_swamp",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "frog",
+    "slime",
+    "tadpole"
+  ],
+  "recursos": [
+    "mangrove_log",
+    "mangrove_propagule",
+    "mud"
+  ],
+  "relevancia": "normal"
 }

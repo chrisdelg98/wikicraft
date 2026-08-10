@@ -21,5 +21,9 @@
       "maximo": 1,
       "probabilidad": 0.05
     }
+  ],
+  "apareceEn": [
+    "lukewarm_ocean",
+    "warm_ocean"
   ]
 }

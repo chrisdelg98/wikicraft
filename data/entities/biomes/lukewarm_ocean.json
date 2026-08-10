@@ -3,6 +3,16 @@
   "id": "lukewarm_ocean",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "dolphin",
+    "pufferfish_mob",
+    "squid",
+    "tropical_fish_mob"
+  ],
+  "recursos": [
+    "kelp",
+    "sand"
+  ],
+  "relevancia": "normal"
 }

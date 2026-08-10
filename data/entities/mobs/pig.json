@@ -15,5 +15,11 @@
       "maximo": 1,
       "probabilidad": 1
     }
+  ],
+  "apareceEn": [
+    "birch_forest",
+    "cherry_grove",
+    "forest",
+    "plains"
   ]
 }

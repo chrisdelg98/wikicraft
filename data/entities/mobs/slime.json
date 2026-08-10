@@ -15,5 +15,9 @@
       "maximo": 1,
       "probabilidad": 0.5
     }
+  ],
+  "apareceEn": [
+    "mangrove_swamp",
+    "swamp"
   ]
 }

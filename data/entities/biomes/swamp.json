@@ -3,6 +3,17 @@
   "id": "swamp",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "frog",
+    "slime",
+    "witch"
+  ],
+  "recursos": [
+    "blue_orchid",
+    "clay_ball",
+    "lily_pad",
+    "oak_log"
+  ],
+  "relevancia": "normal"
 }

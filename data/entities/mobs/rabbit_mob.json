@@ -28,5 +28,17 @@
       "probabilidad": 0.1,
       "soloAlMorirPorJugador": true
     }
+  ],
+  "apareceEn": [
+    "cherry_grove",
+    "desert",
+    "flower_forest",
+    "grove",
+    "ice_spikes",
+    "meadow",
+    "snowy_beach",
+    "snowy_plains",
+    "snowy_slopes",
+    "taiga"
   ]
 }

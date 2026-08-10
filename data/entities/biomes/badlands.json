@@ -3,6 +3,11 @@
   "id": "badlands",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "recursos": [
+    "gold_ore",
+    "red_sand",
+    "terracotta"
+  ],
+  "relevancia": "normal"
 }

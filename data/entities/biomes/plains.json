@@ -6,7 +6,17 @@
   "dimension": "superficie",
   "peligro": "facil",
   "mobs": [
+    "chicken_mob",
+    "cow",
+    "donkey",
+    "horse",
+    "pig",
+    "sheep",
     "zombie"
+  ],
+  "recursos": [
+    "oak_log",
+    "wheat_seeds"
   ],
   "etiquetas": [
     "llanura",

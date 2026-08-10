@@ -3,6 +3,14 @@
   "id": "bamboo_jungle",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "panda",
+    "parrot"
+  ],
+  "recursos": [
+    "bamboo",
+    "jungle_log"
+  ],
+  "relevancia": "normal"
 }

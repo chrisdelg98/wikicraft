@@ -3,6 +3,15 @@
   "id": "river",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "drowned",
+    "salmon_mob",
+    "squid"
+  ],
+  "recursos": [
+    "clay_ball",
+    "sugar_cane"
+  ],
+  "relevancia": "normal"
 }

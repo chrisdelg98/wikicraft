@@ -7,5 +7,11 @@
   "categoria": "pasivo",
   "dimension": [
     "superficie"
+  ],
+  "apareceEn": [
+    "frozen_peaks",
+    "jagged_peaks",
+    "snowy_slopes",
+    "windswept_hills"
   ]
 }

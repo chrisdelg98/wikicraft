@@ -21,5 +21,10 @@
       "maximo": 1,
       "probabilidad": 0.25
     }
+  ],
+  "apareceEn": [
+    "deep_frozen_ocean",
+    "frozen_ocean",
+    "snowy_plains"
   ]
 }

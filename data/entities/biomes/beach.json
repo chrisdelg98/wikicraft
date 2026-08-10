@@ -3,6 +3,13 @@
   "id": "beach",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "turtle"
+  ],
+  "recursos": [
+    "sand",
+    "sugar_cane"
+  ],
+  "relevancia": "normal"
 }

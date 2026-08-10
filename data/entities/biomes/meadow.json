@@ -3,6 +3,15 @@
   "id": "meadow",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "bee",
+    "donkey",
+    "rabbit_mob"
+  ],
+  "recursos": [
+    "cornflower",
+    "honey_bottle"
+  ],
+  "relevancia": "normal"
 }

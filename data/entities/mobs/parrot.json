@@ -15,5 +15,10 @@
       "maximo": 1,
       "probabilidad": 1
     }
+  ],
+  "apareceEn": [
+    "bamboo_jungle",
+    "jungle",
+    "sparse_jungle"
   ]
 }

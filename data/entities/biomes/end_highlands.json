@@ -3,6 +3,15 @@
   "id": "end_highlands",
   "tipo": "bioma",
   "etapa": "end",
-  "relevancia": "normal",
-  "dimension": "end"
+  "dimension": "end",
+  "mobs": [
+    "enderman",
+    "shulker"
+  ],
+  "recursos": [
+    "chorus_fruit",
+    "end_stone",
+    "purpur_block"
+  ],
+  "relevancia": "normal"
 }

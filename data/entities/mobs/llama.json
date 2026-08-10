@@ -15,5 +15,12 @@
       "maximo": 1,
       "probabilidad": 1
     }
+  ],
+  "apareceEn": [
+    "savanna",
+    "savanna_plateau",
+    "windswept_gravelly_hills",
+    "windswept_hills",
+    "windswept_savanna"
   ]
 }

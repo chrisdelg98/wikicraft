@@ -9,6 +9,8 @@
     "nether"
   ],
   "apareceEn": [
-    "bastion_remnant"
+    "bastion_remnant",
+    "crimson_forest",
+    "nether_wastes"
   ]
 }

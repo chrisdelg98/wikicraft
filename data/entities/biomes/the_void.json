@@ -3,6 +3,6 @@
   "id": "the_void",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "relevancia": "normal"
 }

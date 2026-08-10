@@ -3,6 +3,14 @@
   "id": "the_end",
   "tipo": "bioma",
   "etapa": "end",
-  "relevancia": "normal",
-  "dimension": "end"
+  "dimension": "end",
+  "mobs": [
+    "ender_dragon",
+    "enderman"
+  ],
+  "recursos": [
+    "end_stone",
+    "obsidian"
+  ],
+  "relevancia": "normal"
 }

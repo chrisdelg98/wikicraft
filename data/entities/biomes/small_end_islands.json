@@ -3,6 +3,13 @@
   "id": "small_end_islands",
   "tipo": "bioma",
   "etapa": "end",
-  "relevancia": "normal",
-  "dimension": "end"
+  "dimension": "end",
+  "mobs": [
+    "enderman"
+  ],
+  "recursos": [
+    "chorus_fruit",
+    "end_stone"
+  ],
+  "relevancia": "normal"
 }

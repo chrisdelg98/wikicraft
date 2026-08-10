@@ -3,6 +3,14 @@
   "id": "sunflower_plains",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "cow",
+    "horse",
+    "sheep"
+  ],
+  "recursos": [
+    "sunflower"
+  ],
+  "relevancia": "normal"
 }

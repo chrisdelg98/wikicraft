@@ -3,6 +3,15 @@
   "id": "warped_forest",
   "tipo": "bioma",
   "etapa": "nether",
-  "relevancia": "normal",
-  "dimension": "nether"
+  "dimension": "nether",
+  "mobs": [
+    "enderman",
+    "strider"
+  ],
+  "recursos": [
+    "shroomlight",
+    "twisting_vines",
+    "warped_stem"
+  ],
+  "relevancia": "normal"
 }

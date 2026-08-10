@@ -3,6 +3,14 @@
   "id": "cherry_grove",
   "tipo": "bioma",
   "etapa": "inicio",
-  "relevancia": "normal",
-  "dimension": "superficie"
+  "dimension": "superficie",
+  "mobs": [
+    "bee",
+    "pig",
+    "rabbit_mob"
+  ],
+  "recursos": [
+    "cherry_log"
+  ],
+  "relevancia": "normal"
 }
