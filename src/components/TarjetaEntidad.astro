@@ -30,9 +30,9 @@ const facetas = facetasDe(nodo).slice(0, compacto ? 1 : 2)
     >
       {/* Jersey 10 es estrecha: a 16px se quedaba diminuta en las listas de
           relaciones, que es donde mas nombres hay juntos. */}
-      <span class="titulo text-lg">{texto.nombre}</span>
+      <span class="titulo text-xl">{texto.nombre}</span>
       {facetas.length > 0 && (
-        <span class="text-xs text-texto-suave">{ui(idioma, `faceta.${facetas[0]}`)}</span>
+        <span class="text-sm text-texto-suave">{ui(idioma, `faceta.${facetas[0]}`)}</span>
       )}
     </a>
   ) : (

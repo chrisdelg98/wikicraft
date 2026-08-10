@@ -272,6 +272,12 @@
   font-weight: 400;
   font-synthesis-weight: none;
   letter-spacing: 0.01em;
+
+  /* El mismo interlineado apretado que los encabezados. Sin esto heredaba el
+     1,65 del cuerpo, que esta pensado para parrafos, y un nombre de tres
+     lineas como "Receta de Cama negra (con lana negra)" quedaba con mas hueco
+     entre lineas que letra. */
+  line-height: 1.15;
 }
 
 @utility titulo-seccion {
