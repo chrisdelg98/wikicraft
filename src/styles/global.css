@@ -780,6 +780,49 @@ dialog::backdrop {
  * que evita que el velo tine las letras. Con el aislamiento se garantiza ademas
  * que ese -1 no se cuele por detras de nada de fuera.
  */
+/**
+ * El creeper del pie.
+ *
+ * Quieto no hace nada: ni gasta, ni parpadea, ni pide atencion. Al pasar el
+ * raton se hincha y se pone rojo, que es lo que hace uno de verdad justo antes
+ * de explotar, y vuelve a su sitio. Cualquiera que haya jugado lo reconoce sin
+ * que se lo expliquen, y quien no, ve una cara graciosa.
+ *
+ * Sobre lo de cargarlo tarde: no hay nada que cargar. El dibujo es un "use" del
+ * sprite que ya viaja en la pagina, unos cuarenta bytes, y la animacion no
+ * existe hasta que alguien pasa por encima. Bajarlo aparte costaria una
+ * peticion de red para ahorrar cuarenta bytes, que es peor negocio que no
+ * hacerlo. Lo que si se hace es decirle al navegador que puede saltarse el pie
+ * mientras no se acerque a la pantalla, con "content-visibility".
+ *
+ * El rojo es el de la etapa del Nether, el mismo que ya significa peligro en
+ * toda la wiki. Un rojo nuevo aqui seria un color mas que mantener.
+ */
+@utility creeper {
+  color: var(--acento);
+}
+
+@layer utilities {
+  .creeper:hover {
+    animation: creeper-psss 620ms cubic-bezier(0.3, 0, 0.2, 1) both;
+  }
+}
+
+@keyframes creeper-psss {
+  0% {
+    transform: scale(1);
+    color: var(--acento);
+  }
+  45% {
+    transform: scale(1.45);
+    color: var(--etapa-nether);
+  }
+  100% {
+    transform: scale(1);
+    color: var(--acento);
+  }
+}
+
 @utility barrido {
   position: relative;
   isolation: isolate;

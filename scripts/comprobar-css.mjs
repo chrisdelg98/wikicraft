@@ -66,13 +66,19 @@ for (const pagina of PAGINAS) {
  */
 const sueltas = []
 {
-  // Se recorre contando llaves y se borra lo que caiga dentro de una @layer.
-  // Con expresiones regulares no sale: las capas de Tailwind anidan varios
-  // niveles y el patron las daba por sueltas.
+  // Se recorre contando llaves y se borra lo que caiga dentro de una @layer o
+  // de un @keyframes. Con expresiones regulares no sale: las capas de Tailwind
+  // anidan varios niveles y el patron las daba por sueltas.
+  //
+  // Los fotogramas se saltan porque dentro llevan bloques llamados "from" y
+  // "to", que tienen toda la pinta de un selector de elemento y no lo son. Un
+  // "to { color: ... }" hizo saltar la alarma sin motivo.
+  const SALTAR = ['@layer', '@keyframes', '@-webkit-keyframes']
+
   let fuera = ''
   let i = 0
   while (i < css.length) {
-    if (css.startsWith('@layer', i)) {
+    if (SALTAR.some((regla) => css.startsWith(regla, i))) {
       const llave = css.indexOf('{', i)
       const puntoYComa = css.indexOf(';', i)
       if (llave < 0 || (puntoYComa >= 0 && puntoYComa < llave)) {

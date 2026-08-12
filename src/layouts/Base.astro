@@ -222,11 +222,26 @@ const otrosIdiomas = idiomas
       <slot />
     </main>
 
-    <footer class="border-t-2 border-borde bg-superficie">
+    {/* El navegador puede saltarse el pie mientras no se acerque a la pantalla.
+        La altura declarada evita que la barra de desplazamiento pegue un salto
+        cuando decide pintarlo de verdad. */}
+    <footer
+      class="border-t-2 border-borde bg-superficie"
+      style="content-visibility:auto;contain-intrinsic-size:auto 5rem"
+    >
       <div
         class="mx-auto w-full max-w-6xl px-4 py-6 text-sm text-texto-suave flex flex-wrap gap-x-6 gap-y-2 justify-between"
       >
-        <p>{ui(idioma, 'sitio.nombre')} · {ui(idioma, 'sitio.lema')}</p>
+        {/* La cara del creeper. Se hincha y se pone roja al pasar por encima,
+            como cuando uno se acerca demasiado en el juego. Es un guino y no un
+            control, asi que no lleva texto ni foco: quien no pase el raton por
+            ahi no se pierde nada. */}
+        <p class="flex items-center gap-2">
+          <span class="creeper inline-flex" aria-hidden="true">
+            <Icono modulo="creeper" clase="h-5 w-5" />
+          </span>
+          {ui(idioma, 'sitio.nombre')} · {ui(idioma, 'sitio.lema')}
+        </p>
         <p>
           {ui(idioma, 'portada.entidades', { n: grafo.size })}
         </p>

@@ -161,6 +161,29 @@ export const MAPAS = {
     '############',
     '............',
     '............'
+  ],
+
+  /**
+   * La cara del creeper. No es un modulo: vive en el pie de pagina.
+   *
+   * Se dibuja aqui con los demas porque asi entra en el mismo sprite y cada uso
+   * son cuarenta bytes de "use" en vez de un SVG repetido. Y esta cara es de las
+   * pocas cosas de Minecraft que se reconocen sin haber jugado nunca, que es
+   * justo lo que se le pide a un guino en el pie.
+   */
+  creeper: [
+    '............',
+    '............',
+    '..###..###..',
+    '..###..###..',
+    '..###..###..',
+    '.....##.....',
+    '....####....',
+    '....####....',
+    '....####....',
+    '....#..#....',
+    '............',
+    '............'
   ]
 }
 
