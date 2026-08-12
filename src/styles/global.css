@@ -219,6 +219,21 @@
   html {
     scroll-behavior: smooth;
     background: var(--fondo);
+
+    /* El hueco de la barra de desplazamiento se reserva siempre, aunque la
+       pagina quepa entera.
+
+       Sin esto, las secciones cortas se veian distintas a las demas y no era
+       cosa suya: aldeanos son 13 fichas y pociones 16, asi que caben sin
+       desplazar y el navegador quita la barra. Al quitarla la ventana se
+       ensancha unos quince pixeles y el contenido, que va centrado, se corre a
+       la derecha. Comparado con herramientas o mobs, que si desplazan, parecia
+       otra anchura.
+
+       Se nota mas todavia al navegar: cada salto entre una seccion larga y una
+       corta daba un tiron lateral de la pagina entera, y con las transiciones
+       entre paginas quedaba a la vista. */
+    scrollbar-gutter: stable;
   }
 
   body {
@@ -415,7 +430,44 @@
   border-radius: 2px;
 }
 
+/* ---------------------------------------------------------------------------
+   Transiciones entre paginas
+   Al pinchar un enlace, la pagina nueva entra fundida en vez de aparecer de
+   golpe. Es lo que mas se nota de todo esto porque pasa en CADA clic, y aqui se
+   hacen muchos: navegar por conexiones es el producto entero.
+
+   Es la version nativa del navegador entre documentos, no la de Astro: tres
+   lineas de CSS y ni un byte de JavaScript. Donde no esta soportada, la
+   navegacion es la de siempre y no falta nada.
+   --------------------------------------------------------------------------- */
+
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 220ms;
+}
+
+/* La cabecera no se funde con el resto: se queda. Es la misma barra en las dos
+   paginas, y verla desaparecer y volver a aparecer en cada clic delataba que
+   habia habido una recarga, que es justo lo que se venia a disimular. */
+@layer base {
+  header {
+    view-transition-name: cabecera;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
+  /* Los pseudoelementos de la transicion no los alcanza el "*" de abajo, asi
+     que hay que apagarlos aparte. */
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+
   *,
   *::before,
   *::after {
@@ -490,11 +542,29 @@
   border-radius: var(--radius-bloque);
 }
 
+/**
+ * Duracion y curva de todo lo que responde al puntero.
+ *
+ * Estaba en 140ms con la curva por defecto, que a ese tiempo casi no se
+ * distingue de un corte: la tarjeta no parecia moverse, parecia cambiar. Con
+ * 260ms y una salida suave se ve el gesto, y sigue siendo lo bastante corto
+ * para no estorbar a quien va rapido.
+ *
+ * La curva sale deprisa y frena al final, que es como se comporta algo que
+ * tiene peso. Vive aqui como variables para que todo el sitio responda igual:
+ * lo peor de las transiciones es que cada cosa tarde lo suyo.
+ */
+:root {
+  --gesto: 260ms;
+  --gesto-curva: cubic-bezier(0.2, 0.7, 0.3, 1);
+}
+
 @utility bloque-pulsable {
   transition:
-    transform 140ms ease,
-    box-shadow 140ms ease,
-    border-color 140ms ease;
+    transform var(--gesto) var(--gesto-curva),
+    box-shadow var(--gesto) var(--gesto-curva),
+    background-color var(--gesto) var(--gesto-curva),
+    border-color var(--gesto) var(--gesto-curva);
 }
 
 .bloque-pulsable:hover {
@@ -548,11 +618,236 @@ dialog::backdrop {
   backdrop-filter: blur(5px);
 }
 
-/* Trama sutil de cuadricula, como el pixelado de una textura vista de lejos. */
+/* Trama sutil de cuadricula, como el pixelado de una textura vista de lejos.
+   Sin centrar y anclada a su propia esquina: va dentro de la misma caja que las
+   casillas que se encienden, asi que compartir origen es lo que garantiza que
+   una casilla encendida caiga siempre justo entre dos lineas. */
 @utility trama {
   background-image:
     linear-gradient(var(--borde) 1px, transparent 1px),
     linear-gradient(90deg, var(--borde) 1px, transparent 1px);
   background-size: 32px 32px;
   opacity: 0.35;
+}
+
+/**
+ * La rejilla que se enciende al pasar por encima.
+ *
+ * Es el mismo gesto que hace el juego cuando apuntas a un bloque, y el mismo
+ * que ya hacen los huecos de la cuadricula de crafteo. Por eso funciona: no es
+ * un efecto tomado de otro sitio y pegado aqui, es una cosa que la wiki ya
+ * hacia, puesta donde se ve.
+ *
+ * Se enciende de golpe y se apaga despacio, que es lo que deja el rastro por
+ * donde has pasado. Al reves no dice nada.
+ *
+ * Cada casilla mide lo mismo que la trama y arranca en el mismo sitio, asi que
+ * lo que se ilumina cae exactamente entre las lineas.
+ */
+/**
+ * El hueco del icono de una tarjeta de modulo: el relleno sube por abajo y los
+ * dos iconos se relevan.
+ *
+ * Antes esto era un fundido de color y tenia un fallo que no se podia arreglar
+ * ajustando tiempos: el icono iba del verde al blanco mientras el fondo iba del
+ * blanco al verde, asi que los dos pasaban por el mismo tono a mitad de camino
+ * y durante ese tramo el dibujo no se veia. Fundiendo, el cruce es inevitable;
+ * solo se puede elegir cuando ocurre.
+ *
+ * Aqui no hay nada que cruzar. Son tres piezas moviendose a la vez:
+ *
+ *   1. El relleno verde sube desde el borde de abajo.
+ *   2. El icono verde se va por arriba, y se va antes de que el relleno llegue
+ *      a lo alto, asi que mientras se ve esta siempre sobre lo blanco.
+ *   3. El icono blanco entra desde abajo, y entra cuando abajo ya esta verde,
+ *      asi que mientras se ve esta siempre sobre lo verde.
+ *
+ * El contraste deja de depender de un calculo y pasa a depender de la
+ * geometria: cada icono solo aparece sobre el fondo que le va bien.
+ *
+ * Al salir se deshace en el mismo orden inverso, y mas rapido. Llenar es lo que
+ * se quiere mirar; vaciar es solo deshacerlo, y a la misma velocidad se hace
+ * pesado al recorrer las nueve tarjetas seguidas.
+ */
+@utility hueco-icono {
+  position: relative;
+  overflow: hidden;
+}
+
+@layer utilities {
+  /* El relleno. Va en un pseudoelemento y no en el fondo del propio hueco
+     porque "bloque" pinta ahi con la forma corta de "background", que borraria
+     cualquier imagen que le pusieramos al lado. */
+  .hueco-icono::before {
+    content: '';
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 0;
+    background: var(--acento-fondo);
+    transition: height 260ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Los dos iconos, uno encima del otro en la misma casilla de la rejilla y
+     por encima del relleno. */
+  .hueco-icono > * {
+    position: relative;
+    grid-area: 1 / 1;
+  }
+
+  /**
+   * Los tiempos no estan puestos a ojo: se buscaron simulando la animacion
+   * fotograma a fotograma contra dos condiciones que hay que cumplir a la vez.
+   *
+   *   - Que no haya ni un instante con el hueco vacio. Si el que sale termina
+   *     antes de que el otro empiece, parpadea.
+   *   - Que el icono verde no llegue a pisar el relleno verde. Si el relleno
+   *     sube mas rapido de lo que el se va, se lo come por detras y vuelve a
+   *     desaparecer, que era el fallo original con otra cara.
+   *
+   * De todas las combinaciones que cumplen las dos, esta es la mas corta: 300ms
+   * de principio a fin, 0ms de hueco y 0px de solape.
+   *
+   * La curva del relleno es la mas recta de las tres a proposito. Con la curva
+   * suave subia disparado y alcanzaba al icono que todavia estaba saliendo.
+   */
+  .group:hover .hueco-icono::before {
+    height: 100%;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Se va deprisa y acelerando, como algo que cae hacia arriba. */
+  .group:hover .icono-sale {
+    transform: translateY(-190%);
+    transition: transform 160ms cubic-bezier(0.5, 0, 0.9, 0.4);
+  }
+
+  /* Entra a los 80ms, con el otro todavia en pantalla y el relleno ya cubriendo
+     el borde de abajo por donde asoma. */
+  .group:hover .icono-entra {
+    transform: translateY(0);
+    transition: transform 220ms cubic-bezier(0.2, 0.7, 0.3, 1) 80ms;
+  }
+
+  /* Al soltar se deshace en el orden inverso: primero se va el blanco, luego
+     baja el relleno y el verde vuelve el ultimo. */
+  .icono-sale {
+    transform: translateY(0);
+    transition: transform 220ms cubic-bezier(0.2, 0.7, 0.3, 1) 80ms;
+  }
+
+  .icono-entra {
+    transform: translateY(190%);
+    transition: transform 160ms cubic-bezier(0.5, 0, 0.9, 0.4);
+  }
+}
+
+/* Dentro de "utilities", que es donde vive la utilidad a la que corrige. Suelta
+   le ganaria a cualquier clase de transicion que se le pusiera al lado, que es
+   el enredo que ya nos costo cuatro intentos con los botones. Aqui gana por
+   especificidad, que es como debe ganar. */
+@layer utilities {
+  .hueco-icono:hover,
+  .group:hover .hueco-icono {
+    transition:
+      background-color 560ms var(--gesto-curva),
+      color 0s 104ms;
+  }
+}
+
+/**
+ * Barrido al pasar por encima, para las pestanas del menu.
+ *
+ * El fondo propio del boton no cambia: por encima se llena un velo verde de
+ * izquierda a derecha, muy tenue, y se apaga al salir.
+ *
+ * Se llamaba "mosaico" y no lo es. Empezo siendo un damero de cuadros, primero
+ * de 4px y luego de 16, y ninguno de los dos valia: el pequeno se leia como una
+ * textura sucia y el grande competia con el texto de encima. Despues fue liso
+ * pero avanzando a saltos, y los saltos tampoco: en un boton pequeno se leen
+ * como un tiron y no como bloques. Lo que queda es un barrido liso y suave, y
+ * el nombre se ha cambiado detras para no mentir sobre lo que hace.
+ *
+ * El verde va al 12%, que es poco a proposito. Esto acompana al puntero; si se
+ * nota mas que el nombre de la seccion, esta estorbando en vez de ayudando.
+ *
+ * No lleva ni un elemento nuevo en el HTML, y eso aqui importa mas que en otros
+ * sitios: el menu esta en las 5.271 paginas, asi que cada span de mas se paga
+ * 5.271 veces.
+ *
+ * Va en "::after" con z-index -1 y el boton aislado. Asi se pinta por encima
+ * del fondo del boton pero por debajo del icono y del texto, que es lo unico
+ * que evita que el velo tine las letras. Con el aislamiento se garantiza ademas
+ * que ese -1 no se cuele por detras de nada de fuera.
+ */
+@utility barrido {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+@layer utilities {
+  .barrido::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: var(--acento);
+    /* Borde ancho y difuminado: como ya no hay saltos que marcar, lo que se
+       quiere es que el verde entre degradandose y no con una linea recta
+       cruzando el boton. */
+    mask-image: linear-gradient(90deg, #000 25%, transparent 70%);
+    mask-size: 240% 100%;
+    mask-position: 100% 0;
+    opacity: 0;
+    transition: opacity 260ms ease-out;
+  }
+
+  .barrido:hover::after {
+    opacity: 0.12;
+    animation: barrido 340ms cubic-bezier(0.2, 0.7, 0.3, 1) both;
+  }
+}
+
+@keyframes barrido {
+  to {
+    mask-position: 0% 0;
+  }
+}
+
+@utility rejilla-viva {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 32px);
+  grid-auto-rows: 32px;
+
+  /* Las casillas empiezan en la esquina de esta caja, y la trama va DENTRO de
+     esta misma caja anclada a la misma esquina. Compartir origen es lo unico
+     que garantiza que lo que se enciende caiga justo entre dos lineas.
+
+     Se intento antes centrar las dos por separado y no vale: dos patrones de
+     32px centrados en cajas distintas solo coinciden si el numero de columnas
+     es impar, asi que cuadraba o no cuadraba segun el ancho de la ventana.
+
+     En el marcado esta caja se estira 32px por cada lado para cubrir tambien
+     las orillas donde no cabia una casilla entera, y va metida dentro de otra
+     que recorta a ras de la tarjeta. El recorte tiene que estar en la de fuera:
+     puesto en esta, las casillas se pintaban por encima del borde y por fuera
+     de la tarjeta. */
+}
+
+/* Solo donde hay puntero de verdad. En una pantalla tactil el ":hover" se
+   queda pegado despues de tocar, y una casilla encendida a media portada sin
+   motivo aparente parece un fallo. */
+@media (hover: hover) {
+  .rejilla-viva > span {
+    background: var(--acento);
+    opacity: 0;
+    transition: opacity 700ms ease-out;
+  }
+
+  .rejilla-viva > span:hover {
+    opacity: 0.16;
+    transition-duration: 0ms;
+  }
 }

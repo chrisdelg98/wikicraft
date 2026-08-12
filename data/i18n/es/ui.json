@@ -116,6 +116,7 @@
   "pila.etiqueta": "En el inventario",
 
   "faceta.grupo.general": "Tipo",
+  "faceta.grupo.material": "De qué es",
   "faceta.grupo.dimension": "En qué mundo",
   "faceta.grupo.busqueda": "Cómo se encuentra",
   "faceta.explorando": "Explorando",
@@ -176,6 +177,10 @@
   "faceta.proteccion": "Protección",
   "faceta.recoleccion": "Recolección",
   "faceta.maldicion": "Maldición",
+  "faceta.buena": "Te ayuda",
+  "faceta.mala": "Te perjudica",
+  "faceta.sin_efecto": "Sin efecto",
+  "faceta.grupo.caracter": "Qué hace",
   "faceta.bebible": "Se bebe",
   "faceta.arrojadiza": "Se lanza",
   "faceta.persistente": "Deja una nube",
@@ -404,6 +409,7 @@
   "guia.titulo.potions": "Guía de pociones",
   "guia.titulo.villagers": "Guía de aldeanos",
 
+  "filtro.masCategorias": "+{n} más",
   "filtro.abrir": "Filtros",
   "filtro.cerrar": "Cerrar",
   "filtro.limpiar": "Quitar filtros",

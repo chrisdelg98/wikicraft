@@ -71,7 +71,25 @@ const facetasDelModulo = [...new Set(delModulo.flatMap((x) => x.facetas))]
 
 const grupos = gruposFaceta(facetasDelModulo)
 
-const hayFiltros = etapasPresentes.length > 1
+/**
+ * Cuantas categorias se ven sin abrir nada.
+ *
+ * Con todas a la vista, herramientas sacaba veintiuna pastillas en tres filas y
+ * la lista empezaba a media pantalla. Las categorias van ordenadas por cuantas
+ * cosas tienen dentro, asi que las seis primeras son las que casi todo el mundo
+ * quiere; la cola larga sigue estando entera, pero detras del boton de filtros,
+ * que ya existia y no ocupa nada.
+ */
+const MAXIMO_CHIPS = 6
+
+const conCola = grupos.map((g) => ({
+  ...g,
+  visibles: g.facetas.slice(0, MAXIMO_CHIPS),
+  ocultas: g.facetas.length - MAXIMO_CHIPS
+}))
+
+const hayCola = conCola.some((g) => g.ocultas > 0)
+const hayFiltros = etapasPresentes.length > 1 || hayCola
 
 /** Modulos con tabla comparativa propia. Solo tiene sentido en la pagina 1. */
 const hayGuia = actual === 1 && ['villagers', 'potions'].includes(modulo)
@@ -106,16 +124,32 @@ const ventana = []
 for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n++) ventana.push(n)
 ---
 
-<div class="mb-6 flex items-center gap-3">
-  <Icono modulo={modulo} clase="h-10 w-10 shrink-0 text-acento" />
-  <div>
-    <h1 class="text-4xl">
-      {titulo}
-      {faceta && <span class="text-texto-suave"> · {ui(idioma, `faceta.${faceta}`)}</span>}
-    </h1>
-    <p class="text-texto-suave">
-      {ui(idioma, 'listado.resumen', { n: todas.length, pagina: actual, total: totalPaginas })}
-    </p>
+{/* La cabecera del modulo lleva la misma trama y la misma rejilla que la
+    portada. No es adorno repetido: es lo que hace que el gesto de encender
+    casillas sea el idioma del sitio y no una gracia de una sola pantalla.
+
+    Como en la portada, el contenido no intercepta el raton y cada pieza se lo
+    devuelve por su cuenta; si no, el bloque entero apagaria la rejilla. Y son
+    300 casillas y no 600 porque esta franja es mucho mas baja. */}
+<div class="relative mb-6 bloque px-4 py-4">
+  <div class="absolute inset-0 overflow-hidden" aria-hidden="true">
+    <div class="rejilla-viva absolute -inset-8">
+      <div class="trama pointer-events-none absolute inset-0"></div>
+      {Array.from({ length: 300 }, () => <span />)}
+    </div>
+  </div>
+
+  <div class="pointer-events-none relative flex items-center gap-3">
+    <Icono modulo={modulo} clase="h-10 w-10 shrink-0 text-acento" />
+    <div class="pointer-events-auto w-fit">
+      <h1 class="text-4xl">
+        {titulo}
+        {faceta && <span class="text-texto-suave"> · {ui(idioma, `faceta.${faceta}`)}</span>}
+      </h1>
+      <p class="text-texto-suave">
+        {ui(idioma, 'listado.resumen', { n: todas.length, pagina: actual, total: totalPaginas })}
+      </p>
+    </div>
   </div>
 </div>
 
@@ -130,11 +164,13 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
     blanco de una tarjeta se ve vivo. Mismo verde, distinto vecino. Ahora todos
     los botones verdes del sitio tienen el mismo vecino. */}
 {
-  grupos.length > 0 && (
-    <div class="mb-6 space-y-2 bloque bg-superficie-alta p-3">
-      {grupos.map(({ familia, facetas }) => (
-        <nav class="flex flex-wrap items-center gap-2" aria-label={ui(idioma, `faceta.grupo.${familia}`)}>
-          <span class="text-sm font-bold text-texto-suave">{ui(idioma, `faceta.grupo.${familia}`)}</span>
+  conCola.length > 0 && (
+    <div class="mb-6 space-y-1.5 bloque bg-superficie-alta p-2.5">
+      {conCola.map(({ familia, visibles, ocultas }) => (
+        <nav class="flex flex-wrap items-center gap-1.5" aria-label={ui(idioma, `faceta.grupo.${familia}`)}>
+          <span class="mr-0.5 text-sm font-bold text-texto-suave">
+            {ui(idioma, `faceta.grupo.${familia}`)}
+          </span>
           <a
             href={urlCategoria(null)}
             aria-current={faceta ? undefined : 'page'}
@@ -142,7 +178,7 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
           >
             {ui(idioma, 'filtro.todas')}
           </a>
-          {facetas.map(({ clave, cuantas }) => (
+          {visibles.map(({ clave, cuantas }) => (
             <a
               href={urlCategoria(clave)}
               aria-current={clave === faceta ? 'page' : undefined}
@@ -159,6 +195,11 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
               </span>
             </a>
           ))}
+          {ocultas > 0 && (
+            <button type="button" data-abrir-filtros class={PASTILLA_INACTIVA}>
+              {ui(idioma, 'filtro.masCategorias', { n: ocultas })}
+            </button>
+          )}
         </nav>
       ))}
     </div>
@@ -344,6 +385,40 @@ for (let n = Math.max(1, actual - 2); n <= Math.min(totalPaginas, actual + 2); n
             </div>
           </div>
         )}
+
+        {/* Las categorias enteras, incluidas las que no caben fuera. Son
+            enlaces igual que las de arriba: llevan a su propia pagina, no
+            tachan lo que hay en pantalla. */}
+        {conCola
+          .filter((g) => g.ocultas > 0)
+          .map(({ familia, facetas }) => (
+            <div>
+              <h3 class="mb-2 text-base font-bold uppercase tracking-wide text-texto-suave">
+                {ui(idioma, `faceta.grupo.${familia}`)}
+              </h3>
+              <div class="flex flex-wrap gap-1.5">
+                <a
+                  href={urlCategoria(null)}
+                  class={faceta ? PASTILLA_INACTIVA : PASTILLA_ACTIVA}
+                >
+                  {ui(idioma, 'filtro.todas')}
+                </a>
+                {facetas.map(({ clave, cuantas }) => (
+                  <a
+                    href={urlCategoria(clave)}
+                    class={clave === faceta ? PASTILLA_ACTIVA : PASTILLA_INACTIVA}
+                  >
+                    {ui(idioma, `faceta.${clave}`)}
+                    <span
+                      class:list={['ml-1.5', clave === faceta ? 'opacity-75' : 'text-texto-suave']}
+                    >
+                      {cuantas}
+                    </span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          ))}
 
         <p class="text-sm text-texto-suave">{ui(idioma, 'filtro.ambito')}</p>
       </div>

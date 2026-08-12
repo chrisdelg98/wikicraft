@@ -63,6 +63,7 @@
   "pila.etiqueta": "In the inventory",
 
   "faceta.grupo.general": "Type",
+  "faceta.grupo.material": "What it is made of",
   "faceta.grupo.dimension": "Which world",
   "faceta.grupo.busqueda": "How you find it",
   "faceta.explorando": "By exploring",
@@ -123,6 +124,10 @@
   "faceta.proteccion": "Protection",
   "faceta.recoleccion": "Gathering",
   "faceta.maldicion": "Curse",
+  "faceta.buena": "Helps you",
+  "faceta.mala": "Harms you",
+  "faceta.sin_efecto": "No effect",
+  "faceta.grupo.caracter": "What it does",
   "faceta.bebible": "Drinkable",
   "faceta.arrojadiza": "Splash",
   "faceta.persistente": "Lingering",
@@ -218,6 +223,7 @@
   "guia.titulo.potions": "Potion guide",
   "guia.titulo.villagers": "Villager guide",
 
+  "filtro.masCategorias": "+{n} more",
   "filtro.abrir": "Filters",
   "filtro.cerrar": "Close",
   "filtro.limpiar": "Clear filters",

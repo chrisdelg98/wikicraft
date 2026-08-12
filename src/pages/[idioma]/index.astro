@@ -43,22 +43,55 @@ const primerosPasos = PRIMEROS_PASOS.filter((id) => grafo.has(id))
       encerraba en su propia capa. La trama se queda debajo por orden de
       aparicion, que basta y no encierra nada. */}
   <section class="relative mb-12 bloque px-4 py-12 text-center sm:py-16">
-    <div class="trama pointer-events-none absolute inset-0" aria-hidden="true"></div>
+    {/* La cuadricula y las casillas que se encienden, en dos capas anidadas.
 
-    <div class="relative">
-      <h1 class="mx-auto max-w-2xl text-4xl sm:text-5xl">
+        La de fuera recorta a ras de la tarjeta. La de dentro se estira 32px por
+        cada lado para que las casillas cubran tambien las orillas donde no
+        cabia una entera, y lleva la trama pegada a su propia esquina: al
+        compartir caja con las casillas, lo que se enciende cae siempre justo
+        entre dos lineas.
+
+        El recorte va aqui y no en la seccion: en la seccion recortaria la lista
+        del buscador contra el borde, que es el fallo que ya costo un rato la
+        primera vez.
+
+        Las casillas SI reciben el puntero. El contenido viene despues en el
+        HTML y se queda por encima, asi que sobre el titulo o el buscador no se
+        enciende nada. */}
+    <div class="absolute inset-0 overflow-hidden" aria-hidden="true">
+      <div class="rejilla-viva absolute -inset-8">
+        <div class="trama pointer-events-none absolute inset-0"></div>
+        {Array.from({ length: 600 }, () => <span />)}
+      </div>
+    </div>
+
+    {/* El contenido no intercepta el raton, solo sus piezas.
+
+        Este div ocupa toda la franja central aunque el texto no la llene, asi
+        que tal cual apagaba la rejilla en la mitad de la portada: pasabas el
+        raton por un hueco vacio y no se encendia nada, porque debajo del
+        puntero seguia estando este contenedor.
+
+        Cada pieza se lo devuelve por su cuenta, y con "w-fit" su caja se
+        ajusta al texto en vez de ocupar la linea entera. El resultado es el
+        que se quiere: se ilumina todo el hueco libre y las letras hacen de
+        sombra, que ademas es lo que hace un bloque de verdad. El texto se
+        sigue pudiendo seleccionar. */}
+    <div class="pointer-events-none relative">
+      <h1 class="pointer-events-auto mx-auto w-fit max-w-2xl text-4xl sm:text-5xl">
         {ui(idioma, 'portada.titulo')}
       </h1>
-      <p class="mx-auto mt-3 max-w-xl text-texto-suave">
+      <p class="pointer-events-auto mx-auto mt-3 w-fit max-w-xl text-texto-suave">
         {ui(idioma, 'portada.subtitulo')}
       </p>
 
-      <div class="mx-auto mt-6 max-w-xl text-left">
+      <div class="pointer-events-auto mx-auto mt-6 max-w-xl text-left">
         <Buscador idioma={idioma} />
-        <p class="mt-2 text-center text-sm text-texto-suave">
-          {ui(idioma, 'buscador.atajo')}
-        </p>
       </div>
+
+      <p class="pointer-events-auto mx-auto mt-2 w-fit text-sm text-texto-suave">
+        {ui(idioma, 'buscador.atajo')}
+      </p>
     </div>
   </section>
 
@@ -94,10 +127,13 @@ const primerosPasos = PRIMEROS_PASOS.filter((id) => grafo.has(id))
               href={`/${idioma}/${rutaModulo(idioma, modulo)}/`}
               class="group flex h-full gap-3 bloque bloque-pulsable p-3"
             >
-              {/* El icono en su propio hueco, que se enciende al pasar por
-                  encima: es de las pocas cosas de la portada que se mueven. */}
-              <span class="grid h-12 w-12 shrink-0 place-items-center bloque bg-superficie-alta text-acento transition-colors group-hover:bg-acento-fondo group-hover:text-acento-contraste">
-                <Icono modulo={modulo} clase="h-7 w-7" />
+              {/* Dos copias del icono: la verde se va por arriba y la blanca
+                  llega por abajo, detras del relleno. Con una sola habria que
+                  cambiarle el color a mitad de camino, y ahi es donde antes
+                  desaparecia. */}
+              <span class="hueco-icono grid h-12 w-12 shrink-0 place-items-center bloque bg-superficie-alta">
+                <Icono modulo={modulo} clase="icono-sale h-7 w-7 text-acento" />
+                <Icono modulo={modulo} clase="icono-entra h-7 w-7 text-acento-contraste" />
               </span>
 
               <span class="min-w-0 flex-1">

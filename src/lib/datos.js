@@ -265,7 +265,22 @@ const FACETAS_POR_MODULO = {
   mobs: (e) => [e.categoria, ...(e.dimension ?? [])],
   structures: (e) => [...(e.dimension ?? []), e.comoSeEncuentra],
   biomes: (e) => [e.dimension, e.tipo === 'estructura' ? 'estructura' : null],
-  potions: (e) => [e.presentacion, e.efecto !== 'ninguno' ? e.efecto : null],
+  /**
+   * Por caracter y no por efecto.
+   *
+   * Estaba puesto el efecto, que es distinto en cada pocion: dieciseis
+   * categorias de una pocion cada una. Un filtro que solo puede darte un
+   * resultado no es un filtro, es un indice con otro nombre y ocupando tres
+   * veces mas.
+   *
+   * Lo que si se pregunta al mirar la lista es si una pocion ayuda o fastidia,
+   * porque de eso depende si te la bebes o se la lanzas a otro. El dato ya
+   * estaba en las fichas, sin usar.
+   */
+  potions: (e) => [
+    e.presentacion,
+    e.efecto === 'ninguno' || !e.efecto ? 'sin_efecto' : e.beneficiosa ? 'buena' : 'mala'
+  ],
   recipes: (e) => [e.estacion],
   farms: (e) => [e.dificultad],
   villagers: () => []
@@ -287,7 +302,20 @@ export const facetasDe = ({ entidad, modulo }) =>
  * que anadir una familia no obliga a repasar los nueve modulos.
  */
 const FAMILIAS_FACETA = {
+  caracter: ['buena', 'mala', 'sin_efecto'],
   dimension: ['superficie', 'nether', 'end'],
+  material: [
+    'madera',
+    'piedra',
+    'hierro',
+    'oro',
+    'diamante',
+    'netherita',
+    'cuero',
+    'malla',
+    'caparazon',
+    'ninguno'
+  ],
   busqueda: [
     'explorando',
     'bajo_tierra',
