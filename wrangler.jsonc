@@ -1,0 +1,29 @@
+// Configuracion de despliegue en Cloudflare.
+//
+// El build pasaba y el despliegue fallaba porque el comando configurado en
+// Cloudflare es "npx wrangler deploy" y wrangler no encontraba este archivo:
+// sin el no sabe ni como se llama el proyecto ni que carpeta publicar.
+//
+// Lo importante de esta configuracion es lo que NO lleva: no hay "main", asi
+// que no se despliega ni una linea de codigo de servidor. Cloudflare se limita
+// a servir los archivos de dist/, que es exactamente la restriccion del
+// proyecto (docs/decisiones/001-arquitectura-estatica.md). Si algun dia
+// aparece aqui un "main", es que alguien se ha saltado esa decision.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "wikicraft",
+
+  // Fecha con la que se fija el comportamiento de la plataforma. Se cambia a
+  // proposito y no sola, para que una actualizacion de Cloudflare no altere el
+  // sitio sin que nadie lo haya decidido.
+  "compatibility_date": "2026-08-15",
+
+  "assets": {
+    "directory": "./dist",
+
+    // Las paginas que no existen se sirven con nuestro 404, que esta en
+    // espanol y lleva el buscador. Sin esto saldria el error generico de
+    // Cloudflare, que ademas esta en ingles.
+    "not_found_handling": "404-page"
+  }
+}
