@@ -151,6 +151,21 @@ if (sueltas.length > 0) {
         <p class="mt-2 max-w-prose text-sm text-texto-suave">
           {ui(idioma, 'encantador.trabajosAyuda')}
         </p>
+
+        {/* Renombrar salio de un caso real: alguien siguio la ruta al pie de la
+            letra, le puso nombre en una operacion aparte y el ultimo paso le
+            costo 12 niveles en vez de 8. La herramienta no se equivocaba, es
+            que no contemplaba el nombre. Ahora si, y ademas dice donde ponerlo
+            para que cueste uno en vez de ocho. */}
+        <label class="mt-4 flex max-w-prose cursor-pointer items-start gap-2.5 bloque bg-superficie-alta p-3">
+          <input type="checkbox" data-renombrar class="mt-1 h-4 w-4 shrink-0 accent-[var(--acento-fondo)]" />
+          <span>
+            <span class="block font-semibold">{ui(idioma, 'encantador.renombrar')}</span>
+            <span class="mt-0.5 block text-sm text-texto-suave">
+              {ui(idioma, 'encantador.renombrarAyuda')}
+            </span>
+          </span>
+        </label>
       </section>
 
       <div class="flex flex-wrap gap-3">
@@ -186,6 +201,7 @@ if (sueltas.length > 0) {
       operaciones: ui(idioma, 'encantador.operaciones', { n: '§' }),
       experiencia: ui(idioma, 'encantador.experiencia', { n: '§' }),
       pico: ui(idioma, 'encantador.pico', { n: '§' }),
+      conNombre: ui(idioma, 'encantador.conNombre'),
       pasoObjeto: ui(idioma, 'encantador.pasoObjeto', { objeto: '§O', libro: '§L' }),
       pasoLibros: ui(idioma, 'encantador.pasoLibros', { a: '§A', b: '§B' }),
       libroCon: ui(idioma, 'encantador.libroCon', { lista: '§' }),
@@ -328,7 +344,14 @@ if (sueltas.length > 0) {
       // Un nivel no son los mismos puntos de experiencia segun por donde vayas,
       // asi que se da la suma de los niveles que hay que gastar, no una cifra
       // exacta que dependeria del nivel de partida.
-      const xp = r.coste * 8
+      // Renombrar cuesta un nivel y NO anade una operacion si se hace a la vez
+      // que la primera union. Hacerlo aparte si la anade, y esa operacion de mas
+      // empuja la penalizacion de todas las siguientes: en un pico de cuatro
+      // pasos son ocho niveles de diferencia por escribir el nombre en el
+      // momento equivocado.
+      const renombrar = document.querySelector('[data-renombrar]').checked
+      const coste = r.coste + (renombrar ? 1 : 0)
+      const xp = coste * 8
 
       const pasos = r.pasos
         .map((p, i) => {
@@ -348,8 +371,9 @@ if (sueltas.length > 0) {
               <span class="min-w-0">
                 <span class="block">${texto}</span>
                 <span class="mt-1 block text-sm text-texto-suave">
-                  ${rellenar(T.niveles, { '§': p.coste })}
+                  ${rellenar(T.niveles, { '§': p.coste + (renombrar && i === 0 ? 1 : 0) })}
                 </span>
+                ${renombrar && i === 0 ? `<span class="mt-1 block text-sm font-semibold">${T.conNombre}</span>` : ''}
               </span>
             </li>`
         })
@@ -359,7 +383,7 @@ if (sueltas.length > 0) {
         <section class="bloque bg-superficie-alta p-4">
           <h2 class="titulo-seccion">${T.resultado}</h2>
           <p class="text-sm font-semibold text-texto-suave">${T.coste}</p>
-          <p class="mb-1 text-3xl font-extrabold">${rellenar(T.niveles, { '§': r.coste })}</p>
+          <p class="mb-1 text-3xl font-extrabold">${rellenar(T.niveles, { '§': coste })}</p>
           <p class="text-sm text-texto-suave">
             ${rellenar(T.operaciones, { '§': r.pasos.length })} ·
             ${rellenar(T.experiencia, { '§': xp })}

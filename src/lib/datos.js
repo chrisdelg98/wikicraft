@@ -144,6 +144,9 @@ export const rutaModulo = (idioma, modulo) => ui(idioma, `ruta.${modulo}`)
  */
 export const RUTA_ENCANTADOR = 'encantador'
 
+/** Lo mismo para el generador de nombres: la ruta la fija el nombre del archivo. */
+export const RUTA_NOMBRES = 'nombres'
+
 export const rutaDe = (idioma, id) => {
   const nodo = grafo.get(id)
   if (!nodo) return null

@@ -10,7 +10,8 @@ import {
   entidadesDe,
   rutaModulo,
   grafo,
-  RUTA_ENCANTADOR
+  RUTA_ENCANTADOR,
+  RUTA_NOMBRES
 } from '../../lib/datos.js'
 
 export function getStaticPaths() {
@@ -95,22 +96,33 @@ const primerosPasos = PRIMEROS_PASOS.filter((id) => grafo.has(id))
     </div>
   </section>
 
-  {/* La calculadora no es un modulo mas: es lo unico del sitio que hace algo
-      en vez de contarlo, y desde el listado de encantamientos no se llega. */}
-  <section class="mb-12">
-    <a
-      href={`/${idioma}/${RUTA_ENCANTADOR}/`}
-      class="flex flex-wrap items-center gap-x-5 gap-y-2 bloque bloque-pulsable bg-superficie-alta p-5"
-    >
-      <Icono modulo="enchantments" clase="h-10 w-10 shrink-0 text-acento" />
-      <span class="min-w-0 flex-1">
-        <span class="titulo block text-2xl">{ui(idioma, 'encantador.titulo')}</span>
-        <span class="mt-1 block text-texto-suave">{ui(idioma, 'encantador.subtitulo')}</span>
-      </span>
-      <span class="shrink-0 bloque bg-acento-fondo px-4 py-2 font-bold text-acento-contraste">
-        {ui(idioma, 'encantador.abrir')}
-      </span>
-    </a>
+  {/* Las herramientas no son modulos: son lo unico del sitio que hace algo en
+      vez de contarlo, y a ninguna se llega desde el menu. Van juntas y arriba
+      porque es lo que nadie mas tiene. */}
+  <section class="mb-12 grid gap-3 lg:grid-cols-2">
+    {
+      [
+        { ruta: RUTA_ENCANTADOR, icono: 'enchantments', clave: 'encantador' },
+        { ruta: RUTA_NOMBRES, icono: 'items', clave: 'nombres' }
+      ].map(({ ruta, icono, clave }) => (
+        <a
+          href={`/${idioma}/${ruta}/`}
+          class="group flex h-full flex-col gap-3 bloque bloque-pulsable bg-superficie-alta p-5"
+        >
+          <span class="flex items-start gap-3">
+            <span class="hueco-icono grid h-12 w-12 shrink-0 place-items-center bloque bg-superficie">
+              <Icono modulo={icono} clase="icono-sale h-7 w-7 text-acento" />
+              <Icono modulo={icono} clase="icono-entra h-7 w-7 text-acento-contraste" />
+            </span>
+            <span class="titulo min-w-0 flex-1 text-2xl">{ui(idioma, `${clave}.titulo`)}</span>
+          </span>
+          <span class="block text-texto-suave">{ui(idioma, `${clave}.subtitulo`)}</span>
+          <span class="mt-auto w-fit bloque bg-acento-fondo px-4 py-2 font-bold text-acento-contraste">
+            {ui(idioma, `${clave}.abrir`)}
+          </span>
+        </a>
+      ))
+    }
   </section>
 
   <section class="mb-12">
