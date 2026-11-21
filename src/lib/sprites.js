@@ -62,6 +62,17 @@ export const TABLA = {
   n: [['#a8763f', 1]],
   u: [['#b8823f', 1]],
   U: [['#9a6a32', 1]],
+  // Libros de la estanteria.
+  r: [['#9b2b2b', 1]],
+  j: [['#2b4f9b', 1]],
+  G: [['#3b7a2b', 1]],
+  // Fondos de las menas: piedra, pizarra profunda y roca del Nether.
+  1: [['#8f8f8f', 1]],
+  2: [['#777777', 1]],
+  3: [['#56565e', 1]],
+  4: [['#45454c', 1]],
+  5: [['#7a2f2f', 1]],
+  6: [['#5e2222', 1]],
   q: [['#c9a2ee', 1]],
   N: [['#6e4a26', 1]]
 }
@@ -895,6 +906,576 @@ const ladrillos = (x, y) => {
 }
 
 // ---------------------------------------------------------------------------
+// Herramientas y armaduras
+// La hoja o la pieza va en currentColor, que es el color del material; el
+// mango es siempre de madera.
+// ---------------------------------------------------------------------------
+
+const ESPADA = [
+  VACIA,
+  '............ooo.',
+  '...........o*+o.',
+  '..........o*+#o.',
+  '.........o*+#o..',
+  '........o*+#o...',
+  '.......o*+#o....',
+  '......o*+#o.....',
+  '..=..o*+#o......',
+  '...=.+#o........',
+  '....=...........',
+  '...xX=..........',
+  '..xX..=.........',
+  '.xX.............',
+  '==..............',
+  VACIA
+]
+
+/*
+ * Todas en diagonal, como en el juego: el mango sube desde la esquina de
+ * abajo a la izquierda y la cabeza queda arriba a la derecha. Rectas se
+ * reconocian peor, porque nadie las ha visto nunca asi en su inventario.
+ *
+ * Las que se dibujaban a mano pixel a pixel salian descuadradas: la guarda de
+ * la espada no caia sobre la hoja y parecia despegada. Ahora se generan sobre
+ * un eje: "s" es la distancia a lo largo del mango (crece hacia arriba a la
+ * derecha) y "p" la distancia hacia los lados (positiva arriba a la
+ * izquierda). Todo lo que comparte eje queda unido por construccion.
+ */
+
+const sobreEje = (pintar, { borde = true } = {}) => {
+  const celdas = Array.from({ length: 16 }, (_, y) =>
+    Array.from({ length: 16 }, (_, x) => pintar(x - y, 15 - x - y, x, y) ?? '.')
+  )
+  const cabeza = (x, y) => '#+*-='.includes(celdas[y]?.[x] ?? '.')
+  if (borde) {
+    for (let y = 0; y < 16; y++) {
+      for (let x = 0; x < 16; x++) {
+        if (celdas[y][x] !== '.') continue
+        if (cabeza(x - 1, y) || cabeza(x + 1, y) || cabeza(x, y - 1) || cabeza(x, y + 1)) celdas[y][x] = 'o'
+      }
+    }
+  }
+  return celdas.map((fila) => fila.join(''))
+}
+
+/** El mango: dos lineas de madera, oscura y clara, entre dos puntos del eje. */
+const mango = (s, p, desde, hasta) => (s >= desde && s <= hasta ? (p === 0 ? 'x' : p === -1 ? 'X' : null) : null)
+
+const ESPADA_EJE = sobreEje((s, p) => {
+  // Hoja de tres de ancho, con la arista iluminada y la otra en sombra.
+  if (s >= -1 && s <= 12 && p >= -1 && p <= 1) return p === 1 ? '+' : p === 0 ? '#' : '-'
+  if (s === 13 && p === 0) return '*'
+  // Guarda cruzada, pegada al final de la hoja.
+  if ((s === -3 || s === -2) && Math.abs(p) <= 3) return '='
+  if (s === -4 && Math.abs(p) <= 1) return '='
+  // Empunadura y pomo, en el mismo eje.
+  const m = mango(s, p, -9, -5)
+  if (m) return m
+  if (s >= -11 && s <= -10 && p >= -1 && p <= 0) return '='
+  return null
+})
+
+/**
+ * Pico: un trozo de circulo con el centro sobre el mango, de modo que las
+ * dos puntas quedan a la misma distancia de el. Asi es como se reconoce.
+ */
+const PICO_EJE = sobreEje((s, p, x, y) => {
+  // El circulo pasa por las dos puntas, (2,2) y (13,13), y tiene el centro
+  // sobre el eje del mango: asi el arco es amplio y simetrico, no un gancho.
+  const [cx, cy, radio] = [5.7, 9.3, 8.2]
+  const d = Math.hypot(x - cx, y - cy)
+  const angulo = Math.acos(((x - cx) - (y - cy)) / Math.SQRT2 / (d || 1))
+  if (d >= radio - 1.5 && d <= radio + 0.4 && angulo <= 1.27) {
+    if (d > radio - 0.5) return '+'
+    return p < -2 ? '-' : '#'
+  }
+  // El mango llega al centro del arco: si se queda corto parece una hoz.
+  return mango(s, p, -11, 5)
+})
+
+/**
+ * Hacha: la hoja es una cuna, estrecha donde toca el mango y ancha en el
+ * filo, que va mas claro. Con la cabeza en bloque parecia un mazo.
+ */
+const HACHA_EJE = sobreEje((s, p) => {
+  if (p >= 1 && p <= 6) {
+    const medio = 1 + Math.floor(p * 0.6)
+    if (Math.abs(s - 7) <= medio) return p === 6 ? '*' : p === 5 ? '+' : s - 7 === -medio ? '-' : '#'
+  }
+  if (s >= 6 && s <= 8 && p >= -2 && p <= -2) return '-'
+  return mango(s, p, -11, 11)
+})
+
+/** Pala: hoja ancha que se estrecha hasta la punta. */
+const PALA_EJE = sobreEje((s, p) => {
+  const ancho = s === 4 ? 1 : s <= 10 ? 2 : s <= 12 ? 1 : s === 13 ? 0 : -1
+  if (s >= 4 && Math.abs(p) <= ancho) return s === 12 && p === 0 ? '*' : p > 0 ? '+' : p < 0 ? '-' : '#'
+  return mango(s, p, -11, 3)
+})
+
+/** Lanza: punta larga y fina sobre un mango mas largo que el de la pala. */
+const LANZA_EJE = sobreEje((s, p) => {
+  const ancho = s <= 8 ? 2 : s <= 11 ? 1 : s <= 14 ? 0 : -1
+  if (s >= 6 && Math.abs(p) <= ancho) return p > 0 ? '+' : p < 0 ? '-' : s >= 13 ? '*' : '#'
+  return mango(s, p, -13, 5)
+})
+
+/**
+ * El pico es una media luna simetrica respecto al mango: sus dos puntas caen
+ * a la misma distancia de el, una hacia la izquierda y otra hacia abajo. Asi
+ * es como se reconoce, y es lo que fallaba en las versiones anteriores.
+ */
+const PICO = [
+  VACIA,
+  '......oooooo....',
+  '....oo*++++#o...',
+  '...o*+oooooo#o..',
+  '..o+o....xXo#-o.',
+  '.o+o....xX..o-o.',
+  '.oo....xX...o-o.',
+  '......xX....o=o.',
+  '.....xX....o=o..',
+  '....xX.....oo...',
+  '...xX...........',
+  '..xX............',
+  '.xX.............',
+  'xX..............',
+  VACIA,
+  VACIA
+]
+
+/** La cabeza del hacha abraza el mango: hoja grande a un lado y talon al otro. */
+/*
+ * A 32 px una herramienta se reconoce por la silueta, no por el detalle: con
+ * cabezas redondeadas la pala, el hacha y la lanza eran la misma mancha. Por
+ * eso cada una exagera lo suyo: el hacha, el filo recto; la pala, un rombo
+ * grande; la lanza, una punta larga.
+ */
+/** Hacha: hoja en banderin, filo recto a la izquierda, mango que asoma arriba. */
+const HACHA = [
+  VACIA,
+  '...ooooo...xX...',
+  '..o*+++#o.xX....',
+  '..o+++##oxX.....',
+  '..o+###oxX......',
+  '..o+##oxX.......',
+  '..o#-oxX........',
+  '..oooxX.........',
+  '....xX..........',
+  '...xX...........',
+  '..xX............',
+  '.xX.............',
+  'xX..............',
+  VACIA,
+  VACIA,
+  VACIA
+]
+
+/**
+ * Pala: un rombo de esquinas vivas, con la cara iluminada a un lado de su eje
+ * y en sombra al otro. Redondeada parecia una cuchara.
+ */
+const PALA = Array.from({ length: 16 }, (_, y) =>
+  Array.from({ length: 16 }, (_, x) => {
+    const d = Math.abs(x - 11) + Math.abs(y - 4)
+    if (d <= 4) {
+      if (d === 4) return 'o'
+      if (x === 10 && y === 3) return '*'
+      const lado = x - 11 + (y - 4)
+      return lado < 0 ? '+' : lado > 0 ? '-' : '#'
+    }
+    if (x + y === 13 && y >= 6) return 'x'
+    if (x + y === 14 && y >= 6) return 'X'
+    return '.'
+  }).join('')
+)
+
+/** Arco: la madera curvada hacia arriba a la izquierda y la cuerda en diagonal. */
+const ARCO = [
+  VACIA,
+  '.....xxxxxxx....',
+  '....xXXXXXXMx...',
+  '...xX.....M.....',
+  '..xX.....M......',
+  '.xX.....M.......',
+  '.xX....M........',
+  '.xX...M.........',
+  '.xX..M..........',
+  '.xX.M...........',
+  '.xXM............',
+  '.XM.............',
+  '..x.............',
+  VACIA,
+  VACIA,
+  VACIA
+]
+
+const AZADA = [
+  VACIA,
+  VACIA,
+  '....ooooooo.....',
+  '...o*++++#xX....',
+  '...o=ooooxX.....',
+  '...oo...xX......',
+  '.......xX.......',
+  '......xX........',
+  '.....xX.........',
+  '....xX..........',
+  '...xX...........',
+  '..xX............',
+  '.xX.............',
+  'xX..............',
+  VACIA,
+  VACIA
+]
+
+const LANZA = [
+  '..............oo',
+  '.............o*o',
+  '............o*+o',
+  '...........o*+#o',
+  '..........o*+#o.',
+  '.........o+##-o.',
+  '.........xoooo..',
+  '........xX......',
+  '.......xX.......',
+  '......xX........',
+  '.....xX.........',
+  '....xX..........',
+  '...xX...........',
+  '..xX............',
+  '.xX.............',
+  VACIA
+]
+
+const CASCO = [
+  VACIA, VACIA, VACIA,
+  '...oooooooooo...',
+  '..o*+++++++#-o..',
+  '..o+########-o..',
+  '..o+########-o..',
+  '..o##o....o#-o..',
+  '..o#o......o-o..',
+  '..o#o......o-o..',
+  '..oo........oo..',
+  VACIA, VACIA, VACIA, VACIA, VACIA
+]
+
+const PECHERA = [
+  VACIA, VACIA,
+  '..ooo......ooo..',
+  '.o*+#o....o#-=o.',
+  '.o+##oooooo##-o.',
+  '.oo+########-oo.',
+  '...o+######-o...',
+  '...o+######-o...',
+  '...o+######-o...',
+  '...o+######-o...',
+  '...o#######-o...',
+  '...o-------=o...',
+  '...oooooooooo...',
+  VACIA, VACIA, VACIA
+]
+
+const PANTALONES = [
+  VACIA, VACIA,
+  '...oooooooooo...',
+  '...o*+++++#-o...',
+  '...o+######-o...',
+  '...o+##oo##-o...',
+  '...o+#o..o#-o...',
+  '...o+#o..o#-o...',
+  '...o+#o..o#-o...',
+  '...o+#o..o#-o...',
+  '...o+#o..o#-o...',
+  '...o+#o..o#-o...',
+  '...o+#o..o#-o...',
+  '...ooo....ooo...',
+  VACIA, VACIA
+]
+
+const BOTAS = [
+  VACIA, VACIA, VACIA, VACIA, VACIA, VACIA,
+  '...ooo....ooo...',
+  '...o+o....o+o...',
+  '...o#o....o#o...',
+  '...o#o....o#o...',
+  '..oo#o...oo#o...',
+  '.o*+#o..o*+#o...',
+  '.o#--o..o#--o...',
+  '.oooooo.oooooo..',
+  VACIA, VACIA
+]
+
+// ---------------------------------------------------------------------------
+// Piezas de piedra: losa, escaleras y muro
+// Se dibuja la forma y se rellena con una textura; el borde sale solo donde la
+// forma toca el vacio. Asi tres formas y dos texturas cubren mas de cien
+// piezas, y el color lo pone cada piedra.
+// ---------------------------------------------------------------------------
+
+const pieza = (dentro, textura) => {
+  const filas = [VACIA]
+  for (let y = 0; y < 14; y++) {
+    let fila = '.'
+    for (let x = 0; x < 14; x++) {
+      if (!dentro(x, y)) {
+        fila += '.'
+        continue
+      }
+      const borde =
+        x === 0 || y === 0 || x === 13 || y === 13 ||
+        !dentro(x - 1, y) || !dentro(x + 1, y) || !dentro(x, y - 1) || !dentro(x, y + 1)
+      fila += borde ? 'o' : textura(x, y)
+    }
+    filas.push(`${fila}.`)
+  }
+  filas.push(VACIA)
+  return filas
+}
+
+const texturaLisa = (x, y) => {
+  const r = ruido(x, y, 21)
+  return r < 0.08 ? '+' : r < 0.16 ? '-' : '#'
+}
+const texturaLadrillo = (x, y) => ladrillos(x, y + 1)
+
+const FORMA_LOSA = (x, y) => y >= 7
+const FORMA_ESCALERAS = (x, y) => y >= 7 || x >= 7
+const FORMA_MURO = (x, y) => (x >= 4 && x <= 9) || y >= 5
+
+// ---------------------------------------------------------------------------
+// Cobre
+// ---------------------------------------------------------------------------
+
+/** Cobre cortado: cuatro placas con su junta. */
+const cortado = (x, y) => (x === 5 || x === 6 || y === 5 || y === 6 ? (x === 6 || y === 6 ? '-' : '=') : liso(x, y))
+
+/** Cobre cincelado: un marco dentro de otro. */
+const cincelado = (x, y) => {
+  const d = Math.min(x, y, 11 - x, 11 - y)
+  return d === 2 ? '=' : d === 3 ? '+' : d >= 5 ? '-' : '#'
+}
+
+/** Rejilla: agujeros por los que se ve. */
+const rejilla = (x, y) => (x % 4 >= 1 && x % 4 <= 2 && y % 4 >= 1 && y % 4 <= 2 ? '.' : liso(x, y))
+
+/** Bombilla: bloque con la luz en el centro. */
+const bombilla = (x, y) => (x >= 3 && x <= 8 && y >= 3 && y <= 8 ? (x + y < 9 ? 'W' : 'y') : liso(x, y))
+
+const BARROTES = [
+  VACIA,
+  '.#############..',
+  '.#..#..#..#..#..',
+  '.+..+..+..+..+..',
+  '.#..#..#..#..#..',
+  '.#..#..#..#..#..',
+  '.+..+..+..+..+..',
+  '.#..#..#..#..#..',
+  '.#..#..#..#..#..',
+  '.+..+..+..+..+..',
+  '.#..#..#..#..#..',
+  '.#..#..#..#..#..',
+  '.+..+..+..+..+..',
+  '.#..#..#..#..#..',
+  '.=============..',
+  VACIA
+]
+
+const FAROL = [
+  VACIA,
+  '.......kk.......',
+  '......k..k......',
+  '....kkkkkkkk....',
+  '....k*++++#k....',
+  '....k+####-k....',
+  '....k+####-k....',
+  '....k+####-k....',
+  '....k+####-k....',
+  '....k#----=k....',
+  '....kkkkkkkk....',
+  '.....kkkkkk.....',
+  VACIA, VACIA, VACIA, VACIA
+]
+
+/** El cofre de madera, pero pintado con el color de su material. */
+const COFRE_COLOR = COFRE.map((fila) =>
+  fila.replace(/x/g, 'o').replace(/u/g, '+').replace(/U/g, '#').replace(/X/g, '-')
+)
+
+const PARARRAYOS = [
+  VACIA,
+  '.......**.......',
+  '......o++o......',
+  '.......#-.......',
+  '.......#-.......',
+  '.......#-.......',
+  '.......#-.......',
+  '.......#-.......',
+  '.......#-.......',
+  '.......#-.......',
+  '.......#-.......',
+  '.......#-.......',
+  '.......#-.......',
+  '......o==o......',
+  VACIA, VACIA
+]
+
+// ---------------------------------------------------------------------------
+// Menas
+// El fondo es fijo (piedra, pizarra o roca del Nether) y las motas del
+// mineral van en currentColor.
+// ---------------------------------------------------------------------------
+
+/**
+ * Grumos de mineral, no puntos sueltos: cada uno con su brillo arriba y su
+ * borde oscuro abajo, que es lo que hace que una mena se lea como mena. "1" y
+ * "2" son los dos tonos del fondo; al dibujar se cambian por los de pizarra o
+ * Nether.
+ */
+const PLANTILLA_MENA = [
+  '121121211212',
+  '1+#=12121+#1',
+  '2#==12112#=2',
+  '121121212121',
+  '1121+##21211',
+  '212##==12121',
+  '11212121+#12',
+  '2+#1212##=21',
+  '1#=211212121',
+  '212121+#2121',
+  '1211211#=112',
+  '212121121211'
+]
+const mena = (claro, oscuro) => (x, y) => {
+  const c = PLANTILLA_MENA[y]?.[x]
+  if (c === undefined) return ruido(x + 3, y + 3, 31) < 0.45 ? oscuro : claro
+  return c === '1' ? claro : c === '2' ? oscuro : c
+}
+
+/**
+ * Bloque de mineral: bisel claro arriba y a la izquierda, oscuro abajo y a la
+ * derecha, y un brillo en diagonal. Asi se distingue de un bloque de piedra.
+ */
+const bloqueMineral = (x, y) => {
+  if (x === 0 || y === 0) return '*'
+  if (x === 11 || y === 11) return '='
+  if (x === 1 || y === 1) return '+'
+  if (x === 10 || y === 10) return '-'
+  if ((x === 3 && y === 3) || (x === 4 && y === 3) || (x === 3 && y === 4)) return '*'
+  return '#'
+}
+
+/** Lapislazuli: un grumo redondeado con facetas. */
+const LAPIS = [
+  VACIA, VACIA, VACIA,
+  '.......oooo.....',
+  '.....oo*++#o....',
+  '....o*++#+##o...',
+  '...o*+##+###-o..',
+  '..o+##+###--o...',
+  '..o##+###--=o...',
+  '...o#---#-=o....',
+  '....o--==-o.....',
+  '.....oooo.......',
+  VACIA, VACIA, VACIA, VACIA
+]
+
+/** Esmeralda: gema alta de seis lados, mas estrecha que el diamante. */
+const ESMERALDA = [
+  VACIA, VACIA,
+  '.......oo.......',
+  '......o*+o......',
+  '.....o*++#o.....',
+  '....o*++##-o....',
+  '....o+*+#--o....',
+  '....o+++#--o....',
+  '....o++##--o....',
+  '....o+##---o....',
+  '.....o#--=o.....',
+  '......o-=o......',
+  '.......oo.......',
+  VACIA, VACIA, VACIA
+]
+
+// ---------------------------------------------------------------------------
+// Muebles de madera
+// ---------------------------------------------------------------------------
+
+const MESA_TRABAJO = [
+  VACIA,
+  '.xxxxxxxxxxxxxx.',
+  '.xuuuxuuuxuuuux.',
+  '.xxxxxxxxxxxxxx.',
+  '.xuuuxuuuxuuuux.',
+  '.xxxxxxxxxxxxxx.',
+  '.XUUUUUUUUUUUUX.',
+  '.XUmmmmUUUUkkUX.',
+  '.XUmMmmUUUUkUUX.',
+  '.XUUUmmUUUkkUUX.',
+  '.XUUUUUUUUxUUUX.',
+  '.XUUUUUUUxUUUUX.',
+  '.XUUUUUUUUUUUUX.',
+  '.XXXXXXXXXXXXXX.',
+  VACIA, VACIA
+]
+
+const ESTANTERIA = [
+  VACIA,
+  '.xxxxxxxxxxxxxx.',
+  '.xrjGyrGjyrjGyx.',
+  '.xrjGyrGjyrjGyx.',
+  '.xrjGyrGjyrjGyx.',
+  '.xxxxxxxxxxxxxx.',
+  '.xUUUUUUUUUUUUx.',
+  '.xxxxxxxxxxxxxx.',
+  '.xjGryjrGyjGryx.',
+  '.xjGryjrGyjGryx.',
+  '.xjGryjrGyjGryx.',
+  '.xxxxxxxxxxxxxx.',
+  '.xUUUUUUUUUUUUx.',
+  '.xxxxxxxxxxxxxx.',
+  VACIA, VACIA
+]
+
+const BARRIL = [
+  VACIA,
+  '..xxxxxxxxxxxx..',
+  '.xuUuUuUuUuUuUx.',
+  '.kkkkkkkkkkkkkk.',
+  '.xuUuUuUuUuUuUx.',
+  '.xuUuUuUuUuUuUx.',
+  '.xuUuUuUuUuUuUx.',
+  '.xuUuUuUuUuUuUx.',
+  '.xuUuUuUuUuUuUx.',
+  '.xuUuUuUuUuUuUx.',
+  '.kkkkkkkkkkkkkk.',
+  '.xuUuUuUuUuUuUx.',
+  '.xuUuUuUuUuUuUx.',
+  '..xxxxxxxxxxxx..',
+  VACIA, VACIA
+]
+
+const ESCALERA_MANO = [
+  '...X........X...',
+  '...x........x...',
+  '...xuuuuuuuux...',
+  '...x........x...',
+  '...x........x...',
+  '...xuuuuuuuux...',
+  '...x........x...',
+  '...x........x...',
+  '...xuuuuuuuux...',
+  '...x........x...',
+  '...x........x...',
+  '...xuuuuuuuux...',
+  '...x........x...',
+  '...x........x...',
+  '...xuuuuuuuux...',
+  '...X........X...'
+]
+
+// ---------------------------------------------------------------------------
 // Catalogo de simbolos
 // ---------------------------------------------------------------------------
 
@@ -963,7 +1544,52 @@ export const SIMBOLOS = {
   cuenco: CUENCO,
   vagoneta: VAGONETA,
   roca: bloque(roca),
-  ladrillos: bloque(ladrillos)
+  ladrillos: bloque(ladrillos),
+
+  // Herramientas y armaduras
+  espada: ESPADA_EJE,
+  pico: PICO_EJE,
+  hacha: HACHA_EJE,
+  pala: PALA_EJE,
+  azada: AZADA,
+  lanza: LANZA_EJE,
+  casco: CASCO,
+  pechera: PECHERA,
+  pantalones: PANTALONES,
+  botas: BOTAS,
+  arco: ARCO,
+
+  // Piezas de piedra
+  losa_lisa: pieza(FORMA_LOSA, texturaLisa),
+  escaleras_lisa: pieza(FORMA_ESCALERAS, texturaLisa),
+  muro_liso: pieza(FORMA_MURO, texturaLisa),
+  losa_ladrillo: pieza(FORMA_LOSA, texturaLadrillo),
+  escaleras_ladrillo: pieza(FORMA_ESCALERAS, texturaLadrillo),
+  muro_ladrillo: pieza(FORMA_MURO, texturaLadrillo),
+
+  // Cobre
+  cortado: bloque(cortado),
+  cincelado: bloque(cincelado),
+  rejilla: bloque(rejilla),
+  bombilla: bloque(bombilla),
+  barrotes: BARROTES,
+  farol: FAROL,
+  cofre_color: COFRE_COLOR,
+  pararrayos: PARARRAYOS,
+
+  // Menas
+  mena_piedra: bloque(mena('1', '2'), { borde: null }),
+  mena_pizarra: bloque(mena('3', '4'), { borde: null }),
+  mena_nether: bloque(mena('5', '6'), { borde: null }),
+  bloque_mineral: bloque(bloqueMineral),
+  lapis: LAPIS,
+  esmeralda: ESMERALDA,
+
+  // Muebles de madera
+  mesa_trabajo: MESA_TRABAJO,
+  estanteria: ESTANTERIA,
+  barril: BARRIL,
+  escalera_mano: ESCALERA_MANO
 }
 
 /** El tinte trae su plato con colores propios: se respetan. */
@@ -1166,7 +1792,8 @@ const DIRECTOS = {
   gold_nugget: ['pepita', '#f6d53b'],
   copper_nugget: ['pepita', '#e07b4c'],
   diamond: ['gema', '#4fe3d4'],
-  emerald: ['gema', '#2ecc5c'],
+  emerald: ['esmeralda', '#2ecc5c'],
+  lapis_lazuli: ['lapis', '#2c55c5'],
   quartz: ['fragmento', '#efe9e2'],
   amethyst_shard: ['fragmento', '#a77bdb'],
   prismarine_shard: ['fragmento', '#6bb5a6'],
@@ -1226,16 +1853,186 @@ const DIRECTOS = {
   resin_bricks: ['ladrillos', '#d9692a'],
   sulfur_bricks: ['ladrillos', '#d9c53c'],
   cinnabar_bricks: ['ladrillos', '#a8352c'],
-  iron_block: ['hormigon', '#dcdcdc'],
-  gold_block: ['hormigon', '#f6d53b'],
-  copper_block: ['hormigon', '#c56b42'],
-  waxed_copper_block: ['hormigon', '#c56b42'],
-  diamond_block: ['hormigon', '#5fe0d3'],
-  emerald_block: ['hormigon', '#2fcf63'],
-  lapis_block: ['hormigon', '#2c55b5'],
-  redstone_block: ['hormigon', '#b51c14'],
-  coal_block: ['hormigon', '#1e1e1e'],
-  netherite_block: ['hormigon', '#4d4446']
+  iron_block: ['bloque_mineral', '#dcdcdc'],
+  gold_block: ['bloque_mineral', '#f6d53b'],
+  copper_block: ['bloque_mineral', '#c56b42'],
+  waxed_copper_block: ['bloque_mineral', '#c56b42'],
+  diamond_block: ['bloque_mineral', '#5fe0d3'],
+  emerald_block: ['bloque_mineral', '#2fcf63'],
+  lapis_block: ['bloque_mineral', '#2c55b5'],
+  redstone_block: ['bloque_mineral', '#b51c14'],
+  coal_block: ['bloque_mineral', '#1e1e1e'],
+  netherite_block: ['bloque_mineral', '#4d4446'],
+  // Minerales en bruto: el mismo pedrusco que el carbon, en su color.
+  raw_iron: ['carbon', '#d8af93'],
+  raw_gold: ['carbon', '#e8b63a'],
+  raw_copper: ['carbon', '#c96a3f'],
+  raw_iron_block: ['roca', '#c49a7e'],
+  raw_gold_block: ['roca', '#dca42e'],
+  raw_copper_block: ['roca', '#b45f38'],
+  ancient_debris: ['roca', '#5e4440'],
+  // Muebles y piezas de madera que no son de ninguna madera concreta.
+  crafting_table: ['mesa_trabajo', null],
+  bookshelf: ['estanteria', null],
+  chiseled_bookshelf: ['estanteria', null],
+  barrel: ['barril', null],
+  ladder: ['escalera_mano', null],
+  iron_bars: ['barrotes', '#b8b8b8'],
+  lantern: ['farol', '#f5b042'],
+  soul_lantern: ['farol', '#4fd6e0']
+}
+
+// ---------------------------------------------------------------------------
+// Herramientas y armaduras por material
+// ---------------------------------------------------------------------------
+
+const FORMA_EQUIPO = {
+  espada: 'espada', pico: 'pico', hacha: 'hacha', pala: 'pala', azada: 'azada', lanza: 'lanza',
+  casco: 'casco', pechera: 'pechera', pantalones: 'pantalones', botas: 'botas',
+  arco: 'arco'
+}
+
+export const COLOR_MATERIAL = {
+  madera: '#9c7240',
+  piedra: '#8a8a8a',
+  cobre: '#e07b4c',
+  hierro: '#d8d8d8',
+  oro: '#f6d53b',
+  diamante: '#4fe3d4',
+  // Algo mas clara que el lingote: con su tono real, en el tema oscuro las
+  // herramientas de netherita casi desaparecian contra el fondo.
+  netherita: '#655b60',
+  cuero: '#8b5a2b',
+  malla: '#a0a0a0',
+  caparazon: '#4f9a3a'
+}
+
+// ---------------------------------------------------------------------------
+// Cobre en sus cuatro estados
+// Del naranja recien picado al verde del todo oxidado. La cera no cambia el
+// color: solo lo congela.
+// ---------------------------------------------------------------------------
+
+export const ESTADOS_COBRE = {
+  '': '#c56b42',
+  exposed: '#a3795c',
+  weathered: '#6e9c7c',
+  oxidized: '#55a68d'
+}
+
+const PIEZAS_COBRE = [
+  ['cut_copper_slab', 'losa_ladrillo'],
+  ['cut_copper_stairs', 'escaleras_ladrillo'],
+  ['cut_copper', 'cortado'],
+  ['chiseled_copper', 'cincelado'],
+  ['copper_grate', 'rejilla'],
+  ['copper_bulb', 'bombilla'],
+  ['copper_bars', 'barrotes'],
+  ['copper_chain', 'cadena'],
+  ['copper_lantern', 'farol'],
+  ['copper_chest', 'cofre_color'],
+  ['lightning_rod', 'pararrayos'],
+  ['copper_door', 'puerta'],
+  ['copper_trapdoor', 'trampilla'],
+  ['copper_block', 'bloque_mineral'],
+  ['copper', 'bloque_mineral']
+]
+
+const iconoCobre = (id) => {
+  const sinCera = id.replace(/^waxed_/, '')
+  const estado = ['exposed', 'weathered', 'oxidized'].find((e) => sinCera.startsWith(`${e}_`)) ?? ''
+  const resto = estado ? sinCera.slice(estado.length + 1) : sinCera
+  const pieza = PIEZAS_COBRE.find(([p]) => p === resto)
+  if (!pieza) return null
+  const hex = ESTADOS_COBRE[estado]
+  // Los faroles de cobre dan luz verde, sea cual sea su estado.
+  if (pieza[1] === 'farol') return { simbolo: 'farol', estilo: 'color:#7fe07a' }
+  // Puertas y trampillas son las de madera con paleta de cobre.
+  if (pieza[1] === 'puerta' || pieza[1] === 'trampilla') {
+    const estilo = `--m1:${mezcla(hex, '#ffffff', 0.25)};--m2:${hex};--m3:${mezcla(hex, '#000000', 0.35)}`
+    return { simbolo: pieza[1], estilo }
+  }
+  return { simbolo: pieza[1], estilo: `color:${hex}` }
+}
+
+// ---------------------------------------------------------------------------
+// Menas
+// ---------------------------------------------------------------------------
+
+const MINERAL = {
+  coal: '#2a2a2a',
+  iron: '#d8af93',
+  copper: '#e07b4c',
+  gold: '#f6d53b',
+  redstone: '#e02020',
+  lapis: '#2c55c5',
+  diamond: '#4fe3d4',
+  emerald: '#2ecc5c'
+}
+
+const iconoMena = (id) => {
+  const nether = id.match(/^nether_(gold|quartz)_ore$/)
+  if (nether) return { simbolo: 'mena_nether', estilo: `color:${nether[1] === 'gold' ? '#f6d53b' : '#f3eee6'}` }
+  const m = id.match(/^(deepslate_)?(\w+?)_ore$/)
+  if (!m || !MINERAL[m[2]]) return null
+  return { simbolo: m[1] ? 'mena_pizarra' : 'mena_piedra', estilo: `color:${MINERAL[m[2]]}` }
+}
+
+// ---------------------------------------------------------------------------
+// Piedra: piezas y bloques
+// El color sale de la palabra que nombra la piedra. El orden importa: "end
+// stone" antes que "stone", "red sandstone" antes que "sandstone".
+// ---------------------------------------------------------------------------
+
+const COLOR_PIEDRA = [
+  ['petrified_oak', '#c29d62'],
+  ['cobbled_deepslate', '#55555c'],
+  ['deepslate', '#4d4d55'],
+  ['polished_blackstone', '#3a3640'],
+  ['blackstone', '#33303a'],
+  ['mossy', '#7a8a5f'],
+  ['red_nether', '#6a1e1a'],
+  ['nether', '#3a1c22'],
+  ['red_sandstone', '#bb6a2c'],
+  ['sandstone', '#d9c98d'],
+  ['end_stone', '#e3e2a8'],
+  ['smooth_quartz', '#efe9e0'],
+  ['quartz', '#ece6dc'],
+  ['purpur', '#a87aa8'],
+  ['dark_prismarine', '#335e52'],
+  ['prismarine', '#5fa596'],
+  ['andesite', '#8f8f8f'],
+  ['diorite', '#d6d6d6'],
+  ['granite', '#9a6b57'],
+  ['tuff', '#646a5e'],
+  ['mud', '#8a6a50'],
+  ['resin', '#d9692a'],
+  ['sulfur', '#d9c53c'],
+  ['cinnabar', '#a8352c'],
+  ['smooth_stone', '#a0a0a0'],
+  ['stone_brick', '#808080'],
+  ['cobblestone', '#8a8a8a'],
+  ['brick', '#9b4b3c'],
+  ['stone', '#8d8d8d']
+]
+
+const colorPiedra = (id) => COLOR_PIEDRA.find(([clave]) => id.includes(clave))?.[1] ?? null
+
+const iconoPiedra = (id, entidad) => {
+  const pieza = id.match(/_(slab|stairs|wall)$/)
+  const hex = colorPiedra(id)
+  if (!hex) return null
+  const ladrillo = /brick|tile/.test(id)
+  if (pieza) {
+    const forma = { slab: 'losa', stairs: 'escaleras', wall: 'muro' }[pieza[1]]
+    const textura = ladrillo ? 'ladrillo' : forma === 'muro' ? 'liso' : 'lisa'
+    return { simbolo: `${forma}_${textura}`, estilo: `color:${hex}` }
+  }
+  // Bloques enteros: solo si de verdad son bloques y no un boton o una placa
+  // que lleven el nombre de la piedra.
+  if (!(entidad?.categorias ?? []).includes('bloque')) return null
+  if (/_(button|pressure_plate|ore|lamp|torch|fence|door)$/.test(id)) return null
+  return { simbolo: ladrillo ? 'ladrillos' : 'hormigon', estilo: `color:${hex}` }
 }
 
 /**
@@ -1258,6 +2055,21 @@ export const iconoDe = (id, entidad = {}) => {
     const [simbolo, hex] = SIN_TENIR[id]
     return { simbolo, estilo: `color:${hex}` }
   }
+
+  if ((entidad.tipo === 'herramienta' || entidad.tipo === 'armadura') && FORMA_EQUIPO[entidad.categoria]) {
+    return {
+      simbolo: FORMA_EQUIPO[entidad.categoria],
+      estilo: `color:${COLOR_MATERIAL[entidad.material] ?? COLOR_MATERIAL.hierro}`
+    }
+  }
+
+  if (/copper|lightning_rod/.test(id)) {
+    const cobre = iconoCobre(id)
+    if (cobre) return cobre
+  }
+
+  const mena = iconoMena(id)
+  if (mena) return mena
 
   const color = COLORES_IDS.find((c) => id.startsWith(`${c}_`))
   if (color) {
@@ -1288,5 +2100,6 @@ export const iconoDe = (id, entidad = {}) => {
       return { simbolo, estilo: estiloMadera(madera) }
     }
   }
-  return null
+
+  return iconoPiedra(id, entidad)
 }
