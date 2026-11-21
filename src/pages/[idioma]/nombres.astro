@@ -2,88 +2,282 @@
 /**
  * Generador de nombres para el yunque.
  *
- * Deliberadamente corto: escribes, eliges un adorno y copias. Sin colores (no
- * se pueden teclear en el yunque de una partida normal) y sin nada del plano
- * astral de Unicode (se ve como cajas dentro del juego). Lo que sale de aqui se
- * pega y funciona.
+ * Antes era un conversor de letras, y eso casi se puede hacer a mano. Ahora
+ * hace lo que dentro del juego no se puede: ver como queda antes de pagar el
+ * nivel, poner colores (con codigos en Bedrock, con un comando en Java),
+ * inventarse un nombre cuando no se te ocurre ninguno, y saber que nombres
+ * secretos reconoce el juego.
+ *
+ * Sin JavaScript queda lo que se lee: los nombres secretos y el aviso de los
+ * niveles. Lo interactivo arranca con un nombre de ejemplo ya puesto.
  */
 import Base from '../../layouts/Base.astro'
-import { codigosIdioma, ui, RUTA_ENCANTADOR } from '../../lib/datos.js'
-import { ESTILOS, ADORNOS, LIMITE } from '../../lib/nombres.js'
+import { codigosIdioma, ui, t, rutaDe, grafo, RUTA_ENCANTADOR } from '../../lib/datos.js'
+import {
+  ESTILOS,
+  ADORNOS,
+  COLORES,
+  EDICIONES,
+  OBJETOS_COMANDO,
+  IDEA_OBJETOS,
+  IDEA_TONOS,
+  SECRETOS
+} from '../../lib/nombres.js'
 
 export function getStaticPaths() {
   return codigosIdioma.map((idioma) => ({ params: { idioma } }))
 }
 
 const { idioma } = Astro.params
+const EJEMPLO = ui(idioma, 'nombres.ejemplo')
+
+const objetos = OBJETOS_COMANDO.filter((id) => grafo.has(id)).map((id) => ({ id, nombre: t(idioma, id).nombre }))
+
+// Las listas de ideas, partidas por "|". Viajan al navegador en un JSON.
+const CLAVES_IDEAS = [
+  ...['arma', 'herramienta', 'armadura'],
+  ...IDEA_TONOS.map((tono) => `mascota.${tono}`),
+  ...IDEA_TONOS.map((tono) => `complemento.${tono}`)
+]
+const listasIdeas = Object.fromEntries(
+  CLAVES_IDEAS.map((k) => [k, ui(idioma, `nombres.idea.${k}`).split('|').map((s) => s.trim()).filter(Boolean)])
+)
+
+const textosNavegador = {
+  listas: listasIdeas,
+  ui: Object.fromEntries(
+    ['copiado', 'notaJava', 'notaBedrock', 'pasate'].map((k) => [k, ui(idioma, `nombres.${k}`)])
+  )
+}
+
+const chip =
+  'bloque bloque-pulsable px-3 py-1.5 text-sm font-semibold aria-pressed:bg-acento-fondo aria-pressed:text-acento-contraste'
 ---
 
-<Base
-  idioma={idioma}
-  titulo={ui(idioma, 'nombres.titulo')}
-  descripcion={ui(idioma, 'nombres.subtitulo')}
->
-  <header class="mb-8 border-b-2 border-borde pb-5">
+<Base idioma={idioma} titulo={ui(idioma, 'nombres.titulo')} descripcion={ui(idioma, 'nombres.subtitulo')}>
+  <header class="mb-6 border-b-2 border-borde pb-5">
     <h1 class="text-4xl sm:text-5xl">{ui(idioma, 'nombres.titulo')}</h1>
     <p class="mt-4 max-w-4xl text-lg leading-relaxed">{ui(idioma, 'nombres.subtitulo')}</p>
   </header>
 
-  <section class="mb-8">
-    <h2 class="titulo-seccion">{ui(idioma, 'nombres.paso1')}</h2>
-    <input
-      type="text"
-      data-texto
-      value="Afortunado"
-      maxlength={LIMITE}
-      spellcheck="false"
-      class="h-14 w-full bloque bg-superficie-alta px-4 text-xl font-semibold sm:max-w-md"
-    />
-  </section>
+  <div data-nombres class="mb-12">
+    <div class="mb-6 flex flex-wrap items-center gap-3">
+      <span class="font-bold">{ui(idioma, 'nombres.edicion')}</span>
+      <div class="flex gap-1.5" role="group" aria-label={ui(idioma, 'nombres.edicion')}>
+        {
+          Object.keys(EDICIONES).map((e, i) => (
+            <button type="button" data-edicion={e} aria-pressed={i === 0 ? 'true' : 'false'} class={chip}>
+              {ui(idioma, `nombres.edicion.${e}`)}
+            </button>
+          ))
+        }
+      </div>
+    </div>
 
-  <section class="mb-8">
-    <h2 class="titulo-seccion">{ui(idioma, 'nombres.paso2')}</h2>
-    <div class="flex flex-wrap gap-1.5">
-      {
-        ADORNOS.map((a, i) => (
+    <div class="grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,26rem)_minmax(0,1fr)]">
+      {/* La vista previa se queda a la vista mientras eliges: es lo que el
+          yunque no te deja ver antes de pagar. */}
+      <div class="lg:sticky lg:top-36 lg:self-start">
+        <h2 class="titulo-seccion">{ui(idioma, 'nombres.vista')}</h2>
+        <div class="bandeja grid min-h-28 place-items-center p-6">
+          <div
+            data-tooltip
+            class="max-w-full px-3 py-1.5 text-2xl break-words"
+            style="background:rgba(16,0,16,.94);border:2px solid #2d0a6b;box-shadow:inset 0 0 0 1px #5000ff55;color:#fff;font-family:var(--font-titulo, inherit);font-style:italic"
+          >
+            {EJEMPLO}
+          </div>
+        </div>
+        <p class="mt-2 text-sm text-texto-suave" data-nota-edicion>{ui(idioma, 'nombres.notaJava')}</p>
+
+        <div class="mt-4 bloque bg-superficie-alta p-3">
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-sm font-bold">{ui(idioma, 'nombres.paraYunque')}</span>
+            <span data-cuenta class="text-sm tabular-nums text-texto-suave"></span>
+          </div>
+          <output data-salida class="mt-1 block min-h-8 text-xl break-words">{EJEMPLO}</output>
           <button
             type="button"
-            data-adorno={a.id}
-            aria-pressed={i === 1 ? 'true' : 'false'}
-            class="bloque bloque-pulsable px-3 py-1.5 text-base font-semibold aria-pressed:bg-acento-fondo aria-pressed:text-acento-contraste"
+            data-copiar="salida"
+            class="mt-2 w-full bloque bloque-pulsable bg-acento-fondo px-3 py-2 font-bold text-acento-contraste"
           >
-            {a.id === 'ninguno' ? ui(idioma, 'nombres.sinAdorno') : `${a.izq.trim()}${a.der.trim()}`}
+            {ui(idioma, 'nombres.copiar')}
           </button>
-        ))
-      }
-    </div>
-  </section>
+        </div>
 
-  <section class="mb-8">
-    <h2 class="titulo-seccion">{ui(idioma, 'nombres.paso3')}</h2>
-    <ul class="space-y-2">
-      {
-        ESTILOS.map((e) => (
-          <li
-            data-estilo={e.id}
-            class="flex flex-wrap items-center gap-x-4 gap-y-2 bloque bg-superficie-alta p-3"
-          >
-            <span class="w-28 shrink-0 text-sm font-bold text-texto-suave">
-              {ui(idioma, `nombres.estilo.${e.id}`)}
-            </span>
-            <span data-salida class="min-w-0 flex-1 text-xl break-words" />
-            <span data-cuenta class="shrink-0 text-sm tabular-nums text-texto-suave" />
+        {/* Solo en Java: el yunque no deja colores, el comando si. */}
+        <div data-solo="java" class="mt-4 bloque bg-superficie-alta p-3">
+          <h3 class="text-sm font-bold">{ui(idioma, 'nombres.comando')}</h3>
+          <p class="mt-1 text-sm text-texto-suave">{ui(idioma, 'nombres.comandoAyuda')}</p>
+          <label class="mt-2 block text-sm">
+            <span class="sr-only">{ui(idioma, 'nombres.objeto')}</span>
+            <select data-objeto class="h-10 w-full bloque bg-superficie px-2">
+              {objetos.map((o) => <option value={o.id}>{o.nombre}</option>)}
+            </select>
+          </label>
+          <code data-comando class="mt-2 block rounded bg-fondo p-2 font-mono text-xs break-all"></code>
+          <button type="button" data-copiar="comando" class="mt-2 w-full bloque bloque-pulsable px-3 py-1.5 text-sm font-bold">
+            {ui(idioma, 'nombres.copiarComando')}
+          </button>
+        </div>
+      </div>
+
+      <div class="min-w-0">
+        <section class="mb-6">
+          <h2 class="titulo-seccion">{ui(idioma, 'nombres.paso1')}</h2>
+          <input
+            type="text"
+            data-texto
+            value={EJEMPLO}
+            maxlength="50"
+            spellcheck="false"
+            class="h-14 w-full bloque bg-superficie-alta px-4 text-xl font-semibold"
+          />
+          <details class="mt-3 bloque bg-superficie-alta p-3" data-ideas>
+            <summary class="cursor-pointer font-bold">{ui(idioma, 'nombres.ideas')}</summary>
+            <div class="mt-3 flex flex-wrap gap-1.5" role="group" aria-label={ui(idioma, 'nombres.ideaPara')}>
+              {
+                IDEA_OBJETOS.map((o, i) => (
+                  <button type="button" data-idea-objeto={o} aria-pressed={i === 0 ? 'true' : 'false'} class={chip}>
+                    {ui(idioma, `nombres.ideaObjeto.${o}`)}
+                  </button>
+                ))
+              }
+            </div>
+            <div class="mt-2 flex flex-wrap gap-1.5" role="group" aria-label={ui(idioma, 'nombres.ideaTono')}>
+              {
+                IDEA_TONOS.map((tono, i) => (
+                  <button type="button" data-idea-tono={tono} aria-pressed={i === 0 ? 'true' : 'false'} class={chip}>
+                    {ui(idioma, `nombres.ideaTono.${tono}`)}
+                  </button>
+                ))
+              }
+            </div>
             <button
               type="button"
-              data-copiar
-              data-copiado={ui(idioma, 'nombres.copiado')}
-              class="shrink-0 bloque bloque-pulsable bg-acento-fondo px-3 py-1.5 text-sm font-bold text-acento-contraste"
+              data-otra-idea
+              class="mt-3 bloque bloque-pulsable bg-acento-fondo px-4 py-2 font-bold text-acento-contraste"
             >
-              {ui(idioma, 'nombres.copiar')}
+              {ui(idioma, 'nombres.otraIdea')}
             </button>
+          </details>
+        </section>
+
+        <section class="mb-6">
+          <h2 class="titulo-seccion">{ui(idioma, 'nombres.paso2')}</h2>
+          <div class="flex flex-wrap gap-1.5">
+            {
+              ESTILOS.map((e, i) => (
+                <button type="button" data-estilo={e.id} aria-pressed={i === 0 ? 'true' : 'false'} class={chip}>
+                  <span data-muestra>{e.aplicar(ui(idioma, `nombres.estilo.${e.id}`))}</span>
+                </button>
+              ))
+            }
+          </div>
+        </section>
+
+        <section class="mb-6">
+          <h2 class="titulo-seccion">{ui(idioma, 'nombres.paso3')}</h2>
+          <div class="flex flex-wrap gap-1.5">
+            {
+              ADORNOS.map((a, i) => (
+                <button
+                  type="button"
+                  data-adorno={a.id}
+                  aria-pressed={i === 0 ? 'true' : 'false'}
+                  aria-label={a.id === 'ninguno' ? ui(idioma, 'nombres.sinAdorno') : undefined}
+                  class={chip}
+                >
+                  {a.id === 'ninguno' ? ui(idioma, 'nombres.sinAdorno') : `${a.izq.trim()} ${a.der.trim()}`.trim()}
+                </button>
+              ))
+            }
+          </div>
+        </section>
+
+        <section class="mb-6">
+          <h2 class="titulo-seccion">{ui(idioma, 'nombres.paso4')}</h2>
+          <p class="mb-2 text-sm text-texto-suave">{ui(idioma, 'nombres.colorAyuda')}</p>
+          {
+            [
+              ['color', 'nombres.color'],
+              ['color2', 'nombres.color2']
+            ].map(([campo, clave]) => (
+              <div class="mb-3">
+                <span class="mb-1 block text-sm font-bold">{ui(idioma, clave)}</span>
+                <div class="flex flex-wrap gap-1" role="group" aria-label={ui(idioma, clave)}>
+                  <button
+                    type="button"
+                    data-campo={campo}
+                    data-valor=""
+                    aria-pressed="true"
+                    class="grid h-9 min-w-9 place-items-center hueco px-2 text-xs font-bold aria-pressed:border-acento aria-pressed:shadow-[0_0_0_2px_var(--acento)]"
+                  >
+                    {ui(idioma, 'nombres.sinColor')}
+                  </button>
+                  {COLORES.map((c) => (
+                    <button
+                      type="button"
+                      data-campo={campo}
+                      data-valor={c.codigo}
+                      aria-pressed="false"
+                      title={ui(idioma, `nombres.colorNombre.${c.java}`)}
+                      aria-label={ui(idioma, `nombres.colorNombre.${c.java}`)}
+                      class="grid h-9 w-9 place-items-center hueco aria-pressed:border-acento aria-pressed:shadow-[0_0_0_2px_var(--acento)]"
+                    >
+                      <span class="block h-5 w-5" style={`background:${c.hex}`} />
+                    </button>
+                  ))}
+                </div>
+              </div>
+            ))
+          }
+          <label class="flex w-fit cursor-pointer items-center gap-2 font-semibold">
+            <input type="checkbox" data-negrita class="h-5 w-5 accent-[var(--acento)]" />
+            {ui(idioma, 'nombres.negrita')}
+          </label>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <section class="mb-10">
+    <h2 class="titulo-seccion">{ui(idioma, 'nombres.secretos')}</h2>
+    <p class="mb-3 max-w-4xl">{ui(idioma, 'nombres.secretosAyuda')}</p>
+    <ul class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        SECRETOS.map((s) => (
+          <li class="flex flex-col gap-2 bloque bg-superficie-alta p-4">
+            <div class="flex items-center justify-between gap-2">
+              <code class="text-xl font-bold">{s.nombre}</code>
+              <button
+                type="button"
+                data-copiar-texto={s.nombre}
+                class="shrink-0 bloque bloque-pulsable px-3 py-1 text-sm font-bold"
+              >
+                {ui(idioma, 'nombres.copiar')}
+              </button>
+            </div>
+            <p>{ui(idioma, `nombres.secreto.${s.id}`)}</p>
+            {s.mob && grafo.has(s.mob) && (
+              <a href={rutaDe(idioma, s.mob)} class="mt-auto text-sm font-semibold hover:text-acento">
+                {ui(idioma, 'nombres.soloCon', { mob: t(idioma, s.mob).nombre })} →
+              </a>
+            )}
           </li>
         ))
       }
     </ul>
+    {
+      grafo.has('name_tag') && (
+        <p class="mt-3 text-sm text-texto-suave">
+          {ui(idioma, 'nombres.etiquetaNota')}{' '}
+          <a href={rutaDe(idioma, 'name_tag')} class="font-semibold underline decoration-borde-fuerte underline-offset-2 hover:text-acento">
+            {t(idioma, 'name_tag').nombre}
+          </a>
+        </p>
+      )
+    }
   </section>
 
   {/* El aviso no es un detalle: renombrar aparte le costo ocho niveles de mas a
@@ -91,69 +285,183 @@ const { idioma } = Astro.params
   <section class="bloque bg-superficie-alta p-4">
     <h2 class="titulo-seccion">{ui(idioma, 'nombres.cuidado')}</h2>
     <p class="max-w-4xl">{ui(idioma, 'nombres.cuidadoTexto')}</p>
-    <a
-      href={`/${idioma}/${RUTA_ENCANTADOR}/`}
-      class="mt-3 inline-block font-semibold hover:text-acento"
-    >
+    <a href={`/${idioma}/${RUTA_ENCANTADOR}/`} class="mt-3 inline-block font-semibold hover:text-acento">
       {ui(idioma, 'nombres.verOptimizador')}
     </a>
   </section>
+
+  <script type="application/json" data-textos-nombres set:html={JSON.stringify(textosNavegador)} />
 </Base>
 
 <script>
-  import { ESTILOS, ADORNOS, componer, largo, LIMITE } from '../../lib/nombres.js'
+  import {
+    ESTILOS,
+    ADORNOS,
+    EDICIONES,
+    componer,
+    largo,
+    trozos,
+    conCodigos,
+    comandoGive,
+    nuevaIdea
+  } from '../../lib/nombres.js'
 
-  const campo = document.querySelector('[data-texto]')
-  if (campo) {
-    const filas = [...document.querySelectorAll('[data-estilo]')]
-    let adorno = ADORNOS[1]
+  const raiz = document.querySelector('[data-nombres]')
+  const fuente = document.querySelector('[data-textos-nombres]')
+
+  const copiar = async (valor, boton, textoCopiado) => {
+    try {
+      await navigator.clipboard.writeText(valor)
+    } catch {
+      // Sin permiso de portapapeles queda el camino de toda la vida.
+      const auxiliar = document.createElement('textarea')
+      auxiliar.value = valor
+      document.body.append(auxiliar)
+      auxiliar.select()
+      document.execCommand('copy')
+      auxiliar.remove()
+    }
+    const antes = boton.textContent
+    boton.textContent = textoCopiado
+    setTimeout(() => (boton.textContent = antes), 1200)
+  }
+
+  if (raiz && fuente) {
+    const D = JSON.parse(fuente.textContent)
+    const $ = (s) => raiz.querySelector(s)
+    const $$ = (s) => [...raiz.querySelectorAll(s)]
+
+    const campo = $('[data-texto]')
+    const estado = {
+      edicion: 'java',
+      estilo: ESTILOS[0],
+      adorno: ADORNOS[0],
+      color: '',
+      color2: '',
+      negrita: false,
+      ideaObjeto: 'arma',
+      ideaTono: 'epico'
+    }
+
+    const marcar = (selector, atributo, valor) => {
+      for (const b of $$(selector)) b.setAttribute('aria-pressed', String(b.dataset[atributo] === valor))
+    }
 
     const pintar = () => {
-      const texto = campo.value
-      for (const fila of filas) {
-        const estilo = ESTILOS.find((e) => e.id === fila.dataset.estilo)
-        const valor = componer(texto, estilo, adorno)
-        fila.querySelector('[data-salida]').textContent = valor
-        const cuenta = fila.querySelector('[data-cuenta]')
-        cuenta.textContent = `${largo(valor)}/${LIMITE}`
-        // Pasarse del limite no es un aviso estetico: el yunque corta.
-        cuenta.classList.toggle('text-[var(--etapa-nether)]', largo(valor) > LIMITE)
-        cuenta.classList.toggle('font-bold', largo(valor) > LIMITE)
+      const ed = EDICIONES[estado.edicion]
+      const texto = componer(campo.value, estado.estilo, estado.adorno)
+      const opciones = { color: estado.color || null, color2: estado.color2 || null, negrita: estado.negrita }
+
+      // Vista previa: un span por trozo de color. Se construye con nodos de
+      // texto, nunca con innerHTML, porque el nombre lo escribe el usuario.
+      const tooltip = $('[data-tooltip]')
+      tooltip.replaceChildren(
+        ...trozos(texto, opciones).map(({ c, hex }) => {
+          const s = document.createElement('span')
+          s.textContent = c
+          if (hex) s.style.color = hex
+          return s
+        })
+      )
+      tooltip.style.fontStyle = ed.cursiva && !(estado.edicion === 'java' && opciones.color) ? 'italic' : 'normal'
+      tooltip.style.fontWeight = estado.negrita ? '700' : '400'
+
+      // Lo que se pega en el yunque. En Java sin color: el yunque no lo deja.
+      const salida = estado.edicion === 'bedrock' ? conCodigos(texto, opciones) : texto
+      $('[data-salida]').textContent = salida
+      const n = largo(salida)
+      const cuenta = $('[data-cuenta]')
+      cuenta.textContent = `${n}/${ed.limite}`
+      const pasado = n > ed.limite
+      cuenta.classList.toggle('text-[var(--etapa-nether)]', pasado)
+      cuenta.classList.toggle('font-bold', pasado)
+      cuenta.title = pasado ? D.ui.pasate : ''
+
+      $('[data-comando]').textContent = comandoGive($('[data-objeto]').value, texto, opciones)
+      $('[data-nota-edicion]').textContent = estado.edicion === 'java' ? D.ui.notaJava : D.ui.notaBedrock
+      for (const el of $$('[data-solo]')) el.hidden = el.dataset.solo !== estado.edicion
+
+      // Cada estilo se ensena con el nombre que has escrito.
+      for (const b of $$('[data-estilo]')) {
+        const e = ESTILOS.find((x) => x.id === b.dataset.estilo)
+        b.querySelector('[data-muestra]').textContent = e.aplicar(campo.value || '...')
       }
     }
 
     campo.addEventListener('input', pintar)
+    $('[data-objeto]').addEventListener('change', pintar)
+    $('[data-negrita]').addEventListener('change', (ev) => {
+      estado.negrita = ev.target.checked
+      pintar()
+    })
 
-    for (const boton of document.querySelectorAll('[data-adorno]')) {
-      boton.addEventListener('click', () => {
-        adorno = ADORNOS.find((a) => a.id === boton.dataset.adorno)
-        for (const otro of document.querySelectorAll('[data-adorno]')) {
-          otro.setAttribute('aria-pressed', String(otro === boton))
+    for (const b of $$('[data-edicion]')) {
+      b.addEventListener('click', () => {
+        estado.edicion = b.dataset.edicion
+        marcar('[data-edicion]', 'edicion', estado.edicion)
+        pintar()
+      })
+    }
+    for (const b of $$('[data-estilo]')) {
+      b.addEventListener('click', () => {
+        estado.estilo = ESTILOS.find((e) => e.id === b.dataset.estilo)
+        marcar('[data-estilo]', 'estilo', b.dataset.estilo)
+        pintar()
+      })
+    }
+    for (const b of $$('[data-adorno]')) {
+      b.addEventListener('click', () => {
+        estado.adorno = ADORNOS.find((a) => a.id === b.dataset.adorno)
+        marcar('[data-adorno]', 'adorno', b.dataset.adorno)
+        pintar()
+      })
+    }
+    for (const b of $$('[data-campo]')) {
+      b.addEventListener('click', () => {
+        estado[b.dataset.campo] = b.dataset.valor
+        for (const otro of $$(`[data-campo="${b.dataset.campo}"]`)) {
+          otro.setAttribute('aria-pressed', String(otro === b))
         }
         pintar()
       })
     }
 
-    for (const boton of document.querySelectorAll('[data-copiar]')) {
-      boton.addEventListener('click', async () => {
-        const valor = boton.closest('[data-estilo]').querySelector('[data-salida]').textContent
-        try {
-          await navigator.clipboard.writeText(valor)
-        } catch {
-          // Sin permiso de portapapeles queda el camino de toda la vida.
-          const auxiliar = document.createElement('textarea')
-          auxiliar.value = valor
-          document.body.append(auxiliar)
-          auxiliar.select()
-          document.execCommand('copy')
-          auxiliar.remove()
-        }
-        const antes = boton.textContent
-        boton.textContent = boton.dataset.copiado
-        setTimeout(() => (boton.textContent = antes), 1200)
+    // Ideas
+    for (const b of $$('[data-idea-objeto]')) {
+      b.addEventListener('click', () => {
+        estado.ideaObjeto = b.dataset.ideaObjeto
+        marcar('[data-idea-objeto]', 'ideaObjeto', estado.ideaObjeto)
+      })
+    }
+    for (const b of $$('[data-idea-tono]')) {
+      b.addEventListener('click', () => {
+        estado.ideaTono = b.dataset.ideaTono
+        marcar('[data-idea-tono]', 'ideaTono', estado.ideaTono)
+      })
+    }
+    $('[data-otra-idea]').addEventListener('click', () => {
+      let idea = campo.value
+      // Que no repita la que ya tienes puesta.
+      for (let i = 0; i < 8 && idea === campo.value; i++) {
+        idea = nuevaIdea(D.listas, estado.ideaObjeto, estado.ideaTono)
+      }
+      campo.value = idea
+      pintar()
+    })
+
+    for (const b of $$('[data-copiar]')) {
+      b.addEventListener('click', () => {
+        const origen = b.dataset.copiar === 'comando' ? '[data-comando]' : '[data-salida]'
+        copiar($(origen).textContent, b, D.ui.copiado)
       })
     }
 
     pintar()
+  }
+
+  // Los nombres secretos se copian aunque falle todo lo demas.
+  const textoCopiado = fuente ? JSON.parse(fuente.textContent).ui.copiado : '✓'
+  for (const b of document.querySelectorAll('[data-copiar-texto]')) {
+    b.addEventListener('click', () => copiar(b.dataset.copiarTexto, b, textoCopiado))
   }
 </script>
