@@ -11,7 +11,9 @@ import {
   rutaModulo,
   grafo,
   RUTA_ENCANTADOR,
-  RUTA_NOMBRES
+  RUTA_NOMBRES,
+  RUTA_TINTES,
+  RUTA_TELAR
 } from '../../lib/datos.js'
 
 export function getStaticPaths() {
@@ -103,7 +105,9 @@ const primerosPasos = PRIMEROS_PASOS.filter((id) => grafo.has(id))
     {
       [
         { ruta: RUTA_ENCANTADOR, icono: 'enchantments', clave: 'encantador' },
-        { ruta: RUTA_NOMBRES, icono: 'items', clave: 'nombres' }
+        { ruta: RUTA_NOMBRES, icono: 'items', clave: 'nombres' },
+        { ruta: RUTA_TINTES, icono: 'tintes', clave: 'tintes' },
+        { ruta: RUTA_TELAR, icono: 'telar', clave: 'telar' }
       ].map(({ ruta, icono, clave }) => (
         <a
           href={`/${idioma}/${ruta}/`}

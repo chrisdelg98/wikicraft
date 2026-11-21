@@ -18,7 +18,9 @@ import {
   facetasDe,
   familiaDe,
   grupoDe,
-  comoSeConsigue
+  comoSeConsigue,
+  RUTA_TINTES,
+  RUTA_TELAR
 } from '../../../lib/datos.js'
 
 export function getStaticPaths() {
@@ -230,6 +232,15 @@ const parecidos = familiaDe(id)
 // tarjeta al lado de los demas pesaba igual que ellos y robaba atencion a lo
 // que si aporta.
 const consejos = [texto.notas, texto.consejo].filter(Boolean)
+
+// Las fichas de color llevan a la herramienta que las usa. Quien mira el tinte
+// rosa casi siempre quiere saber como sacarlo o que hacer con el; quien mira un
+// estandarte o un patron, como se dibuja.
+const herramienta = /_dye$/.test(id)
+  ? { ruta: RUTA_TINTES, clave: 'tintes', icono: 'tintes' }
+  : id === 'loom' || id === 'shield' || /_banner(_pattern)?$/.test(id)
+    ? { ruta: RUTA_TELAR, clave: 'telar', icono: 'telar' }
+    : null
 ---
 
 <Base idioma={idioma} titulo={texto.nombre} descripcion={texto.descripcion} idEntidad={id}>
@@ -298,6 +309,28 @@ const consejos = [texto.notas, texto.consejo].filter(Boolean)
       {texto.descripcion ?? ui(idioma, 'ficha.sinDescripcion')}
     </p>
   </header>
+
+  {
+    herramienta && (
+      <a
+        href={`/${idioma}/${herramienta.ruta}/`}
+        class="mb-10 flex flex-wrap items-center gap-x-4 gap-y-2 bloque bloque-pulsable bg-superficie-alta p-4"
+      >
+        <span class="grid h-12 w-12 shrink-0 place-items-center bloque bg-superficie">
+          <Icono modulo={herramienta.icono} clase="h-7 w-7 text-acento" />
+        </span>
+        <span class="min-w-0 flex-1">
+          <span class="titulo block text-xl">{ui(idioma, `${herramienta.clave}.titulo`)}</span>
+          <span class="mt-0.5 block text-sm text-texto-suave">
+            {ui(idioma, `${herramienta.clave}.subtitulo`)}
+          </span>
+        </span>
+        <span class="shrink-0 bloque bg-acento-fondo px-3 py-1.5 text-sm font-bold text-acento-contraste">
+          {ui(idioma, `${herramienta.clave}.abrir`)}
+        </span>
+      </a>
+    )
+  }
 
   {
     modulo === 'items' && (

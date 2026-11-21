@@ -1,0 +1,65 @@
+---
+/**
+ * Los dibujos del telar y el tinte, declarados una vez por pagina.
+ *
+ * Cada patron es un <symbol> pintado con currentColor: el disenador apila
+ * capas con <use> y les pone el color por estilo, sin volver a dibujar nada.
+ * Asi el navegador no necesita la geometria de los patrones y el JavaScript
+ * del telar se queda en lo que es interaccion.
+ */
+import { PATRONES, rectsDePatron, MAPA_TINTE, rectsPorCaracter, ANCHO, ALTO } from '../lib/tintes.js'
+
+// El mezclador solo necesita la gota: los patrones son cuarenta y tantos
+// simbolos que alli no se usan.
+const { conPatrones = true } = Astro.props
+
+const patrones = (conPatrones ? PATRONES : []).map((p) => ({ id: p.id, rects: rectsDePatron(p) }))
+
+// El tinte: el color va en currentColor y la luz y la sombra se ponen encima
+// en blanco y negro con transparencia. Un solo simbolo para los dieciseis.
+const tinte = rectsPorCaracter(MAPA_TINTE)
+const CAPAS_TINTE = [
+  { c: 'p', fill: '#2e2118', op: 1 },
+  { c: 'm', fill: '#5a4130', op: 1 },
+  { c: 't', fill: '#927b58', op: 1 },
+  { c: '#', fill: 'currentColor', op: 1 },
+  { c: 'o', fill: 'currentColor', op: 1 },
+  { c: '+', fill: 'currentColor', op: 1 },
+  { c: '-', fill: 'currentColor', op: 1 },
+  { c: '+', fill: '#fff', op: 0.45 },
+  { c: '-', fill: '#000', op: 0.3 },
+  // El contorno es el mismo color muy oscurecido y no negro puro, como en el
+  // juego: asi el tinte negro sigue teniendo borde sobre fondo oscuro.
+  { c: 'o', fill: '#000', op: 0.6 }
+]
+---
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="tinte" viewBox="0 0 16 16" shape-rendering="crispEdges">
+      {
+        CAPAS_TINTE.map(({ c, fill, op }) =>
+          (tinte[c] ?? []).map((r) => (
+            <rect x={r.x} y={r.y} width={r.w} height="1" fill={fill} fill-opacity={op} />
+          ))
+        )
+      }
+    </symbol>
+    {
+      patrones.map(({ id, rects }) => (
+        <symbol id={`pt-${id}`} viewBox={`0 0 ${ANCHO} ${ALTO}`} shape-rendering="crispEdges">
+          {rects.map((r) => (
+            <rect
+              x={r.x}
+              y={r.y}
+              width={r.w}
+              height={r.h}
+              fill="currentColor"
+              fill-opacity={r.a < 1 ? r.a : undefined}
+            />
+          ))}
+        </symbol>
+      ))
+    }
+  </defs>
+</svg>

@@ -37,6 +37,8 @@ const PAGINAS = [
   'es/mobs/index.html',
   'es/lugares/monumento-oceanico/index.html',
   'es/encantador/index.html',
+  'es/tintes/index.html',
+  'es/telar/index.html',
   'es/crafteos/receta-cofre/index.html'
 ]
 
