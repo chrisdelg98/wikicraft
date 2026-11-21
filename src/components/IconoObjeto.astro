@@ -1,0 +1,22 @@
+---
+/**
+ * El icono de un objeto, si tiene. Si no tiene, no pinta nada: quien lo use
+ * no tiene que comprobarlo antes.
+ *
+ * Se puede pasar el icono ya resuelto (las pociones arrojadizas de la tabla de
+ * mejoras no son una entidad) o dejar que se deduzca del identificador.
+ */
+import { grafo } from '../lib/datos.js'
+import { iconoDe } from '../lib/sprites.js'
+
+const { id = null, icono = null, clase = 'h-8 w-8' } = Astro.props
+const resuelto = icono ?? (id ? iconoDe(id, grafo.get(id)?.entidad) : null)
+---
+
+{
+  resuelto && (
+    <svg class:list={['shrink-0', clase]} style={resuelto.estilo} aria-hidden="true" focusable="false">
+      <use href={`/objetos.svg#obj-${resuelto.simbolo}`} />
+    </svg>
+  )
+}

@@ -13,6 +13,8 @@
  * antes de leer nada.
  */
 import { t, ui, rutaDe, grafo, grupoDe } from '../lib/datos.js'
+import { iconoDe } from '../lib/sprites.js'
+import IconoObjeto from './IconoObjeto.astro'
 
 const { idioma, receta } = Astro.props
 
@@ -33,6 +35,27 @@ const etiqueta = (opciones) => {
 
 const titulo = (opciones) =>
   opciones?.length > 1 ? opciones.map((o) => enlace(o).nombre).join(', ') : undefined
+
+/**
+ * El icono de una casilla: el de la primera opcion que tenga dibujo. En
+ * "cualquier madera" sale el tablon de roble, que es lo que casi todo el mundo
+ * pone. Si ninguna tiene dibujo, la casilla se queda solo con el nombre.
+ */
+const iconoCasilla = (opciones) => {
+  // Primero la version base (la que no es variante de nada): asi "cualquier
+  // tablon" ensena el roble y no la acacia, que solo va primera por el abecedario.
+  // Y entre las que no son variante, las de siempre: en el horno, la roca y no
+  // la piedra negra.
+  const PREFERIDAS = ['cobblestone', 'oak_planks', 'oak_log', 'stone', 'coal']
+  const peso = (id) =>
+    (PREFERIDAS.includes(id) ? 0 : 2) + Number(Boolean(grafo.get(id)?.entidad.varianteDe))
+  const ordenadas = [...(opciones ?? [])].sort((a, b) => peso(a) - peso(b))
+  for (const id of ordenadas) {
+    const icono = iconoDe(id, grafo.get(id)?.entidad)
+    if (icono) return icono
+  }
+  return null
+}
 
 const lado = receta.estacion === 'inventario' ? 2 : 3
 
@@ -82,18 +105,25 @@ const medidaResultado = 'h-24 w-24 text-xs sm:h-28 sm:w-28 sm:text-sm'
   <div class="inline-block bandeja">
     <div class="grid gap-1" style={`grid-template-columns:repeat(${lado},minmax(0,1fr))`}>
       {
-        casillas.map((opciones) => (
-          <span
-            class:list={[
-              'grid place-items-center hyphens-auto px-1 text-center leading-[1.25] font-semibold break-words hueco',
-              medida,
-              !opciones && 'hueco-vacio'
-            ]}
-            title={titulo(opciones)}
-          >
-            {etiqueta(opciones) ?? ''}
-          </span>
-        ))
+        casillas.map((opciones) => {
+          const icono = iconoCasilla(opciones)
+          return (
+            <span
+              class:list={[
+                'flex flex-col items-center justify-center gap-1 hyphens-auto px-1 text-center leading-[1.15] font-semibold break-words hueco',
+                medida,
+                !opciones && 'hueco-vacio'
+              ]}
+              title={titulo(opciones) ?? (icono ? etiqueta(opciones) : undefined)}
+            >
+              {icono && <IconoObjeto icono={icono} clase="h-8 w-8 sm:h-10 sm:w-10" />}
+              {/* Con icono, el nombre va debajo y en dos lineas como mucho:
+                  el dibujo ya dice que es, y el nombre completo sale al
+                  pasar el raton. */}
+              <span class:list={[icono && 'line-clamp-2']}>{etiqueta(opciones) ?? ''}</span>
+            </span>
+          )
+        })
       }
     </div>
   </div>
@@ -118,11 +148,13 @@ const medidaResultado = 'h-24 w-24 text-xs sm:h-28 sm:w-28 sm:text-sm'
   <div class="inline-block bandeja">
     <span
       class:list={[
-        'grid place-items-center hyphens-auto px-2 text-center leading-[1.25] font-bold break-words bg-acento-fondo text-acento-contraste hueco',
+        'flex flex-col items-center justify-center gap-1 hyphens-auto px-2 text-center leading-[1.15] font-bold break-words bg-acento-fondo text-acento-contraste hueco',
         medidaResultado
       ]}
+      title={enlace(receta.resultado.item).nombre}
     >
-      {receta.resultado.cantidad} × {enlace(receta.resultado.item).nombre}
+      <IconoObjeto id={receta.resultado.item} clase="h-10 w-10 sm:h-12 sm:w-12" />
+      <span class="line-clamp-3">{receta.resultado.cantidad} × {enlace(receta.resultado.item).nombre}</span>
     </span>
   </div>
 </div>

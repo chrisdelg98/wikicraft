@@ -1,5 +1,6 @@
 ---
 import { t, rutaDe, grafo, ui, facetasDe } from '../lib/datos.js'
+import IconoObjeto from './IconoObjeto.astro'
 
 /**
  * compacto: solo nombre y categoria, para las listas de relaciones. Una ficha
@@ -30,7 +31,10 @@ const facetas = facetasDe(nodo).slice(0, compacto ? 1 : 2)
     >
       {/* Jersey 10 es estrecha: a 16px se quedaba diminuta en las listas de
           relaciones, que es donde mas nombres hay juntos. */}
-      <span class="titulo text-xl">{texto.nombre}</span>
+      <span class="flex items-center gap-2">
+        <IconoObjeto id={id} clase="h-6 w-6" />
+        <span class="titulo text-xl">{texto.nombre}</span>
+      </span>
       {facetas.length > 0 && (
         <span class="text-sm text-texto-suave">{ui(idioma, `faceta.${facetas[0]}`)}</span>
       )}
@@ -44,7 +48,10 @@ const facetas = facetasDe(nodo).slice(0, compacto ? 1 : 2)
   title={ui(idioma, `etapa.${entidad.etapa}`)}
 >
   <span class="flex items-start justify-between gap-2">
-    <span class="titulo text-xl">{texto.nombre}</span>
+    <span class="flex items-center gap-2">
+      <IconoObjeto id={id} clase="h-8 w-8" />
+      <span class="titulo text-xl">{texto.nombre}</span>
+    </span>
     {
       !texto.traducido && texto.idiomaUsado && (
         <span

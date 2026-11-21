@@ -449,7 +449,7 @@ export const comoSeConsigue = (id) =>
  */
 const FAMILIAS_SUFIJO = {
   madera: ['log', 'wood', 'stem', 'hyphae'],
-  piedra: ['stone', 'cobblestone', 'andesite', 'diorite', 'granite', 'deepslate', 'tuff'],
+  piedra: ['stone', 'cobblestone', 'blackstone', 'andesite', 'diorite', 'granite', 'deepslate', 'tuff'],
   flor: ['flower', 'tulip', 'orchid', 'allium', 'poppy', 'dandelion', 'bluet', 'daisy', 'cornflower'],
   carbon: ['coal', 'charcoal']
 }
