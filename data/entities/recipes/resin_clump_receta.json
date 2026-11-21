@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "resin_clump_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "resin_clump",
+    "cantidad": 9
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "resin_block"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

@@ -7,7 +7,8 @@
   "categoria": "dano",
   "aplicableA": [
     "espada",
-    "hacha"
+    "hacha",
+    "lanza"
   ],
   "incompatibleCon": [
     "bane_of_arthropods",

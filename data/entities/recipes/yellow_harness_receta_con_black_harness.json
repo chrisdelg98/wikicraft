@@ -1,0 +1,28 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "yellow_harness_receta_con_black_harness",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "yellow_harness",
+    "cantidad": 1
+  },
+  "variantePor": "black_harness",
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "black_harness"
+      ],
+      "cantidad": 1
+    },
+    {
+      "opciones": [
+        "yellow_dye"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

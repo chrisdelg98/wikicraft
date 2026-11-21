@@ -1,0 +1,12 @@
+{
+  "$schema": "item.schema.json",
+  "id": "sulfur_cube_bucket",
+  "tipo": "item",
+  "etapa": "hierro",
+  "relevancia": "normal",
+  "categorias": [
+    "material"
+  ],
+  "pila": 1,
+  "desdeVersion": "26.2"
+}

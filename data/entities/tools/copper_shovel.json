@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "copper_shovel",
+  "tipo": "herramienta",
+  "etapa": "hierro",
+  "relevancia": "alta",
+  "categoria": "pala",
+  "material": "cobre",
+  "durabilidad": 190,
+  "reparadoCon": [
+    "copper_ingot"
+  ]
+}

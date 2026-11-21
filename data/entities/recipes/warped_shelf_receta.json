@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "warped_shelf_receta",
+  "tipo": "receta",
+  "etapa": "nether",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "warped_shelf",
+    "cantidad": 6
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "",
+    "AAA"
+  ],
+  "clave": {
+    "A": [
+      "stripped_warped_stem"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

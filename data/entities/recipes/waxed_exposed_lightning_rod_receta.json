@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "waxed_exposed_lightning_rod_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "waxed_exposed_lightning_rod",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "exposed_lightning_rod"
+      ],
+      "cantidad": 1
+    },
+    {
+      "opciones": [
+        "honeycomb"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

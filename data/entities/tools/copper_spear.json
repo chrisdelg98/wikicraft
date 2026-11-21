@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "copper_spear",
+  "tipo": "herramienta",
+  "etapa": "hierro",
+  "relevancia": "alta",
+  "categoria": "lanza",
+  "material": "cobre",
+  "durabilidad": 190,
+  "reparadoCon": [
+    "copper_ingot"
+  ]
+}

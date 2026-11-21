@@ -153,6 +153,8 @@
   "faceta.arco": "Arco",
   "faceta.ballesta": "Ballesta",
   "faceta.tridente": "Tridente",
+  "faceta.lanza": "Lanza",
+  "faceta.cobre": "De cobre",
   "faceta.maza": "Maza",
   "faceta.escudo": "Escudo",
   "faceta.casco": "Casco",
@@ -523,7 +525,8 @@
   "ficha.tradeos": "Sus tratos",
   "ficha.mejorPrecio": "Mejor precio",
   "ficha.receta": "Receta",
-  "ficha.sinDescripcion": "Todavía no hemos escrito esta ficha.",
+  "ficha.autoReceta": "Con esta receta fabricas {n} × {objeto}.",
+  "ficha.sinDescripcion": "Aquí debajo tienes cómo se consigue y todo lo que tiene que ver con esto.",
 
   "aldeano.soloNovato": "De momento solo tenemos documentados sus tratos de novato. Los de aprendiz en adelante llegarán más adelante, y son justo los que más compensan.",
   "aldeano.nivel.1": "Novato",

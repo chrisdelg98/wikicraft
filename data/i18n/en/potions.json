@@ -1,1 +1,98 @@
-{}
+{
+  "awkward_potion": {
+    "nombre": "Awkward Potion",
+    "slug": "awkward-potion",
+    "descripcion": "It does nothing when you drink it, and yet it is the most important potion in the game: almost all the others start from it.",
+    "notas": "If a recipe isn’t working, it is almost always because you skipped this step."
+  },
+  "fire_resistance_potion": {
+    "nombre": "Potion of Fire Resistance",
+    "slug": "potion-of-fire-resistance",
+    "descripcion": "Makes you immune to fire and lava while it lasts. It is what makes the Nether a place you can actually stay in.",
+    "notas": "There is no level II: either you are immune or you aren’t. Always take a couple before going through the portal."
+  },
+  "harming_potion": {
+    "nombre": "Potion of Harming",
+    "slug": "potion-of-harming",
+    "descripcion": "Deals instant damage to whoever gets it. Made from the Potion of Healing by adding a fermented spider eye.",
+    "notas": "Thrown, it is one of the hardest-hitting weapons in the game. Careful: it heals undead mobs instead of hurting them."
+  },
+  "healing_potion": {
+    "nombre": "Potion of Healing",
+    "slug": "potion-of-healing",
+    "descripcion": "Heals you instantly instead of little by little. The best safety net you can carry in a fight.",
+    "notas": "Since it is instant, redstone does nothing to it: there is no duration to extend. It hurts undead mobs instead of healing them, so thrown it works as a weapon."
+  },
+  "invisibility_potion": {
+    "nombre": "Potion of Invisibility",
+    "slug": "potion-of-invisibility",
+    "descripcion": "Makes you invisible to mobs and other players. Made from the Potion of Night Vision by adding a fermented spider eye.",
+    "notas": "Your armor and whatever you hold are still visible, so to truly go unnoticed you have to take everything off."
+  },
+  "leaping_potion": {
+    "nombre": "Potion of Leaping",
+    "slug": "potion-of-leaping",
+    "descripcion": "You jump higher and take less fall damage. Very useful for building and for getting around mountains.",
+    "notas": "Rabbits don’t always drop their foot, so bring a sword with Looting."
+  },
+  "night_vision_potion": {
+    "nombre": "Potion of Night Vision",
+    "slug": "potion-of-night-vision",
+    "descripcion": "You see clearly in total darkness, even underwater. Exploring caves stops being guesswork.",
+    "notas": "It is also the step before the Potion of Invisibility."
+  },
+  "poison_potion": {
+    "nombre": "Potion of Poison",
+    "slug": "potion-of-poison",
+    "descripcion": "Takes health away little by little, but never kills outright.",
+    "notas": "Since it doesn’t kill, it is used to soften targets before finishing them. Spiders and undead mobs are immune."
+  },
+  "regeneration_potion": {
+    "nombre": "Potion of Regeneration",
+    "slug": "potion-of-regeneration",
+    "descripcion": "Heals you little by little while it lasts. It helps you recover during a fight, not survive a single big hit.",
+    "notas": "The ghast tear is the hard part: you have to kill ghasts in the Nether, and they don’t always drop one."
+  },
+  "slow_falling_potion": {
+    "nombre": "Potion of Slow Falling",
+    "slug": "potion-of-slow-falling",
+    "descripcion": "You float down and take no damage when you land. The safety net for anyone building high or flying with elytra.",
+    "notas": "The membrane is dropped by phantoms, the ones that show up when you haven’t slept for days."
+  },
+  "slowness_potion": {
+    "nombre": "Potion of Slowness",
+    "slug": "potion-of-slowness",
+    "descripcion": "Makes whoever gets it move much more slowly. Made from the Potion of Swiftness by adding a fermented spider eye.",
+    "notas": "Thrown at a group of enemies, it gives you plenty of time to pick your escape route."
+  },
+  "strength_potion": {
+    "nombre": "Potion of Strength",
+    "slug": "potion-of-strength",
+    "descripcion": "Raises your melee damage. The cheapest way to hit harder without changing weapons.",
+    "notas": "It only affects hits with a weapon or your hand. It doesn’t improve bows."
+  },
+  "swiftness_potion": {
+    "nombre": "Potion of Swiftness",
+    "slug": "potion-of-swiftness",
+    "descripcion": "You run quite a bit faster. Sugar comes from sugar cane, so it is one of the cheapest potions there is.",
+    "notas": "Great for exploring and for running from fights you don’t want."
+  },
+  "water_bottle": {
+    "nombre": "Water Bottle",
+    "slug": "water-bottle",
+    "descripcion": "The starting point of every potion. Take a glass bottle and right-click any water.",
+    "notas": "On its own it does nothing: it is just the container. With a fermented spider eye it becomes a Potion of Weakness, the only one you can make without going through the Awkward Potion."
+  },
+  "water_breathing_potion": {
+    "nombre": "Potion of Water Breathing",
+    "slug": "potion-of-water-breathing",
+    "descripcion": "You breathe underwater without your air bar going down. Essential for raiding an ocean monument.",
+    "notas": "Pufferfish can be caught by fishing, so it is easier than it looks."
+  },
+  "weakness_potion": {
+    "nombre": "Potion of Weakness",
+    "slug": "potion-of-weakness",
+    "descripcion": "Lowers the damage whoever gets it deals. The only useful potion made straight from a water bottle, without the Awkward Potion.",
+    "notas": "Its most important use isn’t fighting: thrown at a zombie villager and followed by a golden apple, it cures it and leaves you huge permanent discounts."
+  }
+}

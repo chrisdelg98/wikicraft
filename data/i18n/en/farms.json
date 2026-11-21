@@ -1,0 +1,16 @@
+{
+  "blaze_farm": {
+    "nombre": "Blaze Farm",
+    "slug": "blaze-farm",
+    "descripcion": "Uses a blaze spawner in a fortress so blazes appear on their own in a controlled spot, instead of you hunting them down the corridors.",
+    "notas": "Besides rods it gives you lots of experience, so it also helps with enchanting and repairing gear.",
+    "pasos": [
+      "Find a cage with flames inside in the fortress: that is the spawner.",
+      "Cover the whole floor around it with blocks, up to four blocks in every direction, so they can only appear where you want.",
+      "Leave a gap for them to fall into and stand below it, out of their reach.",
+      "Light up the rest of the room with torches so they can’t appear anywhere else.",
+      "Hit them from below as they drop. Remember rods only drop if you land the final hit."
+    ],
+    "advertencia": "Always crouch near the edges: there is lava under almost the whole fortress."
+  }
+}

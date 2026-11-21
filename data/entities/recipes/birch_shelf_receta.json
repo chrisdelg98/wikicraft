@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "birch_shelf_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "birch_shelf",
+    "cantidad": 6
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "",
+    "AAA"
+  ],
+  "clave": {
+    "A": [
+      "stripped_birch_log"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

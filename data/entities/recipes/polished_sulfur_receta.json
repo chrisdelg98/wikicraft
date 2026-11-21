@@ -1,0 +1,23 @@
+{
+  "$schema": "recipe.schema.json",
+  "id": "polished_sulfur_receta",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "polished_sulfur",
+    "cantidad": 4
+  },
+  "conForma": true,
+  "patron": [
+    "AA",
+    "AA"
+  ],
+  "clave": {
+    "A": [
+      "sulfur"
+    ]
+  },
+  "estacion": "inventario",
+  "desdeVersion": "26.2"
+}

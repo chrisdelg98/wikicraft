@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "spruce_shelf_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "spruce_shelf",
+    "cantidad": 6
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "",
+    "AAA"
+  ],
+  "clave": {
+    "A": [
+      "stripped_spruce_log"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

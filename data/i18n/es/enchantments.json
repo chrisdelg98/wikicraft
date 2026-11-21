@@ -125,6 +125,12 @@
     "descripcion": "Al pescar sacas más tesoros y menos basura.",
     "notas": "Va en la caña. Combinado con Atracción convierte la pesca en una fuente decente de libros encantados."
   },
+  "lunge": {
+    "nombre": "Estocada",
+    "slug": "estocada",
+    "descripcion": "Solo para la lanza: al dar el pinchazo te lanza hacia delante. Gasta hambre y un poco de durabilidad cada vez.",
+    "notas": "No funciona si vas montado, planeando con élitros o dentro del agua, y necesitas tener comida suficiente para poder correr. En el aire te lleva mucho más lejos que en el suelo."
+  },
   "lure": {
     "nombre": "Atracción",
     "slug": "atraccion",

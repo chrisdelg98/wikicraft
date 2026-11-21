@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "waxed_weathered_copper_lantern_receta",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "waxed_weathered_copper_lantern",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "honeycomb"
+      ],
+      "cantidad": 1
+    },
+    {
+      "opciones": [
+        "weathered_copper_lantern"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

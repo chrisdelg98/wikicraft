@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "copper_pickaxe",
+  "tipo": "herramienta",
+  "etapa": "hierro",
+  "relevancia": "alta",
+  "categoria": "pico",
+  "material": "cobre",
+  "durabilidad": 190,
+  "reparadoCon": [
+    "copper_ingot"
+  ]
+}

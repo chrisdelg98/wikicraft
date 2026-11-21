@@ -3,9 +3,10 @@
   "id": "magenta_concrete_powder",
   "tipo": "item",
   "etapa": "inicio",
-  "relevancia": "normal",
+  "relevancia": "baja",
   "categorias": [
     "bloque"
   ],
-  "pila": 64
+  "pila": 64,
+  "varianteDe": "white_concrete_powder"
 }

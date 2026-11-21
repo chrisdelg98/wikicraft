@@ -1,0 +1,26 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "copper_chest_receta",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "copper_chest",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "clave": {
+    "A": [
+      "copper_ingot"
+    ],
+    "B": [
+      "chest"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

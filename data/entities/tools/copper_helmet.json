@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "copper_helmet",
+  "tipo": "armadura",
+  "etapa": "hierro",
+  "relevancia": "alta",
+  "categoria": "casco",
+  "material": "cobre",
+  "durabilidad": 121,
+  "reparadoCon": [
+    "copper_ingot"
+  ]
+}

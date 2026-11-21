@@ -1,0 +1,26 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "copper_lantern_receta",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "copper_lantern",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "clave": {
+    "A": [
+      "copper_nugget"
+    ],
+    "B": [
+      "copper_torch"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

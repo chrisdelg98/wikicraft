@@ -6,7 +6,9 @@
   "dimension": "superficie",
   "mobs": [
     "husk",
-    "rabbit_mob"
+    "rabbit_mob",
+    "camel_husk",
+    "parched"
   ],
   "recursos": [
     "cactus",

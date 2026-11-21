@@ -1,0 +1,20 @@
+{
+  "$schema": "biome.schema.json",
+  "id": "sulfur_caves",
+  "tipo": "bioma",
+  "etapa": "hierro",
+  "relevancia": "normal",
+  "dimension": "superficie",
+  "mobs": [
+    "sulfur_cube",
+    "bat"
+  ],
+  "exclusivo": [
+    "sulfur",
+    "cinnabar",
+    "sulfur_spike",
+    "potent_sulfur",
+    "music_disc_bounce"
+  ],
+  "desdeVersion": "26.2"
+}

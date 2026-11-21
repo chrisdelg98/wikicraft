@@ -1,0 +1,12 @@
+{
+  "$schema": "item.schema.json",
+  "id": "potent_sulfur",
+  "tipo": "item",
+  "etapa": "hierro",
+  "relevancia": "normal",
+  "categorias": [
+    "bloque"
+  ],
+  "pila": 64,
+  "desdeVersion": "26.2"
+}

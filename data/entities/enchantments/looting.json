@@ -7,7 +7,8 @@
   "nivelMaximo": 3,
   "categoria": "dano",
   "aplicableA": [
-    "espada"
+    "espada",
+    "lanza"
   ],
   "incompatibleCon": [],
   "esTesoro": false,

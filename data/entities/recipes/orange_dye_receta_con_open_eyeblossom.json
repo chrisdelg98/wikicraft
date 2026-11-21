@@ -1,0 +1,24 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "orange_dye_receta_con_open_eyeblossom",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "orange_dye",
+    "cantidad": 1
+  },
+  "variantePor": "open_eyeblossom",
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "open_eyeblossom",
+        "orange_tulip",
+        "torchflower"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "pink_dye_receta_con_cactus_flower",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "pink_dye",
+    "cantidad": 1
+  },
+  "variantePor": "cactus_flower",
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "cactus_flower",
+        "pink_petals",
+        "pink_tulip"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

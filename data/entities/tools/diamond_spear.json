@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "diamond_spear",
+  "tipo": "herramienta",
+  "etapa": "diamante",
+  "relevancia": "alta",
+  "categoria": "lanza",
+  "material": "diamante",
+  "durabilidad": 1561,
+  "reparadoCon": [
+    "diamond"
+  ]
+}

@@ -8,7 +8,9 @@
     "cod_mob",
     "drowned",
     "salmon_mob",
-    "squid"
+    "squid",
+    "nautilus",
+    "zombie_nautilus"
   ],
   "recursos": [
     "kelp",

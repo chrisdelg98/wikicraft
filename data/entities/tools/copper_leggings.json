@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "copper_leggings",
+  "tipo": "armadura",
+  "etapa": "hierro",
+  "relevancia": "alta",
+  "categoria": "pantalones",
+  "material": "cobre",
+  "durabilidad": 165,
+  "reparadoCon": [
+    "copper_ingot"
+  ]
+}

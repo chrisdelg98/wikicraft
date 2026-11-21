@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "copper_hoe",
+  "tipo": "herramienta",
+  "etapa": "hierro",
+  "relevancia": "alta",
+  "categoria": "azada",
+  "material": "cobre",
+  "durabilidad": 190,
+  "reparadoCon": [
+    "copper_ingot"
+  ]
+}

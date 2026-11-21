@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "crimson_shelf_receta",
+  "tipo": "receta",
+  "etapa": "nether",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "crimson_shelf",
+    "cantidad": 6
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "",
+    "AAA"
+  ],
+  "clave": {
+    "A": [
+      "stripped_crimson_stem"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

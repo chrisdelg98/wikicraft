@@ -1,0 +1,25 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "saddle_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "saddle",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    " A",
+    "ABA"
+  ],
+  "clave": {
+    "A": [
+      "leather"
+    ],
+    "B": [
+      "iron_ingot"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

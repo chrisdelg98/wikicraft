@@ -1,0 +1,16 @@
+{
+  "$schema": "mob.schema.json",
+  "id": "sulfur_cube",
+  "tipo": "mob",
+  "etapa": "hierro",
+  "relevancia": "normal",
+  "categoria": "pasivo",
+  "dimension": [
+    "superficie"
+  ],
+  "vida": 8,
+  "apareceEn": [
+    "sulfur_caves"
+  ],
+  "desdeVersion": "26.2"
+}

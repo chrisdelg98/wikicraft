@@ -370,6 +370,13 @@
     "notas": "No hay arena, así que no cuentes con hacer cristal aquí. Lo que sí hay es piedra y carbón a la vista.",
     "consejo": "Los acantilados hacen de muro natural: una base aquí solo tiene un lado por el que la puedan alcanzar."
   },
+  "sulfur_caves": {
+    "nombre": "Cuevas de azufre",
+    "slug": "cuevas-de-azufre",
+    "descripcion": "Cuevas amarillas y rojas hechas de azufre y cinabrio, a la misma profundidad que las cuevas exuberantes. Son el único sitio donde viven los cubos de azufre.",
+    "notas": "Las charcas de agua verde tienen azufre potente en el fondo y echan un gas que marea. Casi no hay minerales: el azufre y el cinabrio ocupan el sitio de la piedra.",
+    "consejo": "Se suelen esconder bajo terreno llano, cerca de pantanos y desiertos. Si en la superficie ves un manantial de azufre, debajo hay una de estas cuevas."
+  },
   "sunflower_plains": {
     "nombre": "Llanura de girasoles",
     "slug": "llanura-de-girasoles",

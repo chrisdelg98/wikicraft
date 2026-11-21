@@ -3,10 +3,11 @@
   "id": "black_wool",
   "tipo": "item",
   "etapa": "inicio",
-  "relevancia": "normal",
+  "relevancia": "baja",
   "categorias": [
     "bloque",
     "combustible"
   ],
-  "pila": 64
+  "pila": 64,
+  "varianteDe": "white_wool"
 }

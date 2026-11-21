@@ -1,0 +1,24 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "copper_ingot_receta_con_copper_nugget",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "copper_ingot",
+    "cantidad": 1
+  },
+  "variantePor": "copper_nugget",
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "clave": {
+    "A": [
+      "copper_nugget"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

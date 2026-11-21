@@ -9,7 +9,9 @@
     "pufferfish_mob",
     "squid",
     "tropical_fish_mob",
-    "turtle"
+    "turtle",
+    "nautilus",
+    "zombie_nautilus"
   ],
   "recursos": [
     "brain_coral",

@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/enchantment.schema.json",
+  "id": "lunge",
+  "tipo": "encantamiento",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "nivelMaximo": 3,
+  "categoria": "dano",
+  "aplicableA": [
+    "lanza"
+  ],
+  "incompatibleCon": [],
+  "esTesoro": false,
+  "esMaldicion": false,
+  "obtenidoDe": [
+    "librarian"
+  ],
+  "costeYunque": {
+    "libro": 1,
+    "objeto": 2
+  }
+}

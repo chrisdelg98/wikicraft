@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/mob.schema.json",
+  "id": "copper_golem",
+  "tipo": "mob",
+  "etapa": "hierro",
+  "relevancia": "normal",
+  "categoria": "pasivo",
+  "dimension": [
+    "superficie"
+  ],
+  "invocacion": {
+    "patron": [
+      " C ",
+      " B "
+    ],
+    "clave": {
+      "C": "carved_pumpkin",
+      "B": "copper_block"
+    },
+    "ultimoBloque": "carved_pumpkin"
+  }
+}

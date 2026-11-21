@@ -9,7 +9,9 @@
     "drowned",
     "glow_squid",
     "salmon_mob",
-    "squid"
+    "squid",
+    "nautilus",
+    "zombie_nautilus"
   ],
   "recursos": [
     "kelp",

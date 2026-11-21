@@ -35,6 +35,10 @@
     "nombre": "Acacia Pressure Plate Recipe",
     "slug": "acacia-pressure-plate-recipe"
   },
+  "acacia_shelf_receta": {
+    "nombre": "Acacia Shelf Recipe",
+    "slug": "acacia-shelf-recipe"
+  },
   "acacia_sign_receta": {
     "nombre": "Acacia Sign Recipe",
     "slug": "acacia-sign-recipe"
@@ -143,6 +147,10 @@
     "nombre": "Bamboo Raft Recipe",
     "slug": "bamboo-raft-recipe"
   },
+  "bamboo_shelf_receta": {
+    "nombre": "Bamboo Shelf Recipe",
+    "slug": "bamboo-shelf-recipe"
+  },
   "bamboo_sign_receta": {
     "nombre": "Bamboo Sign Recipe",
     "slug": "bamboo-sign-recipe"
@@ -211,6 +219,10 @@
     "nombre": "Birch Pressure Plate Recipe",
     "slug": "birch-pressure-plate-recipe"
   },
+  "birch_shelf_receta": {
+    "nombre": "Birch Shelf Recipe",
+    "slug": "birch-shelf-recipe"
+  },
   "birch_sign_receta": {
     "nombre": "Birch Sign Recipe",
     "slug": "birch-sign-recipe"
@@ -262,6 +274,14 @@
   "black_dye_receta": {
     "nombre": "Black Dye Recipe",
     "slug": "black-dye-recipe"
+  },
+  "black_harness_receta_con_black_dye": {
+    "nombre": "Black Harness Recipe (with Black Dye)",
+    "slug": "black-harness-recipe-with-black-dye"
+  },
+  "black_harness_receta_con_leather": {
+    "nombre": "Black Harness Recipe (with Leather)",
+    "slug": "black-harness-recipe-with-leather"
   },
   "black_stained_glass_pane_receta_con_black_stained_glass": {
     "nombre": "Black Stained Glass Pane Recipe (with Black Stained Glass)",
@@ -334,6 +354,14 @@
   "blue_dye_receta": {
     "nombre": "Blue Dye Recipe",
     "slug": "blue-dye-recipe"
+  },
+  "blue_harness_receta_con_black_harness": {
+    "nombre": "Blue Harness Recipe (with Black Harness)",
+    "slug": "blue-harness-recipe-with-black-harness"
+  },
+  "blue_harness_receta_con_leather": {
+    "nombre": "Blue Harness Recipe (with Leather)",
+    "slug": "blue-harness-recipe-with-leather"
   },
   "blue_ice_receta": {
     "nombre": "Blue Ice Recipe",
@@ -451,6 +479,14 @@
     "nombre": "Brown Dye Recipe",
     "slug": "brown-dye-recipe"
   },
+  "brown_harness_receta_con_black_harness": {
+    "nombre": "Brown Harness Recipe (with Black Harness)",
+    "slug": "brown-harness-recipe-with-black-harness"
+  },
+  "brown_harness_receta_con_leather": {
+    "nombre": "Brown Harness Recipe (with Leather)",
+    "slug": "brown-harness-recipe-with-leather"
+  },
   "brown_stained_glass_pane_receta_con_brown_stained_glass": {
     "nombre": "Brown Stained Glass Pane Recipe (with Brown Stained Glass)",
     "slug": "brown-stained-glass-pane-recipe-with-brown-stained-glass"
@@ -511,10 +547,6 @@
     "nombre": "Cauldron Recipe",
     "slug": "cauldron-recipe"
   },
-  "chain_receta": {
-    "nombre": "Chain Recipe",
-    "slug": "chain-recipe"
-  },
   "cherry_boat_receta": {
     "nombre": "Cherry Boat Recipe",
     "slug": "cherry-boat-recipe"
@@ -550,6 +582,10 @@
   "cherry_pressure_plate_receta": {
     "nombre": "Cherry Pressure Plate Recipe",
     "slug": "cherry-pressure-plate-recipe"
+  },
+  "cherry_shelf_receta": {
+    "nombre": "Cherry Shelf Recipe",
+    "slug": "cherry-shelf-recipe"
   },
   "cherry_sign_receta": {
     "nombre": "Cherry Sign Recipe",
@@ -606,6 +642,10 @@
   "chiseled_red_sandstone_receta": {
     "nombre": "Chiseled Red Sandstone Recipe",
     "slug": "chiseled-red-sandstone-recipe"
+  },
+  "chiseled_resin_bricks_receta": {
+    "nombre": "Chiseled Resin Bricks Recipe",
+    "slug": "chiseled-resin-bricks-recipe"
   },
   "chiseled_sandstone_receta": {
     "nombre": "Chiseled Sandstone Recipe",
@@ -691,13 +731,37 @@
     "nombre": "Cookie Recipe",
     "slug": "cookie-recipe"
   },
+  "copper_axe_receta": {
+    "nombre": "Copper Axe Recipe",
+    "slug": "copper-axe-recipe"
+  },
+  "copper_bars_receta": {
+    "nombre": "Copper Bars Recipe",
+    "slug": "copper-bars-recipe"
+  },
   "copper_block_receta": {
     "nombre": "Block of Copper Recipe",
     "slug": "block-of-copper-recipe"
   },
+  "copper_boots_receta": {
+    "nombre": "Copper Boots Recipe",
+    "slug": "copper-boots-recipe"
+  },
   "copper_bulb_receta": {
     "nombre": "Copper Bulb Recipe",
     "slug": "copper-bulb-recipe"
+  },
+  "copper_chain_receta": {
+    "nombre": "Copper Chain Recipe",
+    "slug": "copper-chain-recipe"
+  },
+  "copper_chest_receta": {
+    "nombre": "Copper Chest Recipe",
+    "slug": "copper-chest-recipe"
+  },
+  "copper_chestplate_receta": {
+    "nombre": "Copper Chestplate Recipe",
+    "slug": "copper-chestplate-recipe"
   },
   "copper_door_receta": {
     "nombre": "Copper Door Recipe",
@@ -707,9 +771,53 @@
     "nombre": "Copper Grate Recipe",
     "slug": "copper-grate-recipe"
   },
-  "copper_ingot_receta": {
-    "nombre": "Copper Ingot Recipe",
-    "slug": "copper-ingot-recipe"
+  "copper_helmet_receta": {
+    "nombre": "Copper Helmet Recipe",
+    "slug": "copper-helmet-recipe"
+  },
+  "copper_hoe_receta": {
+    "nombre": "Copper Hoe Recipe",
+    "slug": "copper-hoe-recipe"
+  },
+  "copper_ingot_receta_con_copper_block": {
+    "nombre": "Copper Ingot Recipe (with Block of Copper)",
+    "slug": "copper-ingot-recipe-with-block-of-copper"
+  },
+  "copper_ingot_receta_con_copper_nugget": {
+    "nombre": "Copper Ingot Recipe (with Copper Nugget)",
+    "slug": "copper-ingot-recipe-with-copper-nugget"
+  },
+  "copper_lantern_receta": {
+    "nombre": "Copper Lantern Recipe",
+    "slug": "copper-lantern-recipe"
+  },
+  "copper_leggings_receta": {
+    "nombre": "Copper Leggings Recipe",
+    "slug": "copper-leggings-recipe"
+  },
+  "copper_nugget_receta": {
+    "nombre": "Copper Nugget Recipe",
+    "slug": "copper-nugget-recipe"
+  },
+  "copper_pickaxe_receta": {
+    "nombre": "Copper Pickaxe Recipe",
+    "slug": "copper-pickaxe-recipe"
+  },
+  "copper_shovel_receta": {
+    "nombre": "Copper Shovel Recipe",
+    "slug": "copper-shovel-recipe"
+  },
+  "copper_spear_receta": {
+    "nombre": "Copper Spear Recipe",
+    "slug": "copper-spear-recipe"
+  },
+  "copper_sword_receta": {
+    "nombre": "Copper Sword Recipe",
+    "slug": "copper-sword-recipe"
+  },
+  "copper_torch_receta": {
+    "nombre": "Copper Torch Recipe",
+    "slug": "copper-torch-recipe"
   },
   "copper_trapdoor_receta": {
     "nombre": "Copper Trapdoor Recipe",
@@ -722,6 +830,10 @@
   "crafting_table_receta": {
     "nombre": "Crafting Table Recipe",
     "slug": "crafting-table-recipe"
+  },
+  "creaking_heart_receta": {
+    "nombre": "Creaking Heart Recipe",
+    "slug": "creaking-heart-recipe"
   },
   "creeper_banner_pattern_receta": {
     "nombre": "Creeper Charge Banner Pattern Recipe",
@@ -758,6 +870,10 @@
   "crimson_pressure_plate_receta": {
     "nombre": "Crimson Pressure Plate Recipe",
     "slug": "crimson-pressure-plate-recipe"
+  },
+  "crimson_shelf_receta": {
+    "nombre": "Crimson Shelf Recipe",
+    "slug": "crimson-shelf-recipe"
   },
   "crimson_sign_receta": {
     "nombre": "Crimson Sign Recipe",
@@ -843,6 +959,14 @@
     "nombre": "Cyan Dye Recipe (with Pitcher Plant)",
     "slug": "cyan-dye-recipe-with-pitcher-plant"
   },
+  "cyan_harness_receta_con_black_harness": {
+    "nombre": "Cyan Harness Recipe (with Black Harness)",
+    "slug": "cyan-harness-recipe-with-black-harness"
+  },
+  "cyan_harness_receta_con_leather": {
+    "nombre": "Cyan Harness Recipe (with Leather)",
+    "slug": "cyan-harness-recipe-with-leather"
+  },
   "cyan_stained_glass_pane_receta_con_cyan_stained_glass": {
     "nombre": "Cyan Stained Glass Pane Recipe (with Cyan Stained Glass)",
     "slug": "cyan-stained-glass-pane-recipe-with-cyan-stained-glass"
@@ -898,6 +1022,10 @@
   "dark_oak_pressure_plate_receta": {
     "nombre": "Dark Oak Pressure Plate Recipe",
     "slug": "dark-oak-pressure-plate-recipe"
+  },
+  "dark_oak_shelf_receta": {
+    "nombre": "Dark Oak Shelf Recipe",
+    "slug": "dark-oak-shelf-recipe"
   },
   "dark_oak_sign_receta": {
     "nombre": "Dark Oak Sign Recipe",
@@ -1015,6 +1143,10 @@
     "nombre": "Diamond Shovel Recipe",
     "slug": "diamond-shovel-recipe"
   },
+  "diamond_spear_receta": {
+    "nombre": "Diamond Spear Recipe",
+    "slug": "diamond-spear-recipe"
+  },
   "diamond_sword_receta": {
     "nombre": "Diamond Sword Recipe",
     "slug": "diamond-sword-recipe"
@@ -1038,6 +1170,10 @@
   "dispenser_receta": {
     "nombre": "Dispenser Recipe",
     "slug": "dispenser-recipe"
+  },
+  "dried_ghast_receta": {
+    "nombre": "Dried Ghast Recipe",
+    "slug": "dried-ghast-recipe"
   },
   "dried_kelp_block_receta": {
     "nombre": "Dried Kelp Block Recipe",
@@ -1235,6 +1371,10 @@
     "nombre": "Golden Chestplate Recipe",
     "slug": "golden-chestplate-recipe"
   },
+  "golden_dandelion_receta": {
+    "nombre": "Golden Dandelion Recipe",
+    "slug": "golden-dandelion-recipe"
+  },
   "golden_helmet_receta": {
     "nombre": "Golden Helmet Recipe",
     "slug": "golden-helmet-recipe"
@@ -1254,6 +1394,10 @@
   "golden_shovel_receta": {
     "nombre": "Golden Shovel Recipe",
     "slug": "golden-shovel-recipe"
+  },
+  "golden_spear_receta": {
+    "nombre": "Golden Spear Recipe",
+    "slug": "golden-spear-recipe"
   },
   "golden_sword_receta": {
     "nombre": "Golden Sword Recipe",
@@ -1303,9 +1447,21 @@
     "nombre": "Gray Concrete Powder Recipe",
     "slug": "gray-concrete-powder-recipe"
   },
-  "gray_dye_receta": {
-    "nombre": "Gray Dye Recipe",
-    "slug": "gray-dye-recipe"
+  "gray_dye_receta_con_black_dye": {
+    "nombre": "Gray Dye Recipe (with Black Dye)",
+    "slug": "gray-dye-recipe-with-black-dye"
+  },
+  "gray_dye_receta_con_closed_eyeblossom": {
+    "nombre": "Gray Dye Recipe (with Closed Eyeblossom)",
+    "slug": "gray-dye-recipe-with-closed-eyeblossom"
+  },
+  "gray_harness_receta_con_black_harness": {
+    "nombre": "Gray Harness Recipe (with Black Harness)",
+    "slug": "gray-harness-recipe-with-black-harness"
+  },
+  "gray_harness_receta_con_leather": {
+    "nombre": "Gray Harness Recipe (with Leather)",
+    "slug": "gray-harness-recipe-with-leather"
   },
   "gray_stained_glass_pane_receta_con_glass_pane": {
     "nombre": "Gray Stained Glass Pane Recipe (with Glass Pane)",
@@ -1354,6 +1510,14 @@
   "green_concrete_powder_receta": {
     "nombre": "Green Concrete Powder Recipe",
     "slug": "green-concrete-powder-recipe"
+  },
+  "green_harness_receta_con_black_harness": {
+    "nombre": "Green Harness Recipe (with Black Harness)",
+    "slug": "green-harness-recipe-with-black-harness"
+  },
+  "green_harness_receta_con_leather": {
+    "nombre": "Green Harness Recipe (with Leather)",
+    "slug": "green-harness-recipe-with-leather"
   },
   "green_stained_glass_pane_receta_con_glass_pane": {
     "nombre": "Green Stained Glass Pane Recipe (with Glass Pane)",
@@ -1427,6 +1591,10 @@
     "nombre": "Iron Boots Recipe",
     "slug": "iron-boots-recipe"
   },
+  "iron_chain_receta": {
+    "nombre": "Iron Chain Recipe",
+    "slug": "iron-chain-recipe"
+  },
   "iron_chestplate_receta": {
     "nombre": "Iron Chestplate Recipe",
     "slug": "iron-chestplate-recipe"
@@ -1466,6 +1634,10 @@
   "iron_shovel_receta": {
     "nombre": "Iron Shovel Recipe",
     "slug": "iron-shovel-recipe"
+  },
+  "iron_spear_receta": {
+    "nombre": "Iron Spear Recipe",
+    "slug": "iron-spear-recipe"
   },
   "iron_sword_receta": {
     "nombre": "Iron Sword Recipe",
@@ -1522,6 +1694,10 @@
   "jungle_pressure_plate_receta": {
     "nombre": "Jungle Pressure Plate Recipe",
     "slug": "jungle-pressure-plate-recipe"
+  },
+  "jungle_shelf_receta": {
+    "nombre": "Jungle Shelf Recipe",
+    "slug": "jungle-shelf-recipe"
   },
   "jungle_sign_receta": {
     "nombre": "Jungle Sign Recipe",
@@ -1631,6 +1807,14 @@
     "nombre": "Light Blue Dye Recipe (with Blue Orchid)",
     "slug": "light-blue-dye-recipe-with-blue-orchid"
   },
+  "light_blue_harness_receta_con_black_harness": {
+    "nombre": "Light Blue Harness Recipe (with Black Harness)",
+    "slug": "light-blue-harness-recipe-with-black-harness"
+  },
+  "light_blue_harness_receta_con_leather": {
+    "nombre": "Light Blue Harness Recipe (with Leather)",
+    "slug": "light-blue-harness-recipe-with-leather"
+  },
   "light_blue_stained_glass_pane_receta_con_glass_pane": {
     "nombre": "Light Blue Stained Glass Pane Recipe (with Glass Pane)",
     "slug": "light-blue-stained-glass-pane-recipe-with-glass-pane"
@@ -1691,6 +1875,14 @@
     "nombre": "Light Gray Dye Recipe (with Gray Dye)",
     "slug": "light-gray-dye-recipe-with-gray-dye"
   },
+  "light_gray_harness_receta_con_black_harness": {
+    "nombre": "Light Gray Harness Recipe (with Black Harness)",
+    "slug": "light-gray-harness-recipe-with-black-harness"
+  },
+  "light_gray_harness_receta_con_leather": {
+    "nombre": "Light Gray Harness Recipe (with Leather)",
+    "slug": "light-gray-harness-recipe-with-leather"
+  },
   "light_gray_stained_glass_pane_receta_con_glass_pane": {
     "nombre": "Light Gray Stained Glass Pane Recipe (with Glass Pane)",
     "slug": "light-gray-stained-glass-pane-recipe-with-glass-pane"
@@ -1750,6 +1942,14 @@
   "lime_dye_receta": {
     "nombre": "Lime Dye Recipe",
     "slug": "lime-dye-recipe"
+  },
+  "lime_harness_receta_con_black_harness": {
+    "nombre": "Lime Harness Recipe (with Black Harness)",
+    "slug": "lime-harness-recipe-with-black-harness"
+  },
+  "lime_harness_receta_con_leather": {
+    "nombre": "Lime Harness Recipe (with Leather)",
+    "slug": "lime-harness-recipe-with-leather"
   },
   "lime_stained_glass_pane_receta_con_glass_pane": {
     "nombre": "Lime Stained Glass Pane Recipe (with Glass Pane)",
@@ -1831,6 +2031,14 @@
     "nombre": "Magenta Dye Recipe (with White Dye)",
     "slug": "magenta-dye-recipe-with-white-dye"
   },
+  "magenta_harness_receta_con_black_harness": {
+    "nombre": "Magenta Harness Recipe (with Black Harness)",
+    "slug": "magenta-harness-recipe-with-black-harness"
+  },
+  "magenta_harness_receta_con_leather": {
+    "nombre": "Magenta Harness Recipe (with Leather)",
+    "slug": "magenta-harness-recipe-with-leather"
+  },
   "magenta_stained_glass_pane_receta_con_glass_pane": {
     "nombre": "Magenta Stained Glass Pane Recipe (with Glass Pane)",
     "slug": "magenta-stained-glass-pane-recipe-with-glass-pane"
@@ -1894,6 +2102,10 @@
   "mangrove_pressure_plate_receta": {
     "nombre": "Mangrove Pressure Plate Recipe",
     "slug": "mangrove-pressure-plate-recipe"
+  },
+  "mangrove_shelf_receta": {
+    "nombre": "Mangrove Shelf Recipe",
+    "slug": "mangrove-shelf-recipe"
   },
   "mangrove_sign_receta": {
     "nombre": "Mangrove Sign Recipe",
@@ -1999,6 +2211,10 @@
     "nombre": "Music Disc Recipe",
     "slug": "music-disc-recipe"
   },
+  "name_tag_receta": {
+    "nombre": "Name Tag Recipe",
+    "slug": "name-tag-recipe"
+  },
   "nether_brick_fence_receta": {
     "nombre": "Nether Brick Fence Recipe",
     "slug": "nether-brick-fence-recipe"
@@ -2079,6 +2295,10 @@
     "nombre": "Oak Pressure Plate Recipe",
     "slug": "oak-pressure-plate-recipe"
   },
+  "oak_shelf_receta": {
+    "nombre": "Oak Shelf Recipe",
+    "slug": "oak-shelf-recipe"
+  },
   "oak_sign_receta": {
     "nombre": "Oak Sign Recipe",
     "slug": "oak-sign-recipe"
@@ -2131,13 +2351,21 @@
     "nombre": "Orange Concrete Powder Recipe",
     "slug": "orange-concrete-powder-recipe"
   },
-  "orange_dye_receta_con_orange_tulip": {
-    "nombre": "Orange Dye Recipe (with Orange Tulip)",
-    "slug": "orange-dye-recipe-with-orange-tulip"
+  "orange_dye_receta_con_open_eyeblossom": {
+    "nombre": "Orange Dye Recipe (with Open Eyeblossom)",
+    "slug": "orange-dye-recipe-with-open-eyeblossom"
   },
   "orange_dye_receta_con_red_dye": {
     "nombre": "Orange Dye Recipe (with Red Dye)",
     "slug": "orange-dye-recipe-with-red-dye"
+  },
+  "orange_harness_receta_con_black_harness": {
+    "nombre": "Orange Harness Recipe (with Black Harness)",
+    "slug": "orange-harness-recipe-with-black-harness"
+  },
+  "orange_harness_receta_con_leather": {
+    "nombre": "Orange Harness Recipe (with Leather)",
+    "slug": "orange-harness-recipe-with-leather"
   },
   "orange_stained_glass_pane_receta_con_glass_pane": {
     "nombre": "Orange Stained Glass Pane Recipe (with Glass Pane)",
@@ -2235,6 +2463,10 @@
     "nombre": "Pale Oak Pressure Plate Recipe",
     "slug": "pale-oak-pressure-plate-recipe"
   },
+  "pale_oak_shelf_receta": {
+    "nombre": "Pale Oak Shelf Recipe",
+    "slug": "pale-oak-shelf-recipe"
+  },
   "pale_oak_sign_receta": {
     "nombre": "Pale Oak Sign Recipe",
     "slug": "pale-oak-sign-recipe"
@@ -2287,17 +2519,25 @@
     "nombre": "Pink Concrete Powder Recipe",
     "slug": "pink-concrete-powder-recipe"
   },
+  "pink_dye_receta_con_cactus_flower": {
+    "nombre": "Pink Dye Recipe (with Cactus Flower)",
+    "slug": "pink-dye-recipe-with-cactus-flower"
+  },
   "pink_dye_receta_con_peony": {
     "nombre": "Pink Dye Recipe (with Peony)",
     "slug": "pink-dye-recipe-with-peony"
   },
-  "pink_dye_receta_con_pink_petals": {
-    "nombre": "Pink Dye Recipe (with Pink Petals)",
-    "slug": "pink-dye-recipe-with-pink-petals"
-  },
   "pink_dye_receta_con_red_dye": {
     "nombre": "Pink Dye Recipe (with Red Dye)",
     "slug": "pink-dye-recipe-with-red-dye"
+  },
+  "pink_harness_receta_con_black_harness": {
+    "nombre": "Pink Harness Recipe (with Black Harness)",
+    "slug": "pink-harness-recipe-with-black-harness"
+  },
+  "pink_harness_receta_con_leather": {
+    "nombre": "Pink Harness Recipe (with Leather)",
+    "slug": "pink-harness-recipe-with-leather"
   },
   "pink_stained_glass_pane_receta_con_glass_pane": {
     "nombre": "Pink Stained Glass Pane Recipe (with Glass Pane)",
@@ -2419,6 +2659,10 @@
     "nombre": "Polished Granite Stairs Recipe",
     "slug": "polished-granite-stairs-recipe"
   },
+  "polished_sulfur_receta": {
+    "nombre": "Polished Sulfur Recipe",
+    "slug": "polished-sulfur-recipe"
+  },
   "polished_tuff_receta": {
     "nombre": "Polished Tuff Recipe",
     "slug": "polished-tuff-recipe"
@@ -2434,6 +2678,10 @@
   "polished_tuff_wall_receta": {
     "nombre": "Polished Tuff Wall Recipe",
     "slug": "polished-tuff-wall-recipe"
+  },
+  "potent_sulfur_receta": {
+    "nombre": "Potent Sulfur Recipe",
+    "slug": "potent-sulfur-recipe"
   },
   "powered_rail_receta": {
     "nombre": "Powered Rail Recipe",
@@ -2506,6 +2754,14 @@
   "purple_dye_receta": {
     "nombre": "Purple Dye Recipe",
     "slug": "purple-dye-recipe"
+  },
+  "purple_harness_receta_con_black_harness": {
+    "nombre": "Purple Harness Recipe (with Black Harness)",
+    "slug": "purple-harness-recipe-with-black-harness"
+  },
+  "purple_harness_receta_con_leather": {
+    "nombre": "Purple Harness Recipe (with Leather)",
+    "slug": "purple-harness-recipe-with-leather"
   },
   "purple_stained_glass_pane_receta_con_glass_pane": {
     "nombre": "Purple Stained Glass Pane Recipe (with Glass Pane)",
@@ -2639,6 +2895,14 @@
     "nombre": "Red Dye Recipe (with Rose Bush)",
     "slug": "red-dye-recipe-with-rose-bush"
   },
+  "red_harness_receta_con_black_harness": {
+    "nombre": "Red Harness Recipe (with Black Harness)",
+    "slug": "red-harness-recipe-with-black-harness"
+  },
+  "red_harness_receta_con_leather": {
+    "nombre": "Red Harness Recipe (with Leather)",
+    "slug": "red-harness-recipe-with-leather"
+  },
   "red_nether_brick_slab_receta": {
     "nombre": "Red Nether Brick Slab Recipe",
     "slug": "red-nether-brick-slab-recipe"
@@ -2711,6 +2975,30 @@
     "nombre": "Redstone Repeater Recipe",
     "slug": "redstone-repeater-recipe"
   },
+  "resin_block_receta": {
+    "nombre": "Block of Resin Recipe",
+    "slug": "block-of-resin-recipe"
+  },
+  "resin_brick_slab_receta": {
+    "nombre": "Resin Brick Slab Recipe",
+    "slug": "resin-brick-slab-recipe"
+  },
+  "resin_brick_stairs_receta": {
+    "nombre": "Resin Brick Stairs Recipe",
+    "slug": "resin-brick-stairs-recipe"
+  },
+  "resin_brick_wall_receta": {
+    "nombre": "Resin Brick Wall Recipe",
+    "slug": "resin-brick-wall-recipe"
+  },
+  "resin_bricks_receta": {
+    "nombre": "Resin Bricks Recipe",
+    "slug": "resin-bricks-recipe"
+  },
+  "resin_clump_receta": {
+    "nombre": "Resin Clump Recipe",
+    "slug": "resin-clump-recipe"
+  },
   "respawn_anchor_receta": {
     "nombre": "Respawn Anchor Recipe",
     "slug": "respawn-anchor-recipe"
@@ -2718,6 +3006,10 @@
   "rib_armor_trim_smithing_template_receta": {
     "nombre": "Rib Armor Trim Recipe",
     "slug": "rib-armor-trim-recipe"
+  },
+  "saddle_receta": {
+    "nombre": "Saddle Recipe",
+    "slug": "saddle-recipe"
   },
   "sandstone_receta": {
     "nombre": "Sandstone Recipe",
@@ -2883,6 +3175,10 @@
     "nombre": "Spruce Pressure Plate Recipe",
     "slug": "spruce-pressure-plate-recipe"
   },
+  "spruce_shelf_receta": {
+    "nombre": "Spruce Shelf Recipe",
+    "slug": "spruce-shelf-recipe"
+  },
   "spruce_sign_receta": {
     "nombre": "Spruce Sign Recipe",
     "slug": "spruce-sign-recipe"
@@ -2963,6 +3259,10 @@
     "nombre": "Stone Slab Recipe",
     "slug": "stone-slab-recipe"
   },
+  "stone_spear_receta": {
+    "nombre": "Stone Spear Recipe",
+    "slug": "stone-spear-recipe"
+  },
   "stone_stairs_receta": {
     "nombre": "Stone Stairs Recipe",
     "slug": "stone-stairs-recipe"
@@ -3026,6 +3326,18 @@
   "sugar_receta_con_sugar_cane": {
     "nombre": "Sugar Recipe (with Sugar Cane)",
     "slug": "sugar-recipe-with-sugar-cane"
+  },
+  "sulfur_slab_receta": {
+    "nombre": "Sulfur Slab Recipe",
+    "slug": "sulfur-slab-recipe"
+  },
+  "sulfur_stairs_receta": {
+    "nombre": "Sulfur Stairs Recipe",
+    "slug": "sulfur-stairs-recipe"
+  },
+  "sulfur_wall_receta": {
+    "nombre": "Sulfur Wall Recipe",
+    "slug": "sulfur-wall-recipe"
   },
   "suspicious_stew_receta": {
     "nombre": "Suspicious Stew Recipe",
@@ -3139,6 +3451,10 @@
     "nombre": "Warped Pressure Plate Recipe",
     "slug": "warped-pressure-plate-recipe"
   },
+  "warped_shelf_receta": {
+    "nombre": "Warped Shelf Recipe",
+    "slug": "warped-shelf-recipe"
+  },
   "warped_sign_receta": {
     "nombre": "Warped Sign Recipe",
     "slug": "warped-sign-recipe"
@@ -3163,6 +3479,10 @@
     "nombre": "Waxed Chiseled Copper Recipe (with Waxed Cut Copper Slab)",
     "slug": "waxed-chiseled-copper-recipe-with-waxed-cut-copper-slab"
   },
+  "waxed_copper_bars_receta": {
+    "nombre": "Waxed Copper Bars Recipe",
+    "slug": "waxed-copper-bars-recipe"
+  },
   "waxed_copper_block_receta": {
     "nombre": "Waxed Block of Copper Recipe",
     "slug": "waxed-block-of-copper-recipe"
@@ -3175,9 +3495,21 @@
     "nombre": "Waxed Copper Bulb Recipe (with Waxed Block of Copper)",
     "slug": "waxed-copper-bulb-recipe-with-waxed-block-of-copper"
   },
+  "waxed_copper_chain_receta": {
+    "nombre": "Waxed Copper Chain Recipe",
+    "slug": "waxed-copper-chain-recipe"
+  },
+  "waxed_copper_chest_receta": {
+    "nombre": "Waxed Copper Chest Recipe",
+    "slug": "waxed-copper-chest-recipe"
+  },
   "waxed_copper_door_receta": {
     "nombre": "Waxed Copper Door Recipe",
     "slug": "waxed-copper-door-recipe"
+  },
+  "waxed_copper_golem_statue_receta": {
+    "nombre": "Waxed Copper Golem Statue Recipe",
+    "slug": "waxed-copper-golem-statue-recipe"
   },
   "waxed_copper_grate_receta_con_copper_grate": {
     "nombre": "Waxed Copper Grate Recipe (with Copper Grate)",
@@ -3186,6 +3518,10 @@
   "waxed_copper_grate_receta_con_waxed_copper_block": {
     "nombre": "Waxed Copper Grate Recipe (with Waxed Block of Copper)",
     "slug": "waxed-copper-grate-recipe-with-waxed-block-of-copper"
+  },
+  "waxed_copper_lantern_receta": {
+    "nombre": "Waxed Copper Lantern Recipe",
+    "slug": "waxed-copper-lantern-recipe"
   },
   "waxed_copper_trapdoor_receta": {
     "nombre": "Waxed Copper Trapdoor Recipe",
@@ -3223,6 +3559,10 @@
     "nombre": "Waxed Exposed Chiseled Copper Recipe (with Waxed Exposed Cut Copper Slab)",
     "slug": "waxed-exposed-chiseled-copper-recipe-with-waxed-exposed-cut-copper-slab"
   },
+  "waxed_exposed_copper_bars_receta": {
+    "nombre": "Waxed Exposed Copper Bars Recipe",
+    "slug": "waxed-exposed-copper-bars-recipe"
+  },
   "waxed_exposed_copper_bulb_receta_con_exposed_copper_bulb": {
     "nombre": "Waxed Exposed Copper Bulb Recipe (with Exposed Copper Bulb)",
     "slug": "waxed-exposed-copper-bulb-recipe-with-exposed-copper-bulb"
@@ -3231,9 +3571,21 @@
     "nombre": "Waxed Exposed Copper Bulb Recipe (with Waxed Exposed Copper)",
     "slug": "waxed-exposed-copper-bulb-recipe-with-waxed-exposed-copper"
   },
+  "waxed_exposed_copper_chain_receta": {
+    "nombre": "Waxed Exposed Copper Chain Recipe",
+    "slug": "waxed-exposed-copper-chain-recipe"
+  },
+  "waxed_exposed_copper_chest_receta": {
+    "nombre": "Waxed Exposed Copper Chest Recipe",
+    "slug": "waxed-exposed-copper-chest-recipe"
+  },
   "waxed_exposed_copper_door_receta": {
     "nombre": "Waxed Exposed Copper Door Recipe",
     "slug": "waxed-exposed-copper-door-recipe"
+  },
+  "waxed_exposed_copper_golem_statue_receta": {
+    "nombre": "Waxed Exposed Copper Golem Statue Recipe",
+    "slug": "waxed-exposed-copper-golem-statue-recipe"
   },
   "waxed_exposed_copper_grate_receta_con_exposed_copper_grate": {
     "nombre": "Waxed Exposed Copper Grate Recipe (with Exposed Copper Grate)",
@@ -3242,6 +3594,10 @@
   "waxed_exposed_copper_grate_receta_con_waxed_exposed_copper": {
     "nombre": "Waxed Exposed Copper Grate Recipe (with Waxed Exposed Copper)",
     "slug": "waxed-exposed-copper-grate-recipe-with-waxed-exposed-copper"
+  },
+  "waxed_exposed_copper_lantern_receta": {
+    "nombre": "Waxed Exposed Copper Lantern Recipe",
+    "slug": "waxed-exposed-copper-lantern-recipe"
   },
   "waxed_exposed_copper_receta": {
     "nombre": "Waxed Exposed Copper Recipe",
@@ -3275,6 +3631,14 @@
     "nombre": "Waxed Exposed Cut Copper Stairs Recipe (with Waxed Exposed Cut Copper)",
     "slug": "waxed-exposed-cut-copper-stairs-recipe-with-waxed-exposed-cut-copper"
   },
+  "waxed_exposed_lightning_rod_receta": {
+    "nombre": "Waxed Exposed Lightning Rod Recipe",
+    "slug": "waxed-exposed-lightning-rod-recipe"
+  },
+  "waxed_lightning_rod_receta": {
+    "nombre": "Waxed Lightning Rod Recipe",
+    "slug": "waxed-lightning-rod-recipe"
+  },
   "waxed_oxidized_chiseled_copper_receta_con_honeycomb": {
     "nombre": "Waxed Oxidized Chiseled Copper Recipe (with Honeycomb)",
     "slug": "waxed-oxidized-chiseled-copper-recipe-with-honeycomb"
@@ -3282,6 +3646,10 @@
   "waxed_oxidized_chiseled_copper_receta_con_waxed_oxidized_cut_copper_slab": {
     "nombre": "Waxed Oxidized Chiseled Copper Recipe (with Waxed Oxidized Cut Copper Slab)",
     "slug": "waxed-oxidized-chiseled-copper-recipe-with-waxed-oxidized-cut-copper-slab"
+  },
+  "waxed_oxidized_copper_bars_receta": {
+    "nombre": "Waxed Oxidized Copper Bars Recipe",
+    "slug": "waxed-oxidized-copper-bars-recipe"
   },
   "waxed_oxidized_copper_bulb_receta_con_honeycomb": {
     "nombre": "Waxed Oxidized Copper Bulb Recipe (with Honeycomb)",
@@ -3291,9 +3659,21 @@
     "nombre": "Waxed Oxidized Copper Bulb Recipe (with Waxed Oxidized Copper)",
     "slug": "waxed-oxidized-copper-bulb-recipe-with-waxed-oxidized-copper"
   },
+  "waxed_oxidized_copper_chain_receta": {
+    "nombre": "Waxed Oxidized Copper Chain Recipe",
+    "slug": "waxed-oxidized-copper-chain-recipe"
+  },
+  "waxed_oxidized_copper_chest_receta": {
+    "nombre": "Waxed Oxidized Copper Chest Recipe",
+    "slug": "waxed-oxidized-copper-chest-recipe"
+  },
   "waxed_oxidized_copper_door_receta": {
     "nombre": "Waxed Oxidized Copper Door Recipe",
     "slug": "waxed-oxidized-copper-door-recipe"
+  },
+  "waxed_oxidized_copper_golem_statue_receta": {
+    "nombre": "Waxed Oxidized Copper Golem Statue Recipe",
+    "slug": "waxed-oxidized-copper-golem-statue-recipe"
   },
   "waxed_oxidized_copper_grate_receta_con_honeycomb": {
     "nombre": "Waxed Oxidized Copper Grate Recipe (with Honeycomb)",
@@ -3302,6 +3682,10 @@
   "waxed_oxidized_copper_grate_receta_con_waxed_oxidized_copper": {
     "nombre": "Waxed Oxidized Copper Grate Recipe (with Waxed Oxidized Copper)",
     "slug": "waxed-oxidized-copper-grate-recipe-with-waxed-oxidized-copper"
+  },
+  "waxed_oxidized_copper_lantern_receta": {
+    "nombre": "Waxed Oxidized Copper Lantern Recipe",
+    "slug": "waxed-oxidized-copper-lantern-recipe"
   },
   "waxed_oxidized_copper_receta": {
     "nombre": "Waxed Oxidized Copper Recipe",
@@ -3335,6 +3719,10 @@
     "nombre": "Waxed Oxidized Cut Copper Stairs Recipe (with Waxed Oxidized Cut Copper)",
     "slug": "waxed-oxidized-cut-copper-stairs-recipe-with-waxed-oxidized-cut-copper"
   },
+  "waxed_oxidized_lightning_rod_receta": {
+    "nombre": "Waxed Oxidized Lightning Rod Recipe",
+    "slug": "waxed-oxidized-lightning-rod-recipe"
+  },
   "waxed_weathered_chiseled_copper_receta_con_honeycomb": {
     "nombre": "Waxed Weathered Chiseled Copper Recipe (with Honeycomb)",
     "slug": "waxed-weathered-chiseled-copper-recipe-with-honeycomb"
@@ -3342,6 +3730,10 @@
   "waxed_weathered_chiseled_copper_receta_con_waxed_weathered_cut_copper_slab": {
     "nombre": "Waxed Weathered Chiseled Copper Recipe (with Waxed Weathered Cut Copper Slab)",
     "slug": "waxed-weathered-chiseled-copper-recipe-with-waxed-weathered-cut-copper-slab"
+  },
+  "waxed_weathered_copper_bars_receta": {
+    "nombre": "Waxed Weathered Copper Bars Recipe",
+    "slug": "waxed-weathered-copper-bars-recipe"
   },
   "waxed_weathered_copper_bulb_receta_con_honeycomb": {
     "nombre": "Waxed Weathered Copper Bulb Recipe (with Honeycomb)",
@@ -3351,9 +3743,21 @@
     "nombre": "Waxed Weathered Copper Bulb Recipe (with Waxed Weathered Copper)",
     "slug": "waxed-weathered-copper-bulb-recipe-with-waxed-weathered-copper"
   },
+  "waxed_weathered_copper_chain_receta": {
+    "nombre": "Waxed Weathered Copper Chain Recipe",
+    "slug": "waxed-weathered-copper-chain-recipe"
+  },
+  "waxed_weathered_copper_chest_receta": {
+    "nombre": "Waxed Weathered Copper Chest Recipe",
+    "slug": "waxed-weathered-copper-chest-recipe"
+  },
   "waxed_weathered_copper_door_receta": {
     "nombre": "Waxed Weathered Copper Door Recipe",
     "slug": "waxed-weathered-copper-door-recipe"
+  },
+  "waxed_weathered_copper_golem_statue_receta": {
+    "nombre": "Waxed Weathered Copper Golem Statue Recipe",
+    "slug": "waxed-weathered-copper-golem-statue-recipe"
   },
   "waxed_weathered_copper_grate_receta_con_honeycomb": {
     "nombre": "Waxed Weathered Copper Grate Recipe (with Honeycomb)",
@@ -3362,6 +3766,10 @@
   "waxed_weathered_copper_grate_receta_con_waxed_weathered_copper": {
     "nombre": "Waxed Weathered Copper Grate Recipe (with Waxed Weathered Copper)",
     "slug": "waxed-weathered-copper-grate-recipe-with-waxed-weathered-copper"
+  },
+  "waxed_weathered_copper_lantern_receta": {
+    "nombre": "Waxed Weathered Copper Lantern Recipe",
+    "slug": "waxed-weathered-copper-lantern-recipe"
   },
   "waxed_weathered_copper_receta": {
     "nombre": "Waxed Weathered Copper Recipe",
@@ -3394,6 +3802,10 @@
   "waxed_weathered_cut_copper_stairs_receta_con_waxed_weathered_cut_copper": {
     "nombre": "Waxed Weathered Cut Copper Stairs Recipe (with Waxed Weathered Cut Copper)",
     "slug": "waxed-weathered-cut-copper-stairs-recipe-with-waxed-weathered-cut-copper"
+  },
+  "waxed_weathered_lightning_rod_receta": {
+    "nombre": "Waxed Weathered Lightning Rod Recipe",
+    "slug": "waxed-weathered-lightning-rod-recipe"
   },
   "wayfinder_armor_trim_smithing_template_receta": {
     "nombre": "Wayfinder Armor Trim Recipe",
@@ -3459,6 +3871,14 @@
     "nombre": "White Dye Recipe",
     "slug": "white-dye-recipe"
   },
+  "white_harness_receta_con_black_harness": {
+    "nombre": "White Harness Recipe (with Black Harness)",
+    "slug": "white-harness-recipe-with-black-harness"
+  },
+  "white_harness_receta_con_leather": {
+    "nombre": "White Harness Recipe (with Leather)",
+    "slug": "white-harness-recipe-with-leather"
+  },
   "white_stained_glass_pane_receta_con_glass_pane": {
     "nombre": "White Stained Glass Pane Recipe (with Glass Pane)",
     "slug": "white-stained-glass-pane-recipe-with-glass-pane"
@@ -3511,6 +3931,10 @@
     "nombre": "Wooden Shovel Recipe",
     "slug": "wooden-shovel-recipe"
   },
+  "wooden_spear_receta": {
+    "nombre": "Wooden Spear Recipe",
+    "slug": "wooden-spear-recipe"
+  },
   "wooden_sword_receta": {
     "nombre": "Wooden Sword Recipe",
     "slug": "wooden-sword-recipe"
@@ -3554,6 +3978,14 @@
   "yellow_dye_receta_con_sunflower": {
     "nombre": "Yellow Dye Recipe (with Sunflower)",
     "slug": "yellow-dye-recipe-with-sunflower"
+  },
+  "yellow_harness_receta_con_black_harness": {
+    "nombre": "Yellow Harness Recipe (with Black Harness)",
+    "slug": "yellow-harness-recipe-with-black-harness"
+  },
+  "yellow_harness_receta_con_leather": {
+    "nombre": "Yellow Harness Recipe (with Leather)",
+    "slug": "yellow-harness-recipe-with-leather"
   },
   "yellow_stained_glass_pane_receta_con_glass_pane": {
     "nombre": "Yellow Stained Glass Pane Recipe (with Glass Pane)",

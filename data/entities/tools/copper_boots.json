@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "copper_boots",
+  "tipo": "armadura",
+  "etapa": "hierro",
+  "relevancia": "alta",
+  "categoria": "botas",
+  "material": "cobre",
+  "durabilidad": 143,
+  "reparadoCon": [
+    "copper_ingot"
+  ]
+}

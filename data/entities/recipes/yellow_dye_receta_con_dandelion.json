@@ -13,7 +13,9 @@
   "ingredientes": [
     {
       "opciones": [
-        "dandelion"
+        "dandelion",
+        "golden_dandelion",
+        "wildflowers"
       ],
       "cantidad": 1
     }

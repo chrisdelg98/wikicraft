@@ -1,0 +1,13 @@
+{
+  "$schema": "item.schema.json",
+  "id": "polished_sulfur_stairs",
+  "tipo": "item",
+  "etapa": "hierro",
+  "relevancia": "normal",
+  "categorias": [
+    "bloque"
+  ],
+  "pila": 64,
+  "varianteDe": "sulfur",
+  "desdeVersion": "26.2"
+}

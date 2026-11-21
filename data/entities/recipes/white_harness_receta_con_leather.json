@@ -1,0 +1,29 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "white_harness_receta_con_leather",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "white_harness",
+    "cantidad": 1
+  },
+  "variantePor": "leather",
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "BCB"
+  ],
+  "clave": {
+    "A": [
+      "leather"
+    ],
+    "B": [
+      "glass"
+    ],
+    "C": [
+      "white_wool"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

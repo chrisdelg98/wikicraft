@@ -50,6 +50,11 @@
     "slug": "camello",
     "descripcion": "Se monta entre dos personas y es tan alto que los zombis no te alcanzan desde el suelo. Vive en los desiertos."
   },
+  "camel_husk": {
+    "nombre": "Camello disecado",
+    "descripcion": "Un camello zombi que sale de noche en el desierto, con un husk montado encima y un momificado detrás. Si derribas al jinete, puedes montarlo tú.",
+    "slug": "camello-disecado"
+  },
   "cat": {
     "nombre": "Gato",
     "slug": "gato",
@@ -71,6 +76,12 @@
     "nombre": "Bacalao",
     "slug": "bacalao",
     "descripcion": "El pez más común del mar. Se puede pescar o cazar, y cocinado es comida decente."
+  },
+  "copper_golem": {
+    "nombre": "Gólem de cobre",
+    "descripcion": "Lo construyes tú con un bloque de cobre y una calabaza tallada encima. Es un ayudante: saca cosas de los cofres de cobre y las lleva a los cofres normales que ya tengan lo mismo.",
+    "notas": "Con el tiempo se oxida y se mueve más despacio. Si se oxida del todo se convierte en estatua; ráspalo con un hacha para que vuelva a moverse, o enceralo con un panal para que no se oxide.",
+    "slug": "golem-de-cobre"
   },
   "cow": {
     "nombre": "Vaca",
@@ -182,6 +193,12 @@
     "notas": "Tiene pinchos: si le pegas cuerpo a cuerpo mientras los tiene fuera, te devuelve parte del daño. El rayo no se puede parar con el escudo.",
     "consejo": "Escóndete detrás de un bloque mientras carga el rayo y sal a pegarle cuando falle. Con Impulso Acuático en el tridente se pelea mucho mejor."
   },
+  "happy_ghast": {
+    "nombre": "Ghast feliz",
+    "descripcion": "Un ghast amistoso y enorme que puedes montar. Nace de un ghast seco que has dejado en agua. Ponle un arnés y pueden volar encima hasta cuatro jugadores.",
+    "consejo": "Para llevarlo a donde quieras, sostén una bola de nieve o un arnés: te sigue.",
+    "slug": "ghast-feliz"
+  },
   "hoglin": {
     "nombre": "Hoglin",
     "slug": "hoglin",
@@ -233,6 +250,11 @@
     "slug": "mula",
     "descripcion": "Cruce de caballo y burro. Lleva alforjas pero no se le puede poner armadura."
   },
+  "nautilus": {
+    "nombre": "Nautilo",
+    "descripcion": "Una criatura con concha que nada en todos los océanos. Dale pez globo hasta que se deje domar, y podrás montarlo bajo el agua: mientras vas encima no te ahogas.",
+    "slug": "nautilo"
+  },
   "ocelot": {
     "nombre": "Ocelote",
     "slug": "ocelote",
@@ -242,6 +264,12 @@
     "nombre": "Panda",
     "slug": "panda",
     "descripcion": "Vive en las junglas de bambú y cada uno tiene su carácter: los hay perezosos, juguetones y hasta llorones."
+  },
+  "parched": {
+    "nombre": "Momificado",
+    "descripcion": "Un esqueleto del desierto. Sale de noche o con tormenta, en grupos, y dispara flechas de debilidad que hacen que pegues más flojo durante 30 segundos.",
+    "consejo": "Si lo mata un jugador puede soltar flechas de debilidad, que te sirven para curar aldeanos zombis.",
+    "slug": "momificado"
   },
   "parrot": {
     "nombre": "Loro",
@@ -376,6 +404,13 @@
     "slug": "lava-strider",
     "descripcion": "Camina sobre la lava del Nether. Con una silla y una seta en una caña, es la forma de cruzar mares de lava."
   },
+  "sulfur_cube": {
+    "nombre": "Cubo de azufre",
+    "slug": "cubo-de-azufre",
+    "descripcion": "Un cubo saltarín que solo vive en las cuevas de azufre. No te ataca. Puede tragarse un bloque entero y entonces cambia: con TNT dentro se vuelve explosivo, con magma se calienta, y cada bloque lo hace botar distinto.",
+    "notas": "Cuando muere uno grande se parte en dos pequeños, que crecen en unos 20 minutos. Suelta el bloque que se había tragado. Con unas tijeras le sacas el bloque sin hacerle daño.",
+    "consejo": "Dale una bola de slime a uno pequeño para que crezca antes, o un diente de león dorado para que se quede pequeño. Los grandes se pueden coger con un cubo."
+  },
   "tadpole": {
     "nombre": "Renacuajo",
     "slug": "renacuajo",
@@ -471,6 +506,11 @@
     "nombre": "Caballo zombi",
     "slug": "caballo-zombi",
     "descripcion": "Un caballo verde que no aparece de forma natural. Solo se ve con comandos."
+  },
+  "zombie_nautilus": {
+    "nombre": "Nautilo zombi",
+    "descripcion": "La versión zombi del nautilo. Casi siempre lleva montado un ahogado con tridente. El nautilo no te ataca por sí solo, pero el ahogado sí, y desde su montura nada rapidísimo.",
+    "slug": "nautilo-zombi"
   },
   "zombie_villager": {
     "nombre": "Aldeano zombi",

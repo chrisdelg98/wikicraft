@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "name_tag_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "name_tag",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    " A",
+    "B"
+  ],
+  "clave": {
+    "A": [
+      "copper_nugget",
+      "gold_nugget",
+      "iron_nugget"
+    ],
+    "B": [
+      "paper"
+    ]
+  },
+  "estacion": "inventario"
+}

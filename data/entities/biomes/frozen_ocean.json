@@ -8,7 +8,9 @@
     "drowned",
     "polar_bear",
     "salmon_mob",
-    "squid"
+    "squid",
+    "nautilus",
+    "zombie_nautilus"
   ],
   "recursos": [
     "ice",

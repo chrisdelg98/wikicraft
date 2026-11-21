@@ -3,9 +3,10 @@
   "id": "light_blue_bed",
   "tipo": "item",
   "etapa": "inicio",
-  "relevancia": "normal",
+  "relevancia": "baja",
   "categorias": [
     "bloque"
   ],
-  "pila": 1
+  "pila": 1,
+  "varianteDe": "white_bed"
 }

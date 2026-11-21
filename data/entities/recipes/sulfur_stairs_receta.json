@@ -1,0 +1,24 @@
+{
+  "$schema": "recipe.schema.json",
+  "id": "sulfur_stairs_receta",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "sulfur_stairs",
+    "cantidad": 4
+  },
+  "conForma": true,
+  "patron": [
+    "A",
+    "AA",
+    "AAA"
+  ],
+  "clave": {
+    "A": [
+      "sulfur"
+    ]
+  },
+  "estacion": "mesa_de_trabajo",
+  "desdeVersion": "26.2"
+}

@@ -1,0 +1,93 @@
+{
+  "armorer": {
+    "nombre": "Armorer",
+    "slug": "armorer",
+    "descripcion": "Buys coal and iron, and sells armor. At high levels it sells diamond armor, which comes out much cheaper than hunting for the diamonds.",
+    "notas": "One of the villagers most worth levelling up: the gap between what it sells as a novice and as a master is huge.",
+    "advertencia": "Ranges are the game’s own: when the villager appears, each trade rolls its price within those limits. Curing it from a zombie lowers prices further, permanently and stackably."
+  },
+  "butcher": {
+    "nombre": "Butcher",
+    "slug": "butcher",
+    "descripcion": "Buys raw meat and sells cooked meat. Goes perfectly with any animal farm.",
+    "notas": "Cooking the meat yourself and selling it cooked doesn’t pay off: pay with raw meat and keep the cooked.",
+    "advertencia": "Amounts are approximate: Minecraft rolls each trade’s price within a range, and it drops permanently if you cure the villager from a zombie."
+  },
+  "cartographer": {
+    "nombre": "Cartographer",
+    "slug": "cartographer",
+    "descripcion": "Buys paper and sells maps, including the explorer maps that mark mansions and ocean monuments.",
+    "notas": "Its explorer maps are the only practical way to find a woodland mansion.",
+    "advertencia": "Ranges are the game’s own: when the villager appears, each trade rolls its price within those limits. Curing it from a zombie lowers prices further, permanently and stackably."
+  },
+  "cleric": {
+    "nombre": "Cleric",
+    "slug": "cleric",
+    "descripcion": "Buys rotten flesh and sells redstone, lapis lazuli and ender pearls. It is the safest way to get pearls without fighting endermen.",
+    "notas": "Rotten flesh is good for almost nothing else, so this villager turns rubbish into useful material.",
+    "advertencia": "Ranges are the game’s own: when the villager appears, each trade rolls its price within those limits. Curing it from a zombie lowers prices further, permanently and stackably."
+  },
+  "farmer": {
+    "nombre": "Farmer",
+    "slug": "farmer",
+    "descripcion": "Buys crops and sells food. It is the easiest villager to get and the one that solves hunger in your first hours.",
+    "notas": "If you plant a big field, the farmer turns your spare wheat into emeralds with no extra work.",
+    "advertencia": "Ranges are the game’s own: when the villager appears, each trade rolls its price within those limits. Curing it from a zombie lowers prices further, permanently and stackably."
+  },
+  "fisherman": {
+    "nombre": "Fisherman",
+    "slug": "fisherman",
+    "descripcion": "Buys string and fish, and sells cooked fish and fishing rods. Handy if you have a spider farm or fish a lot.",
+    "notas": "It also sells the compass, which you need to make maps.",
+    "advertencia": "Ranges are the game’s own: when the villager appears, each trade rolls its price within those limits. Curing it from a zombie lowers prices further, permanently and stackably."
+  },
+  "fletcher": {
+    "nombre": "Fletcher",
+    "slug": "fletcher",
+    "descripcion": "Buys sticks, flint and feathers, and sells arrows and bows. Since sticks come from wood, it is the cheapest villager to trade with.",
+    "notas": "Thirty-two sticks are four logs. It is the fastest way to get your first emeralds.",
+    "advertencia": "Ranges are the game’s own: when the villager appears, each trade rolls its price within those limits. Curing it from a zombie lowers prices further, permanently and stackably."
+  },
+  "leatherworker": {
+    "nombre": "Leatherworker",
+    "slug": "leatherworker",
+    "descripcion": "Buys leather and sells dyed leather armor and saddles. Saddles cannot be crafted, so this is one of the few ways to get one.",
+    "notas": "If you have cows, leather is endless and this villager becomes very profitable.",
+    "advertencia": "Ranges are the game’s own: when the villager appears, each trade rolls its price within those limits. Curing it from a zombie lowers prices further, permanently and stackably."
+  },
+  "librarian": {
+    "nombre": "Librarian",
+    "slug": "librarian",
+    "descripcion": "The most profitable job in the game. Sells enchanted books, including treasure ones that can never come from the enchanting table.",
+    "notas": "Before you trade with it for the first time you can break and replace its lectern to reroll its trades. Curing it from a zombie lowers prices permanently and stackably.",
+    "advertencia": "Ranges are the game’s own: when the villager appears, each trade rolls its price within those limits. Curing it from a zombie lowers prices further, permanently and stackably."
+  },
+  "mason": {
+    "nombre": "Mason",
+    "slug": "mason",
+    "descripcion": "Buys clay and stone, and sells decorative blocks: bricks, quartz and coloured terracotta. The builder’s villager.",
+    "notas": "Sells quartz without a trip to the Nether, which is far more comfortable for big builds.",
+    "advertencia": "Ranges are the game’s own: when the villager appears, each trade rolls its price within those limits. Curing it from a zombie lowers prices further, permanently and stackably."
+  },
+  "shepherd": {
+    "nombre": "Shepherd",
+    "slug": "shepherd",
+    "descripcion": "Buys wool and dyes, and sells shears, beds, carpets and paintings. With a few sheep it becomes a steady source of emeralds.",
+    "notas": "Shearing a sheep doesn’t kill it and the wool grows back, so this trade is fully renewable.",
+    "advertencia": "Ranges are the game’s own: when the villager appears, each trade rolls its price within those limits. Curing it from a zombie lowers prices further, permanently and stackably."
+  },
+  "toolsmith": {
+    "nombre": "Toolsmith",
+    "slug": "toolsmith",
+    "descripcion": "Buys coal and iron, and sells tools: pickaxes, axes, shovels and hoes, enchanted at high levels.",
+    "notas": "Its diamond pickaxe with Efficiency saves a huge amount of digging time.",
+    "advertencia": "Ranges are the game’s own: when the villager appears, each trade rolls its price within those limits. Curing it from a zombie lowers prices further, permanently and stackably."
+  },
+  "weaponsmith": {
+    "nombre": "Weaponsmith",
+    "slug": "weaponsmith",
+    "descripcion": "Buys coal and iron, and sells swords and axes, enchanted from journeyman level up.",
+    "notas": "One of its enchanted diamond swords is often cheaper than making and enchanting one yourself.",
+    "advertencia": "Ranges are the game’s own: when the villager appears, each trade rolls its price within those limits. Curing it from a zombie lowers prices further, permanently and stackably."
+  }
+}

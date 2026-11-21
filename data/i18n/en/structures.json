@@ -1,0 +1,149 @@
+{
+  "ancient_city": {
+    "nombre": "Ancient City",
+    "slug": "ancient-city",
+    "descripcion": "A huge dark stone city buried in the Deep Dark, with the best chests in the game. It is also where the warden lives.",
+    "notas": "You are not supposed to fight here: you are supposed to stay quiet. Always sneak, don’t break blocks near a sensor and cover the shriekers before moving.",
+    "consejo": "The warden isn’t for killing, it is for avoiding. If it starts roaring, throw a snowball far away so it goes there, and leave the area."
+  },
+  "bastion_remnant": {
+    "nombre": "Bastion Remnant",
+    "slug": "bastion-remnant",
+    "descripcion": "A ruined blackstone fortress taken over by piglins. The best place in the game to find ancient debris, which leads to netherite.",
+    "notas": "Wear some gold before going in or every piglin will attack at once. And don’t open a chest in front of them, even wearing gold: that angers them anyway.",
+    "consejo": "The treasure room chests are guarded by brutes, and brutes don’t care about gold. Go ready to fight in that part."
+  },
+  "buried_treasure": {
+    "nombre": "Buried Treasure",
+    "slug": "buried-treasure",
+    "descripcion": "A single chest hidden under the sand of a beach. The only way to get a Heart of the Sea, which you need for a conduit.",
+    "notas": "You find it with the treasure map from shipwrecks and ruins. When the white dot sits right on the cross, you are on top of it: dig down.",
+    "consejo": "It can be quite deep, down to bedrock. If it doesn’t show up after a few blocks, keep digging."
+  },
+  "desert_pyramid": {
+    "nombre": "Desert Pyramid",
+    "slug": "desert-pyramid",
+    "descripcion": "A sandstone pyramid with four chests hidden in a basement. One of the first places where you can find diamonds without mining.",
+    "notas": "There is a blue pressure plate on the basement floor with nine TNT underneath. Break it from the edge or climb down a side: it is the trap that has ended the most worlds in one go.",
+    "consejo": "The chests are in the four corners of the basement, not on the surface. Dig down through the floor in the middle of the pyramid."
+  },
+  "dungeon": {
+    "nombre": "Dungeon",
+    "slug": "dungeon",
+    "descripcion": "A small mossy stone room with a monster spawner in the middle and one or two chests. The simplest way to get an experience farm.",
+    "notas": "The spawner only works in low light. Put torches on and around it and it stops spawning straight away, without breaking anything.",
+    "consejo": "Don’t break the spawner. It is worth far more as an experience and gunpowder farm than both chests together."
+  },
+  "end_city": {
+    "nombre": "End City",
+    "slug": "end-city",
+    "descripcion": "Purpur towers on the outer End islands, with shulkers inside. The only place to get elytra, which is how you fly in this game.",
+    "notas": "The elytra are on the floating ship next to some cities, not in the towers. If the city has no ship, there are no elytra: find another one.",
+    "consejo": "Shulkers shoot a projectile that makes you float and then fall. Bring a Potion of Slow Falling or buckets of milk."
+  },
+  "igloo": {
+    "nombre": "Igloo",
+    "slug": "igloo",
+    "descripcion": "A little snow house with a bed. Half of them hide a basement with a zombie villager locked up and everything you need to cure it.",
+    "notas": "The basement chests already have the Potion of Weakness and the golden apple. Curing that villager gives you ridiculous prices forever.",
+    "consejo": "Lift the carpet on the floor: the trapdoor to the basement is underneath."
+  },
+  "jungle_pyramid": {
+    "nombre": "Jungle Temple",
+    "slug": "jungle-temple",
+    "descripcion": "A mossy stone temple hidden in the jungle, with two chests and a small lever puzzle.",
+    "notas": "It has two arrow traps with tripwires. Cut the wires with shears or break them from a distance before walking the corridors.",
+    "consejo": "The three-lever puzzle opens the lower chest, but you can skip it: dig through the wall next to it and walk straight in."
+  },
+  "mineshaft": {
+    "nombre": "Mineshaft",
+    "slug": "mineshaft",
+    "descripcion": "Kilometres of tunnels with rails, chests in minecarts and cobwebs. One of the most rewarding places early on, and one of the easiest to get lost in.",
+    "notas": "Cobwebs warn of a cave spider nest: there is a spawner nearby. Cave spiders poison you and fit through one-block gaps.",
+    "consejo": "Collect the cobwebs with shears. They give string, and string becomes bows and fishing rods."
+  },
+  "nether_fortress": {
+    "nombre": "Nether Fortress",
+    "slug": "nether-fortress",
+    "descripcion": "A huge dark brick castle that stretches across the Nether. The only place to find blazes and nether wart, so sooner or later you have to come.",
+    "notas": "The corridors are narrow with lava below. Go slowly, place blocks for cover and don’t run: most deaths here are falls, not fights.",
+    "consejo": "No blaze rods, no blaze powder, and no blaze powder, no brewing stand. The whole potion system starts in this building."
+  },
+  "ocean_monument": {
+    "nombre": "Ocean Monument",
+    "slug": "ocean-monument",
+    "descripcion": "A giant prismarine temple on the sea floor, guarded by guardians. There are gold blocks inside and it is the only place to get sponges.",
+    "notas": "Elder guardians give you Mining Fatigue, which leaves you mining in slow motion. Drink milk to clear it, or you’ll have to kill all three before you can break anything.",
+    "consejo": "Go with Respiration and Aqua Affinity, or a Potion of Water Breathing. Without them you’ll keep swimming up for air."
+  },
+  "ocean_ruins": {
+    "nombre": "Ocean Ruins",
+    "slug": "ocean-ruins",
+    "descripcion": "Remains of sunken stone houses, with drowned around and the odd chest. Not much, except for one thing: treasure maps come from here.",
+    "notas": "Drowned with tridents deal heavy damage from a distance. If you see one with a trident, get out of the water before fighting.",
+    "consejo": "There are stone ruins in cold seas and sandstone ones in warm seas. The loot is the same."
+  },
+  "pillager_outpost": {
+    "nombre": "Pillager Outpost",
+    "slug": "pillager-outpost",
+    "descripcion": "A dark oak tower full of crossbow pillagers, sometimes with a caged iron golem. There is a chest at the very top.",
+    "notas": "If you kill the captain, the one carrying the banner, you get Bad Omen and the next village you enter will be raided. Sometimes you want that and sometimes you don’t: decide before shooting.",
+    "consejo": "Pillagers shoot from far away and in groups. Come in from behind or around the side, never head-on across open ground."
+  },
+  "ruined_portal": {
+    "nombre": "Ruined Portal",
+    "slug": "ruined-portal",
+    "descripcion": "A half-built Nether portal with a chest next to it. Good for two things: free obsidian and getting to the Nether without crafting anything.",
+    "notas": "The chest almost always has flint and steel, and sometimes golden apples. It is the cheapest way to open your first portal.",
+    "consejo": "If the frame is missing blocks, fill them in with normal obsidian. The portal doesn’t have to look nice, just be closed."
+  },
+  "shipwreck": {
+    "nombre": "Shipwreck",
+    "slug": "shipwreck",
+    "descripcion": "A sunken ship, whole or broken, with up to three chests. One of them usually holds the map to a buried treasure.",
+    "notas": "The three chests are in different places: the hold, the captain’s room and the bow. It is worth breaking the whole ship before leaving.",
+    "consejo": "Some shipwrecks are on the beach and you don’t even need to dive."
+  },
+  "stronghold": {
+    "nombre": "Stronghold",
+    "slug": "stronghold",
+    "descripcion": "A maze of stone corridors underground. The portal to the End is here, so you have to go through one to finish the game.",
+    "notas": "The library is the best part: its chests are among the few places where enchanted books show up without spending levels.",
+    "consejo": "Eyes of ender lead you to right above the stronghold, not to its door. When the eye goes down instead of forward, you are on top and it is time to dig."
+  },
+  "swamp_hut": {
+    "nombre": "Witch Hut",
+    "slug": "witch-hut",
+    "descripcion": "A hut on stilts in the swamp with a witch inside. It has no chests, so you come here for the witch, not the loot.",
+    "notas": "Witches keep spawning here no matter what, so it works as a farm for glowstone dust, gunpowder and bottles.",
+    "consejo": "Witches drink potions to heal. Hit them fast and without pauses, or their health will never go down."
+  },
+  "trail_ruins": {
+    "nombre": "Trail Ruins",
+    "slug": "trail-ruins",
+    "descripcion": "The remains of a buried town that you dig up with a brush instead of a pickaxe. No chests: the finds come from suspicious gravel and sand.",
+    "notas": "Brush slowly and stay still. If you walk away or get hit, the dig cancels and you have to start again.",
+    "consejo": "This is where pottery sherds and some armor trim templates come from. You come for decoration, not materials."
+  },
+  "trial_chambers": {
+    "nombre": "Trial Chambers",
+    "slug": "trial-chambers",
+    "descripcion": "An underground complex of rooms with spawners that release waves of mobs and, once beaten, locked vaults. Added in 1.21, it is the only place to get the mace.",
+    "notas": "Trial spawners switch off by themselves once you clear the wave and give their reward. No need to break or torch them.",
+    "consejo": "Save trial keys for the vaults, which hold the good stuff. The normal chests in the corridors are filler."
+  },
+  "village": {
+    "nombre": "Village",
+    "slug": "village",
+    "descripcion": "A villager town with houses, fields and beds. The best place to settle at the start: food already planted, free beds and people to trade with.",
+    "notas": "Put torches all over the village on day one. If the villagers die at night you lose your trades, and repopulating costs far more than lighting it.",
+    "consejo": "Sleep here the first night even if you haven’t made it yours: sleeping sets your respawn point and keeps phantoms away."
+  },
+  "woodland_mansion": {
+    "nombre": "Woodland Mansion",
+    "slug": "woodland-mansion",
+    "descripcion": "A huge three-storey house lost in the dark forest, full of secret rooms and illagers. The only place in the game to get the Totem of Undying.",
+    "notas": "Evokers summon vexes, which go through walls and cause most deaths here. Fight in narrow corridors, not big rooms.",
+    "consejo": "It is very far away. Buy a woodland explorer map from a cartographer before you set off, or you will spend hours looking."
+  }
+}

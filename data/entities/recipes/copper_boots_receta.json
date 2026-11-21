@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "copper_boots_receta",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "copper_boots",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "A A",
+    "A A"
+  ],
+  "clave": {
+    "A": [
+      "copper_ingot"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

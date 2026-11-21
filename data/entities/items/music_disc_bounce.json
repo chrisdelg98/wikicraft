@@ -1,0 +1,12 @@
+{
+  "$schema": "item.schema.json",
+  "id": "music_disc_bounce",
+  "tipo": "item",
+  "etapa": "hierro",
+  "relevancia": "normal",
+  "categorias": [
+    "material"
+  ],
+  "pila": 1,
+  "desdeVersion": "26.2"
+}

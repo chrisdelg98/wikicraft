@@ -1,0 +1,13 @@
+{
+  "$schema": "item.schema.json",
+  "id": "polished_cinnabar_wall",
+  "tipo": "item",
+  "etapa": "hierro",
+  "relevancia": "normal",
+  "categorias": [
+    "bloque"
+  ],
+  "pila": 64,
+  "varianteDe": "cinnabar",
+  "desdeVersion": "26.2"
+}

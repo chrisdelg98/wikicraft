@@ -9,7 +9,9 @@
     "drowned",
     "pufferfish_mob",
     "squid",
-    "tropical_fish_mob"
+    "tropical_fish_mob",
+    "nautilus",
+    "zombie_nautilus"
   ],
   "recursos": [
     "kelp",

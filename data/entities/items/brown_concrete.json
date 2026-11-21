@@ -3,9 +3,10 @@
   "id": "brown_concrete",
   "tipo": "item",
   "etapa": "inicio",
-  "relevancia": "normal",
+  "relevancia": "baja",
   "categorias": [
     "bloque"
   ],
-  "pila": 64
+  "pila": 64,
+  "varianteDe": "white_concrete"
 }

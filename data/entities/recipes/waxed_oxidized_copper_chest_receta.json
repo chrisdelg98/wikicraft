@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "waxed_oxidized_copper_chest_receta",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "waxed_oxidized_copper_chest",
+    "cantidad": 1
+  },
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "honeycomb"
+      ],
+      "cantidad": 1
+    },
+    {
+      "opciones": [
+        "oxidized_copper_chest"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

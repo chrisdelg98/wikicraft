@@ -1,0 +1,28 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "pink_harness_receta_con_black_harness",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "pink_harness",
+    "cantidad": 1
+  },
+  "variantePor": "black_harness",
+  "conForma": false,
+  "ingredientes": [
+    {
+      "opciones": [
+        "black_harness"
+      ],
+      "cantidad": 1
+    },
+    {
+      "opciones": [
+        "pink_dye"
+      ],
+      "cantidad": 1
+    }
+  ],
+  "estacion": "inventario"
+}

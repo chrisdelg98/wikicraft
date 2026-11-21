@@ -1,0 +1,26 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "dried_ghast_receta",
+  "tipo": "receta",
+  "etapa": "nether",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "dried_ghast",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "clave": {
+    "A": [
+      "ghast_tear"
+    ],
+    "B": [
+      "soul_sand"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

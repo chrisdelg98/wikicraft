@@ -1,0 +1,26 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "golden_dandelion_receta",
+  "tipo": "receta",
+  "etapa": "hierro",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "golden_dandelion",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "clave": {
+    "A": [
+      "gold_nugget"
+    ],
+    "B": [
+      "dandelion"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

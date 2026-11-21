@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "copper_chestplate",
+  "tipo": "armadura",
+  "etapa": "hierro",
+  "relevancia": "alta",
+  "categoria": "pechera",
+  "material": "cobre",
+  "durabilidad": 176,
+  "reparadoCon": [
+    "copper_ingot"
+  ]
+}

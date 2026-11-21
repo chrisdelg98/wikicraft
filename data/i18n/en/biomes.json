@@ -211,6 +211,10 @@
     "nombre": "Stony Shore",
     "slug": "stony-shore"
   },
+  "sulfur_caves": {
+    "nombre": "Sulfur Caves",
+    "slug": "sulfur-caves"
+  },
   "sunflower_plains": {
     "nombre": "Sunflower Plains",
     "slug": "sunflower-plains"

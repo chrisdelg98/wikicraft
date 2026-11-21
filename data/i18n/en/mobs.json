@@ -35,6 +35,10 @@
     "nombre": "Camel",
     "slug": "camel"
   },
+  "camel_husk": {
+    "nombre": "Camel Husk",
+    "slug": "camel-husk"
+  },
   "cat": {
     "nombre": "Cat",
     "slug": "cat"
@@ -50,6 +54,10 @@
   "cod_mob": {
     "nombre": "Cod",
     "slug": "cod"
+  },
+  "copper_golem": {
+    "nombre": "Copper Golem",
+    "slug": "copper-golem"
   },
   "cow": {
     "nombre": "Cow",
@@ -123,6 +131,10 @@
     "nombre": "Guardian",
     "slug": "guardian"
   },
+  "happy_ghast": {
+    "nombre": "Happy Ghast",
+    "slug": "happy-ghast"
+  },
   "hoglin": {
     "nombre": "Hoglin",
     "slug": "hoglin"
@@ -159,6 +171,10 @@
     "nombre": "Mule",
     "slug": "mule"
   },
+  "nautilus": {
+    "nombre": "Nautilus",
+    "slug": "nautilus"
+  },
   "ocelot": {
     "nombre": "Ocelot",
     "slug": "ocelot"
@@ -166,6 +182,10 @@
   "panda": {
     "nombre": "Panda",
     "slug": "panda"
+  },
+  "parched": {
+    "nombre": "Parched",
+    "slug": "parched"
   },
   "parrot": {
     "nombre": "Parrot",
@@ -259,6 +279,10 @@
     "nombre": "Strider",
     "slug": "strider"
   },
+  "sulfur_cube": {
+    "nombre": "Sulfur Cube",
+    "slug": "sulfur-cube"
+  },
   "tadpole": {
     "nombre": "Tadpole",
     "slug": "tadpole"
@@ -322,6 +346,10 @@
   "zombie_horse": {
     "nombre": "Zombie Horse",
     "slug": "zombie-horse"
+  },
+  "zombie_nautilus": {
+    "nombre": "Zombie Nautilus",
+    "slug": "zombie-nautilus"
   },
   "zombie_villager": {
     "nombre": "Zombie Villager",

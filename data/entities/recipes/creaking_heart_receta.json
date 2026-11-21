@@ -1,0 +1,26 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "creaking_heart_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "creaking_heart",
+    "cantidad": 1
+  },
+  "conForma": true,
+  "patron": [
+    "A",
+    "B",
+    "A"
+  ],
+  "clave": {
+    "A": [
+      "pale_oak_log"
+    ],
+    "B": [
+      "resin_block"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "../../schemas/mob.schema.json",
+  "id": "camel_husk",
+  "tipo": "mob",
+  "etapa": "inicio",
+  "relevancia": "normal",
+  "categoria": "pasivo",
+  "dimension": [
+    "superficie"
+  ],
+  "apareceEn": [
+    "desert"
+  ]
+}

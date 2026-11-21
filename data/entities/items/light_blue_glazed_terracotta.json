@@ -3,9 +3,10 @@
   "id": "light_blue_glazed_terracotta",
   "tipo": "item",
   "etapa": "inicio",
-  "relevancia": "normal",
+  "relevancia": "baja",
   "categorias": [
     "bloque"
   ],
-  "pila": 64
+  "pila": 64,
+  "varianteDe": "white_glazed_terracotta"
 }

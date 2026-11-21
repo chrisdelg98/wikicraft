@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "copper_axe",
+  "tipo": "herramienta",
+  "etapa": "hierro",
+  "relevancia": "alta",
+  "categoria": "hacha",
+  "material": "cobre",
+  "durabilidad": 190,
+  "reparadoCon": [
+    "copper_ingot"
+  ]
+}

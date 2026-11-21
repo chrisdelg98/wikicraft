@@ -233,6 +233,26 @@ const parecidos = familiaDe(id)
 // que si aporta.
 const consejos = [texto.notas, texto.consejo].filter(Boolean)
 
+// Una receta no necesita un texto escrito a mano: lo que diria ya esta en sus
+// datos. Se compone aqui en vez de guardarse, para que no haya mil frases que
+// se desincronicen si cambia una cantidad. Las demas fichas sin texto, si
+// alguna vuelve a quedar asi tras una importacion, dicen donde mirar en vez de
+// anunciar que estan incompletas.
+const DONDE_RECETA = ['inventario', 'mesa_de_trabajo']
+const descripcion =
+  texto.descripcion ??
+  (entidad.tipo === 'receta' && grafo.has(entidad.resultado?.item)
+    ? [
+        ui(idioma, 'ficha.autoReceta', {
+          n: String(entidad.resultado.cantidad ?? 1),
+          objeto: t(idioma, entidad.resultado.item).nombre
+        }),
+        DONDE_RECETA.includes(entidad.estacion) ? ui(idioma, `receta.donde.${entidad.estacion}`) : ''
+      ]
+        .filter(Boolean)
+        .join(' ')
+    : ui(idioma, 'ficha.sinDescripcion'))
+
 // Las fichas de color llevan a la herramienta que las usa. Quien mira el tinte
 // rosa casi siempre quiere saber como sacarlo o que hacer con el; quien mira un
 // estandarte o un patron, como se dibuja.
@@ -243,7 +263,7 @@ const herramienta = /_dye$/.test(id)
     : null
 ---
 
-<Base idioma={idioma} titulo={texto.nombre} descripcion={texto.descripcion} idEntidad={id}>
+<Base idioma={idioma} titulo={texto.nombre} descripcion={descripcion} idEntidad={id}>
   <nav class="mb-3 flex items-center gap-2 text-sm text-texto-suave">
     <Icono modulo={modulo} clase="h-4 w-4" />
     <a href={`/${idioma}/${rutaModulo(idioma, modulo)}/`} class="font-semibold hover:text-acento">
@@ -306,7 +326,7 @@ const herramienta = /_dye$/.test(id)
         quedaba en 40 rem mientras las tablas de al lado ocupaban 72, y la
         ficha parecia cortada por la mitad. */}
     <p class="mt-5 max-w-4xl text-lg leading-relaxed">
-      {texto.descripcion ?? ui(idioma, 'ficha.sinDescripcion')}
+      {descripcion}
     </p>
   </header>
 

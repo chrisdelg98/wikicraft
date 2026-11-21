@@ -11,15 +11,12 @@
   "conForma": true,
   "patron": [
     "AA",
-    "AB",
+    "AA",
     "  A"
   ],
   "clave": {
     "A": [
       "string"
-    ],
-    "B": [
-      "slime_ball"
     ]
   },
   "estacion": "mesa_de_trabajo"

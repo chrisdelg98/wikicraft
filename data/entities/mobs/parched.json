@@ -1,0 +1,26 @@
+{
+  "$schema": "../../schemas/mob.schema.json",
+  "id": "parched",
+  "tipo": "mob",
+  "etapa": "inicio",
+  "relevancia": "alta",
+  "categoria": "hostil",
+  "dimension": [
+    "superficie"
+  ],
+  "apareceEn": [
+    "desert"
+  ],
+  "botin": [
+    {
+      "item": "bone",
+      "minimo": 0,
+      "maximo": 2
+    },
+    {
+      "item": "arrow",
+      "minimo": 0,
+      "maximo": 2
+    }
+  ]
+}

@@ -3,10 +3,11 @@
   "id": "purple_banner",
   "tipo": "item",
   "etapa": "inicio",
-  "relevancia": "normal",
+  "relevancia": "baja",
   "categorias": [
     "bloque",
     "combustible"
   ],
-  "pila": 16
+  "pila": 16,
+  "varianteDe": "white_banner"
 }

@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/recipe.schema.json",
+  "id": "pale_oak_shelf_receta",
+  "tipo": "receta",
+  "etapa": "inicio",
+  "relevancia": "baja",
+  "resultado": {
+    "item": "pale_oak_shelf",
+    "cantidad": 6
+  },
+  "conForma": true,
+  "patron": [
+    "AAA",
+    "",
+    "AAA"
+  ],
+  "clave": {
+    "A": [
+      "stripped_pale_oak_log"
+    ]
+  },
+  "estacion": "mesa_de_trabajo"
+}

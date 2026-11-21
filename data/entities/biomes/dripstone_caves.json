@@ -7,7 +7,8 @@
   "mobs": [
     "bat",
     "skeleton",
-    "zombie"
+    "zombie",
+    "zombie_nautilus"
   ],
   "recursos": [
     "copper_ore",

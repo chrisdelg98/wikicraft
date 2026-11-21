@@ -318,6 +318,7 @@ const FAMILIAS_FACETA = {
     'oro',
     'diamante',
     'netherita',
+    'cobre',
     'cuero',
     'malla',
     'caparazon',

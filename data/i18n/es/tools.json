@@ -1,59 +1,142 @@
 {
   "bow": {
     "nombre": "Arco",
-    "slug": "arco"
+    "slug": "arco",
+    "descripcion": "Dispara flechas desde lejos. Mantén pulsado para tensarlo: cuanto más lo tensas, más lejos y más fuerte sale la flecha.",
+    "notas": "Necesitas llevar flechas en el inventario. Con el encantamiento Infinidad, una sola flecha te dura para siempre."
   },
   "chainmail_boots": {
     "nombre": "Botas de malla",
-    "slug": "botas-de-malla"
+    "slug": "botas-de-malla",
+    "descripcion": "Protegen los pies. Es la pieza de armadura que menos protege, pero aceptan encantamientos que ninguna otra tiene, como el de caer sin hacerte daño.",
+    "notas": "La de malla no se puede fabricar: se la compras al herrero de la aldea o la sueltan algunos zombis y esqueletos."
   },
   "chainmail_chestplate": {
     "nombre": "Pechera de malla",
-    "slug": "pechera-de-malla"
+    "slug": "pechera-de-malla",
+    "descripcion": "Protege el pecho y es la pieza de armadura que más protege. Si solo puedes hacerte una, que sea esta.",
+    "notas": "La de malla no se puede fabricar: se la compras al herrero de la aldea o la sueltan algunos zombis y esqueletos."
   },
   "chainmail_helmet": {
     "nombre": "Casco de malla",
-    "slug": "casco-de-malla"
+    "slug": "casco-de-malla",
+    "descripcion": "Protege la cabeza. Es una de las cuatro piezas de la armadura: cuantas más lleves puestas, menos daño te hacen.",
+    "notas": "La de malla no se puede fabricar: se la compras al herrero de la aldea o la sueltan algunos zombis y esqueletos."
   },
   "chainmail_leggings": {
     "nombre": "Pantalones de malla",
-    "slug": "pantalones-de-malla"
+    "slug": "pantalones-de-malla",
+    "descripcion": "Protegen las piernas. Después de la pechera, son la pieza de armadura que más protege.",
+    "notas": "La de malla no se puede fabricar: se la compras al herrero de la aldea o la sueltan algunos zombis y esqueletos."
+  },
+  "copper_axe": {
+    "nombre": "Hacha de cobre",
+    "slug": "hacha-de-cobre",
+    "descripcion": "El cobre está entre la piedra y el hierro: aguanta más que la de piedra y es fácil de conseguir al principio, porque el cobre sale por todas partes en las cuevas."
+  },
+  "copper_boots": {
+    "nombre": "Botas de cobre",
+    "slug": "botas-de-cobre",
+    "descripcion": "El cobre está entre la piedra y el hierro: aguanta más que la de piedra y es fácil de conseguir al principio, porque el cobre sale por todas partes en las cuevas."
+  },
+  "copper_chestplate": {
+    "nombre": "Pechera de cobre",
+    "slug": "pechera-de-cobre",
+    "descripcion": "El cobre está entre la piedra y el hierro: aguanta más que la de piedra y es fácil de conseguir al principio, porque el cobre sale por todas partes en las cuevas."
+  },
+  "copper_helmet": {
+    "nombre": "Casco de cobre",
+    "slug": "casco-de-cobre",
+    "descripcion": "El cobre está entre la piedra y el hierro: aguanta más que la de piedra y es fácil de conseguir al principio, porque el cobre sale por todas partes en las cuevas."
+  },
+  "copper_hoe": {
+    "nombre": "Azada de cobre",
+    "slug": "azada-de-cobre",
+    "descripcion": "El cobre está entre la piedra y el hierro: aguanta más que la de piedra y es fácil de conseguir al principio, porque el cobre sale por todas partes en las cuevas."
+  },
+  "copper_leggings": {
+    "nombre": "Pantalones de cobre",
+    "slug": "pantalones-de-cobre",
+    "descripcion": "El cobre está entre la piedra y el hierro: aguanta más que la de piedra y es fácil de conseguir al principio, porque el cobre sale por todas partes en las cuevas."
+  },
+  "copper_pickaxe": {
+    "nombre": "Pico de cobre",
+    "slug": "pico-de-cobre",
+    "descripcion": "El cobre está entre la piedra y el hierro: aguanta más que la de piedra y es fácil de conseguir al principio, porque el cobre sale por todas partes en las cuevas."
+  },
+  "copper_shovel": {
+    "nombre": "Pala de cobre",
+    "slug": "pala-de-cobre",
+    "descripcion": "El cobre está entre la piedra y el hierro: aguanta más que la de piedra y es fácil de conseguir al principio, porque el cobre sale por todas partes en las cuevas."
+  },
+  "copper_spear": {
+    "nombre": "Lanza de cobre",
+    "slug": "lanza-de-cobre",
+    "descripcion": "La lanza ataca de dos formas. Con un clic das un pinchazo rápido. Si mantienes pulsado, la cargas para embestir: hace más daño cuanto más rápido vas, así que a caballo es tremenda."
+  },
+  "copper_sword": {
+    "nombre": "Espada de cobre",
+    "slug": "espada-de-cobre",
+    "descripcion": "El cobre está entre la piedra y el hierro: aguanta más que la de piedra y es fácil de conseguir al principio, porque el cobre sale por todas partes en las cuevas."
   },
   "crossbow": {
     "nombre": "Ballesta",
-    "slug": "ballesta"
+    "slug": "ballesta",
+    "descripcion": "Como un arco, pero se carga una vez y dispara cuando quieras. Tarda más en cargar y pega más fuerte. También dispara fuegos artificiales.",
+    "notas": "Con el encantamiento Multidisparo lanza tres flechas a la vez, y con Perforación atraviesa a varios enemigos."
   },
   "diamond_axe": {
     "nombre": "Hacha de diamante",
-    "slug": "hacha-de-diamante"
+    "slug": "hacha-de-diamante",
+    "descripcion": "Corta madera mucho más rápido. Como arma pega fuerte pero despacio, y si golpeas a alguien que se cubre con un escudo, se lo desactiva un rato.",
+    "notas": "La de diamante dura muchísimo y es de las mejores del juego. Merece la pena encantarla."
   },
   "diamond_boots": {
     "nombre": "Botas de diamante",
-    "slug": "botas-de-diamante"
+    "slug": "botas-de-diamante",
+    "descripcion": "Protegen los pies. Es la pieza de armadura que menos protege, pero aceptan encantamientos que ninguna otra tiene, como el de caer sin hacerte daño.",
+    "notas": "La de diamante dura muchísimo y es de las mejores del juego. Merece la pena encantarla."
   },
   "diamond_chestplate": {
     "nombre": "Pechera de diamante",
-    "slug": "pechera-de-diamante"
+    "slug": "pechera-de-diamante",
+    "descripcion": "Protege el pecho y es la pieza de armadura que más protege. Si solo puedes hacerte una, que sea esta.",
+    "notas": "La de diamante dura muchísimo y es de las mejores del juego. Merece la pena encantarla."
   },
   "diamond_helmet": {
     "nombre": "Casco de diamante",
-    "slug": "casco-de-diamante"
+    "slug": "casco-de-diamante",
+    "descripcion": "Protege la cabeza. Es una de las cuatro piezas de la armadura: cuantas más lleves puestas, menos daño te hacen.",
+    "notas": "La de diamante dura muchísimo y es de las mejores del juego. Merece la pena encantarla."
   },
   "diamond_hoe": {
     "nombre": "Azada de diamante",
-    "slug": "azada-de-diamante"
+    "slug": "azada-de-diamante",
+    "descripcion": "Ara la tierra para poder plantar semillas. También rompe rápido las hojas, el heno y el musgo.",
+    "notas": "La de diamante dura muchísimo y es de las mejores del juego. Merece la pena encantarla."
   },
   "diamond_leggings": {
     "nombre": "Pantalones de diamante",
-    "slug": "pantalones-de-diamante"
+    "slug": "pantalones-de-diamante",
+    "descripcion": "Protegen las piernas. Después de la pechera, son la pieza de armadura que más protege.",
+    "notas": "La de diamante dura muchísimo y es de las mejores del juego. Merece la pena encantarla."
   },
   "diamond_pickaxe": {
     "nombre": "Pico de diamante",
-    "slug": "pico-de-diamante"
+    "slug": "pico-de-diamante",
+    "descripcion": "La herramienta para picar piedra y minerales. Sin pico, la piedra y los minerales no sueltan nada al romperlos.",
+    "notas": "La de diamante dura muchísimo y es de las mejores del juego. Merece la pena encantarla. Puede picarlo todo, incluida la obsidiana y los escombros ancestrales del Nether."
   },
   "diamond_shovel": {
     "nombre": "Pala de diamante",
-    "slug": "pala-de-diamante"
+    "slug": "pala-de-diamante",
+    "descripcion": "Cava tierra, arena, grava y nieve muy rápido. Si la usas sobre la hierba haces caminos.",
+    "notas": "La de diamante dura muchísimo y es de las mejores del juego. Merece la pena encantarla."
+  },
+  "diamond_spear": {
+    "nombre": "Lanza de diamante",
+    "slug": "lanza-de-diamante",
+    "descripcion": "La lanza ataca de dos formas. Con un clic das un pinchazo rápido. Si mantienes pulsado, la cargas para embestir: hace más daño cuanto más rápido vas, así que a caballo es tremenda."
   },
   "diamond_sword": {
     "nombre": "Espada de Diamante",
@@ -63,186 +146,304 @@
   },
   "elytra": {
     "nombre": "Élitros",
-    "slug": "elitros"
+    "slug": "elitros",
+    "descripcion": "Unas alas que te pones en el pecho para planear. Salta desde algo alto, pulsa saltar en el aire y planearás. Con fuegos artificiales en la mano vuelas de verdad.",
+    "notas": "Solo se encuentran en los barcos de las ciudades del End, después de vencer al dragón. Se reparan con membranas de phantom.",
+    "advertencia": "Si chocas contra una pared volando rápido te haces mucho daño."
   },
   "golden_axe": {
     "nombre": "Hacha de oro",
-    "slug": "hacha-de-oro"
+    "slug": "hacha-de-oro",
+    "descripcion": "Corta madera mucho más rápido. Como arma pega fuerte pero despacio, y si golpeas a alguien que se cubre con un escudo, se lo desactiva un rato.",
+    "notas": "La de oro es la más rápida pero la que menos dura de todas. Acepta muy bien los encantamientos."
   },
   "golden_boots": {
     "nombre": "Botas de oro",
-    "slug": "botas-de-oro"
+    "slug": "botas-de-oro",
+    "descripcion": "Protegen los pies. Es la pieza de armadura que menos protege, pero aceptan encantamientos que ninguna otra tiene, como el de caer sin hacerte daño.",
+    "notas": "La de oro protege poco y dura menos, pero llevar al menos una pieza de oro hace que los piglins del Nether no te ataquen."
   },
   "golden_chestplate": {
     "nombre": "Pechera de oro",
-    "slug": "pechera-de-oro"
+    "slug": "pechera-de-oro",
+    "descripcion": "Protege el pecho y es la pieza de armadura que más protege. Si solo puedes hacerte una, que sea esta.",
+    "notas": "La de oro protege poco y dura menos, pero llevar al menos una pieza de oro hace que los piglins del Nether no te ataquen."
   },
   "golden_helmet": {
     "nombre": "Casco de oro",
-    "slug": "casco-de-oro"
+    "slug": "casco-de-oro",
+    "descripcion": "Protege la cabeza. Es una de las cuatro piezas de la armadura: cuantas más lleves puestas, menos daño te hacen.",
+    "notas": "La de oro protege poco y dura menos, pero llevar al menos una pieza de oro hace que los piglins del Nether no te ataquen."
   },
   "golden_hoe": {
     "nombre": "Azada de oro",
-    "slug": "azada-de-oro"
+    "slug": "azada-de-oro",
+    "descripcion": "Ara la tierra para poder plantar semillas. También rompe rápido las hojas, el heno y el musgo.",
+    "notas": "La de oro es la más rápida pero la que menos dura de todas. Acepta muy bien los encantamientos."
   },
   "golden_leggings": {
     "nombre": "Pantalones de oro",
-    "slug": "pantalones-de-oro"
+    "slug": "pantalones-de-oro",
+    "descripcion": "Protegen las piernas. Después de la pechera, son la pieza de armadura que más protege.",
+    "notas": "La de oro protege poco y dura menos, pero llevar al menos una pieza de oro hace que los piglins del Nether no te ataquen."
   },
   "golden_pickaxe": {
     "nombre": "Pico de oro",
-    "slug": "pico-de-oro"
+    "slug": "pico-de-oro",
+    "descripcion": "La herramienta para picar piedra y minerales. Sin pico, la piedra y los minerales no sueltan nada al romperlos.",
+    "notas": "La de oro es la más rápida pero la que menos dura de todas. Acepta muy bien los encantamientos. Aunque es muy rápido, solo pica lo mismo que el de madera."
   },
   "golden_shovel": {
     "nombre": "Pala de oro",
-    "slug": "pala-de-oro"
+    "slug": "pala-de-oro",
+    "descripcion": "Cava tierra, arena, grava y nieve muy rápido. Si la usas sobre la hierba haces caminos.",
+    "notas": "La de oro es la más rápida pero la que menos dura de todas. Acepta muy bien los encantamientos."
+  },
+  "golden_spear": {
+    "nombre": "Lanza de oro",
+    "slug": "lanza-de-oro",
+    "descripcion": "La lanza ataca de dos formas. Con un clic das un pinchazo rápido. Si mantienes pulsado, la cargas para embestir: hace más daño cuanto más rápido vas, así que a caballo es tremenda."
   },
   "golden_sword": {
     "nombre": "Espada de oro",
-    "slug": "espada-de-oro"
+    "slug": "espada-de-oro",
+    "descripcion": "Tu arma básica para pelear. Pega más que cualquier herramienta y, con el golpe de barrido, daña a varios enemigos que tengas delante a la vez.",
+    "notas": "La de oro es la más rápida pero la que menos dura de todas. Acepta muy bien los encantamientos."
   },
   "iron_axe": {
     "nombre": "Hacha de hierro",
-    "slug": "hacha-de-hierro"
+    "slug": "hacha-de-hierro",
+    "descripcion": "Corta madera mucho más rápido. Como arma pega fuerte pero despacio, y si golpeas a alguien que se cubre con un escudo, se lo desactiva un rato.",
+    "notas": "La de hierro es el gran salto: dura mucho más y es la que casi todo el mundo usa hasta encontrar diamantes."
   },
   "iron_boots": {
     "nombre": "Botas de hierro",
-    "slug": "botas-de-hierro"
+    "slug": "botas-de-hierro",
+    "descripcion": "Protegen los pies. Es la pieza de armadura que menos protege, pero aceptan encantamientos que ninguna otra tiene, como el de caer sin hacerte daño.",
+    "notas": "La de hierro es el gran salto: dura mucho más y es la que casi todo el mundo usa hasta encontrar diamantes."
   },
   "iron_chestplate": {
     "nombre": "Pechera de hierro",
-    "slug": "pechera-de-hierro"
+    "slug": "pechera-de-hierro",
+    "descripcion": "Protege el pecho y es la pieza de armadura que más protege. Si solo puedes hacerte una, que sea esta.",
+    "notas": "La de hierro es el gran salto: dura mucho más y es la que casi todo el mundo usa hasta encontrar diamantes."
   },
   "iron_helmet": {
     "nombre": "Casco de hierro",
-    "slug": "casco-de-hierro"
+    "slug": "casco-de-hierro",
+    "descripcion": "Protege la cabeza. Es una de las cuatro piezas de la armadura: cuantas más lleves puestas, menos daño te hacen.",
+    "notas": "La de hierro es el gran salto: dura mucho más y es la que casi todo el mundo usa hasta encontrar diamantes."
   },
   "iron_hoe": {
     "nombre": "Azada de hierro",
-    "slug": "azada-de-hierro"
+    "slug": "azada-de-hierro",
+    "descripcion": "Ara la tierra para poder plantar semillas. También rompe rápido las hojas, el heno y el musgo.",
+    "notas": "La de hierro es el gran salto: dura mucho más y es la que casi todo el mundo usa hasta encontrar diamantes."
   },
   "iron_leggings": {
     "nombre": "Pantalones de hierro",
-    "slug": "pantalones-de-hierro"
+    "slug": "pantalones-de-hierro",
+    "descripcion": "Protegen las piernas. Después de la pechera, son la pieza de armadura que más protege.",
+    "notas": "La de hierro es el gran salto: dura mucho más y es la que casi todo el mundo usa hasta encontrar diamantes."
   },
   "iron_pickaxe": {
     "nombre": "Pico de hierro",
-    "slug": "pico-de-hierro"
+    "slug": "pico-de-hierro",
+    "descripcion": "La herramienta para picar piedra y minerales. Sin pico, la piedra y los minerales no sueltan nada al romperlos.",
+    "notas": "La de hierro es el gran salto: dura mucho más y es la que casi todo el mundo usa hasta encontrar diamantes. Puede picar diamante, oro, redstone y esmeralda. Para la obsidiana necesitas uno de diamante."
   },
   "iron_shovel": {
     "nombre": "Pala de hierro",
-    "slug": "pala-de-hierro"
+    "slug": "pala-de-hierro",
+    "descripcion": "Cava tierra, arena, grava y nieve muy rápido. Si la usas sobre la hierba haces caminos.",
+    "notas": "La de hierro es el gran salto: dura mucho más y es la que casi todo el mundo usa hasta encontrar diamantes."
+  },
+  "iron_spear": {
+    "nombre": "Lanza de hierro",
+    "slug": "lanza-de-hierro",
+    "descripcion": "La lanza ataca de dos formas. Con un clic das un pinchazo rápido. Si mantienes pulsado, la cargas para embestir: hace más daño cuanto más rápido vas, así que a caballo es tremenda."
   },
   "iron_sword": {
     "nombre": "Espada de hierro",
-    "slug": "espada-de-hierro"
+    "slug": "espada-de-hierro",
+    "descripcion": "Tu arma básica para pelear. Pega más que cualquier herramienta y, con el golpe de barrido, daña a varios enemigos que tengas delante a la vez.",
+    "notas": "La de hierro es el gran salto: dura mucho más y es la que casi todo el mundo usa hasta encontrar diamantes."
   },
   "leather_boots": {
     "nombre": "Botas de cuero",
-    "slug": "botas-de-cuero"
+    "slug": "botas-de-cuero",
+    "descripcion": "Protegen los pies. Es la pieza de armadura que menos protege, pero aceptan encantamientos que ninguna otra tiene, como el de caer sin hacerte daño.",
+    "notas": "La de cuero es la más débil, pero se hace fácil con el cuero de las vacas y se puede teñir del color que quieras."
   },
   "leather_chestplate": {
     "nombre": "Pechera de cuero",
-    "slug": "pechera-de-cuero"
+    "slug": "pechera-de-cuero",
+    "descripcion": "Protege el pecho y es la pieza de armadura que más protege. Si solo puedes hacerte una, que sea esta.",
+    "notas": "La de cuero es la más débil, pero se hace fácil con el cuero de las vacas y se puede teñir del color que quieras."
   },
   "leather_helmet": {
     "nombre": "Casco de cuero",
-    "slug": "casco-de-cuero"
+    "slug": "casco-de-cuero",
+    "descripcion": "Protege la cabeza. Es una de las cuatro piezas de la armadura: cuantas más lleves puestas, menos daño te hacen.",
+    "notas": "La de cuero es la más débil, pero se hace fácil con el cuero de las vacas y se puede teñir del color que quieras."
   },
   "leather_leggings": {
     "nombre": "Pantalones de cuero",
-    "slug": "pantalones-de-cuero"
+    "slug": "pantalones-de-cuero",
+    "descripcion": "Protegen las piernas. Después de la pechera, son la pieza de armadura que más protege.",
+    "notas": "La de cuero es la más débil, pero se hace fácil con el cuero de las vacas y se puede teñir del color que quieras."
   },
   "mace": {
     "nombre": "Maza",
-    "slug": "maza"
+    "slug": "maza",
+    "descripcion": "Un martillo que hace más daño cuanto más alto saltas antes de golpear. Si caes desde muy arriba sobre un enemigo puedes quitarle casi toda la vida de un golpe, y no te haces daño al caer.",
+    "notas": "Se hace con un núcleo denso, que sale de las cámaras de prueba, y una vara de breeze."
   },
   "netherite_axe": {
     "nombre": "Hacha de netherita",
-    "slug": "hacha-de-netherita"
+    "slug": "hacha-de-netherita",
+    "descripcion": "Corta madera mucho más rápido. Como arma pega fuerte pero despacio, y si golpeas a alguien que se cubre con un escudo, se lo desactiva un rato.",
+    "notas": "La de netherita es la mejor que existe: dura más que la de diamante y no se quema en la lava. Se hace mejorando una de diamante en la mesa de herrería con un lingote de netherita y una plantilla de mejora."
   },
   "netherite_boots": {
     "nombre": "Botas de netherita",
-    "slug": "botas-de-netherita"
+    "slug": "botas-de-netherita",
+    "descripcion": "Protegen los pies. Es la pieza de armadura que menos protege, pero aceptan encantamientos que ninguna otra tiene, como el de caer sin hacerte daño.",
+    "notas": "La de netherita es la mejor que existe: dura más que la de diamante y no se quema en la lava. Se hace mejorando una de diamante en la mesa de herrería con un lingote de netherita y una plantilla de mejora."
   },
   "netherite_chestplate": {
     "nombre": "Pechera de netherita",
-    "slug": "pechera-de-netherita"
+    "slug": "pechera-de-netherita",
+    "descripcion": "Protege el pecho y es la pieza de armadura que más protege. Si solo puedes hacerte una, que sea esta.",
+    "notas": "La de netherita es la mejor que existe: dura más que la de diamante y no se quema en la lava. Se hace mejorando una de diamante en la mesa de herrería con un lingote de netherita y una plantilla de mejora."
   },
   "netherite_helmet": {
     "nombre": "Casco de netherita",
-    "slug": "casco-de-netherita"
+    "slug": "casco-de-netherita",
+    "descripcion": "Protege la cabeza. Es una de las cuatro piezas de la armadura: cuantas más lleves puestas, menos daño te hacen.",
+    "notas": "La de netherita es la mejor que existe: dura más que la de diamante y no se quema en la lava. Se hace mejorando una de diamante en la mesa de herrería con un lingote de netherita y una plantilla de mejora."
   },
   "netherite_hoe": {
     "nombre": "Azada de netherita",
-    "slug": "azada-de-netherita"
+    "slug": "azada-de-netherita",
+    "descripcion": "Ara la tierra para poder plantar semillas. También rompe rápido las hojas, el heno y el musgo.",
+    "notas": "La de netherita es la mejor que existe: dura más que la de diamante y no se quema en la lava. Se hace mejorando una de diamante en la mesa de herrería con un lingote de netherita y una plantilla de mejora."
   },
   "netherite_leggings": {
     "nombre": "Pantalones de netherita",
-    "slug": "pantalones-de-netherita"
+    "slug": "pantalones-de-netherita",
+    "descripcion": "Protegen las piernas. Después de la pechera, son la pieza de armadura que más protege.",
+    "notas": "La de netherita es la mejor que existe: dura más que la de diamante y no se quema en la lava. Se hace mejorando una de diamante en la mesa de herrería con un lingote de netherita y una plantilla de mejora."
   },
   "netherite_pickaxe": {
     "nombre": "Pico de netherita",
-    "slug": "pico-de-netherita"
+    "slug": "pico-de-netherita",
+    "descripcion": "La herramienta para picar piedra y minerales. Sin pico, la piedra y los minerales no sueltan nada al romperlos.",
+    "notas": "La de netherita es la mejor que existe: dura más que la de diamante y no se quema en la lava. Se hace mejorando una de diamante en la mesa de herrería con un lingote de netherita y una plantilla de mejora. Puede picarlo todo."
   },
   "netherite_shovel": {
     "nombre": "Pala de netherita",
-    "slug": "pala-de-netherita"
+    "slug": "pala-de-netherita",
+    "descripcion": "Cava tierra, arena, grava y nieve muy rápido. Si la usas sobre la hierba haces caminos.",
+    "notas": "La de netherita es la mejor que existe: dura más que la de diamante y no se quema en la lava. Se hace mejorando una de diamante en la mesa de herrería con un lingote de netherita y una plantilla de mejora."
+  },
+  "netherite_spear": {
+    "nombre": "Lanza de netherita",
+    "slug": "lanza-de-netherita",
+    "descripcion": "La lanza ataca de dos formas. Con un clic das un pinchazo rápido. Si mantienes pulsado, la cargas para embestir: hace más daño cuanto más rápido vas, así que a caballo es tremenda."
   },
   "netherite_sword": {
     "nombre": "Espada de netherita",
-    "slug": "espada-de-netherita"
+    "slug": "espada-de-netherita",
+    "descripcion": "Tu arma básica para pelear. Pega más que cualquier herramienta y, con el golpe de barrido, daña a varios enemigos que tengas delante a la vez.",
+    "notas": "La de netherita es la mejor que existe: dura más que la de diamante y no se quema en la lava. Se hace mejorando una de diamante en la mesa de herrería con un lingote de netherita y una plantilla de mejora."
   },
   "shield": {
     "nombre": "Escudo",
-    "slug": "escudo"
+    "slug": "escudo",
+    "descripcion": "Mantén pulsado para cubrirte y paras casi todo lo que te viene de frente: golpes, flechas y explosiones de creeper.",
+    "notas": "Se le puede poner el dibujo de un estandarte juntándolos en la mesa de trabajo. Un hacha enemiga te lo desactiva unos segundos."
   },
   "stone_axe": {
     "nombre": "Hacha de piedra",
-    "slug": "hacha-de-piedra"
+    "slug": "hacha-de-piedra",
+    "descripcion": "Corta madera mucho más rápido. Como arma pega fuerte pero despacio, y si golpeas a alguien que se cubre con un escudo, se lo desactiva un rato.",
+    "notas": "La de piedra se hace con roca y palos y dura el doble que la de madera. Es la que vas a usar tus primeros días."
   },
   "stone_hoe": {
     "nombre": "Azada de piedra",
-    "slug": "azada-de-piedra"
+    "slug": "azada-de-piedra",
+    "descripcion": "Ara la tierra para poder plantar semillas. También rompe rápido las hojas, el heno y el musgo.",
+    "notas": "La de piedra se hace con roca y palos y dura el doble que la de madera. Es la que vas a usar tus primeros días."
   },
   "stone_pickaxe": {
     "nombre": "Pico de piedra",
-    "slug": "pico-de-piedra"
+    "slug": "pico-de-piedra",
+    "descripcion": "La herramienta para picar piedra y minerales. Sin pico, la piedra y los minerales no sueltan nada al romperlos.",
+    "notas": "La de piedra se hace con roca y palos y dura el doble que la de madera. Es la que vas a usar tus primeros días. Ya puede picar hierro, cobre y lapislázuli. Para el diamante necesitas uno de hierro."
   },
   "stone_shovel": {
     "nombre": "Pala de piedra",
-    "slug": "pala-de-piedra"
+    "slug": "pala-de-piedra",
+    "descripcion": "Cava tierra, arena, grava y nieve muy rápido. Si la usas sobre la hierba haces caminos.",
+    "notas": "La de piedra se hace con roca y palos y dura el doble que la de madera. Es la que vas a usar tus primeros días."
+  },
+  "stone_spear": {
+    "nombre": "Lanza de piedra",
+    "slug": "lanza-de-piedra",
+    "descripcion": "La lanza ataca de dos formas. Con un clic das un pinchazo rápido. Si mantienes pulsado, la cargas para embestir: hace más daño cuanto más rápido vas, así que a caballo es tremenda."
   },
   "stone_sword": {
     "nombre": "Espada de piedra",
-    "slug": "espada-de-piedra"
+    "slug": "espada-de-piedra",
+    "descripcion": "Tu arma básica para pelear. Pega más que cualquier herramienta y, con el golpe de barrido, daña a varios enemigos que tengas delante a la vez.",
+    "notas": "La de piedra se hace con roca y palos y dura el doble que la de madera. Es la que vas a usar tus primeros días."
   },
   "trident": {
     "nombre": "Tridente",
-    "slug": "tridente"
+    "slug": "tridente",
+    "descripcion": "Un arma que sirve cuerpo a cuerpo y lanzándola. Bajo el agua es la mejor arma que hay.",
+    "notas": "No se fabrica: solo lo sueltan algunos ahogados que ya lo llevan en la mano. Con Lealtad vuelve solo a tu mano después de lanzarlo."
   },
   "turtle_helmet": {
     "nombre": "Casco de caparazón",
-    "slug": "casco-de-caparazon"
+    "slug": "casco-de-caparazon",
+    "descripcion": "Un casco hecho con escamas de tortuga. Al meter la cabeza en el agua te deja respirar diez segundos más.",
+    "notas": "Las escamas salen de las crías de tortuga cuando crecen: cría tortugas en la playa y recógelas."
   },
   "wooden_axe": {
     "nombre": "Hacha de madera",
-    "slug": "hacha-de-madera"
+    "slug": "hacha-de-madera",
+    "descripcion": "Corta madera mucho más rápido. Como arma pega fuerte pero despacio, y si golpeas a alguien que se cubre con un escudo, se lo desactiva un rato.",
+    "notas": "La de madera es la primera que puedes hacer, con tablones y palos. Se rompe enseguida: cámbiala por la de piedra en cuanto puedas."
   },
   "wooden_hoe": {
     "nombre": "Azada de madera",
-    "slug": "azada-de-madera"
+    "slug": "azada-de-madera",
+    "descripcion": "Ara la tierra para poder plantar semillas. También rompe rápido las hojas, el heno y el musgo.",
+    "notas": "La de madera es la primera que puedes hacer, con tablones y palos. Se rompe enseguida: cámbiala por la de piedra en cuanto puedas."
   },
   "wooden_pickaxe": {
     "nombre": "Pico de madera",
-    "slug": "pico-de-madera"
+    "slug": "pico-de-madera",
+    "descripcion": "La herramienta para picar piedra y minerales. Sin pico, la piedra y los minerales no sueltan nada al romperlos.",
+    "notas": "La de madera es la primera que puedes hacer, con tablones y palos. Se rompe enseguida: cámbiala por la de piedra en cuanto puedas. Con él puedes picar piedra y carbón, pero no hierro."
   },
   "wooden_shovel": {
     "nombre": "Pala de madera",
-    "slug": "pala-de-madera"
+    "slug": "pala-de-madera",
+    "descripcion": "Cava tierra, arena, grava y nieve muy rápido. Si la usas sobre la hierba haces caminos.",
+    "notas": "La de madera es la primera que puedes hacer, con tablones y palos. Se rompe enseguida: cámbiala por la de piedra en cuanto puedas."
+  },
+  "wooden_spear": {
+    "nombre": "Lanza de madera",
+    "slug": "lanza-de-madera",
+    "descripcion": "La lanza ataca de dos formas. Con un clic das un pinchazo rápido. Si mantienes pulsado, la cargas para embestir: hace más daño cuanto más rápido vas, así que a caballo es tremenda."
   },
   "wooden_sword": {
     "nombre": "Espada de madera",
-    "slug": "espada-de-madera"
+    "slug": "espada-de-madera",
+    "descripcion": "Tu arma básica para pelear. Pega más que cualquier herramienta y, con el golpe de barrido, daña a varios enemigos que tengas delante a la vez.",
+    "notas": "La de madera es la primera que puedes hacer, con tablones y palos. Se rompe enseguida: cámbiala por la de piedra en cuanto puedas."
   }
 }

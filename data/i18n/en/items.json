@@ -47,6 +47,10 @@
     "nombre": "Acacia Sapling",
     "slug": "acacia-sapling"
   },
+  "acacia_shelf": {
+    "nombre": "Acacia Shelf",
+    "slug": "acacia-shelf"
+  },
   "acacia_sign": {
     "nombre": "Acacia Sign",
     "slug": "acacia-sign"
@@ -231,6 +235,10 @@
     "nombre": "Bamboo Raft",
     "slug": "bamboo-raft"
   },
+  "bamboo_shelf": {
+    "nombre": "Bamboo Shelf",
+    "slug": "bamboo-shelf"
+  },
   "bamboo_sign": {
     "nombre": "Bamboo Sign",
     "slug": "bamboo-sign"
@@ -355,6 +363,10 @@
     "nombre": "Birch Sapling",
     "slug": "birch-sapling"
   },
+  "birch_shelf": {
+    "nombre": "Birch Shelf",
+    "slug": "birch-shelf"
+  },
   "birch_sign": {
     "nombre": "Birch Sign",
     "slug": "birch-sign"
@@ -410,6 +422,10 @@
   "black_glazed_terracotta": {
     "nombre": "Black Glazed Terracotta",
     "slug": "black-glazed-terracotta"
+  },
+  "black_harness": {
+    "nombre": "Black Harness",
+    "slug": "black-harness"
   },
   "black_shulker_box": {
     "nombre": "Black Shulker Box",
@@ -499,9 +515,17 @@
     "nombre": "Blue Dye",
     "slug": "blue-dye"
   },
+  "blue_egg": {
+    "nombre": "Blue Egg",
+    "slug": "blue-egg"
+  },
   "blue_glazed_terracotta": {
     "nombre": "Blue Glazed Terracotta",
     "slug": "blue-glazed-terracotta"
+  },
+  "blue_harness": {
+    "nombre": "Blue Harness",
+    "slug": "blue-harness"
   },
   "blue_ice": {
     "nombre": "Blue Ice",
@@ -652,9 +676,17 @@
     "nombre": "Brown Dye",
     "slug": "brown-dye"
   },
+  "brown_egg": {
+    "nombre": "Brown Egg",
+    "slug": "brown-egg"
+  },
   "brown_glazed_terracotta": {
     "nombre": "Brown Glazed Terracotta",
     "slug": "brown-glazed-terracotta"
+  },
+  "brown_harness": {
+    "nombre": "Brown Harness",
+    "slug": "brown-harness"
   },
   "brown_mushroom": {
     "nombre": "Brown Mushroom",
@@ -716,9 +748,17 @@
     "nombre": "Burn Pottery Sherd",
     "slug": "burn-pottery-sherd"
   },
+  "bush": {
+    "nombre": "Bush",
+    "slug": "bush"
+  },
   "cactus": {
     "nombre": "Cactus",
     "slug": "cactus"
+  },
+  "cactus_flower": {
+    "nombre": "Cactus Flower",
+    "slug": "cactus-flower"
   },
   "cake": {
     "nombre": "Cake",
@@ -731,6 +771,10 @@
   "calibrated_sculk_sensor": {
     "nombre": "Calibrated Sculk Sensor",
     "slug": "calibrated-sculk-sensor"
+  },
+  "camel_husk_spawn_egg": {
+    "nombre": "Camel Husk Spawn Egg",
+    "slug": "camel-husk-spawn-egg"
   },
   "camel_spawn_egg": {
     "nombre": "Camel Spawn Egg",
@@ -771,10 +815,6 @@
   "cave_spider_spawn_egg": {
     "nombre": "Cave Spider Spawn Egg",
     "slug": "cave-spider-spawn-egg"
-  },
-  "chain": {
-    "nombre": "Chain",
-    "slug": "chain"
   },
   "chain_command_block": {
     "nombre": "Chain Command Block",
@@ -832,6 +872,10 @@
     "nombre": "Cherry Sapling",
     "slug": "cherry-sapling"
   },
+  "cherry_shelf": {
+    "nombre": "Cherry Shelf",
+    "slug": "cherry-shelf"
+  },
   "cherry_sign": {
     "nombre": "Cherry Sign",
     "slug": "cherry-sign"
@@ -876,6 +920,10 @@
     "nombre": "Chiseled Bookshelf",
     "slug": "chiseled-bookshelf"
   },
+  "chiseled_cinnabar": {
+    "nombre": "Chiseled Cinnabar",
+    "slug": "chiseled-cinnabar"
+  },
   "chiseled_copper": {
     "nombre": "Chiseled Copper",
     "slug": "chiseled-copper"
@@ -912,6 +960,10 @@
     "nombre": "Chiseled Stone Bricks",
     "slug": "chiseled-stone-bricks"
   },
+  "chiseled_sulfur": {
+    "nombre": "Chiseled Sulfur",
+    "slug": "chiseled-sulfur"
+  },
   "chiseled_tuff": {
     "nombre": "Chiseled Tuff",
     "slug": "chiseled-tuff"
@@ -931,6 +983,38 @@
   "chorus_plant": {
     "nombre": "Chorus Plant",
     "slug": "chorus-plant"
+  },
+  "cinnabar": {
+    "nombre": "Cinnabar",
+    "slug": "cinnabar"
+  },
+  "cinnabar_brick_slab": {
+    "nombre": "Cinnabar Brick Slab",
+    "slug": "cinnabar-brick-slab"
+  },
+  "cinnabar_brick_stairs": {
+    "nombre": "Cinnabar Brick Stairs",
+    "slug": "cinnabar-brick-stairs"
+  },
+  "cinnabar_brick_wall": {
+    "nombre": "Cinnabar Brick Wall",
+    "slug": "cinnabar-brick-wall"
+  },
+  "cinnabar_bricks": {
+    "nombre": "Cinnabar Bricks",
+    "slug": "cinnabar-bricks"
+  },
+  "cinnabar_slab": {
+    "nombre": "Cinnabar Slab",
+    "slug": "cinnabar-slab"
+  },
+  "cinnabar_stairs": {
+    "nombre": "Cinnabar Stairs",
+    "slug": "cinnabar-stairs"
+  },
+  "cinnabar_wall": {
+    "nombre": "Cinnabar Wall",
+    "slug": "cinnabar-wall"
   },
   "clay": {
     "nombre": "Clay",
@@ -1076,6 +1160,10 @@
     "nombre": "Cookie",
     "slug": "cookie"
   },
+  "copper_bars": {
+    "nombre": "Copper Bars",
+    "slug": "copper-bars"
+  },
   "copper_block": {
     "nombre": "Block of Copper",
     "slug": "block-of-copper"
@@ -1084,21 +1172,57 @@
     "nombre": "Copper Bulb",
     "slug": "copper-bulb"
   },
+  "copper_chain": {
+    "nombre": "Copper Chain",
+    "slug": "copper-chain"
+  },
+  "copper_chest": {
+    "nombre": "Copper Chest",
+    "slug": "copper-chest"
+  },
   "copper_door": {
     "nombre": "Copper Door",
     "slug": "copper-door"
+  },
+  "copper_golem_spawn_egg": {
+    "nombre": "Copper Golem Spawn Egg",
+    "slug": "copper-golem-spawn-egg"
+  },
+  "copper_golem_statue": {
+    "nombre": "Copper Golem Statue",
+    "slug": "copper-golem-statue"
   },
   "copper_grate": {
     "nombre": "Copper Grate",
     "slug": "copper-grate"
   },
+  "copper_horse_armor": {
+    "nombre": "Copper Horse Armor",
+    "slug": "copper-horse-armor"
+  },
   "copper_ingot": {
     "nombre": "Copper Ingot",
     "slug": "copper-ingot"
   },
+  "copper_lantern": {
+    "nombre": "Copper Lantern",
+    "slug": "copper-lantern"
+  },
+  "copper_nautilus_armor": {
+    "nombre": "Copper Nautilus Armor",
+    "slug": "copper-nautilus-armor"
+  },
+  "copper_nugget": {
+    "nombre": "Copper Nugget",
+    "slug": "copper-nugget"
+  },
   "copper_ore": {
     "nombre": "Copper Ore",
     "slug": "copper-ore"
+  },
+  "copper_torch": {
+    "nombre": "Copper Torch",
+    "slug": "copper-torch"
   },
   "copper_trapdoor": {
     "nombre": "Copper Trapdoor",
@@ -1204,6 +1328,10 @@
     "nombre": "Crimson Roots",
     "slug": "crimson-roots"
   },
+  "crimson_shelf": {
+    "nombre": "Crimson Shelf",
+    "slug": "crimson-shelf"
+  },
   "crimson_sign": {
     "nombre": "Crimson Sign",
     "slug": "crimson-sign"
@@ -1292,6 +1420,10 @@
     "nombre": "Cyan Glazed Terracotta",
     "slug": "cyan-glazed-terracotta"
   },
+  "cyan_harness": {
+    "nombre": "Cyan Harness",
+    "slug": "cyan-harness"
+  },
   "cyan_shulker_box": {
     "nombre": "Cyan Shulker Box",
     "slug": "cyan-shulker-box"
@@ -1371,6 +1503,10 @@
   "dark_oak_sapling": {
     "nombre": "Dark Oak Sapling",
     "slug": "dark-oak-sapling"
+  },
+  "dark_oak_shelf": {
+    "nombre": "Dark Oak Shelf",
+    "slug": "dark-oak-shelf"
   },
   "dark_oak_sign": {
     "nombre": "Dark Oak Sign",
@@ -1565,6 +1701,10 @@
     "nombre": "Diamond Horse Armor",
     "slug": "diamond-horse-armor"
   },
+  "diamond_nautilus_armor": {
+    "nombre": "Diamond Nautilus Armor",
+    "slug": "diamond-nautilus-armor"
+  },
   "diamond_ore": {
     "nombre": "Diamond Ore",
     "slug": "diamond-ore"
@@ -1620,6 +1760,10 @@
   "dragon_head": {
     "nombre": "Dragon Head",
     "slug": "dragon-head"
+  },
+  "dried_ghast": {
+    "nombre": "Dried Ghast",
+    "slug": "dried-ghast"
   },
   "dried_kelp": {
     "nombre": "Dried Kelp",
@@ -1759,17 +1903,37 @@
     "nombre": "Exposed Copper",
     "slug": "exposed-copper"
   },
+  "exposed_copper_bars": {
+    "nombre": "Exposed Copper Bars",
+    "slug": "exposed-copper-bars"
+  },
   "exposed_copper_bulb": {
     "nombre": "Exposed Copper Bulb",
     "slug": "exposed-copper-bulb"
+  },
+  "exposed_copper_chain": {
+    "nombre": "Exposed Copper Chain",
+    "slug": "exposed-copper-chain"
+  },
+  "exposed_copper_chest": {
+    "nombre": "Exposed Copper Chest",
+    "slug": "exposed-copper-chest"
   },
   "exposed_copper_door": {
     "nombre": "Exposed Copper Door",
     "slug": "exposed-copper-door"
   },
+  "exposed_copper_golem_statue": {
+    "nombre": "Exposed Copper Golem Statue",
+    "slug": "exposed-copper-golem-statue"
+  },
   "exposed_copper_grate": {
     "nombre": "Exposed Copper Grate",
     "slug": "exposed-copper-grate"
+  },
+  "exposed_copper_lantern": {
+    "nombre": "Exposed Copper Lantern",
+    "slug": "exposed-copper-lantern"
   },
   "exposed_copper_trapdoor": {
     "nombre": "Exposed Copper Trapdoor",
@@ -1786,6 +1950,10 @@
   "exposed_cut_copper_stairs": {
     "nombre": "Exposed Cut Copper Stairs",
     "slug": "exposed-cut-copper-stairs"
+  },
+  "exposed_lightning_rod": {
+    "nombre": "Exposed Lightning Rod",
+    "slug": "exposed-lightning-rod"
   },
   "eye_armor_trim_smithing_template": {
     "nombre": "Eye Armor Trim",
@@ -1830,6 +1998,10 @@
   "fire_coral_fan": {
     "nombre": "Fire Coral Fan",
     "slug": "fire-coral-fan"
+  },
+  "firefly_bush": {
+    "nombre": "Firefly Bush",
+    "slug": "firefly-bush"
   },
   "firework_rocket": {
     "nombre": "Firework Rocket",
@@ -1999,9 +2171,17 @@
     "nombre": "Golden Carrot",
     "slug": "golden-carrot"
   },
+  "golden_dandelion": {
+    "nombre": "Golden Dandelion",
+    "slug": "golden-dandelion"
+  },
   "golden_horse_armor": {
     "nombre": "Golden Horse Armor",
     "slug": "golden-horse-armor"
+  },
+  "golden_nautilus_armor": {
+    "nombre": "Golden Nautilus Armor",
+    "slug": "golden-nautilus-armor"
   },
   "granite": {
     "nombre": "Granite",
@@ -2063,6 +2243,10 @@
     "nombre": "Gray Glazed Terracotta",
     "slug": "gray-glazed-terracotta"
   },
+  "gray_harness": {
+    "nombre": "Gray Harness",
+    "slug": "gray-harness"
+  },
   "gray_shulker_box": {
     "nombre": "Gray Shulker Box",
     "slug": "gray-shulker-box"
@@ -2119,6 +2303,10 @@
     "nombre": "Green Glazed Terracotta",
     "slug": "green-glazed-terracotta"
   },
+  "green_harness": {
+    "nombre": "Green Harness",
+    "slug": "green-harness"
+  },
   "green_shulker_box": {
     "nombre": "Green Shulker Box",
     "slug": "green-shulker-box"
@@ -2162,6 +2350,10 @@
   "hanging_roots": {
     "nombre": "Hanging Roots",
     "slug": "hanging-roots"
+  },
+  "happy_ghast_spawn_egg": {
+    "nombre": "Happy Ghast Spawn Egg",
+    "slug": "happy-ghast-spawn-egg"
   },
   "hay_block": {
     "nombre": "Hay Bale",
@@ -2287,6 +2479,10 @@
     "nombre": "Block of Iron",
     "slug": "block-of-iron"
   },
+  "iron_chain": {
+    "nombre": "Iron Chain",
+    "slug": "iron-chain"
+  },
   "iron_door": {
     "nombre": "Iron Door",
     "slug": "iron-door"
@@ -2302,6 +2498,10 @@
   "iron_ingot": {
     "nombre": "Iron Ingot",
     "slug": "iron-ingot"
+  },
+  "iron_nautilus_armor": {
+    "nombre": "Iron Nautilus Armor",
+    "slug": "iron-nautilus-armor"
   },
   "iron_nugget": {
     "nombre": "Iron Nugget",
@@ -2379,6 +2579,10 @@
     "nombre": "Jungle Sapling",
     "slug": "jungle-sapling"
   },
+  "jungle_shelf": {
+    "nombre": "Jungle Shelf",
+    "slug": "jungle-shelf"
+  },
   "jungle_sign": {
     "nombre": "Jungle Sign",
     "slug": "jungle-sign"
@@ -2443,6 +2647,10 @@
     "nombre": "Lead",
     "slug": "lead"
   },
+  "leaf_litter": {
+    "nombre": "Leaf Litter",
+    "slug": "leaf-litter"
+  },
   "leather": {
     "nombre": "Leather",
     "slug": "leather"
@@ -2500,6 +2708,10 @@
     "nombre": "Light Blue Glazed Terracotta",
     "slug": "light-blue-glazed-terracotta"
   },
+  "light_blue_harness": {
+    "nombre": "Light Blue Harness",
+    "slug": "light-blue-harness"
+  },
   "light_blue_shulker_box": {
     "nombre": "Light Blue Shulker Box",
     "slug": "light-blue-shulker-box"
@@ -2555,6 +2767,10 @@
   "light_gray_glazed_terracotta": {
     "nombre": "Light Gray Glazed Terracotta",
     "slug": "light-gray-glazed-terracotta"
+  },
+  "light_gray_harness": {
+    "nombre": "Light Gray Harness",
+    "slug": "light-gray-harness"
   },
   "light_gray_shulker_box": {
     "nombre": "Light Gray Shulker Box",
@@ -2632,6 +2848,10 @@
     "nombre": "Lime Glazed Terracotta",
     "slug": "lime-glazed-terracotta"
   },
+  "lime_harness": {
+    "nombre": "Lime Harness",
+    "slug": "lime-harness"
+  },
   "lime_shulker_box": {
     "nombre": "Lime Shulker Box",
     "slug": "lime-shulker-box"
@@ -2703,6 +2923,10 @@
   "magenta_glazed_terracotta": {
     "nombre": "Magenta Glazed Terracotta",
     "slug": "magenta-glazed-terracotta"
+  },
+  "magenta_harness": {
+    "nombre": "Magenta Harness",
+    "slug": "magenta-harness"
   },
   "magenta_shulker_box": {
     "nombre": "Magenta Shulker Box",
@@ -2787,6 +3011,10 @@
   "mangrove_roots": {
     "nombre": "Mangrove Roots",
     "slug": "mangrove-roots"
+  },
+  "mangrove_shelf": {
+    "nombre": "Mangrove Shelf",
+    "slug": "mangrove-shelf"
   },
   "mangrove_sign": {
     "nombre": "Mangrove Sign",
@@ -2929,79 +3157,91 @@
     "slug": "mushroom-stew"
   },
   "music_disc_11": {
-    "nombre": "Music Disc",
+    "nombre": "Music Disc (11)",
     "slug": "music-disc-11"
   },
   "music_disc_13": {
-    "nombre": "Music Disc",
+    "nombre": "Music Disc (13)",
     "slug": "music-disc"
   },
   "music_disc_5": {
-    "nombre": "Music Disc",
+    "nombre": "Music Disc (5)",
     "slug": "music-disc-5"
   },
   "music_disc_blocks": {
-    "nombre": "Music Disc",
+    "nombre": "Music Disc (Blocks)",
     "slug": "music-disc-blocks"
   },
+  "music_disc_bounce": {
+    "nombre": "Music Disc (Bounce)",
+    "slug": "music-disc-bounce"
+  },
   "music_disc_cat": {
-    "nombre": "Music Disc",
+    "nombre": "Music Disc (Cat)",
     "slug": "music-disc-cat"
   },
   "music_disc_chirp": {
-    "nombre": "Music Disc",
+    "nombre": "Music Disc (Chirp)",
     "slug": "music-disc-chirp"
   },
   "music_disc_creator": {
-    "nombre": "Music Disc",
+    "nombre": "Music Disc (Creator)",
     "slug": "music-disc-creator"
   },
   "music_disc_creator_music_box": {
-    "nombre": "Music Disc",
+    "nombre": "Music Disc (Creator Music Box)",
     "slug": "music-disc-creator-music-box"
   },
   "music_disc_far": {
-    "nombre": "Music Disc",
+    "nombre": "Music Disc (Far)",
     "slug": "music-disc-far"
   },
+  "music_disc_lava_chicken": {
+    "nombre": "Music Disc (Lava Chicken)",
+    "slug": "music-disc-lava-chicken"
+  },
   "music_disc_mall": {
-    "nombre": "Music Disc",
+    "nombre": "Music Disc (Mall)",
     "slug": "music-disc-mall"
   },
   "music_disc_mellohi": {
-    "nombre": "Music Disc",
+    "nombre": "Music Disc (Mellohi)",
     "slug": "music-disc-mellohi"
   },
   "music_disc_otherside": {
-    "nombre": "Music Disc",
+    "nombre": "Music Disc (Otherside)",
     "slug": "music-disc-otherside"
   },
   "music_disc_pigstep": {
-    "nombre": "Music Disc",
+    "nombre": "Music Disc (Pigstep)",
     "slug": "music-disc-pigstep"
   },
   "music_disc_precipice": {
-    "nombre": "Music Disc",
+    "nombre": "Music Disc (Precipice)",
     "slug": "music-disc-precipice"
   },
   "music_disc_relic": {
-    "nombre": "Music Disc",
+    "nombre": "Music Disc (Relic)",
     "slug": "music-disc-relic"
   },
   "music_disc_stal": {
-    "nombre": "Music Disc",
+    "nombre": "Music Disc (Stal)",
     "slug": "music-disc-stal"
   },
   "music_disc_strad": {
-    "nombre": "Music Disc",
+    "nombre": "Music Disc (Strad)",
     "slug": "music-disc-strad"
   },
+  "music_disc_tears": {
+    "nombre": "Music Disc (Tears)",
+    "slug": "music-disc-tears"
+  },
   "music_disc_wait": {
-    "nombre": "Music Disc",
+    "nombre": "Music Disc (Wait)",
     "slug": "music-disc-wait"
   },
   "music_disc_ward": {
-    "nombre": "Music Disc",
+    "nombre": "Music Disc (Ward)",
     "slug": "music-disc-ward"
   },
   "mutton": {
@@ -3019,6 +3259,10 @@
   "nautilus_shell": {
     "nombre": "Nautilus Shell",
     "slug": "nautilus-shell"
+  },
+  "nautilus_spawn_egg": {
+    "nombre": "Nautilus Spawn Egg",
+    "slug": "nautilus-spawn-egg"
   },
   "nether_brick": {
     "nombre": "Nether Brick",
@@ -3072,9 +3316,17 @@
     "nombre": "Block of Netherite",
     "slug": "block-of-netherite"
   },
+  "netherite_horse_armor": {
+    "nombre": "Netherite Horse Armor",
+    "slug": "netherite-horse-armor"
+  },
   "netherite_ingot": {
     "nombre": "Netherite Ingot",
     "slug": "netherite-ingot"
+  },
+  "netherite_nautilus_armor": {
+    "nombre": "Netherite Nautilus Armor",
+    "slug": "netherite-nautilus-armor"
   },
   "netherite_scrap": {
     "nombre": "Netherite Scrap",
@@ -3139,6 +3391,10 @@
   "oak_sapling": {
     "nombre": "Oak Sapling",
     "slug": "oak-sapling"
+  },
+  "oak_shelf": {
+    "nombre": "Oak Shelf",
+    "slug": "oak-shelf"
   },
   "oak_sign": {
     "nombre": "Oak Sign",
@@ -3224,6 +3480,10 @@
     "nombre": "Orange Glazed Terracotta",
     "slug": "orange-glazed-terracotta"
   },
+  "orange_harness": {
+    "nombre": "Orange Harness",
+    "slug": "orange-harness"
+  },
   "orange_shulker_box": {
     "nombre": "Orange Shulker Box",
     "slug": "orange-shulker-box"
@@ -3260,17 +3520,37 @@
     "nombre": "Oxidized Copper",
     "slug": "oxidized-copper"
   },
+  "oxidized_copper_bars": {
+    "nombre": "Oxidized Copper Bars",
+    "slug": "oxidized-copper-bars"
+  },
   "oxidized_copper_bulb": {
     "nombre": "Oxidized Copper Bulb",
     "slug": "oxidized-copper-bulb"
+  },
+  "oxidized_copper_chain": {
+    "nombre": "Oxidized Copper Chain",
+    "slug": "oxidized-copper-chain"
+  },
+  "oxidized_copper_chest": {
+    "nombre": "Oxidized Copper Chest",
+    "slug": "oxidized-copper-chest"
   },
   "oxidized_copper_door": {
     "nombre": "Oxidized Copper Door",
     "slug": "oxidized-copper-door"
   },
+  "oxidized_copper_golem_statue": {
+    "nombre": "Oxidized Copper Golem Statue",
+    "slug": "oxidized-copper-golem-statue"
+  },
   "oxidized_copper_grate": {
     "nombre": "Oxidized Copper Grate",
     "slug": "oxidized-copper-grate"
+  },
+  "oxidized_copper_lantern": {
+    "nombre": "Oxidized Copper Lantern",
+    "slug": "oxidized-copper-lantern"
   },
   "oxidized_copper_trapdoor": {
     "nombre": "Oxidized Copper Trapdoor",
@@ -3287,6 +3567,10 @@
   "oxidized_cut_copper_stairs": {
     "nombre": "Oxidized Cut Copper Stairs",
     "slug": "oxidized-cut-copper-stairs"
+  },
+  "oxidized_lightning_rod": {
+    "nombre": "Oxidized Lightning Rod",
+    "slug": "oxidized-lightning-rod"
   },
   "packed_ice": {
     "nombre": "Packed Ice",
@@ -3360,6 +3644,10 @@
     "nombre": "Pale Oak Sapling",
     "slug": "pale-oak-sapling"
   },
+  "pale_oak_shelf": {
+    "nombre": "Pale Oak Shelf",
+    "slug": "pale-oak-shelf"
+  },
   "pale_oak_sign": {
     "nombre": "Pale Oak Sign",
     "slug": "pale-oak-sign"
@@ -3387,6 +3675,10 @@
   "paper": {
     "nombre": "Paper",
     "slug": "paper"
+  },
+  "parched_spawn_egg": {
+    "nombre": "Parched Spawn Egg",
+    "slug": "parched-spawn-egg"
   },
   "parrot_spawn_egg": {
     "nombre": "Parrot Spawn Egg",
@@ -3471,6 +3763,10 @@
   "pink_glazed_terracotta": {
     "nombre": "Pink Glazed Terracotta",
     "slug": "pink-glazed-terracotta"
+  },
+  "pink_harness": {
+    "nombre": "Pink Harness",
+    "slug": "pink-harness"
   },
   "pink_petals": {
     "nombre": "Pink Petals",
@@ -3592,6 +3888,22 @@
     "nombre": "Polished Blackstone Wall",
     "slug": "polished-blackstone-wall"
   },
+  "polished_cinnabar": {
+    "nombre": "Polished Cinnabar",
+    "slug": "polished-cinnabar"
+  },
+  "polished_cinnabar_slab": {
+    "nombre": "Polished Cinnabar Slab",
+    "slug": "polished-cinnabar-slab"
+  },
+  "polished_cinnabar_stairs": {
+    "nombre": "Polished Cinnabar Stairs",
+    "slug": "polished-cinnabar-stairs"
+  },
+  "polished_cinnabar_wall": {
+    "nombre": "Polished Cinnabar Wall",
+    "slug": "polished-cinnabar-wall"
+  },
   "polished_deepslate": {
     "nombre": "Polished Deepslate",
     "slug": "polished-deepslate"
@@ -3632,6 +3944,22 @@
     "nombre": "Polished Granite Stairs",
     "slug": "polished-granite-stairs"
   },
+  "polished_sulfur": {
+    "nombre": "Polished Sulfur",
+    "slug": "polished-sulfur"
+  },
+  "polished_sulfur_slab": {
+    "nombre": "Polished Sulfur Slab",
+    "slug": "polished-sulfur-slab"
+  },
+  "polished_sulfur_stairs": {
+    "nombre": "Polished Sulfur Stairs",
+    "slug": "polished-sulfur-stairs"
+  },
+  "polished_sulfur_wall": {
+    "nombre": "Polished Sulfur Wall",
+    "slug": "polished-sulfur-wall"
+  },
   "polished_tuff": {
     "nombre": "Polished Tuff",
     "slug": "polished-tuff"
@@ -3663,6 +3991,10 @@
   "potato": {
     "nombre": "Potato",
     "slug": "potato"
+  },
+  "potent_sulfur": {
+    "nombre": "Potent Sulfur",
+    "slug": "potent-sulfur"
   },
   "potion": {
     "nombre": "Potion",
@@ -3775,6 +4107,10 @@
   "purple_glazed_terracotta": {
     "nombre": "Purple Glazed Terracotta",
     "slug": "purple-glazed-terracotta"
+  },
+  "purple_harness": {
+    "nombre": "Purple Harness",
+    "slug": "purple-harness"
   },
   "purple_shulker_box": {
     "nombre": "Purple Shulker Box",
@@ -3931,6 +4267,10 @@
   "red_glazed_terracotta": {
     "nombre": "Red Glazed Terracotta",
     "slug": "red-glazed-terracotta"
+  },
+  "red_harness": {
+    "nombre": "Red Harness",
+    "slug": "red-harness"
   },
   "red_mushroom": {
     "nombre": "Red Mushroom",
@@ -4179,6 +4519,10 @@
   "shelter_pottery_sherd": {
     "nombre": "Shelter Pottery Sherd",
     "slug": "shelter-pottery-sherd"
+  },
+  "short_dry_grass": {
+    "nombre": "Short Dry Grass",
+    "slug": "short-dry-grass"
   },
   "short_grass": {
     "nombre": "Short Grass",
@@ -4436,6 +4780,10 @@
     "nombre": "Spruce Sapling",
     "slug": "spruce-sapling"
   },
+  "spruce_shelf": {
+    "nombre": "Spruce Shelf",
+    "slug": "spruce-shelf"
+  },
   "spruce_sign": {
     "nombre": "Spruce Sign",
     "slug": "spruce-sign"
@@ -4633,6 +4981,50 @@
     "nombre": "Sugar Cane",
     "slug": "sugar-cane"
   },
+  "sulfur": {
+    "nombre": "Sulfur",
+    "slug": "sulfur"
+  },
+  "sulfur_brick_slab": {
+    "nombre": "Sulfur Brick Slab",
+    "slug": "sulfur-brick-slab"
+  },
+  "sulfur_brick_stairs": {
+    "nombre": "Sulfur Brick Stairs",
+    "slug": "sulfur-brick-stairs"
+  },
+  "sulfur_brick_wall": {
+    "nombre": "Sulfur Brick Wall",
+    "slug": "sulfur-brick-wall"
+  },
+  "sulfur_bricks": {
+    "nombre": "Sulfur Bricks",
+    "slug": "sulfur-bricks"
+  },
+  "sulfur_cube_bucket": {
+    "nombre": "Bucket of Sulfur Cube",
+    "slug": "bucket-of-sulfur-cube"
+  },
+  "sulfur_cube_spawn_egg": {
+    "nombre": "Sulfur Cube Spawn Egg",
+    "slug": "sulfur-cube-spawn-egg"
+  },
+  "sulfur_slab": {
+    "nombre": "Sulfur Slab",
+    "slug": "sulfur-slab"
+  },
+  "sulfur_spike": {
+    "nombre": "Sulfur Spike",
+    "slug": "sulfur-spike"
+  },
+  "sulfur_stairs": {
+    "nombre": "Sulfur Stairs",
+    "slug": "sulfur-stairs"
+  },
+  "sulfur_wall": {
+    "nombre": "Sulfur Wall",
+    "slug": "sulfur-wall"
+  },
   "sunflower": {
     "nombre": "Sunflower",
     "slug": "sunflower"
@@ -4661,6 +5053,10 @@
     "nombre": "Tadpole Spawn Egg",
     "slug": "tadpole-spawn-egg"
   },
+  "tall_dry_grass": {
+    "nombre": "Tall Dry Grass",
+    "slug": "tall-dry-grass"
+  },
   "tall_grass": {
     "nombre": "Tall Grass",
     "slug": "tall-grass"
@@ -4672,6 +5068,14 @@
   "terracotta": {
     "nombre": "Terracotta",
     "slug": "terracotta"
+  },
+  "test_block": {
+    "nombre": "Test Block",
+    "slug": "test-block"
+  },
+  "test_instance_block": {
+    "nombre": "Test Instance Block",
+    "slug": "test-instance-block"
   },
   "tide_armor_trim_smithing_template": {
     "nombre": "Tide Armor Trim",
@@ -4889,6 +5293,10 @@
     "nombre": "Warped Roots",
     "slug": "warped-roots"
   },
+  "warped_shelf": {
+    "nombre": "Warped Shelf",
+    "slug": "warped-shelf"
+  },
   "warped_sign": {
     "nombre": "Warped Sign",
     "slug": "warped-sign"
@@ -4921,6 +5329,10 @@
     "nombre": "Waxed Chiseled Copper",
     "slug": "waxed-chiseled-copper"
   },
+  "waxed_copper_bars": {
+    "nombre": "Waxed Copper Bars",
+    "slug": "waxed-copper-bars"
+  },
   "waxed_copper_block": {
     "nombre": "Waxed Block of Copper",
     "slug": "waxed-block-of-copper"
@@ -4929,13 +5341,29 @@
     "nombre": "Waxed Copper Bulb",
     "slug": "waxed-copper-bulb"
   },
+  "waxed_copper_chain": {
+    "nombre": "Waxed Copper Chain",
+    "slug": "waxed-copper-chain"
+  },
+  "waxed_copper_chest": {
+    "nombre": "Waxed Copper Chest",
+    "slug": "waxed-copper-chest"
+  },
   "waxed_copper_door": {
     "nombre": "Waxed Copper Door",
     "slug": "waxed-copper-door"
   },
+  "waxed_copper_golem_statue": {
+    "nombre": "Waxed Copper Golem Statue",
+    "slug": "waxed-copper-golem-statue"
+  },
   "waxed_copper_grate": {
     "nombre": "Waxed Copper Grate",
     "slug": "waxed-copper-grate"
+  },
+  "waxed_copper_lantern": {
+    "nombre": "Waxed Copper Lantern",
+    "slug": "waxed-copper-lantern"
   },
   "waxed_copper_trapdoor": {
     "nombre": "Waxed Copper Trapdoor",
@@ -4961,17 +5389,37 @@
     "nombre": "Waxed Exposed Copper",
     "slug": "waxed-exposed-copper"
   },
+  "waxed_exposed_copper_bars": {
+    "nombre": "Waxed Exposed Copper Bars",
+    "slug": "waxed-exposed-copper-bars"
+  },
   "waxed_exposed_copper_bulb": {
     "nombre": "Waxed Exposed Copper Bulb",
     "slug": "waxed-exposed-copper-bulb"
+  },
+  "waxed_exposed_copper_chain": {
+    "nombre": "Waxed Exposed Copper Chain",
+    "slug": "waxed-exposed-copper-chain"
+  },
+  "waxed_exposed_copper_chest": {
+    "nombre": "Waxed Exposed Copper Chest",
+    "slug": "waxed-exposed-copper-chest"
   },
   "waxed_exposed_copper_door": {
     "nombre": "Waxed Exposed Copper Door",
     "slug": "waxed-exposed-copper-door"
   },
+  "waxed_exposed_copper_golem_statue": {
+    "nombre": "Waxed Exposed Copper Golem Statue",
+    "slug": "waxed-exposed-copper-golem-statue"
+  },
   "waxed_exposed_copper_grate": {
     "nombre": "Waxed Exposed Copper Grate",
     "slug": "waxed-exposed-copper-grate"
+  },
+  "waxed_exposed_copper_lantern": {
+    "nombre": "Waxed Exposed Copper Lantern",
+    "slug": "waxed-exposed-copper-lantern"
   },
   "waxed_exposed_copper_trapdoor": {
     "nombre": "Waxed Exposed Copper Trapdoor",
@@ -4989,6 +5437,14 @@
     "nombre": "Waxed Exposed Cut Copper Stairs",
     "slug": "waxed-exposed-cut-copper-stairs"
   },
+  "waxed_exposed_lightning_rod": {
+    "nombre": "Waxed Exposed Lightning Rod",
+    "slug": "waxed-exposed-lightning-rod"
+  },
+  "waxed_lightning_rod": {
+    "nombre": "Waxed Lightning Rod",
+    "slug": "waxed-lightning-rod"
+  },
   "waxed_oxidized_chiseled_copper": {
     "nombre": "Waxed Oxidized Chiseled Copper",
     "slug": "waxed-oxidized-chiseled-copper"
@@ -4997,17 +5453,37 @@
     "nombre": "Waxed Oxidized Copper",
     "slug": "waxed-oxidized-copper"
   },
+  "waxed_oxidized_copper_bars": {
+    "nombre": "Waxed Oxidized Copper Bars",
+    "slug": "waxed-oxidized-copper-bars"
+  },
   "waxed_oxidized_copper_bulb": {
     "nombre": "Waxed Oxidized Copper Bulb",
     "slug": "waxed-oxidized-copper-bulb"
+  },
+  "waxed_oxidized_copper_chain": {
+    "nombre": "Waxed Oxidized Copper Chain",
+    "slug": "waxed-oxidized-copper-chain"
+  },
+  "waxed_oxidized_copper_chest": {
+    "nombre": "Waxed Oxidized Copper Chest",
+    "slug": "waxed-oxidized-copper-chest"
   },
   "waxed_oxidized_copper_door": {
     "nombre": "Waxed Oxidized Copper Door",
     "slug": "waxed-oxidized-copper-door"
   },
+  "waxed_oxidized_copper_golem_statue": {
+    "nombre": "Waxed Oxidized Copper Golem Statue",
+    "slug": "waxed-oxidized-copper-golem-statue"
+  },
   "waxed_oxidized_copper_grate": {
     "nombre": "Waxed Oxidized Copper Grate",
     "slug": "waxed-oxidized-copper-grate"
+  },
+  "waxed_oxidized_copper_lantern": {
+    "nombre": "Waxed Oxidized Copper Lantern",
+    "slug": "waxed-oxidized-copper-lantern"
   },
   "waxed_oxidized_copper_trapdoor": {
     "nombre": "Waxed Oxidized Copper Trapdoor",
@@ -5025,6 +5501,10 @@
     "nombre": "Waxed Oxidized Cut Copper Stairs",
     "slug": "waxed-oxidized-cut-copper-stairs"
   },
+  "waxed_oxidized_lightning_rod": {
+    "nombre": "Waxed Oxidized Lightning Rod",
+    "slug": "waxed-oxidized-lightning-rod"
+  },
   "waxed_weathered_chiseled_copper": {
     "nombre": "Waxed Weathered Chiseled Copper",
     "slug": "waxed-weathered-chiseled-copper"
@@ -5033,17 +5513,37 @@
     "nombre": "Waxed Weathered Copper",
     "slug": "waxed-weathered-copper"
   },
+  "waxed_weathered_copper_bars": {
+    "nombre": "Waxed Weathered Copper Bars",
+    "slug": "waxed-weathered-copper-bars"
+  },
   "waxed_weathered_copper_bulb": {
     "nombre": "Waxed Weathered Copper Bulb",
     "slug": "waxed-weathered-copper-bulb"
+  },
+  "waxed_weathered_copper_chain": {
+    "nombre": "Waxed Weathered Copper Chain",
+    "slug": "waxed-weathered-copper-chain"
+  },
+  "waxed_weathered_copper_chest": {
+    "nombre": "Waxed Weathered Copper Chest",
+    "slug": "waxed-weathered-copper-chest"
   },
   "waxed_weathered_copper_door": {
     "nombre": "Waxed Weathered Copper Door",
     "slug": "waxed-weathered-copper-door"
   },
+  "waxed_weathered_copper_golem_statue": {
+    "nombre": "Waxed Weathered Copper Golem Statue",
+    "slug": "waxed-weathered-copper-golem-statue"
+  },
   "waxed_weathered_copper_grate": {
     "nombre": "Waxed Weathered Copper Grate",
     "slug": "waxed-weathered-copper-grate"
+  },
+  "waxed_weathered_copper_lantern": {
+    "nombre": "Waxed Weathered Copper Lantern",
+    "slug": "waxed-weathered-copper-lantern"
   },
   "waxed_weathered_copper_trapdoor": {
     "nombre": "Waxed Weathered Copper Trapdoor",
@@ -5061,6 +5561,10 @@
     "nombre": "Waxed Weathered Cut Copper Stairs",
     "slug": "waxed-weathered-cut-copper-stairs"
   },
+  "waxed_weathered_lightning_rod": {
+    "nombre": "Waxed Weathered Lightning Rod",
+    "slug": "waxed-weathered-lightning-rod"
+  },
   "wayfinder_armor_trim_smithing_template": {
     "nombre": "Wayfinder Armor Trim",
     "slug": "wayfinder-armor-trim"
@@ -5073,17 +5577,37 @@
     "nombre": "Weathered Copper",
     "slug": "weathered-copper"
   },
+  "weathered_copper_bars": {
+    "nombre": "Weathered Copper Bars",
+    "slug": "weathered-copper-bars"
+  },
   "weathered_copper_bulb": {
     "nombre": "Weathered Copper Bulb",
     "slug": "weathered-copper-bulb"
+  },
+  "weathered_copper_chain": {
+    "nombre": "Weathered Copper Chain",
+    "slug": "weathered-copper-chain"
+  },
+  "weathered_copper_chest": {
+    "nombre": "Weathered Copper Chest",
+    "slug": "weathered-copper-chest"
   },
   "weathered_copper_door": {
     "nombre": "Weathered Copper Door",
     "slug": "weathered-copper-door"
   },
+  "weathered_copper_golem_statue": {
+    "nombre": "Weathered Copper Golem Statue",
+    "slug": "weathered-copper-golem-statue"
+  },
   "weathered_copper_grate": {
     "nombre": "Weathered Copper Grate",
     "slug": "weathered-copper-grate"
+  },
+  "weathered_copper_lantern": {
+    "nombre": "Weathered Copper Lantern",
+    "slug": "weathered-copper-lantern"
   },
   "weathered_copper_trapdoor": {
     "nombre": "Weathered Copper Trapdoor",
@@ -5100,6 +5624,10 @@
   "weathered_cut_copper_stairs": {
     "nombre": "Weathered Cut Copper Stairs",
     "slug": "weathered-cut-copper-stairs"
+  },
+  "weathered_lightning_rod": {
+    "nombre": "Weathered Lightning Rod",
+    "slug": "weathered-lightning-rod"
   },
   "weeping_vines": {
     "nombre": "Weeping Vines",
@@ -5153,6 +5681,10 @@
     "nombre": "White Glazed Terracotta",
     "slug": "white-glazed-terracotta"
   },
+  "white_harness": {
+    "nombre": "White Harness",
+    "slug": "white-harness"
+  },
   "white_shulker_box": {
     "nombre": "White Shulker Box",
     "slug": "white-shulker-box"
@@ -5180,6 +5712,10 @@
   "wild_armor_trim_smithing_template": {
     "nombre": "Wild Armor Trim",
     "slug": "wild-armor-trim"
+  },
+  "wildflowers": {
+    "nombre": "Wildflowers",
+    "slug": "wildflowers"
   },
   "wind_charge": {
     "nombre": "Wind Charge",
@@ -5257,6 +5793,10 @@
     "nombre": "Yellow Glazed Terracotta",
     "slug": "yellow-glazed-terracotta"
   },
+  "yellow_harness": {
+    "nombre": "Yellow Harness",
+    "slug": "yellow-harness"
+  },
   "yellow_shulker_box": {
     "nombre": "Yellow Shulker Box",
     "slug": "yellow-shulker-box"
@@ -5288,6 +5828,10 @@
   "zombie_horse_spawn_egg": {
     "nombre": "Zombie Horse Spawn Egg",
     "slug": "zombie-horse-spawn-egg"
+  },
+  "zombie_nautilus_spawn_egg": {
+    "nombre": "Zombie Nautilus Spawn Egg",
+    "slug": "zombie-nautilus-spawn-egg"
   },
   "zombie_spawn_egg": {
     "nombre": "Zombie Spawn Egg",

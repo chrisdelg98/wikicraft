@@ -1,0 +1,11 @@
+{
+  "$schema": "../../schemas/mob.schema.json",
+  "id": "happy_ghast",
+  "tipo": "mob",
+  "etapa": "nether",
+  "relevancia": "normal",
+  "categoria": "pasivo",
+  "dimension": [
+    "superficie"
+  ]
+}

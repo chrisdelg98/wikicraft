@@ -6,17 +6,17 @@
   "relevancia": "baja",
   "resultado": {
     "item": "copper_trapdoor",
-    "cantidad": 2
+    "cantidad": 1
   },
   "conForma": true,
   "patron": [
-    "AAA",
-    "AAA"
+    "AA",
+    "AA"
   ],
   "clave": {
     "A": [
       "copper_ingot"
     ]
   },
-  "estacion": "mesa_de_trabajo"
+  "estacion": "inventario"
 }

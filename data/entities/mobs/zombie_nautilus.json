@@ -1,0 +1,32 @@
+{
+  "$schema": "../../schemas/mob.schema.json",
+  "id": "zombie_nautilus",
+  "tipo": "mob",
+  "etapa": "inicio",
+  "relevancia": "normal",
+  "categoria": "neutral",
+  "dimension": [
+    "superficie"
+  ],
+  "apareceEn": [
+    "ocean",
+    "deep_ocean",
+    "cold_ocean",
+    "deep_cold_ocean",
+    "lukewarm_ocean",
+    "deep_lukewarm_ocean",
+    "warm_ocean",
+    "frozen_ocean",
+    "deep_frozen_ocean",
+    "dripstone_caves"
+  ],
+  "botin": [
+    {
+      "item": "rotten_flesh",
+      "minimo": 0,
+      "maximo": 3,
+      "probabilidad": 0.75,
+      "soloAlMorirPorJugador": true
+    }
+  ]
+}

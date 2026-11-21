@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/tool.schema.json",
+  "id": "iron_spear",
+  "tipo": "herramienta",
+  "etapa": "hierro",
+  "relevancia": "alta",
+  "categoria": "lanza",
+  "material": "hierro",
+  "durabilidad": 250,
+  "reparadoCon": [
+    "iron_ingot"
+  ]
+}

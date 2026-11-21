@@ -35,6 +35,10 @@
     "nombre": "Receta de Placa de presión de acacia",
     "slug": "receta-placa-de-presion-de-acacia"
   },
+  "acacia_shelf_receta": {
+    "nombre": "Receta de Estante de acacia",
+    "slug": "receta-estante-de-acacia"
+  },
   "acacia_sign_receta": {
     "nombre": "Receta de Cartel de acacia",
     "slug": "receta-cartel-de-acacia"
@@ -143,6 +147,10 @@
     "nombre": "Receta de Balsa de bambú",
     "slug": "receta-balsa-de-bambu"
   },
+  "bamboo_shelf_receta": {
+    "nombre": "Receta de Estante de bambú",
+    "slug": "receta-estante-de-bambu"
+  },
   "bamboo_sign_receta": {
     "nombre": "Receta de Cartel de bambú",
     "slug": "receta-cartel-de-bambu"
@@ -211,6 +219,10 @@
     "nombre": "Receta de Placa de presión de abedul",
     "slug": "receta-placa-de-presion-de-abedul"
   },
+  "birch_shelf_receta": {
+    "nombre": "Receta de Estante de abedul",
+    "slug": "receta-estante-de-abedul"
+  },
   "birch_sign_receta": {
     "nombre": "Receta de Cartel de abedul",
     "slug": "receta-cartel-de-abedul"
@@ -262,6 +274,14 @@
   "black_dye_receta": {
     "nombre": "Receta de Tinte negro",
     "slug": "receta-tinte-negro"
+  },
+  "black_harness_receta_con_black_dye": {
+    "nombre": "Receta de Arnés negro (con tinte negro)",
+    "slug": "receta-arnes-negro-tinte-negro"
+  },
+  "black_harness_receta_con_leather": {
+    "nombre": "Receta de Arnés negro (con cuero)",
+    "slug": "receta-arnes-negro-cuero"
   },
   "black_stained_glass_pane_receta_con_black_stained_glass": {
     "nombre": "Receta de Panel de vidriera negro (con vidriera negra)",
@@ -334,6 +354,14 @@
   "blue_dye_receta": {
     "nombre": "Receta de Tinte azul",
     "slug": "receta-tinte-azul"
+  },
+  "blue_harness_receta_con_black_harness": {
+    "nombre": "Receta de Arnés azul (con arnés negro)",
+    "slug": "receta-arnes-azul-arnes-negro"
+  },
+  "blue_harness_receta_con_leather": {
+    "nombre": "Receta de Arnés azul (con cuero)",
+    "slug": "receta-arnes-azul-cuero"
   },
   "blue_ice_receta": {
     "nombre": "Receta de Hielo azul",
@@ -451,6 +479,14 @@
     "nombre": "Receta de Tinte marrón",
     "slug": "receta-tinte-marron"
   },
+  "brown_harness_receta_con_black_harness": {
+    "nombre": "Receta de Arnés marrón (con arnés negro)",
+    "slug": "receta-arnes-marron-arnes-negro"
+  },
+  "brown_harness_receta_con_leather": {
+    "nombre": "Receta de Arnés marrón (con cuero)",
+    "slug": "receta-arnes-marron-cuero"
+  },
   "brown_stained_glass_pane_receta_con_brown_stained_glass": {
     "nombre": "Receta de Panel de vidriera marrón (con vidriera marrón)",
     "slug": "receta-panel-de-vidriera-marron-vidriera-marron"
@@ -511,10 +547,6 @@
     "nombre": "Receta de Caldero",
     "slug": "receta-caldero"
   },
-  "chain_receta": {
-    "nombre": "Receta de Cadena",
-    "slug": "receta-cadena"
-  },
   "cherry_boat_receta": {
     "nombre": "Receta de Barca de cerezo",
     "slug": "receta-barca-de-cerezo"
@@ -550,6 +582,10 @@
   "cherry_pressure_plate_receta": {
     "nombre": "Receta de Placa de presión de cerezo",
     "slug": "receta-placa-de-presion-de-cerezo"
+  },
+  "cherry_shelf_receta": {
+    "nombre": "Receta de Estante de cerezo",
+    "slug": "receta-estante-de-cerezo"
   },
   "cherry_sign_receta": {
     "nombre": "Receta de Cartel de cerezo",
@@ -606,6 +642,10 @@
   "chiseled_red_sandstone_receta": {
     "nombre": "Receta de Arenisca roja cincelada",
     "slug": "receta-arenisca-roja-cincelada"
+  },
+  "chiseled_resin_bricks_receta": {
+    "nombre": "Receta de Ladrillos de resina cincelados",
+    "slug": "receta-ladrillos-de-resina-cincelados"
   },
   "chiseled_sandstone_receta": {
     "nombre": "Receta de Arenisca cincelada",
@@ -691,13 +731,37 @@
     "nombre": "Receta de Galleta",
     "slug": "receta-galleta"
   },
+  "copper_axe_receta": {
+    "nombre": "Receta de Hacha de cobre",
+    "slug": "receta-hacha-de-cobre"
+  },
+  "copper_bars_receta": {
+    "nombre": "Receta de Barrotes de cobre",
+    "slug": "receta-barrotes-de-cobre"
+  },
   "copper_block_receta": {
     "nombre": "Receta de Bloque de cobre",
     "slug": "receta-bloque-de-cobre"
   },
+  "copper_boots_receta": {
+    "nombre": "Receta de Botas de cobre",
+    "slug": "receta-botas-de-cobre"
+  },
   "copper_bulb_receta": {
     "nombre": "Receta de Bombilla de cobre",
     "slug": "receta-bombilla-de-cobre"
+  },
+  "copper_chain_receta": {
+    "nombre": "Receta de Cadena de cobre",
+    "slug": "receta-cadena-de-cobre"
+  },
+  "copper_chest_receta": {
+    "nombre": "Receta de Cofre de cobre",
+    "slug": "receta-cofre-de-cobre"
+  },
+  "copper_chestplate_receta": {
+    "nombre": "Receta de Pechera de cobre",
+    "slug": "receta-pechera-de-cobre"
   },
   "copper_door_receta": {
     "nombre": "Receta de Puerta de cobre",
@@ -707,9 +771,53 @@
     "nombre": "Receta de Rejilla de cobre",
     "slug": "receta-rejilla-de-cobre"
   },
-  "copper_ingot_receta": {
-    "nombre": "Receta de Lingote de cobre",
-    "slug": "receta-lingote-de-cobre"
+  "copper_helmet_receta": {
+    "nombre": "Receta de Casco de cobre",
+    "slug": "receta-casco-de-cobre"
+  },
+  "copper_hoe_receta": {
+    "nombre": "Receta de Azada de cobre",
+    "slug": "receta-azada-de-cobre"
+  },
+  "copper_ingot_receta_con_copper_block": {
+    "nombre": "Receta de Lingote de cobre (con bloque de cobre)",
+    "slug": "receta-lingote-de-cobre-bloque-de-cobre"
+  },
+  "copper_ingot_receta_con_copper_nugget": {
+    "nombre": "Receta de Lingote de cobre (con pepita de cobre)",
+    "slug": "receta-lingote-de-cobre-pepita-de-cobre"
+  },
+  "copper_lantern_receta": {
+    "nombre": "Receta de Farol de cobre",
+    "slug": "receta-farol-de-cobre"
+  },
+  "copper_leggings_receta": {
+    "nombre": "Receta de Pantalones de cobre",
+    "slug": "receta-pantalones-de-cobre"
+  },
+  "copper_nugget_receta": {
+    "nombre": "Receta de Pepita de cobre",
+    "slug": "receta-pepita-de-cobre"
+  },
+  "copper_pickaxe_receta": {
+    "nombre": "Receta de Pico de cobre",
+    "slug": "receta-pico-de-cobre"
+  },
+  "copper_shovel_receta": {
+    "nombre": "Receta de Pala de cobre",
+    "slug": "receta-pala-de-cobre"
+  },
+  "copper_spear_receta": {
+    "nombre": "Receta de Lanza de cobre",
+    "slug": "receta-lanza-de-cobre"
+  },
+  "copper_sword_receta": {
+    "nombre": "Receta de Espada de cobre",
+    "slug": "receta-espada-de-cobre"
+  },
+  "copper_torch_receta": {
+    "nombre": "Receta de Antorcha de cobre",
+    "slug": "receta-antorcha-de-cobre"
   },
   "copper_trapdoor_receta": {
     "nombre": "Receta de Trampilla de cobre",
@@ -722,6 +830,10 @@
   "crafting_table_receta": {
     "nombre": "Receta de Mesa de trabajo",
     "slug": "receta-mesa-de-trabajo"
+  },
+  "creaking_heart_receta": {
+    "nombre": "Receta de Corazón de acechador",
+    "slug": "receta-corazon-de-acechador"
   },
   "creeper_banner_pattern_receta": {
     "nombre": "Receta de Patrón de estandarte de creeper",
@@ -758,6 +870,10 @@
   "crimson_pressure_plate_receta": {
     "nombre": "Receta de Placa de presión carmesí",
     "slug": "receta-placa-de-presion-carmesi"
+  },
+  "crimson_shelf_receta": {
+    "nombre": "Receta de Estante carmesí",
+    "slug": "receta-estante-carmesi"
   },
   "crimson_sign_receta": {
     "nombre": "Receta de Cartel carmesí",
@@ -843,6 +959,14 @@
     "nombre": "Receta de Tinte cian (con planta jarro)",
     "slug": "receta-tinte-cian-planta-jarro"
   },
+  "cyan_harness_receta_con_black_harness": {
+    "nombre": "Receta de Arnés cian (con arnés negro)",
+    "slug": "receta-arnes-cian-arnes-negro"
+  },
+  "cyan_harness_receta_con_leather": {
+    "nombre": "Receta de Arnés cian (con cuero)",
+    "slug": "receta-arnes-cian-cuero"
+  },
   "cyan_stained_glass_pane_receta_con_cyan_stained_glass": {
     "nombre": "Receta de Panel de vidriera cian (con vidriera cian)",
     "slug": "receta-panel-de-vidriera-cian-vidriera-cian"
@@ -898,6 +1022,10 @@
   "dark_oak_pressure_plate_receta": {
     "nombre": "Receta de Placa de presión de roble oscuro",
     "slug": "receta-placa-de-presion-de-roble-oscuro"
+  },
+  "dark_oak_shelf_receta": {
+    "nombre": "Receta de Estante de roble oscuro",
+    "slug": "receta-estante-de-roble-oscuro"
   },
   "dark_oak_sign_receta": {
     "nombre": "Receta de Cartel de roble oscuro",
@@ -1015,6 +1143,10 @@
     "nombre": "Receta de Pala de diamante",
     "slug": "receta-pala-de-diamante"
   },
+  "diamond_spear_receta": {
+    "nombre": "Receta de Lanza de diamante",
+    "slug": "receta-lanza-de-diamante"
+  },
   "diamond_sword_receta": {
     "nombre": "Receta de Espada de Diamante",
     "slug": "receta-espada-de-diamante"
@@ -1038,6 +1170,10 @@
   "dispenser_receta": {
     "nombre": "Receta de Dispensador",
     "slug": "receta-dispensador"
+  },
+  "dried_ghast_receta": {
+    "nombre": "Receta de Ghast seco",
+    "slug": "receta-ghast-seco"
   },
   "dried_kelp_block_receta": {
     "nombre": "Receta de Bloque de alga seca",
@@ -1235,6 +1371,10 @@
     "nombre": "Receta de Pechera de oro",
     "slug": "receta-pechera-de-oro"
   },
+  "golden_dandelion_receta": {
+    "nombre": "Receta de Diente de león dorado",
+    "slug": "receta-diente-de-leon-dorado"
+  },
   "golden_helmet_receta": {
     "nombre": "Receta de Casco de oro",
     "slug": "receta-casco-de-oro"
@@ -1254,6 +1394,10 @@
   "golden_shovel_receta": {
     "nombre": "Receta de Pala de oro",
     "slug": "receta-pala-de-oro"
+  },
+  "golden_spear_receta": {
+    "nombre": "Receta de Lanza de oro",
+    "slug": "receta-lanza-de-oro"
   },
   "golden_sword_receta": {
     "nombre": "Receta de Espada de oro",
@@ -1303,9 +1447,21 @@
     "nombre": "Receta de Hormigón en polvo gris",
     "slug": "receta-hormigon-en-polvo-gris"
   },
-  "gray_dye_receta": {
-    "nombre": "Receta de Tinte gris",
-    "slug": "receta-tinte-gris"
+  "gray_dye_receta_con_black_dye": {
+    "nombre": "Receta de Tinte gris (con tinte negro)",
+    "slug": "receta-tinte-gris-tinte-negro"
+  },
+  "gray_dye_receta_con_closed_eyeblossom": {
+    "nombre": "Receta de Tinte gris (con flor ojo cerrada)",
+    "slug": "receta-tinte-gris-flor-ojo-cerrada"
+  },
+  "gray_harness_receta_con_black_harness": {
+    "nombre": "Receta de Arnés gris (con arnés negro)",
+    "slug": "receta-arnes-gris-arnes-negro"
+  },
+  "gray_harness_receta_con_leather": {
+    "nombre": "Receta de Arnés gris (con cuero)",
+    "slug": "receta-arnes-gris-cuero"
   },
   "gray_stained_glass_pane_receta_con_glass_pane": {
     "nombre": "Receta de Panel de vidriera gris (con panel de cristal)",
@@ -1354,6 +1510,14 @@
   "green_concrete_powder_receta": {
     "nombre": "Receta de Hormigón en polvo verde",
     "slug": "receta-hormigon-en-polvo-verde"
+  },
+  "green_harness_receta_con_black_harness": {
+    "nombre": "Receta de Arnés verde (con arnés negro)",
+    "slug": "receta-arnes-verde-arnes-negro"
+  },
+  "green_harness_receta_con_leather": {
+    "nombre": "Receta de Arnés verde (con cuero)",
+    "slug": "receta-arnes-verde-cuero"
   },
   "green_stained_glass_pane_receta_con_glass_pane": {
     "nombre": "Receta de Panel de vidriera verde (con panel de cristal)",
@@ -1427,6 +1591,10 @@
     "nombre": "Receta de Botas de hierro",
     "slug": "receta-botas-de-hierro"
   },
+  "iron_chain_receta": {
+    "nombre": "Receta de Cadena de hierro",
+    "slug": "receta-cadena-de-hierro"
+  },
   "iron_chestplate_receta": {
     "nombre": "Receta de Pechera de hierro",
     "slug": "receta-pechera-de-hierro"
@@ -1466,6 +1634,10 @@
   "iron_shovel_receta": {
     "nombre": "Receta de Pala de hierro",
     "slug": "receta-pala-de-hierro"
+  },
+  "iron_spear_receta": {
+    "nombre": "Receta de Lanza de hierro",
+    "slug": "receta-lanza-de-hierro"
   },
   "iron_sword_receta": {
     "nombre": "Receta de Espada de hierro",
@@ -1522,6 +1694,10 @@
   "jungle_pressure_plate_receta": {
     "nombre": "Receta de Placa de presión de jungla",
     "slug": "receta-placa-de-presion-de-jungla"
+  },
+  "jungle_shelf_receta": {
+    "nombre": "Receta de Estante de jungla",
+    "slug": "receta-estante-de-jungla"
   },
   "jungle_sign_receta": {
     "nombre": "Receta de Cartel de jungla",
@@ -1631,6 +1807,14 @@
     "nombre": "Receta de Tinte azul claro (con orquídea azul)",
     "slug": "receta-tinte-azul-claro-orquidea-azul"
   },
+  "light_blue_harness_receta_con_black_harness": {
+    "nombre": "Receta de Arnés azul claro (con arnés negro)",
+    "slug": "receta-arnes-azul-claro-arnes-negro"
+  },
+  "light_blue_harness_receta_con_leather": {
+    "nombre": "Receta de Arnés azul claro (con cuero)",
+    "slug": "receta-arnes-azul-claro-cuero"
+  },
   "light_blue_stained_glass_pane_receta_con_glass_pane": {
     "nombre": "Receta de Panel de vidriera azul claro (con panel de cristal)",
     "slug": "receta-panel-de-vidriera-azul-claro-panel-de-cristal"
@@ -1691,6 +1875,14 @@
     "nombre": "Receta de Tinte gris claro (con tinte gris)",
     "slug": "receta-tinte-gris-claro-tinte-gris"
   },
+  "light_gray_harness_receta_con_black_harness": {
+    "nombre": "Receta de Arnés gris claro (con arnés negro)",
+    "slug": "receta-arnes-gris-claro-arnes-negro"
+  },
+  "light_gray_harness_receta_con_leather": {
+    "nombre": "Receta de Arnés gris claro (con cuero)",
+    "slug": "receta-arnes-gris-claro-cuero"
+  },
   "light_gray_stained_glass_pane_receta_con_glass_pane": {
     "nombre": "Receta de Panel de vidriera gris claro (con panel de cristal)",
     "slug": "receta-panel-de-vidriera-gris-claro-panel-de-cristal"
@@ -1750,6 +1942,14 @@
   "lime_dye_receta": {
     "nombre": "Receta de Tinte lima",
     "slug": "receta-tinte-lima"
+  },
+  "lime_harness_receta_con_black_harness": {
+    "nombre": "Receta de Arnés lima (con arnés negro)",
+    "slug": "receta-arnes-lima-arnes-negro"
+  },
+  "lime_harness_receta_con_leather": {
+    "nombre": "Receta de Arnés lima (con cuero)",
+    "slug": "receta-arnes-lima-cuero"
   },
   "lime_stained_glass_pane_receta_con_glass_pane": {
     "nombre": "Receta de Panel de vidriera lima (con panel de cristal)",
@@ -1831,6 +2031,14 @@
     "nombre": "Receta de Tinte magenta (con tinte blanco)",
     "slug": "receta-tinte-magenta-tinte-blanco"
   },
+  "magenta_harness_receta_con_black_harness": {
+    "nombre": "Receta de Arnés magenta (con arnés negro)",
+    "slug": "receta-arnes-magenta-arnes-negro"
+  },
+  "magenta_harness_receta_con_leather": {
+    "nombre": "Receta de Arnés magenta (con cuero)",
+    "slug": "receta-arnes-magenta-cuero"
+  },
   "magenta_stained_glass_pane_receta_con_glass_pane": {
     "nombre": "Receta de Panel de vidriera magenta (con panel de cristal)",
     "slug": "receta-panel-de-vidriera-magenta-panel-de-cristal"
@@ -1894,6 +2102,10 @@
   "mangrove_pressure_plate_receta": {
     "nombre": "Receta de Placa de presión de mangle",
     "slug": "receta-placa-de-presion-de-mangle"
+  },
+  "mangrove_shelf_receta": {
+    "nombre": "Receta de Estante de mangle",
+    "slug": "receta-estante-de-mangle"
   },
   "mangrove_sign_receta": {
     "nombre": "Receta de Cartel de mangle",
@@ -1999,6 +2211,10 @@
     "nombre": "Receta de Disco de música «5»",
     "slug": "receta-disco-de-musica-5"
   },
+  "name_tag_receta": {
+    "nombre": "Receta de Etiqueta",
+    "slug": "receta-etiqueta"
+  },
   "nether_brick_fence_receta": {
     "nombre": "Receta de Valla de ladrillo del Nether",
     "slug": "receta-valla-de-ladrillo-del-nether"
@@ -2079,6 +2295,10 @@
     "nombre": "Receta de Placa de presión de roble",
     "slug": "receta-placa-de-presion-de-roble"
   },
+  "oak_shelf_receta": {
+    "nombre": "Receta de Estante de roble",
+    "slug": "receta-estante-de-roble"
+  },
   "oak_sign_receta": {
     "nombre": "Receta de Cartel de roble",
     "slug": "receta-cartel-de-roble"
@@ -2131,13 +2351,21 @@
     "nombre": "Receta de Hormigón en polvo naranja",
     "slug": "receta-hormigon-en-polvo-naranja"
   },
-  "orange_dye_receta_con_orange_tulip": {
-    "nombre": "Receta de Tinte naranja (con tulipán naranja)",
-    "slug": "receta-tinte-naranja-tulipan-naranja"
+  "orange_dye_receta_con_open_eyeblossom": {
+    "nombre": "Receta de Tinte naranja (con flor ojo abierta)",
+    "slug": "receta-tinte-naranja-flor-ojo-abierta"
   },
   "orange_dye_receta_con_red_dye": {
     "nombre": "Receta de Tinte naranja (con tinte rojo)",
     "slug": "receta-tinte-naranja-tinte-rojo"
+  },
+  "orange_harness_receta_con_black_harness": {
+    "nombre": "Receta de Arnés naranja (con arnés negro)",
+    "slug": "receta-arnes-naranja-arnes-negro"
+  },
+  "orange_harness_receta_con_leather": {
+    "nombre": "Receta de Arnés naranja (con cuero)",
+    "slug": "receta-arnes-naranja-cuero"
   },
   "orange_stained_glass_pane_receta_con_glass_pane": {
     "nombre": "Receta de Panel de vidriera naranja (con panel de cristal)",
@@ -2235,6 +2463,10 @@
     "nombre": "Receta de Placa de presión de roble pálido",
     "slug": "receta-placa-de-presion-de-roble-palido"
   },
+  "pale_oak_shelf_receta": {
+    "nombre": "Receta de Estante de roble pálido",
+    "slug": "receta-estante-de-roble-palido"
+  },
   "pale_oak_sign_receta": {
     "nombre": "Receta de Cartel de roble pálido",
     "slug": "receta-cartel-de-roble-palido"
@@ -2287,17 +2519,25 @@
     "nombre": "Receta de Hormigón en polvo rosa",
     "slug": "receta-hormigon-en-polvo-rosa"
   },
+  "pink_dye_receta_con_cactus_flower": {
+    "nombre": "Receta de Tinte rosa (con flor de cactus)",
+    "slug": "receta-tinte-rosa-flor-de-cactus"
+  },
   "pink_dye_receta_con_peony": {
     "nombre": "Receta de Tinte rosa (con peonía)",
     "slug": "receta-tinte-rosa-peonia"
   },
-  "pink_dye_receta_con_pink_petals": {
-    "nombre": "Receta de Tinte rosa (con pétalos rosas)",
-    "slug": "receta-tinte-rosa-petalos-rosas"
-  },
   "pink_dye_receta_con_red_dye": {
     "nombre": "Receta de Tinte rosa (con tinte rojo)",
     "slug": "receta-tinte-rosa-tinte-rojo"
+  },
+  "pink_harness_receta_con_black_harness": {
+    "nombre": "Receta de Arnés rosa (con arnés negro)",
+    "slug": "receta-arnes-rosa-arnes-negro"
+  },
+  "pink_harness_receta_con_leather": {
+    "nombre": "Receta de Arnés rosa (con cuero)",
+    "slug": "receta-arnes-rosa-cuero"
   },
   "pink_stained_glass_pane_receta_con_glass_pane": {
     "nombre": "Receta de Panel de vidriera rosa (con panel de cristal)",
@@ -2419,6 +2659,10 @@
     "nombre": "Receta de Escaleras de granito pulido",
     "slug": "receta-escaleras-de-granito-pulido"
   },
+  "polished_sulfur_receta": {
+    "nombre": "Receta de Azufre pulido",
+    "slug": "receta-azufre-pulido"
+  },
   "polished_tuff_receta": {
     "nombre": "Receta de Toba pulida",
     "slug": "receta-toba-pulida"
@@ -2434,6 +2678,10 @@
   "polished_tuff_wall_receta": {
     "nombre": "Receta de Muro de toba pulida",
     "slug": "receta-muro-de-toba-pulida"
+  },
+  "potent_sulfur_receta": {
+    "nombre": "Receta de Azufre potente",
+    "slug": "receta-azufre-potente"
   },
   "powered_rail_receta": {
     "nombre": "Receta de Raíl propulsor",
@@ -2506,6 +2754,14 @@
   "purple_dye_receta": {
     "nombre": "Receta de Tinte morado",
     "slug": "receta-tinte-morado"
+  },
+  "purple_harness_receta_con_black_harness": {
+    "nombre": "Receta de Arnés morado (con arnés negro)",
+    "slug": "receta-arnes-morado-arnes-negro"
+  },
+  "purple_harness_receta_con_leather": {
+    "nombre": "Receta de Arnés morado (con cuero)",
+    "slug": "receta-arnes-morado-cuero"
   },
   "purple_stained_glass_pane_receta_con_glass_pane": {
     "nombre": "Receta de Panel de vidriera morado (con panel de cristal)",
@@ -2639,6 +2895,14 @@
     "nombre": "Receta de Tinte rojo (con rosal)",
     "slug": "receta-tinte-rojo-rosal"
   },
+  "red_harness_receta_con_black_harness": {
+    "nombre": "Receta de Arnés rojo (con arnés negro)",
+    "slug": "receta-arnes-rojo-arnes-negro"
+  },
+  "red_harness_receta_con_leather": {
+    "nombre": "Receta de Arnés rojo (con cuero)",
+    "slug": "receta-arnes-rojo-cuero"
+  },
   "red_nether_brick_slab_receta": {
     "nombre": "Receta de Losa de ladrillo rojo del Nether",
     "slug": "receta-losa-de-ladrillo-rojo-del-nether"
@@ -2711,6 +2975,30 @@
     "nombre": "Receta de Repetidor",
     "slug": "receta-repetidor"
   },
+  "resin_block_receta": {
+    "nombre": "Receta de Bloque de resina",
+    "slug": "receta-bloque-de-resina"
+  },
+  "resin_brick_slab_receta": {
+    "nombre": "Receta de Losa de ladrillo de resina",
+    "slug": "receta-losa-de-ladrillo-de-resina"
+  },
+  "resin_brick_stairs_receta": {
+    "nombre": "Receta de Escaleras de ladrillo de resina",
+    "slug": "receta-escaleras-de-ladrillo-de-resina"
+  },
+  "resin_brick_wall_receta": {
+    "nombre": "Receta de Muro de ladrillo de resina",
+    "slug": "receta-muro-de-ladrillo-de-resina"
+  },
+  "resin_bricks_receta": {
+    "nombre": "Receta de Ladrillos de resina",
+    "slug": "receta-ladrillos-de-resina"
+  },
+  "resin_clump_receta": {
+    "nombre": "Receta de Grumo de resina",
+    "slug": "receta-grumo-de-resina"
+  },
   "respawn_anchor_receta": {
     "nombre": "Receta de Ancla de renacimiento",
     "slug": "receta-ancla-de-renacimiento"
@@ -2718,6 +3006,10 @@
   "rib_armor_trim_smithing_template_receta": {
     "nombre": "Receta de Plantilla de adorno de la costilla",
     "slug": "receta-plantilla-de-adorno-de-la-costilla"
+  },
+  "saddle_receta": {
+    "nombre": "Receta de Silla de montar",
+    "slug": "receta-silla-de-montar"
   },
   "sandstone_receta": {
     "nombre": "Receta de Arenisca",
@@ -2883,6 +3175,10 @@
     "nombre": "Receta de Placa de presión de abeto",
     "slug": "receta-placa-de-presion-de-abeto"
   },
+  "spruce_shelf_receta": {
+    "nombre": "Receta de Estante de abeto",
+    "slug": "receta-estante-de-abeto"
+  },
   "spruce_sign_receta": {
     "nombre": "Receta de Cartel de abeto",
     "slug": "receta-cartel-de-abeto"
@@ -2963,6 +3259,10 @@
     "nombre": "Receta de Losa de piedra",
     "slug": "receta-losa-de-piedra"
   },
+  "stone_spear_receta": {
+    "nombre": "Receta de Lanza de piedra",
+    "slug": "receta-lanza-de-piedra"
+  },
   "stone_stairs_receta": {
     "nombre": "Receta de Escaleras de piedra",
     "slug": "receta-escaleras-de-piedra"
@@ -3026,6 +3326,18 @@
   "sugar_receta_con_sugar_cane": {
     "nombre": "Receta de Azúcar (con caña de azúcar)",
     "slug": "receta-azucar-cana-de-azucar"
+  },
+  "sulfur_slab_receta": {
+    "nombre": "Receta de Losa de azufre",
+    "slug": "receta-losa-de-azufre"
+  },
+  "sulfur_stairs_receta": {
+    "nombre": "Receta de Escaleras de azufre",
+    "slug": "receta-escaleras-de-azufre"
+  },
+  "sulfur_wall_receta": {
+    "nombre": "Receta de Muro de azufre",
+    "slug": "receta-muro-de-azufre"
   },
   "suspicious_stew_receta": {
     "nombre": "Receta de Estofado sospechoso",
@@ -3139,6 +3451,10 @@
     "nombre": "Receta de Placa de presión deformada",
     "slug": "receta-placa-de-presion-deformada"
   },
+  "warped_shelf_receta": {
+    "nombre": "Receta de Estante deformado",
+    "slug": "receta-estante-deformado"
+  },
   "warped_sign_receta": {
     "nombre": "Receta de Cartel deformado",
     "slug": "receta-cartel-deformado"
@@ -3163,6 +3479,10 @@
     "nombre": "Receta de Cobre cincelado encerado (con losa de cobre cortado encerada)",
     "slug": "receta-cobre-cincelado-encerado-losa-de-cobre-cortado-encerada"
   },
+  "waxed_copper_bars_receta": {
+    "nombre": "Receta de Barrotes de cobre encerado",
+    "slug": "receta-barrotes-de-cobre-encerado"
+  },
   "waxed_copper_block_receta": {
     "nombre": "Receta de Bloque de cobre encerado",
     "slug": "receta-bloque-de-cobre-encerado"
@@ -3175,9 +3495,21 @@
     "nombre": "Receta de Bombilla de cobre encerada (con bloque de cobre encerado)",
     "slug": "receta-bombilla-de-cobre-encerada-bloque-de-cobre-encerado"
   },
+  "waxed_copper_chain_receta": {
+    "nombre": "Receta de Cadena de cobre encerado",
+    "slug": "receta-cadena-de-cobre-encerado"
+  },
+  "waxed_copper_chest_receta": {
+    "nombre": "Receta de Cofre de cobre encerado",
+    "slug": "receta-cofre-de-cobre-encerado"
+  },
   "waxed_copper_door_receta": {
     "nombre": "Receta de Puerta de cobre encerada",
     "slug": "receta-puerta-de-cobre-encerada"
+  },
+  "waxed_copper_golem_statue_receta": {
+    "nombre": "Receta de Estatua de gólem de cobre encerado",
+    "slug": "receta-estatua-de-golem-de-cobre-encerado"
   },
   "waxed_copper_grate_receta_con_copper_grate": {
     "nombre": "Receta de Rejilla de cobre encerada (con rejilla de cobre)",
@@ -3186,6 +3518,10 @@
   "waxed_copper_grate_receta_con_waxed_copper_block": {
     "nombre": "Receta de Rejilla de cobre encerada (con bloque de cobre encerado)",
     "slug": "receta-rejilla-de-cobre-encerada-bloque-de-cobre-encerado"
+  },
+  "waxed_copper_lantern_receta": {
+    "nombre": "Receta de Farol de cobre encerado",
+    "slug": "receta-farol-de-cobre-encerado"
   },
   "waxed_copper_trapdoor_receta": {
     "nombre": "Receta de Trampilla de cobre encerada",
@@ -3223,6 +3559,10 @@
     "nombre": "Receta de Cobre cincelado expuesto encerado (con losa de cobre cortado expuesta encerada)",
     "slug": "receta-cobre-cincelado-expuesto-encerado-losa-de-cobre-cortado-expuesta-encerada"
   },
+  "waxed_exposed_copper_bars_receta": {
+    "nombre": "Receta de Barrotes de cobre expuesto encerado",
+    "slug": "receta-barrotes-de-cobre-expuesto-encerado"
+  },
   "waxed_exposed_copper_bulb_receta_con_exposed_copper_bulb": {
     "nombre": "Receta de Bombilla de cobre expuesta encerada (con bombilla de cobre expuesta)",
     "slug": "receta-bombilla-de-cobre-expuesta-encerada-bombilla-de-cobre-expuesta"
@@ -3231,9 +3571,21 @@
     "nombre": "Receta de Bombilla de cobre expuesta encerada (con bloque de cobre expuesto encerado)",
     "slug": "receta-bombilla-de-cobre-expuesta-encerada-bloque-de-cobre-expuesto-encerado"
   },
+  "waxed_exposed_copper_chain_receta": {
+    "nombre": "Receta de Cadena de cobre expuesto encerado",
+    "slug": "receta-cadena-de-cobre-expuesto-encerado"
+  },
+  "waxed_exposed_copper_chest_receta": {
+    "nombre": "Receta de Cofre de cobre expuesto encerado",
+    "slug": "receta-cofre-de-cobre-expuesto-encerado"
+  },
   "waxed_exposed_copper_door_receta": {
     "nombre": "Receta de Puerta de cobre expuesta encerada",
     "slug": "receta-puerta-de-cobre-expuesta-encerada"
+  },
+  "waxed_exposed_copper_golem_statue_receta": {
+    "nombre": "Receta de Estatua de gólem de cobre expuesto encerado",
+    "slug": "receta-estatua-de-golem-de-cobre-expuesto-encerado"
   },
   "waxed_exposed_copper_grate_receta_con_exposed_copper_grate": {
     "nombre": "Receta de Rejilla de cobre expuesta encerada (con rejilla de cobre expuesta)",
@@ -3242,6 +3594,10 @@
   "waxed_exposed_copper_grate_receta_con_waxed_exposed_copper": {
     "nombre": "Receta de Rejilla de cobre expuesta encerada (con bloque de cobre expuesto encerado)",
     "slug": "receta-rejilla-de-cobre-expuesta-encerada-bloque-de-cobre-expuesto-encerado"
+  },
+  "waxed_exposed_copper_lantern_receta": {
+    "nombre": "Receta de Farol de cobre expuesto encerado",
+    "slug": "receta-farol-de-cobre-expuesto-encerado"
   },
   "waxed_exposed_copper_receta": {
     "nombre": "Receta de Bloque de cobre expuesto encerado",
@@ -3275,6 +3631,14 @@
     "nombre": "Receta de Escaleras de cobre cortado expuestas enceradas (con cobre cortado expuesto encerado)",
     "slug": "receta-escaleras-de-cobre-cortado-expuestas-enceradas-cobre-cortado-expuesto-encerado"
   },
+  "waxed_exposed_lightning_rod_receta": {
+    "nombre": "Receta de Pararrayos expuesto encerado",
+    "slug": "receta-pararrayos-expuesto-encerado"
+  },
+  "waxed_lightning_rod_receta": {
+    "nombre": "Receta de Pararrayos encerado",
+    "slug": "receta-pararrayos-encerado"
+  },
   "waxed_oxidized_chiseled_copper_receta_con_honeycomb": {
     "nombre": "Receta de Cobre cincelado oxidado encerado (con panal)",
     "slug": "receta-cobre-cincelado-oxidado-encerado-panal"
@@ -3282,6 +3646,10 @@
   "waxed_oxidized_chiseled_copper_receta_con_waxed_oxidized_cut_copper_slab": {
     "nombre": "Receta de Cobre cincelado oxidado encerado (con losa de cobre cortado oxidada encerada)",
     "slug": "receta-cobre-cincelado-oxidado-encerado-losa-de-cobre-cortado-oxidada-encerada"
+  },
+  "waxed_oxidized_copper_bars_receta": {
+    "nombre": "Receta de Barrotes de cobre oxidado encerado",
+    "slug": "receta-barrotes-de-cobre-oxidado-encerado"
   },
   "waxed_oxidized_copper_bulb_receta_con_honeycomb": {
     "nombre": "Receta de Bombilla de cobre oxidada encerada (con panal)",
@@ -3291,9 +3659,21 @@
     "nombre": "Receta de Bombilla de cobre oxidada encerada (con bloque de cobre oxidado encerado)",
     "slug": "receta-bombilla-de-cobre-oxidada-encerada-bloque-de-cobre-oxidado-encerado"
   },
+  "waxed_oxidized_copper_chain_receta": {
+    "nombre": "Receta de Cadena de cobre oxidado encerado",
+    "slug": "receta-cadena-de-cobre-oxidado-encerado"
+  },
+  "waxed_oxidized_copper_chest_receta": {
+    "nombre": "Receta de Cofre de cobre oxidado encerado",
+    "slug": "receta-cofre-de-cobre-oxidado-encerado"
+  },
   "waxed_oxidized_copper_door_receta": {
     "nombre": "Receta de Puerta de cobre oxidada encerada",
     "slug": "receta-puerta-de-cobre-oxidada-encerada"
+  },
+  "waxed_oxidized_copper_golem_statue_receta": {
+    "nombre": "Receta de Estatua de gólem de cobre oxidado encerado",
+    "slug": "receta-estatua-de-golem-de-cobre-oxidado-encerado"
   },
   "waxed_oxidized_copper_grate_receta_con_honeycomb": {
     "nombre": "Receta de Rejilla de cobre oxidada encerada (con panal)",
@@ -3302,6 +3682,10 @@
   "waxed_oxidized_copper_grate_receta_con_waxed_oxidized_copper": {
     "nombre": "Receta de Rejilla de cobre oxidada encerada (con bloque de cobre oxidado encerado)",
     "slug": "receta-rejilla-de-cobre-oxidada-encerada-bloque-de-cobre-oxidado-encerado"
+  },
+  "waxed_oxidized_copper_lantern_receta": {
+    "nombre": "Receta de Farol de cobre oxidado encerado",
+    "slug": "receta-farol-de-cobre-oxidado-encerado"
   },
   "waxed_oxidized_copper_receta": {
     "nombre": "Receta de Bloque de cobre oxidado encerado",
@@ -3335,6 +3719,10 @@
     "nombre": "Receta de Escaleras de cobre cortado oxidadas enceradas (con cobre cortado oxidado encerado)",
     "slug": "receta-escaleras-de-cobre-cortado-oxidadas-enceradas-cobre-cortado-oxidado-encerado"
   },
+  "waxed_oxidized_lightning_rod_receta": {
+    "nombre": "Receta de Pararrayos oxidado encerado",
+    "slug": "receta-pararrayos-oxidado-encerado"
+  },
   "waxed_weathered_chiseled_copper_receta_con_honeycomb": {
     "nombre": "Receta de Cobre cincelado desgastado encerado (con panal)",
     "slug": "receta-cobre-cincelado-desgastado-encerado-panal"
@@ -3342,6 +3730,10 @@
   "waxed_weathered_chiseled_copper_receta_con_waxed_weathered_cut_copper_slab": {
     "nombre": "Receta de Cobre cincelado desgastado encerado (con losa de cobre cortado desgastada encerada)",
     "slug": "receta-cobre-cincelado-desgastado-encerado-losa-de-cobre-cortado-desgastada-encerada"
+  },
+  "waxed_weathered_copper_bars_receta": {
+    "nombre": "Receta de Barrotes de cobre desgastado encerado",
+    "slug": "receta-barrotes-de-cobre-desgastado-encerado"
   },
   "waxed_weathered_copper_bulb_receta_con_honeycomb": {
     "nombre": "Receta de Bombilla de cobre desgastada encerada (con panal)",
@@ -3351,9 +3743,21 @@
     "nombre": "Receta de Bombilla de cobre desgastada encerada (con bloque de cobre desgastado encerado)",
     "slug": "receta-bombilla-de-cobre-desgastada-encerada-bloque-de-cobre-desgastado-encerado"
   },
+  "waxed_weathered_copper_chain_receta": {
+    "nombre": "Receta de Cadena de cobre desgastado encerado",
+    "slug": "receta-cadena-de-cobre-desgastado-encerado"
+  },
+  "waxed_weathered_copper_chest_receta": {
+    "nombre": "Receta de Cofre de cobre desgastado encerado",
+    "slug": "receta-cofre-de-cobre-desgastado-encerado"
+  },
   "waxed_weathered_copper_door_receta": {
     "nombre": "Receta de Puerta de cobre desgastada encerada",
     "slug": "receta-puerta-de-cobre-desgastada-encerada"
+  },
+  "waxed_weathered_copper_golem_statue_receta": {
+    "nombre": "Receta de Estatua de gólem de cobre desgastado encerado",
+    "slug": "receta-estatua-de-golem-de-cobre-desgastado-encerado"
   },
   "waxed_weathered_copper_grate_receta_con_honeycomb": {
     "nombre": "Receta de Rejilla de cobre desgastada encerada (con panal)",
@@ -3362,6 +3766,10 @@
   "waxed_weathered_copper_grate_receta_con_waxed_weathered_copper": {
     "nombre": "Receta de Rejilla de cobre desgastada encerada (con bloque de cobre desgastado encerado)",
     "slug": "receta-rejilla-de-cobre-desgastada-encerada-bloque-de-cobre-desgastado-encerado"
+  },
+  "waxed_weathered_copper_lantern_receta": {
+    "nombre": "Receta de Farol de cobre desgastado encerado",
+    "slug": "receta-farol-de-cobre-desgastado-encerado"
   },
   "waxed_weathered_copper_receta": {
     "nombre": "Receta de Bloque de cobre desgastado encerado",
@@ -3394,6 +3802,10 @@
   "waxed_weathered_cut_copper_stairs_receta_con_waxed_weathered_cut_copper": {
     "nombre": "Receta de Escaleras de cobre cortado desgastadas enceradas (con cobre cortado desgastado encerado)",
     "slug": "receta-escaleras-de-cobre-cortado-desgastadas-enceradas-cobre-cortado-desgastado-encerado"
+  },
+  "waxed_weathered_lightning_rod_receta": {
+    "nombre": "Receta de Pararrayos desgastado encerado",
+    "slug": "receta-pararrayos-desgastado-encerado"
   },
   "wayfinder_armor_trim_smithing_template_receta": {
     "nombre": "Receta de Plantilla de adorno del explorador",
@@ -3459,6 +3871,14 @@
     "nombre": "Receta de Tinte blanco",
     "slug": "receta-tinte-blanco"
   },
+  "white_harness_receta_con_black_harness": {
+    "nombre": "Receta de Arnés blanco (con arnés negro)",
+    "slug": "receta-arnes-blanco-arnes-negro"
+  },
+  "white_harness_receta_con_leather": {
+    "nombre": "Receta de Arnés blanco (con cuero)",
+    "slug": "receta-arnes-blanco-cuero"
+  },
   "white_stained_glass_pane_receta_con_glass_pane": {
     "nombre": "Receta de Panel de vidriera blanco (con panel de cristal)",
     "slug": "receta-panel-de-vidriera-blanco-panel-de-cristal"
@@ -3511,6 +3931,10 @@
     "nombre": "Receta de Pala de madera",
     "slug": "receta-pala-de-madera"
   },
+  "wooden_spear_receta": {
+    "nombre": "Receta de Lanza de madera",
+    "slug": "receta-lanza-de-madera"
+  },
   "wooden_sword_receta": {
     "nombre": "Receta de Espada de madera",
     "slug": "receta-espada-de-madera"
@@ -3554,6 +3978,14 @@
   "yellow_dye_receta_con_sunflower": {
     "nombre": "Receta de Tinte amarillo (con girasol)",
     "slug": "receta-tinte-amarillo-girasol"
+  },
+  "yellow_harness_receta_con_black_harness": {
+    "nombre": "Receta de Arnés amarillo (con arnés negro)",
+    "slug": "receta-arnes-amarillo-arnes-negro"
+  },
+  "yellow_harness_receta_con_leather": {
+    "nombre": "Receta de Arnés amarillo (con cuero)",
+    "slug": "receta-arnes-amarillo-cuero"
   },
   "yellow_stained_glass_pane_receta_con_glass_pane": {
     "nombre": "Receta de Panel de vidriera amarillo (con panel de cristal)",

@@ -19,6 +19,46 @@
     "nombre": "Chainmail Leggings",
     "slug": "chainmail-leggings"
   },
+  "copper_axe": {
+    "nombre": "Copper Axe",
+    "slug": "copper-axe"
+  },
+  "copper_boots": {
+    "nombre": "Copper Boots",
+    "slug": "copper-boots"
+  },
+  "copper_chestplate": {
+    "nombre": "Copper Chestplate",
+    "slug": "copper-chestplate"
+  },
+  "copper_helmet": {
+    "nombre": "Copper Helmet",
+    "slug": "copper-helmet"
+  },
+  "copper_hoe": {
+    "nombre": "Copper Hoe",
+    "slug": "copper-hoe"
+  },
+  "copper_leggings": {
+    "nombre": "Copper Leggings",
+    "slug": "copper-leggings"
+  },
+  "copper_pickaxe": {
+    "nombre": "Copper Pickaxe",
+    "slug": "copper-pickaxe"
+  },
+  "copper_shovel": {
+    "nombre": "Copper Shovel",
+    "slug": "copper-shovel"
+  },
+  "copper_spear": {
+    "nombre": "Copper Spear",
+    "slug": "copper-spear"
+  },
+  "copper_sword": {
+    "nombre": "Copper Sword",
+    "slug": "copper-sword"
+  },
   "crossbow": {
     "nombre": "Crossbow",
     "slug": "crossbow"
@@ -54,6 +94,10 @@
   "diamond_shovel": {
     "nombre": "Diamond Shovel",
     "slug": "diamond-shovel"
+  },
+  "diamond_spear": {
+    "nombre": "Diamond Spear",
+    "slug": "diamond-spear"
   },
   "diamond_sword": {
     "nombre": "Diamond Sword",
@@ -97,6 +141,10 @@
     "nombre": "Golden Shovel",
     "slug": "golden-shovel"
   },
+  "golden_spear": {
+    "nombre": "Golden Spear",
+    "slug": "golden-spear"
+  },
   "golden_sword": {
     "nombre": "Golden Sword",
     "slug": "golden-sword"
@@ -132,6 +180,10 @@
   "iron_shovel": {
     "nombre": "Iron Shovel",
     "slug": "iron-shovel"
+  },
+  "iron_spear": {
+    "nombre": "Iron Spear",
+    "slug": "iron-spear"
   },
   "iron_sword": {
     "nombre": "Iron Sword",
@@ -189,6 +241,10 @@
     "nombre": "Netherite Shovel",
     "slug": "netherite-shovel"
   },
+  "netherite_spear": {
+    "nombre": "Netherite Spear",
+    "slug": "netherite-spear"
+  },
   "netherite_sword": {
     "nombre": "Netherite Sword",
     "slug": "netherite-sword"
@@ -212,6 +268,10 @@
   "stone_shovel": {
     "nombre": "Stone Shovel",
     "slug": "stone-shovel"
+  },
+  "stone_spear": {
+    "nombre": "Stone Spear",
+    "slug": "stone-spear"
   },
   "stone_sword": {
     "nombre": "Stone Sword",
@@ -240,6 +300,10 @@
   "wooden_shovel": {
     "nombre": "Wooden Shovel",
     "slug": "wooden-shovel"
+  },
+  "wooden_spear": {
+    "nombre": "Wooden Spear",
+    "slug": "wooden-spear"
   },
   "wooden_sword": {
     "nombre": "Wooden Sword",

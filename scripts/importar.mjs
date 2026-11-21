@@ -16,11 +16,11 @@
  *     adivina para entidades nuevas.
  *
  * Uso:
- *   node scripts/importar.mjs [--version 1.21.4] [--rehacer-etapas]
+ *   node scripts/importar.mjs [--version 26.1.2] [--rehacer-etapas]
  */
 
 import minecraftData from 'minecraft-data'
-import { readFile, writeFile, mkdir } from 'node:fs/promises'
+import { readFile, writeFile, mkdir, readdir } from 'node:fs/promises'
 import { existsSync } from 'node:fs'
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -33,7 +33,7 @@ const leerArg = (nombre, pordefecto) => {
   const i = args.indexOf(`--${nombre}`)
   return i >= 0 ? args[i + 1] : pordefecto
 }
-const VERSION = leerArg('version', '1.21.4')
+const VERSION = leerArg('version', '26.1.2')
 const REHACER_ETAPAS = args.includes('--rehacer-etapas')
 
 const mc = minecraftData(VERSION)
@@ -86,6 +86,14 @@ const varianteDe = (nombre) => {
     if (nombre.startsWith(`${color}_`)) {
       const base = nombre.slice(color.length + 1)
       if (nombresDeItem.has(base)) return base
+      // Casi ninguna familia de color tiene version sin tenir: no hay "wool",
+      // hay "white_wool". Sin esto las 15 lanas de color, las camas, el cristal
+      // o el hormigon contaban como fichas sueltas y llenaban el buscador.
+      // Los tintes se quedan fuera: cada uno es un objeto distinto, no un
+      // color de otro.
+      if (color !== 'white' && base !== 'dye' && nombresDeItem.has(`white_${base}`)) {
+        return `white_${base}`
+      }
     }
   }
   for (const madera of MADERAS) {
@@ -105,12 +113,14 @@ const CATEGORIA_EQUIPO = [
   [/_shovel$/, 'pala'], [/_hoe$/, 'azada'], [/_helmet$|^turtle_helmet$/, 'casco'],
   [/_chestplate$/, 'pechera'], [/_leggings$/, 'pantalones'], [/_boots$/, 'botas'],
   [/^bow$/, 'arco'], [/^crossbow$/, 'ballesta'], [/^trident$/, 'tridente'],
-  [/^shield$/, 'escudo'], [/^elytra$/, 'elitros'], [/^mace$/, 'maza']
+  [/^shield$/, 'escudo'], [/^elytra$/, 'elitros'], [/^mace$/, 'maza'],
+  [/_spear$/, 'lanza']
 ]
 
 const MATERIAL_EQUIPO = [
   [/^wooden_/, 'madera'], [/^stone_/, 'piedra'], [/^iron_/, 'hierro'],
   [/^golden_/, 'oro'], [/^diamond_/, 'diamante'], [/^netherite_/, 'netherita'],
+  [/^copper_/, 'cobre'],
   [/^leather_/, 'cuero'], [/^chainmail_/, 'malla'], [/^turtle_/, 'caparazon']
 ]
 
@@ -123,9 +133,14 @@ const primerMatch = (tabla, nombre) => tabla.find(([p]) => p.test(nombre))?.[1] 
 /** Categorias de minecraft-data a las familias de equipo de nuestro esquema. */
 const EQUIPO_POR_CATEGORIA = {
   sword: ['espada'],
-  sharp_weapon: ['espada', 'hacha'],
+  sharp_weapon: ['espada', 'hacha', 'lanza'],
+  // Desde 26.1 el juego separa el arma cuerpo a cuerpo (espadas y lanzas) del
+  // barrido, que sigue siendo solo de la espada.
+  melee_weapon: ['espada', 'lanza'],
+  sweeping: ['espada'],
+  lunge: ['lanza'],
   weapon: ['espada', 'hacha'],
-  fire_aspect: ['espada'],
+  fire_aspect: ['espada', 'lanza'],
   mace: ['maza'],
   trident: ['tridente'],
   bow: ['arco'],
@@ -140,19 +155,19 @@ const EQUIPO_POR_CATEGORIA = {
   equippable: ['casco', 'pechera', 'pantalones', 'botas', 'elitros'],
   durability: [
     'espada', 'hacha', 'pico', 'pala', 'azada', 'arco', 'ballesta', 'tridente',
-    'maza', 'casco', 'pechera', 'pantalones', 'botas', 'elitros', 'escudo',
+    'maza', 'lanza', 'casco', 'pechera', 'pantalones', 'botas', 'elitros', 'escudo',
     'cana', 'tijeras', 'mechero'
   ],
   vanishing: [
     'espada', 'hacha', 'pico', 'pala', 'azada', 'arco', 'ballesta', 'tridente',
-    'maza', 'casco', 'pechera', 'pantalones', 'botas', 'elitros', 'escudo',
+    'maza', 'lanza', 'casco', 'pechera', 'pantalones', 'botas', 'elitros', 'escudo',
     'cana', 'tijeras', 'mechero'
   ]
 }
 
 const NUESTRA_CATEGORIA = {
   sword: 'dano', sharp_weapon: 'dano', weapon: 'dano', fire_aspect: 'dano',
-  mace: 'dano', trident: 'dano', bow: 'dano', crossbow: 'dano',
+  mace: 'dano', melee_weapon: 'dano', sweeping: 'dano', lunge: 'dano', trident: 'dano', bow: 'dano', crossbow: 'dano',
   armor: 'proteccion', head_armor: 'proteccion', leg_armor: 'proteccion',
   foot_armor: 'proteccion', equippable: 'proteccion',
   mining: 'recoleccion', mining_loot: 'recoleccion', fishing: 'recoleccion',
@@ -165,6 +180,16 @@ const NUESTRA_CATEGORIA = {
 
 const TIPOS_DE_MOB = ['mob', 'animal', 'ambient', 'hostile', 'water_creature', 'passive']
 const JEFES = new Set(['ender_dragon', 'wither'])
+
+/**
+ * Mobs que minecraft-data clasifica mal. Su "type" dice como se genera el mob,
+ * no como se porta: el golem de cobre sale como "mob" generico y no ataca
+ * nunca, y el nautilo zombi sale como animal y es neutral.
+ */
+const CATEGORIA_CORREGIDA = {
+  copper_golem: 'pasivo',
+  zombie_nautilus: 'neutral'
+}
 
 const CATEGORIA_MOB = {
   hostile: 'hostil',
@@ -218,9 +243,11 @@ const guardarEntidad = async (modulo, entidad, mecanicos) => {
   }
 
   const fusionada = { ...existente }
+  // Que la fuente no traiga un dato no significa que el juego no lo tenga:
+  // minecraft-data no trae el botin del Wither, y borrarlo se llevaba por
+  // delante la estrella del Nether escrita a mano. Lo ausente se conserva.
   for (const campo of mecanicos) {
-    if (entidad[campo] === undefined) delete fusionada[campo]
-    else fusionada[campo] = entidad[campo]
+    if (entidad[campo] !== undefined) fusionada[campo] = entidad[campo]
   }
   if (REHACER_ETAPAS && entidad.etapa) fusionada.etapa = entidad.etapa
 
@@ -395,7 +422,9 @@ for (const e of mc.entitiesArray) {
     tipo: 'mob',
     etapa: etapaDe(e.name),
     relevancia: e.type === 'hostile' ? 'alta' : 'normal',
-    categoria: JEFES.has(e.name) ? 'jefe' : (CATEGORIA_MOB[e.type] ?? 'neutral'),
+    categoria: JEFES.has(e.name)
+      ? 'jefe'
+      : (CATEGORIA_CORREGIDA[e.name] ?? CATEGORIA_MOB[e.type] ?? 'neutral'),
     ...(botin.length > 0 ? { botin } : {})
   }
   await guardarEntidad('mobs', entidad, ['categoria', 'botin', 'relevancia'])
@@ -617,6 +646,7 @@ for (const [resultado, lista] of porResultado) {
           ? `${nombreResultado} Recipe ${indice + 1}`
           : `${nombreResultado} Recipe`
     )
+    importados.add(id)
     recetasEscritas++
   }
 }
@@ -653,6 +683,25 @@ for (const [modulo, entradas] of Object.entries(paraTraducir)) {
 }
 
 // ---------------------------------------------------------------------------
+// Huerfanas
+// El importador nunca borra: una ficha puede llevar trabajo a mano dentro. Pero
+// lo que el juego quita o renombra (la cadena paso a llamarse iron_chain en
+// 1.21.9) se quedaria en la wiki sin que nadie lo supiera. Se lista para que
+// alguien decida, con nombre y apellidos, que hacer con cada una.
+// ---------------------------------------------------------------------------
+
+const huerfanas = []
+for (const modulo of ['items', 'tools', 'enchantments', 'mobs', 'biomes', 'recipes']) {
+  const carpeta = join(DATOS, 'entities', modulo)
+  if (!existsSync(carpeta)) continue
+  for (const archivo of await readdir(carpeta)) {
+    if (!archivo.endsWith('.json')) continue
+    const id = archivo.replace(/.json$/, '')
+    if (!importados.has(id)) huerfanas.push(`${modulo}/${id}`)
+  }
+}
+
+// ---------------------------------------------------------------------------
 // Informe
 // ---------------------------------------------------------------------------
 
@@ -663,6 +712,11 @@ console.log(`  Entidades actualizadas  ${conteo.actualizadas}`)
 console.log(`  Sin cambios             ${conteo.saltadas}`)
 console.log(`  Recetas procesadas      ${recetasEscritas} (de ${recetasOriginales} sin plegar)`)
 console.log(`  Textos en ingles nuevos ${textosCreados}`)
+if (huerfanas.length > 0) {
+  console.log(`
+  ${huerfanas.length} ficha(s) que esta version del juego ya no trae:`)
+  for (const h of huerfanas) console.log(`    - ${h}`)
+}
 console.log(`\n  El espanol se traduce a mano. Mientras tanto las fichas caen`)
 console.log(`  al ingles y lo avisan. Ejecuta "npm run validar" para ver la`)
 console.log(`  cobertura por idioma.\n`)
